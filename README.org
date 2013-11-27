@@ -1,0 +1,7 @@
+#+TITLE: Nuclear & Particle Physics classes of Master 1 - README
+#+AUTHOR: Xavier Garrido
+
+* Introduction
+
+This repository contains materials for Nuclear & Particle Physics classes given
+in Master 1 of Fundamental Physics at the University of Paris Sud.
