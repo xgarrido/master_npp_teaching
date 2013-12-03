@@ -1,7 +1,7 @@
 #+TITLE: Correction TD Noyaux & Particules
 #+AUTHOR: Xavier Garrido
 #+DATE: 25/11/13
-#+OPTIONS: ^:{}
+#+OPTIONS: ^:{} toc:2
 #+LATEX_CLASS: snemo-note
 #+LATEX_HEADER: \renewcommand{\contentsname}{}
 #+LATEX_HEADER: \newcommand{\vv}[1]{\overrightarrow{#1}}
@@ -301,14 +301,14 @@ m_{initiale,finale}c^2}{m_{cible}c^2}\geq T_S^{cdm}$$
                  utilisable très élevée. Ce sont des collisionneurs.
 *** Exercice
 
-Proton de masse m = 938.27 MeV/c^{2} se déplaçant à la vitesse \vv{v} dans un
-champ d'induction \vv{B} normal à \vv{v}.
+Proton de masse m = 938.27 MeV/c^{2} se déplaçant à la vitesse $\vv{v}$ dans un
+champ d'induction $\vv{B}$ normal à $\vv{v}$.
 
 1) PDF: $\Upsigma\vv{F} = m\vv{a} = \frac{d\vv{p}}{dt}$
 
-   Régime relativiste m = \gamma{}m_{0} \rightarrow \vv{p} = \gamma{}m_{0}\vv{v}
-   et donc d\vv{p}/dt = \gamma{}m_{0}d\vv{v}/dt. Or d\vv{v}/dt =
-   R(d\theta/dt)^{2}\vv{u}_{r} = v^{2}/R\vv{u}_{r}. Soit
+   Régime relativiste m = \gamma{}m_{0} \rightarrow $\vv{p}$ = \gamma{}m_{0}$\vv{v}$
+   et donc $d\vv{p}/dt$ = \gamma{}m_{0}$d\vv{v}/dt$. Or $d\vv{v}/dt$ =
+   R(d\theta/dt)^{2}$\vv{u}_{r}$ = v^{2}/R$\vv{u}_{r}$. Soit
 
    $$\Upsigma\vv{F} = q\vv{v}\times\vv{B} = qvB\vv{u}_r$$
    $$qvB = \frac{\gamma{}m_{0}v^{2}}{R}$$
@@ -373,7 +373,7 @@ champ d'induction \vv{B} normal à \vv{v}.
 6) p + p \rightarrow p + p + N^{+} + N^{-}
 
    T_{S} = |Q|/2 avec $Q = \Upsigma\,m_{initiale}c^{2} -
-   \Upsigma\,m_{finale}c^{2}$ avec
+   \Upsigma\,m_{finale}c^{2}$ et
 
    #+BEGIN_SRC latex
      \begin{align*}
@@ -398,3 +398,81 @@ champ d'induction \vv{B} normal à \vv{v}.
 8) Rayon de courbure
 $$R = \frac{pc}{qBc} \simeq \frac{T_{S}(eV)}{Bc} =
 \frac{50\,PeV}{5.4\cdot3\,10^{8}} = 30\, 000\,km$$
+* TD2 : Nombres Quantiques & Symétries
+** Énergie maximum des rayons cosmiques
+$$p + \gamma \rightarrow p + \pi^{+}$$
+$$p + \gamma \rightarrow n + \pi^{0}$$
+
+Calcul de l'invariant relativiste :
+#+BEGIN_SRC latex
+  \begin{align*}
+    I(sortie) &= (m_{p}c^{2} + m_{\pi}c^{2})^{2}\\
+    I(entree) &= (E_{p} + E_{\gamma})^{2} - (\vv{p}_{p} + \vv{p}_{\gamma})^{2}c^{2}
+  \end{align*}
+#+END_SRC
+
+Proton ultra-relativiste E_{p}~T_{p} = p_{p}c
+#+BEGIN_SRC latex
+  \begin{align*}
+    I(entree) &= E_{p}^{2} + E_{\gamma}^{2} + 2E_{p}E_{\gamma} - E_{\gamma}^{2} - E_{p}^{2} - 2E_{\gamma}E_{p}\cos\theta\\
+    &= 2E_{p}E_{\gamma}(1 - \cos\theta)
+  \end{align*}
+#+END_SRC
+
+d'où l'énergie seuil
+$$E_{p} \sim T_{p} = \frac{\left(\Upsigma\,m_{finale}c^{2}\right)^{2}}{2E_{\gamma}(1-\cos\theta)}$$
+
+Cas limites: $$\theta\rightarrow0; T_{p}\rightarrow\infty$$ et $$\theta = 180°;
+T_{p} = \frac{\left(\Upsigma\,m_{finale}c^{2}\right)^{2}}{4E_{\gamma}}$$
+
+AN: m_{\pi^{0}}c^{2} = 135 MeV et m_{\pi^{+}}c^{2} = 139.6 MeV
+#+BEGIN_SRC latex
+  \begin{align*}
+    T_{p}(\pi^{0}/\pi^{+}) &= \frac{(135/139.6 + 938.3)^{2}\cdot1.6\,10^{-13}}{4\cdot3\cdot1.38\,10^{-23}\cdot2.7} = 4.1\,10^{20}\,MeV\\
+  \end{align*}
+#+END_SRC
+
+#+CAPTION: *Énergie moyenne des protons en fonction de leur distance à la source*
+#+NAME: fig::proton_attenuation
+#+ATTR_LATEX: :width 0.7\linewidth
+[[file:./figures/proton_attenuation_result.pdf]]
+
+*Discussion :* Les pertes énergétiques résultantes de la photoproduction de
+pions sont de l’ordre de 15% par interaction ; le libre parcours moyen \lambda
+est typiquement le mégaparsec[fn:1]. Ainsi, l’énergie moyenne d’un proton
+diminue de façon significative au cours de sa prop- agation dans l’Univers comme
+le montre la Figure [[fig::proton_attenuation]]. Un proton avec une énergie initiale
+de 10^{22} eV voit son énergie réduite à 10^{20} eV après avoir parcouru 100
+Mpc. Une diminution nette du flux appelée coupure GZK est alors attendue au
+seuil de la réaction de photoproduction de pions /i.e./ 10^{19.6} eV[fn:2]. La
+position exacte de cette coupure GZK peut varier sensiblement suivant que les
+sources considérées sont ou non uniformément réparties dans l’Univers. En
+particulier, la forme du spectre au delà du seuil GZK permet, en théorie,
+d’évaluer la répartition des sources et de mettre en exergue une éventuelle
+surabondance locale.
+
+#+CAPTION: *Diagramme de Hillas de différents objets compacts.*
+#+CAPTION: Les axes correspondent respectivement au logarithme décimal du champ magnétique et à la taille caractéristique de l'objet.
+#+ATTR_LATEX: :width 0.7\linewidth
+[[file:./figures/hillas_diagram.pdf]]
+
+#+CAPTION: *Spectre en énergie des rayons cosmiques*
+#+ATTR_LATEX: :width 0.7\linewidth :placement [h]
+[[file:./figures/spectrum.pdf]]
+
+#+CAPTION: *Spectre du rayonnement cosmique mesuré par l'Observatoire Pierre Auger (données 2008)*
+#+ATTR_LATEX: :width \linewidth
+[[file:./figures/auger_spectrum.pdf]]
+
+* Footnotes
+
+[fn:1] 1 pc = 1 parsec = 3.26 années lumières = 30.856 10^{12} km.
+
+[fn:2] dans l’hypothèse où les RCUHEs sont des noyaux, la photodésintégration
+par interaction avec les photons du CMB et le fond infrarouge, devient
+importante dans la région 5 10^{19} -- 2 10^{20} eV. La longueur de perte
+d’énergie, i.e. le rapport entre le libre parcours moyen et l’inélasticité de la
+réaction, est typiquement de 100 Mpc pour un noyau de fer de 100 EeV. Le
+rayonnement gamma est quant à lui fortement attenué en raison, principalement,
+des interactions avec le fond radio \gamma + \gamma_{radio} \rightarrow e^{+} +
+e^{-}.
