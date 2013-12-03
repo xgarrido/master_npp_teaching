@@ -428,7 +428,7 @@ T_{p} = \frac{\left(\Upsigma\,m_{finale}c^{2}\right)^{2}}{4E_{\gamma}}$$
 AN: m_{\pi^{0}}c^{2} = 135 MeV et m_{\pi^{+}}c^{2} = 139.6 MeV
 #+BEGIN_SRC latex
   \begin{align*}
-    T_{p}(\pi^{0}/\pi^{+}) &= \frac{(135/139.6 + 938.3)^{2}\cdot1.6\,10^{-13}}{4\cdot3\cdot1.38\,10^{-23}\cdot2.7} = 4.1\,10^{20}\,MeV\\
+    T_{p}(\pi^{0}/\pi^{+}) &= \frac{(135/139.6 + 938.3)^{2}\cdot1.6\,10^{-13}}{4\cdot3\cdot1.38\,10^{-23}\cdot2.7} = 4.1\,10^{20}\,eV\\
   \end{align*}
 #+END_SRC
 
