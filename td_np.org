@@ -2,10 +2,6 @@
 #+AUTHOR: Xavier Garrido
 #+DATE: 25/11/13
 #+OPTIONS: ^:{} toc:2
-#+LATEX_CLASS: snemo-note
-#+LATEX_HEADER: \renewcommand{\contentsname}{}
-#+LATEX_HEADER: \newcommand{\vv}[1]{\overrightarrow{#1}}
-#+LATEX: \newpage
 
 * TD1 : Cinématique & Accélérateurs
 ** Introduction
@@ -25,7 +21,7 @@ Noyau :\nbsp^{A}_{Z}X \rightarrow Z protons  + N neutrons = A nucléons (nombre 
 
 Certains noyaux sont stables, d'autres radioactifs se désintégrant spontanément
 
-$$^{14}_{6}C \rightarrow\nbsp^{14}_{7}N + e^{-} + \bar{\nu}_{e}$$
+$$^{14}_{6}C \rightarrow ^{14}_{7}N + e^{-} + \bar{\nu}_{e}$$
 
 Pour étudier le noyau, on forme des réactions nucléaires qui obéissent à des
 lois de conservation (charge, nombre de nucléons, parité...). On bombarde une
@@ -49,9 +45,9 @@ contenant A nucléons
 
 $$V = \frac{4}{3}\pi\,R^{3} \propto A$$
 
-On déduit que la rayon d'un noyau est proportionnel à son nombre de nucléons
-*R = r_{0} \times A^{1/3}*. Expérimentalement, r_{0} est compris entre 1.2 et 1.5
-fermi où 1 fm = 10^{-15} m = 10^{-13} cm. La valeur la plus probable est r_{0} =
+On déduit que la rayon d'un noyau est proportionnel à son nombre de nucléons $R
+= r_{0} \times A^{1/3}$. Expérimentalement, $r_{0}$ est compris entre 1.2 et 1.5
+fermi où 1 fm = 10^{-15} m = 10^{-13} cm. La valeur la plus probable est $r_{0}$ =
 1.25 fm.
 
 ** Ordres de grandeurs
@@ -61,7 +57,7 @@ fermi où 1 fm = 10^{-15} m = 10^{-13} cm. La valeur la plus probable est r_{0} 
     \begin{align*}
       V = \frac{4}{3}\pi\,R^{3} &= \frac{4}{3}\pi\,(r_{0}\,A^{1/3}) \\
       V(^{12}_{6}C)&= \frac{4}{3}\pi\,(1.25\times12^{1/3}) \\
-      &\simeq 100\,fm^3 = 10^{-37}\, cm^3
+      &\simeq \unit[100]{fm^3} = \unit[10^{-37}]{cm^3}
     \end{align*}
 #+END_SRC
 
@@ -69,21 +65,21 @@ fermi où 1 fm = 10^{-15} m = 10^{-13} cm. La valeur la plus probable est r_{0} 
   \nbsp^{12}_{6}C \rightarrow noyau particulier à partir duquel est défini
   l'unité de masse atomique
 
-$$1\,u.m.a = \frac{masse(^{12}_{6}C)}{12} = 931.5\,MeV/c^{2}$$
+$$\unit[1]{u.m.a} = \frac{\text{masse}(^{12}_{6}C)}{12} = \unit[931.5]{MeV/c^{2}}$$
 
 d'où
 
 #+BEGIN_SRC latex
   \begin{align*}
-    m(^{12}_{6}C)c^2 &= 12\times931.5\,MeV = 12\times931.5\times1.6\,10^{-19}\,J \\
-    m(^{12}_{6}C)    &= \frac{12\times931.5\times1.6\,10^{-19}}{(3\,10^8)^2} = 2\,10^{-26}\,kg = 2\,10^{-23}\,g\\
+    m(^{12}_{6}C)c^2 &= 12\times\unit[931.5]{MeV} = 12\times931.5\times\unit[1.6\,10^{-19}]{J} \\
+    m(^{12}_{6}C)    &= \frac{12\times931.5\times1.6\,10^{-19}}{(3\,10^8)^2} = \unit[2\,10^{-26}]{kg} = \unit[2\,10^{-23}]{g}\\
   \end{align*}
 #+END_SRC
 
 On en déduite que la masse volumique est égale à
 
 $$\rho(^{12}_{6}C) = \frac{m(^{12}_{6}C)}{V(^{12}_{6}C)} =
-\frac{2\,10^{-23}}{10^{-37}} = 2\,10^{14} g/cm^3$$
+\frac{2\,10^{-23}}{10^{-37}} = \unit[2\,10^{14}]{g/cm^3}$$
 
 À titre de comparaison, le bois a une densité moyenne de 0.6 -- 1 g/cm^{3}, le
 fer environ 10 g/cm^{3}, la Terre de 6 g/cm^{3} et l'Uranium de 19 g/cm^{3}.
@@ -115,12 +111,12 @@ de a au repos mc^{2} et vitesse de a \beta=v/c
      \end{align*}
    #+END_SRC
 
-   or E_{1}^{*} = p_{1}^{*}c et E_{2}^{*} = p_{2}^{*}c d'où E_{1}^{*} =
-   E_{2}^{*} = $\frac{mc^{2}}{2}$.
+   or $E_{1}^{*} = p_{1}^{*}c$ et $E_{2}^{*} = p_{2}^{*}c$ d'où $E_{1}^{*} =
+   E_{2}^{*} = \frac{mc^{2}}{2}$.
 
    Pour déterminer les valeurs d'énergie et d'impulsion dans le référentiel du
-   laboratoire \(\mathcal{R}\), on applique la transformation de Lorentz le long
-   de l'axe z au quadrivecteur énergie -- impulsion
+   laboratoire $\mathcal{R}$, on applique la transformation de Lorentz le long
+   de l'axe z au quadrivecteur énergie-impulsion
 
    #+BEGIN_SRC latex
      \begin{equation*}
@@ -162,12 +158,12 @@ de a au repos mc^{2} et vitesse de a \beta=v/c
      \end{align*}
    #+END_SRC
 
-   L'énergie minimum E_{min} et maximum E_{max} sont les mêmes pour E_{1} et
-   E_{2} avec cos \theta^{*} \in [-1;1] /i.e./
+   L'énergie minimum \(E\)_{min} et maximum \(E\)_{max} sont les mêmes pour \(E\)_{1} et
+   \(E\)_{2} avec cos\nbsp\theta^{*} \in\nbsp[-1;1] /i.e./
    #+BEGIN_SRC latex
      \begin{align*}
-       E_{min} &= \frac{\gamma\,mc^2}{2}(1 - \beta) = \frac{mc^2}{2}\sqrt{\frac{1-\beta}{1+\beta}}\\
-       E_{max} &= \frac{\gamma\,mc^2}{2}(1 + \beta) = \frac{mc^2}{2}\sqrt{\frac{1+\beta}{1-\beta}}
+       E_\text{min} &= \frac{\gamma mc^2}{2}(1 - \beta) = \frac{mc^2}{2}\sqrt{\frac{1-\beta}{1+\beta}}\\
+       E_\text{max} &= \frac{\gamma mc^2}{2}(1 + \beta) = \frac{mc^2}{2}\sqrt{\frac{1+\beta}{1-\beta}}
      \end{align*}
    #+END_SRC
    où $\gamma=1/\sqrt{1-\beta^{2}}$.
@@ -176,7 +172,7 @@ de a au repos mc^{2} et vitesse de a \beta=v/c
 
    Invariant relativiste $I = (\Upsigma_{i}E_{i})^{2} -
    (\Upsigma_{i}\vv{p_{i}}^{*})^{2}\,c^{2}$ constant quelque soit le
-   référentiel \rightarrow *I_{cdm} = I_{lab.}*
+   référentiel \rightarrow $I_\text{cdm} = I_\text{lab.}$
 
    #+BEGIN_SRC latex
      \begin{align*}
@@ -184,15 +180,15 @@ de a au repos mc^{2} et vitesse de a \beta=v/c
        (mc^2)^2 &= E_1^2 + E_2^2 + 2E_1E_2 - (p_1c)^2 - (p_2c)^2 - 2p_1p_2c^2\,\cos\omega
      \end{align*}
    #+END_SRC
-   or E_{1} = p_{1}c et E_{2} = p_{2}c d'où
+   or $E_{1} = p_{1}c$ et $E_{2} = p_{2}c$ d'où
    #+BEGIN_SRC latex
      \begin{align*}
        \frac{(mc^2)^2}{2} &= E_1E_2 - p_1p_2c^2\,\cos\omega\\
        \frac{(mc^2)^2}{2} &= E_1E_2\cdot(1 - \cos\omega)
      \end{align*}
    #+END_SRC
-   En remplaçant E_{1,2} par leurs expressions déduites de la question 1), on a
-   $E_{1}E_{2} = \left(\frac{\gamma\,mc^2}{2}\right)^2\cdot\left(1 -
+   En remplaçant $E_{1,2}$ par leurs expressions déduites de la question 1), on a
+   $E_{1}E_{2} = \left(\frac{\gamma mc^2}{2}\right)^2\cdot\left(1 -
    \beta^2\cos^2\theta^*\right)$, soit finalement
 
    $$1 - \cos\omega = \frac{2}{\gamma^2\,(1 - \beta^2\cos^2\theta^*)}$$
@@ -200,7 +196,7 @@ de a au repos mc^{2} et vitesse de a \beta=v/c
 ** Énergie seuil
 
 #+BEGIN_CENTER
-Réaction : a + b \rightarrow c + d + e + f
+Réaction : $a + b \rightarrow c + d + e + f$
 #+END_CENTER
 
 Par définition, l'énergie seuil est l'énergie *juste nécessaire* à la création
@@ -209,70 +205,69 @@ des particules en voie de sortie sans que ces dernières n'aient d'impulsion
 
 1) Dans le référentiel du centre de masse, on applique la conservation de
    l'énergie totale sachant que les particules produites sont au repos /i.e./
-   $\vv{p_c}^* = \vv{p_d}^* = \vv{p_e}^* =
-   \vv{p_f}^* = \vv{0}$. Par ailleurs,
-   $\vv{p_a}^* = -\vv{p_b}^*$ donc T_{a} = T_{b} =
-   T_{S} et étant donné que m_{a} = m_{b}, l'énergie totale de la particule a
-   est égale à celle de la particule b. En appliquant le principe de
-   conservation de l'énergie totale, on obtient
+   $\vv{p_c}^* = \vv{p_d}^* = \vv{p_e}^* = \vv{p_f}^* = \vv{0}$. Par ailleurs,
+   $\vv{p_a}^* = -\vv{p_b}^*$ donc $T_{a} = T_{b} = T_{S}$ et étant donné que
+   $m_{a} = m_{b}$, l'énergie totale de la particule a est égale à celle de la
+   particule $b$. En appliquant le principe de conservation de l'énergie totale,
+   on obtient
 
    #+BEGIN_SRC latex
      \begin{align*}
-       E_a^* + E_b^* &= m_cc^2 + m_dc^2 + m_ec^2 + m_fc^2 = \Upsigma m_{finale}c^2\\
-       2T_S + 2mc^2 &= \Upsigma m_{finale}c^2
+       E_a^* + E_b^* &= m_cc^2 + m_dc^2 + m_ec^2 + m_fc^2 = \Upsigma m_\text{finale}c^2\\
+       2T_S + 2mc^2 &= \Upsigma m_\text{finale}c^2
      \end{align*}
    #+END_SRC
 
    soit
 
-   $$T_{S} = \frac{\Upsigma m_{finale}c^2 - \Upsigma m_{initiale}c^2}{2}$$
+   $$T_{S} = \frac{\Upsigma m_\text{finale}c^2 - \Upsigma m_\text{initiale}c^2}{2}$$
 
-   En définissant Q comme la chaleur de réaction /i.e./ l'énergie disponible
-   dans la réaction où Q = \Upsigma m_{initiale}c^{2} - \Upsigma m_{finale}c^{2}
-   et T_{S} = |Q|/2, on distingue 3 situations :
+   En définissant $Q$ comme la chaleur de réaction /i.e./ l'énergie disponible
+   dans la réaction où $Q = \Upsigma m_\text{initiale}c^{2} - \Upsigma
+   m_\text{finale}c^{2}$ et $T_{S} = |Q|/2$, on distingue 3 situations :
 
    - Q > 0 :: la réaction est éxoénergétique c'est-à-dire spontanée. Dans ce cas,
               il n'y a pas d'énergie seuil, la réaction se faisant d'elle même,
    - Q < 0 :: la réaction est dite endoénergétique et n'est envisageable qu'à la
               condition de fournir de l'énergie (cinétique) en voie d'entrée.
 
-2) Réaction dans le référentiel du laboratoire : soit un faisceau de particule a
-   envoyé sur une cible fixe constituée de particule b \rightarrow
-   $\vv{p_b} = \vv{0}$. L'énergie seuil est la valeur
-   minimale de T_{a} suffisant à la création des particules c, d, e, f au
-   repos. L'invariant relativiste I est égal à
+2) Réaction dans le référentiel du laboratoire : soit un faisceau de particule
+   $a$ envoyé sur une cible fixe constituée de particule $b \rightarrow \vv{p_b}
+   = \vv{0}$. L'énergie seuil est la valeur minimale de $T_{a}$ suffisant à la
+   création des particules $c, d, e, f$ au repos. L'invariant relativiste $I$
+   est égal à
    #+BEGIN_SRC latex
      \begin{align*}
-       I_{lab.} = \left(\Upsigma m_{finale}c^2\right)^2 &= \left(\Upsigma E\right)^2 - \left(\Upsigma pc\right)^2\\
+       I_\text{lab.} = \left(\Upsigma m_\text{finale}c^2\right)^2 &= \left(\Upsigma E\right)^2 - \left(\Upsigma pc\right)^2\\
        &= (T_S + m_ac^2 + m_bc^2)^2 - (p_ac)^2\\
-       &= (T_S + \Upsigma m_{initiale}c^2)^2 - (p_ac)^2
+       &= (T_S + \Upsigma m_\text{initiale}c^2)^2 - (p_ac)^2
      \end{align*}
    #+END_SRC
 
-   or E^{2} = p^{2}c^{2} + m^{2}c^{4} = (T + mc^{2})^{2} \rightarrow (pc)^{2} =
-   T^{2} + 2Tmc^{2}. On déduit ainsi l'expression de I_{lab.}
+   or $E^{2} = p^{2}c^{2} + m^{2}c^{4} = (T + mc^{2})^{2} \rightarrow (pc)^{2} =
+   T^{2} + 2Tmc^{2}$. On déduit ainsi l'expression de $I_\text{lab.}$
    #+BEGIN_SRC latex
      \begin{align*}
-       I_{lab.} = \left(\Upsigma m_{finale}c^2\right)^2 &= T_S^2 + 2T_S\Upsigma m_{initiale}c^2 + \left(\Upsigma m_{initiale}c^2\right)^2 - T_S^2 - 2T_Sm_ac^2\\
-       &= 2T_Sm_bc^2 + \left(\Upsigma m_{initiale}c^2\right)^2
+       I_\text{lab.} = \left(\Upsigma m_\text{finale}c^2\right)^2 &= T_S^2 + 2T_S\Upsigma m_\text{initiale}c^2 + \left(\Upsigma m_\text{initiale}c^2\right)^2 - T_S^2 - 2T_Sm_ac^2\\
+       &= 2T_Sm_bc^2 + \left(\Upsigma m_\text{initiale}c^2\right)^2
      \end{align*}
    #+END_SRC
 
 Finalement,
 #+BEGIN_SRC latex
   \begin{align*}
-   2T_Sm_bc^2 + \left(\Upsigma m_{initiale}c^2\right)^2 &= \left(\Upsigma m_{finale}c^2\right)^2\\
-   2T_Sm_bc^2 &= \left(\Upsigma m_{finale}c^2\right)^2 - \left(\Upsigma m_{initiale}c^2\right)^2\\
-   2T_Sm_bc^2 &= \left(\Upsigma m_{finale}c^2 - \Upsigma m_{initiale}c^2\right)\left(\Upsigma m_{finale}c^2 + \Upsigma m_{initiale}c^2\right)\\
-   2T_Sm_bc^2 &= |Q|\cdot\left(\Upsigma m_{finale}c^2 + \Upsigma m_{initiale}c^2\right)
+   2T_Sm_bc^2 + \left(\Upsigma m_\text{initiale}c^2\right)^2 &= \left(\Upsigma m_\text{finale}c^2\right)^2\\
+   2T_Sm_bc^2 &= \left(\Upsigma m_\text{finale}c^2\right)^2 - \left(\Upsigma m_\text{initiale}c^2\right)^2\\
+   2T_Sm_bc^2 &= \left(\Upsigma m_\text{finale}c^2 - \Upsigma m_\text{initiale}c^2\right)\left(\Upsigma m_\text{finale}c^2 + \Upsigma m_\text{initiale}c^2\right)\\
+   2T_Sm_bc^2 &= |Q|\cdot\left(\Upsigma m_\text{finale}c^2 + \Upsigma m_\text{initiale}c^2\right)
   \end{align*}
 #+END_SRC
 
 L'énergie cinétique minimum du faisceau incident est ainsi
 
-$$T_S^{lab.} = \frac{|Q|\cdot\Upsigma m_{initiale,finale}c^2}{2\cdot
-m_{cible}c^2} = T_S^{cdm}\cdot\frac{\Upsigma
-m_{initiale,finale}c^2}{m_{cible}c^2}\geq T_S^{cdm}$$
+$$T_S^\text{lab.} = \frac{|Q|\cdot\Upsigma m_\text{initiale,finale}c^2}{2\cdot
+m_\text{cible}c^2} = T_S^\text{cdm}\cdot\frac{\Upsigma
+m_\text{initiale,finale}c^2}{m_\text{cible}c^2}\geq T_S^\text{cdm}$$
 ** Accélérateurs
 *** Introduction
 - cyclotron :: Le cyclotron est un type d’accélérateur de particules circulaire
@@ -301,88 +296,87 @@ m_{initiale,finale}c^2}{m_{cible}c^2}\geq T_S^{cdm}$$
                  utilisable très élevée. Ce sont des collisionneurs.
 *** Exercice
 
-Proton de masse m = 938.27 MeV/c^{2} se déplaçant à la vitesse $\vv{v}$ dans un
-champ d'induction $\vv{B}$ normal à $\vv{v}$.
+Proton de masse $m = \unit[938.27]{MeV/c^{2}}$ se déplaçant à la vitesse
+$\vv{v}$ dans un champ d'induction $\vv{B}$ normal à $\vv{v}$.
 
 1) PDF: $\Upsigma\vv{F} = m\vv{a} = \frac{d\vv{p}}{dt}$
 
-   Régime relativiste m = \gamma{}m_{0} \rightarrow $\vv{p}$ = \gamma{}m_{0}$\vv{v}$
-   et donc $d\vv{p}/dt$ = \gamma{}m_{0}$d\vv{v}/dt$. Or $d\vv{v}/dt$ =
-   R(d\theta/dt)^{2}$\vv{u}_{r}$ = v^{2}/R$\vv{u}_{r}$. Soit
+   Régime relativiste $m = \gamma{}m_{0} \rightarrow \vv{p} =
+   \gamma{}m_{0}\vv{v}$ et donc $\text{d}\vv{p}/\text{d}t =
+   \gamma{}m_{0}\text{d}\vv{v}/\text{d}t$. Or $\text{d}\vv{v}/\text{d}t =
+   R(\text{d}\theta/\text{d}t)^{2}\vv{u}_{r} = v^{2}/R\vv{u}_{r}$. Soit
 
    $$\Upsigma\vv{F} = q\vv{v}\times\vv{B} = qvB\vv{u}_r$$
    $$qvB = \frac{\gamma{}m_{0}v^{2}}{R}$$
    $$R = \frac{\gamma{}mv}{qB} = \frac{p}{qB}$$
 
-   À chaque tour, v\nearrow avec $\vv{B}=constante$ donc R\nearrow
+   À chaque tour, $v\nearrow$ avec $\vv{B}=\text{constante}$ donc $R\nearrow$
 
-2) Calcul de t_{0}
+2) Calcul de $t_{0}$
 
-   $$\frac{d\theta}{dt} = \omega = \frac{v}{R} = \frac{qbR}{\gamma{}mR} =
+   $$\frac{\text{d}\theta}{\text{d}t} = \omega = \frac{v}{R} = \frac{qbR}{\gamma{}mR} =
    \frac{qB}{\gamma{}m}$$
    $$t_{0} = \frac{2\pi}{\omega} = \frac{2\pi}{qB}\cdot\gamma{}m$$
 
-   Pour v\ll{}c, \gamma~1 et donc $$t_{0} = \frac{2\pi\,m}{qB}$$
+   Pour $v\ll c$, $\gamma\sim 1$ et donc $$t_{0} = \frac{2\pi m}{qB}$$
 
-3) B = 1.5T et R = 0.5m.
+3) $B = 1.5$ T et $R = 0.5$ m.
 
    #+BEGIN_SRC latex
      \begin{align*}
        p  &= qBR\\
        pc &= qRBc\\
-       pc &= 0.5\cdot1.5\cdot3\,10^{8} = 225\,MeV
+       pc &= 0.5\cdot1.5\cdot3\,10^{8} = \unit[225]{MeV}
      \end{align*}
    #+END_SRC
 
    $$T = \frac{p^{2}}{2m} = \frac{p^{2}c^{2}}{2mc^{2}} =
-   \frac{225^{2}}{2\cdot938.3} = 27\,MeV$$
+   \frac{225^{2}}{2\cdot938.3} = \unit[27]{MeV}$$
 
-   $$t_{0} = \frac{2\pi\,m}{qB} = \frac{2\pi\,mc^{2}}{qBc^{2}} = 44\,ns$$
+   $$t_{0} = \frac{2\pi\,m}{qB} = \frac{2\pi\,mc^{2}}{qBc^{2}} = \unit[44]{ns}$$
 
 4) $t = \frac{2\pi\gamma\,m}{qB}$ et $t_{0} = \frac{2\pi\,m}{qB}$
 
    $$\frac{t-t_{0}}{t_{0}}\ge5\%$$
    $$\frac{t_{lim.}}{t_{0}} = \gamma = 1.05$$
-   $$T = (\gamma - 1)mc^{2} = 5\%\cdot938.3\,MeV = 47\,MeV$$
+   $$T = (\gamma - 1)mc^{2} = 5\%\cdot\unit[938.3]{MeV} = \unit[47]{MeV}$$
 
    Dans un cyclotron, dès lors que l'énergie par nucléon devient supérieure à
    ~50 MeV, des problèmes relativistes apparaissent /i.e./ la particule n'est
    plus accélérée en phase avec le champ électrique accélérateur \rightarrow
    *synchrocyclotron ou synchrotron*
 
-5) La fréquence de rotation $f = \frac{v}{2\pi\,R} = \frac{qB}{2\pi\,m}$
+5) La fréquence de rotation $f = \frac{v}{2\pi R} = \frac{qB}{2\pi m}$
    - synchrocyclotron :: on fait varier la fréquence f d'accélération pour
-        compenser la variation de v
-   - synchrotron :: on fait varier le champ magnétique B pour maintenir la
-                    particule sur la même trajectoire /i.e./ le même rayon R
+        compenser la variation de $v$
+   - synchrotron :: on fait varier le champ magnétique $B$ pour maintenir la
+                    particule sur la même trajectoire /i.e./ le même rayon $R$
 
-   T = 7 TeV et B = 5.4 T avec $R = \frac{\gamma\,mv}{qB} = \frac{pc}{qBc}$. Or
+   $T$ = 7 TeV et $B$ = 5.4 T avec $R = \frac{\gamma mv}{qB} = \frac{pc}{qBc}$. Or
    #+BEGIN_SRC latex
-     \begin{align*}
-       (pc)^{2} &= E^{2} - m^{2}c^{4}\\
-       &= T^{2} + m^{2}c^{4} + 2Tmc^{2} - m^{2}c^{4}\\
-       &= T\cdot(T + 2mc^{2}) \sim T^{2}
-     \end{align*}
+   \begin{align*}
+   (pc)^{2} &= E^{2} - m^{2}c^{4}\\
+   &= T^{2} + m^{2}c^{4} + 2Tmc^{2} - m^{2}c^{4}\\
+   &= T\cdot(T + 2mc^{2}) \sim T^{2}
+   \end{align*}
    #+END_SRC
-   d'où
-   $$R = \frac{T}{qBc} =
+   d'où $$R = \frac{T}{qBc} =
    \frac{7\,10^{12}\cdot1.6\,10^{19}}{1.6\,10^{19}\cdot5.4\cdot3\,10^{8}} =
-   4.3\,km$$
-   soit une circonférence de 26 km.
+   \unit[4.3]{km}$$ soit une circonférence de 26 km.
 
-6) p + p \rightarrow p + p + N^{+} + N^{-}
+6) $p + p \rightarrow p + p + N^{+} + N^{-}$
 
-   T_{S} = |Q|/2 avec $Q = \Upsigma\,m_{initiale}c^{2} -
-   \Upsigma\,m_{finale}c^{2}$ et
+   $T_{S} = |Q|/2$ avec $Q = \Upsigma\,m_\text{initiale}c^{2} -
+   \Upsigma\,m_\text{finale}c^{2}$ et
 
    #+BEGIN_SRC latex
      \begin{align*}
-       \Upsigma\,m_{initiale}c^{2} &= 2\,m_{p}c^{2}\\
-       \Upsigma\,m_{finale}c^{2} &= 2\,m_{p}c^{2} + 2\,m_{N}c^{2}
+       \Upsigma\,m_\text{initiale}c^{2} &= 2\,m_{p}c^{2}\\
+       \Upsigma\,m_\text{finale}c^{2} &= 2\,m_{p}c^{2} + 2\,m_{N}c^{2}
      \end{align*}
    #+END_SRC
 
-   $$T_{S} = \frac{2m_{N}c^{2}}{2} = m_{N}c^{2} = 7\,TeV$$
+   $$T_{S} = \frac{2m_{N}c^{2}}{2} = m_{N}c^{2} = \unit[7]{TeV}$$
 
 7) Réaction sur cible fixe
 
@@ -391,13 +385,14 @@ champ d'induction $\vv{B}$ normal à $\vv{v}$.
        T_{S} &= \frac{|Q|}{2}\cdot\frac{\Upsigma\,m_{if}c^{2}}{2m_{p}c^{2}}\\
        &= \frac{2m_{N}c^{2}}{2}\cdot\frac{4m_{p}c^{2}+2m_{N}c^{2}}{2m_{p}c^{2}}\\
        &\simeq\frac{(m_{N}c^{2})^{2}}{m_{p}c^{2}}\\
-       &\simeq 50\,10^{6}\,GeV = 50\,PeV
+       &\simeq\unit[50\,10^{6}]{GeV} = \unit[50]{PeV}
      \end{align*}
    #+END_SRC
 
 8) Rayon de courbure
 $$R = \frac{pc}{qBc} \simeq \frac{T_{S}(eV)}{Bc} =
-\frac{50\,PeV}{5.4\cdot3\,10^{8}} = 30\, 000\,km$$
+\frac{50\,PeV}{5.4\cdot3\,10^{8}} = \unit[30\, 000]{km}$$
+
 * TD2 : Nombres Quantiques & Symétries
 ** Énergie maximum des rayons cosmiques
 $$p + \gamma \rightarrow p + \pi^{+}$$
@@ -406,26 +401,27 @@ $$p + \gamma \rightarrow n + \pi^{0}$$
 Calcul de l'invariant relativiste :
 #+BEGIN_SRC latex
   \begin{align*}
-    I(sortie) &= (m_{p}c^{2} + m_{\pi}c^{2})^{2}\\
-    I(entree) &= (E_{p} + E_{\gamma})^{2} - (\vv{p}_{p} + \vv{p}_{\gamma})^{2}c^{2}
+    I(\text{sortie}) &= (m_{p}c^{2} + m_{\pi}c^{2})^{2}\\
+    I(\text{entrée}) &= (E_{p} + E_{\gamma})^{2} - (\vv{p}_{p} + \vv{p}_{\gamma})^{2}c^{2}
   \end{align*}
 #+END_SRC
 
-Proton ultra-relativiste E_{p}~T_{p} = p_{p}c
+Proton ultra-relativiste $E_{p}\sim T_{p} = p_{p}c$
 #+BEGIN_SRC latex
   \begin{align*}
-    I(entree) &= E_{p}^{2} + E_{\gamma}^{2} + 2E_{p}E_{\gamma} - E_{\gamma}^{2} - E_{p}^{2} - 2E_{\gamma}E_{p}\cos\theta\\
+    I(\text{entrée}) &= E_{p}^{2} + E_{\gamma}^{2} + 2E_{p}E_{\gamma} - E_{\gamma}^{2} - E_{p}^{2} - 2E_{\gamma}E_{p}\cos\theta\\
     &= 2E_{p}E_{\gamma}(1 - \cos\theta)
   \end{align*}
 #+END_SRC
 
 d'où l'énergie seuil
-$$E_{p} \sim T_{p} = \frac{\left(\Upsigma\,m_{finale}c^{2}\right)^{2}}{2E_{\gamma}(1-\cos\theta)}$$
+$$E_{p} \sim T_{p} = \frac{\left(\Upsigma\,m_\text{finale}c^{2}\right)^{2}}{2E_{\gamma}(1-\cos\theta)}$$
 
-Cas limites: $$\theta\rightarrow0; T_{p}\rightarrow\infty$$ et $$\theta = 180°;
-T_{p} = \frac{\left(\Upsigma\,m_{finale}c^{2}\right)^{2}}{4E_{\gamma}}$$
+Cas limites: $$\theta\rightarrow0; T_{p}\rightarrow\infty$$ et $$\theta =
+180^\circ; T_{p} =
+\frac{\left(\Upsigma\,m_\text{finale}c^{2}\right)^{2}}{4E_{\gamma}}$$
 
-AN: m_{\pi^{0}}c^{2} = 135 MeV et m_{\pi^{+}}c^{2} = 139.6 MeV
+AN: $m_{\pi^{0}}c^{2}$ = 135 MeV et $m_{\pi^{+}}c^{2}$ = 139.6 MeV
 #+BEGIN_SRC latex
   \begin{align*}
     T_{p}(\pi^{0}/\pi^{+}) &= \frac{(135/139.6 + 938.3)^{2}\cdot1.6\,10^{-13}}{4\cdot3\cdot1.38\,10^{-23}\cdot2.7} = 4.1\,10^{20}\,eV\\
@@ -440,7 +436,7 @@ AN: m_{\pi^{0}}c^{2} = 135 MeV et m_{\pi^{+}}c^{2} = 139.6 MeV
 *Discussion :* Les pertes énergétiques résultantes de la photoproduction de
 pions sont de l’ordre de 15% par interaction ; le libre parcours moyen \lambda
 est typiquement le mégaparsec[fn:1]. Ainsi, l’énergie moyenne d’un proton
-diminue de façon significative au cours de sa prop- agation dans l’Univers comme
+diminue de façon significative au cours de sa propagation dans l’Univers comme
 le montre la Figure [[fig::proton_attenuation]]. Un proton avec une énergie initiale
 de 10^{22} eV voit son énergie réduite à 10^{20} eV après avoir parcouru 100
 Mpc. Une diminution nette du flux appelée coupure GZK est alors attendue au

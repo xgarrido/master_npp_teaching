@@ -5,3 +5,366 @@
 
 This repository contains materials for Nuclear & Particle Physics classes given
 in Master 1 of Fundamental Physics at the University of Paris Sud.
+
+* Installation
+
+You will need special =orgmode= settings to translate the =org= files into =pdf=
+documents. All the needed code is embedded within this file in the next
+sections. There is no need to detangle this file since emacs will do it when you
+will use the Makefile in the corresponding directories. So, next step will be to
+do =make= within the different directories.
+
+* Orgmode settings
+:PROPERTIES:
+:TANGLE: README.el
+:END:
+** Settings for =org= to =pdf= conversion
+*** Requirements
+#+BEGIN_SRC emacs-lisp
+  (require 'ox-latex)
+#+END_SRC
+*** Use smart quote when exporting
+#+BEGIN_SRC emacs-lisp
+  (setq org-export-with-smart-quotes t)
+#+END_SRC
+
+*** Place table caption below table
+#+BEGIN_SRC emacs-lisp
+  (setq org-latex-table-caption-above nil)
+#+END_SRC
+*** No author
+#+BEGIN_SRC emacs-lisp
+  (setq org-export-with-author nil)
+#+END_SRC
+*** Code blocks
+This activates a number of widely used languages, you are encouraged to activate
+more languages using the customize interface for the =org-babel-load-languages=
+variable, or with an elisp form like the one below.  The customize interface of
+=org-babel-load-languages= contains an up to date list of the currently
+supported languages.
+#+BEGIN_SRC emacs-lisp
+  (org-babel-do-load-languages
+   'org-babel-load-languages
+   '((emacs-lisp . t)
+     (latex . t)))
+#+END_SRC
+
+You are encouraged to add the following to your personal configuration
+although it is not added by default as a security precaution.
+#+BEGIN_SRC emacs-lisp
+  (setq org-confirm-babel-evaluate nil)
+#+END_SRC
+
+*** =minted= setup
+Code fragments are syntax highlighted using [[https://code.google.com/p/minted/][minted]] LaTeX package
+
+#+BEGIN_SRC emacs-lisp
+  (setq org-latex-listings 'minted)
+  (setq org-latex-minted-options
+        '(;;("frame" "lines")
+          ("fontsize" "\\footnotesize")
+          ("samepage" "")
+          ("mathescape" "")
+          ("xrightmargin" "0.5cm")
+          ("xleftmargin"  "0.5cm")
+          ))
+#+END_SRC
+
+*** Default list of LaTeX packages
+Only include one default package and remove all the crapppy stuff included by
+=org= \rightarrow =latex= translation.
+
+#+BEGIN_SRC emacs-lisp
+  (add-to-list 'org-latex-packages-alist '("" "latex.d/org-preamble"))
+#+END_SRC
+
+*** Defining =org-latex-classes=
+
+#+BEGIN_SRC emacs-lisp
+  (unless (boundp 'org-latex-classes)
+    (setq org-latex-classes nil))
+#+END_SRC
+
+**** Class template
+#+BEGIN_SRC emacs-lisp :results none
+  (add-to-list 'org-latex-classes
+               '("npp-class"
+                 "\\documentclass{scrartcl}
+                  [PACKAGES]
+                  \\usepackage{latex.d/lecture-style}
+                  [NO-DEFAULT-PACKAGES]"
+                 ("\\section{%s}" . "\\section*{%s}")
+                 ("\\subsection{%s}" . "\\subsection*{%s}")
+                 ("\\subsubsection{%s}" . "\\subsubsection*{%s}")
+                 ("\\paragraph{%s}" . "\\paragraph*{%s}")
+                 ("\\subparagraph{%s}" . "\\subparagraph*{%s}")))
+#+END_SRC
+*** Define dedicated function for export
+#+BEGIN_SRC emacs-lisp
+  (defun npp-export-classes ()
+    (progn
+      (setq org-latex-default-class "npp-class")
+      (org-latex-export-to-pdf)
+      ))
+#+END_SRC
+*** Set LaTeX command
+#+BEGIN_SRC emacs-lisp
+  (defun npp-latexmk-cmd (backend)
+    "When exporting from .org with latex, automatically run latex,
+        pdflatex, or xelatex as appropriate, using latexmk."
+    (when (org-export-derived-backend-p backend 'latex)
+      (setq org-latex-pdf-process '("jobname=$(basename %f | sed 's/\.tex//');latexmk -xelatex -shell-escape %f; mv ${jobname}.* latex.d/.; mv latex.d/${jobname}.{org,tex,pdf,fdb_latexmk,toc,aux} ."))
+      )
+    )
+  (org-add-hook 'org-export-before-processing-hook 'npp-latexmk-cmd)
+#+END_SRC
+*** LaTeX stylesheets
+**** Org preamble
+:PROPERTIES:
+:MKDIRP: yes
+:TANGLE: latex.d/org-preamble.sty
+:END:
+
+This section defines =org= preamble and settings for documents exported from
+=.org= to =.tex= files. The basic use is to add =\usepackage{org-preamble}= in
+your LaTeX document.
+
+***** Basics
+#+BEGIN_SRC latex
+  \NeedsTeXFormat{LaTeX2e}
+  \ProvidesPackage{org-preamble}[2013/03/03 v0.01 Bundling of Preamble items for Org to LaTeX export]
+#+END_SRC
+
+***** Style options
+Options can be passed to =org-preamble= style file within =\usepackage[options]=
+call. For the time being, I have only copied/pasted how to declare such options
+but do not use it.
+#+BEGIN_SRC latex :tangle no
+  \RequirePackage{ifthen}
+  \newboolean{@fr} %
+  \setboolean{@fr}{false} %
+  \DeclareOption{fr}{
+    \setboolean{@fr}{true}
+  }
+  \ProcessOptions
+#+END_SRC
+
+***** Packages requirements
+****** AMS packages
+#+BEGIN_SRC latex
+  \RequirePackage{amsmath,amssymb}
+#+END_SRC
+****** Listings package
+[[https://code.google.com/p/minted/][minted]] is a package that facilitates expressive syntax highlighting in LaTeX
+using the powerful Pygments library. The package also provides options to
+customize the highlighted source code output using =fancyvrb=.
+#+BEGIN_SRC latex
+  \RequirePackage[cache]{minted}
+#+END_SRC
+
+****** Unicode typesettings aka XeTeX
+#+BEGIN_SRC latex
+  \RequirePackage{ifxetex}
+  \ifxetex
+  \RequirePackage{fontspec}
+  \RequirePackage{xunicode}
+  %%\else
+  \fi
+#+END_SRC
+
+****** hyperref package
+#+BEGIN_SRC latex
+  \RequirePackage{hyperref}
+#+END_SRC
+****** [[http://www.ctan.org/pkg/pifont][pifont]] package
+#+BEGIN_SRC latex
+  \RequirePackage{pifont}
+#+END_SRC
+****** graphics package
+#+BEGIN_SRC latex
+  \RequirePackage{graphicx}
+  \graphicspath{
+    {./plot/}
+    {./figures/}
+  }
+#+END_SRC
+****** =comment= package
+#+BEGIN_SRC latex
+  \RequirePackage{comment}
+#+END_SRC
+****** [[http://www.texample.net/tikz/][tikz]] package
+#+BEGIN_SRC latex
+  \RequirePackage{tikz}
+  \usetikzlibrary{positioning,arrows,decorations,backgrounds,patterns,matrix,shapes,fit,calc,shadows,plotmarks,spy}
+#+END_SRC
+
+We use the external library from =tikz= to cache i.e. produce a =pdf= file of
+each =tikzpicture=. =tikz/external= looks if the pdf exist and if not, export it.
+#+BEGIN_SRC latex :tangle no
+  \input "|mkdir -p latex.d"
+  \input "|mkdir -p /tmp/latex.d"
+#+END_SRC
+
+****** units package
+#+BEGIN_SRC latex
+\RequirePackage{units}
+#+END_SRC
+****** degree symbol
+#+BEGIN_SRC latex
+\RequirePackage{textcomp}
+#+END_SRC
+**** Class style
+:PROPERTIES:
+:MKDIRP: yes
+:TANGLE: latex.d/lecture-style.sty
+:END:
+***** General settings
+****** Basics
+#+BEGIN_SRC latex
+  \NeedsTeXFormat{LaTeX2e}
+  \ProvidesPackage{npp-classes-style}[2013/09/18 v0.01 Custom lecture/course templates]
+#+END_SRC
+****** Package options
+#+BEGIN_SRC latex
+  \RequirePackage{kvoptions}
+  \SetupKeyvalOptions{
+    family=npp,
+    prefix=npp@
+  }
+  \DeclareBoolOption[false]{nologo}
+  \DeclareBoolOption[true]{oldstyle}
+  \ProcessKeyvalOptions*
+#+END_SRC
+****** Parsing options
+Here we parse result of =ProcessKeyvalOptions= done previously in order to set
+different booleans used in the nex section.
+#+BEGIN_SRC latex
+  \RequirePackage{ifthen}
+#+END_SRC
+****** Package requirements
+******* =hyperref= package
+#+BEGIN_SRC latex
+  \hypersetup{
+    xetex,
+    colorlinks=true,
+    urlcolor=blue,
+    filecolor=blue,
+    linkcolor=blue,
+    plainpages=false,
+    pdfpagelabels,
+    bookmarksnumbered,
+    pagebackref
+  }
+#+END_SRC
+***** Template settings
+****** Preamble
+****** Colors
+#+BEGIN_SRC latex
+  \definecolor{red}{RGB}{221,42,43}
+  \definecolor{green}{RGB}{105,182,40}
+  \definecolor{blue}{RGB}{0,51,153}
+  \definecolor{orange}{RGB}{192,128,64}
+  %%\definecolor{gray}{gray}{0.7}
+#+END_SRC
+****** Fonts
+#+BEGIN_SRC latex
+  \setmonofont[Scale=0.9]{Inconsolata}
+  \setsansfont[Mapping=tex-text]{Myriad Pro}
+  \RequirePackage{mathpazo}
+  \RequirePackage{upgreek}
+
+  \ifthenelse{\boolean{npp@oldstyle}}{
+    \setmainfont
+        [ BoldFont       = texgyrepagella-bold.otf ,
+          ItalicFont     = texgyrepagella-italic.otf ,
+          BoldItalicFont = texgyrepagella-bolditalic.otf ]
+        {texgyrepagella-regular.otf}
+  }{
+    \setromanfont[Mapping=tex-text, Numbers=OldStyle]{Minion Pro}
+    \RequirePackage[eulergreek,EULERGREEK]{sansmath}
+    \sansmath
+  }
+#+END_SRC
+****** Layout
+******* Geometry
+#+BEGIN_SRC latex
+  \RequirePackage{a4wide}
+  \linespread{1.02}
+#+END_SRC
+******* Cover page
+#+BEGIN_SRC latex
+  \newcommand{\HRule}{\rule{\linewidth}{1mm}}
+  \renewcommand*{\maketitle}{%
+    {\color{blue}
+    \pagestyle{empty}
+    \vspace*{\stretch{2}}
+    \begin{flushright}
+      \HRule
+      \\[9mm]
+        {
+          \bf\sffamily \Huge \@title
+        }
+        \\[5mm]
+        \HRule
+        \\[9mm]
+    \end{flushright}}
+  }
+#+END_SRC
+******* Footnote
+#+BEGIN_SRC latex
+  \RequirePackage{fancyhdr}
+  \renewcommand{\footnoterule}{\color{blue!75}%
+    \vskip-\footruleskip\vskip-\footrulewidth%
+    \vspace{10pt}\hrule width\columnwidth height1.5pt \vspace{5pt} \color{gray}}
+  \renewcommand{\thefootnote}{\alph{footnote}}
+  \interfootnotelinepenalty=10000
+#+END_SRC
+******* Caption
+#+BEGIN_SRC latex
+  \RequirePackage[margin=20pt,labelfont=bf,font=footnotesize,labelsep=endash]{caption}
+#+END_SRC
+****** Appearance tweaks
+******* Remove TOC dots
+#+BEGIN_SRC latex
+  \renewcommand\@dotsep{10000}
+#+END_SRC
+******* Change TOC name
+#+BEGIN_SRC latex
+\renewcommand{\contentsname}{}
+#+END_SRC
+******* Change section colors
+#+BEGIN_SRC latex
+  \RequirePackage{titlesec}
+  \renewcommand\thesection{}
+  \renewcommand\thesubsection{\@arabic\c@section.\@arabic\c@subsection}
+  \titleformat*{\section}{\usekomafont{sectioning}\usekomafont{section}\color{blue}}
+#+END_SRC
+******* VC status
+#+NAME: vc-status
+#+BEGIN_SRC sh :results output :tangle no
+  if [ -d .git ]; then
+      log=$(LC_MESSAGES=en git --no-pager log -1 HEAD --date=short --pretty=format:"\texttt{git} commit \href{https://github.com/xgarrido/master_npp_teaching/commit/%H}{\color{gray}\texttt{%h}} -- %ad")
+      echo "\renewcommand*{\PrelimText}{\textnormal{\small\color{gray}${log}}}"
+  fi
+#+END_SRC
+
+#+RESULTS: vc-status
+: \renewcommand*{\PrelimText}{\textnormal{\small\color{gray}\texttt{git} commit \href{https://github.com/xgarrido/master_cpp_teaching/commit/e4bc5c5fc5355ed3811e17000ce0bf045e5f39d6}{\color{gray}\texttt{e4bc5c5}} -- 2013-12-03}}
+
+#+BEGIN_SRC latex :noweb yes
+  \RequirePackage{prelim2e}
+  <<vc-status()>>
+#+END_SRC
+****** New environment
+******* Remark
+#+BEGIN_SRC latex
+  \newenvironment{remark}
+                 {\begin{quote}\ding{47}\itshape\small}
+                 {\end{quote}}
+#+END_SRC
+****** New command
+#+BEGIN_SRC latex
+  \newcommand{\clearemptydoublepage}{\newpage{\pagestyle{empty}\cleardoublepage}}
+  \newcommand{\vv}[1]{\overrightarrow{#1}}
+#+END_SRC
+****** Postamble
