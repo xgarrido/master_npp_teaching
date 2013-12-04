@@ -313,7 +313,7 @@ different booleans used in the nex section.
 ******* Footnote
 #+BEGIN_SRC latex
   \RequirePackage{fancyhdr}
-  \renewcommand{\footnoterule}{\color{blue!75}%
+  \renewcommand{\footnoterule}{\color{gray}%
     \vskip-\footruleskip\vskip-\footrulewidth%
     \vspace{10pt}\hrule width\columnwidth height1.5pt \vspace{5pt} \color{gray}}
   \renewcommand{\thefootnote}{\alph{footnote}}
@@ -337,19 +337,16 @@ different booleans used in the nex section.
   \RequirePackage{titlesec}
   \renewcommand\thesection{}
   \renewcommand\thesubsection{\@arabic\c@section.\@arabic\c@subsection}
-  \titleformat*{\section}{\usekomafont{sectioning}\usekomafont{section}\color{blue}}
+  \titleformat*{\section}{\newpage\usekomafont{sectioning}\usekomafont{section}\color{blue}}
 #+END_SRC
 ******* VC status
 #+NAME: vc-status
 #+BEGIN_SRC sh :results output :tangle no
   if [ -d .git ]; then
-      log=$(LC_MESSAGES=en git --no-pager log -1 HEAD --date=short --pretty=format:"\texttt{git} commit \href{https://github.com/xgarrido/master_npp_teaching/commit/%H}{\color{gray}\texttt{%h}} -- %ad")
+      log=$(LC_MESSAGES=en git --no-pager log -1 HEAD --date=short --pretty=format:"\texttt{git} commit \href{https://github.com/xgarrido/master_npp_teaching/commit/%H}{\color{gray}\texttt{%h}} \$-\$ %ad")
       echo "\renewcommand*{\PrelimText}{\textnormal{\small\color{gray}${log}}}"
   fi
 #+END_SRC
-
-#+RESULTS: vc-status
-: \renewcommand*{\PrelimText}{\textnormal{\small\color{gray}\texttt{git} commit \href{https://github.com/xgarrido/master_cpp_teaching/commit/e4bc5c5fc5355ed3811e17000ce0bf045e5f39d6}{\color{gray}\texttt{e4bc5c5}} -- 2013-12-03}}
 
 #+BEGIN_SRC latex :noweb yes
   \RequirePackage{prelim2e}

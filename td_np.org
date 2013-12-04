@@ -7,7 +7,7 @@
 ** Introduction
 
 #+BEGIN_CENTER
-Noyau :\nbsp^{A}_{Z}X \rightarrow Z protons  + N neutrons = A nucléons (nombre de masse)
+Noyau :^{A}_{Z}X \rightarrow Z protons  + N neutrons = A nucléons (nombre de masse)
 #+END_CENTER
 
 - Noyau ayant le même nombre de protons Z sont appelés des *isotopes* tandis que
@@ -470,5 +470,5 @@ importante dans la région 5 10^{19} -- 2 10^{20} eV. La longueur de perte
 d’énergie, i.e. le rapport entre le libre parcours moyen et l’inélasticité de la
 réaction, est typiquement de 100 Mpc pour un noyau de fer de 100 EeV. Le
 rayonnement gamma est quant à lui fortement attenué en raison, principalement,
-des interactions avec le fond radio \gamma + \gamma_{radio} \rightarrow e^{+} +
-e^{-}.
+des interactions avec le fond radio $\gamma + \gamma_{radio} \rightarrow e^{+} +
+e^{-}$.
