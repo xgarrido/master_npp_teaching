@@ -2,6 +2,7 @@
 #+AUTHOR: Xavier Garrido
 #+DATE: 25/11/13
 #+OPTIONS: ^:{} toc:2
+#+LATEX_HEADER_EXTRA: \newcommand{\vv}[1]{\overrightarrow{#1}}
 
 * TD1 : Cinématique & Accélérateurs
 ** Introduction
@@ -10,7 +11,7 @@
 Noyau :^{A}_{Z}X \rightarrow Z protons  + N neutrons = A nucléons (nombre de masse)
 #+END_CENTER
 
-- Noyau ayant le même nombre de protons Z sont appelés des *isotopes* tandis que
+- Noyau ayant le "même" nombre de protons Z sont appelés des *isotopes* tandis que
   ceux présentant le même nombre de nucléons A sont des *isobares*
 
 - Noyau \equiv objet quantique
@@ -395,6 +396,11 @@ $$R = \frac{pc}{qBc} \simeq \frac{T_{S}(eV)}{Bc} =
 
 * TD2 : Nombres Quantiques & Symétries
 ** Énergie maximum des rayons cosmiques
+
+#+CAPTION: *Spectre en énergie des rayons cosmiques*
+#+ATTR_LATEX: :width 0.7\linewidth :placement [h]
+[[file:./figures/spectrum.pdf]]
+
 $$p + \gamma \rightarrow p + \pi^{+}$$
 $$p + \gamma \rightarrow n + \pi^{0}$$
 
@@ -451,10 +457,6 @@ surabondance locale.
 #+CAPTION: Les axes correspondent respectivement au logarithme décimal du champ magnétique et à la taille caractéristique de l'objet.
 #+ATTR_LATEX: :width 0.7\linewidth
 [[file:./figures/hillas_diagram.pdf]]
-
-#+CAPTION: *Spectre en énergie des rayons cosmiques*
-#+ATTR_LATEX: :width 0.7\linewidth :placement [h]
-[[file:./figures/spectrum.pdf]]
 
 #+CAPTION: *Spectre du rayonnement cosmique mesuré par l'Observatoire Pierre Auger (données 2008)*
 #+ATTR_LATEX: :width \linewidth
