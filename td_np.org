@@ -462,6 +462,74 @@ surabondance locale.
 #+ATTR_LATEX: :width \linewidth
 [[file:./figures/auger_spectrum.pdf]]
 
+** Étrangeté dans les rayons cosmiques
+Cascade de réactions : $p\rightarrow\pi\rightarrow\mu\rightarrow e$
+Le muon est ainsi détecté pour la première fois car si sa durée de vie propre
+est de 2.2 \mu{}s, ce temps est "boosté" par le facteur de Lorentz soit \tau =
+\gamma\tau_{0} = quelques ms.
+
+#+CAPTION: *Photographies de deux événements faisant apparaître la désintégration de deux particules $V$*
+#+CAPTION: (référence [[http://www.nature.com/physics/looking-back/rochester/index.html][Rochester G. D. & Butler C. C. 1947)]]
+[[file:./figures/v_particles.jpg]]
+
+1) Les particules $V$
+
+   #+BEGIN_CENTER
+   $V_{1}\rightarrow p + \pi^- \quad V_{2}\rightarrow \pi^+ + \pi^-$
+   #+END_CENTER
+
+   Conservation de l'énergie et de l'impulsion
+   #+BEGIN_SRC latex
+  \begin{equation*}
+    \begin{bmatrix}
+      E_{V_1}\\\vv{p_{V_1}}
+    \end{bmatrix}
+    =
+    \begin{bmatrix}
+      E_\pi\\\vv{p_\pi}
+    \end{bmatrix}
+    +
+    \begin{bmatrix}
+      E_p\\\vv{p_p}
+    \end{bmatrix}
+  \end{equation*}
+#+END_SRC
+
+   $$E_{V_1} = E_\pi + E_p \Leftrightarrow p_{V}^2c^2 + m_{V}^2c^4 =
+   \left[\sqrt{p_\pi^2c^2 + m_\pi^2c^4} + \sqrt{p_p^2c^2 + m_p^2c^4}\right]^2$$
+   $$\vv{p_{V}} = \vv{p_\pi} + \vv{p_p} \Leftrightarrow p_{V}^2c^2 =
+   p_\pi^2c^2 + p_p^2c^2 + 2p_\pi p_p c^2\cos\theta$$
+
+   *AN :*
+   $$p_{V_1}c = \sqrt{160^2 + 320^2 + 2\cdot160\cdot320\cos 65} = \unit[413]{MeV}$$
+   $$p_{V_2}c = \sqrt{220^2 + 220^2 + 2\cdot220^2\cos 135} = \unit[168]{MeV}$$
+   $$m_{V_1}c^2 = \left[\sqrt{160^2 + 140^2} + \sqrt{320^2 + 938^2} - 413^2\right]^{1/2} = \unit[1130]{MeV}$$
+   $$m_{V_2}c^2 = \left[4\cdot(220^2 + 140^2) - 168^2\right]^{1/2} = \unit[493]{MeV}$$
+
+   *Discussion :* À l'époque, seuls le proton, neutron, électron, pion et muon
+   sont connus \rightarrow $V_1 = \Lambda^0$ et $V_2 = K^0$
+
+2) $d_{\Lambda^0} = \unit[3.2]{cm}$ et $d_{K^0} = \unit[0.8]{cm}$
+
+   $$T_{\Lambda^0} = \sqrt{m_{\Lambda^0}^2c^4 + p^2c^2} - m_{\Lambda^0}c^2 = \unit[73]{MeV} \ll m_{\Lambda^0}c^2$$
+   $$T_{K^0} = \sqrt{m_{K^0}^2c^4 + p^2c^2} - m_{K^0}c^2 = \unit[28]{MeV} \ll
+   m_{K^0}c^2$$
+
+   $$\tau_{\Lambda^0} = \frac{d_{\Lambda^0}}{v}$$ or $p=mv$ d'où
+   $$\tau_{\Lambda^0} = \frac{d_{\Lambda^0}\cdot m_{\Lambda^0}}{p} =
+   \frac{d_{\Lambda^0}}{c}\cdot \frac{m_{\Lambda^0}c^2}{pc}$$
+
+   *AN :*
+   $$\tau_{\Lambda^0} =
+   \frac{\unit[0.032]{m}}{\unit[3\,10^8]{m/s}}\cdot\frac{\unit[1130]{MeV}}{\unit[413]{MeV}}
+   = \unit[2.9\,10^{-10}]{s}$$
+   $$\tau_{K^0} =
+   \frac{\unit[0.008]{m}}{\unit[3\,10^8]{m/s}}\cdot\frac{\unit[493]{MeV}}{\unit[168]{MeV}}
+   = \unit[7.8\,10^{-11}]{s}$$
+
+3) \tau est un temps caractéristique d'une désintégration par interaction
+   faible : \tau > 10^{-13} s (/cf./ page 30)
+
 * Footnotes
 
 [fn:1] 1 pc = 1 parsec = 3.26 années lumières = 30.856 10^{12} km.
