@@ -530,6 +530,28 @@ est de 2.2 \mu{}s, ce temps est "boosté" par le facteur de Lorentz soit \tau =
 3) \tau est un temps caractéristique d'une désintégration par interaction
    faible : \tau > 10^{-13} s (/cf./ page 30)
 
+4) Le fait que ces particules $K^0$ et $\Lambda^0$ soient toujours produites par
+   paire implique la conservation d'une quantité jusqu'alors inconnue
+   \rightarrow introduction de *l'étrangeté* $S$ comme nouveau nombre quantique.
+   Cette quantité est ainsi conservée lors de la production des particules $V$
+   par *interaction forte* mais non-conservé lors de leurs désintégrations (par
+   interaction faible) : $S_{K^0}$ = +1, $S_{\Lambda^0}$ = -1 et $S$ est nulle
+   pour toutes les particules connues jusqu'à présent. Il découlera de ces
+   résultats expérimentaux le modèle des quarks introduit par Murray Gell-Mann
+   (déjà à l'origine de l'étrangeté pour expliquer les résultats du Cosmotron de
+   BNL) au début des années 60, modèle pour lequel il obtiendra un prix nobel de
+   Physique en 1969.
+
+5) $p + n \rightarrow p + \Lambda^0$ et $n + n \rightarrow \Lambda^0 +
+   \Lambda^0$. Ces deux réactions ne conservent pas l'étrangeté $S$. Elles ne
+   peuvent donc se produire par interaction forte. La très faible section
+   efficace par rapport à la réaction $p + p \rightarrow K^0 + \Lambda^0$
+   confirme cette idée : \sigma_{forte} \gg \sigma_{faible}
+
+6) $\Lambda^0 \rightarrow \pi^+ + \pi^-$ : le nombre baryonique n'est pas
+   conservé or toutes intéractions conservent ce nombre (y compris l'interaction
+   faible)
+
 * Footnotes
 
 [fn:1] 1 pc = 1 parsec = 3.26 années lumières = 30.856 10^{12} km.
