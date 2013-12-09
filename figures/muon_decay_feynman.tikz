@@ -1,0 +1,45 @@
+\begin{tikzpicture}[y=-1cm]
+\usetikzlibrary{decorations.markings}
+\usetikzlibrary{decorations.pathmorphing}
+\tikzset{snake it/.style={decorate, decoration=snake}}
+
+\definecolor{red}{RGB}{221,42,43}
+\definecolor{green}{RGB}{105,182,40}
+\definecolor{blue}{RGB}{0,51,153}
+\definecolor{orange}{RGB}{192,128,64}
+\definecolor{gray}{gray}{0.7}
+\sf
+
+\begin{scope}[very thick,decoration={
+      markings,
+      mark=at position 0.5 with {\arrow{<}}}]
+  %% mu+
+  \draw[postaction={decorate}] (4,20) -- (9,20);
+  \path (6.5,19.5) node {\LARGE$\mu^+$};
+  %% anti nu_mu
+  \draw[postaction={decorate}] (9,20) -- (14,16.5);
+  \path (11.5,17.7) node {\LARGE$\bar{\nu}_\mu$};
+  %% e+
+  \draw[postaction={decorate}] (11.5,21.75) -- (14,20.0);
+  \path (12.75,20.4) node {\LARGE$e^+$};
+\end{scope}
+
+%% nu_e
+\begin{scope}[very thick,decoration={
+      markings,
+      mark=at position 0.5 with {\arrow{>}}}]
+\draw[postaction={decorate}] (11.5,21.75) -- (14,23.5);
+\path (12.75,22.2) node {\LARGE$\nu_e$};
+\end{scope}
+
+%% W+
+\draw[blue,very thick, snake it] (9,20) -- (11.5, 21.75);
+\path (10.75,20.5) node[blue] {\LARGE$W^+$};
+
+
+\end{tikzpicture}%
+
+%% Configure (x)emacs for this file ...
+%% Local Variables:
+%% mode: latex
+%% End:

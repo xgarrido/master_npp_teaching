@@ -564,35 +564,84 @@ est de 2.2 \mu{}s, ce temps est "boosté" par le facteur de Lorentz soit \tau =
    implique qu'il n'y a pas de différence entre "gauche ou droite" (même image
    dans un miroir).
 
-2) $\tau^+\rightarrow\pi^++\pi^++\pi^+-$
+2) $A^+\rightarrow\pi^++\pi^++\pi^+-$
 
    Conservation du moment cinétique total $\vv{I}$
 
-   $$\vv{I}(\tau^+) + \vv{L}_i = \vv{I}(\pi^+) + \vv{I}(\pi^+) + \vv{I}(\pi^-) +
+   $$\vv{I}(A^+) + \vv{L}_i = \vv{I}(\pi^+) + \vv{I}(\pi^+) + \vv{I}(\pi^-) +
    \vv{L}_f$$
 
    où $\vv{L}_i$ et $\vv{L}_f$ sont les moments angulaires relatifs des
    particules en voie d'entrée et de sortie. La conservation de la parité \pi se
    traduit par l'équation suivante
 
-   $$\pi(\tau^+)\,(-1)^{L_i} = \pi(\pi^+)\,\pi(\pi^+)\,\pi(\pi^-)\,(-1)^{L_f}$$
+   $$\pi(A^+)\,(-1)^{L_i} = \pi(\pi^+)\,\pi(\pi^+)\,\pi(\pi^-)\,(-1)^{L_f}$$
 
-   Du fait que $I(\tau^+) = I(\pi^\pm) = 0$, on déduit que $\vv{L_f} - \vv{L_i} =
+   Du fait que $I(A^+) = I(\pi^\pm) = 0$, on déduit que $\vv{L_f} - \vv{L_i} =
    \vv{0}$ soit la parité dans l'état final $A^+$
 
-   $$\pi(\tau^+) = (-1)\,(-1)\,(-1)\,(-1)^0 = -1$$
+   $$\pi(A^+) = (-1)\,(-1)\,(-1)\,(-1)^0 = -1$$
 
 3) $\theta^+\rightarrow\pi^++\pi^0$ avec $I(\theta)=0$ et $I^\pi(\pi)=0^-$. Le
    moment angulaire relatif $L_i - L_f$ est donc nul.
 
    $$\pi(\theta^+) = \pi(\pi^+)\,\pi(\pi^0)\,(-1)^0 = +1$$
 
-4) $\tau^+$ et $\theta^+$ ont la même masse, mêmes durées de vie et même charge
+4) $A^+$ et $\theta^+$ ont la même masse, mêmes durées de vie et même charge
    électrique. Elles sont donc la même particule mais avec *une parité
    différente*. Les mésons se désintégrant par interaction faible, ce problème
    aussi connu sous le nom de "puzzle \theta/\tau" trouva sa solution dans le
    fait que l'interaction faible ne conserve pas la parité. Ces deux particules
    sont donc une seule et même particule appelée à présent $K^+$.
+
+* Réactions de production et de désintégration de particules
+** Production et désintégration de particules
+
+#+CAPTION: *Modèle standard de la physique des particules*
+[[file:./figures/standard_model.pdf]]
+
+1) Les particules élémentaires sont les quarks et les leptons dont le spin
+   demi-entier font de ces particules des fermions. À la différence des leptons,
+   les quarks n'apparaissent pas à l'état libre et sont confinés dans les
+   hadrons. On distingue deux familles de hadrons :
+   - les baryons :: constitués de 3 quarks $q_1q_2q_3$, de nombre baryonique égal à
+                    1 et de spin 1/2 entier. Exemple : nucléons
+   - les mésons :: constitués d'une paire de quark -- antiquark, de nombre
+                   baryonique nul et de spin entier. Exemple : pions
+
+   Les quarks sont sensibles à toutes les interactions tandis que les leptons
+   chargés -- $e$, \mu, \tau -- sont sensibles à l'interaction EM et faible. Les
+   leptons neutres /i.e./ les neutrinos n'intéragissent que par interaction
+   faible.
+
+2) Toutes les interactions conservent la charge électrique, le nombre
+   baryonique, le nombre leptonique et le moment cinétique.
+
+   a) $K^- + p\rightarrow \bar{K}^0 + n$
+
+   b) $\pi^+ + p\rightarrow \Sigma^+ + K^+$
+
+   c) $\pi^- + p\rightarrow \Sigma^0 + K^+ + \pi^-$
+
+   d) $\pi^- + p\rightarrow \Sigma^+ + K^-$ *non conservation de l'étrangeté
+   \rightarrow interaction faible*
+
+   e) $\bar{K}^0 + p\rightarrow K^- + p + \pi^+$
+
+   f) $\bar{p} + p\rightarrow \pi^+ + \pi^+ + \pi^- + \pi^- + \pi^+$ *ne
+   conserve pas la charge électrique*
+
+   g) $\mu^+ \rightarrow e^+ + \nu_e + \bar{\nu}_\mu$ *leptons neutres
+   \rightarrow interaction faible*
+
+   h) $K^+ + p \rightarrow \Sigma^+ + n + \pi^-$ *ne conserve pas la charge
+   électrique ni le nombre baryonique*
+
+3) $\mu^+\rightarrow e^+ + \nu_e + \bar{\nu}_\mu$
+
+   #+ATTR_LATEX: :width 0.4\linewidth
+   #+CAPTION: *Diagramme de Feynman de la désintégration de l'anit-muon*
+   [[file:./figures/muon_decay_feynman.pdf]]
 
 * Footnotes
 
