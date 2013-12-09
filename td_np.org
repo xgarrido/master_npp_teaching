@@ -538,7 +538,7 @@ est de 2.2 \mu{}s, ce temps est "boosté" par le facteur de Lorentz soit \tau =
    interaction faible) : $S_{K^0}$ = +1, $S_{\Lambda^0}$ = -1 et $S$ est nulle
    pour toutes les particules connues jusqu'à présent. Il découlera de ces
    résultats expérimentaux le modèle des quarks introduit par Murray Gell-Mann
-   (déjà à l'origine de l'étrangeté pour expliquer les résultats du Cosmotron de
+   (déjà à l'origine de l'étrangeté pour expliquer les résultats du Cosmotron[fn:3] de
    BNL) au début des années 60, modèle pour lequel il obtiendra un prix nobel de
    Physique en 1969.
 
@@ -615,7 +615,7 @@ est de 2.2 \mu{}s, ce temps est "boosté" par le facteur de Lorentz soit \tau =
    faible.
 
 2) Toutes les interactions conservent la charge électrique, le nombre
-   baryonique, le nombre leptonique et le moment cinétique.
+   baryonique, le nombre leptonique et le moment cinétique total.
 
    a) $K^- + p\rightarrow \bar{K}^0 + n$
 
@@ -640,7 +640,7 @@ est de 2.2 \mu{}s, ce temps est "boosté" par le facteur de Lorentz soit \tau =
 3) $\mu^+\rightarrow e^+ + \nu_e + \bar{\nu}_\mu$
 
    #+ATTR_LATEX: :width 0.4\linewidth
-   #+CAPTION: *Diagramme de Feynman de la désintégration de l'anit-muon*
+   #+CAPTION: *Diagramme de Feynman de la désintégration de l'anti-muon*
    [[file:./figures/muon_decay_feynman.pdf]]
 
 * Footnotes
@@ -655,3 +655,8 @@ réaction, est typiquement de 100 Mpc pour un noyau de fer de 100 EeV. Le
 rayonnement gamma est quant à lui fortement attenué en raison, principalement,
 des interactions avec le fond radio $\gamma + \gamma_{radio} \rightarrow e^{+} +
 e^{-}$.
+
+[fn:3] le Cosmotron du laboratoire national de Brookhaven fut le premier
+synchrotron a accéléré des protons au delà du GeV (1952 -- 1966) contribuant à
+la découverte de l'ensemble des mésons chargés de même qu'à la mise en évidence
+de particules lourdes instables telles que les particules $V$.
