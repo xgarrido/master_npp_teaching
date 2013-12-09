@@ -552,6 +552,48 @@ est de 2.2 \mu{}s, ce temps est "boosté" par le facteur de Lorentz soit \tau =
    conservé or toutes intéractions conservent ce nombre (y compris l'interaction
    faible)
 
+** La parité et sa violation
+
+1) L'opérateur parité transforme une fonction $\psi(\vv{r})$ en
+   $\psi(-\vv{r})$ : $\hat{\mathcal{P}}\,\psi(\vv{r}) = \psi(-\vv{r})$. Les
+   valeurs propres \pi sont telles que $\hat{\mathcal{P}}\,\psi(\vv{r}) =
+   \pi\,\psi(\vv{r})$ or $\hat{\mathcal{P}}^2\,\psi(\vv{r}) =
+   \hat{\mathcal{P}}\,\psi(-\vv{r}) = \psi(\vv{r})$. $\hat{\mathcal{P}}$ est
+   donc unitaire et les valeurs propres sont \pi = \pm1 (à une phase
+   près). L'invariance sous $\hat{\mathcal{P}}$ /i.e./ conservation de la parité
+   implique qu'il n'y a pas de différence entre "gauche ou droite" (même image
+   dans un miroir).
+
+2) $\tau^+\rightarrow\pi^++\pi^++\pi^+-$
+
+   Conservation du moment cinétique total $\vv{I}$
+
+   $$\vv{I}(\tau^+) + \vv{L}_i = \vv{I}(\pi^+) + \vv{I}(\pi^+) + \vv{I}(\pi^-) +
+   \vv{L}_f$$
+
+   où $\vv{L}_i$ et $\vv{L}_f$ sont les moments angulaires relatifs des
+   particules en voie d'entrée et de sortie. La conservation de la parité \pi se
+   traduit par l'équation suivante
+
+   $$\pi(\tau^+)\,(-1)^{L_i} = \pi(\pi^+)\,\pi(\pi^+)\,\pi(\pi^-)\,(-1)^{L_f}$$
+
+   Du fait que $I(\tau^+) = I(\pi^\pm) = 0$, on déduit que $\vv{L_f} - \vv{L_i} =
+   \vv{0}$ soit la parité dans l'état final $A^+$
+
+   $$\pi(\tau^+) = (-1)\,(-1)\,(-1)\,(-1)^0 = -1$$
+
+3) $\theta^+\rightarrow\pi^++\pi^0$ avec $I(\theta)=0$ et $I^\pi(\pi)=0^-$. Le
+   moment angulaire relatif $L_i - L_f$ est donc nul.
+
+   $$\pi(\theta^+) = \pi(\pi^+)\,\pi(\pi^0)\,(-1)^0 = +1$$
+
+4) $\tau^+$ et $\theta^+$ ont la même masse, mêmes durées de vie et même charge
+   électrique. Elles sont donc la même particule mais avec *une parité
+   différente*. Les mésons se désintégrant par interaction faible, ce problème
+   aussi connu sous le nom de "puzzle \theta/\tau" trouva sa solution dans le
+   fait que l'interaction faible ne conserve pas la parité. Ces deux particules
+   sont donc une seule et même particule appelée à présent $K^+$.
+
 * Footnotes
 
 [fn:1] 1 pc = 1 parsec = 3.26 années lumières = 30.856 10^{12} km.
