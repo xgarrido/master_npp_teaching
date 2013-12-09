@@ -594,7 +594,7 @@ est de 2.2 \mu{}s, ce temps est "boosté" par le facteur de Lorentz soit \tau =
    fait que l'interaction faible ne conserve pas la parité. Ces deux particules
    sont donc une seule et même particule appelée à présent $K^+$.
 
-* Réactions de production et de désintégration de particules
+* TD3 : Réactions de production et de désintégration de particules
 ** Production et désintégration de particules
 
 #+CAPTION: *Modèle standard de la physique des particules*
