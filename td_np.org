@@ -511,8 +511,9 @@ est de 2.2 \mu{}s, ce temps est "boosté" par le facteur de Lorentz soit \tau =
 
 2) $d_{\Lambda^0} = \unit[3.2]{cm}$ et $d_{K^0} = \unit[0.8]{cm}$
 
-   $$T_{\Lambda^0} = \sqrt{m_{\Lambda^0}^2c^4 + p^2c^2} - m_{\Lambda^0}c^2 = \unit[73]{MeV} \ll m_{\Lambda^0}c^2$$
-   $$T_{K^0} = \sqrt{m_{K^0}^2c^4 + p^2c^2} - m_{K^0}c^2 = \unit[28]{MeV} \ll
+   $$T_{\Lambda^0} = \sqrt{m_{\Lambda^0}^2c^4 + p_{\Lambda^0}^2c^2} -
+   m_{\Lambda^0}c^2 = \unit[73]{MeV} \ll m_{\Lambda^0}c^2$$ $$T_{K^0} =
+   \sqrt{m_{K^0}^2c^4 + p_{K^0}^2c^2} - m_{K^0}c^2 = \unit[28]{MeV} \ll
    m_{K^0}c^2$$
 
    $$\tau_{\Lambda^0} = \frac{d_{\Lambda^0}}{v}$$ or $p=mv$ d'où
@@ -595,10 +596,11 @@ est de 2.2 \mu{}s, ce temps est "boosté" par le facteur de Lorentz soit \tau =
    sont donc une seule et même particule appelée à présent $K^+$.
 
 * TD3 : Réactions de production et de désintégration de particules
-** Production et désintégration de particules
 
 #+CAPTION: *Modèle standard de la physique des particules*
 [[file:./figures/standard_model.pdf]]
+
+** Production et désintégration de particules
 
 1) Les particules élémentaires sont les quarks et les leptons dont le spin
    demi-entier font de ces particules des fermions. À la différence des leptons,
