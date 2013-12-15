@@ -539,9 +539,9 @@ est de 2.2 \mu{}s, ce temps est "boosté" par le facteur de Lorentz soit \tau =
    interaction faible) : $S_{K^0}$ = +1, $S_{\Lambda^0}$ = -1 et $S$ est nulle
    pour toutes les particules connues jusqu'à présent. Il découlera de ces
    résultats expérimentaux le modèle des quarks introduit par Murray Gell-Mann
-   (déjà à l'origine de l'étrangeté pour expliquer les résultats du Cosmotron[fn:3] de
-   BNL) au début des années 60, modèle pour lequel il obtiendra un prix nobel de
-   Physique en 1969.
+   (déjà à l'origine de l'étrangeté pour expliquer les résultats du
+   Cosmotron[fn:3] de BNL) au début des années 60, modèle pour lequel il
+   obtiendra un prix nobel de Physique en 1969.
 
 5) $p + n \rightarrow p + \Lambda^0$ et $n + n \rightarrow \Lambda^0 +
    \Lambda^0$. Ces deux réactions ne conservent pas l'étrangeté $S$. Elles ne
@@ -591,9 +591,10 @@ est de 2.2 \mu{}s, ce temps est "boosté" par le facteur de Lorentz soit \tau =
 4) $A^+$ et $\theta^+$ ont la même masse, mêmes durées de vie et même charge
    électrique. Elles sont donc la même particule mais avec *une parité
    différente*. Les mésons se désintégrant par interaction faible, ce problème
-   aussi connu sous le nom de "puzzle \theta/\tau" trouva sa solution dans le
-   fait que l'interaction faible ne conserve pas la parité. Ces deux particules
-   sont donc une seule et même particule appelée à présent $K^+$.
+   aussi connu sous le nom de "puzzle \theta/\tau" (\tau\equiv A^{+}) trouva sa
+   solution dans le fait que l'interaction faible ne conserve pas la parité. Ces
+   deux particules sont donc une seule et même particule appelée à présent
+   $K^+$.
 
 * TD3 : Réactions de production et de désintégration de particules
 
@@ -602,19 +603,21 @@ est de 2.2 \mu{}s, ce temps est "boosté" par le facteur de Lorentz soit \tau =
 
 ** Production et désintégration de particules
 
-1) Les particules élémentaires sont les quarks et les leptons dont le spin
-   demi-entier font de ces particules des fermions. À la différence des leptons,
-   les quarks n'apparaissent pas à l'état libre et sont confinés dans les
-   hadrons. On distingue deux familles de hadrons :
-   - les baryons :: constitués de 3 quarks $q_1q_2q_3$, de nombre baryonique égal à
-                    1 et de spin 1/2 entier. Exemple : nucléons
-   - les mésons :: constitués d'une paire de quark -- antiquark, de nombre
-                   baryonique nul et de spin entier. Exemple : pions
+1) Les particules élémentaires sont les quarks et les leptons (du grec /leptos/
+   = léger) dont le spin demi-entier font de ces particules des fermions. À la
+   différence des leptons, les quarks n'apparaissent pas à l'état libre et sont
+   confinés dans les hadrons. On distingue deux familles de hadrons :
+   - les baryons :: (du grec /baryos/ = lourd) constitués de 3 quarks $q_1q_2q_3$,
+                    de nombre baryonique égal à 1 et de spin 1/2
+                    entier. Exemple : nucléons
+   - les mésons :: (du grec /mesos/ = milieu) constitués d'une paire de quark --
+                   antiquark, de nombre baryonique nul et de spin
+                   entier. Exemple : pions
 
-   Les quarks sont sensibles à toutes les interactions tandis que les leptons
-   chargés -- $e$, \mu, \tau -- sont sensibles à l'interaction EM et faible. Les
-   leptons neutres /i.e./ les neutrinos n'intéragissent que par interaction
-   faible.
+      Les quarks sont sensibles à toutes les interactions tandis que les leptons
+      chargés -- $e$, \mu, \tau -- sont sensibles à l'interaction EM et faible. Les
+      leptons neutres /i.e./ les neutrinos n'intéragissent que par interaction
+      faible.
 
 2) Toutes les interactions conservent la charge électrique, le nombre
    baryonique, le nombre leptonique et le moment cinétique total.
