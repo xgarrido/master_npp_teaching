@@ -648,6 +648,112 @@ est de 2.2 \mu{}s, ce temps est "boosté" par le facteur de Lorentz soit \tau =
    #+CAPTION: *Diagramme de Feynman de la désintégration de l'anti-muon*
    [[file:./figures/muon_decay_feynman.pdf]]
 
+** Résonances
+
+Formule de Gell-Mann & Nishijima $Q/e = T_3 + Y/2$ avec $Y = B$ + saveur =
+hypercharge. Dans cet exercice, $c=b=t=0$ donc $Y = B$ + étrangeté $s$
+
+1) $Y(\Sigma^+) = 2\cdot\left(\frac{Q}{e} - T_3\right) = 0$ d'où $s(\Sigma^+) =
+   -B(\Sigma^+) = -1$
+
+   $Y(K^+) = 2\cdot\left(\frac{Q}{e} - T_3\right) = 1$ d'où $s(\Sigma^+) = +1$
+
+2) Détermination du type d'interaction $\pi^+ + p\rightarrow K^+ + \Sigma^+$
+
+   |----------+----------+---+------------+-------------+------------+---+------------+------------|
+   |          |  $\pi^+$ | + |          p | \rightarrow |      $K^+$ | + | $\Sigma^+$ |            |
+   | $B$      |        0 | + |          1 | =           |          0 | + |          1 | \checkmark |
+   | $Q/e$    |        1 | + |          1 | =           |          1 | + |          1 | \checkmark |
+   | $T_3$    |        1 | + |        1/2 | =           |        1/2 | + |          1 | \checkmark |
+   | $\vv{T}$ | $\vv{1}$ | + | $\vv{1/2}$ | =           | $\vv{1/2}$ | + |   $\vv{1}$ | \checkmark |
+   | $s$      |        0 | + |          0 | =           |          1 | + |         -1 | \checkmark |
+   |----------+----------+---+------------+-------------+------------+---+------------+------------|
+
+   Conservation de la parité et du moment cinétique total :
+
+   $$\vv{I}_\pi + \vv{I}_p + \vv{L}_i = \vv{I}_K + \vv{I}_\Sigma + \vv{L}_f$$
+   $$\pi(\pi^+)\times\pi(p)\times(-1)^{L_i} =
+   \pi(K^+)\times\pi(\Sigma^+)\times(-1)^{L_f}$$
+
+   Si $L_i=L_f$ toutes les quantités sont conservées donc *interaction
+   forte*. Le temps caractéristique de la réaction est donc de l'ordre de
+   *10^{-23} à 10^{-20} secondes*.
+
+3) Calcul de l'énergie seuil des pions :
+
+   #+BEGIN_SRC latex
+     \begin{align*}
+       T_S &= \frac{|Q|\cdot\Upsigma m_\text{initiale,finale}c^2}{2\cdot m_pc^2}\\
+       &=\frac{604\cdot(140+940+494+1190)}{2\cdot940}\\
+       &=\unit[888]{MeV}
+     \end{align*}
+   #+END_SRC
+
+4) $\pi^+ + p \rightarrow R \rightarrow K^+ + \Sigma^+$
+
+   Calcul de l'invariant relativiste $I$
+
+   $$I=(E_\pi + E_p)^2 - (\vv{p}_\pi + \vv{p}_p)^2 = (m_Rc^2)^2$$
+   or $\vv{p}_p = \vv{0}$ et $E_\pi = \sqrt{p_\pi^2c^2 + m_\pi^2c^4}$,
+   $E_p=m_pc^2$ d'où
+
+   $$m_R^2c^4 = \left(\sqrt{1500^2 + 140^2} + 940\right)^2 - 1500^2 =
+   \unit[3.7\,10^6]{MeV}^2$$
+   $$m_Rc^2 = \unit[1933]{MeV}$$
+
+5) Largeur \Gamma = 240 MeV
+
+   $$\tau =\frac{\hbar}{\Gamma} = \frac{\hbar c}{\Gamma c} =
+   \frac{\unit[197.3]{MeV.fm}}{\unit[240]{MeV}\cdot\unit[3\,10^{23}]{fm/s}} =
+   \unit[2.7\,10^{-24}]{s}$$
+
+   \rightarrow désintégration par *interaction forte*
+
+6) $\vv{L}_i = \vv{3}$
+
+   La réaction $\pi^+ + p \rightarrow K^+ + \Sigma^+$ se fait par interaction
+   forte de même que $R\rightarrow K^+ + \Sigma^+$. La réaction de production de
+   $\pi^++p\rightarrow R$ se fait donc également par interaction forte
+   \rightarrow conservation de la parité et du moment cinétique total.
+
+   $$\vv{I}_\pi + \vv{I}_p + \vv{L}_i = \vv{I}_R$$
+   $$\pi(\pi^+)\times\pi(p)\times(-1)^{L_i} = \pi(R)$$
+   d'où $I_R^\pi = 5/2^+$ ou $7/2^+$
+
+7) Conservation de $\vv{T}$ et $T_3$ dans la désintégration de $R\rightarrow
+   K^++\Sigma^+$
+
+   $$T_3(R) = T_3(K^+) + T_3(\Sigma^+) = 3/2$$
+   $$\vv{T}(R) = \vv{T}(K^+) + \vv{T}(\Sigma^+) = \vv{1/2} + \vv{1} =
+   \vv{1/2},\vv{3/2}$$
+   or comme $T_3(R) = 3/2 \Leftrightarrow \vv{T}(R) = \vv{3/2}$
+
+8) La conservation du nombre baryonique, de la charge électrique et de
+   l'étrangeté font que $R$ est un baryon de charge $Q/e=+2$ et d'étrangeté
+   nulle. En se reférant au tableau page 30, on note que cette résonance
+   présente les mêmes propriétés que la baryon $\Delta^{++}$ à ceci près que sa
+   masse 1933 MeV et sa durée de vie sont respectivement plus élevée et plus
+   courte[fn:4]. *La résonance $R$ est donc un état excité de $\Delta^{++}$.*
+
+9) $\pi^- + p \rightarrow K^+ + \Sigma^-$
+
+   $Q/e$, $B$, $I^\pi$ sont conservés.
+
+   |----------+----------+---+------------+-------------+------------+---+------------+------------|
+   |          |  $\pi^-$ | + | p          | \rightarrow | $K^+$      | + | $\Sigma^-$ |            |
+   | $T_3$    |       -1 | + | 1/2        | =           | 1/2        | + |         -1 | \checkmark |
+   | $\vv{T}$ | $\vv{1}$ | + | $\vv{1/2}$ | =           | $\vv{1/2}$ | + |   $\vv{1}$ | \checkmark |
+   | $s$      |        0 | + | 0          | =           | 1          | + |         -1 | \checkmark |
+   |----------+----------+---+------------+-------------+------------+---+------------+------------|
+
+*Remarques :* les baryons $\Delta^{++}$ et $\Delta^-$ sont respectivement
+constitués de 3 quarks $u$ et 3 quarks $d$. Or le moment cinétique total de ces
+particules 3/2 impliquent que le spin des 3 quarks soient alignés "vers le
+haut". Le principe de Pauli exclut une telle configuration pour des fermions. En
+ajoutant le nombre quantique de couleur, la chromodynamique quantique permet un
+tel état tout comme pour le baryon \Omega^{-} postulé par Gell-Mann et découvert à
+Brookhaven en 1964.
+
 * Footnotes
 
 [fn:1] 1 pc = 1 parsec = 3.26 années lumières = 30.856 10^{12} km.
@@ -665,3 +771,6 @@ e^{-}$.
 synchrotron a accéléré des protons au delà du GeV (1952 -- 1966) contribuant à
 la découverte de l'ensemble des mésons chargés de même qu'à la mise en évidence
 de particules lourdes instables telles que les particules $V$.
+
+[fn:4] le moment cinétique total est également différent 5/2^{+} ou 7/2^{+} contre
+3/2^{+}
