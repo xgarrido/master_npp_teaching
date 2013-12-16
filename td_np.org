@@ -468,7 +468,7 @@ Le muon est ainsi détecté pour la première fois car si sa durée de vie propr
 est de 2.2 \mu{}s, ce temps est "boosté" par le facteur de Lorentz soit \tau =
 \gamma\tau_{0} = quelques ms.
 
-#+CAPTION: *Photographies de deux événements faisant apparaître la désintégration de deux particules $V$*
+#+CAPTION: *Photographies de deux événements faisant apparaître la désintégration de deux particules $\bm{V}$*
 #+CAPTION: (référence [[http://www.nature.com/physics/looking-back/rochester/index.html][Rochester G. D. & Butler C. C. 1947)]]
 [[file:./figures/v_particles.jpg]]
 
@@ -480,20 +480,20 @@ est de 2.2 \mu{}s, ce temps est "boosté" par le facteur de Lorentz soit \tau =
 
    Conservation de l'énergie et de l'impulsion
    #+BEGIN_SRC latex
-  \begin{equation*}
-    \begin{bmatrix}
-      E_{V_1}\\\vv{p_{V_1}}
-    \end{bmatrix}
-    =
-    \begin{bmatrix}
-      E_\pi\\\vv{p_\pi}
-    \end{bmatrix}
-    +
-    \begin{bmatrix}
-      E_p\\\vv{p_p}
-    \end{bmatrix}
-  \end{equation*}
-#+END_SRC
+     \begin{equation*}
+       \begin{bmatrix}
+         E_{V_1}\\\vv{p_{V_1}}
+       \end{bmatrix}
+       =
+       \begin{bmatrix}
+         E_\pi\\\vv{p_\pi}
+       \end{bmatrix}
+       +
+       \begin{bmatrix}
+         E_p\\\vv{p_p}
+       \end{bmatrix}
+     \end{equation*}
+   #+END_SRC
 
    $$E_{V_1} = E_\pi + E_p \Leftrightarrow p_{V}^2c^2 + m_{V}^2c^4 =
    \left[\sqrt{p_\pi^2c^2 + m_\pi^2c^4} + \sqrt{p_p^2c^2 + m_p^2c^4}\right]^2$$
