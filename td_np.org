@@ -651,12 +651,12 @@ est de 2.2 \mu{}s, ce temps est "boosté" par le facteur de Lorentz soit \tau =
 ** Résonances
 
 Formule de Gell-Mann & Nishijima $Q/e = T_3 + Y/2$ avec $Y = B$ + saveur =
-hypercharge. Dans cet exercice, $c=b=t=0$ donc $Y = B$ + étrangeté $s$
+hypercharge. Dans cet exercice, $c=b=t=0$ donc $Y = B$ + étrangeté $S$
 
-1) $Y(\Sigma^+) = 2\cdot\left(\frac{Q}{e} - T_3\right) = 0$ d'où $s(\Sigma^+) =
+1) $Y(\Sigma^+) = 2\cdot\left(\frac{Q}{e} - T_3\right) = 0$ d'où $S(\Sigma^+) =
    -B(\Sigma^+) = -1$
 
-   $Y(K^+) = 2\cdot\left(\frac{Q}{e} - T_3\right) = 1$ d'où $s(\Sigma^+) = +1$
+   $Y(K^+) = 2\cdot\left(\frac{Q}{e} - T_3\right) = 1$ d'où $S(\Sigma^+) = +1$
 
 2) Détermination du type d'interaction $\pi^+ + p\rightarrow K^+ + \Sigma^+$
 
@@ -666,14 +666,19 @@ hypercharge. Dans cet exercice, $c=b=t=0$ donc $Y = B$ + étrangeté $s$
    | $Q/e$    |        1 | + |          1 | =           |          1 | + |          1 | \checkmark |
    | $T_3$    |        1 | + |        1/2 | =           |        1/2 | + |          1 | \checkmark |
    | $\vv{T}$ | $\vv{1}$ | + | $\vv{1/2}$ | =           | $\vv{1/2}$ | + |   $\vv{1}$ | \checkmark |
-   | $s$      |        0 | + |          0 | =           |          1 | + |         -1 | \checkmark |
+   | $S$      |        0 | + |          0 | =           |          1 | + |         -1 | \checkmark |
    |----------+----------+---+------------+-------------+------------+---+------------+------------|
 
    Conservation de la parité et du moment cinétique total :
 
-   $$\vv{I}_\pi + \vv{I}_p + \vv{L}_i = \vv{I}_K + \vv{I}_\Sigma + \vv{L}_f$$
-   $$\pi(\pi^+)\times\pi(p)\times(-1)^{L_i} =
-   \pi(K^+)\times\pi(\Sigma^+)\times(-1)^{L_f}$$
+   #+BEGIN_SRC latex
+     \begin{align*}
+       \vv{I}_\pi + \vv{I}_p + \vv{L}_i &= \vv{I}_K + \vv{I}_\Sigma + \vv{L}_f\\
+       \vv{0} + \vv{1}/2 + \vv{L}_i &= \vv{0} +\vv{1}/2 + \vv{L}_f\\
+       \pi(\pi^+)\times\pi(p)\times(-1)^{L_i} &= \pi(K^+)\times\pi(\Sigma^+)\times(-1)^{L_f}\\
+       (-1)\times(+1)\times(-1)^{L_i}&=(-1)\times(+1)\times(-1)^{L_f}
+     \end{align*}
+   #+END_SRC
 
    Si $L_i=L_f$ toutes les quantités sont conservées donc *interaction
    forte*. Le temps caractéristique de la réaction est donc de l'ordre de
@@ -693,7 +698,7 @@ hypercharge. Dans cet exercice, $c=b=t=0$ donc $Y = B$ + étrangeté $s$
 
    Calcul de l'invariant relativiste $I$
 
-   $$I=(E_\pi + E_p)^2 - (\vv{p}_\pi + \vv{p}_p)^2 = (m_Rc^2)^2$$
+   $$I=(E_\pi + E_p)^2 - (\vv{p}_\pi + \vv{p}_p)^2c^2 = (m_Rc^2)^2$$
    or $\vv{p}_p = \vv{0}$ et $E_\pi = \sqrt{p_\pi^2c^2 + m_\pi^2c^4}$,
    $E_p=m_pc^2$ d'où
 
