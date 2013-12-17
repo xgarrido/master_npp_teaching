@@ -759,7 +759,76 @@ haut". Le principe de Pauli exclut une telle configuration pour des fermions. En
 ajoutant le nombre quantique de couleur, la chromodynamique quantique permet un
 tel état tout comme pour le baryon \Omega^{-} postulé par Gell-Mann et découvert à
 Brookhaven en 1964.
+* Modèle des quarks -- Les hadrons
+** Les mésons constitués des quarks $u,d,s$ et de leurs antiquarks
+1) Opérateur conjugaison particule -- antiparticule $\hat{c}$ :
+   $q\overset{\hat{c}}{\rightarrow}\bar{q}$
 
+   - $\vv{T},\vv{I},mc^2\overset{\hat{c}}{\rightarrow}\vv{T},\vv{I},mc^2$
+   - $Q/e,B,T_3,S,c,b,t\overset{\hat{c}}{\rightarrow}-Q/e,-B,-T_3,-S,-c,-b,-t$
+   - Parite \pi : fermions $\pi\overset{\hat{c}}{\rightarrow}-\pi$, bosons
+     $\pi\overset{\hat{c}}{\rightarrow}\pi$
+
+   |-----------+-----+-------+------+-----+---------+-----+-----+-----+-----+-------|
+   |           | $I$ | $Q/e$ | B    |   T | $T_{3}$ | $S$ | $c$ | $b$ | $t$ | $\pi$ |
+   | $\bar{u}$ | 1/2 | -2/3  | -1/3 | 1/2 |    -1/2 |   0 |   0 |   0 |   0 |    -1 |
+   | $\bar{d}$ | 1/2 | 1/3   | -1/3 | 1/2 |     1/2 |   0 |   0 |   0 |   0 |    -1 |
+   | $\bar{c}$ | 1/2 | -2/3  | -1/3 |   0 |       0 |   0 |  -1 |   0 |   0 |    -1 |
+   | $\bar{s}$ | 1/2 | 1/3   | -1/3 |   0 |       0 |  +1 |   0 |   0 |   0 |    -1 |
+   | $\bar{t}$ | 1/2 | -2/3  | -1/3 |   0 |       0 |   0 |   0 |   0 |  -1 |    -1 |
+   | $\bar{b}$ | 1/2 | 1/3   | -1/3 |   0 |       0 |   0 |   0 |  +1 |   0 |    -1 |
+   |-----------+-----+-------+------+-----+---------+-----+-----+-----+-----+-------|
+
+2) $\vv{L_i} = \vv{0}$: méson \equiv 1 quark + 1 antiquark
+
+   $$\pi(q\bar{q}) = (+1)\cdot(-1)\cdot(-1)^{L_i} = -1$$
+   #+BEGIN_SRC latex
+     \begin{align*}
+       \vv{I}(q\bar{q}) = \vv{I}_q + \vv{I}_{\bar{q}} + \vv{L}_i &= \vv{S}_q +
+       \vv{S}_{\bar{q}} + \vv{L}_i \\
+       &= \vv{1}/2 + \vv{1}/2 + \vv{0}\\
+       &=\vv{0}\text{ ou }\vv{1}
+     \end{align*}
+   #+END_SRC
+
+   Pour un méson avec $\vv{L}_i = \vv{L}(q\bar{q}) = \vv{0}$ \rightarrow $I^\pi
+   = 0^-$ ou $1^-$
+
+   L'isospin $\vv{T}(q\bar{q}) = \vv{T}(q) + \vv{T}(\bar{q})$
+
+   - mésons $u\bar{d}$ ou $\bar{u}d$ \rightarrow $\vv{T} = \vv{0}$ ou $\vv{1}$ or
+     $T_3 = \pm1$ donc $\vv{T} = \vv{1}$
+   - mésons contenant $u,d,\bar{u},\bar{d}$ $\vv{T} = \vv{1}/2$
+   - mésons ne contenant ni $u,d,\bar{u},\bar{d}$ $\vv{T} = \vv{0}$
+
+3) $(u,d,s)\times(\bar{u},\bar{d},\bar{s}) = 3\times3 = 9$ mésons.
+   L'étrangeté $S=-1,0,1$, la 3^{ème} composante de l'isospin $T_3$ \in
+   [-1,-1/2,0,1/2,+1]
+
+   |------------+-----+-------+-------|
+   |            | $S$ | $T_3$ | $Q/e$ |
+   | $u\bar{u}$ |   0 |     0 |     0 |
+   | $u\bar{d}$ |   0 |     1 |    +1 |
+   | $u\bar{s}$ |  +1 |   1/2 |    +1 |
+   | $d\bar{u}$ |   0 |    -1 |    -1 |
+   | $d\bar{d}$ |   0 |     0 |     0 |
+   | $d\bar{s}$ |  +1 |  -1/2 |     0 |
+   | $s\bar{u}$ |  -1 |  -1/2 |    -1 |
+   | $s\bar{d}$ |  -1 |   1/2 |     0 |
+   | $s\bar{s}$ |   0 |     0 |     0 |
+   |------------+-----+-------+-------|
+
+   #+CAPTION: *Combinaison de quark $u,d,s$ pour former des mésons de moment cinétique $I^\pi=0^-$*
+   #+ATTR_LATEX: :align p{0.5\textwidth}p{0.5\textwidth}
+   | [[file:./figures/meson_uds_0.pdf]] | [[file:./figures/meson_uds_1.pdf]] |
+
+   - 1 triplet d'isospin
+     $\pi^+(u\bar{d}),\pi^-(\bar{u}d),\pi^0\left(\frac{1}{\sqrt{2}}(u\bar{u}-d\bar{d})\right)$
+   - 2 doublets d'isospin $K^+(u\bar{s})$, $K^0(d\bar{s})$ et $K^-(\bar{u}s)$,
+     $\bar{K}^0(\bar{d}s)$
+   - 2 singulets d'isospin
+     $\eta\left(\frac{1}{\sqrt{6}}(u\bar{u}+d\bar{d}-2s\bar{s})\right)$ et
+     $\eta\prime\left(\frac{1}{\sqrt{3}}(u\bar{u}+d\bar{d}+s\bar{s})\right)$
 * Footnotes
 
 [fn:1] 1 pc = 1 parsec = 3.26 années lumières = 30.856 10^{12} km.
