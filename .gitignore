@@ -3,10 +3,10 @@
 /latex.d/
 *.toc
 *.tex
-*.pdf
 *.el
 *.fdb*
 *.aux
 *.out
 *.fls
 *.log
+/td_np.pdf
