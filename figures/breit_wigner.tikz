@@ -1,0 +1,62 @@
+\begin{tikzpicture}[y=0.80pt,x=0.80pt,yscale=-1, inner sep=0pt, outer sep=0pt]
+  \sf
+  \definecolor{red}{RGB}{221,42,43}
+  \definecolor{green}{RGB}{132,184,24}
+  \definecolor{blue}{RGB}{0,72,112}
+  \definecolor{orange}{RGB}{192,128,64}
+  \definecolor{gray}{RGB}{107,108,110}
+
+  \path[draw=black,line join=round,line cap=round,miter limit=4.00,line
+  width=1.600pt] (105.0820,42.0328) -- (105.0820,448.3500) --
+  (701.5477,448.3500);
+ \path[draw=black,line join=round,line cap=round,miter limit=4.00,line
+   width=1.600pt] (97.0758,59.0461) -- (113.0883,59.0461);
+\path[draw=black,line join=round,line cap=round,miter limit=4.00,line
+  width=1.600pt] (96.0750,261.2039) -- (112.0875,261.2039);
+
+\begin{scope}[xshift=1cm,yshift=0.5cm]
+\path (0,0) node[anchor=base west] {\huge$\sigma(E)$};
+\path (0,50) node[anchor=base west] {\huge$\sigma_\text{max}$};
+\path (0,250) node[anchor=base west] {\huge$\frac{\sigma_\text{max}}{2}$};
+\end{scope}
+
+
+\path[draw=gray,dash pattern=on 1.60pt off 3.20pt,line join=round,line
+  cap=round,miter limit=4.00,line width=1.600pt] (104.0813,261.2039) --
+  (473.3696,261.2039);
+\path[draw=gray,dash pattern=on 1.60pt off 3.20pt,line join=round,line
+  cap=round,miter limit=4.00,line width=1.600pt] (387.3024,60.0469) --
+  (388.3032,448.3500);
+\path[draw=gray,dash pattern=on 1.60pt off 3.20pt,line join=round,line
+  cap=round,miter limit=4.00,line width=1.600pt] (458.3579,262.2047) --
+  (458.3579,447.3493);
+\path[draw=gray,dash pattern=on 1.60pt off 3.20pt,line join=round,line
+  cap=round,miter limit=4.00,line width=1.600pt] (316.2469,261.2039) --
+  (316.2469,448.3500);
+\begin{scope}[xshift=11cm,yshift=13.2cm]
+  \path (0,0) node {\huge$mc^2$};
+  \path (300,0) node {\huge$E$};
+  \path (70,10) node[text width=1cm] {\huge$mc^2 + \Gamma/2$};
+  \path (-80,10) node[text width=1cm] {\huge$mc^2 - \Gamma/2$};
+\end{scope}
+
+\path[draw=blue,line join=round,line cap=round,miter limit=4.00,line
+  width=2.400pt] (387.1231,58.6248) .. controls (385.1231,59.2248) and
+  (377.1154,53.6402) .. (364.6154,94.4094) .. controls (352.1154,135.1787) and
+  (326.9231,229.7940) .. (326.9231,229.7940) .. controls (326.9231,229.7940) and
+  (318.8994,263.5478) .. (303.8462,295.1787) .. controls (288.6538,327.1017) and
+  (277.1154,354.2171) .. (250.0000,378.2556) .. controls (224.5486,400.8189) and
+  (228.9700,400.0146) .. (188.4615,417.4864) .. controls (146.3703,435.6408) and
+  (105.3846,439.7940) .. (105.3846,439.7940);
+\path[draw=blue,line join=round,line cap=round,miter limit=4.00,line
+  width=2.400pt] (387.3703,58.6194) .. controls (390.1703,58.8194) and
+  (398.7780,53.6348) .. (411.2780,94.4040) .. controls (423.7780,135.1732) and
+  (448.9703,229.7886) .. (448.9703,229.7886) .. controls (448.9703,229.7886) and
+  (456.9940,263.5424) .. (472.0472,295.1732) .. controls (487.2396,327.0963) and
+  (498.7780,354.2117) .. (525.8934,378.2502) .. controls (551.3448,400.8135) and
+  (546.9234,400.0092) .. (587.4319,417.4810) .. controls (629.5231,435.6354) and
+  (670.5088,439.7886) .. (670.5088,439.7886);
+\begin{scope}[xshift=11cm,yshift=0cm]
+  \path (0,0) node[blue] {\huge Distribution de Breit \& Wigner};
+\end{scope}
+\end{tikzpicture}

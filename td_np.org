@@ -703,6 +703,11 @@ hypercharge. Dans cet exercice, $c=b=t=0$ donc $Y = B$ + étrangeté $s$
 
 5) Largeur \Gamma = 240 MeV
 
+   #+BEGIN_CENTER
+   #+ATTR_LATEX: :width 0.5\linewidth
+   [[file:./figures/breit_wigner.pdf]]
+   #+END_CENTER
+
    $$\tau =\frac{\hbar}{\Gamma} = \frac{\hbar c}{\Gamma c} =
    \frac{\unit[197.3]{MeV.fm}}{\unit[240]{MeV}\cdot\unit[3\,10^{23}]{fm/s}} =
    \unit[2.7\,10^{-24}]{s}$$
@@ -733,7 +738,8 @@ hypercharge. Dans cet exercice, $c=b=t=0$ donc $Y = B$ + étrangeté $s$
    nulle. En se reférant au tableau page 30, on note que cette résonance
    présente les mêmes propriétés que la baryon $\Delta^{++}$ à ceci près que sa
    masse 1933 MeV et sa durée de vie sont respectivement plus élevée et plus
-   courte[fn:4]. *La résonance $R$ est donc un état excité de $\Delta^{++}$.*
+   courte[fn:4]. *La résonance $\bm{R}$ est donc un état excité de
+   $\bm{\Delta^{++}}$.*
 
 9) $\pi^- + p \rightarrow K^+ + \Sigma^-$
 
