@@ -60,6 +60,18 @@ Only include one default package and remove all the crapppy stuff included by
 #+BEGIN_SRC emacs-lisp
   (add-to-list 'org-latex-packages-alist '("" "org-preamble"))
 #+END_SRC
+*** Filters
+**** Change =table= into =figure= env
+When graphics are placed into table cells then change the default table
+environment into figure
+#+BEGIN_SRC emacs-lisp
+  (defun sk-multicolumn-figure (contents backend info)
+    (when (and (org-export-derived-backend-p backend 'latex)
+               (string-match "table" contents)
+               (string-match "includegraphics" contents))
+      (replace-regexp-in-string "table" "figure" contents)))
+  (add-to-list 'org-export-filter-table-functions 'sk-multicolumn-figure)
+#+END_SRC
 
 *** Defining =org-latex-classes=
 
