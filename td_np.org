@@ -22,7 +22,7 @@ Noyau :^{A}_{Z}X \rightarrow Z protons  + N neutrons = A nucléons (nombre de ma
 
 Certains noyaux sont stables, d'autres radioactifs se désintégrant spontanément
 
-$$^{14}_{6}C \rightarrow ^{14}_{7}N + e^{-} + \bar{\nu}_{e}$$
+\[^{14}_{6}C \rightarrow ^{14}_{7}N + e^{-} + \bar{\nu}_{e}\]
 
 Pour étudier le noyau, on forme des réactions nucléaires qui obéissent à des
 lois de conservation (charge, nombre de nucléons, parité...). On bombarde une
@@ -44,7 +44,7 @@ nuage électronique qui l'entoure, chargé négativement.
 En supposant que le noyau soit une sphère uniformément chargée en volume et
 contenant A nucléons
 
-$$V = \frac{4}{3}\pi\,R^{3} \propto A$$
+\[V = \frac{4}{3}\pi\,R^{3} \propto A\]
 
 On déduit que la rayon d'un noyau est proportionnel à son nombre de nucléons $R
 = r_{0} \times A^{1/3}$. Expérimentalement, $r_{0}$ est compris entre 1.2 et 1.5
@@ -66,7 +66,7 @@ fermi où 1 fm = 10^{-15} m = 10^{-13} cm. La valeur la plus probable est $r_{0}
   \nbsp^{12}_{6}C \rightarrow noyau particulier à partir duquel est défini
   l'unité de masse atomique
 
-$$\unit[1]{u.m.a} = \frac{\text{masse}(^{12}_{6}C)}{12} = \unit[931.5]{MeV/c^{2}}$$
+\[\unit[1]{u.m.a} = \frac{\text{masse}(^{12}_{6}C)}{12} = \unit[931.5]{MeV/c^{2}}\]
 
 d'où
 
@@ -79,8 +79,8 @@ d'où
 
 On en déduite que la masse volumique est égale à
 
-$$\rho(^{12}_{6}C) = \frac{m(^{12}_{6}C)}{V(^{12}_{6}C)} =
-\frac{2\,10^{-23}}{10^{-37}} = \unit[2\,10^{14}]{g/cm^3}$$
+\[\rho(^{12}_{6}C) = \frac{m(^{12}_{6}C)}{V(^{12}_{6}C)} =
+\frac{2\,10^{-23}}{10^{-37}} = \unit[2\,10^{14}]{g/cm^3}\]
 
 À titre de comparaison, le bois a une densité moyenne de 0.6 -- 1 g/cm^{3}, le
 fer environ 10 g/cm^{3}, la Terre de 6 g/cm^{3} et l'Uranium de 19 g/cm^{3}.
@@ -171,28 +171,28 @@ de a au repos mc^{2} et vitesse de a \beta=v/c
 
 2) Angle d'ouverture \omega en fonction de \theta^{*}
 
-   Invariant relativiste $I = (\Upsigma_{i}E_{i})^{2} -
-   (\Upsigma_{i}\vv{p_{i}}^{*})^{2}\,c^{2}$ constant quelque soit le
-   référentiel \rightarrow $I_\text{cdm} = I_\text{lab.}$
+  Invariant relativiste $I = (\Upsigma_{i}E_{i})^{2} -
+  (\Upsigma_{i}\vv{p_{i}}^{*})^{2}\,c^{2}$ constant quelque soit le référentiel
+  \rightarrow $I_\text{cdm} = I_\text{lab.}$
 
-   #+BEGIN_SRC latex
-     \begin{align*}
-       (E_1^* + E_2^*)^2 - \vv{0} &= (E_1 + E_2)^2 - (\vv{p_1}c + \vv{p_2}c)^2 \\
-       (mc^2)^2 &= E_1^2 + E_2^2 + 2E_1E_2 - (p_1c)^2 - (p_2c)^2 - 2p_1p_2c^2\,\cos\omega
-     \end{align*}
-   #+END_SRC
-   or $E_{1} = p_{1}c$ et $E_{2} = p_{2}c$ d'où
-   #+BEGIN_SRC latex
-     \begin{align*}
-       \frac{(mc^2)^2}{2} &= E_1E_2 - p_1p_2c^2\,\cos\omega\\
-       \frac{(mc^2)^2}{2} &= E_1E_2\cdot(1 - \cos\omega)
-     \end{align*}
-   #+END_SRC
-   En remplaçant $E_{1,2}$ par leurs expressions déduites de la question 1), on a
-   $E_{1}E_{2} = \left(\frac{\gamma mc^2}{2}\right)^2\cdot\left(1 -
-   \beta^2\cos^2\theta^*\right)$, soit finalement
+  #+BEGIN_SRC latex
+    \begin{align*}
+      (E_1^* + E_2^*)^2 - \vv{0} &= (E_1 + E_2)^2 - (\vv{p_1}c + \vv{p_2}c)^2 \\
+      (mc^2)^2 &= E_1^2 + E_2^2 + 2E_1E_2 - (p_1c)^2 - (p_2c)^2 - 2p_1p_2c^2\,\cos\omega
+    \end{align*}
+  #+END_SRC
+  or $E_{1} = p_{1}c$ et $E_{2} = p_{2}c$ d'où
+  #+BEGIN_SRC latex
+    \begin{align*}
+      \frac{(mc^2)^2}{2} &= E_1E_2 - p_1p_2c^2\,\cos\omega\\
+      \frac{(mc^2)^2}{2} &= E_1E_2\cdot(1 - \cos\omega)
+    \end{align*}
+  #+END_SRC
+  En remplaçant $E_{1,2}$ par leurs expressions déduites de la question 1), on a
+  $E_{1}E_{2} = \left(\frac{\gamma mc^2}{2}\right)^2\cdot\left(1 -
+  \beta^2\cos^2\theta^*\right)$, soit finalement
 
-   $$1 - \cos\omega = \frac{2}{\gamma^2\,(1 - \beta^2\cos^2\theta^*)}$$
+  \[1 - \cos\omega = \frac{2}{\gamma^2\,(1 - \beta^2\cos^2\theta^*)}\]
 
 ** Énergie seuil
 
@@ -221,7 +221,7 @@ des particules en voie de sortie sans que ces dernières n'aient d'impulsion
 
    soit
 
-   $$T_{S} = \frac{\Upsigma m_\text{finale}c^2 - \Upsigma m_\text{initiale}c^2}{2}$$
+   \[T_{S} = \frac{\Upsigma m_\text{finale}c^2 - \Upsigma m_\text{initiale}c^2}{2}\]
 
    En définissant $Q$ comme la chaleur de réaction /i.e./ l'énergie disponible
    dans la réaction où $Q = \Upsigma m_\text{initiale}c^{2} - \Upsigma
@@ -266,9 +266,9 @@ Finalement,
 
 L'énergie cinétique minimum du faisceau incident est ainsi
 
-$$T_S^\text{lab.} = \frac{|Q|\cdot\Upsigma m_\text{initiale,finale}c^2}{2\cdot
+\[T_S^\text{lab.} = \frac{|Q|\cdot\Upsigma m_\text{initiale,finale}c^2}{2\cdot
 m_\text{cible}c^2} = T_S^\text{cdm}\cdot\frac{\Upsigma
-m_\text{initiale,finale}c^2}{m_\text{cible}c^2}\geq T_S^\text{cdm}$$
+m_\text{initiale,finale}c^2}{m_\text{cible}c^2}\geq T_S^\text{cdm}\]
 ** Accélérateurs
 *** Introduction
 - cyclotron :: Le cyclotron est un type d’accélérateur de particules circulaire
@@ -307,19 +307,19 @@ $\vv{v}$ dans un champ d'induction $\vv{B}$ normal à $\vv{v}$.
    \gamma{}m_{0}\text{d}\vv{v}/\text{d}t$. Or $\text{d}\vv{v}/\text{d}t =
    R(\text{d}\theta/\text{d}t)^{2}\vv{u}_{r} = v^{2}/R\vv{u}_{r}$. Soit
 
-   $$\Upsigma\vv{F} = q\vv{v}\times\vv{B} = qvB\vv{u}_r$$
-   $$qvB = \frac{\gamma{}m_{0}v^{2}}{R}$$
-   $$R = \frac{\gamma{}mv}{qB} = \frac{p}{qB}$$
+   \[\Upsigma\vv{F} = q\vv{v}\times\vv{B} = qvB\vv{u}_r\]
+   \[qvB = \frac{\gamma{}m_{0}v^{2}}{R}\]
+   \[R = \frac{\gamma{}mv}{qB} = \frac{p}{qB}\]
 
    À chaque tour, $v\nearrow$ avec $\vv{B}=\text{constante}$ donc $R\nearrow$
 
 2) Calcul de $t_{0}$
 
-   $$\frac{\text{d}\theta}{\text{d}t} = \omega = \frac{v}{R} = \frac{qbR}{\gamma{}mR} =
-   \frac{qB}{\gamma{}m}$$
-   $$t_{0} = \frac{2\pi}{\omega} = \frac{2\pi}{qB}\cdot\gamma{}m$$
+   \[\frac{\text{d}\theta}{\text{d}t} = \omega = \frac{v}{R} = \frac{qbR}{\gamma{}mR} =
+   \frac{qB}{\gamma{}m}\]
+   \[t_{0} = \frac{2\pi}{\omega} = \frac{2\pi}{qB}\cdot\gamma{}m\]
 
-   Pour $v\ll c$, $\gamma\sim 1$ et donc $$t_{0} = \frac{2\pi m}{qB}$$
+   Pour $v\ll c$, $\gamma\sim 1$ et donc \[t_{0} = \frac{2\pi m}{qB}\]
 
 3) $B = 1.5$ T et $R = 0.5$ m.
 
@@ -331,16 +331,16 @@ $\vv{v}$ dans un champ d'induction $\vv{B}$ normal à $\vv{v}$.
      \end{align*}
    #+END_SRC
 
-   $$T = \frac{p^{2}}{2m} = \frac{p^{2}c^{2}}{2mc^{2}} =
-   \frac{225^{2}}{2\cdot938.3} = \unit[27]{MeV}$$
+   \[T = \frac{p^{2}}{2m} = \frac{p^{2}c^{2}}{2mc^{2}} =
+   \frac{225^{2}}{2\cdot938.3} = \unit[27]{MeV}\]
 
-   $$t_{0} = \frac{2\pi\,m}{qB} = \frac{2\pi\,mc^{2}}{qBc^{2}} = \unit[44]{ns}$$
+   \[t_{0} = \frac{2\pi\,m}{qB} = \frac{2\pi\,mc^{2}}{qBc^{2}} = \unit[44]{ns}\]
 
 4) $t = \frac{2\pi\gamma\,m}{qB}$ et $t_{0} = \frac{2\pi\,m}{qB}$
 
-   $$\frac{t-t_{0}}{t_{0}}\ge5\%$$
-   $$\frac{t_{lim.}}{t_{0}} = \gamma = 1.05$$
-   $$T = (\gamma - 1)mc^{2} = 5\%\cdot\unit[938.3]{MeV} = \unit[47]{MeV}$$
+   \[\frac{t-t_{0}}{t_{0}}\ge5\%\]
+   \[\frac{t_{lim.}}{t_{0}} = \gamma = 1.05\]
+   \[T = (\gamma - 1)mc^{2} = 5\%\cdot\unit[938.3]{MeV} = \unit[47]{MeV}\]
 
    Dans un cyclotron, dès lors que l'énergie par nucléon devient supérieure à
    ~50 MeV, des problèmes relativistes apparaissent /i.e./ la particule n'est
@@ -377,7 +377,7 @@ $\vv{v}$ dans un champ d'induction $\vv{B}$ normal à $\vv{v}$.
      \end{align*}
    #+END_SRC
 
-   $$T_{S} = \frac{2m_{N}c^{2}}{2} = m_{N}c^{2} = \unit[7]{TeV}$$
+   \[T_{S} = \frac{2m_{N}c^{2}}{2} = m_{N}c^{2} = \unit[7]{TeV}\]
 
 7) Réaction sur cible fixe
 
@@ -390,9 +390,8 @@ $\vv{v}$ dans un champ d'induction $\vv{B}$ normal à $\vv{v}$.
      \end{align*}
    #+END_SRC
 
-8) Rayon de courbure
-$$R = \frac{pc}{qBc} \simeq \frac{T_{S}(eV)}{Bc} =
-\frac{50\,PeV}{5.4\cdot3\,10^{8}} = \unit[30\, 000]{km}$$
+8) Rayon de courbure \[R = \frac{pc}{qBc} \simeq \frac{T_{S}(eV)}{Bc} =
+   \frac{50\,PeV}{5.4\cdot3\,10^{8}} = \unit[30\, 000]{km}\]
 
 * TD2 : Nombres Quantiques & Symétries
 ** Énergie maximum des rayons cosmiques
@@ -401,8 +400,8 @@ $$R = \frac{pc}{qBc} \simeq \frac{T_{S}(eV)}{Bc} =
 #+ATTR_LATEX: :width 0.7\linewidth :placement [h]
 [[file:./figures/spectrum.pdf]]
 
-$$p + \gamma \rightarrow p + \pi^{+}$$
-$$p + \gamma \rightarrow n + \pi^{0}$$
+\[p + \gamma \rightarrow p + \pi^{+}\]
+\[p + \gamma \rightarrow n + \pi^{0}\]
 
 Calcul de l'invariant relativiste :
 #+BEGIN_SRC latex
@@ -420,12 +419,12 @@ Proton ultra-relativiste $E_{p}\sim T_{p} = p_{p}c$
   \end{align*}
 #+END_SRC
 
-d'où l'énergie seuil
-$$E_{p} \sim T_{p} = \frac{\left(\Upsigma\,m_\text{finale}c^{2}\right)^{2}}{2E_{\gamma}(1-\cos\theta)}$$
+d'où l'énergie seuil \[E_{p} \sim T_{p} =
+\frac{\left(\Upsigma\,m_\text{finale}c^{2}\right)^{2}}{2E_{\gamma}(1-\cos\theta)}\]
 
-Cas limites: $$\theta\rightarrow0; T_{p}\rightarrow\infty$$ et $$\theta =
+Cas limites: \[\theta\rightarrow0; T_{p}\rightarrow\infty\] et \[\theta =
 180^\circ; T_{p} =
-\frac{\left(\Upsigma\,m_\text{finale}c^{2}\right)^{2}}{4E_{\gamma}}$$
+\frac{\left(\Upsigma\,m_\text{finale}c^{2}\right)^{2}}{4E_{\gamma}}\]
 
 AN: $m_{\pi^{0}}c^{2}$ = 135 MeV et $m_{\pi^{+}}c^{2}$ = 139.6 MeV
 #+BEGIN_SRC latex
@@ -495,38 +494,40 @@ est de 2.2 \mu{}s, ce temps est "boosté" par le facteur de Lorentz soit \tau =
      \end{equation*}
    #+END_SRC
 
-   $$E_{V_1} = E_\pi + E_p \Leftrightarrow p_{V}^2c^2 + m_{V}^2c^4 =
-   \left[\sqrt{p_\pi^2c^2 + m_\pi^2c^4} + \sqrt{p_p^2c^2 + m_p^2c^4}\right]^2$$
-   $$\vv{p_{V}} = \vv{p_\pi} + \vv{p_p} \Leftrightarrow p_{V}^2c^2 =
-   p_\pi^2c^2 + p_p^2c^2 + 2p_\pi p_p c^2\cos\theta$$
+   \[E_{V_1} = E_\pi + E_p \Leftrightarrow p_{V}^2c^2 + m_{V}^2c^4 =
+   \left[\sqrt{p_\pi^2c^2 + m_\pi^2c^4} + \sqrt{p_p^2c^2 + m_p^2c^4}\right]^2\]
+   \[\vv{p_{V}} = \vv{p_\pi} + \vv{p_p} \Leftrightarrow p_{V}^2c^2 =
+   p_\pi^2c^2 + p_p^2c^2 + 2p_\pi p_p c^2\cos\theta\]
 
    *AN :*
-   $$p_{V_1}c = \sqrt{160^2 + 320^2 + 2\cdot160\cdot320\cos 65} = \unit[413]{MeV}$$
-   $$p_{V_2}c = \sqrt{220^2 + 220^2 + 2\cdot220^2\cos 135} = \unit[168]{MeV}$$
-   $$m_{V_1}c^2 = \left[\sqrt{160^2 + 140^2} + \sqrt{320^2 + 938^2} - 413^2\right]^{1/2} = \unit[1130]{MeV}$$
-   $$m_{V_2}c^2 = \left[4\cdot(220^2 + 140^2) - 168^2\right]^{1/2} = \unit[493]{MeV}$$
+   \[p_{V_1}c = \sqrt{160^2 + 320^2 + 2\cdot160\cdot320\cos 65} = \unit[413]{MeV}\]
+   \[p_{V_2}c = \sqrt{220^2 + 220^2 + 2\cdot220^2\cos 135} = \unit[168]{MeV}\]
+   \[m_{V_1}c^2 = \left[\sqrt{160^2 + 140^2} + \sqrt{320^2 + 938^2} - 413^2\right]^{1/2} = \unit[1130]{MeV}\]
+   \[m_{V_2}c^2 = \left[4\cdot(220^2 + 140^2) - 168^2\right]^{1/2} = \unit[493]{MeV}\]
 
    *Discussion :* À l'époque, seuls le proton, neutron, électron, pion et muon
    sont connus \rightarrow $V_1 = \Lambda^0$ et $V_2 = K^0$
 
 2) $d_{\Lambda^0} = \unit[3.2]{cm}$ et $d_{K^0} = \unit[0.8]{cm}$
 
-   $$T_{\Lambda^0} = \sqrt{m_{\Lambda^0}^2c^4 + p_{\Lambda^0}^2c^2} -
+   \[T_{\Lambda^0} = \sqrt{m_{\Lambda^0}^2c^4 + p_{\Lambda^0}^2c^2} -
    m_{\Lambda^0}c^2 = \unit[73]{MeV} \ll m_{\Lambda^0}c^2$$ $$T_{K^0} =
    \sqrt{m_{K^0}^2c^4 + p_{K^0}^2c^2} - m_{K^0}c^2 = \unit[28]{MeV} \ll
-   m_{K^0}c^2$$
+   m_{K^0}c^2\]
 
-   $$\tau_{\Lambda^0} = \frac{d_{\Lambda^0}}{v}$$ or $p=mv$ d'où
-   $$\tau_{\Lambda^0} = \frac{d_{\Lambda^0}\cdot m_{\Lambda^0}}{p} =
-   \frac{d_{\Lambda^0}}{c}\cdot \frac{m_{\Lambda^0}c^2}{pc}$$
+   \[\tau_{\Lambda^0} = \frac{d_{\Lambda^0}}{v}\] or $p=mv$ d'où
+   \[\tau_{\Lambda^0} = \frac{d_{\Lambda^0}\cdot m_{\Lambda^0}}{p} =
+   \frac{d_{\Lambda^0}}{c}\cdot \frac{m_{\Lambda^0}c^2}{pc}\]
 
    *AN :*
-   $$\tau_{\Lambda^0} =
+
+   \[\tau_{\Lambda^0} =
    \frac{\unit[0.032]{m}}{\unit[3\,10^8]{m/s}}\cdot\frac{\unit[1130]{MeV}}{\unit[413]{MeV}}
-   = \unit[2.9\,10^{-10}]{s}$$
-   $$\tau_{K^0} =
+   = \unit[2.9\,10^{-10}]{s}\]
+
+   \[\tau_{K^0} =
    \frac{\unit[0.008]{m}}{\unit[3\,10^8]{m/s}}\cdot\frac{\unit[493]{MeV}}{\unit[168]{MeV}}
-   = \unit[7.8\,10^{-11}]{s}$$
+   = \unit[7.8\,10^{-11}]{s}\]
 
 3) \tau est un temps caractéristique d'une désintégration par interaction
    faible : \tau > 10^{-13} s (/cf./ page 30)
@@ -576,7 +577,7 @@ est de 2.2 \mu{}s, ce temps est "boosté" par le facteur de Lorentz soit \tau =
    particules en voie d'entrée et de sortie. La conservation de la parité \pi se
    traduit par l'équation suivante
 
-   $$\pi(A^+)\,(-1)^{L_i} = \pi(\pi^+)\,\pi(\pi^+)\,\pi(\pi^-)\,(-1)^{L_f}$$
+   \[\pi(A^+)\,(-1)^{L_i} = \pi(\pi^+)\,\pi(\pi^+)\,\pi(\pi^-)\,(-1)^{L_f}\]
 
    Du fait que $I(A^+) = I(\pi^\pm) = 0$, on déduit que $\vv{L_f} - \vv{L_i} =
    \vv{0}$ soit la parité dans l'état final $A^+$
@@ -586,7 +587,7 @@ est de 2.2 \mu{}s, ce temps est "boosté" par le facteur de Lorentz soit \tau =
 3) $\theta^+\rightarrow\pi^++\pi^0$ avec $I(\theta)=0$ et $I^\pi(\pi)=0^-$. Le
    moment angulaire relatif $L_i - L_f$ est donc nul.
 
-   $$\pi(\theta^+) = \pi(\pi^+)\,\pi(\pi^0)\,(-1)^0 = +1$$
+   \[\pi(\theta^+) = \pi(\pi^+)\,\pi(\pi^0)\,(-1)^0 = +1\]
 
 4) $A^+$ et $\theta^+$ ont la même masse, mêmes durées de vie et même charge
    électrique. Elles sont donc la même particule mais avec *une parité
@@ -698,13 +699,14 @@ hypercharge. Dans cet exercice, $c=b=t=0$ donc $Y = B$ + étrangeté $S$
 
    Calcul de l'invariant relativiste $I$
 
-   $$I=(E_\pi + E_p)^2 - (\vv{p}_\pi + \vv{p}_p)^2c^2 = (m_Rc^2)^2$$
+   \[I=(E_\pi + E_p)^2 - (\vv{p}_\pi + \vv{p}_p)^2c^2 = (m_Rc^2)^2\]
    or $\vv{p}_p = \vv{0}$ et $E_\pi = \sqrt{p_\pi^2c^2 + m_\pi^2c^4}$,
    $E_p=m_pc^2$ d'où
 
-   $$m_R^2c^4 = \left(\sqrt{1500^2 + 140^2} + 940\right)^2 - 1500^2 =
-   \unit[3.7\,10^6]{MeV}^2$$
-   $$m_Rc^2 = \unit[1933]{MeV}$$
+   \[m_R^2c^4 = \left(\sqrt{1500^2 + 140^2} + 940\right)^2 - 1500^2 =
+   \unit[3.7\,10^6]{MeV}^2\]
+
+   \[m_Rc^2 = \unit[1933]{MeV}\]
 
 5) Largeur \Gamma = 240 MeV
 
@@ -713,9 +715,9 @@ hypercharge. Dans cet exercice, $c=b=t=0$ donc $Y = B$ + étrangeté $S$
    [[file:./figures/breit_wigner.pdf]]
    #+END_CENTER
 
-   $$\tau =\frac{\hbar}{\Gamma} = \frac{\hbar c}{\Gamma c} =
+   \[\tau =\frac{\hbar}{\Gamma} = \frac{\hbar c}{\Gamma c} =
    \frac{\unit[197.3]{MeV.fm}}{\unit[240]{MeV}\cdot\unit[3\,10^{23}]{fm/s}} =
-   \unit[2.7\,10^{-24}]{s}$$
+   \unit[2.7\,10^{-24}]{s}\]
 
    \rightarrow désintégration par *interaction forte*
 
@@ -726,16 +728,16 @@ hypercharge. Dans cet exercice, $c=b=t=0$ donc $Y = B$ + étrangeté $S$
    $\pi^++p\rightarrow R$ se fait donc également par interaction forte
    \rightarrow conservation de la parité et du moment cinétique total.
 
-   $$\vv{I}_\pi + \vv{I}_p + \vv{L}_i = \vv{I}_R$$
-   $$\pi(\pi^+)\times\pi(p)\times(-1)^{L_i} = \pi(R)$$
+   \[\vv{I}_\pi + \vv{I}_p + \vv{L}_i = \vv{I}_R\]
+   \[\pi(\pi^+)\times\pi(p)\times(-1)^{L_i} = \pi(R)\]
    d'où $I_R^\pi = 5/2^+$ ou $7/2^+$
 
 7) Conservation de $\vv{T}$ et $T_3$ dans la désintégration de $R\rightarrow
    K^++\Sigma^+$
 
-   $$T_3(R) = T_3(K^+) + T_3(\Sigma^+) = 3/2$$
-   $$\vv{T}(R) = \vv{T}(K^+) + \vv{T}(\Sigma^+) = \vv{1/2} + \vv{1} =
-   \vv{1/2},\vv{3/2}$$
+   \[T_3(R) = T_3(K^+) + T_3(\Sigma^+) = 3/2\]
+   \[\vv{T}(R) = \vv{T}(K^+) + \vv{T}(\Sigma^+) = \vv{1/2} + \vv{1} =
+   \vv{1/2},\vv{3/2}\]
    or comme $T_3(R) = 3/2 \Leftrightarrow \vv{T}(R) = \vv{3/2}$
 
 8) La conservation du nombre baryonique, de la charge électrique et de
@@ -764,7 +766,7 @@ haut". Le principe de Pauli exclut une telle configuration pour des fermions. En
 ajoutant le nombre quantique de couleur, la chromodynamique quantique permet un
 tel état tout comme pour le baryon \Omega^{-} postulé par Gell-Mann et découvert à
 Brookhaven en 1964.
-* Modèle des quarks -- Les hadrons
+* TD4 : Modèle des quarks -- Les hadrons
 ** Les mésons constitués des quarks $u,d,s$ et de leurs antiquarks
 1) Opérateur conjugaison particule -- antiparticule $\hat{c}$ :
    $q\overset{\hat{c}}{\rightarrow}\bar{q}$
@@ -786,7 +788,7 @@ Brookhaven en 1964.
 
 2) $\vv{L_i} = \vv{0}$: méson \equiv 1 quark + 1 antiquark
 
-   $$\pi(q\bar{q}) = (+1)\cdot(-1)\cdot(-1)^{L_i} = -1$$
+   \[\pi(q\bar{q}) = (+1)\cdot(-1)\cdot(-1)^{L_i} = -1\]
    #+BEGIN_SRC latex
      \begin{align*}
        \vv{I}(q\bar{q}) = \vv{I}_q + \vv{I}_{\bar{q}} + \vv{L}_i &= \vv{S}_q +
