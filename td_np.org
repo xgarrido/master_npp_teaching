@@ -836,6 +836,78 @@ Brookhaven en 1964.
    - 2 singulets d'isospin
      $\eta\left(\frac{1}{\sqrt{6}}(u\bar{u}+d\bar{d}-2s\bar{s})\right)$ et
      $\eta\prime\left(\frac{1}{\sqrt{3}}(u\bar{u}+d\bar{d}+s\bar{s})\right)$
+
+** Multiplets de baryons
+1) Formule de Gell-Mann et Okubo :
+   \[M(Y,T)c^2 = M_0c^2 + a\,Y + b\,\left[T(T+1) - \frac{Y^2}{4}\right]\]
+   avec l'hypercharge $Y$ égale à $B+S = 1+S$. Pour $I^\pi=3/2^+$, nous avons
+   ainsi
+   - $S=0$ et $\vv{T}=\vv{3}/2$ : quadruplet \Delta^{-}, \Delta^{0}, \Delta^{+}
+     et \Delta^{++}
+     #+BEGIN_SRC latex
+       \begin{align*}
+         m_\Delta c^2 &= M_0c^2 + a + b\,\left[\frac{3}{2}\times\frac{5}{2} - \frac{1}{4}\right]\\
+         &= M_0c^2 + a + b\times\frac{7}{2} = \unit[1236]{MeV}
+       \end{align*}
+     #+END_SRC
+   - $S=-1$ et $\vv{T}=\vv{1}$ : triplet \Sigma^{-*}, \Sigma^{0*} et \Sigma^{+*}
+     (niveaux excités du baryon \Sigma)
+     #+BEGIN_SRC latex
+       \begin{align*}
+         m_\Sigma c^2 &= M_0c^2 + b\,\left[1\times2 - \frac{0}{4}\right]\\
+         &= M_0c^2 + 2b = \unit[1385]{MeV}
+       \end{align*}
+     #+END_SRC
+   - $S=-2$ et $\vv{T}=\vv{1}/2$ : doublet \Xi^{-*} et \Xi^{0*}
+     (niveaux excités du baryon \Xi)
+     #+BEGIN_SRC latex
+       \begin{align*}
+         m_\Xi c^2 &= M_0c^2 - a + b\,\left[\frac{1}{2}\times\frac{3}{2} - \frac{1}{4}\right]\\
+         &= M_0c^2 - a + \frac{b}{2} = \unit[1530]{MeV}
+       \end{align*}
+     #+END_SRC
+   - $S=-3$ et $\vv{T}=\vv{0}$ : singulet \Omega^{-}
+     #+BEGIN_SRC latex
+       \begin{align*}
+         m_\Omega c^2 &= M_0c^2 - 2a - b
+       \end{align*}
+     #+END_SRC
+   d'où
+   #+BEGIN_SRC latex
+     \begin{align*}
+       m_\Sigma c^2 - m_\Delta c^2 &= - a + 2b - \frac{7}{2}\,b = 1385 - 1236 = \unit[149]{MeV}\\
+       &= - a - \frac{3}{2}\,b = \unit[149]{MeV}\\
+       m_\Xi c^2 - m_\Sigma c^2 &= - a + \frac{b}{2} - 2b = 1530 - 1385 = \unit[145]{MeV}\\
+       &= - a - \frac{3}{2}\,b = \unit[145]{MeV}\\
+       m_\Omega c^2 - m_\Xi c^2 &= - 2a - b + a - \frac{b}{2} = \langle145 -- 149\rangle\unit[]{MeV}\\
+       &= - a - \frac{3}{2}\,b = \langle\unit[147]{MeV}\rangle
+     \end{align*}
+   #+END_SRC
+   \[m_\Omega c^2 = m_\Xi c^2 + \unit[147]{MeV} = \unit[1677]{MeV}\] soit un
+   écart de 0.3% par rapport à la valeur mesurée expérimentalement.
+
+   Par ailleurs, le baryon \Omega^{-} est composé de 3 quarks $s$. L'isospin
+   $\vv{T} = \vv{0}$ et $T_3=0$, l'étrangeté est $S=-3$, le nombre baryonique
+   $B$ est égal à 1 tandis que le moment cinétique total $I=\frac{3}{2}$. Étant
+   donné que $\vv{L}=\vv{0}$ on a \[\vv{I} = \vv{L} + \vv{S} = \vv{S}(s_1) +
+   \vv{S}(s_2) + \vv{S}(s_3)\] soit \[\vv{I}=\frac{\vv{3}}{2} =
+   \frac{\vv{1}}{2} + \frac{\vv{1}}{2} + \frac{\vv{1}}{2}\]. Les 3 quarks $s$
+   sont donc tous dans le même état de spin +1/2 ce qui par définition est
+   impossible en raison du principe d'exclusion de Pauli \rightarrow
+   introduction de la couleur $RVB$ comme nouveau nombre quantique et justifiant
+   l'existence des baryons \Omega^{-}, \Delta^{-} et \Delta^{++}. Chaque quarks
+   $s$ existe en 3 couleurs $R,V,B$ d'où $\Omega^{-} = (s_R,s_V,s_B)$. *Symétrie
+   de la fonction d'onde globale ??*
+
+2) proton \equiv $uud$ soit une masse $m_p c^2 = 2\,m_u c^2 + m_d c^2 \leq
+   2\times\unit[3]{MeV} + \unit[7]{MeV} = \unit[13]{MeV} \ll
+   \unit[938]{MeV}$. 99% de la masse du proton est due à la mer de
+   partons \equiv quarks et gluons et seulement 1% de la masse est portée par
+   les quarks de valence $uud$.
+
+3) $\Delta^0\rightarrow p + \pi^-$ et $\Lambda^0\rightarrow p + \pi^-$
+
+
 * Footnotes
 
 [fn:1] 1 pc = 1 parsec = 3.26 années lumières = 30.856 10^{12} km.
