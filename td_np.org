@@ -826,7 +826,7 @@ Brookhaven en 1964.
    |------------+-----+-------+-------|
 
    #+CAPTION: *Combinaison de quark $u,d,s$ pour former des mésons de moment cinétique $I^\pi=0^-$*
-   #+ATTR_LATEX: :align p{0.5\textwidth}p{0.5\textwidth}
+   #+ATTR_LATEX: :align C{0.5\textwidth}C{0.5\textwidth}
    | [[file:./figures/meson_uds_0.pdf]] | [[file:./figures/meson_uds_1.pdf]] |
 
    - 1 triplet d'isospin
@@ -907,10 +907,10 @@ Brookhaven en 1964.
 
 3) $\Delta^0\rightarrow p + \pi^-$ et $\Lambda^0\rightarrow p + \pi^-\gtrsim$
 
-   #+ATTR_LATEX: :align p{0.4\linewidth}p{0.4\linewidth}
-   | [[file:./figures/delta0_diagram.pdf]]          | [[file:./figures/lambda0_diagram.pdf]]        |
-   | *Diagramme connecté*                       | *Diagramme déconnecté*                    |
-   | Intéraction forte                          | Interaction faible (saveur non conservée) |
+   #+ATTR_LATEX: :align C{0.4\linewidth}C{0.4\linewidth}
+   | [[file:./figures/delta0_diagram.pdf]]           | [[file:./figures/lambda0_diagram.pdf]]        |
+   | *Diagramme connecté*                        | *Diagramme déconnecté*                    |
+   | Intéraction forte                           | Interaction faible (saveur non conservée) |
    | $\rightarrow\tau\sim$ 10^{-23} à 10^{-20} s | $\rightarrow\tau\gtrsim$ 10^{-13} s       |
 
 * Footnotes
