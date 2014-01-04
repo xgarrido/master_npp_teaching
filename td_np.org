@@ -879,7 +879,7 @@ Brookhaven en 1964.
        &= - a - \frac{3}{2}\,b = \unit[149]{MeV}\\
        m_\Xi c^2 - m_\Sigma c^2 &= - a + \frac{b}{2} - 2b = 1530 - 1385 = \unit[145]{MeV}\\
        &= - a - \frac{3}{2}\,b = \unit[145]{MeV}\\
-       m_\Omega c^2 - m_\Xi c^2 &= - 2a - b + a - \frac{b}{2} = \langle145 -- 149\rangle\unit[]{MeV}\\
+       m_\Omega c^2 - m_\Xi c^2 &= - 2a - b + a - \frac{b}{2} = \langle145; 149\rangle\unit[]{MeV}\\
        &= - a - \frac{3}{2}\,b = \langle\unit[147]{MeV}\rangle
      \end{align*}
    #+END_SRC
@@ -905,8 +905,13 @@ Brookhaven en 1964.
    partons \equiv quarks et gluons et seulement 1% de la masse est portée par
    les quarks de valence $uud$.
 
-3) $\Delta^0\rightarrow p + \pi^-$ et $\Lambda^0\rightarrow p + \pi^-$
+3) $\Delta^0\rightarrow p + \pi^-$ et $\Lambda^0\rightarrow p + \pi^-\gtrsim$
 
+   #+ATTR_LATEX: :align p{0.4\linewidth}p{0.4\linewidth}
+   | [[file:./figures/delta0_diagram.pdf]]          | [[file:./figures/lambda0_diagram.pdf]]        |
+   | *Diagramme connecté*                       | *Diagramme déconnecté*                    |
+   | Intéraction forte                          | Interaction faible (saveur non conservée) |
+   | $\rightarrow\tau\sim$ 10^{-23} à 10^{-20} s | $\rightarrow\tau\gtrsim$ 10^{-13} s       |
 
 * Footnotes
 

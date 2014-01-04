@@ -1,0 +1,40 @@
+\begin{tikzpicture}[y=-1cm]
+  \sf
+  \path (5.83353,19.34845) node[text=black,anchor=base west] {\fontsize{16.0}{19.2}\selectfont{}$u$};
+  \path (5.83353,20.03848) node[text=black,anchor=base west] {\fontsize{16.0}{19.2}\selectfont{}$d$};
+  \path (5.83353,20.81318) node[text=black,anchor=base west] {\fontsize{16.0}{19.2}\selectfont{}$s$};
+  \begin{scope}[xshift=10pt,yshift=-2pt]
+    \path (4.33917,20.09563) node[text=black,anchor=base west] {\fontsize{16.0}{19.2}\selectfont{}$\Lambda^0$};
+    \draw[semithick,black] (5.40597,19.03307) -- (5.40597,20.7518);
+  \end{scope}
+  \path (8.59155,17.91123) node[text=black,anchor=base west] {\fontsize{16.0}{19.2}\selectfont{}$u$};
+  \path (8.56403,21.35928) node[text=black,anchor=base west] {\fontsize{16.0}{19.2}\selectfont{}$d$};
+  \path (8.56403,19.26167) node[text=black,anchor=base west] {\fontsize{16.0}{19.2}\selectfont{}$u$};
+  \draw[semithick,black] (9.19903,17.72708) -- (9.19903,19.31458);
+  \begin{scope}[xshift=-10pt]
+    \path (9.65623,18.51448) node[text=black,anchor=base west] {\fontsize{16.0}{19.2}\selectfont{}$p$};
+  \end{scope}
+  \path (8.56403,20.69888) node[text=black,anchor=base west] {\fontsize{16.0}{19.2}\selectfont{}$\bar{u}$};
+  \path (8.56403,18.68805) node[text=black,anchor=base west] {\fontsize{16.0}{19.2}\selectfont{}$d$};
+  \begin{scope}[yshift=-70pt,xshift=-10pt]
+    \path (9.65623,18.51448) node[text=black,anchor=base west] {\fontsize{16.0}{19.2}\selectfont{}$\pi^-$};
+  \end{scope}
+  \draw[semithick,black] (9.19903,20.4089) -- (9.19903,21.26403);
+
+  \begin{scope}[yshift=-2pt]
+    \draw[thick,gray] (6.35,19.05847) -- (8.6,17.77153);
+    \begin{scope}[yshift=-22pt]
+      \draw[thick,gray] (6.35,19.05847) -- (8.6,17.77153);
+    \end{scope}
+  \end{scope}
+  \draw[thick,gray,dashed] (6.35,20.6375) -- (8.6,21.1836);
+
+  \begin{scope}[yshift=-52pt]
+    \draw [gray,thick,domain=90:270] plot ({8.56+0.7*cos(\x)}, {18+0.7*sin(\x)});
+  \end{scope}
+\end{tikzpicture}%
+
+%% Configure (x)emacs for this file ...
+%% Local Variables:
+%% mode: latex
+%% End:
