@@ -19,6 +19,6 @@ $(files_pdf): %.pdf: %.org README.org
 #> /dev/null 2>&1
 
 clean:
-	@rm -rf	latex.d *.tex *.pdf *.fdb* *~ $(README_tangles)
+	@rm -rf	latex.d *.tex *.pdf *.toc *.fdb* *~ README.el
 
 .PHONY: all pdf clean

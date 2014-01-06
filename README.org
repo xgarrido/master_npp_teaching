@@ -53,6 +53,10 @@ although it is not added by default as a security precaution.
   (setq org-confirm-babel-evaluate nil)
 #+END_SRC
 
+*** Keep LaTeX logfiles
+#+BEGIN_SRC emacs-lisp
+  (setq org-latex-remove-logfiles nil)
+#+END_SRC
 *** Default list of LaTeX packages
 Only include one default package and remove all the crapppy stuff included by
 =org= \rightarrow =latex= translation.
@@ -108,7 +112,7 @@ environment into figure
     "When exporting from .org with latex, automatically run latex,
         pdflatex, or xelatex as appropriate, using latexmk."
     (when (org-export-derived-backend-p backend 'latex)
-      (setq org-latex-pdf-process '("jobname=$(basename %f | sed 's/\.tex//');latexmk -xelatex -shell-escape %f; mv ${jobname}.* latex.d/.; mv latex.d/${jobname}.{org,tex,pdf,fdb_latexmk,toc,aux} ."))
+      (setq org-latex-pdf-process '("jobname=$(basename %f | sed 's/\.tex//');latexmk -xelatex -shell-escape %f; mv ${jobname}.* latex.d/.; mv latex.d/${jobname}.{org,tex,pdf,fdb_latexmk,toc} ."))
       )
     )
   (org-add-hook 'org-export-before-processing-hook 'npp-latexmk-cmd)
