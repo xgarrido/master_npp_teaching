@@ -898,7 +898,10 @@ Brookhaven en 1964.
    \rightarrow introduction de la couleur $RVB$ comme nouveau nombre quantique
    et justifiant l'existence des baryons \Omega^{-}, \Delta^{-} et
    \Delta^{++}. Chaque quarks $s$ existe en 3 couleurs $R,V,B$ d'où $\Omega^{-}
-   = (s_R,s_V,s_B)$. *Symétrie de la fonction d'onde globale ??*
+   = (s_R,s_V,s_B)$.
+
+   La fonction d'onde globale est antisymétrique dès lors que le nombre
+   quantique de couleur est introduit[fn:5].
 
 2) proton \equiv $uud$ soit une masse $m_p c^2 = 2\,m_u c^2 + m_d c^2 \leq
    2\times\unit[3]{MeV} + \unit[7]{MeV} = \unit[13]{MeV} \ll
@@ -914,6 +917,172 @@ Brookhaven en 1964.
    | Intéraction forte                           | Interaction faible (saveur non conservée) |
    | $\rightarrow\tau\sim$ 10^{-23} à 10^{-20} s | $\rightarrow\tau\gtrsim$ 10^{-13} s       |
 
+** Les mésons $\pmb{D}$
+
+1) L'hypercharge $Y$ est égale à la somme du nombre baryonique $B$ et de la
+   saveur $S$. Le méson $D^0$ a, par définition, un nombre baryonique nul, sa
+   saveur étant uniquement $c=1$ d'où $Y=1$. En utilisant, la formule de
+   Gell-Mann & Nishijima $Q/E = T_3 + Y/2 = -1/2 + 1/2 = 0$, on obtient donc
+   bien une charge nulle.
+
+   L'antiparticule $\bar{D}^0$ possède les mêmes propriétés que $D^0$ exception
+   faite la 3^{ème} composante de l'isospin $T_3$ égale à +1/2 et à la saveur
+   $c=-1$. Les mésons étant des bosons, la parité reste la même soit
+   $I^\pi=0^-$.
+
+2) Multiplet d'isospin de $D^0$
+
+   $\vv{T} = \vv{1}/2$, on a donc un doublet d'isospin $T_3=-1/2,+1/2$ de même
+   saveur. En plus du méson $D^0$, le second membre du doublet a $T_3=+1/2$ soit
+   une charge $Q/e=+1/2+1/2=+1$. Il s'agit du méson $D^+$. On en déduit que
+   l'antiparticule du $D^+$ est donc le méson $D^-$ ayant les mêmes propriétés
+   que le $D^+$ à la charge (et donc $T_3$) près.
+
+3) Le méson $D^0$ est forcément constitué d'un quark charme et d'un antiquark
+   sans saveur /i.e./ $\bar{u}$ ou $\bar{d}$. Le fait qu'il est une charge nulle
+   implique nécessairement la présence d'un antiquark $u$. Le doublon d'isospin
+   de $D^0$ qu'est le méson $D^+$ est donc constitué d'un quark $c$ (même
+   saveur) et d'un antiquark $d$ (charge électrique +$e$). De même, les
+   antiparticules $\bar{D}^0$ et $D^-$ sont constituées d'un antiquark $c$ et
+   respectivement d'un quark $u$ et $d$.
+
+   |-------------+------------|
+   | $D^0$       | $c\bar{u}$ |
+   | $D^+$       | $c\bar{d}$ |
+   | $\bar{D}^0$ | $\bar{c}u$ |
+   | $D^-$       | $\bar{c}d$ |
+   |-------------+------------|
+
+4) $\vv{I} = \vv{L} + \vv{S}$ soit $\vv{L} = \vv{I} + \vv{S} = \vv{0} +
+   \vv{S}_{c} + \vv{S}_{\bar{u}} = \vv{0} + \vv{1}/2 + \vv{1}/2 = \vv{0}$ ou
+   $\vv{1}$. En tenant compte de la parité \pi, on obtient
+   #+BEGIN_SRC latex
+     \begin{align*}
+       \pi(D^0) &= \pi(c)\cdot\pi(\bar{u})\cdot(-1)^L\\
+       -1 &= +1\cdot-1\cdot(-1)^L
+     \end{align*}
+   #+END_SRC
+   d'où $L$ pair. Les valeurs de $\vv{L}$ et de $\vv{S}$ satisfaisant aux
+   conservations du moment cinétique total et de la parité sont donc
+   $\vv{L}=\vv{0}$ et $\vv{S}=\vv{0}$.
+
+5) $D^0\rightarrow K^-+\pi^+$. Le fait de n'avoir à tester que la
+   (non)conservation du moment cinétique total et de la parité semble indiquer
+   que la réaction se fait par interaction faible.
+   \[
+   \vv{I}_{D^0} = \vv{I}_{K^-} + \vv{I}_{\pi^+} +
+   \vv{L}_{K\pi}\quad\rightarrow\quad\vv{0} = \vv{0} + \vv{0} + \vv{L}_{K\pi}
+   \]
+   Dans ces conditions, la parité $\pi$ n'est pas conservée
+   #+BEGIN_SRC latex
+     \begin{align*}
+       \pi(D^0) &\neq \pi(K^-)\cdot\pi(\pi^+)\cdot(-1)^{L_{K\pi}}\\
+       -1 &\neq -1\times-1\times(-1)^0
+     \end{align*}
+   #+END_SRC
+   La non-conservation de la parité indique que cette désintégration se fait par
+   interaction faible. Le fait que la saveur "charme" est absente des kaons et
+   des pions et inversement que la saveur "étrangeté" soit absente du méson
+   $D^0$ impliquent la non-conservation de la saveur corroborant le résultat
+   précédent.
+
+6) $e^++e^-\rightarrow D^0+\bar{D}^0$
+
+   Collision de deux faisceaux d'impulsion opposés \rightarrow référentiel du
+   centre de masse dans lequel l'énergie cinétique minimale est égale à la
+   moitié de la chaleur de réaction $|Q|$.
+   \[
+   T_S = \frac{|Q|}{2} = \frac{2\,m_{D^0}c^2 - 2\,m_ec^2}{2} = \unit[1865]{MeV}
+   \]
+
+7) $T_0=\unit[2014]{MeV}$
+
+   Toujours dans le référentiel du centre de masse, la conservation de
+   l'impulsion implique que $\vv{p}_{D^0}=-\vv{p}_{\bar{D}^0}$. Les masses de
+   ces deux particules étant identiques, l'énergie totale $E$ est donc la même
+   pour $D^0$ et $\bar{D}^0$. Pour les mêmes raisons, l'énergie totale est la
+   même pour le faisceau d'électrons que pour celui de positron si bien que la
+   conservation de l'énergie totale implique $E_{e^\pm}=E_{D^0/\bar{D}^0}$.
+   #+BEGIN_SRC latex
+     \begin{align*}
+       E_{D^0/\bar{D}^0} &= T_0 + m_ec^2\\
+       \sqrt{p_{D^0/\bar{D}^0}^2c^2+m_{D^0/\bar{D}^0}^2c^4} &\simeq T_0\\
+       p_{D^0/\bar{D}^0}c&=\sqrt{T_0^2 - m_{D^0/\bar{D}^0}^2c^4}\\
+       p_{D^0/\bar{D}^0}c&=\sqrt{2014^2 - 1865^2} = \unit[760.2]{MeV}
+     \end{align*}
+   #+END_SRC
+
+8) Le second pic correspond à la production du couple $D^0/\bar{D}^0$.
+9) $e^++e^-\rightarrow D^0 + X$
+
+   L'impulsion du $D^0$ est à présent, de 560 MeV. La conservation de
+   l'impulsion suppose la même impulsion pour la particule $X$. Par ailleurs, la
+   conservation de l'énergie totale s'écrit $2\,E_{e^\pm} = E_{D^0} + E_X$. Soit
+   #+BEGIN_SRC latex
+     \begin{align*}
+       E_X &= 2\,E_{e^\pm} - E_{D^0}\\
+       &= 2\,\left(T_0 + m_ec^2\right) - \sqrt{p_{D^0}^2c^2+m_{D^0}^2c^4}\\
+       \sqrt{p_{X}^2c^2+m_{X}^2c^4} &= 2\,\left(T_0 + m_ec^2\right) - \sqrt{p_{D^0}^2c^2+m_{D^0}^2c^4}\\
+       m_{X}^2c^4 &\simeq \left[2T_0 - \sqrt{p_{D^0}^2c^2+m_{D^0}^2c^4}\right]^2 - p_X^2c^2\\
+       m_{X}^2c^4 &\simeq \left[2\times2014 - \sqrt{560^2+1865^2}\right]^2 - 560^2\\
+       m_Xc^2 &= \unit[2004]{MeV}
+     \end{align*}
+   #+END_SRC
+
+10) L'interaction électromagnétique conserve la saveur (seul l'isospin n'est pas
+    conservé). La particule $X$ est donc nécessairement de saveur opposée au
+    méson $D^0$. Par ailleurs, la conservation du nombre baryonique et du nombre
+    leptonique implique que cette particule est un méson. Enfin, on déduit de la
+    conservation de la charge électrique que cette particule est neutre. La
+    particule $X$ est donc constituée d'un antiquark $c$ et soit d'un quark $u$
+    soit d'un quark $d$. La conservation de la charge électrique qui, dans ce
+    cas présent, est équivalente à la conservation de la troisième composante de
+    l'isospin $T_3$ (relation de Gell-Mann & Nishijima), implique que le second
+    quark est un quark $u$. La particule $X$ est ainsi identique en composition
+    à l'antiméson $\bar{D}^0$.
+
+    Conservation du moment cinétique total $\vv{I}$
+    #+BEGIN_SRC latex
+      \begin{align*}
+        \vv{I}_X &= \vv{I}_u + \vv{I}_{\bar{c}}+\vv{L}_{u\bar{c}}\\
+        \vv{1} &= \vv{S}_u + \vv{S}_{\bar{c}}+\vv{L}_{u\bar{c}}
+      \end{align*}
+    #+END_SRC
+    Soit $\vv{S}_X=\vv{S}_u + \vv{S}_{\bar{c}}=\vv{0}$ et $\vv{L}=\vv{1}$, soit
+    $\vv{S}_X=\vv{1}$ et $\vv{L}=\vv{0},\vv{1},\vv{2}$.
+    La conservation de la parité $\pi$ impose que
+    #+BEGIN_SRC latex
+      \begin{align*}
+        \pi(X) &= \pi(u)\cdot\pi(\bar{c})\cdot(-1)^{L}\\
+        -1 &= (+1)\times(-1)\times(-1)^L
+      \end{align*}
+    #+END_SRC
+    duquel on déduit que $L$ doit être pair. La valeur du spin de $X$ est donc 1
+    et le moment orbital relatif est soit 0 ou 2.
+
+11) $X\rightarrow\bar{D}^0+\pi^0$
+
+    |----------+------------+-------------+-------------+---+----------+------------|
+    |          |        $X$ | \rightarrow | $\bar{D}^0$ | + |  $\pi^0$ |            |
+    | $B$      |          0 | =           |           0 | + |        0 | \checkmark |
+    | $c$      |         -1 | =           |          -1 | + |        0 | \checkmark |
+    | $s,b,t$  |          0 | =           |           0 | + |        0 | \checkmark |
+    | $Q/e$    |          0 | =           |           0 | + |        0 | \checkmark |
+    | $T_3$    |        1/2 | =           |         1/2 | + |        0 | \checkmark |
+    | $\vv{T}$ | $\vv{1}/2$ | =           |  $\vv{1}/2$ | + | $\vv{1}$ | \checkmark |
+    |----------+------------+-------------+-------------+---+----------+------------|
+
+    Le moment cinétique total est conservé dans la mesure où $I^\pi(\pi^0)=0^-$
+    ce qui implique que le moment orbital relatif de $\pi^0$ par rapport à
+    $\bar{D}^0$ est égal à $\vv{1}$. Dans ces conditions, la parité est
+    également conservée. Enfin, la désintégration est possible et spontanée
+    puisque la chaleur de réaction $Q$ est égale à 2005 - (1865+135) > 0.
+
+12) La particule $X$ est constituée des mêmes particules, à savoir le couple
+    $u\bar{c}$, que l'antiméson $\bar{D}^0$. Elle possède néanmoins un moment
+    cinétique total plus grand de même qu'une masse plus élevée que $\bar{D}^0$
+    ce qui semble indiquer que cette particule est un état excité de
+    $\bar{D}^0$.
 * Footnotes
 
 [fn:1] 1 pc = 1 parsec = 3.26 années lumières = 30.856 10^{12} km.
@@ -934,3 +1103,9 @@ de particules lourdes instables telles que les particules $V$.
 
 [fn:4] le moment cinétique total est également différent 5/2^{+} ou 7/2^{+} contre
 3/2^{+}
+
+[fn:5] le principe d'exclusion de Pauli généralisé implique que $L+S+T$ soit
+impaire pour que la fonction d'onde soit antisymétrique. $\vv{L}=\vv{0}$,
+$\vv{T}=\vv{0}$ et $\vv{S}=\vv{3}/2$, la somme n'est donc pas impaire. C'est
+l'introduction de la couleur qui permet de rendre cette fonction d'onde globale
+antisymétrique.
