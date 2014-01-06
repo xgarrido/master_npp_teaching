@@ -917,7 +917,7 @@ Brookhaven en 1964.
    | Intéraction forte                           | Interaction faible (saveur non conservée) |
    | $\rightarrow\tau\sim$ 10^{-23} à 10^{-20} s | $\rightarrow\tau\gtrsim$ 10^{-13} s       |
 
-** Les mésons $\pmb{D}$
+** Les mésons $D$
 
 1) L'hypercharge $Y$ est égale à la somme du nombre baryonique $B$ et de la
    saveur $S$. Le méson $D^0$ a, par définition, un nombre baryonique nul, sa
