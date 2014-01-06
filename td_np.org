@@ -891,13 +891,14 @@ Brookhaven en 1964.
    $B$ est égal à 1 tandis que le moment cinétique total $I=\frac{3}{2}$. Étant
    donné que $\vv{L}=\vv{0}$ on a \[\vv{I} = \vv{L} + \vv{S} = \vv{S}(s_1) +
    \vv{S}(s_2) + \vv{S}(s_3)\] soit \[\vv{I}=\frac{\vv{3}}{2} =
-   \frac{\vv{1}}{2} + \frac{\vv{1}}{2} + \frac{\vv{1}}{2}\]. Les 3 quarks $s$
-   sont donc tous dans le même état de spin +1/2 ce qui par définition est
-   impossible en raison du principe d'exclusion de Pauli \rightarrow
-   introduction de la couleur $RVB$ comme nouveau nombre quantique et justifiant
-   l'existence des baryons \Omega^{-}, \Delta^{-} et \Delta^{++}. Chaque quarks
-   $s$ existe en 3 couleurs $R,V,B$ d'où $\Omega^{-} = (s_R,s_V,s_B)$. *Symétrie
-   de la fonction d'onde globale ??*
+   \frac{\vv{1}}{2} + \frac{\vv{1}}{2} + \frac{\vv{1}}{2}\]
+
+   Les 3 quarks $s$ sont donc tous dans le même état de spin +1/2 ce qui par
+   définition est impossible en raison du principe d'exclusion de Pauli
+   \rightarrow introduction de la couleur $RVB$ comme nouveau nombre quantique
+   et justifiant l'existence des baryons \Omega^{-}, \Delta^{-} et
+   \Delta^{++}. Chaque quarks $s$ existe en 3 couleurs $R,V,B$ d'où $\Omega^{-}
+   = (s_R,s_V,s_B)$. *Symétrie de la fonction d'onde globale ??*
 
 2) proton \equiv $uud$ soit une masse $m_p c^2 = 2\,m_u c^2 + m_d c^2 \leq
    2\times\unit[3]{MeV} + \unit[7]{MeV} = \unit[13]{MeV} \ll
@@ -905,7 +906,7 @@ Brookhaven en 1964.
    partons \equiv quarks et gluons et seulement 1% de la masse est portée par
    les quarks de valence $uud$.
 
-3) $\Delta^0\rightarrow p + \pi^-$ et $\Lambda^0\rightarrow p + \pi^-\gtrsim$
+3) $\Delta^0\rightarrow p + \pi^-$ et $\Lambda^0\rightarrow p + \pi^-$
 
    #+ATTR_LATEX: :align C{0.4\linewidth}C{0.4\linewidth}
    | [[file:./figures/delta0_diagram.pdf]]           | [[file:./figures/lambda0_diagram.pdf]]        |
