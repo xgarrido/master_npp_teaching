@@ -1083,6 +1083,7 @@ Brookhaven en 1964.
     cinétique total plus grand de même qu'une masse plus élevée que $\bar{D}^0$
     ce qui semble indiquer que cette particule est un état excité de
     $\bar{D}^0$.
+
 * Footnotes
 
 [fn:1] 1 pc = 1 parsec = 3.26 années lumières = 30.856 10^{12} km.
