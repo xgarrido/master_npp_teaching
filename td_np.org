@@ -3,6 +3,9 @@
 #+DATE: 25/11/13
 #+OPTIONS: ^:{} toc:2
 #+LATEX_HEADER_EXTRA: \newcommand{\vv}[1]{\overrightarrow{#1}}
+#+LATEX_HEADER_EXTRA: \newcommand{\ket}[1]{\ensuremath{|#1\rangle}\xspace}
+#+LATEX_HEADER_EXTRA: \newcommand{\bra}[1]{\ensuremath{\langle #1|}\xspace}
+#+LATEX_HEADER_EXTRA: \newcommand{\psh}[2]{\ensuremath{\langle #1|#2\rangle}\xspace}
 
 * TD1 : Cinématique & Accélérateurs
 ** Introduction
@@ -1107,7 +1110,7 @@ Pour un noyau c'est-à-dire pour une système à plusieurs nucléons, l'isospin 
 
 où $t_i$ est lui-même égal à $\vv{1}/2$. La 3^{ème} composante $T_3$ est égale à
 
-\[T_3=\Sigma\,t_3=Z\times t_3(p) + N\times t_3(n)\]
+\[T_3=\Sigma\,t_{3i}=Z\times t_3(p) + N\times t_3(n)\]
 
 soit
 
@@ -1121,6 +1124,104 @@ où, de façon empirique, il est établi que l'état fondamental correspond à
 $T=|T_3|$, $T$ augmentant pour les états excités.
 
 ** Couplages nucléon-nucléon et nucléon-pion
+1) Système de deux nucléons :
+
+   $\vv{T}=\Sigma\,\vv{t}_i$ et $T_3=\Sigma\,t_{3i}$ or selon Gell-Mann &
+   Nishijima $t_3=Q/e - Y/2$. Les neutrons et protons étant des baryons,
+   l'hypercharge $Y$ est égale à 1 et donc $t_3(n) = -1/2$ et $t_3(p) =
+   +1/2$. Ces deux baryons appartiennent ainsi au doublet d'isospin
+   $\vv{T}=\vv{1}/2$.
+
+   L'isospin d'un système de deux nucléons est donc égal à
+
+   \[\vv{T} = \frac{\vv{1}}{2} + \frac{\vv{1}}{2} = \vv{0}\text{ ou }\vv{1}\]
+
+   On déduit ainsi l'existence
+
+   - d'un singulet d'isospin $\vv{T}=\vv{0}$, $T_3=0$ soit l'état
+     $\ket{TT_3}=\ket{0\,0}$,
+   - d'un triplet d'isospin $\vv{T}=\vv{1}$, $T_3=-1,0,+1$ définissant les
+     états $\ket{1\,-1}$, $\ket{1\,0}$, $\ket{1\,1}$.
+
+2) Fonction d'onde d'isospin
+
+   \[\ket{TT_3}=\sum_{t_{31}}\sum_{t_{32}}\,\psh{t_1t_2t_{31}t_{32}}{TT_3}\ket{t_1t_2t_{31}t_{32}}\]
+
+   où le terme $\psh{t_1t_2t_{31}t_{32}}{TT_3}$ correpond au coefficient de
+   Clebsch-Gordan. Dans l'échange des deux particules 1,2, ce coefficient
+   devient
+
+   \[\psh{t_2t_1t_{32}t_{31}}{TT_3}=(-1)^{T-t_1-t_2}\,\psh{t_1t_2t_{31}t_{32}}{TT_3}\]
+
+   Si $T-t_1-t_2$ est impair la fonction d'onde est antisymétrique et si
+   $T-t_1-t_2$ est pair, la fonction d'onde d'isospin est symétrique.
+
+   Dans le cas d'un système de deux nucléons $t_{1,2}=1/2$ et donc la fonction
+   d'onde est antisymétrique si $T-1$ est impair et symétrique si $T-1$ est
+   pair.
+
+3) État singulet, $T=0$, $T_3=0$ est antisymétrique soit
+   $\ket{0\,0}=\frac{1}{\sqrt{2}}\left(\ket{pn}-\ket{np}\right)$. L'état triplet
+   $T=1$, $T_3=-1,0,1$ est quant à lui symétrique. On obtient ainsi
+
+   - $\ket{1\,1}=\ket{pp}$ car $T_3=t_{31}+t_{32}$
+   - $\ket{1\,0}=\frac{1}{\sqrt{2}}\left(\ket{pn}+\ket{np}\right)$
+   - $\ket{1\,-1}=\ket{nn}$
+
+4) Pions : $\pi^{-},\pi^{0},\pi^{+}$
+
+   Les pions étant des mésons sans saveur, l'hypercharge est ainsi nulle. On
+   déduit ainsi de la formule de Gell-Mann & Nishijima, les valeurs de $T_3$ qui
+   sont alors égales à la charge électrique de ces particules. $T_3$ étant par
+   ailleurs compris entre $-T$ et $+T$, ces 3 mésons appartiennent ainsi au
+   triplet d'isospin $\vv{T}=\vv{1}$ avec
+
+5) Système pion-nucléon
+
+   L'isospin d'un pion est $\vv{t}(\pi)=\vv{1}$, celui d'un nucléon
+   $\vv{t}(N=n,p)=\vv{1}/2$. Par composition des isospins, un système pion-nucléon
+   peut prendre pour valeur d'isospin $\vv{T}(\pi N)$
+
+   #+BEGIN_SRC latex
+     \begin{align*}
+       |t(\pi) - t(N)| &\leq T(\pi N)\leq t(\pi) + t(N)\\
+       \frac{\vv{1}}{2}&\leq \vv{T}(\pi N)\leq\frac{\vv{3}}{2}
+     \end{align*}
+   #+END_SRC
+
+   On déduit ainsi l'existence
+
+   - d'un doublet d'isospin $\vv{T}=\vv{1}/2$ avec $T_3=\pm1/2$
+   - d'un quadruplet d'isospin $\vv{T}=\vv{3}/2$ avec $T_3=\pm1/2, \pm3/2$
+
+6) Systèmes physiques $\ket{\pi^+p}$, $\ket{\pi^+n}$...
+
+   - $\ket{\pi^+p}$ : $t_3(\pi^+)=+1$ et $t_3(p)=1/2$ d'où
+     $T_3(\pi^+p)=t_3(\pi^+)+t_3(p)=3/2$. La valeur de $T_3(\pi^+p)$ implique
+     nécessairement que $\vv{T}$ soit égal à $\vv{3}/2$.
+
+     \[\ket{\pi^+p}=\ket{TT_3}=\ket{\frac{3}{2}\frac{3}{2}}\]
+
+   - $\ket{\pi^+n}$ : $t_3(\pi^+)=+1$ et $t_3(n)=-1/2$ d'où
+     $T_3(\pi^+n)=t_3(\pi^+)+t_3(n)=1/2$. Il existe donc deux valeurs de
+     $\vv{T}$ possibles à savoir $\vv{T}=\vv{1}/2$ et
+     $\vv{T}=\vv{3}/2$. $\ket{\pi^+n}$ est donc la superposition de deux états
+     d'isospin (ce système physique n'est donc pas état propre d'isospin)
+
+     \[\ket{\pi^+n}=\ket{TT_3}=\alpha\ket{\frac{1}{2}\frac{1}{2}}+\beta\ket{\frac{3}{2}\frac{1}{2}}\]
+
+     où
+
+     \[\alpha=\psh{1\frac{1}{2}1-\frac{1}{2}}{\frac{1}{2}\frac{1}{2}}=\sqrt{\frac{2}{3}}\]
+
+     et
+
+     \[\beta=\psh{1\frac{1}{2}1-\frac{1}{2}}{\frac{3}{2}\frac{1}{2}}=\sqrt{\frac{1}{3}}\]
+
+     donc
+
+     \[\ket{\pi^+n}=\ket{TT_3}=\sqrt{\frac{2}{3}}\ket{\frac{1}{2}\frac{1}{2}}+\sqrt{\frac{1}{3}}\ket{\frac{3}{2}\frac{1}{2}}\]
+
 
 * Footnotes
 
