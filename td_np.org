@@ -1084,6 +1084,44 @@ Brookhaven en 1964.
     ce qui semble indiquer que cette particule est un état excité de
     $\bar{D}^0$.
 
+* TD5 : Isospin -- des quarks aux noyaux
+L'isospin $\vv{T}$ rend compte de l'indépendance de charge de l'intéraction
+forte. Ainsi, le neutron et le proton qui appartiennent au doublet d'isospin
+$\vv{T}=\vv{1}/2$ sont, du point de vue de l'intéraction forte, des particules
+identiques ($T_3(p)=1/2$ et $T_3(n)=-1/2$).
+
+L'espace d'isospin est analogue à l'espace des spins notamment vis-à-vis des
+opérations et des calculs qui s'y attachent.
+
+Pour une valeur d'isospin $\vv{T}$, la troisième composante $T_3$ prend pour
+valeur
+
+\[-T\leq T_3\leq T\]
+
+soit $2T+1$ valeurs.
+
+Pour un noyau c'est-à-dire pour une système à plusieurs nucléons, l'isospin est
+égal à
+
+\[\vv{T}=\Sigma\,\vv{t}_i\]
+
+où $t_i$ est lui-même égal à $\vv{1}/2$. La 3^{ème} composante $T_3$ est égale à
+
+\[T_3=\Sigma\,t_3=Z\times t_3(p) + N\times t_3(n)\]
+
+soit
+
+\[T_3=\frac{Z}{2} - \frac{N}{2}=\frac{Z-N}{2}\]
+
+L'isospin varie ainsi suivant les états d'énergie selon
+
+\[\frac{|Z-N|}{2}\leq T\leq\frac{Z+N}{2}\] soit \[|T_3|\leq T\leq\frac{A}{2}\]
+
+où, de façon empirique, il est établi que l'état fondamental correspond à
+$T=|T_3|$, $T$ augmentant pour les états excités.
+
+** Couplages nucléon-nucléon et nucléon-pion
+
 * Footnotes
 
 [fn:1] 1 pc = 1 parsec = 3.26 années lumières = 30.856 10^{12} km.
