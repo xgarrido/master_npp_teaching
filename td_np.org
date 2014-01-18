@@ -1446,7 +1446,37 @@ avec $I^\pi(d)=1^+$ et $\vv{L}_{\pi d}=\vv{0}$
 
    \[\frac{\sigma_1}{\sigma_2}=\frac{\sigma(pp\rightarrow d\pi^+)}{\sigma(pn\rightarrow d\pi^0)}=2\]
 
+   Ce résultat théorique a été vérifié et confirmé expérimentalement .
+
 ** Couplages de trois nucléons
+
+1) Système de trois nucléons : $\vv{t}(n) = \vv{1}/2$ et
+   $\vv{t}(p)=\vv{1}/2$. L'isospin de 3 nucléons $\vv{T}(3N) = \Upsigma
+   \vv{t}_i$ soit
+
+   #+BEGIN_SRC latex
+     \begin{align*}
+       \vv{T}(3N) &= \tfrac{\vv{1}}{2} + \tfrac{\vv{1}}{2} + \tfrac{\vv{1}}{2}\\
+       &= \tfrac{\vv{1}}{2}\text{ ou }\tfrac{\vv{3}}{2}
+     \end{align*}
+   #+END_SRC
+
+   On obtient donc un double d'isospin $T_3(3N)=\pm\tfrac{1}{2}$ et un
+   quadruplet d'isospin où $T_3(3N)=\pm\tfrac{1}{2}, \pm\tfrac{3}{2}$
+
+2) Les états $\ket{ppp}$ et $\ket{nnn}$ qui ont respectivement pour valeur de
+   $T_3$, 3/2 et -3/2 appartiennent tous les deux au quadruplet d'isospin
+   $\vv{T}=\vv{3}{2}$. Or, les forces nucléaires ne dependent que de l'isospin
+   et sont donc indépendantes de charge (et donc de $T_3$). Étant donné que les
+   états d'un même multiplet ont tous des propriétés communes vis-à-vis de
+   l'intéraction forte, si les états $\vv{T}=\vv{3}{2}$, $T_3=\pm3/2$ n'existent
+   pas alors les états $\vv{T}=\vv{3}{2}$, $T_3=\pm1/2$ n'existent pas non
+   plus. Les états de\nbsp^{3}_{1}H et\nbsp^{3}_{2}H sont donc ceux appartenant
+   au doublet d'isospin $\vv{T}=\vv{1}/2$ avec
+
+   - \nbsp^{3}_{1}H \equiv $\ket{pnn}$ avec $T_3(pnn)=\tfrac{-1}{2}$
+   - \nbsp^{3}_{2}H \equiv $\ket{ppn}$ avec $T_3(pnn)=\tfrac{+1}{2}$
+
 * Footnotes
 
 [fn:1] 1 pc = 1 parsec = 3.26 années lumières = 30.856 10^{12} km.
