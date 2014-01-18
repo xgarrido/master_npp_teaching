@@ -1,0 +1,34 @@
+\begin{tikzpicture}[y=-1cm]
+  \sf
+  \definecolor{red}{RGB}{221,42,43}
+  \definecolor{green}{RGB}{132,184,24}
+  \definecolor{blue}{RGB}{0,72,112}
+  \definecolor{orange}{RGB}{192,128,64}
+  \definecolor{gray}{RGB}{107,108,110}
+
+
+  \draw[thick,blue] (3.2004,22.99335) -- (3.2004,26.16835) -- (5.58165,27.9146);
+  \draw[thick,blue] (5.58165,27.9146) -- (5.58165,24.7396) -- (3.2004,22.99335);
+  \path (5.0229,27.43835) node[text=blue,anchor=base west] {\fontsize{13.0}{15.6}\selectfont{}$n$};
+
+\begin{scope}[yshift=-5pt]
+  \draw[thick,gray,<->] (5.58165,23.7871) -- (5.75522,23.876) -- (5.89915,24.00088) -- (6.00922,24.1554) -- (6.07907,24.33532) -- (6.10235,24.52793) -- (6.09388,24.64435) -- (6.06848,24.75865) -- (6.02827,24.86448) -- (5.97112,24.96608) -- (5.89915,25.0571);
+  \draw[thick,black,dashed] (3.99415,25.0571) -- (5.58165,26.3271);
+  \draw[thick,black,->] (5.58165,26.3271) -- (6.6929,27.12085);
+  \draw[thick,black,dashed] (3.99415,25.0571) -- (7.3279,25.0571);
+  \draw[thick,black,->] (0.0254,25.0571) -- (3.99415,25.0571);
+  \draw[thick,black,dashed] (3.99415,25.0571) -- (4.94665,24.26335);
+  \draw[thick,black,->] (4.94665,24.26335) -- (6.3754,22.99335);
+
+  \path (1.07165,24.88085) node[text=black,anchor=base west] {\fontsize{13.0}{15.6}\selectfont{}$p$};
+  \path (6.7,22.99335) node[text=black,anchor=base west] {\fontsize{13.0}{15.6}\selectfont{}$\pi^{0,+}$};
+  \path (6.7,27.2796) node[text=black,anchor=base west] {\fontsize{13.0}{15.6}\selectfont{}$d$};
+  \path (6.21665,24.36335) node[text=gray,anchor=base west] {\fontsize{13.0}{15.6}\selectfont{}$\theta$};
+\end{scope}
+
+\end{tikzpicture}%
+
+%% Configure (x)emacs for this file ...
+%% Local Variables:
+%% mode: latex
+%% End:

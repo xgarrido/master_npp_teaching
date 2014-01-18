@@ -1295,6 +1295,158 @@ avec $I^\pi(d)=1^+$ et $\vv{L}_{\pi d}=\vv{0}$
      \end{align*}
    #+END_SRC
 
+** Sections efficaces de production de pions
+
+#+BEGIN_SRC latex
+  \begin{align}
+    p+p&\rightarrow d+\pi^+\\
+    p+n&\rightarrow d+\pi^0
+  \end{align}
+#+END_SRC
+
+1) Calcul de l'énergie cinétique minimale
+
+   #+BEGIN_CENTER
+   #+ATTR_LATEX: :width 0.5\linewidth
+   [[./figures/pn_dpi_production.pdf]]
+   #+END_CENTER
+
+   Dans le référentiel du laboratoire, l'énergie cinétique minimale $T_S$ nécessaire à
+   la production de particules s'écrit
+
+   \[T_S^\text{lab.} = \frac{|Q|}{2}\cdot\frac{\Upsigma
+   m_\text{initiale,finale}c^2}{m_\text{cible}c^2}\]
+
+   où $Q$ est la chaleur de réaction et est égale à
+
+   \[Q = \Upsigma m_\text{initiale}c^2 - \Upsigma m_\text{finale}c^2\]
+
+   En négligeant l'énergie de liaison $B_d$ du noyau de deutérium, la masse
+   $m_d$ est égale à deux fois la masse du proton ($m_n\simeq
+   m_p\sim\unit[940]{MeV}$). La chaleur de réaction est ainsi égale
+
+   \[Q = 2m_pc^2 - 2m_pc^2 - m_\pi c^2 = -m_\pi c^2\]
+
+   On déduit l'énergie cinétique seuil
+
+   #+BEGIN_SRC latex
+     \begin{align*}
+       T_S&=\frac{m_\pi c^2}{m_nc^2}\times\frac{4m_pc^2+m_\pi c^2}{2}\\
+       &=\frac{140}{940}\times\frac{4\times940+140}{2} = \unit[290.4]{MeV}
+     \end{align*}
+   #+END_SRC
+
+2) $T_p=\unit[1]{GeV}>\unit[290]{MeV}$ et $T_\pi=\unit[600]{MeV}$
+
+   La conservation de l'impulsion implique que $\vv{p}_p=\vv{p}_\pi+\vv{p}_d$
+   soit $\vv{p}_d=\vv{p}_p-\vv{p}_\pi$ et donc
+   $p_d^2=p_p^2+p_\pi^2-2p_pp_\pi\cos\theta$. L'angle \theta s'exprime ainsi
+
+   \[\cos\theta=\frac{p_p^2+p_\pi^2-p_d^2}{2p_pp_\pi}\]
+
+   L'impulsion s'exprime en fonction de l'énergie cinétique $T$ suivant
+
+   #+BEGIN_SRC latex
+     \begin{align*}
+       (pc)^2&=E^2 - m^2c^4\\
+       &=(T+mc^2)^2 - m^2c^4\\
+       &=T(T+2mc^2)
+     \end{align*}
+   #+END_SRC
+
+   On déduit ainsi les valeurs d'impulsion du proton et du pion et /via/ la
+   conservation de l'énergie totale, on a
+
+   \[E_p + m_nc^2 = E_\pi+E_d\]
+
+   soit
+
+   \[T_p + 2m_pc^2 = T_\pi+m_\pi c^2+T_d+2m_pc^2\]
+
+   et donc
+
+   \[T_d = T_p - T_\pi - m_\pi c^2\]
+
+   *AN :*
+   #+BEGIN_SRC latex
+     \begin{align*}
+       (p_pc)^2 &= 1000(1000+2\times940) = \unit[2.88\,10^6]{MeV^2} \text{ soit } p_pc = \unit[1697]{MeV}\\
+       (p_\pi c)^2 &= 600(600+2\times140) = \unit[5.28\,10^5]{MeV^2} \text{ soit } p_\pi c = \unit[726.6]{MeV}\\
+       (p_dc)^2 &= (1000-600-140)(260+4\times140) = \unit[1.045\,10^6]{MeV^2} \text{ soit } p_dc = \unit[1022]{MeV}
+     \end{align*}
+   #+END_SRC
+
+   #+BEGIN_SRC latex
+     \begin{align*}
+       \cos\theta&=\frac{2.88+0.528-1.045}{2\times\sqrt{2.88}\sqrt{0.528}}\\
+       &=0.958\\
+       \theta&=16.7^\circ
+     \end{align*}
+   #+END_SRC
+
+3) États d'isospin
+
+   |----------+------------+------------+----------+----------+----------|
+   |          | $p$        | $n$        | $d$      | $\pi^+$  | $\pi^0$  |
+   | $T_3$    | 1/2        | -1/2       | 0        | 1        | 0        |
+   | $\vv{T}$ | $\vv{1}/2$ | $\vv{1}/2$ | $\vv{0}$ | $\vv{1}$ | $\vv{1}$ |
+   |----------+------------+------------+----------+----------+----------|
+
+   Remarque: $T_3(d)=t_3(n)+t_3(p) = 0$ et $\vv{T}(d)=\vv{0}$ ou $\vv{1}$. On
+   considère que $T(d) = T_\text{fond.}(d) = |T_3| = 0$.
+
+   - $\ket{p+p}$ : $T_3 = t_3(p) + t_3(p) = 1$ et $\vv{T} = \vv{0}$ ou $\vv{1}$
+     mais seul $\vv{T}=\vv{1}$ est possible du fait que $T_3=1$
+
+   - $\ket{d+\pi^+}$ : $T_3=+1$ et $\vv{T}=\vv{1}$
+
+   - $\ket{p+n}$ : $T_3=0$ et $\vv{T}= \vv{0}$ ou $\vv{1}$
+
+   - $\ket{d+\pi^0}$ : $T_3=0$ et $\vv{T}=\vv{1}$
+
+   Les coefficients de Clebsch-Gordan fournissent les valeurs de
+   $\psh{t_1t_2t_{31}t_{32}}{TT_3}$. On obtient ainsi
+
+   - $\ket{p+p} = \ket{pp} =
+     \ket{\tfrac{1}{2}\tfrac{1}{2}\tfrac{1}{2}\tfrac{1}{2}}=\ket{11}$
+
+   - $\ket{d+\pi^+} = \ket{d\pi^+} = \ket{0101}=\ket{11}$
+
+   - $\ket{p+n} = \ket{pn} =
+     \ket{\tfrac{1}{2}\tfrac{1}{2}\tfrac{1}{2}\tfrac{-1}{2}}=\alpha\ket{10}+\beta\ket{00}$
+     avec $\alpha=\psh{\tfrac{1}{2}\tfrac{1}{2}\tfrac{1}{2}\tfrac{-1}{2}}{10} = \tfrac{1}{\sqrt{2}}$
+     et $\beta=\psh{\tfrac{1}{2}\tfrac{1}{2}\tfrac{1}{2}\tfrac{-1}{2}}{00} = \tfrac{1}{\sqrt{2}}$
+
+   - $\ket{d+\pi^0} = \ket{d\pi^0} = \ket{0100}=\ket{10}$
+
+4) Intéraction forte \rightarrow conservation de l'isospin $\vv{T}$. Si ces 2
+   réactions sont réalisées dans les mêmes conditions cinématiques, on peut
+   comparer leurs sections efficaces $\sigma_1$ et $\sigma_2$ en utilisant la
+   formule
+
+   #+BEGIN_SRC latex
+     \begin{align*}
+       \sigma&\propto\left|\bra{f(T_f)}V_\text{IF}\ket{i(T_i)}\right|^2\\
+       &\propto\left|M(T)\right|^2\text{ si } T_f=T_i=T\\
+       &=0\text{ si } T_f\neq T_i
+     \end{align*}
+   #+END_SRC
+
+   Soit
+   #+BEGIN_SRC latex
+     \begin{align*}
+       \sigma_1&\propto\left|\bra{d\pi^+}V_\text{IF}\ket{pp}\right|^2\propto\left|\bra{11}V_\text{IF}\ket{11}\right|^2\propto \left|M(1)\right|^2\\
+       \sigma_2&\propto\tfrac{1}{2}\left|\bra{d\pi^0}V_\text{IF}\ket{pn}\right|^2\\
+       &\propto\tfrac{1}{2}\left|\bra{10}V_\text{IF}\ket{00}+\bra{10}V_\text{IF}\ket{10}\right|^2
+     \end{align*}
+   #+END_SRC
+   or $\bra{10}V_\text{IF}\ket{00}$ est nul car $T_f\neq T_i$ et
+   $\bra{10}V_\text{IF}\ket{10}$ est une fonction dépendant uniquement de
+   $T=1$. On obtient ainsi que
+
+   \[\frac{\sigma_1}{\sigma_2}=\frac{\sigma(pp\rightarrow d\pi^+)}{\sigma(pn\rightarrow d\pi^0)}=2\]
+
+** Couplages de trois nucléons
 * Footnotes
 
 [fn:1] 1 pc = 1 parsec = 3.26 années lumières = 30.856 10^{12} km.
