@@ -1200,7 +1200,7 @@ $T=|T_3|$, $T$ augmentant pour les états excités.
      $T_3(\pi^+p)=t_3(\pi^+)+t_3(p)=3/2$. La valeur de $T_3(\pi^+p)$ implique
      nécessairement que $\vv{T}$ soit égal à $\vv{3}/2$.
 
-     \[\ket{\pi^+p}=\ket{TT_3}=\ket{\frac{3}{2}\frac{3}{2}}\]
+     \[\ket{\pi^+p}=\ket{TT_3}=\ket{\tfrac{3}{2}\tfrac{3}{2}}\]
 
    - $\ket{\pi^+n}$ : $t_3(\pi^+)=+1$ et $t_3(n)=-1/2$ d'où
      $T_3(\pi^+n)=t_3(\pi^+)+t_3(n)=1/2$. Il existe donc deux valeurs de
@@ -1208,19 +1208,19 @@ $T=|T_3|$, $T$ augmentant pour les états excités.
      $\vv{T}=\vv{3}/2$. $\ket{\pi^+n}$ est donc la superposition de deux états
      d'isospin (ce système physique n'est donc pas état propre d'isospin)
 
-     \[\ket{\pi^+n}=\ket{TT_3}=\alpha\ket{\frac{1}{2}\frac{1}{2}}+\beta\ket{\frac{3}{2}\frac{1}{2}}\]
+     \[\ket{\pi^+n}=\ket{TT_3}=\alpha\ket{\tfrac{1}{2}\tfrac{1}{2}}+\beta\ket{\tfrac{3}{2}\tfrac{1}{2}}\]
 
      où
 
-     \[\alpha=\psh{1\frac{1}{2}1-\frac{1}{2}}{\frac{1}{2}\frac{1}{2}}=\sqrt{\frac{2}{3}}\]
+     \[\alpha=\psh{1\tfrac{1}{2}1-\tfrac{1}{2}}{\tfrac{1}{2}\tfrac{1}{2}}=\sqrt{\tfrac{2}{3}}\]
 
      et
 
-     \[\beta=\psh{1\frac{1}{2}1-\frac{1}{2}}{\frac{3}{2}\frac{1}{2}}=\sqrt{\frac{1}{3}}\]
+     \[\beta=\psh{1\tfrac{1}{2}1-\tfrac{1}{2}}{\tfrac{3}{2}\tfrac{1}{2}}=\sqrt{\tfrac{1}{3}}\]
 
      donc
 
-     \[\ket{\pi^+n}=\ket{TT_3}=\sqrt{\frac{2}{3}}\ket{\frac{1}{2}\frac{1}{2}}+\sqrt{\frac{1}{3}}\ket{\frac{3}{2}\frac{1}{2}}\]
+     \[\ket{\pi^+n}=\ket{TT_3}=\sqrt{\tfrac{2}{3}}\ket{\tfrac{1}{2}\tfrac{1}{2}}+\sqrt{\tfrac{1}{3}}\ket{\tfrac{3}{2}\tfrac{1}{2}}\]
 
 ** Parité intrinsèque du $\pi^{-}$
 
