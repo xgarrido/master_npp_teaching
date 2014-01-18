@@ -1222,6 +1222,78 @@ $T=|T_3|$, $T$ augmentant pour les états excités.
 
      \[\ket{\pi^+n}=\ket{TT_3}=\sqrt{\frac{2}{3}}\ket{\frac{1}{2}\frac{1}{2}}+\sqrt{\frac{1}{3}}\ket{\frac{3}{2}\frac{1}{2}}\]
 
+** Parité intrinsèque du $\pi^{-}$
+
+\[\pi^-+d\rightarrow n+n\]
+
+avec $I^\pi(d)=1^+$ et $\vv{L}_{\pi d}=\vv{0}$
+
+1) Moment cinétique total du système $\pi^-d$
+
+   #+BEGIN_SRC latex
+     \begin{align*}
+       \vv{I}_\text{entrée} = \vv{I}(\pi d) &= \vv{I}(\pi^-)+\vv{I}(d)+\vv{L}(\pi d)\\
+       &=\vv{S}(\pi^-)+\vv{L}(\pi^-)\vv{I}(d)+\vv{L}(\pi d)\\
+       &=\vv{0}+\vv{0}+\vv{1}+\vv{0}
+     \end{align*}
+   #+END_SRC
+
+   Parité du $\pi^-$
+
+   #+BEGIN_SRC latex
+     \begin{align*}
+       \pi(\text{entrée}) = \pi(\pi d) &= \pi(\pi)\cdot\pi(d)\cdot(-1)^{L_{\pi d}}\\
+       &=\pi(\pi)\cdot+1\cdot+1
+     \end{align*}
+   #+END_SRC
+
+   Intéraction forte \rightarrow conservation de la parité
+
+   \[\pi(\pi d) = \pi(\pi) = \pi(nn)\]
+
+2) Le moment cinétique total s'écrit
+
+   #+BEGIN_SRC latex
+     \begin{align*}
+       \vv{I}_\text{sortie} = \vv{I}(nn) &= \vv{I}(n)+\vv{I}(n)+\vv{L}(nn)\\
+       &=\vv{S}(n)+\vv{S}(n)+\vv{L}(nn)\\
+       &=\vv{S}(nn)+\vv{L}(nn)
+     \end{align*}
+   #+END_SRC
+
+   Les neutrons étant des fermions, leur spin est demi-entier. Les valeurs de
+   $\vv{S}(nn)$ sont donc soit $\vv{0}$ soit $\vv{1}$. Par ailleurs, la
+   conservation du moment cinétique total impose
+
+   \[\vv{I}(nn)=\vv{I}(\pi d)=\vv{1}\]
+
+   On obtient ainsi les couples de valeurs $(L,S)$
+
+   - $\vv{S}(nn)=\vv{0}$ et $\vv{L}(nn)=\vv{1}$,
+   - $\vv{S}(nn)=\vv{1}$ et $\vv{L}(nn)=\vv{0},\vv{1},\vv{2}$.
+
+   Le système final de deux neutrons /i.e./ de deux fermions doit satisfaire au
+   principe de Pauli *généralisé* à savoir que la somme $L+S+T$ doit être
+   impaire afin que la fonction d'onde globale demeure antisymétrique.
+
+   Calcul de $T$ : $t_3(n) = -\frac{1}{2}$ et $T_3(nn)=\Sigma\,t_3 =
+   2\,t_3(n)=-1$
+
+   \[|T_3(nn)|\leq T(nn)\leq\frac{A}{2}\]
+
+   soit $\vv{T}(nn)=\vv{1}$.
+
+   La condition $L+S+T$ impaire devient $L+S$ pair étant donné que $T=1$. Aussi,
+   seul le couple $(L,S)=(1,1)$ est possible. On déduit ainsi la parité du
+   $\pi^-$
+
+   #+BEGIN_SRC latex
+     \begin{align*}
+       \pi(nn)=\pi(\pi^-)&=\pi(n)\cdot\pi(n)\cdot(-1)^{L_{nn}}\\
+       &=\pi(n)^2\cdot(-1)^{L_{nn}}\\
+       &=+1\cdot(-1)^1=-1
+     \end{align*}
+   #+END_SRC
 
 * Footnotes
 
