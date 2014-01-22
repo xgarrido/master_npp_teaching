@@ -1157,8 +1157,8 @@ $T=|T_3|$, $T$ augmentant pour les états excités.
    $T-t_1-t_2$ est pair, la fonction d'onde d'isospin est symétrique.
 
    Dans le cas d'un système de deux nucléons $t_{1,2}=1/2$ et donc la fonction
-   d'onde est antisymétrique si $T-1$ est impair et symétrique si $T-1$ est
-   pair.
+   d'onde d'isospin est antisymétrique si $T-1$ est impair et symétrique si
+   $T-1$ est pair[fn:6].
 
 3) État singulet, $T=0$, $T_3=0$ est antisymétrique soit
    $\ket{0\,0}=\frac{1}{\sqrt{2}}\left(\ket{pn}-\ket{np}\right)$. L'état triplet
@@ -1233,7 +1233,7 @@ avec $I^\pi(d)=1^+$ et $\vv{L}_{\pi d}=\vv{0}$
    #+BEGIN_SRC latex
      \begin{align*}
        \vv{I}_\text{entrée} = \vv{I}(\pi d) &= \vv{I}(\pi^-)+\vv{I}(d)+\vv{L}(\pi d)\\
-       &=\vv{S}(\pi^-)+\vv{L}(\pi^-)\vv{I}(d)+\vv{L}(\pi d)\\
+       &=\vv{S}(\pi^-)+\vv{L}(\pi^-)+\vv{I}(d)+\vv{L}(\pi d)\\
        &=\vv{0}+\vv{0}+\vv{1}+\vv{0}
      \end{align*}
    #+END_SRC
@@ -1466,7 +1466,7 @@ avec $I^\pi(d)=1^+$ et $\vv{L}_{\pi d}=\vv{0}$
 
 2) Les états $\ket{ppp}$ et $\ket{nnn}$ qui ont respectivement pour valeur de
    $T_3$, 3/2 et -3/2 appartiennent tous les deux au quadruplet d'isospin
-   $\vv{T}=\vv{3}{2}$. Or, les forces nucléaires ne dependent que de l'isospin
+   $\vv{T}=\vv{3}/2$. Or, les forces nucléaires ne dependent que de l'isospin
    et sont donc indépendantes de charge (et donc de $T_3$). Étant donné que les
    états d'un même multiplet ont tous des propriétés communes vis-à-vis de
    l'intéraction forte, si les états $\vv{T}=\vv{3}{2}$, $T_3=\pm3/2$ n'existent
@@ -1503,3 +1503,9 @@ impaire pour que la fonction d'onde soit antisymétrique. $\vv{L}=\vv{0}$,
 $\vv{T}=\vv{0}$ et $\vv{S}=\vv{3}/2$, la somme n'est donc pas impaire. C'est
 l'introduction de la couleur qui permet de rendre cette fonction d'onde globale
 antisymétrique.
+
+[fn:6] la fonction d'onde d'isospin des couples $\ket{nn}$ et $\ket{pp}$ est
+symétrique. Toutefois et comme nous le verrons dans l'exercice sur la parité
+intrinsèque du pion, la fonction d'onde globale de ces états demeure
+antisymétrique en raison du principe de Pauli généralisé qui impose que deux
+fermions soient dans des états quantiques différents.
