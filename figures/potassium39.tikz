@@ -1,0 +1,114 @@
+\begin{tikzpicture}[y=-1cm]
+  \sf
+  \definecolor{red}{RGB}{221,42,43}
+  \definecolor{green}{RGB}{105,182,40}
+  \definecolor{blue}{RGB}{0,51,153}
+  \definecolor{orange}{RGB}{192,128,64}
+
+  \fill[blue!10] (5.23875,10.00125) rectangle (9.8425,13.0175);
+  \draw[blue, very thick] (5.23875,13.0175) -- (5.23875,10.00125);
+  \draw[blue, very thick] (9.8425,13.0175) -- (9.8425,10.00125);
+  \draw[blue, very thick] (5.23875,10.00125) -- (9.8425,10.00125);
+  \draw[blue, very thick] (5.23875,8.41375) -- (9.8425,8.41375);
+  \draw[blue, very thick] (5.23875,7.14375) -- (9.8425,7.14375);
+  \draw[blue, very thick] (5.23875,5.84375) -- (9.8425,5.84375);
+  \draw[blue, very thick] (5.23875,4.54375) -- (9.8425,4.54375);
+
+  \begin{scope}[xshift=-10pt]
+    \draw[blue,fill=blue] (6.23875,8.4137) circle (0.0762cm);
+    \draw[blue,fill=blue] (6.43875,8.4137) circle (0.0762cm);
+    \draw[blue,fill=blue] (6.23875,7.14375) circle (0.0762cm);
+    \draw[blue,fill=blue] (6.43875,7.14375) circle (0.0762cm);
+    \draw[blue,fill=blue] (7.23875,7.14375) circle (0.0762cm);
+    %% \draw[blue,fill=blue] (8.43875,8.4137) circle (0.0762cm);
+    %% \draw[blue,fill=blue] (9.23875,8.4137) circle (0.0762cm);
+  \end{scope}
+
+  \begin{scope}[xshift=7cm]
+    \path (3.65125,4.54375) node[text=black,anchor=base west] {\large{}$2p\tfrac{3}{2}$};
+    \path (3.65125,5.84375) node[text=black,anchor=base west] {\large{}$1f\tfrac{7}{2}$};
+    \path (3.65125,7.14375) node[text=black,anchor=base west] {\large{}$1d\tfrac{3}{2}$};
+    \path (3.65125,8.41375) node[text=black,anchor=base west] {\large{}$2s\tfrac{1}{2}$};
+    \path (3.65125,10.00125) node[text=black,anchor=base west] {\large{}$1d\tfrac{5}{2}$};
+  \end{scope}
+
+  \path (7.5,12.22375) node[text=blue] {\large{}proton};
+
+  \path (7.6,13.52375) node[text=black] {\large{}Niveau fondamental $I^\pi=\tfrac{3}{2}^+$};
+
+  \path (4,7.14375) node[text=black,anchor=base west] {\large{}20};
+  \path (4,8.41375) node[text=black,anchor=base west] {\large{}16};
+  \path (4,10.00125) node[text=black,anchor=base west] {\large{}14};
+
+  \begin{scope}[xshift=7cm]
+    \fill[blue!10] (5.23875,10.00125) rectangle (9.8425,13.0175);
+    \draw[blue, very thick] (5.23875,13.0175) -- (5.23875,10.00125);
+    \draw[blue, very thick] (9.8425,13.0175) -- (9.8425,10.00125);
+    \draw[blue, very thick] (5.23875,10.00125) -- (9.8425,10.00125);
+    \draw[blue, very thick] (5.23875,8.41375) -- (9.8425,8.41375);
+    \draw[blue, very thick] (5.23875,7.14375) -- (9.8425,7.14375);
+    \draw[blue, very thick] (5.23875,5.84375) -- (9.8425,5.84375);
+    \draw[blue, very thick] (5.23875,4.54375) -- (9.8425,4.54375);
+
+    \begin{scope}[xshift=-10pt]
+      \draw[blue,fill=blue] (6.23875,8.4137) circle (0.0762cm);
+      \draw[blue,fill=blue] (7.43875,7.14375) circle (0.0762cm);
+      \draw[blue,fill=blue] (6.23875,7.14375) circle (0.0762cm);
+      \draw[blue,fill=blue] (6.43875,7.14375) circle (0.0762cm);
+      \draw[blue,fill=blue] (7.23875,7.14375) circle (0.0762cm);
+      %% \draw[blue,fill=blue] (8.43875,8.4137) circle (0.0762cm);
+      %% \draw[blue,fill=blue] (9.23875,8.4137) circle (0.0762cm);
+    \end{scope}
+
+    \begin{scope}[xshift=7cm]
+      \path (3.65125,4.54375) node[text=black,anchor=base west] {\large{}$2p\tfrac{3}{2}$};
+      \path (3.65125,5.84375) node[text=black,anchor=base west] {\large{}$1f\tfrac{7}{2}$};
+      \path (3.65125,7.14375) node[text=black,anchor=base west] {\large{}$1d\tfrac{3}{2}$};
+      \path (3.65125,8.41375) node[text=black,anchor=base west] {\large{}$2s\tfrac{1}{2}$};
+      \path (3.65125,10.00125) node[text=black,anchor=base west] {\large{}$1d\tfrac{5}{2}$};
+    \end{scope}
+
+    \path (7.5,12.22375) node[text=blue] {\large{}proton};
+
+    \path (7.6,13.52375) node[text=black] {\large{1$^\text{er}$ niveau excité $I^\pi=\tfrac{1}{2}^+$}};
+
+  \end{scope}
+
+  \begin{scope}[xshift=14cm]
+    \fill[blue!10] (5.23875,10.00125) rectangle (9.8425,13.0175);
+    \draw[blue, very thick] (5.23875,13.0175) -- (5.23875,10.00125);
+    \draw[blue, very thick] (9.8425,13.0175) -- (9.8425,10.00125);
+    \draw[blue, very thick] (5.23875,10.00125) -- (9.8425,10.00125);
+    \draw[blue, very thick] (5.23875,8.41375) -- (9.8425,8.41375);
+    \draw[blue, very thick] (5.23875,7.14375) -- (9.8425,7.14375);
+    \draw[blue, very thick] (5.23875,5.84375) -- (9.8425,5.84375);
+    \draw[blue, very thick] (5.23875,4.54375) -- (9.8425,4.54375);
+
+    \begin{scope}[xshift=-10pt]
+      \draw[blue,fill=blue] (6.23875,5.84375) circle (0.0762cm);
+      \draw[blue,fill=blue] (7.43875,7.14375) circle (0.0762cm);
+      \draw[blue,fill=blue] (6.23875,7.14375) circle (0.0762cm);
+      \draw[blue,fill=blue] (6.43875,7.14375) circle (0.0762cm);
+      \draw[blue,fill=blue] (7.23875,7.14375) circle (0.0762cm);
+      %% \draw[blue,fill=blue] (8.43875,8.4137) circle (0.0762cm);
+      %% \draw[blue,fill=blue] (9.23875,8.4137) circle (0.0762cm);
+    \end{scope}
+
+    \begin{scope}[xshift=6.5cm]
+      \path (4,7.14375) node[text=black,anchor=base west] {\large{}20};
+      \path (4,8.41375) node[text=black,anchor=base west] {\large{}16};
+      \path (4,10.00125) node[text=black,anchor=base west] {\large{}14};
+    \end{scope}
+
+    \path (7.5,12.22375) node[text=blue] {\large{}proton};
+
+    \path (7.6,13.52375) node[text=black] {\large{2$^\text{ème}$ niveau excité $I^\pi=\tfrac{7}{2}^-$}};
+
+  \end{scope}
+
+\end{tikzpicture}%
+
+%% Configure (x)emacs for this file ...
+%% Local Variables:
+%% mode: latex
+%% End:

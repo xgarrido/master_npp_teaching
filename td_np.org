@@ -1603,7 +1603,89 @@ les règles suivantes pour les différents types de noyau :
      [[./figures/titane50_energy.pdf]]
      #+END_CENTER
 
+2) \nbsp^{39}_{19}K_{20} et\nbsp^{39}_{20}Ca_{19} \rightarrow noyaux
+   miroirs. Dans le cadre du modèle en couche, ces deux noyaux sont identiques
+   ($p$ et $n$ sont "interchangeables" en raison de l'indépendance de charge de
+   l'interaction forte).
 
+   - *\nbsp^{39}_{19}K*
+     - noyau impair-pair : 19 protons, 20 neutrons
+     - noyau fermé en neutrons (20 : nombre magique)
+     - 1 proton célibataire en $1d\tfrac{3}{2}$
+     - Niveau fondamental : $I=\tfrac{3}{2}^{(-1)^2}=\tfrac{3}{2}^+$ en accord
+       avec l'expérience
+
+     #+BEGIN_CENTER
+     #+CAPTION: *Niveaux excités du \nbsp^{39}_{19}K*.
+     #+CAPTION: Le 1^{er} niveau excité résulte de la brisure de paire en $2s\tfrac{1}{2}$ pour fermer la couche "magique" $N=20$.
+     #+CAPTION: Les niveaux excités suivants sont issus du "déplacement" du proton célibataire $2s\tfrac{1}{2}\rightarrow1f\tfrac{7}{2}\rightarrow2p\tfrac{3}{2}$.
+     #+ATTR_LATEX: :width 0.9\linewidth
+     [[./figures/potassium39.pdf]]
+     #+END_CENTER
+
+   - *\nbsp^{39}_{20}Ca* : même raisonnement que pour\nbsp^{39}_{19}K mais en
+     utilisant les neutrons (couche fermée en proton) \rightarrow même séquence
+     d'état et mêmes valeurs de $I^\pi$.
+
+   Étant donné l'indépendance de charge de l'interaction forte, les noyaux
+   miroirs, dont les états appartiennent aux mêmes multiplets d'isospin, ont les
+   mêmes séquences de niveaux et les mêmes écarts en énergie $\Delta E$ entre
+   ces niveaux aux effets coulombiens près.
+
+3) Noyau\nbsp^{75}_{33}As : 33 protons, 42 neutrons
+
+   #+BEGIN_CENTER
+   #+ATTR_LATEX: :width 0.6\linewidth
+   [[./figures/arsenic75.pdf]]
+   #+END_CENTER
+
+   1 proton célibataire en $1f\tfrac{5}{2}$ \rightarrow niveau fondamental
+   $I^\pi=\tfrac{5}{2}^-$. Expérimentalement, le niveau fondamental est
+   $I^\pi=\tfrac{3}{2}^-$ \rightarrow\nbsp^{75}As est un noyau impair pour
+   lequel l'ordre de remplissage des couches diffère de celui attendu
+
+   #+BEGIN_CENTER
+   #+ATTR_LATEX: :width 0.3\textwidth
+   [[./figures/arsenic75_1.pdf]]
+   #+END_CENTER
+
+   Cette configuration, 1 proton célibataire en $2p\tfrac{3}{2}$, est "préférée"
+   par le noyau car l'énergie d'appariement croît avec le $j$ de la couche (ici
+   $\tfrac{5}{2}$ contre $\tfrac{3}{2}$) ce qui rend le noyau plus stable. De
+   plus, les couches sont proches en énergie et un noyau déformé peut "mélanger"
+   les différentes couches.
+
+4)
+
+   1) \nbsp^{90}_{40}Zr =\nbsp^{88}_{38}Sr + 2$p$ : noyau pair-pair fermé en
+      neutrons (50 : nombre magique)
+
+      #+BEGIN_CENTER
+      #+ATTR_LATEX: :width 0.3\textwidth
+      [[./figures/zirconium90.pdf]]
+      #+END_CENTER
+
+      - 2 protons appariés en $2p\tfrac{1}{2}$ d'où $I^\pi=0^+$.
+      - 2 protons en $1g\tfrac{9}{2}$ \rightarrow couplage
+        $I^\pi=0^+,1^+,2^+,3^+,4^+,5^+,6^+,7^+,8^+,9^+$ mais seules les valeurs
+        paires sont conservées (noyau pair-pair) d'où $I^\pi=0^+,2^+,4^+,6^+,8^+$
+        avec un ordre parmi les niveaux en énergie respecté.
+      - brisure de paire : 1 proton en $2p\tfrac{1}{2}$ et 1 proton en
+        $1g\tfrac{9}{2}$ : $I^\pi=4^-,5^-$, ordre non donné par le modèle en couche
+
+      Le modèle explique correctement le spectre en énergie. On remarque par
+      ailleurs, l'écart en énergie important entre le niveau fondamental et le
+      premier niveau excité ($E=\unit[1.75]{MeV}$) : c'est une caractéristique
+      des noyaux pair-pair qui sont très stables et donc difficilement
+      "excitable".
+
+   2) \nbsp^{90}_{41}Nb : le noyau de Niobium est un noyau impair-impair : 41
+      protons, 49 neutrons
+
+      #+BEGIN_CENTER
+      #+ATTR_LATEX: :width 0.6\textwidth
+      [[./figures/niobium90.pdf]]
+      #+END_CENTER
 
 * Footnotes
 
