@@ -1,0 +1,35 @@
+\begin{tikzpicture}[y=-1cm]
+  \sf
+  \definecolor{red}{RGB}{221,42,43}
+  \definecolor{green}{RGB}{105,182,40}
+  \definecolor{blue}{RGB}{0,51,153}
+  \definecolor{orange}{RGB}{192,128,64}
+
+  %% \clip (3.5,13) rectangle (18,6.5);
+
+  \draw[blue, very thick] (5.23875,7.1) -- (9.8425,7.1);
+  \draw[blue, very thick] (5.23875,8.4) -- (9.8425,8.4);
+  \draw[blue, very thick] (5.23875,9.7) -- (9.8425,9.7);
+  \draw[blue, very thick] (5.23875,11) -- (9.8425,11);
+
+  \path (4.5,7.1) node[text=black] {\large{}3.199};
+  \path (4.5,8.4) node[text=black] {\large{}2.675};
+  \path (4.5,9.7) node[text=black] {\large{}1.554};
+  \path (4.5,11) node[text=black] {\large{}0};
+
+\begin{scope}[xshift=6.2cm]
+  \path (4,7.1) node[text=black] {\large{}$6^+$};
+  \path (4,8.4) node[text=black] {\large{}$4^+$};
+  \path (4,9.7) node[text=black] {\large{}$2^+$};
+  \path (4,11) node[text=black] {\large{}$0^+$};
+\end{scope}
+
+  \path (7.5,12.22375) node[text=black] {\large{}Expérience};
+  \path (4.5,12.22375) node[text=black] {\large{}MeV};
+
+\end{tikzpicture}%
+
+%% Configure (x)emacs for this file ...
+%% Local Variables:
+%% mode: latex
+%% End:

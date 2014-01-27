@@ -1477,6 +1477,134 @@ avec $I^\pi(d)=1^+$ et $\vv{L}_{\pi d}=\vv{0}$
    - \nbsp^{3}_{1}H \equiv $\ket{pnn}$ avec $T_3(pnn)=\tfrac{-1}{2}$
    - \nbsp^{3}_{2}H \equiv $\ket{ppn}$ avec $T_3(pnn)=\tfrac{+1}{2}$
 
+* TD6 : Structure nucléaire
+** Introduction
+L'hamiltonien d'un système à $N$ nucléons prend la forme suivante
+#+BEGIN_SRC latex
+  \begin{equation*}
+    \hat{H}=\hat{H}_0 - D\ell^2 - a\vv{\ell}.\vv{s}
+  \end{equation*}
+#+END_SRC
+où $\hat{H}_0$ est l'hamiltonien de l'oscillateur harmonique. $D\ell^2$ traduit
+les effets de bord observés expérimentalement et $a\vv{ell}.\vv{s}$ est relatif
+au couplage spin-orbite.
+
+On adopte, par ailleurs, les notations héritées de la spectroscopie
+atomique/moléculaire (/cf./ Tableau [[tab::quantum_number]]) où $n$ correspond au
+nombre quantique radial /i.e./ au nombre de n\oe uds de la fonction d'onde,
+$\ell$ est le nombre quantique associé au moment cinétique orbital et $j$ celui
+associé au moment cinétique total soit $\vv{j}=\vv{\ell}+\vv{s}$. Les nucléons
+étant des fermions $s=\pm1/2$, le moment cinétique total devient
+$\vv{j}=\vv{\ell}+\vv{1}/2$. La parité orbitale de l'état est égale à
+$\pi=(-1)^\ell$ soit la parité intrinsèque.
+
+#+CAPTION: *Notation spectroscopique pour le modèle en couches*
+#+NAME: tab::quantum_number
+|--------+-----+-----+-----+-----+-----+-----|
+| $n$    |   1 |   2 |   3 | ... |     |     |
+| $\ell$ |   0 |   1 |   2 | 3   |   4 |   5 |
+|        | $s$ | $p$ | $d$ | $f$ | $g$ | $h$ |
+|--------+-----+-----+-----+-----+-----+-----|
+
+Le principe de Pauli impose un nombre $2j+1$ de particules identiques par couche
+$j$. Par ailleurs, si on couple deux nucléons identiques dans une même couche
+(cas des noyaux pair-pair, par exemple), seules les valeurs paires de $I$
+(moment cinétique total) sont possibles. On en déduit les règles d'appariement à
+savoir que deux nucléons identiques sur une même couche vont s'apparier de telle
+sorte que le moment cinétique soit $I^\pi=0^+$ [fn:7]. On distingue également
+les règles suivantes pour les différents types de noyau :
+
+- noyau pair-pair :: ces noyaux ne contiennent que des nucléons appariés dont le
+     niveau fondamental correspond à $I^\pi=0^+$. Les niveaux excités sont alors
+     $2^+,4^+$,...
+- noyau pair-impair :: ces noyaux ont un nucléon célibataire sur une couche
+     $(j,\ell)$, les autres nucléons appariés ont un moment cinétique total
+     nul. Le nucléon célibataire gouverne donc la valeur de $I^\pi$ : $I=j,
+     \pi=(-1)^\ell$
+- noyau impair-impair :: les nucléons célibrataires, 1 proton et 1 neutron, se
+     couplent de telle sorte que la valeur de $j$ est comprise entre
+     $|j_1-j_2|\leq j\leq j_1+j_2$. La parité $\pi$ est égale à
+     $(-1)^{\ell_1+\ell_2}$. Toutes les valeurs de $j$ sont possibles
+
+** Modèle des couches
+1) Moment cinétique $I$ et parité $\pi$ :
+
+   - *\nbsp^{41}_{21}Sc*
+     - noyau impair-pair : 21 protons, 20 neutrons
+     - noyau fermé en neutrons (20 : nombre magique)
+     - 1 proton célibataire en $1f\tfrac{7}{2}$ qui gouverne la valeur de
+       $I^\pi$
+     - Niveau fondamental : $(n\ell j)=(1f\tfrac{7}{2})$ :
+       $I^\pi=\tfrac{7}{2}^{(-1)^3}=\tfrac{7}{2}^-$
+     - 1^{er} niveau excité : proton en $2p\tfrac{3}{2}$ soit
+       $I^\pi=\tfrac{3}{2}^{(-1)^1}=\tfrac{3}{2}^-$
+
+     #+BEGIN_CENTER
+     #+ATTR_LATEX: :width 0.7\linewidth
+     [[./figures/scandium41.pdf]]
+     #+END_CENTER
+
+   - *\nbsp^{57}_{28}Ni*
+     - noyau pair-impair : 28 protons, 29 neutrons
+     - noyau fermé en protons (28 : nombre magique)
+     - 1 neutron célibataire en $2p\tfrac{3}{2}$
+     - Niveau fondamental : $2p\tfrac{3}{2}$ :
+       $I^\pi=\tfrac{3}{2}^{(-1)^1}=\tfrac{3}{2}^-$
+     - 1^{er} niveau excité : neutron en $1f\tfrac{5}{2}$ soit
+       $I^\pi=\tfrac{5}{2}^{(-1)^3}=\tfrac{5}{2}^-$
+
+     #+BEGIN_CENTER
+     #+ATTR_LATEX: :width 0.7\linewidth
+     [[./figures/nickel57.pdf]]
+     #+END_CENTER
+
+   - *\nbsp^{58}_{27}Co*
+     - noyau impair-impair : 27 protons, 31 neutrons \rightarrow couplage des
+       nucléons célibataires
+
+     #+BEGIN_CENTER
+     #+ATTR_LATEX: :width 0.7\linewidth
+     [[./figures/cobalt58.pdf]]
+     #+END_CENTER
+
+     - 1 proton célibataire en $1f\tfrac{7}{2}$ et 1 neutron célibataire en
+       $2p\tfrac{3}{2}$
+     - $|j_1-j_2|\leq j\leq j_1+j_2$ \rightarrow $I=2,3,4,5$
+     - $\pi=(-1)^{\ell_1+\ell_2}=(-1)^{3+1}=+1$
+     - le modèle ne donne pas l'ordre des états : le niveau fondamental est
+       parmi ces 4 états de même que le 1^{er} niveau excité.
+
+     #+BEGIN_CENTER
+     #+CAPTION: *Mesure expérimentale des niveaux en énergie du\nbsp^{58}_{27}Co*.
+     #+CAPTION: Les états sont dans le désordre mais très proches en énergie (effet de l'interaction résiduelle proton-neutron)
+     #+ATTR_LATEX: :width 0.3\linewidth
+     [[./figures/cobalt58_energy.pdf]]
+     #+END_CENTER
+
+   - *\nbsp^{50}_{22}Ti*
+     - noyau pair-pair : 22 protons, 28 neutrons
+     - noyau fermé en neutrons (28 : nombre magique)
+     - 2 protons sur la couche $1f\tfrac{7}{2}$ \rightarrow couplage des protons
+
+     #+BEGIN_CENTER
+     #+ATTR_LATEX: :width 0.7\linewidth
+     [[./figures/titane50.pdf]]
+     #+END_CENTER
+     - $|j_1-j_2|\leq j\leq j_1+j_2$ \rightarrow $I=0,1,2,3,4,5,6,7$ *mais
+       seules les valeurs paires sont autorisées (principe de Pauli)*
+     - $\pi=(-1)^{\ell_1+\ell_2}=(-1)^{3+3}=+1$
+     - Niveau fondamental : $I^\pi=0^+$
+     - 1^{er} niveau excité = $I^\pi=2^+$
+
+     #+BEGIN_CENTER
+     #+CAPTION: *Mesure expérimentale des niveaux en énergie du\nbsp^{50}_{22}Ti*.
+     #+CAPTION: Les états d'énergie sont dans l'ordre (noyau pair-pair) mais très espacés en raison de l'interaction proton-proton \rightarrow noyau pair-pair très stable
+     #+ATTR_LATEX: :width 0.3\linewidth
+     [[./figures/titane50_energy.pdf]]
+     #+END_CENTER
+
+
+
 * Footnotes
 
 [fn:1] 1 pc = 1 parsec = 3.26 années lumières = 30.856 10^{12} km.
@@ -1509,3 +1637,6 @@ symétrique. Toutefois et comme nous le verrons dans l'exercice sur la parité
 intrinsèque du pion, la fonction d'onde globale de ces états demeure
 antisymétrique en raison du principe de Pauli généralisé qui impose que deux
 fermions soient dans des états quantiques différents.
+
+[fn:7] la parité est égale à $(-1)^{\ell_1+\ell_2}$ où $\ell_1=\ell_2=\ell$ et
+donc $\pi=(-1)^{2\ell}=+1$
