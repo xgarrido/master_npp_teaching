@@ -1486,15 +1486,15 @@ L'hamiltonien d'un système à $N$ nucléons prend la forme suivante
   \end{equation*}
 #+END_SRC
 où $\hat{H}_0$ est l'hamiltonien de l'oscillateur harmonique. $D\ell^2$ traduit
-les effets de bord observés expérimentalement et $a\vv{ell}.\vv{s}$ est relatif
+les effets de bord observés expérimentalement et $a\vv{\ell}.\vv{s}$ est relatif
 au couplage spin-orbite.
 
 On adopte, par ailleurs, les notations héritées de la spectroscopie
-atomique/moléculaire (/cf./ Tableau [[tab::quantum_number]]) où $n$ correspond au
+atomique/moléculaire (/cf./ Table [[tab::quantum_number]]) où $n$ correspond au
 nombre quantique radial /i.e./ au nombre de n\oe uds de la fonction d'onde,
 $\ell$ est le nombre quantique associé au moment cinétique orbital et $j$ celui
-associé au moment cinétique total soit $\vv{j}=\vv{\ell}+\vv{s}$. Les nucléons
-étant des fermions $s=\pm1/2$, le moment cinétique total devient
+associé au moment cinétique total $J$ [fn:7] soit $\vv{j}=\vv{\ell}+\vv{s}$. Les
+nucléons étant des fermions $s=\pm1/2$, le moment cinétique total devient
 $\vv{j}=\vv{\ell}+\vv{1}/2$. La parité orbitale de l'état est égale à
 $\pi=(-1)^\ell$ soit la parité intrinsèque.
 
@@ -1508,11 +1508,12 @@ $\pi=(-1)^\ell$ soit la parité intrinsèque.
 
 Le principe de Pauli impose un nombre $2j+1$ de particules identiques par couche
 $j$. Par ailleurs, si on couple deux nucléons identiques dans une même couche
-(cas des noyaux pair-pair, par exemple), seules les valeurs paires de $I$
-(moment cinétique total) sont possibles. On en déduit les règles d'appariement à
-savoir que deux nucléons identiques sur une même couche vont s'apparier de telle
-sorte que le moment cinétique soit $I^\pi=0^+$ [fn:7]. On distingue également
-les règles suivantes pour les différents types de noyau :
+(cas des noyaux pair-pair, par exemple), *seules les valeurs paires de $I$
+(moment cinétique total) sont possibles* (/cf./ Chapitre 4, page 14 du
+cours). On en déduit les règles d'appariement à savoir que deux nucléons
+identiques sur une même couche vont s'apparier de telle sorte que le moment
+cinétique soit $I^\pi=0^+$ [fn:8]. On distingue également les règles suivantes
+pour les différents types de noyau :
 
 - noyau pair-pair :: ces noyaux ne contiennent que des nucléons appariés dont le
      niveau fondamental correspond à $I^\pi=0^+$. Les niveaux excités sont alors
@@ -1656,7 +1657,6 @@ les règles suivantes pour les différents types de noyau :
    les différentes couches.
 
 4)
-
    1) \nbsp^{90}_{40}Zr =\nbsp^{88}_{38}Sr + 2$p$ : noyau pair-pair fermé en
       neutrons (50 : nombre magique)
 
@@ -1668,8 +1668,9 @@ les règles suivantes pour les différents types de noyau :
       - 2 protons appariés en $2p\tfrac{1}{2}$ d'où $I^\pi=0^+$.
       - 2 protons en $1g\tfrac{9}{2}$ \rightarrow couplage
         $I^\pi=0^+,1^+,2^+,3^+,4^+,5^+,6^+,7^+,8^+,9^+$ mais seules les valeurs
-        paires sont conservées (noyau pair-pair) d'où $I^\pi=0^+,2^+,4^+,6^+,8^+$
-        avec un ordre parmi les niveaux en énergie respecté.
+        paires sont conservées (principe de Pauli) d'où
+        $I^\pi=0^+,2^+,4^+,6^+,8^+$ avec un ordre parmi les niveaux en énergie
+        respecté.
       - brisure de paire : 1 proton en $2p\tfrac{1}{2}$ et 1 proton en
         $1g\tfrac{9}{2}$ : $I^\pi=4^-,5^-$, ordre non donné par le modèle en couche
 
@@ -1679,13 +1680,37 @@ les règles suivantes pour les différents types de noyau :
       des noyaux pair-pair qui sont très stables et donc difficilement
       "excitable".
 
-   2) \nbsp^{90}_{41}Nb : le noyau de Niobium est un noyau impair-impair : 41
-      protons, 49 neutrons
+   2)
+      1) \nbsp^{90}_{41}Nb : le noyau de Niobium est un noyau impair-impair : 41
+         protons, 49 neutrons
 
-      #+BEGIN_CENTER
-      #+ATTR_LATEX: :width 0.6\textwidth
-      [[./figures/niobium90.pdf]]
-      #+END_CENTER
+         #+BEGIN_CENTER
+         #+ATTR_LATEX: :width 0.6\textwidth
+         [[./figures/niobium90.pdf]]
+         #+END_CENTER
+
+         - 1 proton célibataire en $1g\tfrac{9}{2}$ et 1 neutron célibataire en
+            $1g\tfrac{9}{2}$ \rightarrow couplage
+            $I^\pi=0^+,1^+,2^+,3^+,4^+,5^+,6^+,7^+,8^+,9^+$ où les 10 valeurs sont
+            toutes possibles
+         - pour un noyau impair-impair, l'ordre n'est pas donné par le modèle
+         - Brisure de la paire $2p\tfrac{1}{2}$ dont l'un des constituants (proton
+           ou neutron) "monte" en $1g\tfrac{9}{2}$. Cette brisure est d'autant plus
+           favorisée que la montée d'un neutron ferme la couche de nombre
+           magique 50. Dans ce cas, on obtient un proton ou un neutron célibataire
+           en $2p\tfrac{1}{2}$ et un neutron ou un proton célibataire en
+           $1g\tfrac{9}{2}$ : $I^\pi=4^-,5^-$
+      2)
+         - le nombre de niveaux observé est moins élevé pour le noyau
+           pair-pair\nbsp^{90}_{40}Zr que pour le noyaux
+           impair-impair\nbsp^{90}_{41}Nb du fait du principe de Pauli qui
+           interdit certaines valeurs de $I$ pour les noyaux pair-pair.
+         - la levée de dégénérescence due à l'interaction résiduelle
+           c'est-à-dire au traitement des interactions entre nucléons
+           $\hat{H}=\hat{H}_0+\hat{V}_\text{res.}$ : l'interaction résiduelle
+           entre $p-p$ est plus importante qu'entre $p-n$ expliquant l'écart
+           d'énergie $\Delta E$ entre les niveaux excités : 3.6 MeV
+           pour\nbsp^{90}_{40}Zr et 0.85 MeV pour\nbsp^{90}_{41}Nb
 
 * Footnotes
 
@@ -1720,5 +1745,7 @@ intrinsèque du pion, la fonction d'onde globale de ces états demeure
 antisymétrique en raison du principe de Pauli généralisé qui impose que deux
 fermions soient dans des états quantiques différents.
 
-[fn:7] la parité est égale à $(-1)^{\ell_1+\ell_2}$ où $\ell_1=\ell_2=\ell$ et
+[fn:7] le moment cinétique sera indifferemment noté $J$ ou $I$
+
+[fn:8] la parité est égale à $(-1)^{\ell_1+\ell_2}$ où $\ell_1=\ell_2=\ell$ et
 donc $\pi=(-1)^{2\ell}=+1$
