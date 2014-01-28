@@ -1479,15 +1479,16 @@ avec $I^\pi(d)=1^+$ et $\vv{L}_{\pi d}=\vv{0}$
 
 * TD6 : Structure nucléaire
 ** Introduction
-L'hamiltonien d'un système à $N$ nucléons prend la forme suivante
+Dans l'approximation du champ moyen, l'hamiltonien d'un système à $N$ nucléons
+prend la forme suivante
 #+BEGIN_SRC latex
   \begin{equation*}
-    \hat{H}=\hat{H}_0 - D\ell^2 - a\vv{\ell}.\vv{s}
+    \hat{H}_\text{CM}=\hat{H}_\text{OH} - D\hat{\ell}^2 - a\vv{\ell}.\vv{s}
   \end{equation*}
 #+END_SRC
-où $\hat{H}_0$ est l'hamiltonien de l'oscillateur harmonique. $D\ell^2$ traduit
-les effets de bord observés expérimentalement et $a\vv{\ell}.\vv{s}$ est relatif
-au couplage spin-orbite.
+où $\hat{H}_\text{OH}$ est l'hamiltonien de l'oscillateur
+harmonique. $D\hat{\ell}^2$ traduit les effets de bord observés
+expérimentalement et $a\vv{\ell}.\vv{s}$ est relatif au couplage spin-orbite.
 
 On adopte, par ailleurs, les notations héritées de la spectroscopie
 atomique/moléculaire (/cf./ Table [[tab::quantum_number]]) où $n$ correspond au
@@ -1517,12 +1518,12 @@ pour les différents types de noyau :
 
 - noyau pair-pair :: ces noyaux ne contiennent que des nucléons appariés dont le
      niveau fondamental correspond à $I^\pi=0^+$. Les niveaux excités sont alors
-     $2^+,4^+$,...
+     $2^+,4^+$,..., les valeurs impaires de $I$ étant interdites
 - noyau pair-impair :: ces noyaux ont un nucléon célibataire sur une couche
      $(j,\ell)$, les autres nucléons appariés ont un moment cinétique total
      nul. Le nucléon célibataire gouverne donc la valeur de $I^\pi$ : $I=j,
      \pi=(-1)^\ell$
-- noyau impair-impair :: les nucléons célibrataires, 1 proton et 1 neutron, se
+- noyau impair-impair :: les nucléons célibataires, 1 proton et 1 neutron, se
      couplent de telle sorte que la valeur de $j$ est comprise entre
      $|j_1-j_2|\leq j\leq j_1+j_2$. La parité $\pi$ est égale à
      $(-1)^{\ell_1+\ell_2}$. Toutes les valeurs de $j$ sont possibles
@@ -1707,9 +1708,9 @@ pour les différents types de noyau :
            interdit certaines valeurs de $I$ pour les noyaux pair-pair.
          - la levée de dégénérescence due à l'interaction résiduelle
            c'est-à-dire au traitement des interactions entre nucléons
-           $\hat{H}=\hat{H}_0+\hat{V}_\text{res.}$ : l'interaction résiduelle
-           entre $p-p$ est plus importante qu'entre $p-n$ expliquant l'écart
-           d'énergie $\Delta E$ entre les niveaux excités : 3.6 MeV
+           $\hat{H}=\hat{H}_\text{CM}+\hat{V}_\text{res.}$ : l'interaction
+           résiduelle entre $p-p$ est plus importante qu'entre $p-n$ expliquant
+           l'écart d'énergie $\Delta E$ entre les niveaux excités : 3.6 MeV
            pour\nbsp^{90}_{40}Zr et 0.85 MeV pour\nbsp^{90}_{41}Nb
 
 * Footnotes
