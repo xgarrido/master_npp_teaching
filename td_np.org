@@ -383,7 +383,6 @@ $\vv{v}$ dans un champ d'induction $\vv{B}$ normal à $\vv{v}$.
    \[T_{S} = \frac{2m_{N}c^{2}}{2} = m_{N}c^{2} = \unit[7]{TeV}\]
 
 7) Réaction sur cible fixe
-
    #+BEGIN_SRC latex
      \begin{align*}
        T_{S} &= \frac{|Q|}{2}\cdot\frac{\Upsigma\,m_{if}c^{2}}{2m_{p}c^{2}}\\
@@ -689,7 +688,6 @@ hypercharge. Dans cet exercice, $c=b=t=0$ donc $Y = B$ + étrangeté $S$
    *10^{-23} à 10^{-20} secondes*.
 
 3) Calcul de l'énergie seuil des pions :
-
    #+BEGIN_SRC latex
      \begin{align*}
        T_S &= \frac{|Q|\cdot\Upsigma m_\text{initiale,finale}c^2}{2\cdot m_pc^2}\\
@@ -1328,7 +1326,6 @@ avec $I^\pi(d)=1^+$ et $\vv{L}_{\pi d}=\vv{0}$
    \[Q = 2m_pc^2 - 2m_pc^2 - m_\pi c^2 = -m_\pi c^2\]
 
    On déduit l'énergie cinétique seuil
-
    #+BEGIN_SRC latex
      \begin{align*}
        T_S&=\frac{m_\pi c^2}{m_nc^2}\times\frac{4m_pc^2+m_\pi c^2}{2}\\
@@ -1374,9 +1371,6 @@ avec $I^\pi(d)=1^+$ et $\vv{L}_{\pi d}=\vv{0}$
        (p_\pi c)^2 &= 600(600+2\times140) = \unit[5.28\,10^5]{MeV^2} \text{ soit } p_\pi c = \unit[726.6]{MeV}\\
        (p_dc)^2 &= (1000-600-140)(260+4\times140) = \unit[1.045\,10^6]{MeV^2} \text{ soit } p_dc = \unit[1022]{MeV}
      \end{align*}
-   #+END_SRC
-
-   #+BEGIN_SRC latex
      \begin{align*}
        \cos\theta&=\frac{2.88+0.528-1.045}{2\times\sqrt{2.88}\sqrt{0.528}}\\
        &=0.958\\
