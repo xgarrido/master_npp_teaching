@@ -1721,7 +1721,7 @@ pour les différents types de noyau :
    2) Noyaux miroirs\nbsp^{21}_{10}Ne et\nbsp^{21}_{11}Na : même séquence de
       $I^\pi$
       #+BEGIN_CENTER
-      #+CAPTION: *Structure en couche pour\nbsp^{21}_{10}Ne*
+      #+CAPTION: *Structure en couche du\nbsp^{21}_{10}Ne*
       #+ATTR_LATEX: :width 0.7\linewidth
       [[./figures/neon21.pdf]]
       #+END_CENTER
@@ -1734,6 +1734,71 @@ pour les différents types de noyau :
       mesure où les niveaux en énergie des couches
       $1d\tfrac{5}{2},2s\tfrac{1}{2}$ et $1d\tfrac{3}{2}$ sont relativement
       proches.
+2)
+   1) Pour un système constitué de $Z$ protons et $N$ neutrons, la troisième
+      composante de l'isospin $T_3$ est égale à
+      #+BEGIN_SRC latex
+        \begin{align*}
+          T_3=\Upsigma t_{3i}
+        \end{align*}
+      #+END_SRC
+      Or $t_3(p)=+\tfrac{1}{2}$ et $t_3(n)=-\tfrac{1}{2}$ soit
+      #+BEGIN_SRC latex
+        \begin{align*}
+          T_3=Z\times\frac{1}{2}-N\times\frac{1}{2}=\frac{Z-N}{2}
+        \end{align*}
+      #+END_SRC
+      La troisième composante de l'isospin d'un noyau est donc fixée. En
+      revanche l'isospin $\vv{T}=\Upsigma\vv{t}_i$ varie entre la valeur du
+      niveau fondamental $T_\text{fonda.}=|T_3|=\left|\frac{Z-N}{2}\right|$ et
+      la valeur $\frac{Z+N}{2}=\frac{A}{2}$. On déduit les valeurs suivantes
+      d'isospin pour les 3 isobares
+
+      |------------------------+--------------------------------+--------------------------------+--------------------------------|
+      |                        | \nbsp^{21}_{9}F_{12}           | \nbsp^{21}_{10}Ne_{11}         | \nbsp^{21}_{11}F_{9}           |
+      | $T_3$                  | -3/2                           | -1/2                           | +1/2                           |
+      | $\vv{T}$               | $\vv{3}/2\rightarrow\vv{21}/2$ | $\vv{1}/2\rightarrow\vv{21}/2$ | $\vv{1}/2\rightarrow\vv{21}/2$ |
+      | $\vv{T}_\text{fonda.}$ | $\vv{3}/2$                     | $\vv{1}/2$                     | $\vv{1}/2$                     |
+      |------------------------+--------------------------------+--------------------------------+--------------------------------|
+   2)
+      - 1 doublet d'isospin $\vv{T}=\vv{1}/2$ correspondant aux 2 noyaux
+        de\nbsp^{21}Ne et\nbsp^{21}F
+      - 1 quadruplet d'isospin $\vv{T}=\vv{3}/2$ comprenant les états des 4
+        noyaux\nbsp^{21}F,\nbsp^{21}Ne,\nbsp^{21}F et\nbsp^{21}Mg (noyau miroir
+        de\nbsp^{21}F). Le noyau\nbsp^{21}Mg a la même séquence d'états
+        que\nbsp^{21}F soit $I^\pi(\text{fonda.})=\tfrac{5}{2}^+$ et 1^{er} état
+        excité $I^\pi=\tfrac{1}{2}^+$
+
+3) Calcul des excès de masse
+   #+BEGIN_CENTER
+   #+ATTR_LATEX: :width 0.9\linewidth
+   [[./figures/fluor_neon_sodium_magnesium_energy.pdf]]
+   #+END_CENTER
+
+   L'excès de masse d'un noyau $\Delta M_\text{at.}c^2$ est égal à
+   $M_\text{at.}c^2 - 931.5A$ où $\Delta M_\text{at.}c^2$ et $M_\text{at.}c^2$
+   sont exprimés en MeV. Pour les états analogues isobariques
+   $I^\pi=\tfrac{5}{2}^+$ de\nbsp^{21}_{9}F(fonda.),\nbsp^{21}_{10}Ne^{*}(8.86
+   MeV),\nbsp^{21}_{11}Na^{*}(8.97 MeV) et\nbsp^{21}_{12}Mg(fonda.) ayant
+   $\vv{T}=\vv{3}/2$ et respectivement $T_3=-3/2,-1/2,+1/2,+3/2$, on calcule
+   $\Delta M_\text{at.}c^2=a^\prime+bT_3+cT_3$ où $a^\prime=a-931.5A$
+
+   | \ding{192} | $\Delta M_\text{at.}c^2(21,5/2^+,3/2,-3/2)$ | = | $a^\prime-\tfrac{3}{2}b+\tfrac{9}{4}c$ | = | $\unit[-0.047]{MeV}$                          |
+   | \ding{193} | $\Delta M_\text{at.}c^2(21,5/2^+,3/2,-1/2)$ | = | $a^\prime-\tfrac{b}{2}b+\tfrac{c}{4}$  | = | $\unit[(-5.733+8.86)]{MeV}$                   |
+   | \ding{194} | $\Delta M_\text{at.}c^2(21,5/2^+,3/2,+1/2)$ | = | $a^\prime+\tfrac{b}{2}b+\tfrac{c}{4}$  | = | $\unit[(-2.186+8.97)]{MeV}$                   |
+   | \ding{195} | $\Delta M_\text{at.}c^2(21,5/2^+,3/2,+3/2)$ | = | $a^\prime+\tfrac{3}{2}b+\tfrac{9}{4}c$ | = | $\Delta M_\text{at.}c^2(^{21}_{12}\text{Mg})$ |
+
+   | \ding{195} $-$ \ding{192} | $3b=\Delta M_\text{at.}c^2(^{21}_{12}\text{Mg})+0.047$ |
+   | \ding{194} $-$ \ding{193} | $b=-2.186+8.97+5.733-8.86=\unit[3.657]{MeV}$           |
+
+   soit un excès de masse $\Delta M_\text{at.}c^2(^{21}_{12}\text{Mg})$
+   #+BEGIN_SRC latex
+     \begin{align*}
+       \Delta M_\text{at.}c^2(^{21}_{12}\text{Mg}) &= 3\times3.657-0.047\\
+       &=\unit[10.924]{MeV}
+     \end{align*}
+   #+END_SRC
+
 * Footnotes
 
 [fn:1] 1 pc = 1 parsec = 3.26 années lumières = 30.856 10^{12} km.

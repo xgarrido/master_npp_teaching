@@ -1,0 +1,86 @@
+\begin{tikzpicture}[y=-1cm]
+  \sf
+  \definecolor{red}{RGB}{221,42,43}
+  \definecolor{green}{RGB}{105,182,40}
+  \definecolor{blue}{RGB}{0,51,153}
+  \definecolor{orange}{RGB}{192,128,64}
+
+  %%\clip (3.5,13) rectangle (18,5.);
+
+  \begin{scope}[xshift=7cm]
+    \draw[blue, very thick] (-1.4,7.14375) -- (3.0,7.14375);
+    \draw[blue, very thick] (-1.4,5.84375) -- (3.0,5.84375);
+    \path (3.65125,5.84375) node[text=black] {\LARGE{}$\tfrac{1}{2}^+$};
+    \path (3.65125,7.14375) node[text=black] {\LARGE{}$\tfrac{5}{2}^+$};
+    \path (3.65125,12.22375) node[text=blue,xshift=-2.7cm] {\LARGE{}
+      $\begin{aligned}
+        ^{21}_{9}\text{F}&\\
+        T_3&=-\tfrac{3}{2}
+      \end{aligned}$
+    };
+    \draw[blue, very thick,<->] (-0.4,5.84375) -- (-0.4,7.14375);
+    \path (0.3,6.5) node[text=blue] {\LARGE{}$\Delta E$};
+    \draw[black,->] (-3,7.4137) node[anchor=east, text width=2.5cm, text centered]{même $\Delta E$ aux effets coulombiens près} to [out=0, in=180] (-0.4,6.5);
+
+  \end{scope}
+
+  \begin{scope}[xshift=14cm]
+    \draw[blue, very thick] (-1.4,9.14375) -- (3.0,9.14375);
+    \draw[blue, very thick] (-1.4,7.14375) -- (3.0,7.14375);
+    \draw[blue, very thick] (-1.4,5.84375) -- (3.0,5.84375);
+    \path (3.65125,5.84375) node[text=black] {\LARGE{}$\tfrac{1}{2}^+$};
+    \path (3.65125,7.14375) node[text=black] {\LARGE{}$\tfrac{5}{2}^+$};
+    \path (3.65125,9.14375) node[text=black] {\LARGE{}$\tfrac{3}{2}^+$};
+    \path (3.65125,12.22375) node[text=blue,xshift=-2.7cm] {\LARGE{}
+      $\begin{aligned}
+        ^{21}_{9}\text{Ne}&\\
+        T_3&=-\tfrac{1}{2}
+      \end{aligned}$
+    };
+    \draw[blue, very thick,<->] (-0.4,5.84375) -- (-0.4,7.14375);
+    \path (0.3,6.5) node[text=blue] {\LARGE{}$\Delta E$};
+    \draw[blue, very thick,<->] (-0.4,9.14375) -- (-0.4,7.14375);
+    \path (0.9,8.3) node[text=blue] {\LARGE{}$\unit[8.86]{MeV}$};
+  \end{scope}
+
+  \begin{scope}[xshift=21cm]
+    \draw[blue, very thick] (-1.4,9.14375) -- (3.0,9.14375);
+    \draw[blue, very thick] (-1.4,7.14375) -- (3.0,7.14375);
+    \draw[blue, very thick] (-1.4,5.84375) -- (3.0,5.84375);
+    \path (3.65125,5.84375) node[text=black] {\LARGE{}$\tfrac{1}{2}^+$};
+    \path (3.65125,7.14375) node[text=black] {\LARGE{}$\tfrac{5}{2}^+$};
+    \path (3.65125,9.14375) node[text=black] {\LARGE{}$\tfrac{3}{2}^+$};
+    \path (3.65125,12.22375) node[text=blue,xshift=-2.7cm] {\LARGE{}
+      $\begin{aligned}
+        ^{21}_{9}\text{Na}&\\
+        T_3&=+\tfrac{1}{2}
+      \end{aligned}$
+    };
+    \draw[blue, very thick,<->] (-0.4,5.84375) -- (-0.4,7.14375);
+    \path (0.3,6.5) node[text=blue] {\LARGE{}$\Delta E$};
+    \draw[blue, very thick,<->] (-0.4,9.14375) -- (-0.4,7.14375);
+    \path (0.9,8.3) node[text=blue] {\LARGE{}$\unit[8.97]{MeV}$};
+  \end{scope}
+
+  \begin{scope}[xshift=28cm]
+    \draw[green, very thick] (-1.4,7.14375) -- (3.0,7.14375);
+    \draw[green, very thick] (-1.4,5.84375) -- (3.0,5.84375);
+    \path (3.65125,5.84375) node[text=green] {\LARGE{}$\tfrac{1}{2}^+$};
+    \path (3.65125,7.14375) node[text=green] {\LARGE{}$\tfrac{5}{2}^+$};
+    \path (3.65125,12.22375) node[text=green,xshift=-2.7cm] {\LARGE{}
+      $\begin{aligned}
+        ^{21}_{9}\text{Mg}&\\
+        T_3&=+\tfrac{3}{2}
+      \end{aligned}$
+    };
+    \draw[green, very thick,<->] (-0.4,5.84375) -- (-0.4,7.14375);
+    \path (0.3,6.5) node[text=green] {\LARGE{}$\Delta E$};
+  \end{scope}
+
+
+\end{tikzpicture}%
+
+%% Configure (x)emacs for this file ...
+%% Local Variables:
+%% mode: latex
+%% End:
