@@ -25,7 +25,7 @@ Noyau :^{A}_{Z}X \rightarrow Z protons  + N neutrons = A nucléons (nombre de ma
 
 Certains noyaux sont stables, d'autres radioactifs se désintégrant spontanément
 
-\[^{14}_{6}C \rightarrow ^{14}_{7}N + e^{-} + \bar{\nu}_{e}\]
+\[^{14}_{6}\text{C} \rightarrow\,^{14}_{7}\text{N} + e^{-} + \bar{\nu}_{e}\]
 
 Pour étudier le noyau, on forme des réactions nucléaires qui obéissent à des
 lois de conservation (charge, nombre de nucléons, parité...). On bombarde une
@@ -1707,6 +1707,33 @@ pour les différents types de noyau :
            l'écart d'énergie $\Delta E$ entre les niveaux excités : 3.6 MeV
            pour\nbsp^{90}_{40}Zr et 0.85 MeV pour\nbsp^{90}_{41}Nb
 
+** Réactions nucléaires et états analogues isobariques
+Étude des isobares\nbsp^{21}_{9}F,\nbsp^{21}_{10}Ne et\nbsp^{21}_{11}Na
+1)
+   1) Moment cinétique $I^\pi$ du\nbsp^{21}_{9}F
+      #+BEGIN_CENTER
+      #+ATTR_LATEX: :width 0.7\linewidth
+      [[./figures/fluor21.pdf]]
+      #+END_CENTER
+
+      État fondamental $(1d\tfrac{5}{2})^1$ soit $I^\pi=\tfrac{5}{2}^+$, 1^{er}
+      niveau excité $(2s\tfrac{1}{2})^1$ soit $I^\pi=\tfrac{1}{2}^+$.
+   2) Noyaux miroirs\nbsp^{21}_{10}Ne et\nbsp^{21}_{11}Na : même séquence de
+      $I^\pi$
+      #+BEGIN_CENTER
+      #+CAPTION: *Structure en couche pour\nbsp^{21}_{10}Ne*
+      #+ATTR_LATEX: :width 0.7\linewidth
+      [[./figures/neon21.pdf]]
+      #+END_CENTER
+      Selon le modèle en couche, le niveau fondamental devrait être
+      $I^\pi=\tfrac{5}{2}^+$. Le fait que le niveau fondamental soit finalement
+      $I^\pi=\tfrac{3}{2}^+$ semble indiquer que le neutron seul dans le cas
+      du\nbsp^{21}_{10}Ne (respectivement le proton seul dans le cas
+      du\nbsp^{21}_{11}Na) est monté sur la couche $1d\tfrac{3}{2}$. Une telle
+      situation est envisageable dès lors que le noyau est déformé et dans la
+      mesure où les niveaux en énergie des couches
+      $1d\tfrac{5}{2},2s\tfrac{1}{2}$ et $1d\tfrac{3}{2}$ sont relativement
+      proches.
 * Footnotes
 
 [fn:1] 1 pc = 1 parsec = 3.26 années lumières = 30.856 10^{12} km.

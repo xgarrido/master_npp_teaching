@@ -1,0 +1,60 @@
+\begin{tikzpicture}[y=-1cm]
+  \sf
+  \definecolor{red}{RGB}{221,42,43}
+  \definecolor{green}{RGB}{105,182,40}
+  \definecolor{blue}{RGB}{0,51,153}
+  \definecolor{orange}{RGB}{192,128,64}
+
+  \clip (3.5,13) rectangle (18,6.5);
+
+  \fill[blue!10] (5.23875,10.00125) rectangle (9.8425,13.0175);
+  \draw[blue, very thick] (5.23875,13.0175) -- (5.23875,10.00125);
+  \draw[blue, very thick] (9.8425,13.0175) -- (9.8425,10.00125);
+  \draw[blue, very thick] (5.23875,10.00125) -- (9.8425,10.00125);
+  \draw[blue, very thick] (5.23875,8.41375) -- (9.8425,8.41375);
+  \draw[blue, very thick] (5.23875,7.14375) -- (9.8425,7.14375);
+
+  \begin{scope}[xshift=7cm]
+    \fill[green!10] (5.23875,10.00125) rectangle (9.8425,13.0175);
+    \draw[green, very thick] (5.23875,13.0175) -- (5.23875,10.00125);
+    \draw[green, very thick] (9.8425,13.0175) -- (9.8425,10.00125);
+    \draw[green, very thick] (5.23875,10.00125) -- (9.8425,10.00125);
+    \path (7.5,12.22375) node[text=green] {\large{}neutron};
+    \draw[green, very thick] (5.23875,8.41375) -- (9.8425,8.41375);
+    \draw[green, very thick] (5.23875,7.14375) -- (9.8425,7.14375);
+    \begin{scope}[xshift=10pt]
+      \draw[green,fill=green] (6.23875,8.4137) circle (0.0762cm);
+      \draw[green,fill=green] (6.43875,8.4137) circle (0.0762cm);
+      \draw[green,fill=green] (7.23875,8.4137) circle (0.0762cm);
+      \draw[green,fill=green] (7.43875,8.4137) circle (0.0762cm);
+      %% \draw[green,fill=green] (8.23875,8.4137) circle (0.0762cm);
+      %% \draw[green,fill=green] (8.43875,8.4137) circle (0.0762cm);
+      %% \draw[green,fill=green] (9.23875,8.4137) circle (0.0762cm);
+      %% \draw[green,fill=green] (9.43875,8.4137) circle (0.0762cm);
+    \end{scope}
+  \end{scope}
+
+  \begin{scope}[xshift=-10pt]
+    \draw[blue,fill=blue] (6.23875,8.4137) circle (0.0762cm);
+    \draw[blue,fill=blue] (7.23875,7.14375) circle (0.0762cm);
+    \draw[blue,->] (6.23875,8.4137) to [out=90, in=180] (7.23875,7.14375);
+  \end{scope}
+
+  \begin{scope}[xshift=7cm]
+    \path (3.65125,7.185) node[text=black,anchor=base west] {\large{}$2s\tfrac{1}{2}$};
+    \path (3.65125,8.41375) node[text=black,anchor=base west] {\large{}$1d\tfrac{5}{2}$};
+    \path (3.65125,10.00125) node[text=black,anchor=base west] {\large{}$1p\tfrac{1}{2}$};
+  \end{scope}
+
+  \path (17.0975,7.185) node[text=black,anchor=base west] {\large{}16};
+  \path (17.0975,8.41375) node[text=black,anchor=base west] {\large{}14};
+  \path (17.0975,10.00125) node[text=black,anchor=base west] {\large{}8};
+
+  \path (7.5,12.22375) node[text=blue] {\large{}proton};
+
+\end{tikzpicture}%
+
+%% Configure (x)emacs for this file ...
+%% Local Variables:
+%% mode: latex
+%% End:
