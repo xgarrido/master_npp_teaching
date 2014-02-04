@@ -1711,9 +1711,10 @@ pour les différents types de noyau :
 
 ** Réactions nucléaires et états analogues isobariques
 *Étude des isobares\nbsp^{21}_{9}F,\nbsp^{21}_{10}Ne et\nbsp^{21}_{11}Na*
-1)
+1) fgrhjfhrjfh
    1) Moment cinétique $I^\pi$ du\nbsp^{21}_{9}F
       #+BEGIN_CENTER
+      #+CAPTION: *États excités du\nbsp^{21}_{9}F*
       #+ATTR_LATEX: :width 0.7\linewidth
       [[./figures/fluor21.pdf]]
       #+END_CENTER
@@ -1810,7 +1811,7 @@ pour les différents types de noyau :
    l'excès de masse est une expression de l'énergie de liaison nucléaire par
    rapport à l'énergie de liaison d'un noyau de Carbone 12 (qui définit l'unité
    de masse atomique). *Si l'excès de masse est négatif, le noyau a plus
-   d'énergie comparamment au\nbsp^{12}C, et /vice versa/*. Si un noyau dispose
+   d'énergie comparement au\nbsp^{12}C, et inversement*. Si un noyau dispose
    d'un grand excès de masse par rapport à une espèce nucléaire proche, il peut
    alors se transformer par radioactivité (pour la radioactivité \beta^{-}, la
    condition à la réalisation de cette désintégration

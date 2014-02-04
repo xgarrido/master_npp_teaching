@@ -12,6 +12,7 @@
     \draw[blue, very thick] (-1.4,5.84375) -- (3.0,5.84375);
     \path (3.65125,5.84375) node[text=black] {\LARGE{}$\tfrac{1}{2}^+$};
     \path (3.65125,7.14375) node[text=black] {\LARGE{}$\tfrac{5}{2}^+$};
+    \path (-1.4,7.14375) node[text=black,anchor=east] {\LARGE{}$\overrightarrow{T}=\tfrac{\overrightarrow{3}}{2}$};
     \path (3.65125,12.22375) node[text=blue,xshift=-2.7cm] {\LARGE{}
       $\begin{aligned}
         ^{21}_{9}\text{F}&\\
@@ -20,7 +21,7 @@
     };
     \draw[blue, very thick,<->] (-0.4,5.84375) -- (-0.4,7.14375);
     \path (0.3,6.5) node[text=blue] {\LARGE{}$\Delta E$};
-    \draw[black,->] (-3,7.4137) node[anchor=east, text width=2.5cm, text centered]{même $\Delta E$ aux effets coulombiens près} to [out=0, in=180] (-0.4,6.5);
+    \draw[black,->] (-3,5.4137) node[anchor=east, text width=2.5cm, text centered]{même $\Delta E$ aux effets coulombiens près} to [out=0, in=180] (-0.4,6.5);
 
   \end{scope}
 
@@ -31,9 +32,10 @@
     \path (3.65125,5.84375) node[text=black] {\LARGE{}$\tfrac{1}{2}^+$};
     \path (3.65125,7.14375) node[text=black] {\LARGE{}$\tfrac{5}{2}^+$};
     \path (3.65125,9.14375) node[text=black] {\LARGE{}$\tfrac{3}{2}^+$};
+    \path (-1.4,9.14375) node[text=black,anchor=east] {\LARGE{}$\overrightarrow{T}=\tfrac{\overrightarrow{1}}{2}$};
     \path (3.65125,12.22375) node[text=blue,xshift=-2.7cm] {\LARGE{}
       $\begin{aligned}
-        ^{21}_{9}\text{Ne}&\\
+        ^{21}_{10}\text{Ne}&\\
         T_3&=-\tfrac{1}{2}
       \end{aligned}$
     };
@@ -52,7 +54,7 @@
     \path (3.65125,9.14375) node[text=black] {\LARGE{}$\tfrac{3}{2}^+$};
     \path (3.65125,12.22375) node[text=blue,xshift=-2.7cm] {\LARGE{}
       $\begin{aligned}
-        ^{21}_{9}\text{Na}&\\
+        ^{21}_{11}\text{Na}&\\
         T_3&=+\tfrac{1}{2}
       \end{aligned}$
     };
@@ -69,7 +71,7 @@
     \path (3.65125,7.14375) node[text=green] {\LARGE{}$\tfrac{5}{2}^+$};
     \path (3.65125,12.22375) node[text=green,xshift=-2.7cm] {\LARGE{}
       $\begin{aligned}
-        ^{21}_{9}\text{Mg}&\\
+        ^{21}_{12}\text{Mg}&\\
         T_3&=+\tfrac{3}{2}
       \end{aligned}$
     };
