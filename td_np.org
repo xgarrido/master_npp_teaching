@@ -6,6 +6,8 @@
 #+LATEX_HEADER_EXTRA: \newcommand{\ket}[1]{\ensuremath{|#1\rangle}\xspace}
 #+LATEX_HEADER_EXTRA: \newcommand{\bra}[1]{\ensuremath{\langle #1|}\xspace}
 #+LATEX_HEADER_EXTRA: \newcommand{\psh}[2]{\ensuremath{\langle #1|#2\rangle}\xspace}
+#+LATEX_HEADER_EXTRA: \newcommand{\cmark}{\ding{51}}
+#+LATEX_HEADER_EXTRA: \newcommand{\xmark}{\ding{55}}
 
 * TD1 : Cinématique & Accélérateurs
 ** Introduction
@@ -665,11 +667,11 @@ hypercharge. Dans cet exercice, $c=b=t=0$ donc $Y = B$ + étrangeté $S$
 
    |----------+----------+---+------------+-------------+------------+---+------------+------------|
    |          |  $\pi^+$ | + |          p | \rightarrow |      $K^+$ | + | $\Sigma^+$ |            |
-   | $B$      |        0 | + |          1 | =           |          0 | + |          1 | \checkmark |
-   | $Q/e$    |        1 | + |          1 | =           |          1 | + |          1 | \checkmark |
-   | $T_3$    |        1 | + |        1/2 | =           |        1/2 | + |          1 | \checkmark |
-   | $\vv{T}$ | $\vv{1}$ | + | $\vv{1/2}$ | =           | $\vv{1/2}$ | + |   $\vv{1}$ | \checkmark |
-   | $S$      |        0 | + |          0 | =           |          1 | + |         -1 | \checkmark |
+   | $B$      |        0 | + |          1 | =           |          0 | + |          1 | \cmark |
+   | $Q/e$    |        1 | + |          1 | =           |          1 | + |          1 | \cmark |
+   | $T_3$    |        1 | + |        1/2 | =           |        1/2 | + |          1 | \cmark |
+   | $\vv{T}$ | $\vv{1}$ | + | $\vv{1/2}$ | =           | $\vv{1/2}$ | + |   $\vv{1}$ | \cmark |
+   | $S$      |        0 | + |          0 | =           |          1 | + |         -1 | \cmark |
    |----------+----------+---+------------+-------------+------------+---+------------+------------|
 
    Conservation de la parité et du moment cinétique total :
@@ -755,9 +757,9 @@ hypercharge. Dans cet exercice, $c=b=t=0$ donc $Y = B$ + étrangeté $S$
 
    |----------+----------+---+------------+-------------+------------+---+------------+------------|
    |          |  $\pi^-$ | + | p          | \rightarrow | $K^+$      | + | $\Sigma^-$ |            |
-   | $T_3$    |       -1 | + | 1/2        | =           | 1/2        | + |         -1 | \checkmark |
-   | $\vv{T}$ | $\vv{1}$ | + | $\vv{1/2}$ | =           | $\vv{1/2}$ | + |   $\vv{1}$ | \checkmark |
-   | $s$      |        0 | + | 0          | =           | 1          | + |         -1 | \checkmark |
+   | $T_3$    |       -1 | + | 1/2        | =           | 1/2        | + |         -1 | \cmark |
+   | $\vv{T}$ | $\vv{1}$ | + | $\vv{1/2}$ | =           | $\vv{1/2}$ | + |   $\vv{1}$ | \cmark |
+   | $s$      |        0 | + | 0          | =           | 1          | + |         -1 | \cmark |
    |----------+----------+---+------------+-------------+------------+---+------------+------------|
 
 *Remarques :* les baryons $\Delta^{++}$ et $\Delta^-$ sont respectivement
@@ -1065,12 +1067,12 @@ Brookhaven en 1964.
 
     |----------+------------+-------------+-------------+---+----------+------------|
     |          |        $X$ | \rightarrow | $\bar{D}^0$ | + |  $\pi^0$ |            |
-    | $B$      |          0 | =           |           0 | + |        0 | \checkmark |
-    | $c$      |         -1 | =           |          -1 | + |        0 | \checkmark |
-    | $s,b,t$  |          0 | =           |           0 | + |        0 | \checkmark |
-    | $Q/e$    |          0 | =           |           0 | + |        0 | \checkmark |
-    | $T_3$    |        1/2 | =           |         1/2 | + |        0 | \checkmark |
-    | $\vv{T}$ | $\vv{1}/2$ | =           |  $\vv{1}/2$ | + | $\vv{1}$ | \checkmark |
+    | $B$      |          0 | =           |           0 | + |        0 | \cmark |
+    | $c$      |         -1 | =           |          -1 | + |        0 | \cmark |
+    | $s,b,t$  |          0 | =           |           0 | + |        0 | \cmark |
+    | $Q/e$    |          0 | =           |           0 | + |        0 | \cmark |
+    | $T_3$    |        1/2 | =           |         1/2 | + |        0 | \cmark |
+    | $\vv{T}$ | $\vv{1}/2$ | =           |  $\vv{1}/2$ | + | $\vv{1}$ | \cmark |
     |----------+------------+-------------+-------------+---+----------+------------|
 
     Le moment cinétique total est conservé dans la mesure où $I^\pi(\pi^0)=0^-$
@@ -1708,7 +1710,7 @@ pour les différents types de noyau :
            pour\nbsp^{90}_{40}Zr et 0.85 MeV pour\nbsp^{90}_{41}Nb
 
 ** Réactions nucléaires et états analogues isobariques
-Étude des isobares\nbsp^{21}_{9}F,\nbsp^{21}_{10}Ne et\nbsp^{21}_{11}Na
+*Étude des isobares\nbsp^{21}_{9}F,\nbsp^{21}_{10}Ne et\nbsp^{21}_{11}Na*
 1)
    1) Moment cinétique $I^\pi$ du\nbsp^{21}_{9}F
       #+BEGIN_CENTER
@@ -1768,7 +1770,6 @@ pour les différents types de noyau :
         de\nbsp^{21}F). Le noyau\nbsp^{21}Mg a la même séquence d'états
         que\nbsp^{21}F soit $I^\pi(\text{fonda.})=\tfrac{5}{2}^+$ et 1^{er} état
         excité $I^\pi=\tfrac{1}{2}^+$
-
 3) Calcul des excès de masse
    #+BEGIN_CENTER
    #+ATTR_LATEX: :width 0.9\linewidth
@@ -1798,6 +1799,97 @@ pour les différents types de noyau :
        &=\unit[10.924]{MeV}
      \end{align*}
    #+END_SRC
+
+   *Remarque sur l'excès de masse et sa signification :* L'excès de masse d'un
+   nucléide est la différence entre sa masse effective et son nombre de masse
+   $A$ exprimé en unités de masse atomique. C'est l'une des quantités couramment
+   utilisée en physique nucléaire et figure dans de nombreuses tables de masses
+   nucléaires. La masse d'un noyau atomique est relativement bien estimée à
+   partir de son nombre de masse, ce qui indique que la majeure partie de la
+   masse d'un noyau est déduite de ces constituants protons et neutrons. Ainsi,
+   l'excès de masse est une expression de l'énergie de liaison nucléaire par
+   rapport à l'énergie de liaison d'un noyau de Carbone 12 (qui définit l'unité
+   de masse atomique). *Si l'excès de masse est négatif, le noyau a plus
+   d'énergie comparamment au\nbsp^{12}C, et /vice versa/*. Si un noyau dispose
+   d'un grand excès de masse par rapport à une espèce nucléaire proche, il peut
+   alors se transformer par radioactivité (pour la radioactivité \beta^{-}, la
+   condition à la réalisation de cette désintégration
+   $^{A}_{Z}X\rightarrow\,^{A}_{Z+1}Y+e^-+\bar{\nu}_e$ est $\Delta
+   M_\text{at.}(A,Z)c^2 >\Delta M_\text{at.}(A,Z+1)c^2$), libérant de l'énergie.
+
+*Étude des niveaux d'énergie du\nbsp^{41}_{20}Ca*
+
+Pour étudier les niveaux en énergie d'un noyau donné\nbsp^{A}_{Z}X (états
+d'excitation), on peut réaliser des collisions inélastiques $(p,p^\prime)$,
+$(\alpha,\alpha^\prime)$ ou des réactions de transfert durant lesquelles un
+neutron/proton est transféré soit au noyau étudié soit au projectile. On déduit
+de ces collisions la distribution angulaire de chaque pic d'excitation, le
+moment angulaire $\ell$, la largeur de chaque pic est reliée à la durée de vie
+du niveau... Dans le cas du noyau de\nbsp^{41}_{20}Ca^{21}, on utilise 4 types
+d'interaction
+
+| \ding{192} | $p$                 | + | \nbsp^{41}_{20}Ca^{21} | \rightarrow | $p^\prime$      | + | \nbsp^{41}_{20}Ca^{21*} |
+| \ding{193} | $\alpha$            | + | \nbsp^{41}_{20}Ca^{21} | \rightarrow | $\alpha^\prime$ | + | \nbsp^{41}_{20}Ca^{21*} |
+| \ding{194} | $d$                 | + | \nbsp^{40}_{20}Ca^{20} | \rightarrow | $p$             | + | \nbsp^{41}_{20}Ca^{21*} |
+| \ding{195} | \nbsp^{3}_{2}He^{1} | + | \nbsp^{42}_{20}Ca^{22} | \rightarrow | $\alpha$        | + | \nbsp^{41}_{20}Ca^{21*} |
+
+où\nbsp^{41}_{20}Ca^{21*} est un état excité du Calcium 41. On considèrera, en
+revanche, que les autres réactants sont à l'état fondamental
+$\vv{T}(\text{fonda.})=|T_3|=\tfrac{Z-N}{2}$.
+
+1) Les 4 précédentes réactions se font toutes par interaction forte : il faut
+   donc s'assurer que l'isospin est conservé en plus des quantités telles que
+   l'impulsion, énergie, parité,... Les valeurs d'isospin des différents noyaux
+   et particules sont rapportées dans le tableau ci-dessous
+
+   |          | $p$                 | $d$      | \nbsp^{3}_{2}He     | $\alpha$ | \nbsp^{40}_{20}Ca | \nbsp^{42}_{20}Ca | \nbsp^{41}_{20}Ca(fonda. ou excité)         |
+   | $T_3$    | $\tfrac{1}{2}$      | 0        | $\tfrac{1}{2}$      | 0        | 0                 | -1                | -$\tfrac{1}{2}$                             |
+   | $\vv{T}$ | $\tfrac{\vv{1}}{2}$ | $\vv{0}$ | $\tfrac{\vv{1}}{2}$ | $\vv{0}$ | $\vv{0}$          | $\vv{1}$          | $\tfrac{\vv{1}}{2}$,$\tfrac{\vv{3}}{2}$,... |
+
+   _Réaction \ding{192}_
+   |          | $p$                 | + | \nbsp^{41}_{20}Ca^{21} | \rightarrow | $p^\prime$          | + | \nbsp^{41}_{20}Ca^{21*} |                                        |        |
+   | $T_3$    | $\tfrac{1}{2}$      | + | -$\tfrac{1}{2}$        | =           | $\tfrac{1}{2}$      | + | -$\tfrac{1}{2}$         |                                        |        |
+   | $\vv{T}$ | $\tfrac{\vv{1}}{2}$ | + | $\tfrac{\vv{1}}{2}$    | =           | $\tfrac{\vv{1}}{2}$ | + | $\tfrac{\vv{1}}{2}$     | $=\vv{0}$ ou $\vv{1}$                  | \cmark |
+   |          |                     |   |                        |             |                     |   | $\tfrac{\vv{3}}{2}$     | $=\vv{1}$ ou $\cancel{\vv{2}}$         | \cmark |
+   |          |                     |   |                        |             |                     |   | $\tfrac{\vv{5}}{2}$     | $=\cancel{\vv{2}}$ ou $\cancel{\vv{3}}$ | \xmark |
+   Cette réaction permet d'exciter et d'observer les états
+   $\vv{T}=\tfrac{\vv{1}}{2},\tfrac{\vv{3}}{2}$ du\nbsp^{41}Ca.
+
+   _Réaction \ding{193}_
+   |          | $\alpha$ | + | \nbsp^{41}_{20}Ca^{21} | \rightarrow | $\alpha^\prime$ | + | \nbsp^{41}_{20}Ca^{21*} |                               |        |
+   | $T_3$    | 0        | + | -$\tfrac{1}{2}$        | =           | 0               | + | -$\tfrac{1}{2}$         |                               |        |
+   | $\vv{T}$ | $\vv{0}$ | + | $\tfrac{\vv{1}}{2}$    | =           | $\vv{0}$        | + | $\tfrac{\vv{1}}{2}$     | $=\tfrac{\vv{1}}{2}$          | \cmark |
+   |          |          |   |                        |             |                 |   | $\tfrac{\vv{3}}{2}$     | $=\cancel{\tfrac{\vv{3}}{2}}$ | \xmark |
+   Cette réaction ne permet d'exciter que l'état $\vv{T}=\tfrac{\vv{1}}{2}$
+   du\nbsp^{41}Ca.
+
+   _Réaction \ding{194}_
+   |          | $d$      | + | \nbsp^{40}_{20}Ca^{20} | \rightarrow | $p$                 | + | \nbsp^{41}_{20}Ca^{21*} |                                         |        |
+   | $T_3$    | 0        | + | 0                      | =           | $\tfrac{1}{2}$      | + | -$\tfrac{1}{2}$         |                                         |        |
+   | $\vv{T}$ | $\vv{0}$ | + | $\vv{0}$               | =           | $\tfrac{\vv{1}}{2}$ | + | $\tfrac{\vv{1}}{2}$     | $=\vv{0}$ ou $\cancel{\vv{1}}$          | \cmark |
+   |          |          |   |                        |             |                     |   | $\tfrac{\vv{3}}{2}$     | $=\cancel{\vv{1}}$ ou $\cancel{\vv{2}}$ | \xmark |
+   Cette réaction ne permet d'exciter que l'état $\vv{T}=\tfrac{\vv{1}}{2}$
+   du\nbsp^{41}Ca.
+
+   _Réaction \ding{195}_
+   |          | \nbsp^{3}_{2}He     | + | \nbsp^{42}_{20}Ca^{22} | \rightarrow | $\alpha$ | + | \nbsp^{41}_{20}Ca^{21*} |                      |        |
+   | $T_3$    | $\tfrac{1}{2}$      | + | -1                     | =           | 0        | + | -$\tfrac{1}{2}$         |                      |        |
+   | $\vv{T}$ | $\tfrac{\vv{1}}{2}$ | + | $\vv{1}$               | =           | $\vv{0}$ | + | $\tfrac{\vv{1}}{2}$     | $=\tfrac{\vv{1}}{2}$ | \cmark |
+   |          |                     |   |                        |             |          |   | $\tfrac{\vv{3}}{2}$     | $=\tfrac{\vv{3}}{2}$ | \cmark |
+   Cette réaction permet d'exciter et d'observer les états
+   $\vv{T}=\tfrac{\vv{1}}{2},\tfrac{\vv{3}}{2}$ du\nbsp^{41}Ca.
+2) La troisième composante $T_3$ du noyau\nbsp^{41}_{19}K est égale à
+   $\tfrac{Z-N}{2}=-\tfrac{3}{2}$ soit un niveau fondamental
+   $\vv{T}=\tfrac{\vv{3}}{2}$. De même, le noyau\nbsp^{41}_{20}Ca^{*} a
+   $T_3=-\tfrac{1}{2}$, $\vv{T}=\tfrac{\vv{3}}{2}$ pour les niveaux en énergie
+   5.85, 6.85 et 7.1 MeV. Ces deux noyaux appartiennent donc au même multiplet
+   d'isospin $\vv{T}=\tfrac{\vv{3}}{2}$, quadruplet qui est complété par les
+   noyaux miroirs de ces deux noyaux. Les valeurs de $I^\pi$ seront donc les
+   mêmes avec des écarts en énergie identiques aux effets coulombiens près.
+   #+BEGIN_CENTER
+   #+ATTR_LATEX: :width 0.9\linewidth
+   [[./figures/calcium_potassium_energy.pdf]]
+   #+END_CENTER
 
 * Footnotes
 

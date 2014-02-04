@@ -1,0 +1,57 @@
+\begin{tikzpicture}[y=-1cm]
+  \sf
+  \definecolor{red}{RGB}{221,42,43}
+  \definecolor{green}{RGB}{105,182,40}
+  \definecolor{blue}{RGB}{0,51,153}
+  \definecolor{orange}{RGB}{192,128,64}
+
+  %%\clip (3.5,13) rectangle (18,5.);
+
+  \begin{scope}[xshift=14cm]
+    \draw[blue, very thick] (-1.4,9.) -- (3.0,9.);
+    \draw[blue, very thick] (-1.4,8.) -- (3.0,8.);
+    \draw[blue, very thick] (-1.4,5.5) -- (3.0,5.5);
+    \draw[gray, very thick] (-1.4,11) -- (3.0,11);
+    \path (3.65125,5.5) node[text=black] {\LARGE{}$\tfrac{7}{2}^-$};
+    \path (3.65125,8.) node[text=black] {\LARGE{}$\tfrac{1}{2}^+$};
+    \path (3.65125,9.) node[text=black] {\LARGE{}$\tfrac{3}{2}^+$};
+    \path (4.35125,11) node[text=gray] {\LARGE{}$\tfrac{7}{2}^-$\large{}(fonda.)};
+    \path (3.65125,12.22375) node[text=blue,xshift=-2.7cm] {\LARGE{}
+      $\begin{aligned}
+        ^{41}_{20}\text{Ca}&\\
+        T_3&=-\tfrac{1}{2}
+      \end{aligned}$
+    };
+    \draw[blue, very thick,<->] (-0.4,5.5) -- (-0.4,8.);
+    \path (-0.2,6.5) node[text=blue,anchor=west] {\LARGE{}$\unit[1.25]{MeV}$};
+    \draw[blue, very thick,<->] (-0.4,9.) -- (-0.4,8.);
+    \path (-0.2,8.5) node[text=blue,anchor=west] {\LARGE{}$\unit[1]{MeV}$};
+    \draw[black,->] (-3,7.5) node[anchor=east, text width=2.5cm, text centered]{même $\Delta E$ aux effets coulombiens près} to [out=0, in=180] (-0.4,6.5);
+    \draw[black,->] (-3,7.5) to [out=0, in=180] (-0.4,8.5);
+  \end{scope}
+
+  \begin{scope}[xshift=21cm]
+    \draw[blue, very thick] (-1.4,9.) -- (3.0,9.);
+    \draw[blue, very thick] (-1.4,8.) -- (3.0,8.);
+    \draw[blue, very thick] (-1.4,5.5) -- (3.0,5.5);
+    \path (3.65125,5.5) node[text=black] {\LARGE{}$\tfrac{7}{2}^-$};
+    \path (3.65125,8.) node[text=black] {\LARGE{}$\tfrac{1}{2}^+$};
+    \path (4.35125,9.) node[text=black] {\LARGE{}$\tfrac{3}{2}^+$\large{}(fonda.)};
+    \path (3.65125,12.22375) node[text=blue,xshift=-2.7cm] {\LARGE{}
+      $\begin{aligned}
+        ^{41}_{19}\text{K}&\\
+        T_3&=-\tfrac{3}{2}
+      \end{aligned}$
+    };
+    \draw[blue, very thick,<->] (-0.4,5.5) -- (-0.4,8.);
+    \path (-0.2,6.5) node[text=blue,anchor=west] {\LARGE{}$\unit[1.29]{MeV}$};
+    \draw[blue, very thick,<->] (-0.4,9.) -- (-0.4,8.);
+    \path (-0.2,8.5) node[text=blue,anchor=west] {\LARGE{}$\unit[0.98]{MeV}$};
+  \end{scope}
+
+\end{tikzpicture}%
+
+%% Configure (x)emacs for this file ...
+%% Local Variables:
+%% mode: latex
+%% End:
