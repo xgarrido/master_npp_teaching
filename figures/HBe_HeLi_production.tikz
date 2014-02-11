@@ -1,0 +1,40 @@
+\tikzset{%
+  >=latex, % option for nice arrows
+  inner sep=0pt,%
+  outer sep=2pt,%
+  mark coordinate/.style={inner sep=0pt,outer sep=0pt,minimum size=3pt,
+    fill=black,circle}%
+}
+\begin{tikzpicture}[y=-1cm]
+  \sf
+  \definecolor{red}{RGB}{221,42,43}
+  \definecolor{green}{RGB}{132,184,24}
+  \definecolor{blue}{RGB}{0,72,112}
+  \definecolor{orange}{RGB}{192,128,64}
+  \definecolor{gray}{RGB}{107,108,110}
+
+
+  \draw[thick,blue] (3.2004,22.99335) -- (3.2004,26.16835) -- (5.58165,27.9146);
+  \draw[thick,blue] (5.58165,27.9146) -- (5.58165,24.7396) -- (3.2004,22.99335);
+  \path (4.8229,27.23835) node[text=blue,anchor=base west] {$^9_4$Be};
+
+  \begin{scope}[yshift=-5pt]
+    \draw[thick,black,dashed] (3.99415,25.0571) -- (5.58165,26.3271);
+    \draw[thick,black,->] (5.58165,26.3271) -- (6.6929,27.12085) node[right] {$^3_2$He};
+    \draw[thick,black,dashed] (3.99415,25.0571) -- (7.3279,25.0571);
+    \draw[thick,black,->] (0.0254,25.0571) -- (3.99415,25.0571);
+    \draw[thick,black,dashed] (3.99415,25.0571) -- (4.94665,24.26335);
+    \draw[thick,black,->] (4.94665,24.26335) -- (6.3754,22.99335) node[right] {$^9_3$Li};
+
+    %% \begin{scope}[rotate=45]
+      \draw[fill=blue!10, rotate around={-40:(6,27)}, xshift=50pt, yshift=0pt] (5.6,26.3) rectangle (6.7,27.1);
+    %% \end{scope}
+    \path (1.07165,24.88085) node[text=black,anchor=base west] {\fontsize{13.0}{15.6}\selectfont{}$^3_1$H};
+  \end{scope}
+
+\end{tikzpicture}%
+
+%% Configure (x)emacs for this file ...
+%% Local Variables:
+%% mode: latex
+%% End:

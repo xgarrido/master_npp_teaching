@@ -1,4 +1,10 @@
-\begin{tikzpicture}[y=-1cm]
+\tikzset{%
+  >=latex, % option for nice arrows
+  inner sep=0pt,%
+  outer sep=2pt,%
+  mark coordinate/.style={inner sep=0pt,outer sep=0pt,minimum size=3pt,
+    fill=black,circle}%
+}\begin{tikzpicture}[y=-1cm]
   \sf
   \definecolor{red}{RGB}{221,42,43}
   \definecolor{green}{RGB}{132,184,24}

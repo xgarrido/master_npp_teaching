@@ -353,7 +353,7 @@ $\vv{v}$ dans un champ d'induction $\vv{B}$ normal à $\vv{v}$.
    *synchrocyclotron ou synchrotron*
 
 5) La fréquence de rotation $f = \frac{v}{2\pi R} = \frac{qB}{2\pi m}$
-   - synchrocyclotron :: on fait varier la fréquence f d'accélération pour
+   - synchrocyclotron :: on fait varier la fréquence $f$ d'accélération pour
         compenser la variation de $v$
    - synchrotron :: on fait varier le champ magnétique $B$ pour maintenir la
                     particule sur la même trajectoire /i.e./ le même rayon $R$
@@ -1892,6 +1892,177 @@ $\vv{T}(\text{fonda.})=|T_3|=\tfrac{Z-N}{2}$.
    [[./figures/calcium_potassium_energy.pdf]]
    #+END_CENTER
 
+* TD7 : Réactions nucléaires
+** Introduction
+#+ATTR_LATEX: :float wrap :placement {l}{0.5\textwidth} :width 0.4\textwidth
+[[./solid_angle.pdf]]
+Les mesures de section efficace sont des mesures typiques de physique des
+particules. Elles traduisent la probabilité de passage d'un état initial de la
+matière $\psi_i$ à un état final $\psi_f$.
+
+Un détecteur couvrant un angle solide $d\Omega$ et situé à un angle $\theta$ par
+rapport à l'axe du faisceau détectera ainsi $dn$ particules par unité de temps
+#+BEGIN_SRC latex
+  \begin{align*}
+    dn=\underbrace{\text{flux incident}}_{\substack{\text{nbr. particules incidentes}\\\text{/unité de temps}}}\times\underbrace{\text{ nbr. de noyaux cible}}_{\substack{\text{nbr. centre diffuseurs}\\\text{/unité de volume}}}\times\text{ épaisseur cible}\times\frac{d\sigma}{d\Omega}d\Omega
+  \end{align*}
+#+END_SRC
+où $d\Omega$ = surface de détection/(distance cible-détecteur)^{2} = $\sin\theta
+d\theta d\phi$ avec $\theta\in[0,\pi]$ et $\phi\in[0,2\pi]$. Le terme
+$\left.\frac{d\sigma}{d\Omega}\right|_\theta$ est *la section efficace
+différentielle* à l'angle $\theta$ et s'exprime en barn par stéradian où 1 barn
+= 10^{-24} cm^{2} = 10^{-28} m^{2}=100 fm^{2}. De la section efficace
+différentielle, on déduit la section efficace totale $\sigma$ en intégrant sur
+l'angle solide total $d\Omega$ : $\sigma=\int\frac{d\sigma}{d\Omega}d\Omega$ et
+correspond à la probabilité qu'une particule incidente ait intéragi avec les
+particules constitutives de la cible.
+
+#+BEGIN_SRC latex
+  \begin{align*}
+    dn&=\phi\times N\times e\times\frac{d\sigma}{d\Omega}d\Omega\text{ ou }n=\phi\times N\times e\times\sigma\\
+    \text{avec }&N=\frac{\text{nbr. centre diffuseurs}}{\text{unité de volume}}=\rho\times\frac{\mathcal{N}}{M_\text{at.}}\simeq\rho\times\frac{\mathcal{N}}{A}\\
+    \text{où }&\rho = \text{masse volumique ou densité volumique (g/cm$^{3}$)}\\
+    &\mathcal{N} = \text{nombre d'Avogadro}=\unit[6.02\,10^{23}]{mol^{-1}}\\
+    &A = \text{nombre de nucléons} = \text{masse molaire (g/mol)}
+  \end{align*}
+#+END_SRC
+
+*Remarques :*
+
+- l'épaisseur de la cible est souvent donnée en terme de densité surfacique
+  exprimée en g/cm^{2} et correspond donc au produit de la densité volumique par
+  l'épaisseur physique de la cible. Le nombre de particules détectées s'écrit
+
+- le flux $\phi$ incident est parfois donné en terme d'intensité du faisceau
+  (exprimé en Ampères). Le nombre de particules incidentes par unité de temps
+  devient
+  #+BEGIN_SRC latex
+    \begin{align*}
+      \phi=\frac{I}{Ze}\text{ où $e$ correspond à la charge élémentaire}
+    \end{align*}
+  #+END_SRC
+
+** Accélérateur, section efficace et luminosité
+1) \nbsp^{2}_{1}H+\nbsp^{63}_{29}Cu\to\nbsp^{2}_{1}H+\nbsp^{63}_{29}Cu
+   #+BEGIN_SRC latex
+     \begin{align*}
+       dn=\phi Ne\frac{d\sigma}{d\Omega}d\Omega=\phi\frac{\mathcal{N}\rho_e}{A_\text{cible}}\frac{d\sigma}{d\Omega}d\Omega
+     \end{align*}
+   #+END_SRC
+   où $\phi=\phi'\pi R^2$ et $\phi'=\unit[6\,10^{10}]{s^{-1}.cm^{-2}}$. Le
+   nombre de deutons détectés est
+   #+BEGIN_SRC latex
+     \begin{align*}
+       \left.dn\right|_{30^\circ}&=\phi\frac{\mathcal{N}\rho_e}{A_\text{cible}}\left.\frac{d\sigma}{d\Omega}\right|_{\theta=30^\circ}\frac{S_\text{détecteur}}{d^2_\text{cible-détecteur}}\\
+       &=6\,10^{10}\times\pi 1^2\times\frac{6.02\,10^{23}\times2\,10^{-3}}{63}\times0.1\,10^{-24}\times\frac{4\times2}{100^2}\\
+       &=\unit[287]{deutons/s}
+     \end{align*}
+   #+END_SRC
+
+2) \nbsp^{3}_{1}H+\nbsp^{9}_{4}Be\to\nbsp^{3}_{2}He+\nbsp^{9}_{3}Li
+
+   1) Le flux incident $\phi$ s'exprime en fonction de l'intensité $I$ du faisceau
+      #+BEGIN_SRC latex
+        \begin{align*}
+          \phi=\frac{I}{Ze}
+        \end{align*}
+      #+END_SRC
+      Par ailleurs, le nombre de noyaux détectés $n=2000$ soit
+      #+BEGIN_SRC latex
+        \begin{align*}
+          n&=\phi\times N\times e\times\sigma=2000\\
+          &=\frac{I}{Ze}\times\frac{\mathcal{N}\rho_e}{A_\text{cible}}\times\sigma\\
+          \sigma&=\frac{n\times A_\text{cible}\times Ze}{I\times\mathcal{N}\times\rho_e}\\
+          \sigma&=\unit[9.6\,10^{-29}]{cm^2}=\unit[9.6\,10^{-5}]{barn}=\unit[96]{microbarn}
+        \end{align*}
+      #+END_SRC
+   2) Principe expérimental
+      #+BEGIN_CENTER
+      #+ATTR_LATEX: :width 0.5\linewidth
+      [[./figures/HBe_HeLi_production.pdf]]
+      #+END_CENTER
+      L'énergie totale est fixé par l'énergie cinétique du faisceau incident (+
+      les énergies de masse de la cible et du faisceau) : la distribution en
+      énergie des noyaux de\nbsp^{3}_{2}He présente des raies correspondant aux
+      niveaux en énergie de\nbsp^{3}_{2}He (ou\nbsp^{9}_{3}Li) → *énergies quantifiées*
+
+3)
+   1) La luminosité $\mathcal{L}$ s'exprime comme le rapport du nombre de
+      particules détectés par unité de temps sur la section efficace
+      #+BEGIN_SRC latex
+        \begin{align*}
+          \mathcal{L}=\frac{n}{\sigma}
+        \end{align*}
+      #+END_SRC
+      Ainsi, une réaction/interaction de section efficace $\sigma$ sera d'autant
+      "mieux" observée que la luminosité sera grande et donc que le nombre de
+      particules résultantes de cette réaction/interaction sera
+      conséquente. L'unité de luminosité est donc
+      #+BEGIN_SRC latex
+        \begin{align*}
+          \left[\mathcal{L}\right]=\frac{\left[n\right]}{\left[\sigma\right]}=T^{-1}.L^{-2}
+        \end{align*}
+      #+END_SRC
+
+      La luminosité dépend de l'intensité de chacun des faisceau entrant en
+      collision
+      #+BEGIN_SRC latex
+        \begin{align*}
+          \mathcal{L}&=\frac{2\pi R}{c}\times\frac{I_1\,I_2}{e^2S}\\
+          &=\frac{2\pi\times4.5\,10^3}{3\,10^8}\times\frac{9\,10^{-6}}{(1.6\,10^{-19})^2\times0.5\,10^{-6}}\\
+          &=\unit[6.63\,10^{34}]{m^2s^{-1}}=\unit[6.63\,10^{30}]{cm^2s^{-1}}
+        \end{align*}
+      #+END_SRC
+   2) Diffusion [[http://en.wikipedia.org/wiki/Homi_J._Bhabha][Bhabha]] $e^+e^-\to e^+e^-$
+      #+BEGIN_CENTER
+      #+ATTR_LATEX: :width 0.4\linewidth
+      [[./figures/bhabha_diagram.pdf]]
+      #+END_CENTER
+
+      #+BEGIN_SRC latex
+        \begin{align*}
+          \frac{d\sigma}{d\Omega}=\frac{16\alpha^2(\hbar c)^2}{E^2\theta^4}
+        \end{align*}
+      #+END_SRC
+      avec $E=\unit[90]{GeV}$ et $\alpha=\frac{e^2}{4\pi\epsilon_0\hbar c}$ où
+      $\hbar c=\unit[197.3]{MeV.fm}$
+      1) La section efficace totale $\sigma$ est égale à
+         #+BEGIN_SRC latex
+           \begin{align*}
+             \sigma&=\int\frac{d\sigma}{d\Omega}d\Omega\\
+             &=\int_0^{2\pi}\int_{\theta_1}^{\theta_2}\sin\theta d\theta d\phi\frac{d\sigma}{d\Omega}\\
+             &=2\pi\frac{16\,\alpha^2(\hbar c)^2}{E^2}\int_{\theta_1}^{\theta_2}\frac{\sin\theta}{\theta^4}d\theta
+           \end{align*}
+         #+END_SRC
+         Dans la mesure où $\theta\ll1$, $\sin\theta\sim\theta$ soit
+         #+BEGIN_SRC latex
+           \begin{align*}
+             \sigma=2\pi\frac{16\,\alpha^2(\hbar c)^2}{E^2}\int_{\theta_1}^{\theta_2}\frac{d\theta}{\theta^3}
+           \end{align*}
+         #+END_SRC
+         avec $\theta_1=3^\circ=\unit[0.0524]{rad}$ et $\theta_2=8^\circ=\unit[0.1396]{rad}$.
+         #+BEGIN_SRC latex
+           \begin{align*}
+             \sigma&=\frac{32\pi\,\alpha^2(\hbar c)^2}{2E^2}\times\underbrace{\left[\frac{1}{\theta_1^2}-\frac{1}{\theta_2^2}\right]}_{=312.9}\\
+             &=\frac{32\pi\times e^4\times\cancel{(\hbar c)^2}}{2\times(4\pi\epsilon_0\cancel{\hbar c})^2\times E^2}\times312.9\\
+             &=\frac{e^2}{\pi\epsilon_0^2\left.E\right|_\text{eV}^2}\times312.9=\unit[4\,10^{36}]{m^2}=\unit[4\,10^{-12}]{barn}=\unit[4]{picobarn}
+           \end{align*}
+         #+END_SRC
+      2) Le nombre d'interaction par seconde est
+         $n=\frac{950}{3600}=\unit[0.2639]{s^{-1}}$. La luminosité est égale à
+         #+BEGIN_SRC latex
+           \begin{align*}
+             \mathcal{L}=\frac{n}{\sigma}=\frac{0.2639}{4\,10^{36}}=\unit[6.553\,10^{34}]{m^{-2}s^{-1}}
+           \end{align*}
+         #+END_SRC
+
+         *Remarques :* La luminosité instantanée du LHC est voisine de 10^{34}
+         cm^{-2}.s^{-1} soit 10^{-2} pb^{-1}.s^{-1}. À titre de comparaison, le
+         collisionneur $p\bar{p}$ du Tevratron avait une luminosité de 3.2
+         10^{32} cm^{-2}.s^{-1} ce qui intégré sur son temps d'acquisition de
+         2001 à 2008 a fourni une luminosité intégrée de 5000 pb^{-1}. En un peu
+         moins d'une semaine de prise de données, le LHC a atteint la même
+         luminosité intégrée que le Tevatron.
 * Footnotes
 
 [fn:1] 1 pc = 1 parsec = 3.26 années lumières = 30.856 10^{12} km.

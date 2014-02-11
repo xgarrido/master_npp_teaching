@@ -1,0 +1,39 @@
+\tikzset{%
+  >=latex, % option for nice arrows
+  inner sep=0pt,%
+  outer sep=2pt,%
+  mark coordinate/.style={inner sep=0pt,outer sep=0pt,minimum size=3pt,
+    fill=black,circle}%
+}
+\begin{tikzpicture}[y=-1cm]
+  \usetikzlibrary{decorations.markings}
+  \usetikzlibrary{decorations.pathmorphing}
+  \tikzset{snake it/.style={decorate, decoration=snake}}
+
+  \definecolor{red}{RGB}{221,42,43}
+  \definecolor{green}{RGB}{105,182,40}
+  \definecolor{blue}{RGB}{0,51,153}
+  \definecolor{orange}{RGB}{192,128,64}
+  \definecolor{gray}{gray}{0.7}
+  \sf
+  \LARGE
+  \begin{scope}[very thick,decoration={
+        markings,
+        mark=at position 0.5 with {\arrow{>}}}]
+    \draw[postaction={decorate}] (6,19) node[above left] {$e^+$} -- (9,20);
+    \draw[postaction={decorate}] (6,23) node[below left] {$e^-$} -- (9,22);
+    \draw[postaction={decorate}] (9,20) -- (12,19) node[above right] {$e^+$};
+    \draw[postaction={decorate}] (9,22) -- (12,23) node[below right] {$e^-$};
+  \end{scope}
+
+  %% W+
+  \draw[blue,very thick, snake it] (9,20) -- (9, 22);
+  \path (9,21) node[blue, right, xshift=5pt] {$\gamma$};
+
+
+\end{tikzpicture}%
+
+%% Configure (x)emacs for this file ...
+%% Local Variables:
+%% mode: latex
+%% End:
