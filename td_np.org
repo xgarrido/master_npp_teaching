@@ -77,14 +77,14 @@ d'où
 
 #+BEGIN_SRC latex
   \begin{align*}
-    m(^{12}_{6}C)c^2 &= 12\times\unit[931.5]{MeV} = 12\times931.5\times\unit[1.6\,10^{-19}]{J} \\
-    m(^{12}_{6}C)    &= \frac{12\times931.5\times1.6\,10^{-19}}{(3\,10^8)^2} = \unit[2\,10^{-26}]{kg} = \unit[2\,10^{-23}]{g}\\
+    m(^{12}_{6}\text{C})c^2 &= 12\times\unit[931.5]{MeV} = 12\times931.5\times\unit[1.6\,10^{-19}]{J} \\
+    m(^{12}_{6}\text{C})    &= \frac{12\times931.5\times1.6\,10^{-19}}{(3\,10^8)^2} = \unit[2\,10^{-26}]{kg} = \unit[2\,10^{-23}]{g}\\
   \end{align*}
 #+END_SRC
 
 On en déduite que la masse volumique est égale à
 
-\[\rho(^{12}_{6}C) = \frac{m(^{12}_{6}C)}{V(^{12}_{6}C)} =
+\[\rho(^{12}_{6}\text{C}) = \frac{m(^{12}_{6}\text{C})}{V(^{12}_{6}\text{C})} =
 \frac{2\,10^{-23}}{10^{-37}} = \unit[2\,10^{14}]{g/cm^3}\]
 
 À titre de comparaison, le bois a une densité moyenne de 0.6 -- 1 g/cm^{3}, le
@@ -2172,6 +2172,127 @@ particules constitutives de la cible.
           &=2\pi^2\,K=\unit[25.65]{mb}
         \end{align*}
       #+END_SRC
+
+** Section efficace et rayon d'interaction
+1) \nbsp^{11}Li\to\nbsp^{9}Be
+   1) Le nombre de réactions $n$ par unité de temps s'écrit
+      #+BEGIN_SRC latex
+        \begin{align*}
+          n&=\phi\times\rho_e\times\frac{\mathcal{N}}{A_\text{cible}}\times\sigma
+        \end{align*}
+      #+END_SRC
+      d'où
+      #+BEGIN_SRC latex
+        \begin{align*}
+          \sigma&=\frac{N}{\phi}\times\frac{A_\text{cible}}{\mathcal{N}\rho_e}\\
+          &=\frac{10^5/600\times9}{10^4\times6\,10^{23}\times50\,10^{-3}}\\
+          \sigma(^{11}\text{Li}+^{9}\text{Be})&\simeq\unit[5\,10^{-24}]{cm^2}=\unit[5]{barn}
+        \end{align*}
+      #+END_SRC
+   2) Soit le rayon du\nbsp^{9}Be
+      #+BEGIN_SRC latex
+        \begin{align*}
+          R(^{9}\text{Be})=r_0\times A^{1/3}=\unit[1.25]{fm}\times9^{1/3}=\unit[2.6]{fm}
+        \end{align*}
+      #+END_SRC
+      La section efficace devient
+      #+BEGIN_SRC latex
+        \begin{align*}
+          \sigma(^{11}\text{Li}+^{9}\text{Be})&=\pi\left(R(^{11}\text{Li})+R(^{9}\text{Be})\right)^2=\unit[5]{barn}=\unit[500]{fm^2}\\
+          R(^{11}\text{Li})&=\sqrt{\frac{\sigma}{\pi}}-R(^{9}\text{Be})\\
+          &=\sqrt{\frac{\unit[500]{fm^2}}{\pi}}-\unit[2.6]{fm}\\
+          &=\unit[10]{fm}\gg1.25\times11^{1/3}=\unit[2.78]{fm}
+        \end{align*}
+      #+END_SRC
+   3) $\sigma(^{9}\text{Li}+^{9}\text{Be})=\sigma(^{11}\text{Li}+^{9}\text{Be})/5$
+      d'où
+      #+BEGIN_SRC latex
+        \begin{align*}
+          R(^{9}\text{Li})&=\sqrt{\frac{\unit[100]{fm^2}}{\pi}}-\unit[2.6]{fm}\\
+          &=\unit[3.04]{fm}\gtrsim\unit[2.6]{fm}
+        \end{align*}
+      #+END_SRC
+2)
+   1) $^{10}\text{Li}\to^{9}\text{Li}+n$
+
+      La chaleur de réaction $Q$ est égale à
+      #+BEGIN_SRC latex
+        \begin{align*}
+          Q&=m_{^{10}\text{Li}}c^2-m_{^{9}\text{Li}}c^2-m_{n}c^2\\
+          &=9347.3-8406.9-939.6=\unit[800]{keV}
+        \end{align*}
+      #+END_SRC
+      justifiant une réaction spontanée. Le Lithium 10 se désintègre ainsi
+      presque instantanément en Lithium 9.
+   2) Si on considère la réaction de cassure du\nbsp^{11}Li en\nbsp^{10}Li +
+      neutron, la chaleur de réaction est
+      #+BEGIN_SRC latex
+        \begin{align*}
+          Q&=m_{^{11}\text{Li}}c^2-m_{^{10}\text{Li}}c^2-m_{n}c^2\\
+          &=10285.9-9347.3-939.6=\unit[-1]{MeV}
+        \end{align*}
+      #+END_SRC
+      Le noyau de\nbsp^{11}Li est donc stable et lié par intéraction forte. On
+      peut modéliser ce noyau comme un c\oe ur de\nbsp^{9}Li "entouré" de 2
+      neutrons. Ce système à trois corps est un noyau borroméen en référence aux
+      armoiries de la famille italienne Borromée. En effet, de la même manière
+      que casser un des anneaux libère les deux autres, rompre une
+      liaison\nbsp^{9}Li -- neutron, brise instantanément la
+      seconde :\nbsp^{11}Li\to\nbsp^{9}Li.
+
+      #+ATTR_LATEX: :align C{0.35\textwidth}C{0.5\textwidth}
+      | [[./figures/borromean_rings.pdf]]  | [[./figures/borromean_nucleus.pdf]] |
+
+   3) La seconde réaction n'est pas observable/mesurable du fait que\nbsp^{10}Li
+      devient instantanément un noyau\nbsp^{9}Li. Seule la première réaction est
+      observable et donc seul le rayon du\nbsp^{11}Li est mesurable.
+
+3) Comparaison $R_\text{int.}$ et modèle de la goutte liquide $R_\text{gl}$
+
+   #+TBLNAME: radius
+   |-----+--------------------+----------------------+--------|
+   | $A$ | $R_\text{gl}$ [fm] | $R_\text{int.}$ [fm] |    [%] |
+   |-----+--------------------+----------------------+--------|
+   |   6 |               2.27 |                 2.14 |    5.7 |
+   |   7 |               2.39 |                 2.25 |    5.9 |
+   |   8 |                2.5 |                 2.38 |    4.8 |
+   |   9 |                2.6 |                 3.04 |  -16.9 |
+   |  10 |               2.69 |                  $-$ |    $-$ |
+   |  11 |               2.78 |                   10 | -259.7 |
+   |-----+--------------------+----------------------+--------|
+   #+TBLFM: $2=round(1.25*pow($1,0.333),2)::$4=round((1-$3/$2)*100,1)
+
+   #+HEADERS: :var A6=radius[3,0]  :var gl6=radius[3,1]  :var int6=radius[3,2]
+   #+HEADERS: :var A7=radius[4,0]  :var gl7=radius[4,1]  :var int7=radius[4,2]
+   #+HEADERS: :var A8=radius[5,0]  :var gl8=radius[5,1]  :var int8=radius[5,2]
+   #+HEADERS: :var A9=radius[6,0]  :var gl9=radius[6,1]  :var int9=radius[6,2]
+   #+HEADERS: :var A10=radius[7,0] :var gl10=radius[7,1]
+   #+HEADERS: :var A11=radius[8,0] :var gl11=radius[8,1] :var int11=radius[8,2]
+   #+BEGIN_SRC latex
+     \centering
+     \begin{tikzpicture}
+       \begin{axis}[
+           axis x line=bottom,
+           axis y line=left,
+           x axis line style={-},
+           y axis line style={-},
+           ylabel={Radius [fm]},
+           enlargelimits=0.15,
+           symbolic x coords={$^6$Li,$^7$Li,$^8$Li,$^9$Li,$^{10}$Li,$^{11}$Li},
+           xtick=data,
+           %% width=0.5\textwidth,
+           legend style={at={(0.5,-0.15)},anchor=north,legend columns=-1,draw=none},
+         ]
+         \addplot+[only marks,color=blue] coordinates {
+           ($^A6$Li,gl6) ($^A7$Li,gl7) ($^A8$Li,gl8) ($^A9$Li,gl9) ($^{A10}$Li,gl10) ($^{A11}$Li,gl11)
+         };
+         \addplot+[only marks, color=red] coordinates {
+           ($^A6$Li,int6) ($^A7$Li,int7) ($^A8$Li,int8) ($^A9$Li,int9) ($^{A11}$Li,int11)
+         };
+         \legend{$R_\text{gl}$,$R_\text{int.}$}
+       \end{axis}
+     \end{tikzpicture}
+   #+END_SRC
 
 * Footnotes
 

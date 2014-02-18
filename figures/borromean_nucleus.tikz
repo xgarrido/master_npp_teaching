@@ -1,0 +1,53 @@
+\begin{tikzpicture}[scale=1.5, >=latex]
+  % Colors
+  \definecolor{red}{RGB}{221,42,43}
+  \definecolor{green}{RGB}{132,184,24}
+  \definecolor{blue}{RGB}{0,72,112}
+  \definecolor{orange}{RGB}{192,128,64}
+  \definecolor{gray}{RGB}{107,108,110}
+  \newcommand{\proton}[1]{%
+    \shade[ball color=blue, opacity=0.95] (#1) circle (.25);
+  }
+
+  \newcommand{\neutron}[1]{%
+    \shade[ball color=red, opacity=0.95] (#1) circle (.25);
+  }
+
+  \newcommand{\electron}[3]{%
+    \shade[ball color=green] (#1,#2)[rotate=#3] circle (.1);
+  }
+  \newcommand{\positron}[3]{%
+    \shade[ball color=orange] (#1,#2)[rotate=#3] circle (.1);
+  }
+
+  \newcommand{\neutrino}[3]{%
+    \shade[ball color=gray] (#1,#2)[rotate=#3] circle (.1);
+  }
+
+  \newcommand{\nucleus}{%
+    \neutron{0.1,0.3}
+    \proton{-0.2,0.5}
+    %% \proton{0,0}
+    \neutron{0.3,0.2}
+    \proton{-0.2,0.1}
+    \neutron{-0.1,0.3}
+    %% \proton{0.2,-0.15}
+    \neutron{-0.05,-0.12}
+    %% \proton{0.6,0.1}
+    %% \proton{0.5,0.3}
+    %% \proton{-0.3,0.35}
+    \neutron{0.0,0.4}
+    \neutron{0.45,0.0}
+    \proton{0.37,0.41}
+    %% \neutron{0.2,0.6}
+  }
+  \sf\normalsize
+  \fill[gray!10] (1,0.2)[rotate=40] ellipse (2 and 1);
+  \nucleus
+  \neutron{1.75,2}
+  \neutron{1.5,1.25}
+
+  \draw (0,-0.6) node {c\oe ur $^{9}_{3}$Li$^6$};
+  \draw[<-] (1.75,2) -- (2.5,1.5) node[right] {neutrons};
+  \draw[<-] (1.5,1.25) -- (2.5,1.5);
+\end{tikzpicture}
