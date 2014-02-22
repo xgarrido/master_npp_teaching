@@ -2,6 +2,7 @@
 #+AUTHOR: Xavier Garrido
 #+DATE: 25/11/13
 #+OPTIONS: ^:{} toc:2
+#+LATEX_CLASS: npp-class
 #+LATEX_HEADER_EXTRA: \newcommand{\vv}[1]{\overrightarrow{#1}}
 #+LATEX_HEADER_EXTRA: \newcommand{\ket}[1]{\ensuremath{|#1\rangle}\xspace}
 #+LATEX_HEADER_EXTRA: \newcommand{\bra}[1]{\ensuremath{\langle #1|}\xspace}
@@ -2070,16 +2071,15 @@ particules constitutives de la cible.
    Calcul de la chaleur de réaction $Q$
    #+BEGIN_SRC latex
      \begin{align*}
-       Q&=m_nc^2+m_{^{10}_{5}\text{B}}c^2-m_\alpha c^2+m_{^{7}_{3}\text{Li}}c^2\\
-       &=939.6 + 9324.495-3727.398-6533.877=\unit[2.82]{MeV}>0
+       Q&=m_nc^2+m_{^{10}_{5}\text{B}}c^2-m_\alpha c^2-m_{^{7}_{3}\text{Li}}c^2\\
+       &=939.6 + 9324.495 - 3727.398 - 6533.877=\unit[2.82]{MeV}>0
      \end{align*}
    #+END_SRC
-   La réaction est donc exoénergétique ou spontanée et ne suppose donc pas
+   La réaction est donc exoénergétique ou spontanée et ne requiert pas
    nécessairement d'énergie cinétique pour les neutrons
-   $T_{n_\text{th.}}\ll1\sim0$. On considèrera donc la réaction se faisant au
-   repos $T_{n_\text{th.}}=T_{^{10}_{5}\text{B}}\sim0$. La conservation de
-   l'impulsion implique donc que $\vv{p}_\alpha=-\vv{p}_{^{7}_{3}\text{Li}}$
-   soit
+   $T_{n_\text{th.}}\ll1\sim0$. On considèrera la réaction se faisant au repos
+   $T_{n_\text{th.}}=T_{^{10}_{5}\text{B}}\sim0$. La conservation de l'impulsion
+   implique donc que $\vv{p}_\alpha=-\vv{p}_{^{7}_{3}\text{Li}}$ soit
    #+BEGIN_SRC latex
      \begin{align*}
        p_\alpha c&=p_{^{7}_{3}\text{Li}}c\\
@@ -2098,8 +2098,8 @@ particules constitutives de la cible.
    #+BEGIN_SRC latex
      \begin{align*}
        T_\alpha^2+2T_\alpha\,m_\alpha c^2&=\left(Q-T_\alpha\right)^2+2\left(Q-T_\alpha\right)\,m_{^{7}_{3}\text{Li}}c^2\\
-       T_\alpha\times\left(2m_\alpha c^2+2m_{^{7}_{3}\text{Li}}+2Q\right)&=Q^2-2Qm_{^{7}_{3}\text{Li}}c^2\\
-       T_\alpha&=\frac{Q^2-2Qm_{^{7}_{3}\text{Li}}c^2}{3\left(m_n c^2+m_{^{10}_{5}\text{B}}c^2\right)}\\
+       T_\alpha\times\left(2m_\alpha c^2+2m_{^{7}_{3}\text{Li}}+2Q\right)&=Q^2+2Qm_{^{7}_{3}\text{Li}}c^2\\
+       T_\alpha&=\frac{Q^2+2Qm_{^{7}_{3}\text{Li}}c^2}{2\left(m_n c^2+m_{^{10}_{5}\text{B}}c^2\right)}\\
        &=\unit[1.8]{MeV}
      \end{align*}
    #+END_SRC
@@ -2108,8 +2108,8 @@ particules constitutives de la cible.
    Calcul de la chaleur de réaction $Q$
    #+BEGIN_SRC latex
      \begin{align*}
-       Q&=m_nc^2+m_{^{11}_{5}\text{B}}c^2-m_\alpha c^2+m_{^{8}_{3}\text{Li}}c^2\\
-       &=939.6 + 10252.615-3727.398-7471.417=\unit[-6.6]{MeV}<0
+       Q&=m_nc^2+m_{^{11}_{5}\text{B}}c^2-m_\alpha c^2-m_{^{8}_{3}\text{Li}}c^2\\
+       &=939.6 + 10252.615 - 3727.398 - 7471.417=\unit[-6.6]{MeV}<0
      \end{align*}
    #+END_SRC
    /i.e./ une réaction endoénergétique qui, pour se réaliser, implique que les
