@@ -1,0 +1,48 @@
+\begin{tikzpicture}
+  % Colors
+  \definecolor{red}{RGB}{221,42,43}
+  \definecolor{green}{RGB}{132,184,24}
+  \definecolor{blue}{RGB}{0,51,153}
+  \definecolor{orange}{RGB}{192,128,64}
+  \definecolor{gray}{RGB}{107,108,110}
+  \begin{groupplot}[
+      group style={
+        group name=my plots,
+        group size=1 by 3,
+        xlabels at=edge bottom,
+        xticklabels at=edge bottom,
+        vertical sep=0pt
+      },
+      enlargelimits=0.15,
+      symbolic x coords={$^6$Li,$^7$Li,$^8$Li,$^9$Li,$^{10}$Li,$^{11}$Li},
+      xtick=data,
+      width=8cm,
+      legend cell align=left,
+      legend style={at={(0.05,0.9)},anchor=west,legend columns=1,draw=none}
+    ]
+    \nextgroupplot[
+      ylabel={Radius [fm]},
+    ]
+    \addplot[only marks,color=blue] coordinates {
+      ($^6$Li,2.27) ($^7$Li,2.39) ($^8$Li,2.5) ($^9$Li,2.6) ($^{10}$Li,2.69) ($^{11}$Li,2.78)
+    };
+    \addplot[only marks, color=red] coordinates {
+      ($^6$Li,2.14) ($^7$Li,2.25) ($^8$Li,2.38) ($^9$Li,3.04) ($^{11}$Li,10)
+    };
+    \legend{modèle de la goutte liquide,mesure rayon d'interaction}
+    \nextgroupplot[
+      symbolic x coords={$^6$Li,$^7$Li,$^8$Li,$^9$Li,$^{10}$Li,$^{11}$Li},
+      xtick=data,
+      ylabel={$\Updelta$ [\%]}, ymax=100,
+      height=3cm]
+    \addplot[white] coordinates {
+      ($^6$Li,5.7) ($^7$Li,5.9) ($^8$Li,4.8) ($^9$Li,-16.9) ($^{10}$Li,-259.7) ($^{11}$Li,-259.7)
+    };
+    \addplot[only marks,mark=*,blue,nodes near coords] coordinates {
+      ($^6$Li,5.7) ($^7$Li,5.9) ($^8$Li,4.8) ($^9$Li,-16.9)
+    };
+    \addplot[only marks,color=blue] coordinates {
+      ($^{11}$Li,-259.7)
+    };
+ \end{groupplot}
+\end{tikzpicture}
