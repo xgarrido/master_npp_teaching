@@ -560,7 +560,7 @@ est de 2.2 \mu{}s, ce temps est "boosté" par le facteur de Lorentz soit \tau =
    résultats expérimentaux le modèle des quarks introduit par Murray Gell-Mann
    (déjà à l'origine de l'étrangeté pour expliquer les résultats du
    Cosmotron[fn:3] de BNL) au début des années 60, modèle pour lequel il
-   obtiendra un prix nobel de Physique en 1969.
+   obtiendra le prix nobel de Physique en 1969.
 
 5) $p + n \rightarrow p + \Lambda^0$ et $n + n \rightarrow \Lambda^0 +
    \Lambda^0$. Ces deux réactions ne conservent pas l'étrangeté $S$. Elles ne
