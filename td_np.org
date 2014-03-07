@@ -2440,6 +2440,119 @@ La chaleur de réaction $Q$ s'écrit
      \end{align*}
    #+END_SRC
 
+4) $^{23}\text{Na}+p\to^{22}\text{Ne}+p+n$
+   #+BEGIN_SRC latex
+     \begin{align*}
+       Q&=\Delta M_\text{at.}\left(^{23}\text{Na}\right)c^2+\cancel{\Delta M_\text{at.}(p)c^2}-\Delta M_\text{at.}\left(^{22}\text{Na}\right)-\cancel{\Delta M_\text{at.}(p)c^2}-\Delta M_\text{at.}(n)c^2\\
+       &=-9528+5183-8071=\unit[-12.416]{MeV}<0
+     \end{align*}
+   #+END_SRC
+   L'énergie cinétique seuil nécessaire à la réalisation de cette réaction est
+   #+BEGIN_SRC latex
+     \begin{align*}
+       T_S&=\frac{|Q|}{2}\times\frac{\sum m_{i,f}c^2}{m_\text{cible}c^2}\\
+       &\simeq\frac{|Q|}{2}\times\frac{\sum A}{A_\text{cible}}\\
+       &\simeq\frac{12.416}{2}\times\frac{23\times2+2}{23}=\unit[12.96]{MeV}
+     \end{align*}
+   #+END_SRC
+
+5)
+   1) Le nombre de noyaux de\nbsp^{22}Na produit est
+      #+BEGIN_SRC latex
+        \begin{align*}
+          N\left(^{22}\text{Na}\right)&=\phi_p\times\rho_e\times\sigma_\text{tot.}\times\frac{\mathcal{N}}{A_\text{cible}}\\
+          &=\frac{I}{Ze}\times\rho_e\sigma_\text{tot.}\times\frac{\mathcal{N}}{A\left(^{23}\text{Na}\right)+A\left(^{35}\text{Cl}\right)}\\
+          &=\frac{10^{-5}}{1.6\,10^{-19}}\times2\,10^{-3}\times40\,10^{-3}\times10^{-24}\times\frac{6.02\,10^{23}}{58}\\
+          &=\unit[5.19\,10^7]{/s}
+        \end{align*}
+      #+END_SRC
+   2) Les réactions de désintégration sont
+      #+BEGIN_SRC latex
+        \begin{align*}
+          ^{22}\text{Na}\to ^{22}\text{Ne}^*+e^++\nu_e&\quad\beta^+\text{(90\%)}\\
+          ^{22}\text{Na}+e^-\to ^{22}\text{Ne}^*+\nu_e&\quad\text{CE (10\%)}
+        \end{align*}
+      #+END_SRC
+   3) La variation du nombre de noyau de\nbsp^{22}Na est égal au nombre de noyau
+      crée par irradiation auquel vient se soustraire le nombre de noyau s'étant
+      désintégré soit
+      #+BEGIN_SRC latex
+        \begin{align*}
+          dN\left(^{22}\text{Na}\right)&=n_idt-\lambda Ndt\\
+          \frac{dN}{dt}+\lambda N&=n_i=\text{constante}
+        \end{align*}
+      #+END_SRC
+      La solution de cette équation est de la forme $N(t)=K_1e^{-\lambda t}+K_0$
+      où
+      #+BEGIN_SRC latex
+        \begin{align*}
+          \cancel{-\lambda K_1e^{-\lambda t}}+\cancel{\lambda Ke^{-\lambda t}}+\lambda K_0&=n_i\\
+          K_0&=\frac{n_i}{\lambda}
+        \end{align*}
+      #+END_SRC
+      De plus, $N(t=0)=0$ impliquant $K_1=-\frac{n_i}{\lambda}$ d'où
+      #+BEGIN_SRC latex
+        \begin{align*}
+          N(t)=\frac{n_i}{\lambda}\left(1-e^{-\lambda t}\right)
+        \end{align*}
+      #+END_SRC
+      Pour une durée d'irradiation $t\to\infty$, le nombre de noyau crée tend
+      asymptotiquement vers $N_\infty\to\frac{n_i}{\lambda}$
+      #+BEGIN_CENTER
+      #+ATTR_LATEX: :width 0.7\linewidth
+      [[./figures/sodium22_rate.pdf]]
+      #+END_CENTER
+
+   4) $t_0=\unit[1]{h}\ll T=\unit[2.6]{ans}$ d'où $\lambda t=\ln
+      2\frac{t}{T}\ll1$. Le temps d'irradiation étant significativement plus
+      court que la durée de vie du sodium, on peut approximer le nombre de noyau
+      produit par
+      #+BEGIN_SRC latex
+        \begin{align*}
+          N(t)\simeq\frac{n_i}{\lambda}\left(1-1+\lambda t\right)=n_i\times t
+        \end{align*}
+      #+END_SRC
+      ce qui traduit que le nombre d'irradiation est tès largement supérieur au
+      nombre de désintégrations. Ainsi, pour une heure d'irradiation, le nombre
+      de noyau produit sera
+      #+BEGIN_SRC latex
+        \begin{align*}
+          N(\unit[1]{h})=5.19\,10^7\times3600=1.87\,10^{11}
+        \end{align*}
+      #+END_SRC
+      Sachant que 100% des désintégrations tombe sur le premier niveau excité du
+      néon 22 et génère ainsi un photon \gamma de 1.27 MeV, on peut déduire
+      l'activité en photon \gamma
+      #+BEGIN_SRC latex
+        \begin{align*}
+          A(t)&=\lambda N(t)=\frac{\ln 2}{T}\times N(\unit[1]{h})\\
+          &=\frac{\ln 2}{2.6\times365\times24\times3600}\times1.87\,10^{11}\\
+          &=\unit[1581]{Bq}=\unit[42.7]{nCi}\text{ où 1 Ci = 3.7 10$^{10}$ Bq}
+        \end{align*}
+      #+END_SRC
+   5) La raie à 511 keV correspond aux photons issus de l'annihilation
+      $e^++e^-\to2\gamma$. En effet, dans 90% des cas, la désintégration se fait par
+      désintégration $\beta^+$ où le positron émis, une fois son énergie
+      cinétique dissipée, s'annihilie avec les électrons de la matière. Par
+      conservation de l'impulsion, les deux photons sont émis dos-à-dos, chacun
+      emportant une énergie cinétique de 0.511 keV soit la masse de
+      l'électron/positron. Du fait que ces deux photons sont émis dans 90% des
+      désintégrations, l'activité en photons de 511 keV est égale à
+      #+BEGIN_SRC latex
+        \begin{align*}
+          A_{\gamma_{0.511}}=2\times90\%\times A_{\gamma_{1.27}}=\unit[2846]{Bq}
+        \end{align*}
+      #+END_SRC
+   6) Étant donné l'activité $A_{\gamma_{1.27}}=1581$ désintégrations par
+      seconde dans tout l'espace soit 4\pi stéradian, le nombre de photons
+      détectés à 1 m de la cible devient
+      #+BEGIN_SRC latex
+        \begin{align*}
+          N_{\gamma_{1.27}}(\text{détectés/min})&=A_{\gamma_{1.27}}\times60\times\frac{S}{4\pi d^2}\\
+          &=\frac{5}{4\pi100^2}\times1581\times60\\
+          &\sim4\gamma\text{ de 1.27 MeV en 1 minute de mesure}
+        \end{align*}
+      #+END_SRC
 * Footnotes
 
 [fn:1] 1 pc = 1 parsec = 3.26 années lumières = 30.856 10^{12} km.

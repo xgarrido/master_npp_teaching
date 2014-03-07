@@ -1,0 +1,45 @@
+\begin{tikzpicture}
+  % Colors
+  \definecolor{red}{RGB}{221,42,43}
+  \definecolor{green}{RGB}{132,184,24}
+  \definecolor{blue}{RGB}{0,51,153}
+  \definecolor{orange}{RGB}{192,128,64}
+  \definecolor{gray}{RGB}{107,108,110}
+  \begin{axis}[
+      yticklabels={,,},xticklabels={,,},
+      xlabel={temps},ylabel={Nombre de noyau de $^{22}$Na},
+      clip=false
+    ]
+    \addplot[thick,blue,domain=0:40] {10*(1-exp(-0.05*x))};
+    \addplot[thick,blue,domain=40:100, dashed] {10*(1-exp(-0.05*x))};
+    \addplot[thick,blue,domain=40:100] {10*(1-exp(-0.05*40))*exp(-0.05*(x-40))};
+    \node at (axis cs:0,-1) [below] {$0$};
+    \node at (axis cs:40,-1) [below] {$t_0$};
+    \node at (axis cs:-10,10) [left,red] {$\frac{n_i}{\lambda}$};
+    \node at (axis cs:-10,0) [left] {$0$};
+    \draw[red, dashed] (axis cs:-10,10) -- (axis cs:110,10);
+    \draw[dashed, ->] (axis cs:40,-1) -- (axis cs:40,8.5);
+
+    \draw [
+      thick,
+      decoration={
+        brace,
+        mirror,
+        raise=0.5cm
+      },
+      decorate
+    ] (axis cs:0, -2) -- (axis cs:40,-2)
+    node [pos=0.5,anchor=north,yshift=-0.55cm, text width=2.5cm, align=center] {irradiation + désintégration};
+    \draw [
+      thick,
+      decoration={
+        brace,
+        mirror,
+        raise=0.5cm
+      },
+      decorate
+    ] (axis cs:40, -2) -- (axis cs:100,-2)
+    node [pos=0.5,anchor=north,yshift=-0.55cm] {$\beta^+$ + CE};
+
+  \end{axis}
+\end{tikzpicture}
