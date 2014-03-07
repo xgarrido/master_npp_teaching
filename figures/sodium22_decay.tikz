@@ -1,0 +1,35 @@
+\begin{tikzpicture}[
+  y=-1cm]
+  \usetikzlibrary{decorations.markings}
+  \usetikzlibrary{decorations.pathmorphing}
+  \tikzset{snake it/.style={decorate, decoration=snake}}
+  \sf
+  \definecolor{red}{RGB}{221,42,43}
+  \definecolor{green}{RGB}{105,182,40}
+  \definecolor{blue}{RGB}{0,51,153}
+  \definecolor{orange}{RGB}{192,128,64}
+
+  \draw[very thick, xshift=-6cm] (-1.4,2.) -- (3.0,2.) node[midway, below] {\LARGE{}
+    $\begin{aligned}
+      &^{22}_{11}\text{Na}\\
+      &T\sim\unit[2.6]{ans}
+    \end{aligned}$
+  };
+  \draw[very thick,->] ([xshift=-6cm]3,2) -- (-1.4,5.5) node[midway, right] {
+     $\begin{aligned}
+       90\% \beta^+\\
+       10\% \text{CE}
+     \end{aligned}$
+  };
+
+  \draw[very thick] (-1.4,9.) -- (3.0,9.) node[midway, below] {\LARGE{}$^{22}_{10}\text{Ne}$} node[right] {0 (fonda.)};
+  \draw[very thick] (-1.4,5.5) -- (3.0,5.5) node[right] {1.27 MeV};
+  \draw[gray,very thick,snake it,->] (0.8,5.5) -- (0.8,9.) node[midway, right] {\LARGE{}$\gamma$};
+  %% \draw[gray,very thick, snake it,->] (-0.4,7.3) -- (2.1,7.3) node[right] {\LARGE{}$\gamma$};
+
+\end{tikzpicture}%
+
+%% Configure (x)emacs for this file ...
+%% Local Variables:
+%% mode: latex
+%% End:

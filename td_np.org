@@ -2314,6 +2314,132 @@ particules constitutives de la cible.
   \end{tikzpicture}
 #+END_SRC
 
+* TD8 : Masses et désintégrations nucléaires
+** Définitions
+- masse nucléaire :: la masse nucléaire correspond à la masse du noyau /i.e./
+     #+BEGIN_SRC latex
+       \begin{align*}
+         m\left(^\text{A}_\text{Z}\text{X}\right)c^2=Zm_pc^2+(A-Z)m_nc^2-B_N
+       \end{align*}
+     #+END_SRC
+     où $B_N$ est égal à l'énergie de liaison des nucléons au sein du noyau.
+- masse atomique :: cette masse est associée à la masse de l'atome soit à la
+                    masse nucléaire à laquelle s'ajoute celle du cortège
+                    électronique
+                    #+BEGIN_SRC latex
+                      \begin{align*}
+                        M_\text{at.}\left(^\text{A}_\text{Z}\text{X}\right)c^2=m\left(^\text{A}_\text{Z}\text{X}\right)c^2+Zm_ec^2-B_e
+                      \end{align*}
+                    #+END_SRC
+                    où $B_e$ correspond à l'énergie de liaison des
+                    électrons. Cette quantité est particulièrement faible (\sim
+                    3 keV/$e^-$) au regard des masses mises en jeu en physique
+                    nucléaire. On aura donc tendance à la négliger si bien que
+                    #+BEGIN_SRC latex
+                      \begin{align*}
+                        M_\text{at.}\left(^\text{A}_\text{Z}\text{X}\right)c^2\simeq Z\left(m_pc^2+m_ec^2\right)+\left(A-Z\right)m_nc^2-B_N
+                      \end{align*}
+                    #+END_SRC
+- excès de masse atomique :: écart entre la masse atomique et la masse molaire
+     $A$. Le carbone 12 sert toujours de référence à savoir
+     #+BEGIN_SRC latex
+        \begin{align*}
+         \Delta M\left(^{12}_{6}\text{C}\right)&=0\\
+         \Delta M\left(^\text{A}_\text{Z}\text{X}\right)&=M_\text{at.}\left(^\text{A}_\text{Z}\text{X}\right) - A\text{ em u.m.a}\\
+         \Delta M\left(^\text{A}_\text{Z}\text{X}\right)c^2&=M_\text{at.}\left(^\text{A}_\text{Z}\text{X}\right)c^2 - 931.5A\text{ em MeV}\\
+       \end{align*}
+     #+END_SRC
+     C'est généralement les valeurs $\Delta
+     M\left(^\text{A}_\text{Z}\text{X}\right)c^2$ qui sont tabulées.
+- énergie de liaison des nucléons :: la valeur de $B_N$ est approximée par la
+     formule de Bethe et Weizsäcker
+     #+BEGIN_SRC latex
+       \begin{align*}
+         B_N=\underbrace{a_VA - a_SA^{2/3}}_{\text{modèle de la goutte liquide}}-\underbrace{a_C\frac{Z^2}{A^{1/3}}}_{\text{Coulomb}}-\underbrace{a_A\frac{\left(N-Z\right)^2}{A}}_{\text{asymétrie}}+\underbrace{\delta(A,Z)}_{\text{appariement}}
+       \end{align*}
+     #+END_SRC
+     Cette formule découle de l'analogie entre un fluide et un noyau à savoir
+     que l'énergie de liaison d'une goutte liquide est d'autant plus grande que
+     son volume est important (terme $a_VA$ où $R\propto A$). Les nucléons en
+     surface contribuent néanmoins moins puisqu'ils ont moins de voisins. La
+     goutte cherche donc à minimiser sa surface d'où sa forme sphérique (terme
+     $a_SA^{2/3}$). Par ailleurs, il faut tenir compte de l'interaction
+     coulombienne : la répulsion entre protons du noyau entraîne une diminution
+     de l'énergie de liaison. De plus, l'énergie potentiellle du noyau sera
+     d'autant plus grande que les niveaux de Fermi des neutrons et protons sont
+     proches (terme symétrique $a_A\frac{\left(N-Z\right)^2}{A}$. Enfin,
+     l'appariement $\delta(A,Z)$ joue un rôle important dans l'énergie de
+     liaison : les noyaux ayant un nombre pair de protons/neutrons seront plus
+     liés.
+     #+BEGIN_SRC latex
+       \begin{align*}
+         \delta(A,Z)=\left\{
+         \begin{array}{cl}
+           +\frac{12}{\surd A}&\text{ pour les noyaux pair-pair}\\
+           0&\text{ pour les noyaux impair-pair}\\
+           -\frac{12}{\surd A}&\text{ pour les noyaux impair-impair}
+         \end{array}
+         \right.
+       \end{align*}
+     #+END_SRC
+     L'énergie de liaison moyenne par nucléon correspond à la valeur
+     $\frac{B_N}{A}$ qui est égale à 8 MeV/nucléon au delà de $A$ > 20.
+
+*Réaction 1 + 2 \to 3 + 4 où 1,2,3,4 sont des noyaux*
+
+La chaleur de réaction $Q$ s'écrit
+#+BEGIN_SRC latex
+  \begin{align*}
+    Q&=m_1c^2+m_2c^2-m_3c^2-m_4c^2\\
+    &=M^1_\text{at.}c^2+M^2_\text{at.}c^2-M^3_\text{at.}c^2-M^4_\text{at.}c^2\quad\text{(Z conservé)}\\
+    &=\Delta M_1c^2+\Delta M_2c^2-\Delta M_3c^2-\Delta M_4c^2\quad\text{(A conservé)}\\
+    &=-\left(B^1_N+B^2_N\right)+\left(B^3_N+B^4_N\right)
+  \end{align*}
+#+END_SRC
+** Décroissance radioactive du sodium 22
+#+BEGIN_CENTER
+#+ATTR_LATEX: :width 0.55\linewidth
+[[./figures/sodium22_decay.pdf]]
+#+END_CENTER
+
+1) Décroissance radioactive $N(t)=N_0\,e^{-\lambda t}$ où $\lambda$ correspond à
+   la probabilité de décroissance et est égale à $\frac{\ln 2}{T}$, $T$ étant la
+   période. Ainsi,
+   $\lambda_\text{tot.}=\lambda_{\beta^+}+\lambda_\text{CE}=\frac{\ln 2}{T}$
+   avec $\frac{\lambda_{\beta^+}}{\lambda_\text{tot.}}=90\%$ et
+   $\frac{\lambda_\text{CE}}{\lambda_\text{tot.}}=10\%$. On déduite que la
+   période la capture électronique est
+   #+BEGIN_SRC latex
+     \begin{align*}
+       T_\text{CE}&=\frac{\ln 2}{\lambda_\text{CE}}=\frac{\ln 2}{0.1\,\lambda_{tot.}}\\
+       &=\frac{T}{0.1}=10T=\unit[26]{ans}
+     \end{align*}
+   #+END_SRC
+
+2) Capture électronique : $^{22}_{11}\text{Na}+e^-\to^{22}_{10}\text{Ne}^*+\nu_e$
+
+   La charge étant conservé tout comme le nombre de nucléons, la chaleur de
+   réaction de la capture électronique se déduit des excès de masse
+   #+BEGIN_SRC latex
+     \begin{align*}
+       Q_\text{CE}&=\Delta M_\text{at.}\left(^{22}\text{Na}\right)c^2-\Delta M_\text{at.}\left(^{22}\text{Ne}^*\right)c^2\\
+       &=\Delta M_\text{at.}\left(^{22}\text{Na}\right)c^2-\Delta M_\text{at.}\left(^{22}\text{Ne}\right)c^2-E^*(^{22}\text{Ne})\\
+       &=-5183+8025-1270=\unit[1572]{keV}
+     \end{align*}
+   #+END_SRC
+
+3) Désintégration $\beta^+$ :
+   $^{22}_{11}\text{Na}\to^{22}_{10}\text{Ne}^*+e^++\nu_e$
+
+   L'énergie cinétique maximale que puisse emporter le positron correspond au
+   $Q_{\beta^+}$ de la réaction soit
+   #+BEGIN_SRC latex
+     \begin{align*}
+       T_\text{max}(e^+)&=Q_{\beta^+}=Q_\text{CE}-2m_ec^2\\
+       &=1572-1022=\unit[550]{keV}
+     \end{align*}
+   #+END_SRC
+
 * Footnotes
 
 [fn:1] 1 pc = 1 parsec = 3.26 années lumières = 30.856 10^{12} km.
