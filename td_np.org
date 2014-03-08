@@ -2613,7 +2613,7 @@ de radioéléments\nbsp^{11}C est nul à $t=0$.
      de quelques centaines de MBq est suffisante pour réaliser une TEP autrement
      dit pour observer les photons \gamma à 511 keV. Cette activité qui varie
      entre 150 et 400 MBq pour un adulte correspond à une dose équivalente à 10
-     mSv (\equiv scanner thoraco-abdominal)
+     mSv[fn:9]
    - la période très courte du carbone 11 fait que l'activité de la source
      décroît rapidement, le radioélement étant à l'état de trace au bout de 24
      h. En réalité, la radioactivité disparaît encore plus rapidement car les
@@ -2659,3 +2659,11 @@ fermions soient dans des états quantiques différents.
 
 [fn:8] la parité est égale à $(-1)^{\ell_1+\ell_2}$ où $\ell_1=\ell_2=\ell$ et
 donc $\pi=(-1)^{2\ell}=+1$
+
+[fn:9] cette dose est équivalent à celle d'un scanner thoraco-abdominal. En
+France, la limite d'exposition pour le public est fixée à 1 mSi par an *hors*
+exposition médicale. À titre de comparaison, une radiographie des poumons
+correspond à 0.1 mSi tout comme un voyage long courrier Paris-New York
+aller-retour. Les effets d'une cigarette sont eux évalué à 0.01 mSi par
+cigarette : la plupart des fumeurs dépassent très vite le seuil légal
+d'exposition de la population générale.
