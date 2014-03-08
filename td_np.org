@@ -2345,8 +2345,8 @@ particules constitutives de la cible.
      #+BEGIN_SRC latex
         \begin{align*}
          \Delta M\left(^{12}_{6}\text{C}\right)&=0\\
-         \Delta M\left(^\text{A}_\text{Z}\text{X}\right)&=M_\text{at.}\left(^\text{A}_\text{Z}\text{X}\right) - A\text{ em u.m.a}\\
-         \Delta M\left(^\text{A}_\text{Z}\text{X}\right)c^2&=M_\text{at.}\left(^\text{A}_\text{Z}\text{X}\right)c^2 - 931.5A\text{ em MeV}\\
+         \Delta M\left(^\text{A}_\text{Z}\text{X}\right)&=M_\text{at.}\left(^\text{A}_\text{Z}\text{X}\right) - A\text{ en u.m.a}\\
+         \Delta M\left(^\text{A}_\text{Z}\text{X}\right)c^2&=M_\text{at.}\left(^\text{A}_\text{Z}\text{X}\right)c^2 - 931.5A\text{ en MeV}\\
        \end{align*}
      #+END_SRC
      C'est généralement les valeurs $\Delta
@@ -2460,7 +2460,7 @@ La chaleur de réaction $Q$ s'écrit
    1) Le nombre de noyaux de\nbsp^{22}Na produit est
       #+BEGIN_SRC latex
         \begin{align*}
-          N\left(^{22}\text{Na}\right)&=\phi_p\times\rho_e\times\sigma_\text{tot.}\times\frac{\mathcal{N}}{A_\text{cible}}\\
+          n\left(^{22}\text{Na}\right)&=\phi_p\times\rho_e\times\sigma_\text{tot.}\times\frac{\mathcal{N}}{A_\text{cible}}\\
           &=\frac{I}{Ze}\times\rho_e\sigma_\text{tot.}\times\frac{\mathcal{N}}{A\left(^{23}\text{Na}\right)+A\left(^{35}\text{Cl}\right)}\\
           &=\frac{10^{-5}}{1.6\,10^{-19}}\times2\,10^{-3}\times40\,10^{-3}\times10^{-24}\times\frac{6.02\,10^{23}}{58}\\
           &=\unit[5.19\,10^7]{/s}
@@ -2478,11 +2478,11 @@ La chaleur de réaction $Q$ s'écrit
       désintégré soit
       #+BEGIN_SRC latex
         \begin{align*}
-          dN\left(^{22}\text{Na}\right)&=n_idt-\lambda Ndt\\
-          \frac{dN}{dt}+\lambda N&=n_i=\text{constante}
+          dn\left(^{22}\text{Na}\right)&=n_idt-\lambda ndt\\
+          \frac{dn}{dt}+\lambda n&=n_i=\text{constante}
         \end{align*}
       #+END_SRC
-      La solution de cette équation est de la forme $N(t)=K_1e^{-\lambda t}+K_0$
+      La solution de cette équation est de la forme $n(t)=K_1e^{-\lambda t}+K_0$
       où
       #+BEGIN_SRC latex
         \begin{align*}
@@ -2490,14 +2490,14 @@ La chaleur de réaction $Q$ s'écrit
           K_0&=\frac{n_i}{\lambda}
         \end{align*}
       #+END_SRC
-      De plus, $N(t=0)=0$ impliquant $K_1=-\frac{n_i}{\lambda}$ d'où
+      De plus, $n(t=0)=0$ impliquant $K_1=-\frac{n_i}{\lambda}$ d'où
       #+BEGIN_SRC latex
         \begin{align*}
-          N(t)=\frac{n_i}{\lambda}\left(1-e^{-\lambda t}\right)
+          n(t)=\frac{n_i}{\lambda}\left(1-e^{-\lambda t}\right)
         \end{align*}
       #+END_SRC
       Pour une durée d'irradiation $t\to\infty$, le nombre de noyau crée tend
-      asymptotiquement vers $N_\infty\to\frac{n_i}{\lambda}$
+      asymptotiquement vers $n_\infty\to\frac{n_i}{\lambda}$
       #+BEGIN_CENTER
       #+ATTR_LATEX: :width 0.7\linewidth
       [[./figures/sodium22_rate.pdf]]
@@ -2509,7 +2509,7 @@ La chaleur de réaction $Q$ s'écrit
       produit par
       #+BEGIN_SRC latex
         \begin{align*}
-          N(t)\simeq\frac{n_i}{\lambda}\left(1-1+\lambda t\right)=n_i\times t
+          n(t)\simeq\frac{n_i}{\lambda}\left(1-1+\lambda t\right)=n_i\times t
         \end{align*}
       #+END_SRC
       ce qui traduit que le nombre d'irradiation est tès largement supérieur au
@@ -2517,7 +2517,7 @@ La chaleur de réaction $Q$ s'écrit
       de noyau produit sera
       #+BEGIN_SRC latex
         \begin{align*}
-          N(\unit[1]{h})=5.19\,10^7\times3600=1.87\,10^{11}
+          n(\unit[1]{h})=5.19\,10^7\times3600=1.87\,10^{11}
         \end{align*}
       #+END_SRC
       Sachant que 100% des désintégrations tombe sur le premier niveau excité du
@@ -2525,7 +2525,7 @@ La chaleur de réaction $Q$ s'écrit
       l'activité en photon \gamma
       #+BEGIN_SRC latex
         \begin{align*}
-          A(t)&=\lambda N(t)=\frac{\ln 2}{T}\times N(\unit[1]{h})\\
+          \mathcal{A}(t)&=\lambda n(t)=\frac{\ln 2}{T}\times n(\unit[1]{h})\\
           &=\frac{\ln 2}{2.6\times365\times24\times3600}\times1.87\,10^{11}\\
           &=\unit[1581]{Bq}=\unit[42.7]{nCi}\text{ où 1 Ci = 3.7 10$^{10}$ Bq}
         \end{align*}
@@ -2540,19 +2540,88 @@ La chaleur de réaction $Q$ s'écrit
       désintégrations, l'activité en photons de 511 keV est égale à
       #+BEGIN_SRC latex
         \begin{align*}
-          A_{\gamma_{0.511}}=2\times90\%\times A_{\gamma_{1.27}}=\unit[2846]{Bq}
+          \mathcal{A}_{\gamma_{0.511}}=2\times90\%\times\mathcal{A}_{\gamma_{1.27}}=\unit[2846]{Bq}
         \end{align*}
       #+END_SRC
-   6) Étant donné l'activité $A_{\gamma_{1.27}}=1581$ désintégrations par
-      seconde dans tout l'espace soit 4\pi stéradian, le nombre de photons
+   6) Étant donné l'activité $\mathcal{A}_{\gamma_{1.27}}=1581$ désintégrations
+      par seconde dans tout l'espace soit 4\pi stéradian, le nombre de photons
       détectés à 1 m de la cible devient
       #+BEGIN_SRC latex
         \begin{align*}
-          N_{\gamma_{1.27}}(\text{détectés/min})&=A_{\gamma_{1.27}}\times60\times\frac{S}{4\pi d^2}\\
+          N_{\gamma_{1.27}}(\text{détectés/min})&=\mathcal{A}_{\gamma_{1.27}}\times60\times\frac{S}{4\pi d^2}\\
           &=\frac{5}{4\pi100^2}\times1581\times60\\
           &\sim4\gamma\text{ de 1.27 MeV en 1 minute de mesure}
         \end{align*}
       #+END_SRC
+
+** Tomographie par émission de positrons
+
+#+ATTR_LATEX: :width 0.35\textwidth
+#+CAPTION: *Vue axiale du cerveau par tomographie à émission de positrons*
+[[./figures/pet_cerveau.jpg]]
+
+#+BEGIN_SRC latex
+  \begin{align*}
+    p+^{14}_{7}\text{N}\to ^{11}_{6}\text{C}+\alpha\text{ avec }T\left(^{11}\text{C}\right)=\unit[20.36]{min}
+  \end{align*}
+#+END_SRC
+
+Les caractéristiques du faisceau de proton incident et de la cible sont
+$\phi_p=\unit[4\,10^{12}]{protons/s}$, $\rho_e=\unit[10]{mg/cm}^2$ et une
+section efficace totale $\sigma_\text{tot.}=\unit[200]{mb}$. Le nombre initial
+de radioéléments\nbsp^{11}C est nul à $t=0$.
+
+1) La variation du nombre de noyaux de carbone 11, $\frac{dn}{dt}$, est égale à
+   au nombre de noyaux créés par irradiation soustrait du nombre de noyaux se
+   désintégrant soit $\frac{dn}{dt}=n_i-\lambda n$. La résolution de cette
+   équation différentielle donne une variation temporelle du nombre de noyaux
+   $n(t)$ égale à
+   #+BEGIN_SRC latex
+     \begin{align*}
+       n(t)&=\frac{n_i}{\lambda}\left(1-e^{-\lambda t}\right)\\
+       &\text{où }n_i=\phi_p\times\rho_e\times\frac{\mathcal{N}}{A_\text{cible}}\times\sigma_\text{tot.}
+     \end{align*}
+   #+END_SRC
+   Ainsi, le nombre de noyaux radioactifs de carbone 11 obtenus au bout de 3
+   heures d'irradiation est
+   #+BEGIN_SRC latex
+     \begin{align*}
+       n(t=\unit[3]{h})=&\frac{4\,10^{12}\times10\,10^{-3}\times6.02\,10^{23}\times200\,10^{-24}}{\ln 2\times14}\\
+       &\times20.36\times60\times\left(1-e^{-\frac{\ln 2\times3\times60}{20.36}}\right)\\
+       =&\unit[6.05\,10^{11}]{noyaux}
+     \end{align*}
+   #+END_SRC
+2) À $t=t_0=\unit[3]{h}$, l'irradiation est stoppée, les noyaux de carbone ne
+   faisant que se déintégrer. L'activité en radioéléments devient
+   #+BEGIN_SRC latex
+     \begin{align*}
+       \mathcal{A}(t'=t-t_0=\unit[30]{min})&=\lambda\times n(t'=\unit[30]{min})\\
+       &=\frac{\ln 2}{T}\times n(t_0)\,e^{-\lambda t'}\\
+       &=\frac{\ln 2}{20.36\times60}\times6.05\,10^{11}\,e^{-\ln 2\times30/20.36}\\
+       &=\unit[1.24\,10^8]{Bq}=\unit[3.3]{mCi}
+     \end{align*}
+   #+END_SRC
+3) Après 24 heures, l'activité de la "source" sera
+   #+BEGIN_SRC latex
+     \begin{align*}
+       \mathcal{A}(\unit[24]{h})&=\frac{\ln 2}{20.36\times60}\times6.05\,10^{11}\,e^{-\ln2\times24\times60/20.36}\\
+       &=\unit[1.75\,10^{-13}]{Bq}
+     \end{align*}
+   #+END_SRC
+
+   - 30 minutes après irradiation, l'activité de la source injectée de l'ordre
+     de quelques centaines de MBq est suffisante pour réaliser une TEP autrement
+     dit pour observer les photons \gamma à 511 keV. Cette activité qui varie
+     entre 150 et 400 MBq pour un adulte correspond à une dose équivalente à 10
+     mSv (\equiv scanner thoraco-abdominal)
+   - la période très courte du carbone 11 fait que l'activité de la source
+     décroît rapidement, le radioélement étant à l'état de trace au bout de 24
+     h. En réalité, la radioactivité disparaît encore plus rapidement car les
+     radioéléments non fixés sont naturellement éliminés avec les urines. La
+     principale contrainte d'utilisation de la TEP est en fait lié à la courte
+     demi-vie des isotopes radioactifs qui nécessitent donc la présence d’un
+     cyclotron à proximité du centre d’examen.
+
 * Footnotes
 
 [fn:1] 1 pc = 1 parsec = 3.26 années lumières = 30.856 10^{12} km.
