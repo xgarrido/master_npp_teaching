@@ -2627,6 +2627,103 @@ de radioéléments\nbsp^{11}C est nul à $t=0$.
      demi-vie des isotopes radioactifs qui nécessitent donc la présence d’un
      cyclotron à proximité du centre d’examen.
 
+** Formule de Bethe et Weizsäcker
+1) À partir de la question [[Définitions]], la masse atomique est égale à
+   #+BEGIN_SRC latex
+     \begin{align*}
+       M_\text{at.}(A,Z)c^2=&Z(m_pc^2+m_ec^2)+(A-Z)m_nc^2-B_N\\
+       =&Z(m_pc^2+m_ec^2)+(A-Z)m_nc^2\\
+       &-a_VA+a_SA^{2/3}+a_C\frac{Z^2}{A^{1/3}}+a_A\frac{(A-2Z)^2}{A}-\delta(Z,A)
+     \end{align*}
+   #+END_SRC
+   L'origine des différents termes de l'énergie de liaison $B_N$ est expliquée à
+   la question [[Définitions]].
+2) Le nombre de nucléons ou nombre de masse $A$ est impair pour les isobares
+   $A=21$ et $A=95$. Aussi, le terme d'appariement $\delta(Z,A)$ est donc
+   nul. L'élément le plus stable dans une famille d'isobares est celui avec
+   l'énergie de liaison $B_N$ maximale. Or, $B_N$ est maximum pour $Z=Z_0$ tel
+   que $\left.\frac{\partial B_N}{\partial Z}\right|_{Z_0}=0$ d'où
+   #+BEGIN_SRC latex
+     \begin{align*}
+       \left.\frac{\partial B_N}{\partial Z}\right|_{Z=Z_0}=\frac{2a_CZ_0}{A^{1/3}}-4a_A\frac{A-2Z_0}{A}&=0\\
+       a_CZ_0A^{2/3}-2A_AA+4a_AZ_0&=0\\
+       Z_0&=\frac{2a_AA}{a_CA^{2/3}+4a_A}
+     \end{align*}
+   #+END_SRC
+   *Application numérique :*
+
+   $A=21$ $Z_0=9.93\sim10$ correspond au noyau \beta-stable de néon 22
+
+   $A=95$ $Z_0=41.1\sim41$ ne correspond pas au noyau \beta-stable de molybdène
+   95
+
+   - la formule de Bethe et Weizsäcker est globalement correcte pour les noyaux
+     légers,
+   - pour les noyaux plus lourds, l'écart est généralement de \pm1 protons,
+   - de manière générale, la formule de Bethe et Weizsäcker est un bon
+     indicateur afin de déterminer si un noyau est loin, en terme de protons, de
+     l'élément stable pour une masse donnée /i.e./ pour $A$ fixé.
+
+3)
+   1) Pour une étoile à neutrons, l'énergie de liaison devient ($Z=0$)
+      #+BEGIN_SRC latex
+        \begin{align*}
+          B_N&=a_VA-a_SA^{2/3}-\cancel{a_C\frac{Z^2}{A^{1/3}}}-a_A\frac{(Z-N)^2}{A}+\underbrace{\delta(Z,A)}_{\ll1}\\
+          &\text{ avec }A=Z+N=N\quad B_N=a_VN-a_ZN^{2/3}-a_A\frac{N^{\cancel{2}}}{\cancel{N}}\\
+          B_N&=\left(a_V-a_A\right)N-a_SN^{2/3}
+        \end{align*}
+      #+END_SRC
+      En tenant compte de l'énergie potentielle gravitationnelle, l'énergie de
+      liaison d'une étoile à neutrons devient
+      #+BEGIN_SRC latex
+        \begin{align*}
+          B_*&=B_N-E_G=\left(a_V-a_A\right)N-a_SN^{2/3}+\frac{3GM^2}{5R}
+        \end{align*}
+      #+END_SRC
+   2) En considérant l'étoile uniquement constituée de neutrons, sa masse
+      s'écrit $M=N\times m_n$. Par ailleurs, le rayon de cette étoile est égal
+      à $r_0\times N^{1/3}$ d'où
+      #+BEGIN_SRC latex
+        \begin{align*}
+          B_*&=\left(a_V-a_A\right)N-a_SN^{2/3}+\frac{3Gm_n^2\,N^2}{r_0\,N^{1/3}}
+        \end{align*}
+      #+END_SRC
+      Dans la mesure où le nombre de nucléons est grand, on pourra négliger le
+      terme relatif aux effets de surface $a_SN^{2/3}$ devant ceux proportionnel
+      à $N$ et l'énergie gravitationnelle. Ainsi, l'énergie de liaison se réduit
+      à
+      #+BEGIN_SRC latex
+        \begin{align*}
+          B_*&=\underbrace{\left(a_V-a_A\right)N}_{<0}+\underbrace{\frac{3Gm_n^2\,N^{5/3}}{5r_0}}_{>0}
+        \end{align*}
+      #+END_SRC
+      Le premier terme négatif traduit le fait qu'un "noyau/étoile" uniquement
+      constitué de neutrons n'est pas un système physiquement stable. Toutefois,
+      le caractère instable de ce système est contrebalancé par l'effondrement
+      gravitationnel qui est d'autant plus fort que le nombre /i.e./ la masse
+      est grande. Ainsi, au-delà d'une valeur critique $N=N_0$ telle que
+      $B_*=0$, l'énergie gravitationnelle devient supérieure à l'instabilité
+      inhérente à la composition en neutrons du "noyau/étoile". La valeur
+      critique $N_0$ se traduit également en terme de rayon minimal pour qu'une
+      étoile à neutrons subsiste $R_\text{min}=r_0\times N_0^{1/3}$. La valeur
+      critique du nombre de neutrons est
+      #+BEGIN_SRC latex
+        \begin{align*}
+          B_*&=\left(a_V-a_A\right)N_0+\frac{3Gm_n^2\,N_0^{5/3}}{5r_0}=0\\
+          N_0^{-2/3}&=-\frac{3Gm_n^2}{5r_0\left(a_V-a_A\right)}\\
+          N_0^{2/3}&=\frac{5r_0\left(a_A-a_V\right)}{3Gm_n^2}\\
+          &\text{où }m_n=\unit[0.939]{GeV/c}^2\to Gm_n^2=1.3239\,10^{-39}\times(0.939)^2\\
+          N_0^{2/3}&=\frac{5\times1.25\times\left(23.285-15.56\right)\,10^{-3}}{3\times1.3239\,10^{-39}\times(0.939)^2}\\
+          &=1.377\,10^{37}\to N_0=5.11\,10^{55}
+        \end{align*}
+      #+END_SRC
+      Le rayon minimal d'une étoile à neutron est donc
+      #+BEGIN_SRC latex
+        \begin{align*}
+          R_\text{min}&=r_0\times N_0^{1/3}=1.25\,10^{-15}\times\left(5.11\,10^{55}\right)^{1/3}\\
+          &=\unit[4.64]{km}
+        \end{align*}
+      #+END_SRC
 * Footnotes
 
 [fn:1] 1 pc = 1 parsec = 3.26 années lumières = 30.856 10^{12} km.
@@ -2666,9 +2763,9 @@ fermions soient dans des états quantiques différents.
 donc $\pi=(-1)^{2\ell}=+1$
 
 [fn:9] cette dose est équivalent à celle d'un scanner thoraco-abdominal. En
-France, la limite d'exposition pour le public est fixée à 1 mSi par an *hors*
+France, la limite d'exposition pour le public est fixée à 1 mSv par an *hors*
 exposition médicale. À titre de comparaison, une radiographie des poumons
-correspond à 0.1 mSi tout comme un voyage long courrier Paris-New York
-aller-retour. Les effets d'une cigarette sont eux évalué à 0.01 mSi par
+correspond à 0.1 mSv tout comme un voyage long courrier Paris-New York
+aller-retour. Les effets d'une cigarette sont eux évalué à 0.01 mSv par
 cigarette : la plupart des fumeurs dépassent très vite le seuil légal
 d'exposition de la population générale.
