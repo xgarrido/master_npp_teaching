@@ -415,6 +415,7 @@ $\vv{v}$ dans un champ d'induction $\vv{B}$ normal à $\vv{v}$.
 ** Énergie maximum des rayons cosmiques
 
 #+CAPTION: *Spectre en énergie des rayons cosmiques*
+#+ATTR_HTML: :width 500
 #+ATTR_LATEX: :width 0.7\linewidth :placement [h]
 [[file:./figures/spectrum.pdf]]
 
@@ -453,6 +454,7 @@ AN: $m_{\pi^{0}}c^{2}$ = 135 MeV et $m_{\pi^{+}}c^{2}$ = 139.6 MeV
 
 #+CAPTION: *Énergie moyenne des protons en fonction de leur distance à la source*
 #+NAME: fig::proton_attenuation
+#+ATTR_HTML: :width 500
 #+ATTR_LATEX: :width 0.7\linewidth
 [[file:./figures/proton_attenuation_result.pdf]]
 
@@ -472,10 +474,12 @@ surabondance locale.
 
 #+CAPTION: *Diagramme de Hillas de différents objets compacts.*
 #+CAPTION: Les axes correspondent respectivement au logarithme décimal du champ magnétique et à la taille caractéristique de l'objet.
+#+ATTR_HTML: :width 500
 #+ATTR_LATEX: :width 0.7\linewidth
 [[file:./figures/hillas_diagram.pdf]]
 
 #+CAPTION: *Spectre du rayonnement cosmique mesuré par l'Observatoire Pierre Auger (données 2008)*
+#+ATTR_HTML: :width 500
 #+ATTR_LATEX: :width \linewidth
 [[file:./figures/auger_spectrum.pdf]]
 
@@ -2556,6 +2560,7 @@ La chaleur de réaction $Q$ s'écrit
 
 ** Tomographie par émission de positrons
 
+#+ATTR_HTML: :width 300
 #+ATTR_LATEX: :width 0.35\textwidth
 #+CAPTION: *Vue axiale du cerveau par tomographie à émission de positrons*
 [[./figures/pet_cerveau.jpg]]
