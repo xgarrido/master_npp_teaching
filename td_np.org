@@ -2370,11 +2370,15 @@ particules constitutives de la cible.
      $a_SA^{2/3}$). Par ailleurs, il faut tenir compte de l'interaction
      coulombienne : la répulsion entre protons du noyau entraîne une diminution
      de l'énergie de liaison. De plus, l'énergie potentiellle du noyau sera
-     d'autant plus grande que les niveaux de Fermi des neutrons et protons sont
-     proches (terme symétrique $a_A\frac{\left(N-Z\right)^2}{A}$. Enfin,
-     l'appariement $\delta(A,Z)$ joue un rôle important dans l'énergie de
-     liaison : les noyaux ayant un nombre pair de protons/neutrons seront plus
-     liés.
+     d'autant plus grande que les niveaux de Fermi des neutrons et protons
+     seront proches (terme symétrique $a_A\frac{\left(N-Z\right)^2}{A}$). Ce
+     terme d'asymétrie traduit le fait que les nucléons étant des fermions,
+     avoir un excédent de proton ou de neutron a tendance à augmenter l'énergie
+     et donc diminuer la liaison du noyau en raison du remplissage des niveaux
+     de Fermi. Ainsi, un noyau cherche à égaliser le nombre de proton et de
+     neutrons tout du moins pour les noyaux légers. Enfin, l'appariement
+     $\delta(A,Z)$ joue un rôle important dans l'énergie de liaison : les noyaux
+     ayant un nombre pair de protons/neutrons seront plus liés.
      #+BEGIN_SRC latex
        \begin{align*}
          \delta(A,Z)=\left\{
@@ -2700,9 +2704,9 @@ de radioéléments\nbsp^{11}C est nul à $t=0$.
       Le premier terme négatif traduit le fait qu'un "noyau/étoile" uniquement
       constitué de neutrons n'est pas un système physiquement stable. Toutefois,
       le caractère instable de ce système est contrebalancé par l'effondrement
-      gravitationnel qui est d'autant plus fort que le nombre /i.e./ la masse
-      est grande. Ainsi, au-delà d'une valeur critique $N=N_0$ telle que
-      $B_*=0$, l'énergie gravitationnelle devient supérieure à l'instabilité
+      gravitationnel qui est d'autant plus fort que le nombre de neutrons /i.e./
+      la masse est grande. Ainsi, au-delà d'une valeur critique $N=N_0$ telle
+      que $B_*=0$, l'énergie gravitationnelle devient supérieure à l'instabilité
       inhérente à la composition en neutrons du "noyau/étoile". La valeur
       critique $N_0$ se traduit également en terme de rayon minimal pour qu'une
       étoile à neutrons subsiste $R_\text{min}=r_0\times N_0^{1/3}$. La valeur
@@ -2724,6 +2728,151 @@ de radioéléments\nbsp^{11}C est nul à $t=0$.
           &=\unit[4.64]{km}
         \end{align*}
       #+END_SRC
+** Parabole de masse et désintégrations radioactives
+1) Désintégrations isobariques (\beta^{-}, \beta^{+}, CE)
+
+   - désintégration \beta^{-} ::
+     $^A_Z\text{X}\to\,^A_{Z+1}\text{Y}+e^-+\bar{\nu}_e$
+     #+BEGIN_SRC latex
+       \begin{align*}
+         Q>0 \Longleftrightarrow\,& m(A,Z)c^2>m(A,Z+1)c^2+m_ec^2\\
+         &M_\text{at.}(A,Z)c^2-Zm_ec^2>M_\text{at.}(A,Z+1)c^2-(Z+1)m_ec^2+m_ec^2\\
+         &M_\text{at.}(A,Z)c^2>M_\text{at.}(A,Z+1)c^2\\
+         &\Delta M_\text{at.}(A,Z)c^2>\Delta M_\text{at.}(A,Z+1)c^2
+       \end{align*}
+     #+END_SRC
+        La désintégration \beta^{-} faisant intervenir 3 corps dont 2 particules
+        légères, le spectre en énergie cinétique de l'électron est continu entre
+        0 et $Q_{\beta^-}=\Delta M_\text{at.}(A,Z)c^2-\Delta
+        M_\text{at.}(A,Z+1)c^2$.
+
+   - désintégration \beta^{+} ::
+        $^A_Z\text{X}\to\,^A_{Z-1}\text{Y}+e^++\nu_e$
+        #+BEGIN_SRC latex
+          \begin{align*}
+            Q>0 \Longleftrightarrow\,& m(A,Z)c^2>m(A,Z-1)c^2+m_ec^2\\
+            &M_\text{at.}(A,Z)c^2-Zm_ec^2>M_\text{at.}(A,Z-1)c^2-(Z-1)m_ec^2+m_ec^2\\
+            &M_\text{at.}(A,Z)c^2>M_\text{at.}(A,Z-1)c^2+2m_ec^2\\
+            &\Delta M_\text{at.}(A,Z)c^2>\Delta M_\text{at.}(A,Z-1)c^2+2m_ec^2
+          \end{align*}
+        #+END_SRC
+        De même que pour la désintégration \beta^{-}, le spectre en énergie du
+        positron est continu depuis 0 jusqu'à $Q_{\beta^+}=\Delta
+        M_\text{at.}(A,Z)c^2-\Delta M_\text{at.}(A,Z-1)c^2-2m_ec^2$
+
+   - capture électronique ::
+        $^A_Z\text{X}+e^-\to\,^A_{Z-1}\text{Y}+\nu_e$
+        #+BEGIN_SRC latex
+          \begin{align*}
+            Q>0 \Longleftrightarrow\,& m(A,Z)c^2+m_exc^2>m(A,Z-1)c^2\\
+            &M_\text{at.}(A,Z)c^2-Zm_ec^2+m_ec^2>M_\text{at.}(A,Z-1)c^2-(Z-1)m_ec^2\\
+            &M_\text{at.}(A,Z)c^2>M_\text{at.}(A,Z-1)c^2\\
+            &\Delta M_\text{at.}(A,Z)c^2>\Delta M_\text{at.}(A,Z+1)c^2\\
+            &Q_\text{CE} = Q_{\beta^+}+2m_ec^2
+          \end{align*}
+        #+END_SRC
+        La capture électronique est privilégiée d'un point de vue énergétique
+        par rapport à la désintégration \beta^{+}. Dès lors que la
+        désintégration \beta^{+} est autorisée, cette désintégration entre en
+        concurrence avec la capture électronique. Pour les noyaux lourds, seule
+        la capture électronique est généralement autorisée.
+
+        La capture électronique correspond à la capture d'un électron du cortège
+        électronique de l'atome : cet électron appartient aux couches les plus
+        internes et donc les plus proches du noyau. En fonction de la couche
+        $K,L,M$ de laquelle est capturé l'électron, une réorgnisation du cortège
+        électronique intervient ayant pour conséquence l'émission d'un rayon X
+        de désexcitation.
+
+2) Le diagramme $M_\text{at.}c^2=f(Z)$ ou $\Delta M_\text{at.}c^2=f(Z)$ pour une
+   famille d'isobares donnée est le suivant
+   #+BEGIN_CENTER
+   #+NAME: mass_parabola
+   #+CAPTION: *Paraboles de masse pour les noyaux de la famille $A=58$*
+   #+ATTR_LATEX: :width 0.7\linewidth
+   [[./figures/parabole_mass.pdf]]
+   #+END_CENTER
+
+   L'expression de $M_\text{at.}c^2$ ou $\Delta M_\text{at.}c^2$ en fonction de
+   $Z$ prend la forme du parabole car
+   #+BEGIN_SRC latex
+     \begin{align*}
+       \Delta M_\text{at.}(Z,A)c^2=&M_\text{at.}(Z,A)c^2 - 931.5A\\
+       =&Z\left(m_pc^2+m_ec^2\right)+\left(A-Z\right)m_nc^2-B_N-931.5A\\
+       =&Z\left(m_pc^2+m_ec^2\right)+\left(A-Z\right)m_nc^2\\
+       &-a_VA+a_SA^{2/3}+a_C\frac{Z^2}{A^{1/3}}+a_A\frac{\left(A-2Z\right)^2}{A}-\delta(Z,A)-931.5A\\
+       =&A\left(m_nc^2-a_V+a_A-931.5\right)+a_SA^{2/3}-\delta(Z,A)\\
+       &+Z\left(m_pc^2+m_ec^2-m_nc^2-4a_A\right)+Z^2\left(\frac{a_C}{A^{1/3}}+\frac{4a_A}{A}\right)\\
+       =&\alpha+\beta Z+\gamma Z^2
+     \end{align*}
+   #+END_SRC
+
+   Ainsi, pour un nombre de masse donné $A$, la variation de la masse atomique
+   ou de l'excès de masse atomique en fonction de la charge $Z$ est décrit par
+   une seule parabole dans le cas où $A$ est impair et donc $\delta(Z,A) = 0$ et
+   translatée de \pm $\delta(Z,A)$ lorsque $A$ est pair. En établissant les
+   paraboles pour les isobares $A=58$, on peut déduire de l'écart entre ces deux
+   paraboles la valeur de $2\delta$. On obtient une valeur voisine de 2.8 MeV
+   soit $\delta=\unit[1.4]{MeV}$, relativement proche de la valeur issue de B&W
+   $\frac{\unit[12]{MeV}}{\surd A}=\unit[1.58]{MeV}$.
+
+3) D'après la figure [[mass_parabola]], les désintégrations \beta^{-} sont Cr\to
+   Mn, Mn\to Fe et Co\to Ni. Les désintégrations \beta^{+} ou CE sont
+   Zn\to Cu, Cu\to Ni et Co\to Fe. Les deux noyaux stables de cette
+   famille sont donc le fer 58 et le nickel 58.
+
+   L'énergie cinétique maximum des électrons/positrons émis respectivement par
+   désintégration \beta^{-} et \beta^{+} sont les suivantes
+
+   - $^{58}_{24}Cr\to ^{58}_{25}Mn+e^-+\bar{\nu}_e$
+     #+BEGIN_SRC latex
+       \begin{align*}
+         Q_{\beta^-}& = \Delta M(^{58}_{24}Cr)c^2-\Delta M(^{58}_{25}Mn)c^2\\
+         &=\unit[3.78]{MeV}=T_\text{max}(e^-)
+       \end{align*}
+     #+END_SRC
+   - $^{58}_{25}Mn\to ^{58}_{26}Fe+e^-+\bar{\nu}_e$
+     #+BEGIN_SRC latex
+       \begin{align*}
+         Q_{\beta^-}& = \Delta M(^{58}_{25}Mn)c^2-\Delta M(^{58}_{26}Fe)c^2\\
+         &=\unit[6.32]{MeV}=T_\text{max}(e^-)
+       \end{align*}
+     #+END_SRC
+   - $^{58}_{27}Co\to ^{58}_{28}Ni+e^-+\bar{\nu}_e$
+     #+BEGIN_SRC latex
+       \begin{align*}
+         Q_{\beta^-}& = \Delta M(^{58}_{27}Co)c^2-\Delta M(^{58}_{28}Ni)c^2\\
+         &=\unit[0.38]{MeV}=T_\text{max}(e^-)
+       \end{align*}
+     #+END_SRC
+
+   - $^{58}_{30}Zn+e^-\to ^{58}_{29}Cu+\nu_e$
+     #+BEGIN_SRC latex
+       \begin{align*}
+         Q_\text{CE}& = \Delta M(^{58}_{30}Zn)c^2-\Delta M(^{58}_{29}Cu)c^2\\
+         &=\unit[9.45]{MeV}\\
+         Q_{\beta^+}&=Q_\text{CE} - 2m_ec^2=\unit[8.48]{MeV}=T_\text{max}(e^+)
+       \end{align*}
+     #+END_SRC
+   - $^{58}_{29}Cu+e^-\to ^{58}_{28}Ni+\nu_e$
+     #+BEGIN_SRC latex
+       \begin{align*}
+         Q_\text{CE}& = \Delta M(^{58}_{29}Cu)c^2-\Delta M(^{58}_{28}Ni)c^2\\
+         &=\unit[8.56]{MeV}\\
+         Q_{\beta^+}&=Q_\text{CE} - 2m_ec^2=\unit[7.54]{MeV}=T_\text{max}(e^+)
+       \end{align*}
+     #+END_SRC
+   - $^{58}_{27}Co+e^-\to ^{58}_{26}Fe+\nu_e$
+     #+BEGIN_SRC latex
+       \begin{align*}
+         Q_\text{CE}& = \Delta M(^{58}_{27}Co)c^2-\Delta M(^{58}_{26}Fe)c^2\\
+         &=\unit[2.31]{MeV}\\
+         Q_{\beta^+}&=Q_\text{CE} - 2m_ec^2=\unit[1.29]{MeV}=T_\text{max}(e^+)
+       \end{align*}
+     #+END_SRC
+
+
+
 * Footnotes
 
 [fn:1] 1 pc = 1 parsec = 3.26 années lumières = 30.856 10^{12} km.

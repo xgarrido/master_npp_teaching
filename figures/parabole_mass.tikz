@@ -1,0 +1,62 @@
+\begin{tikzpicture}[>=latex]
+  \definecolor{red}{RGB}{221,42,43}
+  \definecolor{green}{RGB}{132,184,24}
+  \definecolor{blue}{RGB}{0,51,153}
+  \definecolor{orange}{RGB}{192,128,64}
+  \definecolor{gray}{RGB}{107,108,110}
+  \begin{axis}[
+      ylabel={$\Updelta \text{M}_\text{at.}c^2$ [MeV]},
+      symbolic x coords={$^{58}_{24}$Cr,$^{58}_{25}$Mn,$^{58}_{26}$Fe,$^{58}_{27}$Co,$^{58}_{28}$Ni,$^{58}_{29}$Cu,$^{58}_{30}$Zn},
+      %% xtick=data
+      %% xmin=0, xmax=1,
+      %% ymin=0, ymax=3
+    ]
+    \addplot[blue,only marks,mark size = 1] coordinates {
+      ($^{58}_{24}$Cr, -52.050)
+      ($^{58}_{25}$Mn, -55.830)
+      ($^{58}_{26}$Fe, -62.152)
+      ($^{58}_{27}$Co, -59.844)
+      ($^{58}_{28}$Ni, -60.225)
+      ($^{58}_{29}$Cu, -51.662)
+      ($^{58}_{30}$Zn, -42.210)
+    };
+
+    \draw[red,->] (axis cs:$^{58}_{24}$Cr,-52.050) -- (axis
+    cs:$^{58}_{25}$Mn,-55.830) node[midway,right] {\tiny{}$\beta^-$};
+    \draw[red,->] (axis cs:$^{58}_{25}$Mn,-55.830) -- (axis
+    cs:$^{58}_{26}$Fe,-62.152) node[midway,right] {\tiny{}$\beta^-$};
+    \draw[red,->] (axis cs:$^{58}_{27}$Co,-59.844) -- (axis
+    cs:$^{58}_{28}$Ni,-60.225) node[midway,above] {\tiny{}$\beta^-$};
+
+    \draw[green,->] (axis cs:$^{58}_{30}$Zn,-42.210) -- (axis
+    cs:$^{58}_{29}$Cu,-51.662) node[midway,left] {\tiny{}$\beta^+$, CE};
+    \draw[green,->] (axis cs:$^{58}_{29}$Cu,-51.662) -- (axis
+    cs:$^{58}_{28}$Ni,-60.225) node[midway,left] {\tiny{}$\beta^+$, CE};
+    \draw[green,->] (axis cs:$^{58}_{27}$Co,-59.844) -- (axis
+    cs:$^{58}_{26}$Fe,-62.152) node[midway] {\tiny{}$\beta^+$, CE};
+
+    \addplot[blue, smooth, dashed] coordinates {
+      ($^{58}_{24}$Cr, -52.050)
+      ($^{58}_{26}$Fe, -62.152)
+      ($^{58}_{28}$Ni, -60.225)
+      ($^{58}_{30}$Zn, -42.210)
+    };
+    \addplot[blue, smooth, dashed] coordinates {
+      ($^{58}_{25}$Mn, -55.830)
+      ($^{58}_{27}$Co, -59.844)
+      ($^{58}_{29}$Cu, -51.662)
+    };
+
+    \draw[<-, xshift=1.0cm, yshift=-1.5cm, blue] (axis cs:$^{58}_{24}$Cr,-52) --
+    (axis cs:$^{58}_{25}$Mn,-50) node[right] {\footnotesize$Z$ pair};
+    \draw[<-, xshift=-0.5cm, yshift=-0.5cm, blue] (axis cs:$^{58}_{29}$Cu,-52) --
+    (axis cs:$^{58}_{28}$Ni,-50) node[left] {\footnotesize$Z$ impair};
+
+    \draw[dashed] (axis cs:$^{58}_{25}$Mn,-62.8) -- (axis cs:$^{58}_{30}$Zn, -62.8);
+    \draw[dashed] (axis cs:$^{58}_{26}$Fe,-60.0) -- (axis cs:$^{58}_{30}$Zn, -60.0);
+
+    \draw[<->, xshift=-0.5cm] (axis cs:$^{58}_{29}$Cu,-62.8) -- (axis cs:$^{58}_{29}$Cu, -60.0)
+    node[midway, right] {\footnotesize$2\delta\simeq\unit[2.8]{MeV}$};
+
+  \end{axis}
+\end{tikzpicture}
