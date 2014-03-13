@@ -1,14 +1,14 @@
-#+TITLE: Correction TD Noyaux & Particules
+#+TITLE: Travaux Dirigés Noyaux & Particules -- Master 1
 #+AUTHOR: Xavier Garrido
 #+DATE: 25/11/13
-#+OPTIONS: ^:{} toc:2
+#+OPTIONS: ^:{} toc:2 author:nil
 #+LATEX_CLASS: teaching-class
 
 * TD1 : Cinématique & Accélérateurs
 ** Introduction
 
 #+BEGIN_CENTER
-Noyau :^{A}_{Z}X \rightarrow Z protons  + N neutrons = A nucléons (nombre de masse)
+Noyau :\nbsp^{A}_{Z}X \rightarrow Z protons  + N neutrons = A nucléons (nombre de masse)
 #+END_CENTER
 
 - Noyau ayant le "même" nombre de protons Z sont appelés des *isotopes* tandis que
