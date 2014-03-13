@@ -2369,7 +2369,7 @@ particules constitutives de la cible.
      goutte cherche donc à minimiser sa surface d'où sa forme sphérique (terme
      $a_SA^{2/3}$). Par ailleurs, il faut tenir compte de l'interaction
      coulombienne : la répulsion entre protons du noyau entraîne une diminution
-     de l'énergie de liaison. De plus, l'énergie potentiellle du noyau sera
+     de l'énergie de liaison. De plus, l'énergie potentielle du noyau sera
      d'autant plus grande que les niveaux de Fermi des neutrons et protons
      seront proches (terme symétrique $a_A\frac{\left(N-Z\right)^2}{A}$). Ce
      terme d'asymétrie traduit le fait que les nucléons étant des fermions,
@@ -2595,9 +2595,9 @@ de radioéléments\nbsp^{11}C est nul à $t=0$.
    heures d'irradiation est
    #+BEGIN_SRC latex
      \begin{align*}
-       n(t=\unit[3]{h})=&\frac{4\,10^{12}\times10\,10^{-3}\times6.02\,10^{23}\times200\,10^{-24}}{\ln 2\times14}\\
-       &\times20.36\times60\times\left(1-e^{-\frac{\ln 2\times3\times60}{20.36}}\right)\\
-       =&\unit[6.05\,10^{11}]{noyaux}
+       n(t=\unit[3]{h})=&\frac{4\,10^{12}\times10\,10^{-3}\times6.02\,10^{23}\times200\,10^{-27}}{14}=\unit[3.44\,10^8]{noyaux/s}\\
+       &\times\frac{20.36\times60}{\ln 2}\times\left(1-e^{-\frac{\ln 2\times3\times60}{20.36}}\right)\\
+       =&\,\unit[6.05\,10^{11}]{noyaux}
      \end{align*}
    #+END_SRC
 2) À $t=t_0=\unit[3]{h}$, l'irradiation est stoppée, les noyaux de carbone ne
@@ -2607,7 +2607,8 @@ de radioéléments\nbsp^{11}C est nul à $t=0$.
        \mathcal{A}(t'=t-t_0=\unit[30]{min})&=\lambda\times n(t'=\unit[30]{min})\\
        &=\frac{\ln 2}{T}\times n(t_0)\,e^{-\lambda t'}\\
        &=\frac{\ln 2}{20.36\times60}\times6.05\,10^{11}\,e^{-\ln 2\times30/20.36}\\
-       &=\unit[1.24\,10^8]{Bq}=\unit[3.3]{mCi}
+       &=\unit[1.24\,10^8]{Bq}=\unit[124]{MBq}\\
+       &=\unit[3.3]{mCi}\text{ où }\unit[1]{Ci}=\unit[3.7\,10^{10}]{Bq}
      \end{align*}
    #+END_SRC
 3) Après 24 heures, l'activité de la "source" sera
@@ -2649,8 +2650,8 @@ de radioéléments\nbsp^{11}C est nul à $t=0$.
    que $\left.\frac{\partial B_N}{\partial Z}\right|_{Z_0}=0$ d'où
    #+BEGIN_SRC latex
      \begin{align*}
-       \left.\frac{\partial B_N}{\partial Z}\right|_{Z=Z_0}=\frac{2a_CZ_0}{A^{1/3}}-4a_A\frac{A-2Z_0}{A}&=0\\
-       a_CZ_0A^{2/3}-2A_AA+4a_AZ_0&=0\\
+       \left.\frac{\partial B_N}{\partial Z}\right|_{Z=Z_0}=-\frac{2a_CZ_0}{A^{1/3}}+4a_A\frac{A-2Z_0}{A}&=0\\
+       -a_CZ_0A^{2/3}+2A_AA-4a_AZ_0&=0\\
        Z_0&=\frac{2a_AA}{a_CA^{2/3}+4a_A}
      \end{align*}
    #+END_SRC
@@ -2673,8 +2674,8 @@ de radioéléments\nbsp^{11}C est nul à $t=0$.
       #+BEGIN_SRC latex
         \begin{align*}
           B_N&=a_VA-a_SA^{2/3}-\cancel{a_C\frac{Z^2}{A^{1/3}}}-a_A\frac{(Z-N)^2}{A}+\underbrace{\delta(Z,A)}_{\ll1}\\
-          &\text{ avec }A=Z+N=N\quad B_N=a_VN-a_ZN^{2/3}-a_A\frac{N^{\cancel{2}}}{\cancel{N}}\\
-          B_N&=\left(a_V-a_A\right)N-a_SN^{2/3}
+          &\text{ avec }A=Z+N=N\quad B_N=a_VN-a_SN^{2/3}-a_A\frac{N^{\cancel{2}}}{\cancel{N}}\\
+          B_N&=\left(a_V-a_A\right)N-a_SN^{2/3}<0
         \end{align*}
       #+END_SRC
       En tenant compte de l'énergie potentielle gravitationnelle, l'énergie de
@@ -2721,13 +2722,14 @@ de radioéléments\nbsp^{11}C est nul à $t=0$.
           &=1.377\,10^{37}\to N_0=5.11\,10^{55}
         \end{align*}
       #+END_SRC
-      Le rayon minimal d'une étoile à neutron est donc
+      Le rayon minimal d'une étoile à neutron est donc[fn:10]
       #+BEGIN_SRC latex
         \begin{align*}
           R_\text{min}&=r_0\times N_0^{1/3}=1.25\,10^{-15}\times\left(5.11\,10^{55}\right)^{1/3}\\
           &=\unit[4.64]{km}
         \end{align*}
       #+END_SRC
+
 ** Parabole de masse et désintégrations radioactives
 1) Désintégrations isobariques (\beta^{-}, \beta^{+}, CE)
 
@@ -2764,7 +2766,7 @@ de radioéléments\nbsp^{11}C est nul à $t=0$.
         $^A_Z\text{X}+e^-\to\,^A_{Z-1}\text{Y}+\nu_e$
         #+BEGIN_SRC latex
           \begin{align*}
-            Q>0 \Longleftrightarrow\,& m(A,Z)c^2+m_exc^2>m(A,Z-1)c^2\\
+            Q>0 \Longleftrightarrow\,& m(A,Z)c^2+m_ec^2>m(A,Z-1)c^2\\
             &M_\text{at.}(A,Z)c^2-Zm_ec^2+m_ec^2>M_\text{at.}(A,Z-1)c^2-(Z-1)m_ec^2\\
             &M_\text{at.}(A,Z)c^2>M_\text{at.}(A,Z-1)c^2\\
             &\Delta M_\text{at.}(A,Z)c^2>\Delta M_\text{at.}(A,Z+1)c^2\\
@@ -2786,6 +2788,7 @@ de radioéléments\nbsp^{11}C est nul à $t=0$.
 
 2) Le diagramme $M_\text{at.}c^2=f(Z)$ ou $\Delta M_\text{at.}c^2=f(Z)$ pour une
    famille d'isobares donnée est le suivant
+
    #+BEGIN_CENTER
    #+NAME: mass_parabola
    #+CAPTION: *Paraboles de masse pour les noyaux de la famille $A=58$*
@@ -2794,7 +2797,7 @@ de radioéléments\nbsp^{11}C est nul à $t=0$.
    #+END_CENTER
 
    L'expression de $M_\text{at.}c^2$ ou $\Delta M_\text{at.}c^2$ en fonction de
-   $Z$ prend la forme du parabole car
+   $Z$ prend la forme d'une parabole car
    #+BEGIN_SRC latex
      \begin{align*}
        \Delta M_\text{at.}(Z,A)c^2=&M_\text{at.}(Z,A)c^2 - 931.5A\\
@@ -2824,48 +2827,48 @@ de radioéléments\nbsp^{11}C est nul à $t=0$.
    L'énergie cinétique maximum des électrons/positrons émis respectivement par
    désintégration \beta^{-} et \beta^{+} sont les suivantes
 
-   - $^{58}_{24}Cr\to ^{58}_{25}Mn+e^-+\bar{\nu}_e$
+   - $^{58}_{24}\text{Cr}\to ^{58}_{25}\text{Mn}+e^-+\bar{\nu}_e$
      #+BEGIN_SRC latex
        \begin{align*}
-         Q_{\beta^-}& = \Delta M(^{58}_{24}Cr)c^2-\Delta M(^{58}_{25}Mn)c^2\\
+         Q_{\beta^-}& = \Delta M(^{58}_{24}\text{Cr})c^2-\Delta M(^{58}_{25}\text{Mn})c^2\\
          &=\unit[3.78]{MeV}=T_\text{max}(e^-)
        \end{align*}
      #+END_SRC
-   - $^{58}_{25}Mn\to ^{58}_{26}Fe+e^-+\bar{\nu}_e$
+   - $^{58}_{25}\text{Mn}\to ^{58}_{26}\text{Fe}+e^-+\bar{\nu}_e$
      #+BEGIN_SRC latex
        \begin{align*}
-         Q_{\beta^-}& = \Delta M(^{58}_{25}Mn)c^2-\Delta M(^{58}_{26}Fe)c^2\\
+         Q_{\beta^-}& = \Delta M(^{58}_{25}\text{Mn})c^2-\Delta M(^{58}_{26}\text{Fe})c^2\\
          &=\unit[6.32]{MeV}=T_\text{max}(e^-)
        \end{align*}
      #+END_SRC
-   - $^{58}_{27}Co\to ^{58}_{28}Ni+e^-+\bar{\nu}_e$
+   - $^{58}_{27}\text{Co}\to ^{58}_{28}\text{Ni}+e^-+\bar{\nu}_e$
      #+BEGIN_SRC latex
        \begin{align*}
-         Q_{\beta^-}& = \Delta M(^{58}_{27}Co)c^2-\Delta M(^{58}_{28}Ni)c^2\\
+         Q_{\beta^-}& = \Delta M(^{58}_{27}\text{Co})c^2-\Delta M(^{58}_{28}\text{Ni})c^2\\
          &=\unit[0.38]{MeV}=T_\text{max}(e^-)
        \end{align*}
      #+END_SRC
 
-   - $^{58}_{30}Zn+e^-\to ^{58}_{29}Cu+\nu_e$
+   - $^{58}_{30}\text{Zn}+e^-\to ^{58}_{29}\text{Cu}+\nu_e$
      #+BEGIN_SRC latex
        \begin{align*}
-         Q_\text{CE}& = \Delta M(^{58}_{30}Zn)c^2-\Delta M(^{58}_{29}Cu)c^2\\
+         Q_\text{CE}& = \Delta M(^{58}_{30}\text{Zn})c^2-\Delta M(^{58}_{29}\text{Cu})c^2\\
          &=\unit[9.45]{MeV}\\
          Q_{\beta^+}&=Q_\text{CE} - 2m_ec^2=\unit[8.48]{MeV}=T_\text{max}(e^+)
        \end{align*}
      #+END_SRC
-   - $^{58}_{29}Cu+e^-\to ^{58}_{28}Ni+\nu_e$
+   - $^{58}_{29}\text{Cu}+e^-\to ^{58}_{28}\text{Ni}+\nu_e$
      #+BEGIN_SRC latex
        \begin{align*}
-         Q_\text{CE}& = \Delta M(^{58}_{29}Cu)c^2-\Delta M(^{58}_{28}Ni)c^2\\
+         Q_\text{CE}& = \Delta M(^{58}_{29}\text{Cu})c^2-\Delta M(^{58}_{28}\text{Ni})c^2\\
          &=\unit[8.56]{MeV}\\
          Q_{\beta^+}&=Q_\text{CE} - 2m_ec^2=\unit[7.54]{MeV}=T_\text{max}(e^+)
        \end{align*}
      #+END_SRC
-   - $^{58}_{27}Co+e^-\to ^{58}_{26}Fe+\nu_e$
+   - $^{58}_{27}\text{Co}+e^-\to ^{58}_{26}\text{Fe}+\nu_e$
      #+BEGIN_SRC latex
        \begin{align*}
-         Q_\text{CE}& = \Delta M(^{58}_{27}Co)c^2-\Delta M(^{58}_{26}Fe)c^2\\
+         Q_\text{CE}& = \Delta M(^{58}_{27}\text{Co})c^2-\Delta M(^{58}_{26}\text{Fe})c^2\\
          &=\unit[2.31]{MeV}\\
          Q_{\beta^+}&=Q_\text{CE} - 2m_ec^2=\unit[1.29]{MeV}=T_\text{max}(e^+)
        \end{align*}
@@ -2915,6 +2918,13 @@ donc $\pi=(-1)^{2\ell}=+1$
 France, la limite d'exposition pour le public est fixée à 1 mSv par an *hors*
 exposition médicale. À titre de comparaison, une radiographie des poumons
 correspond à 0.1 mSv tout comme un voyage long courrier Paris-New York
-aller-retour. Les effets d'une cigarette sont eux évalué à 0.01 mSv par
+aller-retour. Les effets d'une cigarette sont eux évalués à 0.01 mSv par
 cigarette : la plupart des fumeurs dépassent très vite le seuil légal
 d'exposition de la population générale.
+
+[fn:10] si l'on calcule la masse minimale de cet objet à partir de
+$M_*=N_0\times m_n$, on trouve une masse $M_*=0.04M_\odot$ soit sensiblement
+plus faible que la masse typique d'une étoile à neutron $M_*=1.4M_\odot$ (masse
+de Chandrasekhar). En réalite, le rayon d'une étoile à neutron varie de 10 à 20
+km ce qui se traduit en terme de masse par une gamme entre 0.4 et 5 masses
+solaires.
