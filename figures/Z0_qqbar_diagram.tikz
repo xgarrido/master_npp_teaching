@@ -1,0 +1,45 @@
+\begin{tikzpicture}
+  \tikzset{%
+    >=latex, % option for nice arrows
+    inner sep=0pt,%
+    outer sep=2pt
+  }
+  \usetikzlibrary{decorations.markings}
+  \usetikzlibrary{decorations.pathmorphing}
+  \tikzset{snake it/.style={decorate, decoration=snake}}
+
+  \definecolor{red}{RGB}{221,42,43}
+  \definecolor{green}{RGB}{105,182,40}
+  \definecolor{blue}{RGB}{0,51,153}
+  \definecolor{orange}{RGB}{192,128,64}
+  \definecolor{gray}{gray}{0.7}
+  \sf
+  \LARGE
+
+  \clip (6,23) rectangle (12,17);
+
+  \begin{scope}[thick]
+    \draw[postaction={decorate}, decoration={markings, mark=at position 0.4 with
+        {\arrow{>}}}] (6,23) -- (8,21) node[midway, above left, yshift=-15pt] {$e^-$};
+
+    \draw[postaction={decorate}, decoration={markings, mark=at position 0.4
+        with {\arrow{<}}}] (6,19) -- (8,21) node[midway, below left,
+      yshift=+15pt] {$e^+$};
+
+    \draw[postaction={decorate}, decoration={markings, mark=at position 0.7 with
+        {\arrow{<}}}] (10,21) -- (12,19) node[midway, above right] {$\bar{q}$};
+
+    \draw[postaction={decorate}, decoration={markings, mark=at position 0.7 with
+        {\arrow{>}}}] (10,21) -- (12,23) node[midway, below right] {$q$};
+
+    %% Z^0
+    \draw[blue,snake it] (8,21) -- (10, 21) node[midway, above, yshift=5pt] {$Z^0$};
+
+    \draw (9,18) node[text width=5cm, align=center] {\large{}$q=u,d,c,s,b$ (pas $t$ car trop lourd)};
+  \end{scope}
+\end{tikzpicture}%
+
+%% Configure (x)emacs for this file ...
+%% Local Variables:
+%% mode: latex
+%% End:
