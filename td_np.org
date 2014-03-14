@@ -219,21 +219,18 @@ des particules en voie de sortie sans que ces dernières n'aient d'impulsion
    $m_{a} = m_{b}$, l'énergie totale de la particule a est égale à celle de la
    particule $b$. En appliquant le principe de conservation de l'énergie totale,
    on obtient
-
    #+BEGIN_SRC latex
      \begin{align*}
        E_a^* + E_b^* &= m_cc^2 + m_dc^2 + m_ec^2 + m_fc^2 = \Upsigma m_\text{finale}c^2\\
        2T_S + 2mc^2 &= \Upsigma m_\text{finale}c^2
      \end{align*}
    #+END_SRC
-
    soit
-
-    #+BEGIN_SRC latex
-      \begin{align*}
-        T_{S} = \frac{\Upsigma m_\text{finale}c^2 - \Upsigma m_\text{initiale}c^2}{2}
-      \end{align*}
-    #+END_SRC
+   #+BEGIN_SRC latex
+     \begin{align*}
+       T_{S} = \frac{\Upsigma m_\text{finale}c^2 - \Upsigma m_\text{initiale}c^2}{2}
+     \end{align*}
+   #+END_SRC
 
    En définissant $Q$ comme la chaleur de réaction /i.e./ l'énergie disponible
    dans la réaction où $Q = \Upsigma m_\text{initiale}c^{2} - \Upsigma
@@ -522,34 +519,38 @@ est de 2.2 \mu{}s, ce temps est "boosté" par le facteur de Lorentz soit \tau =
    p_\pi^2c^2 + p_p^2c^2 + 2p_\pi p_p c^2\cos\theta\]
 
    *AN :*
-   \[p_{V_1}c = \sqrt{160^2 + 320^2 + 2\cdot160\cdot320\cos 65} = \unit[413]{MeV}\]
-   \[p_{V_2}c = \sqrt{220^2 + 220^2 + 2\cdot220^2\cos 135} = \unit[168]{MeV}\]
-   \[m_{V_1}c^2 = \left[\sqrt{160^2 + 140^2} + \sqrt{320^2 + 938^2} - 413^2\right]^{1/2} = \unit[1130]{MeV}\]
-   \[m_{V_2}c^2 = \left[4\cdot(220^2 + 140^2) - 168^2\right]^{1/2} = \unit[493]{MeV}\]
+   #+BEGIN_SRC latex
+     \begin{align*}
+        p_{V_1}c &= \sqrt{160^2 + 320^2 + 2\cdot160\cdot320\cos 65} = \unit[413]{MeV}\\
+        p_{V_2}c &= \sqrt{220^2 + 220^2 + 2\cdot220^2\cos 135} = \unit[168]{MeV}\\
+        m_{V_1}c^2 &= \left[\sqrt{160^2 + 140^2} + \sqrt{320^2 + 938^2} - 413^2\right]^{1/2} = \unit[1130]{MeV}\\
+        m_{V_2}c^2 &= \left[4\cdot(220^2 + 140^2) - 168^2\right]^{1/2} = \unit[493]{MeV}
+     \end{align*}
+   #+END_SRC
 
    *Discussion :* À l'époque, seuls le proton, neutron, électron, pion et muon
    sont connus \rightarrow $V_1 = \Lambda^0$ et $V_2 = K^0$
 
 2) $d_{\Lambda^0} = \unit[3.2]{cm}$ et $d_{K^0} = \unit[0.8]{cm}$
-
-   \[T_{\Lambda^0} = \sqrt{m_{\Lambda^0}^2c^4 + p_{\Lambda^0}^2c^2} -
-   m_{\Lambda^0}c^2 = \unit[73]{MeV} \ll m_{\Lambda^0}c^2 T_{K^0} =
-   \sqrt{m_{K^0}^2c^4 + p_{K^0}^2c^2} - m_{K^0}c^2 = \unit[28]{MeV} \ll
-   m_{K^0}c^2\]
+   #+BEGIN_SRC latex
+     \begin{align*}
+       T_{\Lambda^0} &= \sqrt{m_{\Lambda^0}^2c^4 + p_{\Lambda^0}^2c^2} - m_{\Lambda^0}c^2 = \unit[73]{MeV} \ll m_{\Lambda^0}c^2\\
+       T_{K^0} &= \sqrt{m_{K^0}^2c^4 + p_{K^0}^2c^2} - m_{K^0}c^2 = \unit[28]{MeV} \ll m_{K^0}c^2
+     \end{align*}
+   #+END_SRC
 
    \[\tau_{\Lambda^0} = \frac{d_{\Lambda^0}}{v}\] or $p=mv$ d'où
    \[\tau_{\Lambda^0} = \frac{d_{\Lambda^0}\cdot m_{\Lambda^0}}{p} =
    \frac{d_{\Lambda^0}}{c}\cdot \frac{m_{\Lambda^0}c^2}{pc}\]
 
    *AN :*
+   #+BEGIN_SRC latex
+     \begin{align*}
+       \tau_{\Lambda^0} &= \frac{\unit[0.032]{m}}{\unit[3\,10^8]{m/s}}\cdot\frac{\unit[1130]{MeV}}{\unit[413]{MeV}} = \unit[2.9\,10^{-10}]{s}\\
+       \tau_{K^0} &= \frac{\unit[0.008]{m}}{\unit[3\,10^8]{m/s}}\cdot\frac{\unit[493]{MeV}}{\unit[168]{MeV}} = \unit[7.8\,10^{-11}]{s}
+     \end{align*}
+   #+END_SRC
 
-   \[\tau_{\Lambda^0} =
-   \frac{\unit[0.032]{m}}{\unit[3\,10^8]{m/s}}\cdot\frac{\unit[1130]{MeV}}{\unit[413]{MeV}}
-   = \unit[2.9\,10^{-10}]{s}\]
-
-   \[\tau_{K^0} =
-   \frac{\unit[0.008]{m}}{\unit[3\,10^8]{m/s}}\cdot\frac{\unit[493]{MeV}}{\unit[168]{MeV}}
-   = \unit[7.8\,10^{-11}]{s}\]
 
 3) \tau est un temps caractéristique d'une désintégration par interaction
    faible : \tau > 10^{-13} s (/cf./ page 30)
@@ -558,7 +559,7 @@ est de 2.2 \mu{}s, ce temps est "boosté" par le facteur de Lorentz soit \tau =
    paire implique la conservation d'une quantité jusqu'alors inconnue
    \rightarrow introduction de *l'étrangeté* $S$ comme nouveau nombre quantique.
    Cette quantité est ainsi conservée lors de la production des particules $V$
-   par *interaction forte* mais non-conservé lors de leurs désintégrations (par
+   par *interaction forte* mais non-conservée lors de leurs désintégrations (par
    interaction faible) : $S_{K^0}$ = +1, $S_{\Lambda^0}$ = -1 et $S$ est nulle
    pour toutes les particules connues jusqu'à présent. Il découlera de ces
    résultats expérimentaux le modèle des quarks introduit par Murray Gell-Mann
@@ -2875,6 +2876,60 @@ de radioéléments\nbsp^{11}C est nul à $t=0$.
      #+END_SRC
 
 
+* TD9 : Modèle Standard et au-delà : l'interaction faible
+** Masse et largeur du $Z^0$ -- Nombre de familles de neutrinos
+Le LEP (pour /Large Electron Positron collider/) était un accélérateur de
+particules circulaire de 27 km de circonférence, passant sous le site du CERN
+entre la France et la Suisse. En fonction de 1989 à 2000, le LEP demeure le plus
+puissant collisionneur de leptons jamais construit.
+
+La production de $Z^0$ intervient par la collision de $e^+e^-$. Ce boson se
+désintègre /via/ différents canaux dont la désintégration $Z^0\to e^+e^-$ dont
+la figure représente la section efficace en fonction de l'énergie des $e^+e^-$
+incidents.
+
+1) Les faisceaux d'électrons-positrons sont accélérés à la même énergie mais
+   avec des impulsions opposées. Par conservation de l'impulsion, le $Z^0$ ainsi
+   produit est au repos et les deux leptons produits par désintégration sont
+   donc émis dos-à-dos. La masse du $Z^0$ correspond donc à la position en
+   énergie du maximum de production /i.e./ à la résonance soit une masse de
+   $m_{Z^0}c^2=\unit[91.2]{GeV}$ (la mesure figurant dans le PDG donne
+   91.1876 \pm 0.0021 GeV). La largeur à mi-hauteur mesurée sur cette figure
+   donne $\Gamma(Z^0)=2\times(91.2-90)=\unit[2.4]{GeV}$ (contre 2.4952 \pm
+   0.0023 GeV dans le PDG).
+2) $\Gamma(Z^0)\gg\Gamma(Z^0\to e^+e-)$. La durée de vie du boson $Z^0$ est une
+   propriété intrinsèque à cette particule : elle ne dépond donc pas du mode de
+   désintégration. À titre d'exemple, la mesure du taux de désintégration de
+   $Z^0\to\mu^+\mu^-$ donnerait un résultat expérimental identique. À partir de
+   la distribution en masse invariante, la largeur de la résonance est donc la
+   convolution de l'ensemble des modes de désintégration du $Z^0$ (à laquelle
+   s'ajoute les effets expérimentaux tels que la résolution en énergie du
+   calorimètre électromagnétique). On ne peut donc expérimentalement isolé les
+   différents modes de désintégrations du $Z^0$.
+3)
+4) Calcul du nombre de neutrinos
+   #+BEGIN_SRC latex
+     \begin{align*}
+       \Gamma_\text{tot.}(Z^0)=N_\nu\Gamma(Z^0\to\nu\bar{\nu})+N_l\Gamma(Z^0\to l^-l^+)+\Gamma_\text{tot.}(Z^0\to q\bar{q})=\unit[2495]{MeV}
+     \end{align*}
+   #+END_SRC
+   avec $\Gamma_\text{tot.}(Z^0\to q\bar{q})=\unit[1741]{MeV}$, $\Gamma(Z^0\to
+   l^-l^+)=\Gamma(Z^0\to e^-e^+)=\unit[84]{MeV}$ et
+   #+BEGIN_SRC latex
+     \begin{align*}
+       \Gamma(Z^0\to\nu\bar{\nu})=\frac{\alpha_\text{em}\,M_{Z^0}c^2}{24\sin^2\theta_W\cos^2\theta_W}
+     \end{align*}
+   #+END_SRC
+
+   Ainsi, le nombre de neutrinos $N_\nu$ s'écrit
+   #+BEGIN_SRC latex
+     \begin{align*}
+       N_\nu&=\frac{\Gamma_\text{tot.}(Z^0)-N_l\Gamma(Z^0\to l^-l^+)-\Gamma_\text{tot.}(Z^0\to q\bar{q})}{\Gamma(Z^0\to\nu\bar{\nu})}\\
+       &=\frac{\Gamma_\text{tot.}(Z^0)-N_l\Gamma(Z^0\to l^-l^+)-\Gamma_\text{tot.}(Z^0\to q\bar{q})}{\alpha_\text{em}\,M_{Z^0}c^2}\times24\sin^2\theta_W\cos^2\theta_W\\
+       &=\frac{2495-3\times84-1741}{91.2\,10^3}\times128\times24\times0.23\times(1-0.23)\\
+       &=2.99\text{ soit 3 familles de neutrinos}
+     \end{align*}
+   #+END_SRC
 
 * Footnotes
 
