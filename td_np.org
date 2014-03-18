@@ -1317,10 +1317,10 @@ avec $I^\pi(d)=1^+$ et $\vv{L}_{\pi d}=\vv{0}$
 ** Sections efficaces de production de pions
 
 #+BEGIN_SRC latex
-  \begin{align}
+  \begin{align*}
     p+p&\rightarrow d+\pi^+\\
     p+n&\rightarrow d+\pi^0
-  \end{align}
+  \end{align*}
 #+END_SRC
 
 1) Calcul de l'énergie cinétique minimale
@@ -2875,17 +2875,17 @@ de radioéléments\nbsp^{11}C est nul à $t=0$.
        \end{align*}
      #+END_SRC
 
-
 * TD9 : Modèle Standard et au-delà : l'interaction faible
 ** Masse et largeur du $Z^0$ -- Nombre de familles de neutrinos
 Le LEP (pour /Large Electron Positron collider/) était un accélérateur de
 particules circulaire de 27 km de circonférence, passant sous le site du CERN
 entre la France et la Suisse. En fonction de 1989 à 2000, le LEP demeure le plus
-puissant collisionneur de leptons jamais construit.
+puissant collisionneur de leptons jamais construit
+($E_\text{max}=\unit[200]{GeV}$).
 
 La production de $Z^0$ intervient par la collision de $e^+e^-$. Ce boson se
-désintègre /via/ différents canaux dont la désintégration $Z^0\to e^+e^-$ dont
-la figure représente la section efficace en fonction de l'énergie des $e^+e^-$
+désintègre /via/ différents canaux dont la désintégration $Z^0\to e^+e^-$. La
+figure présente la section efficace en fonction de l'énergie des $e^+e^-$
 incidents.
 
 1) Les faisceaux d'électrons-positrons sont accélérés à la même énergie mais
@@ -2893,10 +2893,10 @@ incidents.
    produit est au repos et les deux leptons produits par désintégration sont
    donc émis dos-à-dos. La masse du $Z^0$ correspond donc à la position en
    énergie du maximum de production /i.e./ à la résonance soit une masse de
-   $m_{Z^0}c^2=\unit[91.2]{GeV}$ (la mesure figurant dans le PDG donne
-   91.1876 \pm 0.0021 GeV). La largeur à mi-hauteur mesurée sur cette figure
-   donne $\Gamma(Z^0)=2\times(91.2-90)=\unit[2.4]{GeV}$ (contre 2.4952 \pm
-   0.0023 GeV dans le PDG).
+   $M_{Z^0}c^2=\unit[91.2]{GeV}$ (la mesure figurant dans le PDG donne 91.1876
+   \pm 0.0021 GeV). La largeur à mi-hauteur mesurée est
+   $\Gamma(Z^0)=2\times(91.2-90)=\unit[2.4]{GeV}$ (contre 2.4952 \pm 0.0023 GeV
+   dans le PDG).
 2) $\Gamma(Z^0)\gg\Gamma(Z^0\to e^+e^-)$. La durée de vie du boson $Z^0$ est une
    propriété intrinsèque à cette particule : elle ne dépond donc pas du mode de
    désintégration. À titre d'exemple, la mesure du taux de désintégration de
@@ -2928,8 +2928,8 @@ incidents.
    Ainsi, le nombre de neutrinos $N_\nu$ s'écrit
    #+BEGIN_SRC latex
      \begin{align*}
-       N_\nu&=\frac{\Gamma_\text{tot.}(Z^0)-N_l\Gamma(Z^0\to \ell^-\ell^+)-\Gamma_\text{tot.}(Z^0\to q\bar{q})}{\Gamma(Z^0\to\nu\bar{\nu})}\\
-       &=\frac{\Gamma_\text{tot.}(Z^0)-N_l\Gamma(Z^0\to \ell^-\ell^+)-\Gamma_\text{tot.}(Z^0\to q\bar{q})}{\alpha_\text{em}\,M_{Z^0}c^2}\times24\sin^2\theta_W\cos^2\theta_W\\
+       N_\nu&=\frac{\Gamma_\text{tot.}(Z^0)-N_\ell\Gamma(Z^0\to \ell^-\ell^+)-\Gamma_\text{tot.}(Z^0\to q\bar{q})}{\Gamma(Z^0\to\nu\bar{\nu})}\\
+       &=\frac{\Gamma_\text{tot.}(Z^0)-N_\ell\Gamma(Z^0\to \ell^-\ell^+)-\Gamma_\text{tot.}(Z^0\to q\bar{q})}{\alpha_\text{em}\,M_{Z^0}c^2}\times24\sin^2\theta_W\cos^2\theta_W\\
        &=\frac{2495-3\times84-1741}{91.2\,10^3}\times128\times24\times0.23\times(1-0.23)\\
        &=2.99\text{ soit 3 familles de neutrinos}
      \end{align*}
@@ -2947,8 +2947,8 @@ incidents.
    Le flux de neutrinos sur Terre est alors
    #+BEGIN_SRC latex
      \begin{align*}
-       F_\nu&=\frac{N_\nu}{4\pi\,R^2}=\frac{1.78\,10^{38}}{4\pi\,(1.5\,10^11)^2}\\
-       &=6.33\,10^{14}\,\text{m$^2$.s$^{-1}$}
+       F_\nu&=\frac{N_\nu}{4\pi\,R^2}=\frac{1.78\,10^{38}}{4\pi\,(1.5\,10^{11})^2}\\
+       &=6.33\,10^{14}\,\text{m$^{-2}$.s$^{-1}$}
      \end{align*}
    #+END_SRC
 2) 3% de l'énergie libérée par chaque réaction $Q=\unit[26.72]{MeV}$ est
@@ -2988,22 +2988,21 @@ incidents.
    est nécessairement inférieure à
    #+BEGIN_SRC latex
      \begin{align*}
-       \Updelta t\leq\unit[10]{s}&\Longleftrightarrow m_\nu c^2\leq\sqrt{\frac{\Updelta t\times2c}{D}\times\frac{1}{1/E_1^2-1/E_2^2}}\\
-       &\Longleftrightarrow m_\nu c^2\leq\sqrt{\frac{2\Updelta tc}{D}\times\frac{E_1^2E_2^2}{E_2^2-E_1^2}}\\
-       &\Longleftrightarrow m_\nu c^2\leq E_1E_2\sqrt{\frac{2\Updelta tc}{D}\frac{1}{E_2^2-E_1^2}}\\
-       &\Longleftrightarrow m_\nu c^2\leq 5\times20\sqrt{\frac{20\times\cancel{c}}{1.7\,10^5\times\cancel{c}\times3600\times24\times365}\times\frac{1}{20^2-5^2}}\\
-       &\Longleftrightarrow m_\nu c^2\leq 5\times20\sqrt{\frac{20}{1.7\times3.15}\times\frac{1}{400-25}}\times\unit[10^{-6}]{MeV}\\
-       &\Longleftrightarrow m_\nu c^2\leq\unit[10]{eV}
+       \Updelta t\leq\unit[10]{s}\Longleftrightarrow&m_\nu c^2\leq\sqrt{\frac{\Updelta t\times2c}{D}\times\frac{1}{1/E_1^2-1/E_2^2}}\\
+       &m_\nu c^2\leq\sqrt{\frac{2\Updelta tc}{D}\times\frac{E_1^2E_2^2}{E_2^2-E_1^2}}\\
+       &m_\nu c^2\leq E_1E_2\sqrt{\frac{2\Updelta tc}{D}\frac{1}{E_2^2-E_1^2}}\\
+       &m_\nu c^2\leq 5\times20\sqrt{\frac{20\times\cancel{c}}{1.7\,10^5\times\cancel{c}\times3600\times24\times365}\times\frac{1}{20^2-5^2}}\\
+       &m_\nu c^2\leq 5\times20\sqrt{\frac{20}{1.7\times3.15}\times\frac{1}{400-25}}\times\unit[10^{-6}]{MeV}\\
+       &m_\nu c^2\leq\unit[10]{eV}
      \end{align*}
    #+END_SRC
 
    Le résultat final fut $m_{\nu_e}c^2\leq\unit[7]{eV}$ [fn:11], valeur qui,
    grâce aux expériences de mesure directe de la masse du neutrino électronique
    /via/ l'étude du /end-point/ du spectre de désintégration \beta du tritium,
-   Mainz and Troitztk, ont abaissé cette limite à
-   $m_{\nu_e}\leq\unit[2.2]{eV}$. La future expérience Katrin devait gagner
-   encore un ordre de grandeur sur la sensibilité :
-   $m_{\nu_e}\leq\unit[0.2]{eV}$.
+   Mainz et Troitztk, atteint aujourd'hui $m_{\nu_e}\leq\unit[2.2]{eV}$. La
+   future expérience Katrin devait gagner encore un ordre de grandeur sur la
+   sensibilité : $m_{\nu_e}\leq\unit[0.2]{eV}$.
 
 ** Les mésons neutres $K^0$ et $\bar{K}^0$
 1) Les états "fictifs" $\ket{K^0_1}$ et $\ket{K^0_2}$ sont des états propres de
@@ -3012,7 +3011,7 @@ incidents.
    de l'opérateur $\hat{\mathcal{C}}\hat{\mathcal{P}}$ et ont des valeurs
    propres identiques à celle des états $\ket{K^0_1}$ et $\ket{K^0_2}$. Les
    états physique $\ket{K^0}$ et $\ket{\bar{K}^0}$ étant un mélange des états
-   propres $\ket{K^0_1}$ et $\ket{K^0_2}$ et se déintégrant aussi bien en deux
+   propres $\ket{K^0_1}$ et $\ket{K^0_2}$ et se désintégrant aussi bien en deux
    et trois pions, on déduit, par association des valeurs propres, que l'état
    $\ket{K^0_1}\equiv\ket{2\pi}$ et $\ket{K^0_2}\equiv\ket{3\pi}$. La durée de
    vie moyenne de ces deux états est ainsi
@@ -3038,9 +3037,10 @@ incidents.
         \end{align*}
       #+END_SRC
    2) Faisceau de $K^0$ à $p=\unit[10]{GeV/c}$. Initialement, le faisceau est
-      donc constitué pour moitié de "particules" $K_1^0$ et de "particules"
-      $K_2^0$. On suppose par ailleurs que la masse et l'impulsion de ces
-      particules sont identiques.
+      donc constitué pour moitié de "particules" $K_1^0$, l'autre moitié étant
+      les "particules" $K_2^0$. On suppose par ailleurs que la masse et
+      l'impulsion de ces particules sont identiques
+      ($\beta_1=\beta_2=\beta_{K^0}$).
       1) Après un parcours de longueur $L=\unit[10]{m}$, l'intensité respective
          de chaque composante, $K^0_1$ et $K^0_2$, du faisceau est
          #+BEGIN_SRC latex
