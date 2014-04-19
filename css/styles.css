@@ -46,15 +46,13 @@ h4, h5, h6 {
 }
 
 a {
-    color: #67ad00;
-    /*color: #3399cc;*/
+    color: #3399cc;
     font-weight:400;
     text-decoration:none;
 }
 
 a:hover {
-    color: #7fd600;
-    /*color: #006699;*/
+    color: #006699;
 }
 
 a small {
