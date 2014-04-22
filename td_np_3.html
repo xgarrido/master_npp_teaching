@@ -1,0 +1,869 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<title>TD4 : Modèle des quarks &#x2013; Les hadrons</title>
+<meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta  name="generator" content="Org-mode" />
+<link rel="stylesheet" href="css/styles.css">
+                 <link rel="stylesheet" href="css/org-pygments.css">
+                 <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+<script type="text/javascript">
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2013 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script><script type="text/javascript">
+function displayTOC() {
+    var first = document.getElementById("text-table-of-contents").innerHTML;
+    if (first != "") {
+        var maincontent = '<a class="button"><i class="fa fa-list"></i></a>'
+        maincontent += "<div>" + first + "</div>";
+        document.getElementById("toc").innerHTML = maincontent;
+    } else {
+        document.getElementById("toc").style.display = "none";
+    }
+   }
+</script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+      TeX: {
+          extensions: ["cancel.js"],
+          Macros: {
+              vv: ["{\\vec #1}",1],
+              Upsigma: "{\\Sigma}",
+              Updelta: "{\\Delta}",
+              varoiint: "{\\iint}",
+              varoint: "{\\int}",
+              grad: "{\\vec{\\nabla}}",
+              div: "{\\vec{\\nabla}.}",
+              rot: "{\\vec{\\nabla}\\times\\,}",
+              ket: ["{|#1 \\rangle}",1],
+              bra: ["{\\langle#1|}",1],
+              psh: ["{\\langle#1|#2 \\rangle}",2],
+              bm: ["{\\boldsymbol #1}",1]
+          }
+      }
+  });
+  MathJax.Hub.Register.StartupHook("TeX Jax Ready",function () {
+      var TEX = MathJax.InputJax.TeX;
+      TEX.Definitions.macros.unit = "jaxunit";
+      TEX.Parse.Augment({
+          jaxunit: function (name) {
+              var n = this.GetBrackets(name),
+              unit = this.GetArgument(name)
+              if (n == null) {n = ""}
+              var tex = n + '\\,\\text{'+unit+'}';
+              this.string = tex + this.string.slice(this.i); this.i = 0;
+          }
+      });
+  });
+  </script>
+  <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+</head>
+<body onload="displayTOC()"><div id="toc"></div>
+<div id="content">
+<h1 class="title">TD4 : Modèle des quarks &#x2013; Les hadrons</h1>
+<div style="display:none;">
+<div id="text-table-of-contents">
+<ul class="org-ul">
+<li><a href="././td_np_0.html">TD1 : Cinématique &amp; Accélérateurs</a>
+</li>
+<li><a href="././td_np_1.html">TD2 : Nombres Quantiques &amp; Symétries</a>
+</li>
+<li><a href="././td_np_2.html">TD3 : Réactions de production et de désintégration de particules</a>
+</li>
+<li><a href="././td_np_3.html">TD4 : Modèle des quarks &#x2013; Les hadrons</a>
+</li>
+<li><a href="././td_np_4.html">TD5 : Isospin &#x2013; des quarks aux noyaux</a>
+</li>
+<li><a href="././td_np_5.html">TD6 : Structure nucléaire</a>
+</li>
+<li><a href="././td_np_6.html">TD7 : Réactions nucléaires</a>
+</li>
+<li><a href="././td_np_7.html">TD8 : Masses et désintégrations nucléaires</a>
+</li>
+<li><a href="././td_np_8.html">TD9 : Modèle Standard et au-delà : l'interaction faible</a>
+</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-sec-1" class="outline-2">
+<h2 id="sec-1"><span class="section-number-2">1</span> Les mésons constitués des quarks \(u,d,s\) et de leurs antiquarks</h2>
+<div class="outline-text-2" id="text-1">
+<ol class="org-ol">
+<li>Opérateur conjugaison particule &#x2013; antiparticule \(\hat{c}\) :
+\(q\overset{\hat{c}}{\rightarrow}\bar{q}\)
+
+<ul class="org-ul">
+<li>\(\vv{T},\vv{I},mc^2\overset{\hat{c}}{\rightarrow}\vv{T},\vv{I},mc^2\)
+</li>
+<li>\(Q/e,B,T_3,S,c,b,t\overset{\hat{c}}{\rightarrow}-Q/e,-B,-T_3,-S,-c,-b,-t\)
+</li>
+<li>Parite &pi; : fermions \(\pi\overset{\hat{c}}{\rightarrow}-\pi\), bosons
+\(\pi\overset{\hat{c}}{\rightarrow}\pi\)
+</li>
+</ul>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="void">
+
+
+<colgroup>
+<col  class="left" />
+
+<col  class="left" />
+
+<col  class="left" />
+
+<col  class="left" />
+
+<col  class="right" />
+
+<col  class="right" />
+
+<col  class="right" />
+
+<col  class="right" />
+
+<col  class="right" />
+
+<col  class="right" />
+
+<col  class="right" />
+</colgroup>
+<tbody>
+<tr>
+<td class="left">&#xa0;</td>
+<td class="left">\(I\)</td>
+<td class="left">\(Q/e\)</td>
+<td class="left">B</td>
+<td class="right">T</td>
+<td class="right">\(T_{3}\)</td>
+<td class="right">\(S\)</td>
+<td class="right">\(c\)</td>
+<td class="right">\(b\)</td>
+<td class="right">\(t\)</td>
+<td class="right">\(\pi\)</td>
+</tr>
+
+<tr>
+<td class="left">\(\bar{u}\)</td>
+<td class="left">1/2</td>
+<td class="left">-2/3</td>
+<td class="left">-1/3</td>
+<td class="right">1/2</td>
+<td class="right">-1/2</td>
+<td class="right">0</td>
+<td class="right">0</td>
+<td class="right">0</td>
+<td class="right">0</td>
+<td class="right">-1</td>
+</tr>
+
+<tr>
+<td class="left">\(\bar{d}\)</td>
+<td class="left">1/2</td>
+<td class="left">1/3</td>
+<td class="left">-1/3</td>
+<td class="right">1/2</td>
+<td class="right">1/2</td>
+<td class="right">0</td>
+<td class="right">0</td>
+<td class="right">0</td>
+<td class="right">0</td>
+<td class="right">-1</td>
+</tr>
+
+<tr>
+<td class="left">\(\bar{c}\)</td>
+<td class="left">1/2</td>
+<td class="left">-2/3</td>
+<td class="left">-1/3</td>
+<td class="right">0</td>
+<td class="right">0</td>
+<td class="right">0</td>
+<td class="right">-1</td>
+<td class="right">0</td>
+<td class="right">0</td>
+<td class="right">-1</td>
+</tr>
+
+<tr>
+<td class="left">\(\bar{s}\)</td>
+<td class="left">1/2</td>
+<td class="left">1/3</td>
+<td class="left">-1/3</td>
+<td class="right">0</td>
+<td class="right">0</td>
+<td class="right">+1</td>
+<td class="right">0</td>
+<td class="right">0</td>
+<td class="right">0</td>
+<td class="right">-1</td>
+</tr>
+
+<tr>
+<td class="left">\(\bar{t}\)</td>
+<td class="left">1/2</td>
+<td class="left">-2/3</td>
+<td class="left">-1/3</td>
+<td class="right">0</td>
+<td class="right">0</td>
+<td class="right">0</td>
+<td class="right">0</td>
+<td class="right">0</td>
+<td class="right">-1</td>
+<td class="right">-1</td>
+</tr>
+
+<tr>
+<td class="left">\(\bar{b}\)</td>
+<td class="left">1/2</td>
+<td class="left">1/3</td>
+<td class="left">-1/3</td>
+<td class="right">0</td>
+<td class="right">0</td>
+<td class="right">0</td>
+<td class="right">0</td>
+<td class="right">+1</td>
+<td class="right">0</td>
+<td class="right">-1</td>
+</tr>
+</tbody>
+</table>
+</li>
+
+<li>\(\vv{L_i} = \vv{0}\): méson &equiv; 1 quark + 1 antiquark
+
+<p>
+\[\pi(q\bar{q}) = (+1)\cdot(-1)\cdot(-1)^{L_i} = -1\]
+</p>
+\begin{align*}
+  \vv{I}(q\bar{q}) = \vv{I}_q + \vv{I}_{\bar{q}} + \vv{L}_i &= \vv{S}_q +
+  \vv{S}_{\bar{q}} + \vv{L}_i \\
+  &= \vv{1}/2 + \vv{1}/2 + \vv{0}\\
+  &=\vv{0}\text{ ou }\vv{1}
+\end{align*}
+
+<p>
+Pour un méson avec \(\vv{L}_i = \vv{L}(q\bar{q}) = \vv{0}\) &rarr; \(I^\pi
+   = 0^-\) ou \(1^-\)
+</p>
+
+<p>
+L'isospin \(\vv{T}(q\bar{q}) = \vv{T}(q) + \vv{T}(\bar{q})\)
+</p>
+
+<ul class="org-ul">
+<li>mésons \(u\bar{d}\) ou \(\bar{u}d\) &rarr; \(\vv{T} = \vv{0}\) ou \(\vv{1}\) or
+\(T_3 = \pm1\) donc \(\vv{T} = \vv{1}\)
+</li>
+<li>mésons contenant \(u,d,\bar{u},\bar{d}\) \(\vv{T} = \vv{1}/2\)
+</li>
+<li>mésons ne contenant ni \(u,d,\bar{u},\bar{d}\) \(\vv{T} = \vv{0}\)
+</li>
+</ul>
+</li>
+
+<li>\((u,d,s)\times(\bar{u},\bar{d},\bar{s}) = 3\times3 = 9\) mésons.
+L'étrangeté \(S=-1,0,1\), la 3<sup>ème</sup> composante de l'isospin \(T_3\) &isin;
+[-1,-1/2,0,1/2,+1]
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="void">
+
+
+<colgroup>
+<col  class="left" />
+
+<col  class="right" />
+
+<col  class="right" />
+
+<col  class="right" />
+</colgroup>
+<tbody>
+<tr>
+<td class="left">&#xa0;</td>
+<td class="right">\(S\)</td>
+<td class="right">\(T_3\)</td>
+<td class="right">\(Q/e\)</td>
+</tr>
+
+<tr>
+<td class="left">\(u\bar{u}\)</td>
+<td class="right">0</td>
+<td class="right">0</td>
+<td class="right">0</td>
+</tr>
+
+<tr>
+<td class="left">\(u\bar{d}\)</td>
+<td class="right">0</td>
+<td class="right">1</td>
+<td class="right">+1</td>
+</tr>
+
+<tr>
+<td class="left">\(u\bar{s}\)</td>
+<td class="right">+1</td>
+<td class="right">1/2</td>
+<td class="right">+1</td>
+</tr>
+
+<tr>
+<td class="left">\(d\bar{u}\)</td>
+<td class="right">0</td>
+<td class="right">-1</td>
+<td class="right">-1</td>
+</tr>
+
+<tr>
+<td class="left">\(d\bar{d}\)</td>
+<td class="right">0</td>
+<td class="right">0</td>
+<td class="right">0</td>
+</tr>
+
+<tr>
+<td class="left">\(d\bar{s}\)</td>
+<td class="right">+1</td>
+<td class="right">-1/2</td>
+<td class="right">0</td>
+</tr>
+
+<tr>
+<td class="left">\(s\bar{u}\)</td>
+<td class="right">-1</td>
+<td class="right">-1/2</td>
+<td class="right">-1</td>
+</tr>
+
+<tr>
+<td class="left">\(s\bar{d}\)</td>
+<td class="right">-1</td>
+<td class="right">1/2</td>
+<td class="right">0</td>
+</tr>
+
+<tr>
+<td class="left">\(s\bar{s}\)</td>
+<td class="right">0</td>
+<td class="right">0</td>
+<td class="right">0</td>
+</tr>
+</tbody>
+</table>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="void">
+<caption class="t-above"><span class="table-number">Table 1:</span> <b>Combinaison de quark \(u,d,s\) pour former des mésons de moment cinétique \(I^\pi=0^-\)</b></caption>
+
+<colgroup>
+<col  class="left" />
+
+<col  class="left" />
+</colgroup>
+<tbody>
+<tr>
+<td class="left"><img src="./figures/meson_uds_0.png" alt="meson_uds_0.png" /></td>
+<td class="left"><img src="./figures/meson_uds_1.png" alt="meson_uds_1.png" /></td>
+</tr>
+</tbody>
+</table>
+
+<ul class="org-ul">
+<li>1 triplet d'isospin
+\(\pi^+(u\bar{d}),\pi^-(\bar{u}d),\pi^0\left(\frac{1}{\sqrt{2}}(u\bar{u}-d\bar{d})\right)\)
+</li>
+<li>2 doublets d'isospin \(K^+(u\bar{s})\), \(K^0(d\bar{s})\) et \(K^-(\bar{u}s)\),
+\(\bar{K}^0(\bar{d}s)\)
+</li>
+<li>2 singulets d'isospin
+\(\eta\left(\frac{1}{\sqrt{6}}(u\bar{u}+d\bar{d}-2s\bar{s})\right)\) et
+\(\eta\prime\left(\frac{1}{\sqrt{3}}(u\bar{u}+d\bar{d}+s\bar{s})\right)\)
+</li>
+</ul>
+</li>
+</ol>
+</div>
+</div>
+
+<div id="outline-container-sec-2" class="outline-2">
+<h2 id="sec-2"><span class="section-number-2">2</span> Multiplets de baryons</h2>
+<div class="outline-text-2" id="text-2">
+<ol class="org-ol">
+<li>Formule de Gell-Mann et Okubo :
+\[M(Y,T)c^2 = M_0c^2 + a\,Y + b\,\left[T(T+1) - \frac{Y^2}{4}\right]\]
+avec l'hypercharge \(Y\) égale à \(B+S = 1+S\). Pour \(I^\pi=3/2^+\), nous avons
+ainsi
+<ul class="org-ul">
+<li>\(S=0\) et \(\vv{T}=\vv{3}/2\) : quadruplet &Delta;<sup>-</sup>, &Delta;<sup>0</sup>, &Delta;<sup>+</sup>
+     et &Delta;<sup>++</sup>
+\begin{align*}
+  m_\Delta c^2 &= M_0c^2 + a + b\,\left[\frac{3}{2}\times\frac{5}{2} - \frac{1}{4}\right]\\
+  &= M_0c^2 + a + b\times\frac{7}{2} = \unit[1236]{MeV}
+\end{align*}
+</li>
+
+<li>\(S=-1\) et \(\vv{T}=\vv{1}\) : triplet &Sigma;<sup>-*</sup>, &Sigma;<sup>0*</sup> et &Sigma;<sup>+*</sup>
+     (niveaux excités du baryon &Sigma;)
+\begin{align*}
+  m_\Sigma c^2 &= M_0c^2 + b\,\left[1\times2 - \frac{0}{4}\right]\\
+  &= M_0c^2 + 2b = \unit[1385]{MeV}
+\end{align*}
+</li>
+
+<li>\(S=-2\) et \(\vv{T}=\vv{1}/2\) : doublet &Xi;<sup>-*</sup> et &Xi;<sup>0*</sup>
+     (niveaux excités du baryon &Xi;)
+\begin{align*}
+  m_\Xi c^2 &= M_0c^2 - a + b\,\left[\frac{1}{2}\times\frac{3}{2} - \frac{1}{4}\right]\\
+  &= M_0c^2 - a + \frac{b}{2} = \unit[1530]{MeV}
+\end{align*}
+</li>
+
+<li>\(S=-3\) et \(\vv{T}=\vv{0}\) : singulet &Omega;<sup>-</sup>
+\begin{align*}
+  m_\Omega c^2 &= M_0c^2 - 2a - b
+\end{align*}
+</li>
+</ul>
+<p>
+d'où
+</p>
+\begin{align*}
+  m_\Sigma c^2 - m_\Delta c^2 &= - a + 2b - \frac{7}{2}\,b = 1385 - 1236 = \unit[149]{MeV}\\
+  &= - a - \frac{3}{2}\,b = \unit[149]{MeV}\\
+  m_\Xi c^2 - m_\Sigma c^2 &= - a + \frac{b}{2} - 2b = 1530 - 1385 = \unit[145]{MeV}\\
+  &= - a - \frac{3}{2}\,b = \unit[145]{MeV}\\
+  m_\Omega c^2 - m_\Xi c^2 &= - 2a - b + a - \frac{b}{2} = \langle145; 149\rangle\unit[]{MeV}\\
+  &= - a - \frac{3}{2}\,b = \langle\unit[147]{MeV}\rangle
+\end{align*}
+
+<p>
+\[m_\Omega c^2 = m_\Xi c^2 + \unit[147]{MeV} = \unit[1677]{MeV}\] soit un
+écart de 0.3% par rapport à la valeur mesurée expérimentalement.
+</p>
+
+<p>
+Par ailleurs, le baryon &Omega;<sup>-</sup> est composé de 3 quarks \(s\). L'isospin
+\(\vv{T} = \vv{0}\) et \(T_3=0\), l'étrangeté est \(S=-3\), le nombre baryonique
+\(B\) est égal à 1 tandis que le moment cinétique total \(I=\frac{3}{2}\). Étant
+donné que \(\vv{L}=\vv{0}\) on a \[\vv{I} = \vv{L} + \vv{S} = \vv{S}(s_1) +
+   \vv{S}(s_2) + \vv{S}(s_3)\] soit \[\vv{I}=\frac{\vv{3}}{2} =
+   \frac{\vv{1}}{2} + \frac{\vv{1}}{2} + \frac{\vv{1}}{2}\]
+</p>
+
+<p>
+Les 3 quarks \(s\) sont donc tous dans le même état de spin +1/2 ce qui par
+définition est impossible en raison du principe d'exclusion de Pauli
+&rarr; introduction de la couleur \(RVB\) comme nouveau nombre quantique
+et justifiant l'existence des baryons &Omega;<sup>-</sup>, &Delta;<sup>-</sup> et
+&Delta;<sup>++</sup>. Chaque quarks \(s\) existe en 3 couleurs \(R,V,B\) d'où \(\Omega^{-}
+   = (s_R,s_V,s_B)\).
+</p>
+
+<p>
+La fonction d'onde globale est antisymétrique dès lors que le nombre
+quantique de couleur est introduit<sup><a id="fnr.1" class="footref" href="#fn.1">1</a></sup>.
+ <div class="footdef"><sup><a id="fn.1" class="footnum" href="#fnr.1">1</a></sup> <p class="footpara"> le principe d'exclusion de Pauli généralisé implique que \(L+S+T\) soit impaire pour que la fonction d'onde soit antisymétrique. \(\vv{L}=\vv{0}\), \(\vv{T}=\vv{0}\) et \(\vv{S}=\vv{3}/2\), la somme n'est donc pas impaire. C'est l'introduction de la couleur qui permet de rendre cette fonction d'onde globale antisymétrique. </p></div>
+</li>
+
+<li>proton &equiv; \(uud\) soit une masse \(m_p c^2 = 2\,m_u c^2 + m_d c^2 \leq
+   2\times\unit[3]{MeV} + \unit[7]{MeV} = \unit[13]{MeV} \ll
+   \unit[938]{MeV}\). 99% de la masse du proton est due à la mer de
+partons &equiv; quarks et gluons et seulement 1% de la masse est portée par
+les quarks de valence \(uud\).
+</li>
+
+<li>\(\Delta^0\rightarrow p + \pi^-\) et \(\Lambda^0\rightarrow p + \pi^-\)
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="void">
+
+
+<colgroup>
+<col  class="left" />
+
+<col  class="left" />
+</colgroup>
+<tbody>
+<tr>
+<td class="left"><img src="./figures/delta0_diagram.png" alt="delta0_diagram.png" /></td>
+<td class="left"><img src="./figures/lambda0_diagram.png" alt="lambda0_diagram.png" /></td>
+</tr>
+
+<tr>
+<td class="left"><b>Diagramme connecté</b></td>
+<td class="left"><b>Diagramme déconnecté</b></td>
+</tr>
+
+<tr>
+<td class="left">Intéraction forte</td>
+<td class="left">Interaction faible (saveur non conservée)</td>
+</tr>
+
+<tr>
+<td class="left">\(\rightarrow\tau\sim\) 10<sup>-23</sup> à 10<sup>-20</sup> s</td>
+<td class="left">\(\rightarrow\tau\gtrsim\) 10<sup>-13</sup> s</td>
+</tr>
+</tbody>
+</table>
+</li>
+</ol>
+</div>
+</div>
+
+<div id="outline-container-sec-3" class="outline-2">
+<h2 id="sec-3"><span class="section-number-2">3</span> Les mésons \(D\)</h2>
+<div class="outline-text-2" id="text-3">
+<ol class="org-ol">
+<li>L'hypercharge \(Y\) est égale à la somme du nombre baryonique \(B\) et de la
+saveur \(S\). Le méson \(D^0\) a, par définition, un nombre baryonique nul, sa
+saveur étant uniquement \(c=1\) d'où \(Y=1\). En utilisant, la formule de
+Gell-Mann &amp; Nishijima \(Q/E = T_3 + Y/2 = -1/2 + 1/2 = 0\), on obtient donc
+bien une charge nulle.
+
+<p>
+L'antiparticule \(\bar{D}^0\) possède les mêmes propriétés que \(D^0\) exception
+faite la 3<sup>ème</sup> composante de l'isospin \(T_3\) égale à +1/2 et à la saveur
+\(c=-1\). Les mésons étant des bosons, la parité reste la même soit
+\(I^\pi=0^-\).
+</p>
+</li>
+
+<li>Multiplet d'isospin de \(D^0\)
+
+<p>
+\(\vv{T} = \vv{1}/2\), on a donc un doublet d'isospin \(T_3=-1/2,+1/2\) de même
+saveur. En plus du méson \(D^0\), le second membre du doublet a \(T_3=+1/2\) soit
+une charge \(Q/e=+1/2+1/2=+1\). Il s'agit du méson \(D^+\). On en déduit que
+l'antiparticule du \(D^+\) est donc le méson \(D^-\) ayant les mêmes propriétés
+que le \(D^+\) à la charge (et donc \(T_3\)) près.
+</p>
+</li>
+
+<li>Le méson \(D^0\) est forcément constitué d'un quark charme et d'un antiquark
+sans saveur <i>i.e.</i> \(\bar{u}\) ou \(\bar{d}\). Le fait qu'il est une charge nulle
+implique nécessairement la présence d'un antiquark \(u\). Le doublon d'isospin
+de \(D^0\) qu'est le méson \(D^+\) est donc constitué d'un quark \(c\) (même
+saveur) et d'un antiquark \(d\) (charge électrique +\(e\)). De même, les
+antiparticules \(\bar{D}^0\) et \(D^-\) sont constituées d'un antiquark \(c\) et
+respectivement d'un quark \(u\) et \(d\).
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="void">
+
+
+<colgroup>
+<col  class="left" />
+
+<col  class="left" />
+</colgroup>
+<tbody>
+<tr>
+<td class="left">\(D^0\)</td>
+<td class="left">\(c\bar{u}\)</td>
+</tr>
+
+<tr>
+<td class="left">\(D^+\)</td>
+<td class="left">\(c\bar{d}\)</td>
+</tr>
+
+<tr>
+<td class="left">\(\bar{D}^0\)</td>
+<td class="left">\(\bar{c}u\)</td>
+</tr>
+
+<tr>
+<td class="left">\(D^-\)</td>
+<td class="left">\(\bar{c}d\)</td>
+</tr>
+</tbody>
+</table>
+</li>
+
+<li>\(\vv{I} = \vv{L} + \vv{S}\) soit \(\vv{L} = \vv{I} + \vv{S} = \vv{0} +
+   \vv{S}_{c} + \vv{S}_{\bar{u}} = \vv{0} + \vv{1}/2 + \vv{1}/2 = \vv{0}\) ou
+\(\vv{1}\). En tenant compte de la parité &pi;, on obtient
+\begin{align*}
+  \pi(D^0) &= \pi(c)\cdot\pi(\bar{u})\cdot(-1)^L\\
+  -1 &= +1\cdot-1\cdot(-1)^L
+\end{align*}
+
+<p>
+d'où \(L\) pair. Les valeurs de \(\vv{L}\) et de \(\vv{S}\) satisfaisant aux
+conservations du moment cinétique total et de la parité sont donc
+\(\vv{L}=\vv{0}\) et \(\vv{S}=\vv{0}\).
+</p>
+</li>
+
+<li>\(D^0\rightarrow K^-+\pi^+\). Le fait de n'avoir à tester que la
+(non)conservation du moment cinétique total et de la parité semble indiquer
+que la réaction se fait par interaction faible.
+\[
+   \vv{I}_{D^0} = \vv{I}_{K^-} + \vv{I}_{\pi^+} +
+   \vv{L}_{K\pi}\quad\rightarrow\quad\vv{0} = \vv{0} + \vv{0} + \vv{L}_{K\pi}
+   \]
+Dans ces conditions, la parité \(\pi\) n'est pas conservée
+\begin{align*}
+  \pi(D^0) &\neq \pi(K^-)\cdot\pi(\pi^+)\cdot(-1)^{L_{K\pi}}\\
+  -1 &\neq -1\times-1\times(-1)^0
+\end{align*}
+
+<p>
+La non-conservation de la parité indique que cette désintégration se fait par
+interaction faible. Le fait que la saveur "charme" est absente des kaons et
+des pions et inversement que la saveur "étrangeté" soit absente du méson
+\(D^0\) impliquent la non-conservation de la saveur corroborant le résultat
+précédent.
+</p>
+</li>
+
+<li>\(e^++e^-\rightarrow D^0+\bar{D}^0\)
+
+<p>
+Collision de deux faisceaux d'impulsion opposés &rarr; référentiel du
+centre de masse dans lequel l'énergie cinétique minimale est égale à la
+moitié de la chaleur de réaction \(|Q|\).
+\[
+   T_S = \frac{|Q|}{2} = \frac{2\,m_{D^0}c^2 - 2\,m_ec^2}{2} = \unit[1865]{MeV}
+   \]
+</p>
+</li>
+
+<li>\(T_0=\unit[2014]{MeV}\)
+
+<p>
+Toujours dans le référentiel du centre de masse, la conservation de
+l'impulsion implique que \(\vv{p}_{D^0}=-\vv{p}_{\bar{D}^0}\). Les masses de
+ces deux particules étant identiques, l'énergie totale \(E\) est donc la même
+pour \(D^0\) et \(\bar{D}^0\). Pour les mêmes raisons, l'énergie totale est la
+même pour le faisceau d'électrons que pour celui de positron si bien que la
+conservation de l'énergie totale implique \(E_{e^\pm}=E_{D^0/\bar{D}^0}\).
+</p>
+\begin{align*}
+  E_{D^0/\bar{D}^0} &= T_0 + m_ec^2\\
+  \sqrt{p_{D^0/\bar{D}^0}^2c^2+m_{D^0/\bar{D}^0}^2c^4} &\simeq T_0\\
+  p_{D^0/\bar{D}^0}c&=\sqrt{T_0^2 - m_{D^0/\bar{D}^0}^2c^4}\\
+  p_{D^0/\bar{D}^0}c&=\sqrt{2014^2 - 1865^2} = \unit[760.2]{MeV}
+\end{align*}
+</li>
+
+<li>Le second pic correspond à la production du couple \(D^0/\bar{D}^0\).
+</li>
+<li>\(e^++e^-\rightarrow D^0 + X\)
+
+<p>
+L'impulsion du \(D^0\) est à présent, de 560 MeV. La conservation de
+l'impulsion suppose la même impulsion pour la particule \(X\). Par ailleurs, la
+conservation de l'énergie totale s'écrit \(2\,E_{e^\pm} = E_{D^0} + E_X\). Soit
+</p>
+\begin{align*}
+  E_X &= 2\,E_{e^\pm} - E_{D^0}\\
+  &= 2\,\left(T_0 + m_ec^2\right) - \sqrt{p_{D^0}^2c^2+m_{D^0}^2c^4}\\
+  \sqrt{p_{X}^2c^2+m_{X}^2c^4} &= 2\,\left(T_0 + m_ec^2\right) - \sqrt{p_{D^0}^2c^2+m_{D^0}^2c^4}\\
+  m_{X}^2c^4 &\simeq \left[2T_0 - \sqrt{p_{D^0}^2c^2+m_{D^0}^2c^4}\right]^2 - p_X^2c^2\\
+  m_{X}^2c^4 &\simeq \left[2\times2014 - \sqrt{560^2+1865^2}\right]^2 - 560^2\\
+  m_Xc^2 &= \unit[2004]{MeV}
+\end{align*}
+</li>
+
+<li>L'interaction électromagnétique conserve la saveur (seul l'isospin n'est pas
+conservé). La particule \(X\) est donc nécessairement de saveur opposée au
+méson \(D^0\). Par ailleurs, la conservation du nombre baryonique et du nombre
+leptonique implique que cette particule est un méson. Enfin, on déduit de la
+conservation de la charge électrique que cette particule est neutre. La
+particule \(X\) est donc constituée d'un antiquark \(c\) et soit d'un quark \(u\)
+soit d'un quark \(d\). La conservation de la charge électrique qui, dans ce
+cas présent, est équivalente à la conservation de la troisième composante de
+l'isospin \(T_3\) (relation de Gell-Mann &amp; Nishijima), implique que le second
+quark est un quark \(u\). La particule \(X\) est ainsi identique en composition
+à l'antiméson \(\bar{D}^0\).
+
+<p>
+Conservation du moment cinétique total \(\vv{I}\)
+</p>
+\begin{align*}
+  \vv{I}_X &= \vv{I}_u + \vv{I}_{\bar{c}}+\vv{L}_{u\bar{c}}\\
+  \vv{1} &= \vv{S}_u + \vv{S}_{\bar{c}}+\vv{L}_{u\bar{c}}
+\end{align*}
+
+<p>
+Soit \(\vv{S}_X=\vv{S}_u + \vv{S}_{\bar{c}}=\vv{0}\) et \(\vv{L}=\vv{1}\), soit
+\(\vv{S}_X=\vv{1}\) et \(\vv{L}=\vv{0},\vv{1},\vv{2}\).
+La conservation de la parité \(\pi\) impose que
+</p>
+\begin{align*}
+  \pi(X) &= \pi(u)\cdot\pi(\bar{c})\cdot(-1)^{L}\\
+  -1 &= (+1)\times(-1)\times(-1)^L
+\end{align*}
+
+<p>
+duquel on déduit que \(L\) doit être pair. La valeur du spin de \(X\) est donc 1
+et le moment orbital relatif est soit 0 ou 2.
+</p>
+</li>
+
+<li>\(X\rightarrow\bar{D}^0+\pi^0\)
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="void">
+
+
+<colgroup>
+<col  class="left" />
+
+<col  class="right" />
+
+<col  class="left" />
+
+<col  class="right" />
+
+<col  class="left" />
+
+<col  class="right" />
+
+<col  class="left" />
+</colgroup>
+<tbody>
+<tr>
+<td class="left">&#xa0;</td>
+<td class="right">\(X\)</td>
+<td class="left">&rarr;</td>
+<td class="right">\(\bar{D}^0\)</td>
+<td class="left">+</td>
+<td class="right">\(\pi^0\)</td>
+<td class="left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="left">\(B\)</td>
+<td class="right">0</td>
+<td class="left">=</td>
+<td class="right">0</td>
+<td class="left">+</td>
+<td class="right">0</td>
+<td class="left">\(\unicode{x2713}\)</td>
+</tr>
+
+<tr>
+<td class="left">\(c\)</td>
+<td class="right">-1</td>
+<td class="left">=</td>
+<td class="right">-1</td>
+<td class="left">+</td>
+<td class="right">0</td>
+<td class="left">\(\unicode{x2713}\)</td>
+</tr>
+
+<tr>
+<td class="left">\(s,b,t\)</td>
+<td class="right">0</td>
+<td class="left">=</td>
+<td class="right">0</td>
+<td class="left">+</td>
+<td class="right">0</td>
+<td class="left">\(\unicode{x2713}\)</td>
+</tr>
+
+<tr>
+<td class="left">\(Q/e\)</td>
+<td class="right">0</td>
+<td class="left">=</td>
+<td class="right">0</td>
+<td class="left">+</td>
+<td class="right">0</td>
+<td class="left">\(\unicode{x2713}\)</td>
+</tr>
+
+<tr>
+<td class="left">\(T_3\)</td>
+<td class="right">1/2</td>
+<td class="left">=</td>
+<td class="right">1/2</td>
+<td class="left">+</td>
+<td class="right">0</td>
+<td class="left">\(\unicode{x2713}\)</td>
+</tr>
+
+<tr>
+<td class="left">\(\vv{T}\)</td>
+<td class="right">\(\vv{1}/2\)</td>
+<td class="left">=</td>
+<td class="right">\(\vv{1}/2\)</td>
+<td class="left">+</td>
+<td class="right">\(\vv{1}\)</td>
+<td class="left">\(\unicode{x2713}\)</td>
+</tr>
+</tbody>
+</table>
+
+<p>
+Le moment cinétique total est conservé dans la mesure où \(I^\pi(\pi^0)=0^-\)
+ce qui implique que le moment orbital relatif de \(\pi^0\) par rapport à
+\(\bar{D}^0\) est égal à \(\vv{1}\). Dans ces conditions, la parité est
+également conservée. Enfin, la désintégration est possible et spontanée
+puisque la chaleur de réaction \(Q\) est égale à 2005 - (1865+135) &gt; 0.
+</p>
+</li>
+
+<li>La particule \(X\) est constituée des mêmes particules, à savoir le couple
+\(u\bar{c}\), que l'antiméson \(\bar{D}^0\). Elle possède néanmoins un moment
+cinétique total plus grand de même qu'une masse plus élevée que \(\bar{D}^0\)
+ce qui semble indiquer que cette particule est un état excité de
+\(\bar{D}^0\).
+</li>
+</ol>
+</div>
+</div>
+<div id="footnotes">
+<h2 class="footnotes"> </h2>
+<div id="text-footnotes">
+
+
+
+</div>
+</div></div>
+<div id="postamble" class="status">
+File under git version control - commit <a href="https://github.com/xgarrido/master_npp_teaching/commit/de670a2534c568f9a55c9e4c13c66212a371a2f0">de670a2</a> - 2014-03-18
+</div>
+</body>
+</html>

@@ -1,0 +1,546 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<title>TD3 : Réactions de production et de désintégration de particules</title>
+<meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta  name="generator" content="Org-mode" />
+<link rel="stylesheet" href="css/styles.css">
+                 <link rel="stylesheet" href="css/org-pygments.css">
+                 <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+<script type="text/javascript">
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2013 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script><script type="text/javascript">
+function displayTOC() {
+    var first = document.getElementById("text-table-of-contents").innerHTML;
+    if (first != "") {
+        var maincontent = '<a class="button"><i class="fa fa-list"></i></a>'
+        maincontent += "<div>" + first + "</div>";
+        document.getElementById("toc").innerHTML = maincontent;
+    } else {
+        document.getElementById("toc").style.display = "none";
+    }
+   }
+</script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+      TeX: {
+          extensions: ["cancel.js"],
+          Macros: {
+              vv: ["{\\vec #1}",1],
+              Upsigma: "{\\Sigma}",
+              Updelta: "{\\Delta}",
+              varoiint: "{\\iint}",
+              varoint: "{\\int}",
+              grad: "{\\vec{\\nabla}}",
+              div: "{\\vec{\\nabla}.}",
+              rot: "{\\vec{\\nabla}\\times\\,}",
+              ket: ["{|#1 \\rangle}",1],
+              bra: ["{\\langle#1|}",1],
+              psh: ["{\\langle#1|#2 \\rangle}",2],
+              bm: ["{\\boldsymbol #1}",1]
+          }
+      }
+  });
+  MathJax.Hub.Register.StartupHook("TeX Jax Ready",function () {
+      var TEX = MathJax.InputJax.TeX;
+      TEX.Definitions.macros.unit = "jaxunit";
+      TEX.Parse.Augment({
+          jaxunit: function (name) {
+              var n = this.GetBrackets(name),
+              unit = this.GetArgument(name)
+              if (n == null) {n = ""}
+              var tex = n + '\\,\\text{'+unit+'}';
+              this.string = tex + this.string.slice(this.i); this.i = 0;
+          }
+      });
+  });
+  </script>
+  <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+</head>
+<body onload="displayTOC()"><div id="toc"></div>
+<div id="content">
+<h1 class="title">TD3 : Réactions de production et de désintégration de particules</h1>
+<div style="display:none;">
+<div id="text-table-of-contents">
+<ul class="org-ul">
+<li><a href="././td_np_0.html">TD1 : Cinématique &amp; Accélérateurs</a>
+</li>
+<li><a href="././td_np_1.html">TD2 : Nombres Quantiques &amp; Symétries</a>
+</li>
+<li><a href="././td_np_2.html">TD3 : Réactions de production et de désintégration de particules</a>
+</li>
+<li><a href="././td_np_3.html">TD4 : Modèle des quarks &#x2013; Les hadrons</a>
+</li>
+<li><a href="././td_np_4.html">TD5 : Isospin &#x2013; des quarks aux noyaux</a>
+</li>
+<li><a href="././td_np_5.html">TD6 : Structure nucléaire</a>
+</li>
+<li><a href="././td_np_6.html">TD7 : Réactions nucléaires</a>
+</li>
+<li><a href="././td_np_7.html">TD8 : Masses et désintégrations nucléaires</a>
+</li>
+<li><a href="././td_np_8.html">TD9 : Modèle Standard et au-delà : l'interaction faible</a>
+</li>
+</ul>
+</div>
+</div>
+
+
+
+<div class="figure">
+<p><img src="./figures/standard_model.png" alt="standard_model.png" />
+</p>
+<p><span class="figure-number">Figure 1:</span> <b>Modèle standard de la physique des particules</b></p>
+</div>
+
+<div id="outline-container-sec-1" class="outline-2">
+<h2 id="sec-1"><span class="section-number-2">1</span> Production et désintégration de particules</h2>
+<div class="outline-text-2" id="text-1">
+<ol class="org-ol">
+<li>Les particules élémentaires sont les quarks et les leptons (du grec <i>leptos</i>
+= léger) dont le spin demi-entier font de ces particules des fermions. À la
+différence des leptons, les quarks n'apparaissent pas à l'état libre et sont
+confinés dans les hadrons. On distingue deux familles de hadrons :
+<dl class="org-dl">
+<dt>les baryons</dt><dd>(du grec <i>baryos</i> = lourd) constitués de 3 quarks \(q_1q_2q_3\),
+de nombre baryonique égal à 1 et de spin 1/2
+entier. Exemple : nucléons
+</dd>
+<dt>les mésons</dt><dd>(du grec <i>mesos</i> = milieu) constitués d'une paire de quark &#x2013;
+antiquark, de nombre baryonique nul et de spin
+entier. Exemple : pions
+
+<p>
+Les quarks sont sensibles à toutes les interactions tandis que les leptons
+chargés &#x2013; \(e\), &mu;, &tau; &#x2013; sont sensibles à l'interaction EM et faible. Les
+leptons neutres <i>i.e.</i> les neutrinos n'intéragissent que par interaction
+faible.
+</p>
+</dd>
+</dl>
+</li>
+
+<li>Toutes les interactions conservent la charge électrique, le nombre
+baryonique, le nombre leptonique et le moment cinétique total.
+
+<p>
+a) \(K^- + p\rightarrow \bar{K}^0 + n\)
+</p>
+
+<p>
+b) \(\pi^+ + p\rightarrow \Sigma^+ + K^+\)
+</p>
+
+<p>
+c) \(\pi^- + p\rightarrow \Sigma^0 + K^+ + \pi^-\)
+</p>
+
+<p>
+d) \(\pi^- + p\rightarrow \Sigma^+ + K^-\) <b>non conservation de l'étrangeté
+&rarr; interaction faible</b>
+</p>
+
+<p>
+e) \(\bar{K}^0 + p\rightarrow K^- + p + \pi^+\)
+</p>
+
+<p>
+f) \(\bar{p} + p\rightarrow \pi^+ + \pi^+ + \pi^- + \pi^- + \pi^+\) <b>ne
+conserve pas la charge électrique</b>
+</p>
+
+<p>
+g) \(\mu^+ \rightarrow e^+ + \nu_e + \bar{\nu}_\mu\) <b>leptons neutres
+&rarr; interaction faible</b>
+</p>
+
+<p>
+h) \(K^+ + p \rightarrow \Sigma^+ + n + \pi^-\) <b>ne conserve pas la charge
+électrique ni le nombre baryonique</b>
+</p>
+</li>
+
+<li>\(\mu^+\rightarrow e^+ + \nu_e + \bar{\nu}_\mu\)
+
+
+<div class="figure">
+<p><img src="./figures/muon_decay_feynman.png" alt="muon_decay_feynman.png" />
+</p>
+<p><span class="figure-number">Figure 2:</span> <b>Diagramme de Feynman de la désintégration de l'anti-muon</b></p>
+</div>
+</li>
+</ol>
+</div>
+</div>
+
+<div id="outline-container-sec-2" class="outline-2">
+<h2 id="sec-2"><span class="section-number-2">2</span> Résonances</h2>
+<div class="outline-text-2" id="text-2">
+<p>
+Formule de Gell-Mann &amp; Nishijima \(Q/e = T_3 + Y/2\) avec \(Y = B\) + saveur =
+hypercharge. Dans cet exercice, \(c=b=t=0\) donc \(Y = B\) + étrangeté \(S\)
+</p>
+
+<ol class="org-ol">
+<li>\(Y(\Sigma^+) = 2\cdot\left(\frac{Q}{e} - T_3\right) = 0\) d'où \(S(\Sigma^+) =
+   -B(\Sigma^+) = -1\)
+
+<p>
+\(Y(K^+) = 2\cdot\left(\frac{Q}{e} - T_3\right) = 1\) d'où \(S(\Sigma^+) = +1\)
+</p>
+</li>
+
+<li>Détermination du type d'interaction \(\pi^+ + p\rightarrow K^+ + \Sigma^+\)
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="void">
+
+
+<colgroup>
+<col  class="left" />
+
+<col  class="right" />
+
+<col  class="left" />
+
+<col  class="right" />
+
+<col  class="left" />
+
+<col  class="right" />
+
+<col  class="left" />
+
+<col  class="right" />
+
+<col  class="left" />
+</colgroup>
+<tbody>
+<tr>
+<td class="left">&#xa0;</td>
+<td class="right">\(\pi^+\)</td>
+<td class="left">+</td>
+<td class="right">p</td>
+<td class="left">&rarr;</td>
+<td class="right">\(K^+\)</td>
+<td class="left">+</td>
+<td class="right">\(\Sigma^+\)</td>
+<td class="left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="left">\(B\)</td>
+<td class="right">0</td>
+<td class="left">+</td>
+<td class="right">1</td>
+<td class="left">=</td>
+<td class="right">0</td>
+<td class="left">+</td>
+<td class="right">1</td>
+<td class="left">\(\unicode{x2713}\)</td>
+</tr>
+
+<tr>
+<td class="left">\(Q/e\)</td>
+<td class="right">1</td>
+<td class="left">+</td>
+<td class="right">1</td>
+<td class="left">=</td>
+<td class="right">1</td>
+<td class="left">+</td>
+<td class="right">1</td>
+<td class="left">\(\unicode{x2713}\)</td>
+</tr>
+
+<tr>
+<td class="left">\(T_3\)</td>
+<td class="right">1</td>
+<td class="left">+</td>
+<td class="right">1/2</td>
+<td class="left">=</td>
+<td class="right">1/2</td>
+<td class="left">+</td>
+<td class="right">1</td>
+<td class="left">\(\unicode{x2713}\)</td>
+</tr>
+
+<tr>
+<td class="left">\(\vv{T}\)</td>
+<td class="right">\(\vv{1}\)</td>
+<td class="left">+</td>
+<td class="right">\(\vv{1/2}\)</td>
+<td class="left">=</td>
+<td class="right">\(\vv{1/2}\)</td>
+<td class="left">+</td>
+<td class="right">\(\vv{1}\)</td>
+<td class="left">\(\unicode{x2713}\)</td>
+</tr>
+
+<tr>
+<td class="left">\(S\)</td>
+<td class="right">0</td>
+<td class="left">+</td>
+<td class="right">0</td>
+<td class="left">=</td>
+<td class="right">1</td>
+<td class="left">+</td>
+<td class="right">-1</td>
+<td class="left">\(\unicode{x2713}\)</td>
+</tr>
+</tbody>
+</table>
+
+<p>
+Conservation de la parité et du moment cinétique total :
+</p>
+
+\begin{align*}
+  \vv{I}_\pi + \vv{I}_p + \vv{L}_i &= \vv{I}_K + \vv{I}_\Sigma + \vv{L}_f\\
+  \vv{0} + \vv{1}/2 + \vv{L}_i &= \vv{0} +\vv{1}/2 + \vv{L}_f\\
+  \pi(\pi^+)\times\pi(p)\times(-1)^{L_i} &= \pi(K^+)\times\pi(\Sigma^+)\times(-1)^{L_f}\\
+  (-1)\times(+1)\times(-1)^{L_i}&=(-1)\times(+1)\times(-1)^{L_f}
+\end{align*}
+
+<p>
+Si \(L_i=L_f\) toutes les quantités sont conservées donc <b>interaction
+forte</b>. Le temps caractéristique de la réaction est donc de l'ordre de
+<b>10<sup>-23</sup> à 10<sup>-20</sup> secondes</b>.
+</p>
+</li>
+
+<li>Calcul de l'énergie seuil des pions :
+\begin{align*}
+  T_S &= \frac{|Q|\cdot\Upsigma m_\text{initiale,finale}c^2}{2\cdot m_pc^2}\\
+  &=\frac{604\cdot(140+940+494+1190)}{2\cdot940}\\
+  &=\unit[888]{MeV}
+\end{align*}
+</li>
+
+<li>\(\pi^+ + p \rightarrow R \rightarrow K^+ + \Sigma^+\)
+
+<p>
+Calcul de l'invariant relativiste \(I\)
+</p>
+
+<p>
+\[I=(E_\pi + E_p)^2 - (\vv{p}_\pi + \vv{p}_p)^2c^2 = (m_Rc^2)^2\]
+or \(\vv{p}_p = \vv{0}\) et \(E_\pi = \sqrt{p_\pi^2c^2 + m_\pi^2c^4}\),
+\(E_p=m_pc^2\) d'où
+</p>
+
+<p>
+\[m_R^2c^4 = \left(\sqrt{1500^2 + 140^2} + 940\right)^2 - 1500^2 =
+   \unit[3.7\,10^6]{MeV}^2\]
+</p>
+
+<p>
+\[m_Rc^2 = \unit[1933]{MeV}\]
+</p>
+</li>
+
+<li>Largeur &Gamma; = 240 MeV
+
+<div class="center">
+
+<div class="figure">
+<p><img src="./figures/breit_wigner.png" alt="breit_wigner.png" />
+</p>
+</div>
+</div>
+
+<p>
+\[\tau =\frac{\hbar}{\Gamma} = \frac{\hbar c}{\Gamma c} =
+   \frac{\unit[197.3]{MeV.fm}}{\unit[240]{MeV}\cdot\unit[3\,10^{23}]{fm/s}} =
+   \unit[2.7\,10^{-24}]{s}\]
+</p>
+
+<p>
+&rarr; désintégration par <b>interaction forte</b>
+</p>
+</li>
+
+<li>\(\vv{L}_i = \vv{3}\)
+
+<p>
+La réaction \(\pi^+ + p \rightarrow K^+ + \Sigma^+\) se fait par interaction
+forte de même que \(R\rightarrow K^+ + \Sigma^+\). La réaction de production de
+\(\pi^++p\rightarrow R\) se fait donc également par interaction forte
+&rarr; conservation de la parité et du moment cinétique total.
+</p>
+
+<p>
+\[\vv{I}_\pi + \vv{I}_p + \vv{L}_i = \vv{I}_R\]
+\[\pi(\pi^+)\times\pi(p)\times(-1)^{L_i} = \pi(R)\]
+d'où \(I_R^\pi = 5/2^+\) ou \(7/2^+\)
+</p>
+</li>
+
+<li>Conservation de \(\vv{T}\) et \(T_3\) dans la désintégration de \(R\rightarrow
+   K^++\Sigma^+\)
+
+<p>
+\[T_3(R) = T_3(K^+) + T_3(\Sigma^+) = 3/2\]
+\[\vv{T}(R) = \vv{T}(K^+) + \vv{T}(\Sigma^+) = \vv{1/2} + \vv{1} =
+   \vv{1/2},\vv{3/2}\]
+or comme \(T_3(R) = 3/2 \Leftrightarrow \vv{T}(R) = \vv{3/2}\)
+</p>
+</li>
+
+<li>La conservation du nombre baryonique, de la charge électrique et de
+l'étrangeté font que \(R\) est un baryon de charge \(Q/e=+2\) et d'étrangeté
+nulle. En se reférant au tableau page 30, on note que cette résonance
+présente les mêmes propriétés que la baryon \(\Delta^{++}\) à ceci près que sa
+masse 1933 MeV et sa durée de vie sont respectivement plus élevée et plus
+courte<sup><a id="fnr.1" class="footref" href="#fn.1">1</a></sup>. <b>La résonance \(\bm{R}\) est donc un état excité de
+\(\bm{\Delta^{++}}\).</b>
+</li>
+
+<li>\(\pi^- + p \rightarrow K^+ + \Sigma^-\)
+
+<p>
+\(Q/e\), \(B\), \(I^\pi\) sont conservés.
+ <div class="footdef"><sup><a id="fn.1" class="footnum" href="#fnr.1">1</a></sup> <p class="footpara"> le moment cinétique total est également différent 5/2<sup>+</sup> ou 7/2<sup>+</sup> contre 3/2<sup>+</sup> </p></div>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="void">
+
+
+<colgroup>
+<col  class="left" />
+
+<col  class="right" />
+
+<col  class="left" />
+
+<col  class="left" />
+
+<col  class="left" />
+
+<col  class="left" />
+
+<col  class="left" />
+
+<col  class="right" />
+
+<col  class="left" />
+</colgroup>
+<tbody>
+<tr>
+<td class="left">&#xa0;</td>
+<td class="right">\(\pi^-\)</td>
+<td class="left">+</td>
+<td class="left">p</td>
+<td class="left">&rarr;</td>
+<td class="left">\(K^+\)</td>
+<td class="left">+</td>
+<td class="right">\(\Sigma^-\)</td>
+<td class="left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="left">\(T_3\)</td>
+<td class="right">-1</td>
+<td class="left">+</td>
+<td class="left">1/2</td>
+<td class="left">=</td>
+<td class="left">1/2</td>
+<td class="left">+</td>
+<td class="right">-1</td>
+<td class="left">\(\unicode{x2713}\)</td>
+</tr>
+
+<tr>
+<td class="left">\(\vv{T}\)</td>
+<td class="right">\(\vv{1}\)</td>
+<td class="left">+</td>
+<td class="left">\(\vv{1/2}\)</td>
+<td class="left">=</td>
+<td class="left">\(\vv{1/2}\)</td>
+<td class="left">+</td>
+<td class="right">\(\vv{1}\)</td>
+<td class="left">\(\unicode{x2713}\)</td>
+</tr>
+
+<tr>
+<td class="left">\(s\)</td>
+<td class="right">0</td>
+<td class="left">+</td>
+<td class="left">0</td>
+<td class="left">=</td>
+<td class="left">1</td>
+<td class="left">+</td>
+<td class="right">-1</td>
+<td class="left">\(\unicode{x2713}\)</td>
+</tr>
+</tbody>
+</table>
+</li>
+</ol>
+
+<p>
+<b>Remarques :</b> les baryons \(\Delta^{++}\) et \(\Delta^-\) sont respectivement
+constitués de 3 quarks \(u\) et 3 quarks \(d\). Or le moment cinétique total de ces
+particules 3/2 impliquent que le spin des 3 quarks soient alignés "vers le
+haut". Le principe de Pauli exclut une telle configuration pour des fermions. En
+ajoutant le nombre quantique de couleur, la chromodynamique quantique permet un
+tel état tout comme pour le baryon &Omega;<sup>-</sup> postulé par Gell-Mann et découvert à
+Brookhaven en 1964.
+</p>
+</div>
+</div>
+<div id="footnotes">
+<h2 class="footnotes"> </h2>
+<div id="text-footnotes">
+
+
+
+</div>
+</div></div>
+<div id="postamble" class="status">
+File under git version control - commit <a href="https://github.com/xgarrido/master_npp_teaching/commit/de670a2534c568f9a55c9e4c13c66212a371a2f0">de670a2</a> - 2014-03-18
+</div>
+</body>
+</html>

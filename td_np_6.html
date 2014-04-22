@@ -1,0 +1,659 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<title>TD7 : Réactions nucléaires</title>
+<meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta  name="generator" content="Org-mode" />
+<link rel="stylesheet" href="css/styles.css">
+                 <link rel="stylesheet" href="css/org-pygments.css">
+                 <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+<script type="text/javascript">
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2013 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script><script type="text/javascript">
+function displayTOC() {
+    var first = document.getElementById("text-table-of-contents").innerHTML;
+    if (first != "") {
+        var maincontent = '<a class="button"><i class="fa fa-list"></i></a>'
+        maincontent += "<div>" + first + "</div>";
+        document.getElementById("toc").innerHTML = maincontent;
+    } else {
+        document.getElementById("toc").style.display = "none";
+    }
+   }
+</script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+      TeX: {
+          extensions: ["cancel.js"],
+          Macros: {
+              vv: ["{\\vec #1}",1],
+              Upsigma: "{\\Sigma}",
+              Updelta: "{\\Delta}",
+              varoiint: "{\\iint}",
+              varoint: "{\\int}",
+              grad: "{\\vec{\\nabla}}",
+              div: "{\\vec{\\nabla}.}",
+              rot: "{\\vec{\\nabla}\\times\\,}",
+              ket: ["{|#1 \\rangle}",1],
+              bra: ["{\\langle#1|}",1],
+              psh: ["{\\langle#1|#2 \\rangle}",2],
+              bm: ["{\\boldsymbol #1}",1]
+          }
+      }
+  });
+  MathJax.Hub.Register.StartupHook("TeX Jax Ready",function () {
+      var TEX = MathJax.InputJax.TeX;
+      TEX.Definitions.macros.unit = "jaxunit";
+      TEX.Parse.Augment({
+          jaxunit: function (name) {
+              var n = this.GetBrackets(name),
+              unit = this.GetArgument(name)
+              if (n == null) {n = ""}
+              var tex = n + '\\,\\text{'+unit+'}';
+              this.string = tex + this.string.slice(this.i); this.i = 0;
+          }
+      });
+  });
+  </script>
+  <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+</head>
+<body onload="displayTOC()"><div id="toc"></div>
+<div id="content">
+<h1 class="title">TD7 : Réactions nucléaires</h1>
+<div style="display:none;">
+<div id="text-table-of-contents">
+<ul class="org-ul">
+<li><a href="././td_np_0.html">TD1 : Cinématique &amp; Accélérateurs</a>
+</li>
+<li><a href="././td_np_1.html">TD2 : Nombres Quantiques &amp; Symétries</a>
+</li>
+<li><a href="././td_np_2.html">TD3 : Réactions de production et de désintégration de particules</a>
+</li>
+<li><a href="././td_np_3.html">TD4 : Modèle des quarks &#x2013; Les hadrons</a>
+</li>
+<li><a href="././td_np_4.html">TD5 : Isospin &#x2013; des quarks aux noyaux</a>
+</li>
+<li><a href="././td_np_5.html">TD6 : Structure nucléaire</a>
+</li>
+<li><a href="././td_np_6.html">TD7 : Réactions nucléaires</a>
+</li>
+<li><a href="././td_np_7.html">TD8 : Masses et désintégrations nucléaires</a>
+</li>
+<li><a href="././td_np_8.html">TD9 : Modèle Standard et au-delà : l'interaction faible</a>
+</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-sec-1" class="outline-2">
+<h2 id="sec-1"><span class="section-number-2">1</span> Introduction</h2>
+<div class="outline-text-2" id="text-1">
+<p>
+<img src="./figures/solid_angle.png" alt="solid_angle.png" />
+Les mesures de section efficace sont des mesures typiques de physique des
+particules. Elles traduisent la probabilité de passage d'un état initial de la
+matière \(\psi_i\) à un état final \(\psi_f\).
+</p>
+
+<p>
+Un détecteur couvrant un angle solide \(d\Omega\) et situé à un angle \(\theta\) par
+rapport à l'axe du faisceau détectera ainsi \(dn\) particules par unité de temps
+</p>
+\begin{align*}
+  dn=\underbrace{\text{flux incident}}_{\substack{\text{nbr. particules incidentes}\\\text{/unité de temps}}}\times\underbrace{\text{ nbr. de noyaux cible}}_{\substack{\text{nbr. centre diffuseurs}\\\text{/unité de volume}}}\times\text{ épaisseur cible}\times\frac{d\sigma}{d\Omega}d\Omega
+\end{align*}
+
+<p>
+où \(d\Omega\) = surface de détection/(distance cible-détecteur)<sup>2</sup> = \(\sin\theta
+d\theta d\phi\) avec \(\theta\in[0,\pi]\) et \(\phi\in[0,2\pi]\). Le terme
+\(\left.\frac{d\sigma}{d\Omega}\right|_\theta\) est <b>la section efficace
+différentielle</b> à l'angle \(\theta\) et s'exprime en barn par stéradian où 1 barn
+= 10<sup>-24</sup> cm<sup>2</sup> = 10<sup>-28</sup> m<sup>2</sup>=100 fm<sup>2</sup>. De la section efficace
+différentielle, on déduit la section efficace totale \(\sigma\) en intégrant sur
+l'angle solide total \(d\Omega\) : \(\sigma=\int\frac{d\sigma}{d\Omega}d\Omega\) et
+correspond à la probabilité qu'une particule incidente ait intéragi avec les
+particules constitutives de la cible.
+</p>
+
+\begin{align*}
+  dn&=\phi\times N\times e\times\frac{d\sigma}{d\Omega}d\Omega\text{ ou }n=\phi\times N\times e\times\sigma\\
+  \text{avec }&N=\frac{\text{nbr. centre diffuseurs}}{\text{unité de volume}}=\rho\times\frac{\mathcal{N}}{M_\text{at.}}\simeq\rho\times\frac{\mathcal{N}}{A}\\
+  \text{où }&\rho = \text{masse volumique ou densité volumique (g/cm\(^{3}\))}\\
+  &\mathcal{N} = \text{nombre d'Avogadro}=\unit[6.02\,10^{23}]{mol}^{-1}\\
+  &A = \text{nombre de nucléons} = \text{masse molaire (g/mol)}
+\end{align*}
+
+<p>
+<b>Remarques :</b>
+</p>
+
+<ul class="org-ul">
+<li>l'épaisseur de la cible est souvent donnée en terme de densité surfacique
+exprimée en g/cm<sup>2</sup> et correspond donc au produit de la densité volumique par
+l'épaisseur physique de la cible.
+</li>
+
+<li>le flux \(\phi\) incident est parfois donné en terme d'intensité du faisceau
+(exprimé en Ampères). Le nombre de particules incidentes par unité de temps
+devient
+\begin{align*}
+  \phi=\frac{I}{Ze}\text{ où \(e\) correspond à la charge élémentaire}
+\end{align*}
+</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-sec-2" class="outline-2">
+<h2 id="sec-2"><span class="section-number-2">2</span> Accélérateur, section efficace et luminosité</h2>
+<div class="outline-text-2" id="text-2">
+<ol class="org-ol">
+<li>&nbsp;<sup>2</sup><sub>1</sub>H+&nbsp;<sup>63</sup><sub>29</sub>Cu&rarr;&nbsp;<sup>2</sup><sub>1</sub>H+&nbsp;<sup>63</sup><sub>29</sub>Cu
+\begin{align*}
+  dn=\phi Ne\frac{d\sigma}{d\Omega}d\Omega=\phi\frac{\mathcal{N}\rho_e}{A_\text{cible}}\frac{d\sigma}{d\Omega}d\Omega
+\end{align*}
+
+<p>
+où \(\phi=\phi'\pi R^2\) et \(\phi'=6\,10^{10}\,\text{s}^{-1}\text{.cm}^{-2}\). Le
+nombre de deutons détectés est
+</p>
+\begin{align*}
+  \left.dn\right|_{30^\circ}&=\phi\frac{\mathcal{N}\rho_e}{A_\text{cible}}\left.\frac{d\sigma}{d\Omega}\right|_{\theta=30^\circ}\frac{S_\text{détecteur}}{d^2_\text{cible-détecteur}}\\
+  &=6\,10^{10}\times\pi 1^2\times\frac{6.02\,10^{23}\times2\,10^{-3}}{63}\times0.1\,10^{-24}\times\frac{4\times2}{100^2}\\
+  &=\unit[287]{deutons/s}
+\end{align*}
+</li>
+
+<li>&nbsp;<sup>3</sup><sub>1</sub>H+&nbsp;<sup>9</sup><sub>4</sub>Be&rarr;&nbsp;<sup>3</sup><sub>2</sub>He+&nbsp;<sup>9</sup><sub>3</sub>Li
+
+<ol class="org-ol">
+<li>Le flux incident \(\phi\) s'exprime en fonction de l'intensité \(I\) du faisceau
+\begin{align*}
+  \phi=\frac{I}{Ze}
+\end{align*}
+
+<p>
+Par ailleurs, le nombre de noyaux détectés \(n=2000\) soit
+</p>
+\begin{align*}
+  n&=\phi\times N\times e\times\sigma=2000\\
+  &=\frac{I}{Ze}\times\frac{\mathcal{N}\rho_e}{A_\text{cible}}\times\sigma\\
+  \sigma&=\frac{n\times A_\text{cible}\times Ze}{I\times\mathcal{N}\times\rho_e}\\
+  \sigma&=\unit[9.6\,10^{-29}]{cm}^2=\unit[9.6\,10^{-5}]{barn}=\unit[96]{microbarn}
+\end{align*}
+</li>
+
+<li>Principe expérimental
+<div class="center">
+
+<div class="figure">
+<p><img src="./figures/HBe_HeLi_production.png" alt="HBe_HeLi_production.png" />
+</p>
+</div>
+</div>
+
+<p>
+L'énergie totale est fixé par l'énergie cinétique du faisceau incident (+
+les énergies de masse de la cible et du faisceau) : la distribution en
+énergie des noyaux de&nbsp;<sup>3</sup><sub>2</sub>He présente des raies correspondant aux
+niveaux en énergie de&nbsp;<sup>3</sup><sub>2</sub>He (ou&nbsp;<sup>9</sup><sub>3</sub>Li) → <b>énergies quantifiées</b>
+</p>
+</li>
+</ol>
+</li>
+
+<li><ol class="org-ol">
+<li>La luminosité \(\mathcal{L}\) s'exprime comme le rapport du nombre de
+particules détectés par unité de temps sur la section efficace
+\begin{align*}
+  \mathcal{L}=\frac{n}{\sigma}
+\end{align*}
+
+<p>
+Ainsi, une réaction/interaction de section efficace \(\sigma\) sera d'autant
+"mieux" observée que la luminosité sera grande et donc que le nombre de
+particules résultantes de cette réaction/interaction sera
+conséquente. L'unité de luminosité est donc
+</p>
+\begin{align*}
+  \left[\mathcal{L}\right]=\frac{\left[n\right]}{\left[\sigma\right]}=T^{-1}.L^{-2}
+\end{align*}
+
+<p>
+La luminosité dépend de l'intensité de chacun des faisceau entrant en
+collision
+</p>
+\begin{align*}
+  \mathcal{L}&=\frac{2\pi R}{c}\times\frac{I_1\,I_2}{e^2S}\\
+  &=\frac{2\pi\times4.5\,10^3}{3\,10^8}\times\frac{9\,10^{-6}}{(1.6\,10^{-19})^2\times0.5\,10^{-6}}\\
+  &=6.63\,10^{34}\,\text{m}^2\text{.s}^{-1}=6.63\,10^{30}\,\text{cm}^2\text{.s}^{-1}
+\end{align*}
+</li>
+
+<li>Diffusion <a href="http://en.wikipedia.org/wiki/Homi_J._Bhabha">Bhabha</a> \(e^+e^-\to e^+e^-\)
+<div class="center">
+
+<div class="figure">
+<p><img src="./figures/bhabha_diagram.png" alt="bhabha_diagram.png" />
+</p>
+</div>
+</div>
+
+\begin{align*}
+  \frac{d\sigma}{d\Omega}=\frac{16\alpha^2(\hbar c)^2}{E^2\theta^4}
+\end{align*}
+
+<p>
+avec \(E=\unit[90]{GeV}\) et \(\alpha=\frac{e^2}{4\pi\epsilon_0\hbar c}\) où
+\(\hbar c=\unit[197.3]{MeV.fm}\)
+</p>
+<ol class="org-ol">
+<li>La section efficace totale \(\sigma\) est égale à
+\begin{align*}
+  \sigma&=\int\frac{d\sigma}{d\Omega}d\Omega\\
+  &=\int_0^{2\pi}\int_{\theta_1}^{\theta_2}\sin\theta d\theta d\phi\frac{d\sigma}{d\Omega}\\
+  &=2\pi\frac{16\,\alpha^2(\hbar c)^2}{E^2}\int_{\theta_1}^{\theta_2}\frac{\sin\theta}{\theta^4}d\theta
+\end{align*}
+
+<p>
+Dans la mesure où \(\theta\ll1\), \(\sin\theta\sim\theta\) soit
+</p>
+\begin{align*}
+  \sigma=2\pi\frac{16\,\alpha^2(\hbar c)^2}{E^2}\int_{\theta_1}^{\theta_2}\frac{d\theta}{\theta^3}
+\end{align*}
+
+<p>
+avec \(\theta_1=3^\circ=\unit[0.0524]{rad}\) et \(\theta_2=8^\circ=\unit[0.1396]{rad}\).
+</p>
+\begin{align*}
+  \sigma&=\frac{32\pi\,\alpha^2(\hbar c)^2}{2E^2}\times\underbrace{\left[\frac{1}{\theta_1^2}-\frac{1}{\theta_2^2}\right]}_{=312.9}\\
+  &=\frac{32\pi\times e^4\times\cancel{(\hbar c)^2}}{2\times(4\pi\epsilon_0\cancel{\hbar c})^2\times E^2}\times312.9\\
+  &=\frac{e^2}{\pi\epsilon_0^2\left.E\right|_\text{eV}^2}\times312.9=\unit[4\,10^{36}]{m}^2=\unit[4\,10^{-12}]{barn}=\unit[4]{picobarn}
+\end{align*}
+</li>
+
+<li>Le nombre d'interaction par seconde est
+\(n=\frac{950}{3600}=\unit[0.2639]{s}^{-1}\). La luminosité est égale à
+\begin{align*}
+  \mathcal{L}=\frac{n}{\sigma}=\frac{0.2639}{4\,10^{36}}=6.553\,10^{34}\,\text{m}^{-2}\text{.s}^{-1}
+\end{align*}
+
+<p>
+<b>Remarques :</b> La luminosité instantanée du LHC est voisine de 10<sup>34</sup>
+cm<sup>-2</sup>.s<sup>-1</sup> soit 10<sup>-2</sup> pb<sup>-1</sup>.s<sup>-1</sup>. À titre de comparaison, le
+collisionneur \(p\bar{p}\) du Tevratron avait une luminosité de 3.2
+10<sup>32</sup> cm<sup>-2</sup>.s<sup>-1</sup> ce qui intégré sur son temps d'acquisition de
+2001 à 2008 a fourni une luminosité intégrée de 5000 pb<sup>-1</sup>. En un peu
+moins d'une semaine de prise de données, le LHC a atteint la même
+luminosité intégrée que le Tevatron.
+</p>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+</div>
+</div>
+
+<div id="outline-container-sec-3" class="outline-2">
+<h2 id="sec-3"><span class="section-number-2">3</span> Section efficace et neutrons thermiques</h2>
+<div class="outline-text-2" id="text-3">
+<ol class="org-ol">
+<li>\(n_\text{th.}+^{10}_{5}\text{B}\rightarrow\alpha+^{7}_{3}\text{Li}\)
+
+<p>
+Calcul de la chaleur de réaction \(Q\)
+</p>
+\begin{align*}
+  Q&=m_nc^2+m_{^{10}_{5}\text{B}}c^2-m_\alpha c^2-m_{^{7}_{3}\text{Li}}c^2\\
+  &=939.6 + 9324.495 - 3727.398 - 6533.877=\unit[2.82]{MeV}>0
+\end{align*}
+
+<p>
+La réaction est donc exoénergétique ou spontanée et ne requiert pas
+nécessairement d'énergie cinétique pour les neutrons
+\(T_{n_\text{th.}}\ll1\sim0\). On considèrera la réaction se faisant au repos
+\(T_{n_\text{th.}}=T_{^{10}_{5}\text{B}}\sim0\). La conservation de l'impulsion
+implique donc que \(\vv{p}_\alpha=-\vv{p}_{^{7}_{3}\text{Li}}\) soit
+</p>
+\begin{align*}
+  p_\alpha c&=p_{^{7}_{3}\text{Li}}c\\
+  T_\alpha^2+2T_\alpha\,m_\alpha c^2&=T_{^{7}_{3}\text{Li}}^2+2T_{^{7}_{3}\text{Li}}\,m_{^{7}_{3}\text{Li}}c^2
+\end{align*}
+
+<p>
+La conservation de l'énergie implique quant à elle
+</p>
+\begin{align*}
+  E_n+E_{^{10}_{5}\text{B}}&=E_\alpha+E_{^{7}_{3}\text{Li}}\\
+  m_nc^2+m_{^{10}_{5}\text{B}}c^2&=m_\alpha c^2+m_{^{7}_{3}\text{Li}}c^2+T_\alpha+T_{^{7}_{3}\text{Li}}\\
+  Q&=T_\alpha+T_{^{7}_{3}\text{Li}}
+\end{align*}
+
+<p>
+soit
+</p>
+\begin{align*}
+  T_\alpha^2+2T_\alpha\,m_\alpha c^2&=\left(Q-T_\alpha\right)^2+2\left(Q-T_\alpha\right)\,m_{^{7}_{3}\text{Li}}c^2\\
+  T_\alpha\times\left(2m_\alpha c^2+2m_{^{7}_{3}\text{Li}}+2Q\right)&=Q^2+2Qm_{^{7}_{3}\text{Li}}c^2\\
+  T_\alpha&=\frac{Q^2+2Qm_{^{7}_{3}\text{Li}}c^2}{2\left(m_n c^2+m_{^{10}_{5}\text{B}}c^2\right)}\\
+  &=\unit[1.8]{MeV}
+\end{align*}
+</li>
+
+<li>\(n+^{11}_{5}\text{B}\rightarrow\alpha+^{8}_{3}\text{Li}\)
+
+<p>
+Calcul de la chaleur de réaction \(Q\)
+</p>
+\begin{align*}
+  Q&=m_nc^2+m_{^{11}_{5}\text{B}}c^2-m_\alpha c^2-m_{^{8}_{3}\text{Li}}c^2\\
+  &=939.6 + 10252.615 - 3727.398 - 7471.417=\unit[-6.6]{MeV}<0
+\end{align*}
+
+<p>
+<i>i.e.</i> une réaction endoénergétique qui, pour se réaliser, implique que les
+neutrons aient une énergie cinétique minimale \(T_S\) de
+</p>
+\begin{align*}
+  T_S&=\frac{|Q|\times\Sigma m_{if}c^2}{2m_{^{11}_{5}\text{B}}c^2}\\
+  &=\unit[7.21]{MeV}\gg\unit[2.5\,10^{-2}]{eV}
+\end{align*}
+</li>
+
+<li>Le nombre de particules &alpha; détectées se déduit de l'expression suivante
+\begin{align*}
+  dn_\alpha=\phi_{n_\text{th.}}\times\frac{\mathcal{N}\times\rho_e}{A_\text{cible}}\times\frac{d\sigma}{d\Omega}d\Omega
+\end{align*}
+
+<p>
+Le flux incident de neutrons thermiques est donc
+</p>
+\begin{align*}
+  \phi_{n_\text{th.}}=\frac{dn_\alpha\,A_\text{cible}}{\mathcal{N}\times\rho_e\times\frac{d\sigma}{d\Omega}d\Omega}
+\end{align*}
+
+<p>
+Bore naturel → 19.8%&nbsp;<sup>10</sup>B+80.2%&nbsp;<sup>11</sup>B. Le nombre de nucléons moyen
+de la cible est donc
+</p>
+\begin{align*}
+  A_\text{cible}=0.198\times10+0.802\times11=10.802
+\end{align*}
+
+<p>
+Par ailleurs, l'épaisseur de cible \(\rho_e=\unit[2.34\,10^{-4}]{g/cm}^2\) est
+seulement constituée de 19.8% de&nbsp;<sup>10</sup>B nécessaire à la réaction. On
+introduit donc une épaisseur "effective" de&nbsp;<sup>10</sup>B correspondant à
+19.8%\(\cdot\rho_e\). Finalement la section efficace différentielle
+\(\frac{d\sigma}{d\Omega}\) est isotrope soit
+\(\frac{d\sigma}{d\Omega}=\frac{\sigma}{4\pi}\). On déduit ainsi le flux par
+seconde \(\phi_{n_\text{th.}}\)
+</p>
+\begin{align*}
+  \phi_{n_\text{th.}}&=\frac{\frac{473}{60}\times10.802}{6.02\,10^{23}\times0.198\times2.34\,10^{-4}\times\frac{3840\,10^{-24}}{4\pi}\times\frac{5}{100^2}}\\
+  &=\unit[2\,10^7]{s}^{-1}
+\end{align*}
+
+<p>
+La surface de la cible étant de 10 cm<sup>2</sup>, le flux par seconde et par unité
+de surface est donc \(F=\frac{\phi}{S_\text{cible}}=2\,10^6\,\text{cm}^{-2}\text{.s}^{-1}\).
+</p>
+</li>
+
+<li>\(T_n=\unit[13]{MeV}>T_S=\unit[7.21]{MeV}\) et
+\(\left.\frac{d\sigma}{d\Omega}\right|_{20^\circ}=\unit[3.8]{mb/sr}\)
+<ol class="org-ol">
+<li>Pour calculer la section efficace totale \(\sigma\), il s'agit d'intégrer la
+section efficace différentielle sur 4&pi; stéradian : il faut donc
+connaitre la dépendance angulare \((\theta,\phi)\) de
+\(\frac{d\sigma}{d\Omega}\).
+</li>
+<li>\(\frac{d\sigma}{d\Omega}=\frac{K}{\sin\theta}\) avec
+\(K=\left.\frac{d\sigma}{d\Omega}\right|_{20^\circ}\sin\,20^\circ=\unit[1.3]{mb/sr}\). La
+section efficace totale devient
+\begin{align*}
+  \sigma&=\int\frac{d\sigma}{d\Omega}d\Omega=\int_0^{2\pi}d\phi\int_0^\pi\frac{K}{\sin\theta}\sin\theta d\theta\\
+  &=2\pi^2\,K=\unit[25.65]{mb}
+\end{align*}
+</li>
+</ol>
+</li>
+</ol>
+</div>
+</div>
+
+<div id="outline-container-sec-4" class="outline-2">
+<h2 id="sec-4"><span class="section-number-2">4</span> Section efficace et rayon d'interaction</h2>
+<div class="outline-text-2" id="text-4">
+<ol class="org-ol">
+<li>&nbsp;<sup>11</sup>Li&rarr;&nbsp;<sup>9</sup>Be
+<ol class="org-ol">
+<li>Le nombre de réactions \(n\) par unité de temps s'écrit
+\begin{align*}
+  n&=\phi\times\rho_e\times\frac{\mathcal{N}}{A_\text{cible}}\times\sigma
+\end{align*}
+
+<p>
+d'où
+</p>
+\begin{align*}
+  \sigma&=\frac{N}{\phi}\times\frac{A_\text{cible}}{\mathcal{N}\rho_e}\\
+  &=\frac{10^5/600\times9}{10^4\times6\,10^{23}\times50\,10^{-3}}\\
+  \sigma(^{11}\text{Li}+^{9}\text{Be})&\simeq\unit[5\,10^{-24}]{cm}^2=\unit[5]{barn}
+\end{align*}
+</li>
+
+<li>Soit le rayon du&nbsp;<sup>9</sup>Be
+\begin{align*}
+  R(^{9}\text{Be})=r_0\times A^{1/3}=\unit[1.25]{fm}\times9^{1/3}=\unit[2.6]{fm}
+\end{align*}
+
+<p>
+La section efficace devient
+</p>
+\begin{align*}
+  \sigma(^{11}\text{Li}+^{9}\text{Be})&=\pi\left(R(^{11}\text{Li})+R(^{9}\text{Be})\right)^2=\unit[5]{barn}=\unit[500]{fm}^2\\
+  R(^{11}\text{Li})&=\sqrt{\frac{\sigma}{\pi}}-R(^{9}\text{Be})\\
+  &=\sqrt{\frac{\unit[500]{fm}^2}{\pi}}-\unit[2.6]{fm}\\
+  &=\unit[10]{fm}\gg1.25\times11^{1/3}=\unit[2.78]{fm}
+\end{align*}
+</li>
+
+<li>\(\sigma(^{9}\text{Li}+^{9}\text{Be})=\sigma(^{11}\text{Li}+^{9}\text{Be})/5\)
+      d'où
+\begin{align*}
+  R(^{9}\text{Li})&=\sqrt{\frac{\unit[100]{fm}^2}{\pi}}-\unit[2.6]{fm}\\
+  &=\unit[3.04]{fm}\gtrsim\unit[2.6]{fm}
+\end{align*}
+</li>
+</ol>
+</li>
+
+<li><ol class="org-ol">
+<li>\(^{10}\text{Li}\to^{9}\text{Li}+n\)
+
+<p>
+La chaleur de réaction \(Q\) est égale à
+</p>
+\begin{align*}
+  Q&=m_{^{10}\text{Li}}c^2-m_{^{9}\text{Li}}c^2-m_{n}c^2\\
+  &=9347.3-8406.9-939.6=\unit[800]{keV}
+\end{align*}
+
+<p>
+justifiant une réaction spontanée. Le Lithium 10 se désintègre ainsi
+presque instantanément en Lithium 9.
+</p>
+</li>
+<li>Si on considère la réaction de cassure du&nbsp;<sup>11</sup>Li en&nbsp;<sup>10</sup>Li +
+neutron, la chaleur de réaction est
+\begin{align*}
+  Q&=m_{^{11}\text{Li}}c^2-m_{^{10}\text{Li}}c^2-m_{n}c^2\\
+  &=10285.9-9347.3-939.6=\unit[-1]{MeV}
+\end{align*}
+
+<p>
+Le noyau de&nbsp;<sup>11</sup>Li est donc stable et lié par intéraction forte. On
+peut modéliser ce noyau comme un c\oe ur de&nbsp;<sup>9</sup>Li "entouré" de 2
+neutrons. Ce système à trois corps est un noyau borroméen en référence aux
+armoiries de la famille italienne Borromée. En effet, de la même manière
+que casser un des anneaux libère les deux autres, rompre une
+liaison&nbsp;<sup>9</sup>Li &#x2013; neutron, brise instantanément la
+seconde :&nbsp;<sup>11</sup>Li&rarr;&nbsp;<sup>9</sup>Li.
+</p>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="void">
+
+
+<colgroup>
+<col  class="left" />
+
+<col  class="left" />
+</colgroup>
+<tbody>
+<tr>
+<td class="left"><img src="./figures/borromean_rings.png" alt="borromean_rings.png" /></td>
+<td class="left"><img src="./figures/borromean_nucleus.png" alt="borromean_nucleus.png" /></td>
+</tr>
+</tbody>
+</table>
+</li>
+
+<li>La seconde réaction n'est pas observable/mesurable du fait que&nbsp;<sup>10</sup>Li
+devient instantanément un noyau&nbsp;<sup>9</sup>Li. Seule la première réaction est
+observable et donc seul le rayon du&nbsp;<sup>11</sup>Li est mesurable.
+</li>
+</ol>
+</li>
+
+<li>Comparaison \(R_\text{int.}\) et modèle de la goutte liquide \(R_\text{gl}\)
+
+<table id="radius" border="2" cellspacing="0" cellpadding="6" rules="groups" frame="void">
+
+
+<colgroup>
+<col  class="right" />
+
+<col  class="right" />
+
+<col  class="right" />
+
+<col  class="right" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="right">\(A\)</th>
+<th scope="col" class="right">\(R_\text{gl}\) [fm]</th>
+<th scope="col" class="right">\(R_\text{int.}\) [fm]</th>
+<th scope="col" class="right">[%]</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="right">6</td>
+<td class="right">2.27</td>
+<td class="right">2.14</td>
+<td class="right">5.7</td>
+</tr>
+
+<tr>
+<td class="right">7</td>
+<td class="right">2.39</td>
+<td class="right">2.25</td>
+<td class="right">5.9</td>
+</tr>
+
+<tr>
+<td class="right">8</td>
+<td class="right">2.5</td>
+<td class="right">2.38</td>
+<td class="right">4.8</td>
+</tr>
+
+<tr>
+<td class="right">9</td>
+<td class="right">2.6</td>
+<td class="right">3.04</td>
+<td class="right">-16.9</td>
+</tr>
+
+<tr>
+<td class="right">10</td>
+<td class="right">2.69</td>
+<td class="right">\(-\)</td>
+<td class="right">\(-\)</td>
+</tr>
+
+<tr>
+<td class="right">11</td>
+<td class="right">2.78</td>
+<td class="right">10</td>
+<td class="right">-259.7</td>
+</tr>
+</tbody>
+</table>
+
+<div class="center">
+
+<div class="figure">
+<p><img src="./figures/interaction_radius.png" alt="interaction_radius.png" />
+</p>
+</div>
+</div>
+</li>
+</ol>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+File under git version control - commit <a href="https://github.com/xgarrido/master_npp_teaching/commit/de670a2534c568f9a55c9e4c13c66212a371a2f0">de670a2</a> - 2014-03-18
+</div>
+</body>
+</html>

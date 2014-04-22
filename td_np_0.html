@@ -1,0 +1,663 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<title>TD1 : Cinématique &amp; Accélérateurs</title>
+<meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta  name="generator" content="Org-mode" />
+<link rel="stylesheet" href="css/styles.css">
+                 <link rel="stylesheet" href="css/org-pygments.css">
+                 <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+<script type="text/javascript">
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2013 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script><script type="text/javascript">
+function displayTOC() {
+    var first = document.getElementById("text-table-of-contents").innerHTML;
+    if (first != "") {
+        var maincontent = '<a class="button"><i class="fa fa-list"></i></a>'
+        maincontent += "<div>" + first + "</div>";
+        document.getElementById("toc").innerHTML = maincontent;
+    } else {
+        document.getElementById("toc").style.display = "none";
+    }
+   }
+</script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+      TeX: {
+          extensions: ["cancel.js"],
+          Macros: {
+              vv: ["{\\vec #1}",1],
+              Upsigma: "{\\Sigma}",
+              Updelta: "{\\Delta}",
+              varoiint: "{\\iint}",
+              varoint: "{\\int}",
+              grad: "{\\vec{\\nabla}}",
+              div: "{\\vec{\\nabla}.}",
+              rot: "{\\vec{\\nabla}\\times\\,}",
+              ket: ["{|#1 \\rangle}",1],
+              bra: ["{\\langle#1|}",1],
+              psh: ["{\\langle#1|#2 \\rangle}",2],
+              bm: ["{\\boldsymbol #1}",1]
+          }
+      }
+  });
+  MathJax.Hub.Register.StartupHook("TeX Jax Ready",function () {
+      var TEX = MathJax.InputJax.TeX;
+      TEX.Definitions.macros.unit = "jaxunit";
+      TEX.Parse.Augment({
+          jaxunit: function (name) {
+              var n = this.GetBrackets(name),
+              unit = this.GetArgument(name)
+              if (n == null) {n = ""}
+              var tex = n + '\\,\\text{'+unit+'}';
+              this.string = tex + this.string.slice(this.i); this.i = 0;
+          }
+      });
+  });
+  </script>
+  <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+</head>
+<body onload="displayTOC()"><div id="toc"></div>
+<div id="content">
+<h1 class="title">TD1 : Cinématique &amp; Accélérateurs</h1>
+<div style="display:none;">
+<div id="text-table-of-contents">
+<ul class="org-ul">
+<li><a href="././td_np_0.html">TD1 : Cinématique &amp; Accélérateurs</a>
+</li>
+<li><a href="././td_np_1.html">TD2 : Nombres Quantiques &amp; Symétries</a>
+</li>
+<li><a href="././td_np_2.html">TD3 : Réactions de production et de désintégration de particules</a>
+</li>
+<li><a href="././td_np_3.html">TD4 : Modèle des quarks &#x2013; Les hadrons</a>
+</li>
+<li><a href="././td_np_4.html">TD5 : Isospin &#x2013; des quarks aux noyaux</a>
+</li>
+<li><a href="././td_np_5.html">TD6 : Structure nucléaire</a>
+</li>
+<li><a href="././td_np_6.html">TD7 : Réactions nucléaires</a>
+</li>
+<li><a href="././td_np_7.html">TD8 : Masses et désintégrations nucléaires</a>
+</li>
+<li><a href="././td_np_8.html">TD9 : Modèle Standard et au-delà : l'interaction faible</a>
+</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-sec-1" class="outline-2">
+<h2 id="sec-1"><span class="section-number-2">1</span> Introduction</h2>
+<div class="outline-text-2" id="text-1">
+<div class="center">
+<p>
+Noyau :&nbsp;<sup>A</sup><sub>Z</sub>X &rarr; Z protons  + N neutrons = A nucléons (nombre de masse)
+</p>
+</div>
+
+<ul class="org-ul">
+<li>Noyau ayant le "même" nombre de protons Z sont appelés des <b>isotopes</b> tandis que
+ceux présentant le même nombre de nucléons A sont des <b>isobares</b>
+</li>
+
+<li>Noyau &equiv; objet quantique
+<ul class="org-ul">
+<li>une fonction d'onde décrit les propriétés du noyau
+</li>
+<li>les nombres quantiques associés : spin, parité, isospin
+</li>
+<li>il possède un état fondamental et des états excités
+</li>
+<li>chaque état possède un moment électronique et un moment magnétique
+</li>
+</ul>
+</li>
+</ul>
+
+<p>
+Certains noyaux sont stables, d'autres radioactifs se désintégrant spontanément
+</p>
+
+<p>
+\[^{14}_{6}\text{C} \rightarrow\,^{14}_{7}\text{N} + e^{-} + \bar{\nu}_{e}\]
+</p>
+
+<p>
+Pour étudier le noyau, on forme des réactions nucléaires qui obéissent à des
+lois de conservation (charge, nombre de nucléons, parité&#x2026;). On bombarde une
+cible avec &ne; projectiles (&gamma;, e<sup>-</sup>, n, p, ions lourds), à &ne;
+énergies. Ces réactions sont possibles avec &ne; probabilités (section
+efficace). On peut étudier chaque réaction dont les états finaux peuvent
+différer et déterminer la variation de la section efficace en fonction de
+l'énergie incident (fonction d'excitation) ou en fonction de l'angle de sortie
+(distribution angulaire).
+</p>
+
+<p>
+<b>Rayon des noyaux :</b> En 1909, Hans Geiger et Ernest Marsden sous la direction
+d'Ernest Rutherford, mettent en évidence le noyau atomique en étudiant la
+diffusion de particules &alpha; sur des atomes d'or (Au). Antérieurement à cette
+expérience, la matière était conçue sous la forme d'atome contenant deux parties
+chargées électriquement de façons opposées. L'expérience de Rutherford montra
+qu'en réalité le noyau chargé positivement est de taille très petite devant le
+nuage électronique qui l'entoure, chargé négativement.
+</p>
+
+<p>
+En supposant que le noyau soit une sphère uniformément chargée en volume et
+contenant A nucléons
+</p>
+
+<p>
+\[V = \frac{4}{3}\pi\,R^{3} \propto A\]
+</p>
+
+<p>
+On déduit que la rayon d'un noyau est proportionnel à son nombre de nucléons \(R
+= r_{0} \times A^{1/3}\). Expérimentalement, \(r_{0}\) est compris entre 1.2 et 1.5
+fermi où 1 fm = 10<sup>-15</sup> m = 10<sup>-13</sup> cm. La valeur la plus probable est \(r_{0}\) =
+1.25 fm.
+</p>
+</div>
+</div>
+
+<div id="outline-container-sec-2" class="outline-2">
+<h2 id="sec-2"><span class="section-number-2">2</span> Ordres de grandeurs</h2>
+<div class="outline-text-2" id="text-2">
+<ul class="org-ul">
+<li>Volume du noyau de&nbsp;<sup>12</sup><sub>6</sub>C : approx. sphérique
+
+\begin{align*}
+  V = \frac{4}{3}\pi\,R^{3} &= \frac{4}{3}\pi\,(r_{0}\,A^{1/3}) \\
+  V(^{12}_{6}\text{C})&= \frac{4}{3}\pi\,(1.25\times12^{1/3}) \\
+  &\simeq \unit[100]{fm}^3 = \unit[10^{-37}]{cm}^3
+\end{align*}
+</li>
+
+<li>Masse volumique
+&nbsp;<sup>12</sup><sub>6</sub>C &rarr; noyau particulier à partir duquel est défini
+l'unité de masse atomique
+
+\begin{align*}
+  \unit[1]{u.m.a} = \frac{\text{masse}(^{12}_{6}\text{C})}{12} = \unit[931.5]{MeV/c}^{2}
+\end{align*}
+</li>
+</ul>
+
+<p>
+d'où
+</p>
+
+\begin{align*}
+  m(^{12}_{6}\text{C})c^2 &= 12\times\unit[931.5]{MeV} = 12\times931.5\times\unit[1.6\,10^{-19}]{J} \\
+  m(^{12}_{6}\text{C})    &= \frac{12\times931.5\times1.6\,10^{-19}}{(3\,10^8)^2} = \unit[2\,10^{-26}]{kg} = \unit[2\,10^{-23}]{g}\\
+\end{align*}
+
+<p>
+On en déduite que la masse volumique est égale à
+</p>
+
+\begin{align*}
+  \rho(^{12}_{6}\text{C}) = \frac{m(^{12}_{6}\text{C})}{V(^{12}_{6}\text{C})} =
+  \frac{2\,10^{-23}}{10^{-37}} = \unit[2\,10^{14}]{g/cm}^3
+\end{align*}
+
+<p>
+À titre de comparaison, le bois a une densité moyenne de 0.6 &#x2013; 1 g/cm<sup>3</sup>, le
+fer environ 10 g/cm<sup>3</sup>, la Terre de 6 g/cm<sup>3</sup> et l'Uranium de 19 g/cm<sup>3</sup>.
+</p>
+
+<p>
+<b>Remarques :</b> la densité au sein d'une étoile à neutrons est voisine de 10<sup>11</sup> g/cm<sup>3</sup>
+</p>
+</div>
+</div>
+
+<div id="outline-container-sec-3" class="outline-2">
+<h2 id="sec-3"><span class="section-number-2">3</span> Cinématique</h2>
+<div class="outline-text-2" id="text-3">
+<p>
+Désintégration en deux photons : \(a \rightarrow \gamma_{1} + \gamma_{2}\), énergie
+de a au repos \(mc^{2}\) et vitesse de \(a \beta=v/c\)
+</p>
+
+<ol class="org-ol">
+<li>dans \(\mathcal{R^\prime}\) <i>i.e.</i> le référentiel du centre de masse où \(a\) est
+au repos et \(\Upsigma\vv{p}^{*} = \vv{0}\) :
+
+<p>
+<b>&rarr; Conservation de l'énergie totale :</b>
+</p>
+\begin{align*}
+  E_{a}^* &= E_1^* + E_2^*\\
+  mc^2 &= E_1^* + E_2^*
+\end{align*}
+
+<p>
+<b>&rarr; Conservation de l'impulsion :</b>
+</p>
+\begin{align*}
+  \vv{p_a}^* &= \vv{p_1}^* + \vv{p_2}^* \\
+  \vv{0} &= \vv{p_1}^* + \vv{p_2}^* \\
+  \|\vv{p_1}^*\| &= \|\vv{p_2}^*\|
+\end{align*}
+
+<p>
+or \(E_{1}^{*} = p_{1}^{*}c\) et \(E_{2}^{*} = p_{2}^{*}c\) d'où \(E_{1}^{*} =
+   E_{2}^{*} = \frac{mc^{2}}{2}\).
+</p>
+
+<p>
+Pour déterminer les valeurs d'énergie et d'impulsion dans le référentiel du
+laboratoire \(\mathcal{R}\), on applique la transformation de Lorentz le long
+de l'axe \(z\) au quadrivecteur énergie-impulsion
+</p>
+
+\begin{equation*}
+  \begin{bmatrix}
+    E\\p_xc\\p_yc\\p_zc
+  \end{bmatrix}
+  =
+  \begin{bmatrix}
+    \gamma&0&0&\beta\gamma\\
+    0&1&0&0\\
+    0&0&1&0\\
+    \beta\gamma&0&0&\gamma
+  \end{bmatrix}
+  \cdot
+  \begin{bmatrix}
+    E^*\\p_x^*c\\p_y^*c\\p_z^*c
+  \end{bmatrix}
+\end{equation*}
+
+\begin{align*}
+  E_1 &= \gamma\,E_1^* + \beta\gamma\,p_{1z}^*c = \gamma\,(mc^2/2 + \beta c\,p_{1z}^*)\\
+  E_2 &= \gamma\,E_2^* + \beta\gamma\,p_{2z}^*c = \gamma\,(mc^2/2 + \beta c\,p_{2z}^*)
+\end{align*}
+
+<p>
+et
+</p>
+\begin{align*}
+  p_{1z}^* &= p_{1}^*\,\cos\theta^* = +\frac{mc}{2}\,\cos\theta^*\\
+  p_{2z}^* &= p_{2}^*\,\cos\theta^* = -\frac{mc}{2}\,\cos\theta^*
+\end{align*}
+
+<p>
+soit
+</p>
+\begin{align*}
+  E_1 &= \frac{\gamma\,mc^2}{2}(1 + \beta\cos\theta^*) \\
+  E_2 &= \frac{\gamma\,mc^2}{2}(1 - \beta\cos\theta^*)
+\end{align*}
+
+<p>
+L'énergie minimum \(E_\text{min}\) et maximum \(E_\text{max}\) sont les mêmes
+pour \(E_{1}\) et \(E_{2}\) avec \(\cos\theta^{*}\in[-1;1]\) <i>i.e.</i>
+</p>
+\begin{align*}
+  E_\text{min} &= \frac{\gamma mc^2}{2}(1 - \beta) = \frac{mc^2}{2}\sqrt{\frac{1-\beta}{1+\beta}}\\
+  E_\text{max} &= \frac{\gamma mc^2}{2}(1 + \beta) = \frac{mc^2}{2}\sqrt{\frac{1+\beta}{1-\beta}}
+\end{align*}
+
+<p>
+où \(\gamma=1/\sqrt{1-\beta^{2}}\).
+</p>
+</li>
+
+<li>Angle d'ouverture &omega; en fonction de &theta;<sup>*</sup>
+
+<p>
+Invariant relativiste \(I = (\Upsigma_{i}E_{i})^{2} -
+  (\Upsigma_{i}\vv{p_{i}}^{*})^{2}\,c^{2}\) constant quelque soit le référentiel
+&rarr; \(I_\text{cdm} = I_\text{lab.}\)
+</p>
+
+\begin{align*}
+  (E_1^* + E_2^*)^2 - \vv{0} &= (E_1 + E_2)^2 - (\vv{p_1}c + \vv{p_2}c)^2 \\
+  (mc^2)^2 &= E_1^2 + E_2^2 + 2E_1E_2 - (p_1c)^2 - (p_2c)^2 - 2p_1p_2c^2\,\cos\omega
+\end{align*}
+
+<p>
+or \(E_{1} = p_{1}c\) et \(E_{2} = p_{2}c\) d'où
+</p>
+\begin{align*}
+  \frac{(mc^2)^2}{2} &= E_1E_2 - p_1p_2c^2\,\cos\omega\\
+  \frac{(mc^2)^2}{2} &= E_1E_2\cdot(1 - \cos\omega)
+\end{align*}
+
+<p>
+En remplaçant \(E_{1,2}\) par leurs expressions déduites de la question 1), on a
+\(E_{1}E_{2} = \left(\frac{\gamma mc^2}{2}\right)^2\cdot\left(1 -
+  \beta^2\cos^2\theta^*\right)\), soit finalement
+</p>
+
+<p>
+\[1 - \cos\omega = \frac{2}{\gamma^2\,(1 - \beta^2\cos^2\theta^*)}\]
+</p>
+</li>
+</ol>
+</div>
+</div>
+
+<div id="outline-container-sec-4" class="outline-2">
+<h2 id="sec-4"><span class="section-number-2">4</span> Énergie seuil</h2>
+<div class="outline-text-2" id="text-4">
+<div class="center">
+<p>
+Réaction : \(a + b \rightarrow c + d + e + f\)
+</p>
+</div>
+
+<p>
+Par définition, l'énergie seuil est l'énergie <b>juste nécessaire</b> à la création
+des particules en voie de sortie sans que ces dernières n'aient d'impulsion
+<i>i.e.</i> d'énergie cinétique.
+</p>
+
+<ol class="org-ol">
+<li>Dans le référentiel du centre de masse, on applique la conservation de
+l'énergie totale sachant que les particules produites sont au repos <i>i.e.</i>
+\(\vv{p_c}^* = \vv{p_d}^* = \vv{p_e}^* = \vv{p_f}^* = \vv{0}\). Par ailleurs,
+\(\vv{p_a}^* = -\vv{p_b}^*\) donc \(T_{a} = T_{b} = T_{S}\) et étant donné que
+\(m_{a} = m_{b}\), l'énergie totale de la particule a est égale à celle de la
+particule \(b\). En appliquant le principe de conservation de l'énergie totale,
+on obtient
+\begin{align*}
+  E_a^* + E_b^* &= m_cc^2 + m_dc^2 + m_ec^2 + m_fc^2 = \Upsigma m_\text{finale}c^2\\
+  2T_S + 2mc^2 &= \Upsigma m_\text{finale}c^2
+\end{align*}
+
+<p>
+soit
+</p>
+\begin{align*}
+  T_{S} = \frac{\Upsigma m_\text{finale}c^2 - \Upsigma m_\text{initiale}c^2}{2}
+\end{align*}
+
+<p>
+En définissant \(Q\) comme la chaleur de réaction <i>i.e.</i> l'énergie disponible
+dans la réaction où \(Q = \Upsigma m_\text{initiale}c^{2} - \Upsigma
+   m_\text{finale}c^{2}\) et \(T_{S} = |Q|/2\), on distingue 3 situations :
+</p>
+
+<dl class="org-dl">
+<dt>Q &gt; 0</dt><dd>la réaction est éxoénergétique c'est-à-dire spontanée. Dans ce cas,
+il n'y a pas d'énergie seuil, la réaction se faisant d'elle même,
+</dd>
+<dt>Q &lt; 0</dt><dd>la réaction est dite endoénergétique et n'est envisageable qu'à la
+condition de fournir de l'énergie (cinétique) en voie d'entrée.
+</dd>
+</dl>
+</li>
+
+<li>Réaction dans le référentiel du laboratoire : soit un faisceau de particule
+\(a\) envoyé sur une cible fixe constituée de particule \(b \rightarrow \vv{p_b}
+   = \vv{0}\). L'énergie seuil est la valeur minimale de \(T_{a}\) suffisant à la
+création des particules \(c, d, e, f\) au repos. L'invariant relativiste \(I\)
+est égal à
+\begin{align*}
+  I_\text{lab.} = \left(\Upsigma m_\text{finale}c^2\right)^2 &= \left(\Upsigma E\right)^2 - \left(\Upsigma pc\right)^2\\
+  &= (T_S + m_ac^2 + m_bc^2)^2 - (p_ac)^2\\
+  &= (T_S + \Upsigma m_\text{initiale}c^2)^2 - (p_ac)^2
+\end{align*}
+
+<p>
+or \(E^{2} = p^{2}c^{2} + m^{2}c^{4} = (T + mc^{2})^{2} \rightarrow (pc)^{2} =
+   T^{2} + 2Tmc^{2}\). On déduit ainsi l'expression de \(I_\text{lab.}\)
+</p>
+\begin{align*}
+  I_\text{lab.} = \left(\Upsigma m_\text{finale}c^2\right)^2 &= T_S^2 + 2T_S\Upsigma m_\text{initiale}c^2 + \left(\Upsigma m_\text{initiale}c^2\right)^2 - T_S^2 - 2T_Sm_ac^2\\
+  &= 2T_Sm_bc^2 + \left(\Upsigma m_\text{initiale}c^2\right)^2
+\end{align*}
+</li>
+</ol>
+
+<p>
+Finalement,
+</p>
+\begin{align*}
+ 2T_Sm_bc^2 + \left(\Upsigma m_\text{initiale}c^2\right)^2 &= \left(\Upsigma m_\text{finale}c^2\right)^2\\
+ 2T_Sm_bc^2 &= \left(\Upsigma m_\text{finale}c^2\right)^2 - \left(\Upsigma m_\text{initiale}c^2\right)^2\\
+ 2T_Sm_bc^2 &= \left(\Upsigma m_\text{finale}c^2 - \Upsigma m_\text{initiale}c^2\right)\left(\Upsigma m_\text{finale}c^2 + \Upsigma m_\text{initiale}c^2\right)\\
+ 2T_Sm_bc^2 &= |Q|\cdot\left(\Upsigma m_\text{finale}c^2 + \Upsigma m_\text{initiale}c^2\right)
+\end{align*}
+
+<p>
+L'énergie cinétique minimum du faisceau incident est ainsi
+</p>
+
+<p>
+\[T_S^\text{lab.} = \frac{|Q|\cdot\Upsigma m_\text{initiale,finale}c^2}{2\cdot
+m_\text{cible}c^2} = T_S^\text{cdm}\cdot\frac{\Upsigma
+m_\text{initiale,finale}c^2}{m_\text{cible}c^2}\geq T_S^\text{cdm}\]
+</p>
+</div>
+</div>
+<div id="outline-container-sec-5" class="outline-2">
+<h2 id="sec-5"><span class="section-number-2">5</span> Accélérateurs</h2>
+<div class="outline-text-2" id="text-5">
+</div><div id="outline-container-sec-5-1" class="outline-3">
+<h3 id="sec-5-1"><span class="section-number-3">5.1</span> Introduction</h3>
+<div class="outline-text-3" id="text-5-1">
+<dl class="org-dl">
+<dt>cyclotron</dt><dd>Le cyclotron est un type d’accélérateur de particules circulaire
+inventé par Ernest Orlando Lawrence et Milton S. Livingston de
+l'université de Californie à Berkeley au début des
+années 1930. Dans un cyclotron, les particules placées dans un
+champ magnétique suivent une trajectoire en forme de spirale et
+sont accélérées par un champ électrique alternatif à des énergies
+de quelques MeV à une trentaine de MeV.
+</dd>
+<dt>synchrocyclotron</dt><dd>Le cyclotron perd de son efficacité quand on cherche à
+accélérer des protons au-delà de 10 à 20 MeV, en raison de la variation
+relativiste de la masse qui perturbe le fonctionnement quand elle atteint
+une grandeur de 1 ou 2 %. Un synchrocyclotron est un cyclotron dont la
+fréquence du champ électrique est changée (progressivement diminuée) pour
+compenser le gain de masse des particules accélérées pendant que leur
+vitesse commence à approcher la vitesse de la lumière. Le synchrocyclotron
+permet d'atteindre des énergies de l'ordre de centaines de MeV. Le premier
+synchrocyclotron a été construit à l’Université de Californie (Berkeley)
+en 1946.
+</dd>
+<dt>synchrotron</dt><dd>La caractéristique du synchrotron est que l'intensité du champ
+magnétique de l'anneau est maintenue adaptée de façon synchrone
+à l'énergie du faisceau de particules, afin de les maintenir
+sur une trajectoire fixe. Il peut en outre y avoir un second
+anneau, avec des particules tournant en sens inverse, afin de
+réaliser des collisions entre particules avec une énergie
+utilisable très élevée. Ce sont des collisionneurs.
+</dd>
+</dl>
+</div>
+</div>
+<div id="outline-container-sec-5-2" class="outline-3">
+<h3 id="sec-5-2"><span class="section-number-3">5.2</span> Exercice</h3>
+<div class="outline-text-3" id="text-5-2">
+<p>
+Proton de masse \(m = \unit[938.27]{MeV/c}^{2}\) se déplaçant à la vitesse
+\(\vv{v}\) dans un champ d'induction \(\vv{B}\) normal à \(\vv{v}\).
+</p>
+
+<ol class="org-ol">
+<li>PDF: \(\Upsigma\vv{F} = m\vv{a} = \frac{d\vv{p}}{dt}\)
+
+<p>
+Régime relativiste \(m = \gamma{}m_{0} \rightarrow \vv{p} =
+   \gamma{}m_{0}\vv{v}\) et donc \(\text{d}\vv{p}/\text{d}t =
+   \gamma{}m_{0}\text{d}\vv{v}/\text{d}t\). Or \(\text{d}\vv{v}/\text{d}t =
+   R(\text{d}\theta/\text{d}t)^{2}\vv{u}_{r} = v^{2}/R\vv{u}_{r}\). Soit
+</p>
+
+<p>
+\[\Upsigma\vv{F} = q\vv{v}\times\vv{B} = qvB\vv{u}_r\]
+\[qvB = \frac{\gamma{}m_{0}v^{2}}{R}\]
+\[R = \frac{\gamma{}mv}{qB} = \frac{p}{qB}\]
+</p>
+
+<p>
+À chaque tour, \(v\nearrow\) avec \(\vv{B}=\text{constante}\) donc \(R\nearrow\)
+</p>
+</li>
+
+<li>Calcul de \(t_{0}\)
+
+<p>
+\[\frac{\text{d}\theta}{\text{d}t} = \omega = \frac{v}{R} = \frac{qbR}{\gamma{}mR} =
+   \frac{qB}{\gamma{}m}\]
+\[t_{0} = \frac{2\pi}{\omega} = \frac{2\pi}{qB}\cdot\gamma{}m\]
+</p>
+
+<p>
+Pour \(v\ll c\), \(\gamma\sim 1\) et donc \[t_{0} = \frac{2\pi m}{qB}\]
+</p>
+</li>
+
+<li>\(B = 1.5\) T et \(R = 0.5\) m.
+
+\begin{align*}
+  p  &= qBR\\
+  pc &= qRBc\\
+  pc &= 0.5\cdot1.5\cdot3\,10^{8} = \unit[225]{MeV}
+\end{align*}
+
+<p>
+\[T = \frac{p^{2}}{2m} = \frac{p^{2}c^{2}}{2mc^{2}} =
+   \frac{225^{2}}{2\cdot938.3} = \unit[27]{MeV}\]
+</p>
+
+<p>
+\[t_{0} = \frac{2\pi\,m}{qB} = \frac{2\pi\,mc^{2}}{qBc^{2}} = \unit[44]{ns}\]
+</p>
+</li>
+
+<li>\(t = \frac{2\pi\gamma\,m}{qB}\) et \(t_{0} = \frac{2\pi\,m}{qB}\)
+
+<p>
+\[\frac{t-t_{0}}{t_{0}}\ge5\%\]
+\[\frac{t_{lim.}}{t_{0}} = \gamma = 1.05\]
+\[T = (\gamma - 1)mc^{2} = 5\%\cdot\unit[938.3]{MeV} = \unit[47]{MeV}\]
+</p>
+
+<p>
+Dans un cyclotron, dès lors que l'énergie par nucléon devient supérieure à
+~50 MeV, des problèmes relativistes apparaissent <i>i.e.</i> la particule n'est
+plus accélérée en phase avec le champ électrique accélérateur &rarr;
+<b>synchrocyclotron ou synchrotron</b>
+</p>
+</li>
+
+<li>La fréquence de rotation \(f = \frac{v}{2\pi R} = \frac{qB}{2\pi m}\)
+<dl class="org-dl">
+<dt>synchrocyclotron</dt><dd>on fait varier la fréquence \(f\) d'accélération pour
+compenser la variation de \(v\)
+</dd>
+<dt>synchrotron</dt><dd>on fait varier le champ magnétique \(B\) pour maintenir la
+particule sur la même trajectoire <i>i.e.</i> le même rayon \(R\)
+</dd>
+</dl>
+<p>
+\(T\) = 7 TeV et \(B\) = 5.4 T avec \(R = \frac{\gamma mv}{qB} = \frac{pc}{qBc}\). Or
+</p>
+\begin{align*}
+  (pc)^{2} &= E^{2} - m^{2}c^{4}\\
+  &= T^{2} + m^{2}c^{4} + 2Tmc^{2} - m^{2}c^{4}\\
+  &= T\cdot(T + 2mc^{2}) \sim T^{2}
+\end{align*}
+
+<p>
+d'où
+</p>
+\begin{align*}
+  R = \frac{T}{qBc} =
+  \frac{7\,10^{12}\cdot1.6\,10^{19}}{1.6\,10^{19}\cdot5.4\cdot3\,10^{8}} =
+  \unit[4.3]{km}
+\end{align*}
+
+<p>
+soit une circonférence de 26 km.
+</p>
+</li>
+
+<li>\(p + p \rightarrow p + p + N^{+} + N^{-}\)
+
+<p>
+\(T_{S} = |Q|/2\) avec \(Q = \Upsigma\,m_\text{initiale}c^{2} -
+   \Upsigma\,m_\text{finale}c^{2}\) et
+</p>
+
+\begin{align*}
+  \Upsigma\,m_\text{initiale}c^{2} &= 2\,m_{p}c^{2}\\
+  \Upsigma\,m_\text{finale}c^{2} &= 2\,m_{p}c^{2} + 2\,m_{N}c^{2}
+\end{align*}
+\begin{align*}
+  T_{S} = \frac{2m_{N}c^{2}}{2} = m_{N}c^{2} = \unit[7]{TeV}
+\end{align*}
+</li>
+
+<li>Réaction sur cible fixe
+\begin{align*}
+  T_{S} &= \frac{|Q|}{2}\cdot\frac{\Upsigma\,m_{if}c^{2}}{2m_{p}c^{2}}\\
+  &= \frac{2m_{N}c^{2}}{2}\cdot\frac{4m_{p}c^{2}+2m_{N}c^{2}}{2m_{p}c^{2}}\\
+  &\simeq\frac{(m_{N}c^{2})^{2}}{m_{p}c^{2}}\\
+  &\simeq\unit[50\,10^{6}]{GeV} = \unit[50]{PeV}
+\end{align*}
+</li>
+
+<li>Rayon de courbure \[R = \frac{pc}{qBc} \simeq \frac{T_{S}(eV)}{Bc} =
+   \frac{50\,PeV}{5.4\cdot3\,10^{8}} = \unit[30\, 000]{km}\]
+</li>
+</ol>
+</div>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+File under git version control - commit <a href="https://github.com/xgarrido/master_npp_teaching/commit/de670a2534c568f9a55c9e4c13c66212a371a2f0">de670a2</a> - 2014-03-18
+</div>
+</body>
+</html>

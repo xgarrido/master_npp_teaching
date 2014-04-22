@@ -1,0 +1,422 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<title>TD2 : Nombres Quantiques &amp; Symétries</title>
+<meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta  name="generator" content="Org-mode" />
+<link rel="stylesheet" href="css/styles.css">
+                 <link rel="stylesheet" href="css/org-pygments.css">
+                 <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+<script type="text/javascript">
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2013 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script><script type="text/javascript">
+function displayTOC() {
+    var first = document.getElementById("text-table-of-contents").innerHTML;
+    if (first != "") {
+        var maincontent = '<a class="button"><i class="fa fa-list"></i></a>'
+        maincontent += "<div>" + first + "</div>";
+        document.getElementById("toc").innerHTML = maincontent;
+    } else {
+        document.getElementById("toc").style.display = "none";
+    }
+   }
+</script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+      TeX: {
+          extensions: ["cancel.js"],
+          Macros: {
+              vv: ["{\\vec #1}",1],
+              Upsigma: "{\\Sigma}",
+              Updelta: "{\\Delta}",
+              varoiint: "{\\iint}",
+              varoint: "{\\int}",
+              grad: "{\\vec{\\nabla}}",
+              div: "{\\vec{\\nabla}.}",
+              rot: "{\\vec{\\nabla}\\times\\,}",
+              ket: ["{|#1 \\rangle}",1],
+              bra: ["{\\langle#1|}",1],
+              psh: ["{\\langle#1|#2 \\rangle}",2],
+              bm: ["{\\boldsymbol #1}",1]
+          }
+      }
+  });
+  MathJax.Hub.Register.StartupHook("TeX Jax Ready",function () {
+      var TEX = MathJax.InputJax.TeX;
+      TEX.Definitions.macros.unit = "jaxunit";
+      TEX.Parse.Augment({
+          jaxunit: function (name) {
+              var n = this.GetBrackets(name),
+              unit = this.GetArgument(name)
+              if (n == null) {n = ""}
+              var tex = n + '\\,\\text{'+unit+'}';
+              this.string = tex + this.string.slice(this.i); this.i = 0;
+          }
+      });
+  });
+  </script>
+  <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+</head>
+<body onload="displayTOC()"><div id="toc"></div>
+<div id="content">
+<h1 class="title">TD2 : Nombres Quantiques &amp; Symétries</h1>
+<div style="display:none;">
+<div id="text-table-of-contents">
+<ul class="org-ul">
+<li><a href="././td_np_0.html">TD1 : Cinématique &amp; Accélérateurs</a>
+</li>
+<li><a href="././td_np_1.html">TD2 : Nombres Quantiques &amp; Symétries</a>
+</li>
+<li><a href="././td_np_2.html">TD3 : Réactions de production et de désintégration de particules</a>
+</li>
+<li><a href="././td_np_3.html">TD4 : Modèle des quarks &#x2013; Les hadrons</a>
+</li>
+<li><a href="././td_np_4.html">TD5 : Isospin &#x2013; des quarks aux noyaux</a>
+</li>
+<li><a href="././td_np_5.html">TD6 : Structure nucléaire</a>
+</li>
+<li><a href="././td_np_6.html">TD7 : Réactions nucléaires</a>
+</li>
+<li><a href="././td_np_7.html">TD8 : Masses et désintégrations nucléaires</a>
+</li>
+<li><a href="././td_np_8.html">TD9 : Modèle Standard et au-delà : l'interaction faible</a>
+</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-sec-1" class="outline-2">
+<h2 id="sec-1"><span class="section-number-2">1</span> Énergie maximum des rayons cosmiques</h2>
+<div class="outline-text-2" id="text-1">
+
+<div class="figure">
+<p><img src="./figures/spectrum.png" alt="spectrum.png" width="500" />
+</p>
+<p><span class="figure-number">Figure 1:</span> <b>Spectre en énergie des rayons cosmiques</b></p>
+</div>
+
+<p>
+\[p + \gamma \rightarrow p + \pi^{+}\]
+\[p + \gamma \rightarrow n + \pi^{0}\]
+</p>
+
+<p>
+Calcul de l'invariant relativiste :
+</p>
+\begin{align*}
+  I(\text{sortie}) &= (m_{p}c^{2} + m_{\pi}c^{2})^{2}\\
+  I(\text{entrée}) &= (E_{p} + E_{\gamma})^{2} - (\vv{p}_{p} + \vv{p}_{\gamma})^{2}c^{2}
+\end{align*}
+
+<p>
+Proton ultra-relativiste \(E_{p}\sim T_{p} = p_{p}c\)
+</p>
+\begin{align*}
+  I(\text{entrée}) &= E_{p}^{2} + E_{\gamma}^{2} + 2E_{p}E_{\gamma} - E_{\gamma}^{2} - E_{p}^{2} - 2E_{\gamma}E_{p}\cos\theta\\
+  &= 2E_{p}E_{\gamma}(1 - \cos\theta)
+\end{align*}
+
+<p>
+d'où l'énergie seuil \[E_{p} \sim T_{p} =
+\frac{\left(\Upsigma\,m_\text{finale}c^{2}\right)^{2}}{2E_{\gamma}(1-\cos\theta)}\]
+</p>
+
+<p>
+Cas limites: \[\theta\rightarrow0; T_{p}\rightarrow\infty\] et \[\theta =
+180^\circ; T_{p} =
+\frac{\left(\Upsigma\,m_\text{finale}c^{2}\right)^{2}}{4E_{\gamma}}\]
+</p>
+
+<p>
+AN: \(m_{\pi^{0}}c^{2}\) = 135 MeV et \(m_{\pi^{+}}c^{2}\) = 139.6 MeV
+</p>
+\begin{align*}
+  T_{p}(\pi^{0}/\pi^{+}) &= \frac{(135/139.6 + 938.3)^{2}\cdot1.6\,10^{-13}}{4\cdot3\cdot1.38\,10^{-23}\cdot2.7} = 4.1\,10^{20}\,eV\\
+\end{align*}
+
+
+<div id="fig::proton_attenuation" class="figure">
+<p><img src="./figures/proton_attenuation_result.png" alt="proton_attenuation_result.png" width="500" />
+</p>
+<p><span class="figure-number">Figure 2:</span> <b>Énergie moyenne des protons en fonction de leur distance à la source</b></p>
+</div>
+
+<p>
+<b>Discussion :</b> Les pertes énergétiques résultantes de la photoproduction de
+pions sont de l’ordre de 15% par interaction ; le libre parcours moyen &lambda;
+est typiquement le mégaparsec<sup><a id="fnr.1" class="footref" href="#fn.1">1</a></sup>. Ainsi, l’énergie moyenne d’un proton
+diminue de façon significative au cours de sa propagation dans l’Univers comme
+le montre la Figure <a href="#fig::proton_attenuation">2</a>. Un proton avec une énergie initiale
+de 10<sup>22</sup> eV voit son énergie réduite à 10<sup>20</sup> eV après avoir parcouru 100
+Mpc. Une diminution nette du flux appelée coupure GZK est alors attendue au
+seuil de la réaction de photoproduction de pions <i>i.e.</i> 10<sup>19.6</sup> eV<sup><a id="fnr.2" class="footref" href="#fn.2">2</a></sup>. La
+position exacte de cette coupure GZK peut varier sensiblement suivant que les
+sources considérées sont ou non uniformément réparties dans l’Univers. En
+particulier, la forme du spectre au delà du seuil GZK permet, en théorie,
+d’évaluer la répartition des sources et de mettre en exergue une éventuelle
+surabondance locale.
+ <div class="footdef"><sup><a id="fn.2" class="footnum" href="#fnr.2">2</a></sup> <p class="footpara"> dans l’hypothèse où les RCUHEs sont des noyaux, la photodésintégration par interaction avec les photons du CMB et le fond infrarouge, devient importante dans la région 5 10<sup>19</sup> &#x2013; 2 10<sup>20</sup> eV. La longueur de perte d’énergie, i.e. le rapport entre le libre parcours moyen et l’inélasticité de la réaction, est typiquement de 100 Mpc pour un noyau de fer de 100 EeV. Le rayonnement gamma est quant à lui fortement attenué en raison, principalement, des interactions avec le fond radio \(\gamma + \gamma_{radio} \rightarrow e^{+} + e^{-}\). </p></div>
+
+
+<div class="figure">
+<p><img src="./figures/hillas_diagram.png" alt="hillas_diagram.png" width="500" />
+</p>
+<p><span class="figure-number">Figure 3:</span> <b>Diagramme de Hillas de différents objets compacts.</b> Les axes correspondent respectivement au logarithme décimal du champ magnétique et à la taille caractéristique de l'objet.</p>
+</div>
+
+
+<div class="figure">
+<p><img src="./figures/auger_spectrum.png" alt="auger_spectrum.png" width="500" />
+</p>
+<p><span class="figure-number">Figure 4:</span> <b>Spectre du rayonnement cosmique mesuré par l'Observatoire Pierre Auger (données 2008)</b></p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-2" class="outline-2">
+<h2 id="sec-2"><span class="section-number-2">2</span> Étrangeté dans les rayons cosmiques</h2>
+<div class="outline-text-2" id="text-2">
+<p>
+Cascade de réactions : \(p\rightarrow\pi\rightarrow\mu\rightarrow e\)
+Le muon est ainsi détecté pour la première fois car si sa durée de vie propre
+est de 2.2 &mu;s, ce temps est "boosté" par le facteur de Lorentz soit &tau; =
+&gamma;&tau;<sub>0</sub> = quelques ms.
+</p>
+
+
+<div class="figure">
+<p><img src="./figures/v_particles.jpg" alt="v_particles.jpg" />
+</p>
+<p><span class="figure-number">Figure 5:</span> <b>Photographies de deux événements faisant apparaître la désintégration de deux particules \(\bm{V}\)</b> (référence <a href="http://www.nature.com/physics/looking-back/rochester/index.html">Rochester G. D. &amp; Butler C. C. 1947)</a></p>
+</div>
+
+<ol class="org-ol">
+<li>Les particules \(V\)
+
+<div class="center">
+<p>
+\(V_{1}\rightarrow p + \pi^- \quad V_{2}\rightarrow \pi^+ + \pi^-\)
+</p>
+</div>
+
+<p>
+Conservation de l'énergie et de l'impulsion
+</p>
+\begin{equation*}
+  \begin{bmatrix}
+    E_{V_1}\\\vv{p_{V_1}}
+  \end{bmatrix}
+  =
+  \begin{bmatrix}
+    E_\pi\\\vv{p_\pi}
+  \end{bmatrix}
+  +
+  \begin{bmatrix}
+    E_p\\\vv{p_p}
+  \end{bmatrix}
+\end{equation*}
+
+<p>
+\[E_{V_1} = E_\pi + E_p \Leftrightarrow p_{V}^2c^2 + m_{V}^2c^4 =
+   \left[\sqrt{p_\pi^2c^2 + m_\pi^2c^4} + \sqrt{p_p^2c^2 + m_p^2c^4}\right]^2\]
+\[\vv{p_{V}} = \vv{p_\pi} + \vv{p_p} \Leftrightarrow p_{V}^2c^2 =
+   p_\pi^2c^2 + p_p^2c^2 + 2p_\pi p_p c^2\cos\theta\]
+</p>
+
+<p>
+<b>AN :</b>
+</p>
+\begin{align*}
+   p_{V_1}c &= \sqrt{160^2 + 320^2 + 2\cdot160\cdot320\cos 65} = \unit[413]{MeV}\\
+   p_{V_2}c &= \sqrt{220^2 + 220^2 + 2\cdot220^2\cos 135} = \unit[168]{MeV}\\
+   m_{V_1}c^2 &= \left[\sqrt{160^2 + 140^2} + \sqrt{320^2 + 938^2} - 413^2\right]^{1/2} = \unit[1130]{MeV}\\
+   m_{V_2}c^2 &= \left[4\cdot(220^2 + 140^2) - 168^2\right]^{1/2} = \unit[493]{MeV}
+\end{align*}
+
+<p>
+<b>Discussion :</b> À l'époque, seuls le proton, neutron, électron, pion et muon
+sont connus &rarr; \(V_1 = \Lambda^0\) et \(V_2 = K^0\)
+</p>
+</li>
+
+<li>\(d_{\Lambda^0} = \unit[3.2]{cm}\) et \(d_{K^0} = \unit[0.8]{cm}\)
+\begin{align*}
+  T_{\Lambda^0} &= \sqrt{m_{\Lambda^0}^2c^4 + p_{\Lambda^0}^2c^2} - m_{\Lambda^0}c^2 = \unit[73]{MeV} \ll m_{\Lambda^0}c^2\\
+  T_{K^0} &= \sqrt{m_{K^0}^2c^4 + p_{K^0}^2c^2} - m_{K^0}c^2 = \unit[28]{MeV} \ll m_{K^0}c^2
+\end{align*}
+
+<p>
+\[\tau_{\Lambda^0} = \frac{d_{\Lambda^0}}{v}\] or \(p=mv\) d'où
+\[\tau_{\Lambda^0} = \frac{d_{\Lambda^0}\cdot m_{\Lambda^0}}{p} =
+   \frac{d_{\Lambda^0}}{c}\cdot \frac{m_{\Lambda^0}c^2}{pc}\]
+</p>
+
+<p>
+<b>AN :</b>
+</p>
+\begin{align*}
+  \tau_{\Lambda^0} &= \frac{\unit[0.032]{m}}{\unit[3\,10^8]{m/s}}\cdot\frac{\unit[1130]{MeV}}{\unit[413]{MeV}} = \unit[2.9\,10^{-10}]{s}\\
+  \tau_{K^0} &= \frac{\unit[0.008]{m}}{\unit[3\,10^8]{m/s}}\cdot\frac{\unit[493]{MeV}}{\unit[168]{MeV}} = \unit[7.8\,10^{-11}]{s}
+\end{align*}
+</li>
+</ol>
+
+
+<ol class="org-ol">
+<li>&tau; est un temps caractéristique d'une désintégration par interaction
+faible : &tau; &gt; 10<sup>-13</sup> s (<i>cf.</i> page 30)
+</li>
+
+<li>Le fait que ces particules \(K^0\) et \(\Lambda^0\) soient toujours produites par
+paire implique la conservation d'une quantité jusqu'alors inconnue
+&rarr; introduction de <b>l'étrangeté</b> \(S\) comme nouveau nombre quantique.
+Cette quantité est ainsi conservée lors de la production des particules \(V\)
+par <b>interaction forte</b> mais non-conservée lors de leurs désintégrations (par
+interaction faible) : \(S_{K^0}\) = +1, \(S_{\Lambda^0}\) = -1 et \(S\) est nulle
+pour toutes les particules connues jusqu'à présent. Il découlera de ces
+résultats expérimentaux le modèle des quarks introduit par Murray Gell-Mann
+(déjà à l'origine de l'étrangeté pour expliquer les résultats du
+Cosmotron<sup><a id="fnr.3" class="footref" href="#fn.3">3</a></sup> de BNL) au début des années 60, modèle pour lequel il
+obtiendra le prix nobel de Physique en 1969.
+</li>
+
+<li>\(p + n \rightarrow p + \Lambda^0\) et \(n + n \rightarrow \Lambda^0 +
+   \Lambda^0\). Ces deux réactions ne conservent pas l'étrangeté \(S\). Elles ne
+peuvent donc se produire par interaction forte. La très faible section
+efficace par rapport à la réaction \(p + p \rightarrow K^0 + \Lambda^0\)
+confirme cette hypothèse : &sigma;<sub>forte</sub> &Gt; &sigma;<sub>faible</sub>
+</li>
+
+<li>\(\Lambda^0 \rightarrow \pi^+ + \pi^-\) : le nombre baryonique n'est pas
+conservé or toutes intéractions conservent ce nombre (y compris l'interaction
+faible)
+</li>
+</ol>
+</div>
+</div>
+
+<div id="outline-container-sec-3" class="outline-2">
+<h2 id="sec-3"><span class="section-number-2">3</span> La parité et sa violation</h2>
+<div class="outline-text-2" id="text-3">
+<ol class="org-ol">
+<li>L'opérateur parité transforme une fonction \(\psi(\vv{r})\) en
+\(\psi(-\vv{r})\) : \(\hat{\mathcal{P}}\,\psi(\vv{r}) = \psi(-\vv{r})\). Les
+valeurs propres &pi; sont telles que \(\hat{\mathcal{P}}\,\psi(\vv{r}) =
+   \pi\,\psi(\vv{r})\) or \(\hat{\mathcal{P}}^2\,\psi(\vv{r}) =
+   \hat{\mathcal{P}}\,\psi(-\vv{r}) = \psi(\vv{r})\). \(\hat{\mathcal{P}}\) est
+donc unitaire et les valeurs propres sont &pi; = &plusmn;1 (à une phase
+près). L'invariance sous \(\hat{\mathcal{P}}\) <i>i.e.</i> conservation de la parité
+implique qu'il n'y a pas de différence entre "gauche ou droite" (même image
+dans un miroir).
+</li>
+
+<li>\(A^+\rightarrow\pi^++\pi^++\pi^+-\)
+
+<p>
+Conservation du moment cinétique total \(\vv{I}\)
+ <div class="footdef"><sup><a id="fn.3" class="footnum" href="#fnr.3">3</a></sup> <p class="footpara"> le Cosmotron du laboratoire national de Brookhaven fut le premier synchrotron a accéléré des protons au delà du GeV (1952 &#x2013; 1966) contribuant à la découverte de l'ensemble des mésons chargés de même qu'à la mise en évidence de particules lourdes instables telles que les particules \(V\). </p></div>
+
+<p>
+$$\vv{I}(A^+) + \vv{L}_i = \vv{I}(\pi^+) + \vv{I}(\pi^+) + \vv{I}(\pi^-) +
+   \vv{L}_f$$
+</p>
+
+<p>
+où \(\vv{L}_i\) et \(\vv{L}_f\) sont les moments angulaires relatifs des
+particules en voie d'entrée et de sortie. La conservation de la parité &pi; se
+traduit par l'équation suivante
+</p>
+
+<p>
+\[\pi(A^+)\,(-1)^{L_i} = \pi(\pi^+)\,\pi(\pi^+)\,\pi(\pi^-)\,(-1)^{L_f}\]
+</p>
+
+<p>
+Du fait que \(I(A^+) = I(\pi^\pm) = 0\), on déduit que \(\vv{L_f} - \vv{L_i} =
+   \vv{0}\) soit la parité dans l'état final \(A^+\)
+</p>
+
+<p>
+$$\pi(A^+) = (-1)\,(-1)\,(-1)\,(-1)^0 = -1$$
+</p>
+</li>
+
+<li>\(\theta^+\rightarrow\pi^++\pi^0\) avec \(I(\theta)=0\) et \(I^\pi(\pi)=0^-\). Le
+moment angulaire relatif \(L_i - L_f\) est donc nul.
+
+<p>
+\[\pi(\theta^+) = \pi(\pi^+)\,\pi(\pi^0)\,(-1)^0 = +1\]
+</p>
+</li>
+
+<li>\(A^+\) et \(\theta^+\) ont la même masse, mêmes durées de vie et même charge
+électrique. Elles sont donc la même particule mais avec <b>une parité
+différente</b>. Les mésons se désintégrant par interaction faible, ce problème
+aussi connu sous le nom de "puzzle &theta;/&tau;" (&tau;&equiv; A<sup>+</sup>) trouva sa
+solution dans le fait que l'interaction faible ne conserve pas la parité. Ces
+deux particules sont donc une seule et même particule appelée à présent
+\(K^+\).
+</li>
+</ol>
+</div>
+</div>
+<div id="footnotes">
+<h2 class="footnotes"> </h2>
+<div id="text-footnotes">
+
+
+
+
+
+</div>
+</div></div>
+<div id="postamble" class="status">
+File under git version control - commit <a href="https://github.com/xgarrido/master_npp_teaching/commit/de670a2534c568f9a55c9e4c13c66212a371a2f0">de670a2</a> - 2014-03-18
+</div>
+</body>
+</html>
