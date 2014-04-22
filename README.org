@@ -22,7 +22,9 @@ There is no need to detangle this file since emacs will do it when you
 will use the Makefile in the corresponding directories. So, next step will be to
 do =make= within the different directories.
 
+* Browsing classes
 
-#+BEGIN_CENTER
-See [[./td_np.org][Nuclear & Particle Physics classes]] (in french)
-#+END_CENTER
+You can navigate through the different classes (all in french) by following the
+next links
+
+#+INCLUDE: toc.org
