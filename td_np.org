@@ -1,7 +1,7 @@
 #+TITLE: Travaux Dirigés Noyaux & Particules -- Master 1
 #+AUTHOR: Xavier Garrido
 #+DATE: 25/11/13
-#+OPTIONS: ^:{} toc:2 author:nil
+#+OPTIONS: ^:{} toc:2 author:nil split:t
 #+LATEX_CLASS: teaching-class
 
 * TD1 : Cinématique & Accélérateurs
@@ -620,6 +620,24 @@ est de 2.2 \mu{}s, ce temps est "boosté" par le facteur de Lorentz soit \tau =
    deux particules sont donc une seule et même particule appelée à présent
    $K^+$.
 
+** Footnotes
+
+[fn:1] 1 pc = 1 parsec = 3.26 années lumières = 30.856 10^{12} km.
+
+[fn:2] dans l’hypothèse où les RCUHEs sont des noyaux, la photodésintégration
+par interaction avec les photons du CMB et le fond infrarouge, devient
+importante dans la région 5 10^{19} -- 2 10^{20} eV. La longueur de perte
+d’énergie, i.e. le rapport entre le libre parcours moyen et l’inélasticité de la
+réaction, est typiquement de 100 Mpc pour un noyau de fer de 100 EeV. Le
+rayonnement gamma est quant à lui fortement attenué en raison, principalement,
+des interactions avec le fond radio $\gamma + \gamma_{radio} \rightarrow e^{+} +
+e^{-}$.
+
+[fn:3] le Cosmotron du laboratoire national de Brookhaven fut le premier
+synchrotron a accéléré des protons au delà du GeV (1952 -- 1966) contribuant à
+la découverte de l'ensemble des mésons chargés de même qu'à la mise en évidence
+de particules lourdes instables telles que les particules $V$.
+
 * TD3 : Réactions de production et de désintégration de particules
 
 #+CAPTION: *Modèle standard de la physique des particules*
@@ -788,6 +806,11 @@ haut". Le principe de Pauli exclut une telle configuration pour des fermions. En
 ajoutant le nombre quantique de couleur, la chromodynamique quantique permet un
 tel état tout comme pour le baryon \Omega^{-} postulé par Gell-Mann et découvert à
 Brookhaven en 1964.
+** Footnotes
+
+[fn:4] le moment cinétique total est également différent 5/2^{+} ou 7/2^{+} contre
+3/2^{+}
+
 * TD4 : Modèle des quarks -- Les hadrons
 ** Les mésons constitués des quarks $u,d,s$ et de leurs antiquarks
 1) Opérateur conjugaison particule -- antiparticule $\hat{c}$ :
@@ -1105,6 +1128,14 @@ Brookhaven en 1964.
     cinétique total plus grand de même qu'une masse plus élevée que $\bar{D}^0$
     ce qui semble indiquer que cette particule est un état excité de
     $\bar{D}^0$.
+
+** Footnotes
+
+[fn:5] le principe d'exclusion de Pauli généralisé implique que $L+S+T$ soit
+impaire pour que la fonction d'onde soit antisymétrique. $\vv{L}=\vv{0}$,
+$\vv{T}=\vv{0}$ et $\vv{S}=\vv{3}/2$, la somme n'est donc pas impaire. C'est
+l'introduction de la couleur qui permet de rendre cette fonction d'onde globale
+antisymétrique.
 
 * TD5 : Isospin -- des quarks aux noyaux
 L'isospin $\vv{T}$ rend compte de l'indépendance de charge de l'intéraction
@@ -1491,6 +1522,14 @@ avec $I^\pi(d)=1^+$ et $\vv{L}_{\pi d}=\vv{0}$
 
    - \nbsp^{3}_{1}H \equiv $\ket{pnn}$ avec $T_3(pnn)=\tfrac{-1}{2}$
    - \nbsp^{3}_{2}H \equiv $\ket{ppn}$ avec $T_3(pnn)=\tfrac{+1}{2}$
+
+** Footnotes
+
+[fn:6] la fonction d'onde d'isospin des couples $\ket{nn}$ et $\ket{pp}$ est
+symétrique. Toutefois et comme nous le verrons dans l'exercice sur la parité
+intrinsèque du pion, la fonction d'onde globale de ces états demeure
+antisymétrique en raison du principe de Pauli généralisé qui impose que deux
+fermions soient dans des états quantiques différents.
 
 * TD6 : Structure nucléaire
 ** Introduction
@@ -1910,6 +1949,13 @@ $\vv{T}(\text{fonda.})=|T_3|=\tfrac{Z-N}{2}$.
    #+ATTR_LATEX: :width 0.9\linewidth
    [[./figures/calcium_potassium_energy.pdf]]
    #+END_CENTER
+
+** Footnotes
+
+[fn:7] le moment cinétique sera indifferemment noté $J$ ou $I$
+
+[fn:8] la parité est égale à $(-1)^{\ell_1+\ell_2}$ où $\ell_1=\ell_2=\ell$ et
+donc $\pi=(-1)^{2\ell}=+1$
 
 * TD7 : Réactions nucléaires
 ** Introduction
@@ -2875,6 +2921,16 @@ de radioéléments\nbsp^{11}C est nul à $t=0$.
        \end{align*}
      #+END_SRC
 
+** Footnotes
+
+[fn:9] cette dose est équivalent à celle d'un scanner thoraco-abdominal. En
+France, la limite d'exposition pour le public est fixée à 1 mSv par an *hors*
+exposition médicale. À titre de comparaison, une radiographie des poumons
+correspond à 0.1 mSv tout comme un voyage long courrier Paris-New York
+aller-retour. Les effets d'une cigarette sont eux évalués à 0.01 mSv par
+cigarette : la plupart des fumeurs dépassent très vite le seuil légal
+d'exposition de la population générale.
+
 * TD9 : Modèle Standard et au-delà : l'interaction faible
 ** Masse et largeur du $Z^0$ -- Nombre de familles de neutrinos
 Le LEP (pour /Large Electron Positron collider/) était un accélérateur de
@@ -3077,51 +3133,7 @@ incidents.
          mésons $\bar{K}^0$ : les mésons $K^0$ se sont donc "transformés" en
          leur antiparticule $\bar{K}^0$. Cette transformation est le phénomène
          d'oscillation $K^0\leftrightarrow\bar{K}^0$.
-* Footnotes
-
-[fn:1] 1 pc = 1 parsec = 3.26 années lumières = 30.856 10^{12} km.
-
-[fn:2] dans l’hypothèse où les RCUHEs sont des noyaux, la photodésintégration
-par interaction avec les photons du CMB et le fond infrarouge, devient
-importante dans la région 5 10^{19} -- 2 10^{20} eV. La longueur de perte
-d’énergie, i.e. le rapport entre le libre parcours moyen et l’inélasticité de la
-réaction, est typiquement de 100 Mpc pour un noyau de fer de 100 EeV. Le
-rayonnement gamma est quant à lui fortement attenué en raison, principalement,
-des interactions avec le fond radio $\gamma + \gamma_{radio} \rightarrow e^{+} +
-e^{-}$.
-
-[fn:3] le Cosmotron du laboratoire national de Brookhaven fut le premier
-synchrotron a accéléré des protons au delà du GeV (1952 -- 1966) contribuant à
-la découverte de l'ensemble des mésons chargés de même qu'à la mise en évidence
-de particules lourdes instables telles que les particules $V$.
-
-[fn:4] le moment cinétique total est également différent 5/2^{+} ou 7/2^{+} contre
-3/2^{+}
-
-[fn:5] le principe d'exclusion de Pauli généralisé implique que $L+S+T$ soit
-impaire pour que la fonction d'onde soit antisymétrique. $\vv{L}=\vv{0}$,
-$\vv{T}=\vv{0}$ et $\vv{S}=\vv{3}/2$, la somme n'est donc pas impaire. C'est
-l'introduction de la couleur qui permet de rendre cette fonction d'onde globale
-antisymétrique.
-
-[fn:6] la fonction d'onde d'isospin des couples $\ket{nn}$ et $\ket{pp}$ est
-symétrique. Toutefois et comme nous le verrons dans l'exercice sur la parité
-intrinsèque du pion, la fonction d'onde globale de ces états demeure
-antisymétrique en raison du principe de Pauli généralisé qui impose que deux
-fermions soient dans des états quantiques différents.
-
-[fn:7] le moment cinétique sera indifferemment noté $J$ ou $I$
-
-[fn:8] la parité est égale à $(-1)^{\ell_1+\ell_2}$ où $\ell_1=\ell_2=\ell$ et
-donc $\pi=(-1)^{2\ell}=+1$
-
-[fn:9] cette dose est équivalent à celle d'un scanner thoraco-abdominal. En
-France, la limite d'exposition pour le public est fixée à 1 mSv par an *hors*
-exposition médicale. À titre de comparaison, une radiographie des poumons
-correspond à 0.1 mSv tout comme un voyage long courrier Paris-New York
-aller-retour. Les effets d'une cigarette sont eux évalués à 0.01 mSv par
-cigarette : la plupart des fumeurs dépassent très vite le seuil légal
-d'exposition de la population générale.
+** Footnotes
 
 [fn:10] si l'on calcule la masse minimale de cet objet à partir de
 $M_*=N_0\times m_n$, on trouve une masse $M_*=0.04M_\odot$ soit sensiblement
