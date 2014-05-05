@@ -1,7 +1,7 @@
 #+TITLE: Travaux Dirigés Noyaux & Particules -- Master 1
 #+AUTHOR: Xavier Garrido
 #+DATE: 25/11/13
-#+OPTIONS: ^:{} toc:2 author:nil split:t
+#+OPTIONS: ^:{} toc:2 author:nil split:html
 #+LATEX_CLASS: teaching-class
 
 * TD1 : Cinématique & Accélérateurs
@@ -2931,6 +2931,13 @@ aller-retour. Les effets d'une cigarette sont eux évalués à 0.01 mSv par
 cigarette : la plupart des fumeurs dépassent très vite le seuil légal
 d'exposition de la population générale.
 
+[fn:10] si l'on calcule la masse minimale de cet objet à partir de
+$M_*=N_0\times m_n$, on trouve une masse $M_*=0.04M_\odot$ soit sensiblement
+plus faible que la masse typique d'une étoile à neutron $M_*=1.4M_\odot$ (masse
+de Chandrasekhar). En réalite, le rayon d'une étoile à neutron varie de 10 à 20
+km ce qui se traduit en terme de masse par une gamme entre 0.4 et 5 masses
+solaires.
+
 * TD9 : Modèle Standard et au-delà : l'interaction faible
 ** Masse et largeur du $Z^0$ -- Nombre de familles de neutrinos
 Le LEP (pour /Large Electron Positron collider/) était un accélérateur de
@@ -3134,13 +3141,6 @@ incidents.
          leur antiparticule $\bar{K}^0$. Cette transformation est le phénomène
          d'oscillation $K^0\leftrightarrow\bar{K}^0$.
 ** Footnotes
-
-[fn:10] si l'on calcule la masse minimale de cet objet à partir de
-$M_*=N_0\times m_n$, on trouve une masse $M_*=0.04M_\odot$ soit sensiblement
-plus faible que la masse typique d'une étoile à neutron $M_*=1.4M_\odot$ (masse
-de Chandrasekhar). En réalite, le rayon d'une étoile à neutron varie de 10 à 20
-km ce qui se traduit en terme de masse par une gamme entre 0.4 et 5 masses
-solaires.
 
 [fn:11] W. David Arnett & Jonathan L. Roser [[http://journals.aps.org/prl/abstract/10.1103/PhysRevLett.58.1906][Physical Review Letter 58]], David
 N. Spergel & John N. Bahcall [[http://www.sciencedirect.com/science/article/pii/0370269388907903][Physical Letters B]]
