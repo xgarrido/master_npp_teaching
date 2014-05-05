@@ -55,24 +55,25 @@ for the JavaScript code in this tag.
  }
 /*]]>*///-->
 </script><script type="text/javascript">
-  function displayTOC() {
-      var first = document.getElementById("text-table-of-contents").innerHTML;
-      if (first != "") {
-          var maincontent = '<a class="button"><i class="fa fa-list"></i></a>'
-          maincontent += "<div>" + first + "</div>";
-          document.getElementById("toc").innerHTML = maincontent;
-      } else {
-          document.getElementById("toc").style.display = "none";
-      }
-     }
   function randomLinkColor() {
-      var colors = ['#67ad00', '#D5BC23', '#FF9927', '#FF2D27', '#AB0045', '#B81FC8'];
+      var colors = ['#f1c40f','#e74c3c','#3399cc','#e67e22','#67ad00','#8e44ad','#1abc9c','#003399'];
       var random_color = colors[Math.floor(Math.random() * colors.length)];
       var elements = document.querySelectorAll('a');
       [].slice.call(elements).forEach(function(elem) {
           //elem.style.color = random_color;
       });
   }
+  function displayTOC() {
+      var ttoc = document.getElementById("text-table-of-contents");
+      if (ttoc) {
+          var maincontent = '<a class="button"><i class="fa fa-list"></i></a>'
+          maincontent += "<div>" + ttoc.innerHTML + "</div>";
+          document.getElementById("toc").innerHTML = maincontent;
+      } else {
+          document.getElementById("toc").style.display = "none";
+          document.getElementById("preamble").style.top = "10px";
+      }
+     }
   </script>
 <script type="text/x-mathjax-config">
   MathJax.Hub.Config({
@@ -122,7 +123,7 @@ for the JavaScript code in this tag.
 </head>
 <body onload="randomLinkColor();displayTOC();"><div id="toc"></div>
 <div id="preamble" class="status">
-
+ 
 </div>
 <div id="content">
 <h1 class="title">TD8 : Masses et désintégrations nucléaires</h1>
@@ -622,7 +623,7 @@ critique du nombre de neutrons est
 
 <p>
 Le rayon minimal d'une étoile à neutron est donc<sup><a id="fnr.2" class="footref" href="#fn.2">2</a></sup>
- <div class="footdef"><sup><a id="fn.2" class="footnum" href="#fnr.2">2</a></sup> <p>DEFINITION NOT FOUND.</p></div>
+ <div class="footdef"><sup><a id="fn.2" class="footnum" href="#fnr.2">2</a></sup> <p class="footpara"> si l'on calcule la masse minimale de cet objet à partir de \(M_*=N_0\times m_n\), on trouve une masse \(M_*=0.04M_\odot\) soit sensiblement plus faible que la masse typique d'une étoile à neutron \(M_*=1.4M_\odot\) (masse de Chandrasekhar). En réalite, le rayon d'une étoile à neutron varie de 10 à 20 km ce qui se traduit en terme de masse par une gamme entre 0.4 et 5 masses solaires. </p></div>
 \begin{align*}
   R_\text{min}&=r_0\times N_0^{1/3}=1.25\,10^{-15}\times\left(5.11\,10^{55}\right)^{1/3}\\
   &=\unit[4.64]{km}
@@ -804,9 +805,12 @@ désintégration &beta;<sup>-</sup> et &beta;<sup>+</sup> sont les suivantes
 <div id="text-footnotes">
 
 
+
+
+</div>
 </div></div>
 <div id="postamble" class="status">
-File under <i class="fa fa-github-alt"></i> version control - commit <a href="https://github.com/xgarrido/master_npp_teaching/commit/73f5ace9a40be995db111c819a237e4fce0ffed8">73f5ace</a> - 2014-04-22
+File under <i class="fa fa-github-alt"></i> version control - commit <a href="https://github.com/xgarrido/master_npp_teaching/commit/50424ce38e76bae9ae4427c3440bc032e99f84f5">50424ce</a> - 2014-05-05
 </div>
 </body>
 </html>
