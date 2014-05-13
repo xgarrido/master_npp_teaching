@@ -1,6 +1,6 @@
-#+TITLE: Nuclear & Particle Physics classes of Master 1 - README
+#+TITLE: Nuclear & Particle Physics classes of Master 1
 #+AUTHOR: Xavier Garrido
-#+OPTIONS: toc:nil
+#+OPTIONS: toc:nil num:nil
 
 * Introduction
 
