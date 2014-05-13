@@ -1,6 +1,6 @@
 #+TITLE: Travaux Dirigés Noyaux & Particules -- Master 1
 #+AUTHOR: Xavier Garrido
-#+DATE: 25/11/13
+#+EMAIL:  xavier.garrido@u-psud.fr
 #+OPTIONS: ^:{} toc:2 author:nil split:html
 #+LATEX_CLASS: teaching-class
 
