@@ -106,6 +106,24 @@ pre {
     overflow-x: auto;
 }
 
+.tag {
+     display:inline-block;
+     white-space:no-wrap;
+     background:#3399cc;
+     color:#ffffff;
+     float: right;
+     font-size:.6em;
+     line-height:1.5em;
+     border:1px solid #e5e5e5;
+     -webkit-border-radius:0.4em;
+     -moz-border-radius:0.4em;
+     -ms-border-radius:0.4em;
+     -o-border-radius:0.4em;
+     border-radius:0.4em;
+     padding:0 .3em;
+     margin:-1px 0
+}
+
 table {
     width:80%;
     border-collapse:collapse;
@@ -149,8 +167,23 @@ img.hidden {
     font-weight:700;
 }
 
+.cbox {
+    color:#3399cc;
+}
+
+.cbox p:before {
+    font-family: FontAwesome;
+    content: "\f02b ";
+    display: inline-block;
+    padding-right: 3px;
+}
+
 #table-of-contents {
     margin-bottom: 40px;
+}
+
+#table-of-contents .tag:hover {
+    opacity:0.75;
 }
 
 #toc {
@@ -282,6 +315,14 @@ hr {
     background:#e5e5e5;
     height:1px;
     margin:0 0 20px;
+}
+
+.center {
+    text-align:center;
+}
+
+.underline {
+    font-weight: bold;
 }
 
 .footpara {
