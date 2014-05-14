@@ -2923,7 +2923,7 @@ de radioéléments\nbsp^{11}C est nul à $t=0$.
 
 ** Footnotes
 
-[fn:9] cette dose est équivalent à celle d'un scanner thoraco-abdominal. En
+[fn:9] cette dose est équivalente à celle d'un scanner thoraco-abdominal. En
 France, la limite d'exposition pour le public est fixée à 1 mSv par an *hors*
 exposition médicale. À titre de comparaison, une radiographie des poumons
 correspond à 0.1 mSv tout comme un voyage long courrier Paris-New York
