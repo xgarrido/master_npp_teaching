@@ -1,7 +1,7 @@
 #+TITLE: Travaux Dirigés Noyaux & Particules -- Master 1
 #+AUTHOR: Xavier Garrido
 #+EMAIL:  xavier.garrido@u-psud.fr
-#+OPTIONS: ^:{} toc:2 author:nil split:html
+#+OPTIONS: ^:{} toc:2 author:t email:t split:html
 #+LATEX_CLASS: teaching-class
 
 * TD1 : Cinématique & Accélérateurs
@@ -22,7 +22,11 @@ Noyau :\nbsp^{A}_{Z}X \rightarrow Z protons  + N neutrons = A nucléons (nombre 
 
 Certains noyaux sont stables, d'autres radioactifs se désintégrant spontanément
 
-\[^{14}_{6}\text{C} \rightarrow\,^{14}_{7}\text{N} + e^{-} + \bar{\nu}_{e}\]
+#+BEGIN_SRC latex
+  \begin{align*}
+    ^{14}_{6}\text{C} \rightarrow\,^{14}_{7}\text{N} + e^{-} + \bar{\nu}_{e}
+  \end{align*}
+#+END_SRC
 
 Pour étudier le noyau, on forme des réactions nucléaires qui obéissent à des
 lois de conservation (charge, nombre de nucléons, parité...). On bombarde une
@@ -44,7 +48,11 @@ nuage électronique qui l'entoure, chargé négativement.
 En supposant que le noyau soit une sphère uniformément chargée en volume et
 contenant A nucléons
 
-\[V = \frac{4}{3}\pi\,R^{3} \propto A\]
+#+BEGIN_SRC latex
+  \begin{align*}
+    V = \frac{4}{3}\pi\,R^{3} \propto A
+  \end{align*}
+#+END_SRC
 
 On déduit que la rayon d'un noyau est proportionnel à son nombre de nucléons $R
 = r_{0} \times A^{1/3}$. Expérimentalement, $r_{0}$ est compris entre 1.2 et 1.5
@@ -199,8 +207,11 @@ de a au repos $mc^{2}$ et vitesse de $a \beta=v/c$
   En remplaçant $E_{1,2}$ par leurs expressions déduites de la question 1), on a
   $E_{1}E_{2} = \left(\frac{\gamma mc^2}{2}\right)^2\cdot\left(1 -
   \beta^2\cos^2\theta^*\right)$, soit finalement
-
-  \[1 - \cos\omega = \frac{2}{\gamma^2\,(1 - \beta^2\cos^2\theta^*)}\]
+  #+BEGIN_SRC latex
+    \begin{align*}
+      1 - \cos\omega = \frac{2}{\gamma^2\,(1 - \beta^2\cos^2\theta^*)}
+    \end{align*}
+  #+END_SRC
 
 ** Énergie seuil
 
@@ -274,10 +285,14 @@ Finalement,
 #+END_SRC
 
 L'énergie cinétique minimum du faisceau incident est ainsi
+#+BEGIN_SRC latex
+  \begin{align*}
+    T_S^\text{lab.} = \frac{|Q|\cdot\Upsigma m_\text{initiale,finale}c^2}{2\cdot
+      m_\text{cible}c^2} = T_S^\text{cdm}\cdot\frac{\Upsigma
+      m_\text{initiale,finale}c^2}{m_\text{cible}c^2}\geq T_S^\text{cdm}
+  \end{align*}
+#+END_SRC
 
-\[T_S^\text{lab.} = \frac{|Q|\cdot\Upsigma m_\text{initiale,finale}c^2}{2\cdot
-m_\text{cible}c^2} = T_S^\text{cdm}\cdot\frac{\Upsigma
-m_\text{initiale,finale}c^2}{m_\text{cible}c^2}\geq T_S^\text{cdm}\]
 ** Accélérateurs
 *** Introduction
 - cyclotron :: Le cyclotron est un type d’accélérateur de particules circulaire
@@ -315,20 +330,31 @@ $\vv{v}$ dans un champ d'induction $\vv{B}$ normal à $\vv{v}$.
    \gamma{}m_{0}\vv{v}$ et donc $\text{d}\vv{p}/\text{d}t =
    \gamma{}m_{0}\text{d}\vv{v}/\text{d}t$. Or $\text{d}\vv{v}/\text{d}t =
    R(\text{d}\theta/\text{d}t)^{2}\vv{u}_{r} = v^{2}/R\vv{u}_{r}$. Soit
-
-   \[\Upsigma\vv{F} = q\vv{v}\times\vv{B} = qvB\vv{u}_r\]
-   \[qvB = \frac{\gamma{}m_{0}v^{2}}{R}\]
-   \[R = \frac{\gamma{}mv}{qB} = \frac{p}{qB}\]
+   #+BEGIN_SRC latex
+     \begin{align*}
+       \Upsigma\vv{F} &= q\vv{v}\times\vv{B} = qvB\vv{u}_r\\
+       qvB &= \frac{\gamma{}m_{0}v^{2}}{R}\\
+       R &= \frac{\gamma{}mv}{qB} = \frac{p}{qB}\\
+     \end{align*}
+   #+END_SRC
 
    À chaque tour, $v\nearrow$ avec $\vv{B}=\text{constante}$ donc $R\nearrow$
 
 2) Calcul de $t_{0}$
+   #+BEGIN_SRC latex
+     \begin{align*}
+       \frac{\text{d}\theta}{\text{d}t} &= \omega = \frac{v}{R} = \frac{qbR}{\gamma{}mR} =
+       \frac{qB}{\gamma{}m}\\
+       t_{0} &= \frac{2\pi}{\omega} = \frac{2\pi}{qB}\cdot\gamma{}m
+     \end{align*}
+   #+END_SRC
 
-   \[\frac{\text{d}\theta}{\text{d}t} = \omega = \frac{v}{R} = \frac{qbR}{\gamma{}mR} =
-   \frac{qB}{\gamma{}m}\]
-   \[t_{0} = \frac{2\pi}{\omega} = \frac{2\pi}{qB}\cdot\gamma{}m\]
-
-   Pour $v\ll c$, $\gamma\sim 1$ et donc \[t_{0} = \frac{2\pi m}{qB}\]
+   Pour $v\ll c$, $\gamma\sim 1$ et donc
+   #+BEGIN_SRC latex
+      \begin{align*}
+       t_{0} = \frac{2\pi m}{qB}
+      \end{align*}
+   #+END_SRC
 
 3) $B = 1.5$ T et $R = 0.5$ m.
 
@@ -340,16 +366,28 @@ $\vv{v}$ dans un champ d'induction $\vv{B}$ normal à $\vv{v}$.
      \end{align*}
    #+END_SRC
 
-   \[T = \frac{p^{2}}{2m} = \frac{p^{2}c^{2}}{2mc^{2}} =
-   \frac{225^{2}}{2\cdot938.3} = \unit[27]{MeV}\]
+   #+BEGIN_SRC latex
+     \begin{align*}
+       T = \frac{p^{2}}{2m} = \frac{p^{2}c^{2}}{2mc^{2}} =
+       \frac{225^{2}}{2\cdot938.3} = \unit[27]{MeV}
+     \end{align*}
+   #+END_SRC
 
-   \[t_{0} = \frac{2\pi\,m}{qB} = \frac{2\pi\,mc^{2}}{qBc^{2}} = \unit[44]{ns}\]
+   #+BEGIN_SRC latex
+     \begin{align*}
+       t_{0} = \frac{2\pi\,m}{qB} = \frac{2\pi\,mc^{2}}{qBc^{2}} = \unit[44]{ns}
+     \end{align*}
+   #+END_SRC
 
 4) $t = \frac{2\pi\gamma\,m}{qB}$ et $t_{0} = \frac{2\pi\,m}{qB}$
 
-   \[\frac{t-t_{0}}{t_{0}}\ge5\%\]
-   \[\frac{t_{lim.}}{t_{0}} = \gamma = 1.05\]
-   \[T = (\gamma - 1)mc^{2} = 5\%\cdot\unit[938.3]{MeV} = \unit[47]{MeV}\]
+   #+BEGIN_SRC latex
+     \begin{align*}
+       \frac{t-t_{0}}{t_{0}}&\ge5\%\\
+       \frac{t_{lim.}}{t_{0}} &= \gamma = 1.05\\
+       T = (\gamma - 1)mc^{2} &= 5\%\cdot\unit[938.3]{MeV} = \unit[47]{MeV}
+     \end{align*}
+   #+END_SRC
 
    Dans un cyclotron, dès lors que l'énergie par nucléon devient supérieure à
    ~50 MeV, des problèmes relativistes apparaissent /i.e./ la particule n'est
@@ -405,10 +443,15 @@ $\vv{v}$ dans un champ d'induction $\vv{B}$ normal à $\vv{v}$.
      \end{align*}
    #+END_SRC
 
-8) Rayon de courbure \[R = \frac{pc}{qBc} \simeq \frac{T_{S}(eV)}{Bc} =
-   \frac{50\,PeV}{5.4\cdot3\,10^{8}} = \unit[30\, 000]{km}\]
+8) Rayon de courbure
+   #+BEGIN_SRC latex
+     \begin{align*}
+       R = \frac{pc}{qBc} \simeq \frac{T_{S}(eV)}{Bc} =
+       \frac{50\,PeV}{5.4\cdot3\,10^{8}} = \unit[30\, 000]{km}
+     \end{align*}
+   #+END_SRC
 
-* TD2 : Nombres Quantiques & Symétries
+* TD2 : Nombres quantiques & Symétries
 ** Énergie maximum des rayons cosmiques
 
 #+CAPTION: *Spectre en énergie des rayons cosmiques*
@@ -416,8 +459,12 @@ $\vv{v}$ dans un champ d'induction $\vv{B}$ normal à $\vv{v}$.
 #+ATTR_LATEX: :width 0.7\linewidth :placement [h]
 [[file:./figures/spectrum.pdf]]
 
-\[p + \gamma \rightarrow p + \pi^{+}\]
-\[p + \gamma \rightarrow n + \pi^{0}\]
+#+BEGIN_SRC latex
+\begin{align*}
+p + \gamma &\rightarrow p + \pi^{+}\\
+p + \gamma &\rightarrow n + \pi^{0}
+\end{align*}
+#+END_SRC
 
 Calcul de l'invariant relativiste :
 #+BEGIN_SRC latex
@@ -435,12 +482,17 @@ Proton ultra-relativiste $E_{p}\sim T_{p} = p_{p}c$
   \end{align*}
 #+END_SRC
 
-d'où l'énergie seuil \[E_{p} \sim T_{p} =
-\frac{\left(\Upsigma\,m_\text{finale}c^{2}\right)^{2}}{2E_{\gamma}(1-\cos\theta)}\]
+d'où l'énergie seuil
+#+BEGIN_SRC latex
+  \begin{align*}
+    E_{p} \sim T_{p} =
+    \frac{\left(\Upsigma\,m_\text{finale}c^{2}\right)^{2}}{2E_{\gamma}(1-\cos\theta)}
+  \end{align*}
+#+END_SRC
 
-Cas limites: \[\theta\rightarrow0; T_{p}\rightarrow\infty\] et \[\theta =
-180^\circ; T_{p} =
-\frac{\left(\Upsigma\,m_\text{finale}c^{2}\right)^{2}}{4E_{\gamma}}\]
+Cas limites:
+- $\theta\rightarrow0; T_{p}\rightarrow\infty$
+- $\theta = 180^\circ; T_{p} = \frac{\left(\Upsigma\,m_\text{finale}c^{2}\right)^{2}}{4E_{\gamma}}$
 
 AN: $m_{\pi^{0}}c^{2}$ = 135 MeV et $m_{\pi^{+}}c^{2}$ = 139.6 MeV
 #+BEGIN_SRC latex
@@ -513,10 +565,12 @@ est de 2.2 \mu{}s, ce temps est "boosté" par le facteur de Lorentz soit \tau =
      \end{equation*}
    #+END_SRC
 
-   \[E_{V_1} = E_\pi + E_p \Leftrightarrow p_{V}^2c^2 + m_{V}^2c^4 =
-   \left[\sqrt{p_\pi^2c^2 + m_\pi^2c^4} + \sqrt{p_p^2c^2 + m_p^2c^4}\right]^2\]
-   \[\vv{p_{V}} = \vv{p_\pi} + \vv{p_p} \Leftrightarrow p_{V}^2c^2 =
-   p_\pi^2c^2 + p_p^2c^2 + 2p_\pi p_p c^2\cos\theta\]
+   #+BEGIN_SRC latex
+     \begin{align*}
+       E_{V_1} &= E_\pi + E_p \Leftrightarrow p_{V}^2c^2 + m_{V}^2c^4 = \left[\sqrt{p_\pi^2c^2 + m_\pi^2c^4} + \sqrt{p_p^2c^2 + m_p^2c^4}\right]^2\\
+       \vv{p}_{V} &= \vv{p}_\pi + \vv{p}_p \Leftrightarrow p_{V}^2c^2 = p_\pi^2c^2 + p_p^2c^2 + 2p_\pi p_p c^2\cos\theta
+     \end{align*}
+   #+END_SRC
 
    *AN :*
    #+BEGIN_SRC latex
@@ -538,10 +592,18 @@ est de 2.2 \mu{}s, ce temps est "boosté" par le facteur de Lorentz soit \tau =
        T_{K^0} &= \sqrt{m_{K^0}^2c^4 + p_{K^0}^2c^2} - m_{K^0}c^2 = \unit[28]{MeV} \ll m_{K^0}c^2
      \end{align*}
    #+END_SRC
-
-   \[\tau_{\Lambda^0} = \frac{d_{\Lambda^0}}{v}\] or $p=mv$ d'où
-   \[\tau_{\Lambda^0} = \frac{d_{\Lambda^0}\cdot m_{\Lambda^0}}{p} =
-   \frac{d_{\Lambda^0}}{c}\cdot \frac{m_{\Lambda^0}c^2}{pc}\]
+   #+BEGIN_SRC latex
+     \begin{align*}
+       \tau_{\Lambda^0} = \frac{d_{\Lambda^0}}{v}
+     \end{align*}
+   #+END_SRC
+   or $p=mv$ d'où
+   #+BEGIN_SRC latex
+     \begin{align*}
+       \tau_{\Lambda^0} = \frac{d_{\Lambda^0}\cdot m_{\Lambda^0}}{p} =
+       \frac{d_{\Lambda^0}}{c}\cdot \frac{m_{\Lambda^0}c^2}{pc}
+     \end{align*}
+   #+END_SRC
 
    *AN :*
    #+BEGIN_SRC latex
@@ -550,7 +612,6 @@ est de 2.2 \mu{}s, ce temps est "boosté" par le facteur de Lorentz soit \tau =
        \tau_{K^0} &= \frac{\unit[0.008]{m}}{\unit[3\,10^8]{m/s}}\cdot\frac{\unit[493]{MeV}}{\unit[168]{MeV}} = \unit[7.8\,10^{-11}]{s}
      \end{align*}
    #+END_SRC
-
 
 3) \tau est un temps caractéristique d'une désintégration par interaction
    faible : \tau > 10^{-13} s (/cf./ page 30)
@@ -592,25 +653,36 @@ est de 2.2 \mu{}s, ce temps est "boosté" par le facteur de Lorentz soit \tau =
 2) $A^+\rightarrow\pi^++\pi^++\pi^+-$
 
    Conservation du moment cinétique total $\vv{I}$
-
-   $$\vv{I}(A^+) + \vv{L}_i = \vv{I}(\pi^+) + \vv{I}(\pi^+) + \vv{I}(\pi^-) +
-   \vv{L}_f$$
-
+   #+BEGIN_SRC latex
+     \begin{align*}
+       \vv{I}(A^+) + \vv{L}_i = \vv{I}(\pi^+) + \vv{I}(\pi^+) + \vv{I}(\pi^-) +
+       \vv{L}_f
+     \end{align*}
+   #+END_SRC
    où $\vv{L}_i$ et $\vv{L}_f$ sont les moments angulaires relatifs des
    particules en voie d'entrée et de sortie. La conservation de la parité \pi se
    traduit par l'équation suivante
-
-   \[\pi(A^+)\,(-1)^{L_i} = \pi(\pi^+)\,\pi(\pi^+)\,\pi(\pi^-)\,(-1)^{L_f}\]
+   #+BEGIN_SRC latex
+     \begin{align*}
+       \pi(A^+)\,(-1)^{L_i} = \pi(\pi^+)\,\pi(\pi^+)\,\pi(\pi^-)\,(-1)^{L_f}
+     \end{align*}
+   #+END_SRC
 
    Du fait que $I(A^+) = I(\pi^\pm) = 0$, on déduit que $\vv{L_f} - \vv{L_i} =
    \vv{0}$ soit la parité dans l'état final $A^+$
-
-   $$\pi(A^+) = (-1)\,(-1)\,(-1)\,(-1)^0 = -1$$
+   #+BEGIN_SRC latex
+     \begin{align*}
+       \pi(A^+) = (-1)\,(-1)\,(-1)\,(-1)^0 = -1
+     \end{align*}
+   #+END_SRC
 
 3) $\theta^+\rightarrow\pi^++\pi^0$ avec $I(\theta)=0$ et $I^\pi(\pi)=0^-$. Le
    moment angulaire relatif $L_i - L_f$ est donc nul.
-
-   \[\pi(\theta^+) = \pi(\pi^+)\,\pi(\pi^0)\,(-1)^0 = +1\]
+   #+BEGIN_SRC latex
+     \begin{align*}
+       \pi(\theta^+) = \pi(\pi^+)\,\pi(\pi^0)\,(-1)^0 = +1
+     \end{align*}
+     #+END_SRC
 
 4) $A^+$ et $\theta^+$ ont la même masse, mêmes durées de vie et même charge
    électrique. Elles sont donc la même particule mais avec *une parité
@@ -738,15 +810,20 @@ hypercharge. Dans cet exercice, $c=b=t=0$ donc $Y = B$ + étrangeté $S$
 4) $\pi^+ + p \rightarrow R \rightarrow K^+ + \Sigma^+$
 
    Calcul de l'invariant relativiste $I$
-
-   \[I=(E_\pi + E_p)^2 - (\vv{p}_\pi + \vv{p}_p)^2c^2 = (m_Rc^2)^2\]
+   #+BEGIN_SRC latex
+     \begin{align*}
+       I=(E_\pi + E_p)^2 - (\vv{p}_\pi + \vv{p}_p)^2c^2 = (m_Rc^2)^2
+     \end{align*}
+   #+END_SRC
    or $\vv{p}_p = \vv{0}$ et $E_\pi = \sqrt{p_\pi^2c^2 + m_\pi^2c^4}$,
    $E_p=m_pc^2$ d'où
-
-   \[m_R^2c^4 = \left(\sqrt{1500^2 + 140^2} + 940\right)^2 - 1500^2 =
-   \unit[3.7\,10^6]{MeV}^2\]
-
-   \[m_Rc^2 = \unit[1933]{MeV}\]
+   #+BEGIN_SRC latex
+     \begin{align*}
+       m_R^2c^4 &= \left(\sqrt{1500^2 + 140^2} + 940\right)^2 - 1500^2 =
+       \unit[3.7\,10^6]{MeV}^2\\
+       &= \unit[1933]{MeV}
+     \end{align*}
+   #+END_SRC
 
 5) Largeur \Gamma = 240 MeV
 
@@ -755,9 +832,13 @@ hypercharge. Dans cet exercice, $c=b=t=0$ donc $Y = B$ + étrangeté $S$
    [[file:./figures/breit_wigner.pdf]]
    #+END_CENTER
 
-   \[\tau =\frac{\hbar}{\Gamma} = \frac{\hbar c}{\Gamma c} =
-   \frac{\unit[197.3]{MeV.fm}}{\unit[240]{MeV}\cdot\unit[3\,10^{23}]{fm/s}} =
-   \unit[2.7\,10^{-24}]{s}\]
+   #+BEGIN_SRC latex
+     \begin{align*}
+       \tau =\frac{\hbar}{\Gamma} = \frac{\hbar c}{\Gamma c} =
+       \frac{\unit[197.3]{MeV.fm}}{\unit[240]{MeV}\cdot\unit[3\,10^{23}]{fm/s}} =
+       \unit[2.7\,10^{-24}]{s}
+     \end{align*}
+   #+END_SRC
 
    \rightarrow désintégration par *interaction forte*
 
@@ -768,16 +849,24 @@ hypercharge. Dans cet exercice, $c=b=t=0$ donc $Y = B$ + étrangeté $S$
    $\pi^++p\rightarrow R$ se fait donc également par interaction forte
    \rightarrow conservation de la parité et du moment cinétique total.
 
-   \[\vv{I}_\pi + \vv{I}_p + \vv{L}_i = \vv{I}_R\]
-   \[\pi(\pi^+)\times\pi(p)\times(-1)^{L_i} = \pi(R)\]
+   #+BEGIN_SRC latex
+     \begin{align*}
+       \vv{I}_\pi + \vv{I}_p + \vv{L}_i &= \vv{I}_R\\
+       \pi(\pi^+)\times\pi(p)\times(-1)^{L_i} &= \pi(R)
+     \end{align*}
+   #+END_SRC
    d'où $I_R^\pi = 5/2^+$ ou $7/2^+$
 
 7) Conservation de $\vv{T}$ et $T_3$ dans la désintégration de $R\rightarrow
    K^++\Sigma^+$
 
-   \[T_3(R) = T_3(K^+) + T_3(\Sigma^+) = 3/2\]
-   \[\vv{T}(R) = \vv{T}(K^+) + \vv{T}(\Sigma^+) = \vv{1/2} + \vv{1} =
-   \vv{1/2},\vv{3/2}\]
+   #+BEGIN_SRC latex
+     \begin{align*}
+       T_3(R) &= T_3(K^+) + T_3(\Sigma^+) = 3/2\\
+       \vv{T}(R) &= \vv{T}(K^+) + \vv{T}(\Sigma^+) = \vv{1/2} + \vv{1} =
+       \vv{1/2},\vv{3/2}
+     \end{align*}
+   #+END_SRC
    or comme $T_3(R) = 3/2 \Leftrightarrow \vv{T}(R) = \vv{3/2}$
 
 8) La conservation du nombre baryonique, de la charge électrique et de
@@ -833,7 +922,11 @@ Brookhaven en 1964.
 
 2) $\vv{L_i} = \vv{0}$: méson \equiv 1 quark + 1 antiquark
 
-   \[\pi(q\bar{q}) = (+1)\cdot(-1)\cdot(-1)^{L_i} = -1\]
+   #+BEGIN_SRC latex
+     \begin{align*}
+       \pi(q\bar{q}) = (+1)\cdot(-1)\cdot(-1)^{L_i} = -1
+     \end{align*}
+   #+END_SRC
    #+BEGIN_SRC latex
      \begin{align*}
        \vv{I}(q\bar{q}) = \vv{I}_q + \vv{I}_{\bar{q}} + \vv{L}_i &= \vv{S}_q +
@@ -884,7 +977,11 @@ Brookhaven en 1964.
 
 ** Multiplets de baryons
 1) Formule de Gell-Mann et Okubo :
-   \[M(Y,T)c^2 = M_0c^2 + a\,Y + b\,\left[T(T+1) - \frac{Y^2}{4}\right]\]
+   #+BEGIN_SRC latex
+     \begin{align*}
+       M(Y,T)c^2 = M_0c^2 + a\,Y + b\,\left[T(T+1) - \frac{Y^2}{4}\right]
+     \end{align*}
+   #+END_SRC
    avec l'hypercharge $Y$ égale à $B+S = 1+S$. Pour $I^\pi=3/2^+$, nous avons
    ainsi
    - $S=0$ et $\vv{T}=\vv{3}/2$ : quadruplet \Delta^{-}, \Delta^{0}, \Delta^{+}
@@ -928,15 +1025,30 @@ Brookhaven en 1964.
        &= - a - \frac{3}{2}\,b = \langle\unit[147]{MeV}\rangle
      \end{align*}
    #+END_SRC
-   \[m_\Omega c^2 = m_\Xi c^2 + \unit[147]{MeV} = \unit[1677]{MeV}\] soit un
-   écart de 0.3% par rapport à la valeur mesurée expérimentalement.
+   #+BEGIN_SRC latex
+     \begin{align*}
+       m_\Omega c^2 = m_\Xi c^2 + \unit[147]{MeV} = \unit[1677]{MeV}
+     \end{align*}
+   #+END_SRC
+   soit un écart de 0.3% par rapport à la valeur mesurée expérimentalement.
 
    Par ailleurs, le baryon \Omega^{-} est composé de 3 quarks $s$. L'isospin
    $\vv{T} = \vv{0}$ et $T_3=0$, l'étrangeté est $S=-3$, le nombre baryonique
    $B$ est égal à 1 tandis que le moment cinétique total $I=\frac{3}{2}$. Étant
-   donné que $\vv{L}=\vv{0}$ on a \[\vv{I} = \vv{L} + \vv{S} = \vv{S}(s_1) +
-   \vv{S}(s_2) + \vv{S}(s_3)\] soit \[\vv{I}=\frac{\vv{3}}{2} =
-   \frac{\vv{1}}{2} + \frac{\vv{1}}{2} + \frac{\vv{1}}{2}\]
+   donné que $\vv{L}=\vv{0}$ on a
+   #+BEGIN_SRC latex
+     \begin{align*}
+       \vv{I} = \vv{L} + \vv{S} = \vv{S}(s_1) +
+       \vv{S}(s_2) + \vv{S}(s_3)
+     \end{align*}
+   #+END_SRC
+   soit
+   #+BEGIN_SRC latex
+     \begin{align*}
+      \vv{I}=\frac{\vv{3}}{2} =
+      \frac{\vv{1}}{2} + \frac{\vv{1}}{2} + \frac{\vv{1}}{2}
+     \end{align*}
+   #+END_SRC
 
    Les 3 quarks $s$ sont donc tous dans le même état de spin +1/2 ce qui par
    définition est impossible en raison du principe d'exclusion de Pauli
@@ -1014,10 +1126,12 @@ Brookhaven en 1964.
 5) $D^0\rightarrow K^-+\pi^+$. Le fait de n'avoir à tester que la
    (non)conservation du moment cinétique total et de la parité semble indiquer
    que la réaction se fait par interaction faible.
-   \[
-   \vv{I}_{D^0} = \vv{I}_{K^-} + \vv{I}_{\pi^+} +
-   \vv{L}_{K\pi}\quad\rightarrow\quad\vv{0} = \vv{0} + \vv{0} + \vv{L}_{K\pi}
-   \]
+   #+BEGIN_SRC latex
+     \begin{align*}
+       \vv{I}_{D^0} &= \vv{I}_{K^-} + \vv{I}_{\pi^+} + \vv{L}_{K\pi}\\
+       \vv{0} &= \vv{0} + \vv{0} + \vv{L}_{K\pi}
+     \end{align*}
+   #+END_SRC
    Dans ces conditions, la parité $\pi$ n'est pas conservée
    #+BEGIN_SRC latex
      \begin{align*}
@@ -1036,9 +1150,11 @@ Brookhaven en 1964.
    Collision de deux faisceaux d'impulsion opposés \rightarrow référentiel du
    centre de masse dans lequel l'énergie cinétique minimale est égale à la
    moitié de la chaleur de réaction $|Q|$.
-   \[
-   T_S = \frac{|Q|}{2} = \frac{2\,m_{D^0}c^2 - 2\,m_ec^2}{2} = \unit[1865]{MeV}
-   \]
+   #+BEGIN_SRC latex
+     \begin{align*}
+       T_S = \frac{|Q|}{2} = \frac{2\,m_{D^0}c^2 - 2\,m_ec^2}{2} = \unit[1865]{MeV}
+     \end{align*}
+   #+END_SRC
 
 7) $T_0=\unit[2014]{MeV}$
 
@@ -1148,28 +1264,47 @@ opérations et des calculs qui s'y attachent.
 
 Pour une valeur d'isospin $\vv{T}$, la troisième composante $T_3$ prend pour
 valeur
-
-\[-T\leq T_3\leq T\]
+#+BEGIN_SRC latex
+  \begin{align*}
+    -T\leq T_3\leq T
+  \end{align*}
+#+END_SRC
 
 soit $2T+1$ valeurs.
 
 Pour un noyau c'est-à-dire pour une système à plusieurs nucléons, l'isospin est
 égal à
-
-\[\vv{T}=\Sigma\,\vv{t}_i\]
+#+BEGIN_SRC latex
+  \begin{align*}
+    \vv{T}=\Sigma\,\vv{t}_i
+  \end{align*}
+#+END_SRC
 
 où $t_i$ est lui-même égal à $\vv{1}/2$. La 3^{ème} composante $T_3$ est égale à
-
-\[T_3=\Sigma\,t_{3i}=Z\times t_3(p) + N\times t_3(n)\]
-
+#+BEGIN_SRC latex
+  \begin{align*}
+    T_3=\Sigma\,t_{3i}=Z\times t_3(p) + N\times t_3(n)
+  \end{align*}
+#+END_SRC
 soit
-
-\[T_3=\frac{Z}{2} - \frac{N}{2}=\frac{Z-N}{2}\]
+#+BEGIN_SRC latex
+  \begin{align*}
+    T_3=\frac{Z}{2} - \frac{N}{2}=\frac{Z-N}{2}
+  \end{align*}
+#+END_SRC
 
 L'isospin varie ainsi suivant les états d'énergie selon
-
-\[\frac{|Z-N|}{2}\leq T\leq\frac{Z+N}{2}\] soit \[|T_3|\leq T\leq\frac{A}{2}\]
-
+#+BEGIN_SRC latex
+  \begin{align*}
+    \frac{|Z-N|}{2}\leq T\leq\frac{Z+N}{2}
+  \end{align*}
+#+END_SRC
+soit
+#+BEGIN_SRC latex
+  \begin{align*}
+    |T_3|\leq T\leq\frac{A}{2}
+  \end{align*}
+#+END_SRC
 où, de façon empirique, il est établi que l'état fondamental correspond à
 $T=|T_3|$, $T$ augmentant pour les états excités.
 
@@ -1183,8 +1318,11 @@ $T=|T_3|$, $T$ augmentant pour les états excités.
    $\vv{T}=\vv{1}/2$.
 
    L'isospin d'un système de deux nucléons est donc égal à
-
-   \[\vv{T} = \frac{\vv{1}}{2} + \frac{\vv{1}}{2} = \vv{0}\text{ ou }\vv{1}\]
+   #+BEGIN_SRC latex
+     \begin{align*}
+       \vv{T} = \frac{\vv{1}}{2} + \frac{\vv{1}}{2} = \vv{0}\text{ ou }\vv{1}
+     \end{align*}
+   #+END_SRC
 
    On déduit ainsi l'existence
 
@@ -1194,14 +1332,19 @@ $T=|T_3|$, $T$ augmentant pour les états excités.
      états $\ket{1\,-1}$, $\ket{1\,0}$, $\ket{1\,1}$.
 
 2) Fonction d'onde d'isospin
-
-   \[\ket{TT_3}=\sum_{t_{31}}\sum_{t_{32}}\,\psh{t_1t_2t_{31}t_{32}}{TT_3}\ket{t_1t_2t_{31}t_{32}}\]
-
+   #+BEGIN_SRC latex
+     \begin{align*}
+       \ket{TT_3}=\sum_{t_{31}}\sum_{t_{32}}\,\psh{t_1t_2t_{31}t_{32}}{TT_3}\ket{t_1t_2t_{31}t_{32}}
+     \end{align*}
+   #+END_SRC
    où le terme $\psh{t_1t_2t_{31}t_{32}}{TT_3}$ correpond au coefficient de
    Clebsch-Gordan. Dans l'échange des deux particules 1,2, ce coefficient
    devient
-
-   \[\psh{t_2t_1t_{32}t_{31}}{TT_3}=(-1)^{T-t_1-t_2}\,\psh{t_1t_2t_{31}t_{32}}{TT_3}\]
+   #+BEGIN_SRC latex
+     \begin{align*}
+       \psh{t_2t_1t_{32}t_{31}}{TT_3}=(-1)^{T-t_1-t_2}\,\psh{t_1t_2t_{31}t_{32}}{TT_3}
+     \end{align*}
+   #+END_SRC
 
    Si $T-t_1-t_2$ est impair la fonction d'onde est antisymétrique et si
    $T-t_1-t_2$ est pair, la fonction d'onde d'isospin est symétrique.
@@ -1250,7 +1393,11 @@ $T=|T_3|$, $T$ augmentant pour les états excités.
      $T_3(\pi^+p)=t_3(\pi^+)+t_3(p)=3/2$. La valeur de $T_3(\pi^+p)$ implique
      nécessairement que $\vv{T}$ soit égal à $\vv{3}/2$.
 
-     \[\ket{\pi^+p}=\ket{TT_3}=\ket{\tfrac{3}{2}\tfrac{3}{2}}\]
+     #+BEGIN_SRC latex
+       \begin{align*}
+         \ket{\pi^+p}=\ket{TT_3}=\ket{\tfrac{3}{2}\tfrac{3}{2}}
+       \end{align*}
+     #+END_SRC
 
    - $\ket{\pi^+n}$ : $t_3(\pi^+)=+1$ et $t_3(n)=-1/2$ d'où
      $T_3(\pi^+n)=t_3(\pi^+)+t_3(n)=1/2$. Il existe donc deux valeurs de
@@ -1258,23 +1405,37 @@ $T=|T_3|$, $T$ augmentant pour les états excités.
      $\vv{T}=\vv{3}/2$. $\ket{\pi^+n}$ est donc la superposition de deux états
      d'isospin (ce système physique n'est donc pas état propre d'isospin)
 
-     \[\ket{\pi^+n}=\ket{TT_3}=\alpha\ket{\tfrac{1}{2}\tfrac{1}{2}}+\beta\ket{\tfrac{3}{2}\tfrac{1}{2}}\]
-
+     #+BEGIN_SRC latex
+       \begin{align*}
+         \ket{\pi^+n}=\ket{TT_3}=\alpha\ket{\tfrac{1}{2}\tfrac{1}{2}}+\beta\ket{\tfrac{3}{2}\tfrac{1}{2}}
+       \end{align*}
+     #+END_SRC
      où
-
-     \[\alpha=\psh{1\tfrac{1}{2}1-\tfrac{1}{2}}{\tfrac{1}{2}\tfrac{1}{2}}=\sqrt{\tfrac{2}{3}}\]
-
+     #+BEGIN_SRC latex
+       \begin{align*}
+         \alpha=\psh{1\tfrac{1}{2}1-\tfrac{1}{2}}{\tfrac{1}{2}\tfrac{1}{2}}=\sqrt{\tfrac{2}{3}}
+       \end{align*}
+     #+END_SRC
      et
-
-     \[\beta=\psh{1\tfrac{1}{2}1-\tfrac{1}{2}}{\tfrac{3}{2}\tfrac{1}{2}}=\sqrt{\tfrac{1}{3}}\]
-
+     #+BEGIN_SRC latex
+       \begin{align*}
+         \beta=\psh{1\tfrac{1}{2}1-\tfrac{1}{2}}{\tfrac{3}{2}\tfrac{1}{2}}=\sqrt{\tfrac{1}{3}}
+       \end{align*}
+     #+END_SRC
      donc
-
-     \[\ket{\pi^+n}=\ket{TT_3}=\sqrt{\tfrac{2}{3}}\ket{\tfrac{1}{2}\tfrac{1}{2}}+\sqrt{\tfrac{1}{3}}\ket{\tfrac{3}{2}\tfrac{1}{2}}\]
+     #+BEGIN_SRC latex
+       \begin{align*}
+         \ket{\pi^+n}=\ket{TT_3}=\sqrt{\tfrac{2}{3}}\ket{\tfrac{1}{2}\tfrac{1}{2}}+\sqrt{\tfrac{1}{3}}\ket{\tfrac{3}{2}\tfrac{1}{2}}
+       \end{align*}
+     #+END_SRC
 
 ** Parité intrinsèque du $\pi^{-}$
 
-\[\pi^-+d\rightarrow n+n\]
+#+BEGIN_SRC latex
+  \begin{align*}
+    \pi^-+d\rightarrow n+n
+  \end{align*}
+#+END_SRC
 
 avec $I^\pi(d)=1^+$ et $\vv{L}_{\pi d}=\vv{0}$
 
@@ -1299,7 +1460,11 @@ avec $I^\pi(d)=1^+$ et $\vv{L}_{\pi d}=\vv{0}$
 
    Intéraction forte \rightarrow conservation de la parité
 
-   \[\pi(\pi d) = \pi(\pi) = \pi(nn)\]
+   #+BEGIN_SRC latex
+     \begin{align*}
+       \pi(\pi d) = \pi(\pi) = \pi(nn)
+     \end{align*}
+   #+END_SRC
 
 2) Le moment cinétique total s'écrit
 
@@ -1314,8 +1479,11 @@ avec $I^\pi(d)=1^+$ et $\vv{L}_{\pi d}=\vv{0}$
    Les neutrons étant des fermions, leur spin est demi-entier. Les valeurs de
    $\vv{S}(nn)$ sont donc soit $\vv{0}$ soit $\vv{1}$. Par ailleurs, la
    conservation du moment cinétique total impose
-
-   \[\vv{I}(nn)=\vv{I}(\pi d)=\vv{1}\]
+   #+BEGIN_SRC latex
+     \begin{align*}
+       \vv{I}(nn)=\vv{I}(\pi d)=\vv{1}
+     \end{align*}
+   #+END_SRC
 
    On obtient ainsi les couples de valeurs $(L,S)$
 
@@ -1329,8 +1497,11 @@ avec $I^\pi(d)=1^+$ et $\vv{L}_{\pi d}=\vv{0}$
    Calcul de $T$ : $t_3(n) = -\frac{1}{2}$ et $T_3(nn)=\Sigma\,t_3 =
    2\,t_3(n)=-1$
 
-   \[|T_3(nn)|\leq T(nn)\leq\frac{A}{2}\]
-
+   #+BEGIN_SRC latex
+     \begin{align*}
+       |T_3(nn)|\leq T(nn)\leq\frac{A}{2}
+     \end{align*}
+   #+END_SRC
    soit $\vv{T}(nn)=\vv{1}$.
 
    La condition $L+S+T$ impaire devient $L+S$ pair étant donné que $T=1$. Aussi,
@@ -1363,19 +1534,27 @@ avec $I^\pi(d)=1^+$ et $\vv{L}_{\pi d}=\vv{0}$
 
    Dans le référentiel du laboratoire, l'énergie cinétique minimale $T_S$ nécessaire à
    la production de particules s'écrit
-
-   \[T_S^\text{lab.} = \frac{|Q|}{2}\cdot\frac{\Upsigma
-   m_\text{initiale,finale}c^2}{m_\text{cible}c^2}\]
-
+   #+BEGIN_SRC latex
+     \begin{align*}
+       T_S^\text{lab.} = \frac{|Q|}{2}\cdot\frac{\Upsigma
+         m_\text{initiale,finale}c^2}{m_\text{cible}c^2}
+     \end{align*}
+   #+END_SRC
    où $Q$ est la chaleur de réaction et est égale à
-
-   \[Q = \Upsigma m_\text{initiale}c^2 - \Upsigma m_\text{finale}c^2\]
+   #+BEGIN_SRC latex
+     \begin{align*}
+       Q = \Upsigma m_\text{initiale}c^2 - \Upsigma m_\text{finale}c^2
+     \end{align*}
+   #+END_SRC
 
    En négligeant l'énergie de liaison $B_d$ du noyau de deutérium, la masse
    $m_d$ est égale à deux fois la masse du proton ($m_{n}\simeq
    m_{p}\sim\unit[940]{MeV}$). La chaleur de réaction est ainsi égale
-
-   \[Q = 2m_pc^2 - 2m_pc^2 - m_\pi c^2 = -m_\pi c^2\]
+   #+BEGIN_SRC latex
+     \begin{align*}
+       Q = 2m_pc^2 - 2m_pc^2 - m_\pi c^2 = -m_\pi c^2
+     \end{align*}
+   #+END_SRC
 
    On déduit l'énergie cinétique seuil
    #+BEGIN_SRC latex
@@ -1390,8 +1569,11 @@ avec $I^\pi(d)=1^+$ et $\vv{L}_{\pi d}=\vv{0}$
    La conservation de l'impulsion implique que $\vv{p}_p=\vv{p}_\pi+\vv{p}_d$
    soit $\vv{p}_d=\vv{p}_p-\vv{p}_\pi$ et donc
    $p_d^2=p_p^2+p_\pi^2-2p_pp_\pi\cos\theta$. L'angle \theta s'exprime ainsi
-
-   \[\cos\theta=\frac{p_p^2+p_\pi^2-p_d^2}{2p_pp_\pi}\]
+   #+BEGIN_SRC latex
+     \begin{align*}
+       \cos\theta=\frac{p_p^2+p_\pi^2-p_d^2}{2p_pp_\pi}
+     \end{align*}
+   #+END_SRC
 
    L'impulsion s'exprime en fonction de l'énergie cinétique $T$ suivant
 
@@ -1405,16 +1587,23 @@ avec $I^\pi(d)=1^+$ et $\vv{L}_{\pi d}=\vv{0}$
 
    On déduit ainsi les valeurs d'impulsion du proton et du pion et /via/ la
    conservation de l'énergie totale, on a
-
-   \[E_p + m_nc^2 = E_\pi+E_d\]
-
+   #+BEGIN_SRC latex
+     \begin{align*}
+       E_p + m_nc^2 = E_\pi+E_d
+     \end{align*}
+   #+END_SRC
    soit
-
-   \[T_p + 2m_pc^2 = T_\pi+m_\pi c^2+T_d+2m_pc^2\]
-
+   #+BEGIN_SRC latex
+     \begin{align*}
+       T_p + 2m_pc^2 = T_\pi+m_\pi c^2+T_d+2m_pc^2
+     \end{align*}
+   #+END_SRC
    et donc
-
-   \[T_d = T_p - T_\pi - m_\pi c^2\]
+   #+BEGIN_SRC latex
+     \begin{align*}
+       T_d = T_p - T_\pi - m_\pi c^2
+     \end{align*}
+   #+END_SRC
 
    *AN :*
    #+BEGIN_SRC latex
@@ -1489,8 +1678,11 @@ avec $I^\pi(d)=1^+$ et $\vv{L}_{\pi d}=\vv{0}$
    or $\bra{10}V_\text{IF}\ket{00}$ est nul car $T_f\neq T_i$ et
    $\bra{10}V_\text{IF}\ket{10}$ est une fonction dépendant uniquement de
    $T=1$. On obtient ainsi que
-
-   \[\frac{\sigma_1}{\sigma_2}=\frac{\sigma(pp\rightarrow d\pi^+)}{\sigma(pn\rightarrow d\pi^0)}=2\]
+   #+BEGIN_SRC latex
+     \begin{align*}
+       \frac{\sigma_1}{\sigma_2}=\frac{\sigma(pp\rightarrow d\pi^+)}{\sigma(pn\rightarrow d\pi^0)}=2
+     \end{align*}
+   #+END_SRC
 
    Ce résultat théorique a été vérifié et confirmé expérimentalement .
 
@@ -1706,7 +1898,7 @@ pour les différents types de noyau :
 
    Cette configuration, 1 proton célibataire en $2p\tfrac{3}{2}$, est "préférée"
    par le noyau car l'énergie d'appariement croît avec le $j$ de la couche (ici
-   $\tfrac{5}{2}$ contre $\tfrac{3}{2}$) ce qui rend le noyau plus stable. De
+   $\tfrac{5}{2}$ contre \(\tfrac{3}{2}\)) ce qui rend le noyau plus stable. De
    plus, les couches sont proches en énergie et un noyau déformé peut "mélanger"
    les différentes couches.
 
@@ -2417,7 +2609,7 @@ particules constitutives de la cible.
      coulombienne : la répulsion entre protons du noyau entraîne une diminution
      de l'énergie de liaison. De plus, l'énergie potentielle du noyau sera
      d'autant plus grande que les niveaux de Fermi des neutrons et protons
-     seront proches (terme symétrique $a_{A}\frac{\left(N-Z\right)^2}{A}$). Ce
+     seront proches (terme symétrique \(a_{A}\frac{\left(N-Z\right)^2}{A}\)). Ce
      terme d'asymétrie traduit le fait que les nucléons étant des fermions,
      avoir un excédent de proton ou de neutron a tendance à augmenter l'énergie
      et donc diminuer la liaison du noyau en raison du remplissage des niveaux
