@@ -55,7 +55,7 @@ contenant A nucléons
   \end{align*}
 #+END_SRC
 
-On déduit que la rayon d'un noyau est proportionnel à son nombre de nucléons $R
+On déduit que le rayon d'un noyau est proportionnel à son nombre de nucléons $R
 = r_{0} \times A^{1/3}$. Expérimentalement, $r_{0}$ est compris entre 1.2 et 1.5
 fermi où 1 fm = 10^{-15} m = 10^{-13} cm. La valeur la plus probable est $r_{0}$ =
 1.25 fm.
@@ -65,8 +65,8 @@ fermi où 1 fm = 10^{-15} m = 10^{-13} cm. La valeur la plus probable est $r_{0}
 
   #+BEGIN_SRC latex
     \begin{align*}
-      V = \frac{4}{3}\pi\,R^{3} &= \frac{4}{3}\pi\,(r_{0}\,A^{1/3}) \\
-      V(^{12}_{6}\text{C})&= \frac{4}{3}\pi\,(1.25\times12^{1/3}) \\
+      V = \frac{4}{3}\pi\,R^{3} &= \frac{4}{3}\pi\,(r_{0}\,A^{1/3})^3 \\
+      V(^{12}_{6}\text{C})&= \frac{4}{3}\pi\,(1.25\times12^{1/3})^3 \\
       &\simeq \unit[100]{fm}^3 = \unit[10^{-37}]{cm}^3
     \end{align*}
   #+END_SRC
@@ -85,7 +85,7 @@ d'où
 
 #+BEGIN_SRC latex
   \begin{align*}
-    m(^{12}_{6}\text{C})c^2 &= 12\times\unit[931.5]{MeV} = 12\times931.5\times\unit[1.6\,10^{-19}]{J} \\
+    m(^{12}_{6}\text{C})c^2 &= 12\times\unit[931.5]{MeV} = 12\times931.5\times10^6\times\unit[1.6\,10^{-19}]{J} \\
     m(^{12}_{6}\text{C})    &= \frac{12\times931.5\times1.6\,10^{-19}}{(3\,10^8)^2} = \unit[2\,10^{-26}]{kg} = \unit[2\,10^{-23}]{g}\\
   \end{align*}
 #+END_SRC
@@ -165,7 +165,7 @@ de a au repos $mc^{2}$ et vitesse de $a \beta=v/c$
    #+BEGIN_SRC latex
      \begin{align*}
        p_{1z}^* &= p_{1}^*\,\cos\theta^* = +\frac{mc}{2}\,\cos\theta^*\\
-       p_{2z}^* &= p_{2}^*\,\cos\theta^* = -\frac{mc}{2}\,\cos\theta^*
+       p_{2z}^* &= -p_{2}^*\,\cos\theta^* = -\frac{mc}{2}\,\cos\theta^*
      \end{align*}
    #+END_SRC
    soit
@@ -185,6 +185,10 @@ de a au repos $mc^{2}$ et vitesse de $a \beta=v/c$
      \end{align*}
    #+END_SRC
    où $\gamma=1/\sqrt{1-\beta^{2}}$.
+   #+BEGIN_CENTER
+   #+ATTR_LATEX: :width 0.7\linewidth
+   [[file:figures/minimal_energy_kinematics.pdf]]
+   #+END_CENTER
 
 2) Angle d'ouverture \omega en fonction de \theta^{*}
 
@@ -213,6 +217,18 @@ de a au repos $mc^{2}$ et vitesse de $a \beta=v/c$
       1 - \cos\omega = \frac{2}{\gamma^2\,(1 - \beta^2\cos^2\theta^*)}
     \end{align*}
   #+END_SRC
+
+  #+BEGIN_CENTER
+  #+NAME: fig::omega_angle
+  #+CAPTION: *Variation de l'angle d'émission \omega entre les deux photons émis*
+  #+CAPTION: *en fonction de la vitesse \beta de la particule désintégrée.*
+  #+ATTR_LATEX: :width 0.7\linewidth
+  [[file:figures/two_photons_kinematics.pdf]]
+  #+END_CENTER
+
+  La figure [[fig::omega_angle]] indique que plus la particule aura une vitesse
+   grande et voisine de $c$, plus l'émission des deux photons se fera vers
+   l'avant $\omega\to0$.
 
 ** Énergie seuil
 
@@ -447,12 +463,12 @@ $\vv{v}$ dans un champ d'induction $\vv{B}$ normal à $\vv{v}$.
 8) Rayon de courbure
    #+BEGIN_SRC latex
      \begin{align*}
-       R = \frac{pc}{qBc} \simeq \frac{T_{S}(eV)}{Bc} =
-       \frac{50\,PeV}{5.4\cdot3\,10^{8}} = \unit[30\, 000]{km}
+       R = \frac{pc}{qBc} \simeq \frac{T_{S}(\text{eV})}{Bc} =
+       \frac{50\,\text{PeV}}{5.4\cdot3\,10^{8}} = \unit[30\, 000]{km}
      \end{align*}
    #+END_SRC
 
-* TD2 : Nombres quantiques & Symétries
+* COMMENT TD2 : Nombres quantiques & Symétries
 ** Énergie maximum des rayons cosmiques
 
 #+CAPTION: *Spectre en énergie des rayons cosmiques*
@@ -711,7 +727,7 @@ synchrotron a accéléré des protons au delà du GeV (1952 -- 1966) contribuant
 la découverte de l'ensemble des mésons chargés de même qu'à la mise en évidence
 de particules lourdes instables telles que les particules $V$.
 
-* TD3 : Réactions de production et de désintégration de particules
+* COMMENT TD3 : Réactions de production et de désintégration de particules
 
 #+CAPTION: *Modèle standard de la physique des particules*
 [[file:./figures/standard_model.pdf]]
@@ -901,7 +917,7 @@ Brookhaven en 1964.
 [fn:4] le moment cinétique total est également différent 5/2^{+} ou 7/2^{+} contre
 3/2^{+}
 
-* TD4 : Modèle des quarks -- Les hadrons
+* COMMENT TD4 : Modèle des quarks -- Les hadrons
 ** Les mésons constitués des quarks $u,d,s$ et de leurs antiquarks
 1) Opérateur conjugaison particule -- antiparticule $\hat{c}$ :
    $q\overset{\hat{c}}{\rightarrow}\bar{q}$
@@ -1254,7 +1270,7 @@ $\vv{T}=\vv{0}$ et $\vv{S}=\vv{3}/2$, la somme n'est donc pas impaire. C'est
 l'introduction de la couleur qui permet de rendre cette fonction d'onde globale
 antisymétrique.
 
-* TD5 : Isospin -- des quarks aux noyaux
+* COMMENT TD5 : Isospin -- des quarks aux noyaux
 L'isospin $\vv{T}$ rend compte de l'indépendance de charge de l'intéraction
 forte. Ainsi, le neutron et le proton qui appartiennent au doublet d'isospin
 $\vv{T}=\vv{1}/2$ sont, du point de vue de l'intéraction forte, des particules
@@ -1723,7 +1739,7 @@ symétrique. Toutefois et comme nous le verrons dans l'exercice sur la parité
 intrinsèque du pion, la fonction d'onde globale de ces états demeure
 antisymétrique en raison du principe de Pauli généralisé qui impose que deux
 fermions soient dans des états quantiques différents.
-* TD6 : Structure nucléaire
+* COMMENT TD6 : Structure nucléaire
 ** Introduction
 Dans l'approximation du champ moyen, l'hamiltonien d'un système à $N$ nucléons
 prend la forme suivante
@@ -2150,7 +2166,7 @@ $\vv{T}(\text{fonda.})=|T_3|=\tfrac{Z-N}{2}$.
 [fn:8] la parité est égale à $(-1)^{\ell_1+\ell_2}$ où $\ell_1=\ell_2=\ell$ et
 donc $\pi=(-1)^{2\ell}=+1$
 
-* TD7 : Réactions nucléaires
+* COMMENT TD7 : Réactions nucléaires
 ** Introduction
 #+ATTR_LATEX: :float wrap :placement {l}{0.5\textwidth} :width 0.4\textwidth
 [[./figures/solid_angle.pdf]]
@@ -2557,7 +2573,7 @@ particules constitutives de la cible.
     \end{axis}
   \end{tikzpicture}
 #+END_SRC
-* TD8 : Masses et désintégrations nucléaires
+* COMMENT TD8 : Masses et désintégrations nucléaires
 ** Définitions
 - masse nucléaire :: la masse nucléaire correspond à la masse du noyau /i.e./
      #+BEGIN_SRC latex
@@ -3277,7 +3293,7 @@ solaires.
 
 [fn:11] W. David Arnett & Jonathan L. Roser [[http://journals.aps.org/prl/abstract/10.1103/PhysRevLett.58.1906][Physical Review Letter 58]], David
 N. Spergel & John N. Bahcall [[http://www.sciencedirect.com/science/article/pii/0370269388907903][Physical Letters B]]
-* TD9 : Modèle Standard et au-delà : l'interaction faible
+* COMMENT TD9 : Modèle Standard et au-delà : l'interaction faible
 ** Masse et largeur du $Z^0$ -- Nombre de familles de neutrinos
 Le LEP (pour /Large Electron Positron collider/) était un accélérateur de
 particules circulaire de 27 km de circonférence, passant sous le site du CERN
