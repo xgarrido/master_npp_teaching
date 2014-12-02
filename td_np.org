@@ -6,7 +6,7 @@
 #+LATEX_HEADER: \usepackage{fixltx2e}
 
 * TD1 : Cinématique & Accélérateurs
-** Introduction
+** COMMENT Introduction
 
 #+BEGIN_CENTER
 Noyau :\nbsp^{A}_{Z}X \rightarrow Z protons  + N neutrons = A nucléons (nombre de masse)
@@ -60,7 +60,7 @@ On déduit que le rayon d'un noyau est proportionnel à son nombre de nucléons 
 fermi où 1 fm = 10^{-15} m = 10^{-13} cm. La valeur la plus probable est $r_{0}$ =
 1.25 fm.
 
-** Ordres de grandeurs
+** COMMENT Ordres de grandeurs
 - Volume du noyau de\nbsp^{12}_{6}C : approx. sphérique
 
   #+BEGIN_SRC latex
@@ -104,7 +104,7 @@ fer environ 10 g/cm^{3}, la Terre de 6 g/cm^{3} et l'Uranium de 19 g/cm^{3}.
 
 *Remarques :* la densité au sein d'une étoile à neutrons est voisine de 10^{11} g/cm^{3}
 
-** Cinématique
+** COMMENT Cinématique
 
 Désintégration en deux photons : $a \rightarrow \gamma_{1} + \gamma_{2}$, énergie
 de a au repos $mc^{2}$ et vitesse de $a \beta=v/c$
@@ -313,12 +313,11 @@ L'énergie cinétique minimum du faisceau incident est ainsi
 ** Accélérateurs
 *** Introduction
 - cyclotron :: Le cyclotron est un type d’accélérateur de particules circulaire
-               inventé par Ernest Orlando Lawrence et Milton S. Livingston de
-               l'université de Californie à Berkeley au début des
-               années 1930. Dans un cyclotron, les particules placées dans un
-               champ magnétique suivent une trajectoire en forme de spirale et
-               sont accélérées par un champ électrique alternatif à des énergies
-               de quelques MeV à une trentaine de MeV.
+     inventé par Ernest Orlando Lawrence et Milton S. Livingston de l'université
+     de Californie à Berkeley au début des années 1930. Dans un cyclotron, les
+     particules placées dans un champ magnétique suivent une trajectoire en
+     forme de spirale et sont accélérées par un champ électrique alternatif à
+     des énergies de quelques MeV à une trentaine de MeV.
 - synchrocyclotron :: Le cyclotron perd de son efficacité quand on cherche à
      accélérer des protons au-delà de 10 à 20 MeV, en raison de la variation
      relativiste de la masse qui perturbe le fonctionnement quand elle atteint
@@ -330,12 +329,11 @@ L'énergie cinétique minimum du faisceau incident est ainsi
      synchrocyclotron a été construit à l’Université de Californie (Berkeley)
      en 1946.
 - synchrotron :: La caractéristique du synchrotron est que l'intensité du champ
-                 magnétique de l'anneau est maintenue adaptée de façon synchrone
-                 à l'énergie du faisceau de particules, afin de les maintenir
-                 sur une trajectoire fixe. Il peut en outre y avoir un second
-                 anneau, avec des particules tournant en sens inverse, afin de
-                 réaliser des collisions entre particules avec une énergie
-                 utilisable très élevée. Ce sont des collisionneurs.
+     magnétique de l'anneau est adaptée de façon synchrone à l'énergie du
+     faisceau de particules, afin de les maintenir sur une trajectoire fixe. Il
+     peut en outre y avoir un second anneau, avec des particules tournant en
+     sens inverse, afin de réaliser des collisions entre particules avec une
+     énergie utilisable très élevée. Ce sont des collisionneurs.
 *** Exercice
 
 Proton de masse $m = \unit[938.27]{MeV/c}^{2}$ se déplaçant à la vitesse
@@ -453,10 +451,10 @@ $\vv{v}$ dans un champ d'induction $\vv{B}$ normal à $\vv{v}$.
 7) Réaction sur cible fixe
    #+BEGIN_SRC latex
      \begin{align*}
-       T_{S} &= \frac{|Q|}{2}\cdot\frac{\Upsigma\,m_{if}c^{2}}{2m_{p}c^{2}}\\
-       &= \frac{2m_{N}c^{2}}{2}\cdot\frac{4m_{p}c^{2}+2m_{N}c^{2}}{2m_{p}c^{2}}\\
-       &\simeq\frac{(m_{N}c^{2})^{2}}{m_{p}c^{2}}\\
-       &\simeq\unit[50\,10^{6}]{GeV} = \unit[50]{PeV}
+       T_{S} &= \frac{|Q|}{2}\cdot\frac{\Upsigma\,m_{if}c^{2}}{m_{p}c^{2}}\\
+       &= \frac{2m_{N}c^{2}}{2}\cdot\frac{4m_{p}c^{2}+2m_{N}c^{2}}{m_{p}c^{2}}\\
+       &\simeq\frac{2\,(m_{N}c^{2})^{2}}{m_{p}c^{2}}\\
+       &\simeq\unit[100\,10^{6}]{GeV} = \unit[100]{PeV}
      \end{align*}
    #+END_SRC
 
@@ -464,11 +462,11 @@ $\vv{v}$ dans un champ d'induction $\vv{B}$ normal à $\vv{v}$.
    #+BEGIN_SRC latex
      \begin{align*}
        R = \frac{pc}{qBc} \simeq \frac{T_{S}(\text{eV})}{Bc} =
-       \frac{50\,\text{PeV}}{5.4\cdot3\,10^{8}} = \unit[30\, 000]{km}
+       \frac{100\,\text{PeV}}{5.4\cdot3\,10^{8}} = \unit[60\, 000]{km}
      \end{align*}
    #+END_SRC
 
-* COMMENT TD2 : Nombres quantiques & Symétries
+* TD2 : Nombres quantiques & Symétries
 ** Énergie maximum des rayons cosmiques
 
 #+CAPTION: *Spectre en énergie des rayons cosmiques*
@@ -514,7 +512,7 @@ Cas limites:
 AN: $m_{\pi^{0}}c^{2}$ = 135 MeV et $m_{\pi^{+}}c^{2}$ = 139.6 MeV
 #+BEGIN_SRC latex
   \begin{align*}
-    T_{p}(\pi^{0}/\pi^{+}) &= \frac{(135/139.6 + 938.3)^{2}\cdot1.6\,10^{-13}}{4\cdot3\cdot1.38\,10^{-23}\cdot2.7} = 4.1\,10^{20}\,eV\\
+    T_{p}(\pi^{0}/\pi^{+}) &= \frac{(135/139.6 + 938.3)^{2}\cdot1.6\,10^{-13}}{4\cdot3\cdot1.38\,10^{-23}\cdot2.7} = \unit[4.1\,10^{20}]{eV}\\
   \end{align*}
 #+END_SRC
 
@@ -549,7 +547,7 @@ surabondance locale.
 #+ATTR_LATEX: :width \linewidth
 [[file:./figures/auger_spectrum.pdf]]
 
-** Étrangeté dans les rayons cosmiques
+** COMMENT Étrangeté dans les rayons cosmiques
 Cascade de réactions : $p\rightarrow\pi\rightarrow\mu\rightarrow e$
 Le muon est ainsi détecté pour la première fois car si sa durée de vie propre
 est de 2.2 \mu{}s, ce temps est "boosté" par le facteur de Lorentz soit \tau =
@@ -655,7 +653,7 @@ est de 2.2 \mu{}s, ce temps est "boosté" par le facteur de Lorentz soit \tau =
    conservé or toutes intéractions conservent ce nombre (y compris l'interaction
    faible)
 
-** La parité et sa violation
+** COMMENT La parité et sa violation
 
 1) L'opérateur parité transforme une fonction $\psi(\vv{r})$ en
    $\psi(-\vv{r})$ : $\hat{\mathcal{P}}\,\psi(\vv{r}) = \psi(-\vv{r})$. Les
