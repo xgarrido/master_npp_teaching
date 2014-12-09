@@ -547,7 +547,7 @@ surabondance locale.
 #+ATTR_LATEX: :width \linewidth
 [[file:./figures/auger_spectrum.pdf]]
 
-** COMMENT Étrangeté dans les rayons cosmiques
+** Étrangeté dans les rayons cosmiques
 Cascade de réactions : $p\rightarrow\pi\rightarrow\mu\rightarrow e$
 Le muon est ainsi détecté pour la première fois car si sa durée de vie propre
 est de 2.2 \mu{}s, ce temps est "boosté" par le facteur de Lorentz soit \tau =
@@ -653,7 +653,7 @@ est de 2.2 \mu{}s, ce temps est "boosté" par le facteur de Lorentz soit \tau =
    conservé or toutes intéractions conservent ce nombre (y compris l'interaction
    faible)
 
-** COMMENT La parité et sa violation
+** La parité et sa violation
 
 1) L'opérateur parité transforme une fonction $\psi(\vv{r})$ en
    $\psi(-\vv{r})$ : $\hat{\mathcal{P}}\,\psi(\vv{r}) = \psi(-\vv{r})$. Les
@@ -665,7 +665,7 @@ est de 2.2 \mu{}s, ce temps est "boosté" par le facteur de Lorentz soit \tau =
    implique qu'il n'y a pas de différence entre "gauche ou droite" (même image
    dans un miroir).
 
-2) $A^+\rightarrow\pi^++\pi^++\pi^+-$
+2) $A^+\rightarrow\pi^++\pi^++\pi^-$
 
    Conservation du moment cinétique total $\vv{I}$
    #+BEGIN_SRC latex
@@ -725,7 +725,7 @@ synchrotron a accéléré des protons au delà du GeV (1952 -- 1966) contribuant
 la découverte de l'ensemble des mésons chargés de même qu'à la mise en évidence
 de particules lourdes instables telles que les particules $V$.
 
-* COMMENT TD3 : Réactions de production et de désintégration de particules
+* TD3 : Réactions de production et de désintégration de particules
 
 #+CAPTION: *Modèle standard de la physique des particules*
 [[file:./figures/standard_model.pdf]]
@@ -915,7 +915,7 @@ Brookhaven en 1964.
 [fn:4] le moment cinétique total est également différent 5/2^{+} ou 7/2^{+} contre
 3/2^{+}
 
-* COMMENT TD4 : Modèle des quarks -- Les hadrons
+* TD4 : Modèle des quarks -- Les hadrons
 ** Les mésons constitués des quarks $u,d,s$ et de leurs antiquarks
 1) Opérateur conjugaison particule -- antiparticule $\hat{c}$ :
    $q\overset{\hat{c}}{\rightarrow}\bar{q}$
@@ -1268,7 +1268,7 @@ $\vv{T}=\vv{0}$ et $\vv{S}=\vv{3}/2$, la somme n'est donc pas impaire. C'est
 l'introduction de la couleur qui permet de rendre cette fonction d'onde globale
 antisymétrique.
 
-* COMMENT TD5 : Isospin -- des quarks aux noyaux
+* TD5 : Isospin -- des quarks aux noyaux
 L'isospin $\vv{T}$ rend compte de l'indépendance de charge de l'intéraction
 forte. Ainsi, le neutron et le proton qui appartiennent au doublet d'isospin
 $\vv{T}=\vv{1}/2$ sont, du point de vue de l'intéraction forte, des particules
@@ -1737,7 +1737,7 @@ symétrique. Toutefois et comme nous le verrons dans l'exercice sur la parité
 intrinsèque du pion, la fonction d'onde globale de ces états demeure
 antisymétrique en raison du principe de Pauli généralisé qui impose que deux
 fermions soient dans des états quantiques différents.
-* COMMENT TD6 : Structure nucléaire
+* TD6 : Structure nucléaire
 ** Introduction
 Dans l'approximation du champ moyen, l'hamiltonien d'un système à $N$ nucléons
 prend la forme suivante
@@ -1975,7 +1975,7 @@ pour les différents types de noyau :
 
 ** Réactions nucléaires et états analogues isobariques
 *Étude des isobares\nbsp^{21}_{9}F,\nbsp^{21}_{10}Ne et\nbsp^{21}_{11}Na*
-1) fgrhjfhrjfh
+1)
    1) Moment cinétique $I^\pi$ du\nbsp^{21}_{9}F
       #+BEGIN_CENTER
       #+CAPTION: *États excités du\nbsp^{21}_{9}F*
@@ -2164,7 +2164,7 @@ $\vv{T}(\text{fonda.})=|T_3|=\tfrac{Z-N}{2}$.
 [fn:8] la parité est égale à $(-1)^{\ell_1+\ell_2}$ où $\ell_1=\ell_2=\ell$ et
 donc $\pi=(-1)^{2\ell}=+1$
 
-* COMMENT TD7 : Réactions nucléaires
+* TD7 : Réactions nucléaires
 ** Introduction
 #+ATTR_LATEX: :float wrap :placement {l}{0.5\textwidth} :width 0.4\textwidth
 [[./figures/solid_angle.pdf]]
@@ -2571,7 +2571,7 @@ particules constitutives de la cible.
     \end{axis}
   \end{tikzpicture}
 #+END_SRC
-* COMMENT TD8 : Masses et désintégrations nucléaires
+* TD8 : Masses et désintégrations nucléaires
 ** Définitions
 - masse nucléaire :: la masse nucléaire correspond à la masse du noyau /i.e./
      #+BEGIN_SRC latex
@@ -3291,7 +3291,7 @@ solaires.
 
 [fn:11] W. David Arnett & Jonathan L. Roser [[http://journals.aps.org/prl/abstract/10.1103/PhysRevLett.58.1906][Physical Review Letter 58]], David
 N. Spergel & John N. Bahcall [[http://www.sciencedirect.com/science/article/pii/0370269388907903][Physical Letters B]]
-* COMMENT TD9 : Modèle Standard et au-delà : l'interaction faible
+* TD9 : Modèle Standard et au-delà : l'interaction faible
 ** Masse et largeur du $Z^0$ -- Nombre de familles de neutrinos
 Le LEP (pour /Large Electron Positron collider/) était un accélérateur de
 particules circulaire de 27 km de circonférence, passant sous le site du CERN
