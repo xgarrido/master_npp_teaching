@@ -5,7 +5,7 @@
 #+LATEX_CLASS: teaching-class
 #+LATEX_HEADER: \usepackage{fixltx2e}
 
-* TD1 : Cinématique & Accélérateurs
+* COMMENT TD1 : Cinématique & Accélérateurs
 ** COMMENT Introduction
 
 #+BEGIN_CENTER
@@ -466,7 +466,7 @@ $\vv{v}$ dans un champ d'induction $\vv{B}$ normal à $\vv{v}$.
      \end{align*}
    #+END_SRC
 
-* TD2 : Nombres quantiques & Symétries
+* COMMENT TD2 : Nombres quantiques & Symétries
 ** Énergie maximum des rayons cosmiques
 
 #+CAPTION: *Spectre en énergie des rayons cosmiques*
@@ -725,7 +725,7 @@ synchrotron a accéléré des protons au delà du GeV (1952 -- 1966) contribuant
 la découverte de l'ensemble des mésons chargés de même qu'à la mise en évidence
 de particules lourdes instables telles que les particules $V$.
 
-* TD3 : Réactions de production et de désintégration de particules
+* COMMENT TD3 : Réactions de production et de désintégration de particules
 
 #+CAPTION: *Modèle standard de la physique des particules*
 [[file:./figures/standard_model.pdf]]
@@ -916,7 +916,7 @@ Brookhaven en 1964.
 3/2^{+}
 
 * TD4 : Modèle des quarks -- Les hadrons
-** Les mésons constitués des quarks $u,d,s$ et de leurs antiquarks
+** COMMENT Les mésons constitués des quarks $u,d,s$ et de leurs antiquarks
 1) Opérateur conjugaison particule -- antiparticule $\hat{c}$ :
    $q\overset{\hat{c}}{\rightarrow}\bar{q}$
 
@@ -990,7 +990,7 @@ Brookhaven en 1964.
      $\eta\left(\frac{1}{\sqrt{6}}(u\bar{u}+d\bar{d}-2s\bar{s})\right)$ et
      $\eta\prime\left(\frac{1}{\sqrt{3}}(u\bar{u}+d\bar{d}+s\bar{s})\right)$
 
-** Multiplets de baryons
+** COMMENT Multiplets de baryons
 1) Formule de Gell-Mann et Okubo :
    #+BEGIN_SRC latex
      \begin{align*}
@@ -1098,7 +1098,7 @@ Brookhaven en 1964.
    bien une charge nulle.
 
    L'antiparticule $\bar{D}^0$ possède les mêmes propriétés que $D^0$ exception
-   faite la 3^{ème} composante de l'isospin $T_3$ égale à +1/2 et à la saveur
+   faite de la 3^{ème} composante de l'isospin $T_3$ égale à +1/2 et à la saveur
    $c=-1$. Les mésons étant des bosons, la parité reste la même soit
    $I^\pi=0^-$.
 
@@ -1108,15 +1108,15 @@ Brookhaven en 1964.
    saveur. En plus du méson $D^0$, le second membre du doublet a $T_3=+1/2$ soit
    une charge $Q/e=+1/2+1/2=+1$. Il s'agit du méson $D^+$. On en déduit que
    l'antiparticule du $D^+$ est donc le méson $D^-$ ayant les mêmes propriétés
-   que le $D^+$ à la charge (et donc $T_3$) près.
+   que le $D^+$ à la charge (et donc \(T_3\)) près.
 
 3) Le méson $D^0$ est forcément constitué d'un quark charme et d'un antiquark
    sans saveur /i.e./ $\bar{u}$ ou $\bar{d}$. Le fait qu'il est une charge nulle
    implique nécessairement la présence d'un antiquark $u$. Le doublon d'isospin
    de $D^0$ qu'est le méson $D^+$ est donc constitué d'un quark $c$ (même
-   saveur) et d'un antiquark $d$ (charge électrique +$e$). De même, les
-   antiparticules $\bar{D}^0$ et $D^-$ sont constituées d'un antiquark $c$ et
-   respectivement d'un quark $u$ et $d$.
+   saveur) et d'un antiquark $d$ (d'où sa charge électrique \(+e\)). De même,
+   les antiparticules $\bar{D}^0$ et $D^-$ sont constituées d'un antiquark $c$
+   et respectivement d'un quark $u$ et $d$.
 
    |-------------+------------|
    | $D^0$       | $c\bar{u}$ |
@@ -1238,21 +1238,22 @@ Brookhaven en 1964.
 
 11) $X\rightarrow\bar{D}^0+\pi^0$
 
-    |----------+------------+-------------+-------------+---+----------+------------|
-    |          |        $X$ | \rightarrow | $\bar{D}^0$ | + |  $\pi^0$ |            |
+    |----------+------------+-------------+-------------+---+----------+--------|
+    |          |        $X$ | \rightarrow | $\bar{D}^0$ | + |  $\pi^0$ |        |
     | $B$      |          0 | =           |           0 | + |        0 | \cmark |
     | $c$      |         -1 | =           |          -1 | + |        0 | \cmark |
     | $s,b,t$  |          0 | =           |           0 | + |        0 | \cmark |
     | $Q/e$    |          0 | =           |           0 | + |        0 | \cmark |
     | $T_3$    |        1/2 | =           |         1/2 | + |        0 | \cmark |
     | $\vv{T}$ | $\vv{1}/2$ | =           |  $\vv{1}/2$ | + | $\vv{1}$ | \cmark |
-    |----------+------------+-------------+-------------+---+----------+------------|
+    |----------+------------+-------------+-------------+---+----------+--------|
 
     Le moment cinétique total est conservé dans la mesure où $I^\pi(\pi^0)=0^-$
     ce qui implique que le moment orbital relatif de $\pi^0$ par rapport à
     $\bar{D}^0$ est égal à $\vv{1}$. Dans ces conditions, la parité est
     également conservée. Enfin, la désintégration est possible et spontanée
-    puisque la chaleur de réaction $Q$ est égale à 2005 - (1865+135) > 0.
+    puisque la chaleur de réaction $Q$ est égale à 2005 - (1865+135) = 5 MeV
+    > 0.
 
 12) La particule $X$ est constituée des mêmes particules, à savoir le couple
     $u\bar{c}$, que l'antiméson $\bar{D}^0$. Elle possède néanmoins un moment
@@ -1268,7 +1269,7 @@ $\vv{T}=\vv{0}$ et $\vv{S}=\vv{3}/2$, la somme n'est donc pas impaire. C'est
 l'introduction de la couleur qui permet de rendre cette fonction d'onde globale
 antisymétrique.
 
-* TD5 : Isospin -- des quarks aux noyaux
+* COMMENT TD5 : Isospin -- des quarks aux noyaux
 L'isospin $\vv{T}$ rend compte de l'indépendance de charge de l'intéraction
 forte. Ainsi, le neutron et le proton qui appartiennent au doublet d'isospin
 $\vv{T}=\vv{1}/2$ sont, du point de vue de l'intéraction forte, des particules
@@ -1737,7 +1738,7 @@ symétrique. Toutefois et comme nous le verrons dans l'exercice sur la parité
 intrinsèque du pion, la fonction d'onde globale de ces états demeure
 antisymétrique en raison du principe de Pauli généralisé qui impose que deux
 fermions soient dans des états quantiques différents.
-* TD6 : Structure nucléaire
+* COMMENT TD6 : Structure nucléaire
 ** Introduction
 Dans l'approximation du champ moyen, l'hamiltonien d'un système à $N$ nucléons
 prend la forme suivante
@@ -2164,7 +2165,7 @@ $\vv{T}(\text{fonda.})=|T_3|=\tfrac{Z-N}{2}$.
 [fn:8] la parité est égale à $(-1)^{\ell_1+\ell_2}$ où $\ell_1=\ell_2=\ell$ et
 donc $\pi=(-1)^{2\ell}=+1$
 
-* TD7 : Réactions nucléaires
+* COMMENT TD7 : Réactions nucléaires
 ** Introduction
 #+ATTR_LATEX: :float wrap :placement {l}{0.5\textwidth} :width 0.4\textwidth
 [[./figures/solid_angle.pdf]]
@@ -2571,7 +2572,7 @@ particules constitutives de la cible.
     \end{axis}
   \end{tikzpicture}
 #+END_SRC
-* TD8 : Masses et désintégrations nucléaires
+* COMMENT TD8 : Masses et désintégrations nucléaires
 ** Définitions
 - masse nucléaire :: la masse nucléaire correspond à la masse du noyau /i.e./
      #+BEGIN_SRC latex
@@ -3291,7 +3292,7 @@ solaires.
 
 [fn:11] W. David Arnett & Jonathan L. Roser [[http://journals.aps.org/prl/abstract/10.1103/PhysRevLett.58.1906][Physical Review Letter 58]], David
 N. Spergel & John N. Bahcall [[http://www.sciencedirect.com/science/article/pii/0370269388907903][Physical Letters B]]
-* TD9 : Modèle Standard et au-delà : l'interaction faible
+* COMMENT TD9 : Modèle Standard et au-delà : l'interaction faible
 ** Masse et largeur du $Z^0$ -- Nombre de familles de neutrinos
 Le LEP (pour /Large Electron Positron collider/) était un accélérateur de
 particules circulaire de 27 km de circonférence, passant sous le site du CERN
