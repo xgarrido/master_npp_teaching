@@ -1,0 +1,66 @@
+#+TITLE: Effectifs & résultats Master 1 cours Noyaux & Particules
+#+OPTIONS: toc:nil
+
+* 2014-2015
+
+|------------------+-------------+---------------------------------------+---------+--------|
+| Nom              | Prénom      | Email                                 | Partiel | Examen |
+|------------------+-------------+---------------------------------------+---------+--------|
+| Teurtrie         | Adrien      | adrien.teurtrie@u-psud.fr             |         |        |
+| Blanchet         | Adrien      | adrien.blanchet@u-psud.fr             |         |        |
+| Poungoue Mbeunmi | Alex        | alex-brice.poungoue-mbeunmi@u-psud.fr |         |        |
+| Kanj             | Ali         | ali.kanj@u-psud.fr                    |         |        |
+| Dufour           | Aloys       | aloys.dufour@u-psud.fr                |         |        |
+| Molineri         | Anais       | anais.molineri@u-psud.fr              |         |        |
+| Meyer            | Anne        | anne.meyer@u-psud.fr                  |         |        |
+| Chrisment        | Antoine     | antoine.chrisment@u-psud.fr           |         |        |
+| Lesage           | Antony      | antony.lesage@u-psud.fr               |         |        |
+| Favrot           | Armand      | armand.favrot@u-psud.fr               |         |        |
+| Mendy            | Clément     | clement.mendy@u-psud.fr               |         |        |
+| Bellec           | Ewen        | ewen.bellec@u-psud.fr                 |         |        |
+| Pelouze          | Gabriel     | gabriel.pelouze@u-psud.fr             |         |        |
+| Monet            | Geoffrey    | geoffrey.monet@u-psud.fr              |         |        |
+| Tissot           | Herve       | herve.tissot@u-psud.fr                |         |        |
+| Colnot           | Julie       | julie.colnot@u-psud.fr                |         |        |
+| Mitsi            | Maria       | maria.mitsi@u-psud.fr                 |         |        |
+| Chen             | Nicolas     | nicolas.chen@u-psud.fr                |         |        |
+| Biarrotte        | Nicolas     | nicolas.biarrotte@u-psud.fr           |         |        |
+| Guiot            | Pierre      | pierre.guiot@u-psud.fr                |         |        |
+| Raymond          | Quentin     | quentin.raymond@u-psud.fr             |         |        |
+| Bouard           | Rémi        | remi.bouard@u-psud.fr                 |         |        |
+| Ngom             | Sokhna Mèry | sokhna-mery.ngom@u-psud.fr            |         |        |
+| Rendon Restrepo  | Steven      | steven.rendon-restrepo@u-psud.fr      |         |        |
+|------------------+-------------+---------------------------------------+---------+--------|
+
+|-----------------+-----------+-------------------------------+---------+--------|
+| Nom             | Prénom    | Email                         | Partiel | Examen |
+|-----------------+-----------+-------------------------------+---------+--------|
+| Benamar         | Abdelnour | abdelnour.benamar@u-psud.fr   |         |        |
+| Brisset         | Alexandra | alexandra.brisset@u-psud.fr   |         |        |
+| Vollard         | Angelique | angelique.vollard@u-psud.fr   |         |        |
+| Laudrain        | Antoine   | antoine.laudrain@u-psud.fr    |         |        |
+| Mellioui        | Aymane    | aymane.mellioui@u-psud.fr     |         |        |
+| Car             | Benjamin  | benjamin.car@u-psud.fr        |         |        |
+| Lejeune         | Benoit    | benoit.lejeune@u-psud.fr      |         |        |
+| Carré           | Corentin  | corentin.carre@u-psud.fr      |         |        |
+| Cambon Silva    | David     | david.cambon-silva@u-psud.fr  |         |        |
+| Toukour         | Fayçal    | faycal.toukour@u-psud.fr      |         |        |
+| Wade            | Ford      | ford.wade@u-psud.fr           |         |        |
+| Vatant-D'ollone | Jan       | jan.vatant-dollone@u-psud.fr  |         |        |
+| Lecoulant       | Jean      | jean.lecoulant@u-psud.fr      |         |        |
+| Oudin           | Jérémy    | jeremy.oudin@u-psud.fr        |         |        |
+| Moles           | Jordan    | jordan.moles@u-psud.fr        |         |        |
+| Hachani         | Luca      | luca.hachani@u-psud.fr        |         |        |
+| Bizot           | Marc      | marc.bizot@u-psud.fr          |         |        |
+| Duprat-Papin    | Marion    | marion.duprat-papin@u-psud.fr |         |        |
+| Baghdad         | Mohamed   | mohamed.baghdad@u-psud.fr     |         |        |
+| Bruch           | Rachel    | rachel.bruch@u-psud.fr        |         |        |
+| Christophe      | Steven    | steven.christophe@u-psud.fr   |         |        |
+| Moutia          | Taoufik   | taoufik.moutia@u-psud.fr      |         |        |
+| Pelini          | Thomas    | thomas.pelini@u-psud.fr       |         |        |
+| Guillaumy       | Tristan   | tristan.guillaumy@u-psud.fr   |         |        |
+| Sansine         | Vateanui  | vateanui.sansine@u-psud.fr    |         |        |
+| Song            | Yujie     | yujie.song@u-psud.fr          |         |        |
+|-----------------+-----------+-------------------------------+---------+--------|
+
+* 2013-2014
