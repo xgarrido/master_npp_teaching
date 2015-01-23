@@ -4,7 +4,7 @@
 * 2014-2015
 
 |------------------+-------------+---------------------------------------+---------+--------|
-| Nom              | Prénom      | Email                                 | Partiel | Examen |
+| Nom              | Prénom      | Courriel                              | Partiel | Examen |
 |------------------+-------------+---------------------------------------+---------+--------|
 | Teurtrie         | Adrien      | adrien.teurtrie@u-psud.fr             |         |        |
 | Blanchet         | Adrien      | adrien.blanchet@u-psud.fr             |         |        |
@@ -33,7 +33,7 @@
 |------------------+-------------+---------------------------------------+---------+--------|
 
 |-----------------+-----------+-------------------------------+---------+--------|
-| Nom             | Prénom    | Email                         | Partiel | Examen |
+| Nom             | Prénom    | Courriel                      | Partiel | Examen |
 |-----------------+-----------+-------------------------------+---------+--------|
 | Benamar         | Abdelnour | abdelnour.benamar@u-psud.fr   |         |        |
 | Brisset         | Alexandra | alexandra.brisset@u-psud.fr   |         |        |
