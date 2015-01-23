@@ -916,7 +916,7 @@ Brookhaven en 1964.
 3/2^{+}
 
 * TD4 : Modèle des quarks -- Les hadrons
-** COMMENT Les mésons constitués des quarks $u,d,s$ et de leurs antiquarks
+** Les mésons constitués des quarks $u,d,s$ et de leurs antiquarks
 1) Opérateur conjugaison particule -- antiparticule $\hat{c}$ :
    $q\overset{\hat{c}}{\rightarrow}\bar{q}$
 
@@ -990,7 +990,7 @@ Brookhaven en 1964.
      $\eta\left(\frac{1}{\sqrt{6}}(u\bar{u}+d\bar{d}-2s\bar{s})\right)$ et
      $\eta\prime\left(\frac{1}{\sqrt{3}}(u\bar{u}+d\bar{d}+s\bar{s})\right)$
 
-** COMMENT Multiplets de baryons
+** Multiplets de baryons
 1) Formule de Gell-Mann et Okubo :
    #+BEGIN_SRC latex
      \begin{align*}
@@ -1269,11 +1269,11 @@ $\vv{T}=\vv{0}$ et $\vv{S}=\vv{3}/2$, la somme n'est donc pas impaire. C'est
 l'introduction de la couleur qui permet de rendre cette fonction d'onde globale
 antisymétrique.
 
-* COMMENT TD5 : Isospin -- des quarks aux noyaux
+* TD5 : Isospin -- des quarks aux noyaux
 L'isospin $\vv{T}$ rend compte de l'indépendance de charge de l'intéraction
 forte. Ainsi, le neutron et le proton qui appartiennent au doublet d'isospin
 $\vv{T}=\vv{1}/2$ sont, du point de vue de l'intéraction forte, des particules
-identiques ($T_3(p)=1/2$ et $T_3(n)=-1/2$).
+identiques ($T_3(p)=1/2$ et \(T_3(n)=-1/2\)).
 
 L'espace d'isospin est analogue à l'espace des spins notamment vis-à-vis des
 opérations et des calculs qui s'y attachent.
@@ -1353,7 +1353,7 @@ $T=|T_3|$, $T$ augmentant pour les états excités.
        \ket{TT_3}=\sum_{t_{31}}\sum_{t_{32}}\,\psh{t_1t_2t_{31}t_{32}}{TT_3}\ket{t_1t_2t_{31}t_{32}}
      \end{align*}
    #+END_SRC
-   où le terme $\psh{t_1t_2t_{31}t_{32}}{TT_3}$ correpond au coefficient de
+   où le terme $\psh{t_1t_2t_{31}t_{32}}{TT_3}$ correspond au coefficient de
    Clebsch-Gordan. Dans l'échange des deux particules 1,2, ce coefficient
    devient
    #+BEGIN_SRC latex
@@ -1383,7 +1383,7 @@ $T=|T_3|$, $T$ augmentant pour les états excités.
    déduit ainsi de la formule de Gell-Mann & Nishijima, les valeurs de $T_3$ qui
    sont alors égales à la charge électrique de ces particules. $T_3$ étant par
    ailleurs compris entre $-T$ et $+T$, ces 3 mésons appartiennent ainsi au
-   triplet d'isospin $\vv{T}=\vv{1}$ avec
+   triplet d'isospin \(\vv{T}=\vv{1}\).
 
 5) Système pion-nucléon
 
@@ -1564,8 +1564,8 @@ avec $I^\pi(d)=1^+$ et $\vv{L}_{\pi d}=\vv{0}$
    #+END_SRC
 
    En négligeant l'énergie de liaison $B_d$ du noyau de deutérium, la masse
-   $m_d$ est égale à deux fois la masse du proton ($m_{n}\simeq
-   m_{p}\sim\unit[940]{MeV}$). La chaleur de réaction est ainsi égale
+   $m_d$ est égale à deux fois la masse du proton (\(m_{n}\simeq
+   m_{p}\sim\unit[940]{MeV}\). La chaleur de réaction est ainsi égale
    #+BEGIN_SRC latex
      \begin{align*}
        Q = 2m_pc^2 - 2m_pc^2 - m_\pi c^2 = -m_\pi c^2
@@ -1720,11 +1720,11 @@ avec $I^\pi(d)=1^+$ et $\vv{L}_{\pi d}=\vv{0}$
 
 2) Les états $\ket{ppp}$ et $\ket{nnn}$ qui ont respectivement pour valeur de
    $T_3$, 3/2 et -3/2 appartiennent tous les deux au quadruplet d'isospin
-   $\vv{T}=\vv{3}/2$. Or, les forces nucléaires ne dependent que de l'isospin
-   et sont donc indépendantes de charge (et donc de $T_3$). Étant donné que les
+   $\vv{T}=\vv{3}/2$. Or, les forces nucléaires ne dependent que de l'isospin et
+   sont donc indépendantes de charge (et donc de \(T_3\)). Étant donné que les
    états d'un même multiplet ont tous des propriétés communes vis-à-vis de
-   l'intéraction forte, si les états $\vv{T}=\vv{3}{2}$, $T_3=\pm3/2$ n'existent
-   pas alors les états $\vv{T}=\vv{3}{2}$, $T_3=\pm1/2$ n'existent pas non
+   l'intéraction forte, si les états $\vv{T}=\vv{3}/2$, $T_3=\pm3/2$ n'existent
+   pas alors les états $\vv{T}=\vv{3}/2$, $T_3=\pm1/2$ n'existent pas non
    plus. Les états de\nbsp^{3}_{1}H et\nbsp^{3}_{2}H sont donc ceux appartenant
    au doublet d'isospin $\vv{T}=\vv{1}/2$ avec
 
