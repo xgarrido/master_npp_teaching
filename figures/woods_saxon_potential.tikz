@@ -1,0 +1,30 @@
+\begin{tikzpicture}
+  % Colors
+  \definecolor{red}{RGB}{221,42,43}
+  \definecolor{green}{RGB}{132,184,24}
+  \definecolor{blue}{RGB}{0,51,153}
+  \definecolor{orange}{RGB}{192,128,64}
+  \definecolor{gray}{RGB}{107,108,110}
+  \begin{axis}[
+      xlabel={$r$ [fm]},ylabel={$U(r)$ [MeV]},
+      samples=500,
+      clip=false,
+      ymin=-60,ymax=20,
+      xmin=0,xmax=11,
+      xtick={0,1,...,10},
+      ytick={10,0,...,-60},
+      legend cell align=left,
+      legend style={at={(1.0,0.5)},anchor=west,legend columns=1,draw=none, align=left}
+    ]
+    \addplot[thick,blue, domain=0:9]  gnuplot {-55+0.5*1.72*x**2};
+    \addplot[thick,green, domain=0:9]  gnuplot {-50/(1+exp((x-5.8)/0.65))};
+    \addlegendimage{empty legend}
+    \addlegendimage{empty legend}
+    \legend{
+      Potentiel de l'osc. harmonique \\ $U(r)=\frac{1}{2}\mu\omega_0^2r^2+K$,
+      Potentiel phénoménologique de Woods-Saxon \\ $U(r)=\frac{U_0}{1+\exp\left(\frac{r-R}{a}\right)}$}
+    \addlegendentry{}
+    \addlegendentry{\vspace{1cm}avec $U_0$ = -50 MeV, $R$ = 5.8 fm et $a$ = 0.65 fm}
+
+  \end{axis}
+\end{tikzpicture}
