@@ -3,7 +3,6 @@
 #+EMAIL:  xavier.garrido@u-psud.fr
 #+OPTIONS: ^:{} toc:2 author:t email:t split:html
 #+LATEX_CLASS: teaching-class
-#+LATEX_HEADER: \usepackage{fixltx2e}
 
 * COMMENT TD1 : Cinématique & Accélérateurs
 ** COMMENT Introduction
