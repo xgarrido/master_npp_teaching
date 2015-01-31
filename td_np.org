@@ -914,7 +914,7 @@ Brookhaven en 1964.
 [fn:4] le moment cinétique total est également différent 5/2^{+} ou 7/2^{+} contre
 3/2^{+}
 
-* TD4 : Modèle des quarks -- Les hadrons
+* COMMENT TD4 : Modèle des quarks -- Les hadrons
 ** Les mésons constitués des quarks $u,d,s$ et de leurs antiquarks
 1) Opérateur conjugaison particule -- antiparticule $\hat{c}$ :
    $q\overset{\hat{c}}{\rightarrow}\bar{q}$
@@ -1268,7 +1268,9 @@ $\vv{T}=\vv{0}$ et $\vv{S}=\vv{3}/2$, la somme n'est donc pas impaire. C'est
 l'introduction de la couleur qui permet de rendre cette fonction d'onde globale
 antisymétrique.
 
-* TD5 : Isospin -- des quarks aux noyaux
+* COMMENT TD5 : Isospin -- des quarks aux noyaux
+** Introduction
+
 L'isospin $\vv{T}$ rend compte de l'indépendance de charge de l'intéraction
 forte. Ainsi, le neutron et le proton qui appartiennent au doublet d'isospin
 $\vv{T}=\vv{1}/2$ sont, du point de vue de l'intéraction forte, des particules
@@ -1737,7 +1739,7 @@ symétrique. Toutefois et comme nous le verrons dans l'exercice sur la parité
 intrinsèque du pion, la fonction d'onde globale de ces états demeure
 antisymétrique en raison du principe de Pauli généralisé qui impose que deux
 fermions soient dans des états quantiques différents.
-* COMMENT TD6 : Structure nucléaire
+* TD6 : Structure nucléaire
 ** Introduction
 Dans l'approximation du champ moyen, l'hamiltonien d'un système à $N$ nucléons
 prend la forme suivante
@@ -1748,7 +1750,18 @@ prend la forme suivante
 #+END_SRC
 où $\hat{H}_{\text{OH}}$ est l'hamiltonien de l'oscillateur
 harmonique. $D\hat{\ell}^2$ traduit les effets de bord observés
-expérimentalement et $a\vv{\ell}.\vv{s}$ est relatif au couplage spin-orbite.
+expérimentalement à savoir que les nucléons à la surface du noyau soit ceux
+ayant un plus grand moment orbital $\ell$ sont moins liés. Le potentiel moyen
+nucléaire est ainsi plus diffus sur les bords comme l'illustre la figure
+[[fig::ws_potential]]. Le terme $a\vv{\ell}.\vv{s}$ est relatif au couplage
+spin-orbite.
+
+#+BEGIN_CENTER
+#+NAME: fig::ws_potential
+#+CAPTION: *Comparaison des potentiels de l'oscillateur harmonique*
+#+CAPTION:  *et de la paramétrisation phénoménologique de Woods-Saxon.*
+[[file:figures/woods_saxon_potential.pdf]]
+#+END_CENTER
 
 On adopte, par ailleurs, les notations héritées de la spectroscopie
 atomique/moléculaire (/cf./ Table [[tab::quantum_number]]) où $n$ correspond au
@@ -2066,6 +2079,7 @@ pour les différents types de noyau :
      \end{align*}
    #+END_SRC
 
+   #+BEGIN_REMARK
    *Remarque sur l'excès de masse et sa signification :* L'excès de masse d'un
    nucléide est la différence entre sa masse effective et son nombre de masse
    $A$ exprimé en unités de masse atomique. C'est l'une des quantités couramment
@@ -2080,8 +2094,10 @@ pour les différents types de noyau :
    d'un grand excès de masse par rapport à une espèce nucléaire proche, il peut
    alors se transformer par radioactivité (pour la radioactivité \beta^{-}, la
    condition à la réalisation de cette désintégration
-   $^{A}_{Z}X\rightarrow\,^{A}_{Z+1}Y+e^-+\bar{\nu}_e$ est $\Delta
-   M_{\text{at.}}(A,Z)c^2 >\Delta M_{\text{at.}}(A,Z+1)c^2$), libérant de l'énergie.
+   $^{A}_{Z}X\rightarrow\,^{A}_{Z+1}Y+e^-+\bar{\nu}_e$ est \(\Delta
+   M_{\text{at.}}(A,Z)c^2 >\Delta M_{\text{at.}}(A,Z+1)c^2\)), libérant de
+   l'énergie.
+   #+END_REMARK
 
 *Étude des niveaux d'énergie du\nbsp^{41}_{20}Ca*
 
