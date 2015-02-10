@@ -1740,7 +1740,7 @@ intrinsèque du pion, la fonction d'onde globale de ces états demeure
 antisymétrique en raison du principe de Pauli généralisé qui impose que deux
 fermions soient dans des états quantiques différents.
 * TD6 : Structure nucléaire
-** Introduction
+** COMMENT Introduction
 Dans l'approximation du champ moyen, l'hamiltonien d'un système à $N$ nucléons
 prend la forme suivante
 #+BEGIN_SRC latex
@@ -1801,7 +1801,7 @@ pour les différents types de noyau :
      $|j_1-j_2|\leq j\leq j_1+j_2$. La parité $\pi$ est égale à
      $(-1)^{\ell_1+\ell_2}$. Toutes les valeurs de $j$ sont possibles
 
-** Modèle des couches
+** COMMENT Modèle des couches
 1) Moment cinétique $I$ et parité $\pi$ :
 
    - *\nbsp^{41}_{21}Sc*
@@ -1950,7 +1950,7 @@ pour les différents types de noyau :
 
       Le modèle explique correctement le spectre en énergie. On remarque par
       ailleurs, l'écart en énergie important entre le niveau fondamental et le
-      premier niveau excité ($E=\unit[1.75]{MeV}$) : c'est une caractéristique
+      premier niveau excité (\(E=\unit[1.75]{MeV}\)) : c'est une caractéristique
       des noyaux pair-pair qui sont très stables et donc difficilement
       "excitable".
 
@@ -2035,7 +2035,7 @@ pour les différents types de noyau :
       d'isospin pour les 3 isobares
 
       |--------------------------+--------------------------------+--------------------------------+--------------------------------|
-      |                          | \nbsp^{21}_{9}F_{12}           | \nbsp^{21}_{10}Ne_{11}         | \nbsp^{21}_{11}F_{9}           |
+      |                          | \nbsp^{21}_{9}F^{12}           | \nbsp^{21}_{10}Ne^{11}         | \nbsp^{21}_{11}F^{9}           |
       | $T_3$                    | -3/2                           | -1/2                           | +1/2                           |
       | $\vv{T}$                 | $\vv{3}/2\rightarrow\vv{21}/2$ | $\vv{1}/2\rightarrow\vv{21}/2$ | $\vv{1}/2\rightarrow\vv{21}/2$ |
       | $\vv{T}_{\text{fonda.}}$ | $\vv{3}/2$                     | $\vv{1}/2$                     | $\vv{1}/2$                     |
@@ -2060,12 +2060,12 @@ pour les différents types de noyau :
    isobariques $I^\pi=\tfrac{5}{2}^+$
    de\nbsp^{21}_{9}F(fonda.),\nbsp^{21}_{10}Ne^{*}(8.86
    MeV),\nbsp^{21}_{11}Na^{*}(8.97 MeV) et\nbsp^{21}_{12}Mg(fonda.) ayant
-   $\vv{T}=\vv{3}/2$ et respectivement $T_3=-3/2,-1/2,+1/2,+3/2$, on calcule
-   $\Delta M_{\text{at.}}c^2=a^\prime+bT_3+cT_3$ où $a^\prime=a-931.5A$
+   $\vv{T}=\vv{3}/2$ et respectivement $T_3$ = -3/2, -1/2, +1/2, +3/2, on
+   calcule $\Delta M_{\text{at.}}c^2=a^\prime+bT_3+cT_3$ où $a^\prime=a-931.5A$
 
    | \ding{192} | $\Delta M_{\text{at.}}c^2(21,5/2^+,3/2,-3/2)$ | = | $a^\prime-\tfrac{3}{2}b+\tfrac{9}{4}c$ | = | $\unit[-0.047]{MeV}$                          |
-   | \ding{193} | $\Delta M_{\text{at.}}c^2(21,5/2^+,3/2,-1/2)$ | = | $a^\prime-\tfrac{b}{2}b+\tfrac{c}{4}$  | = | $\unit[(-5.733+8.86)]{MeV}$                   |
-   | \ding{194} | $\Delta M_{\text{at.}}c^2(21,5/2^+,3/2,+1/2)$ | = | $a^\prime+\tfrac{b}{2}b+\tfrac{c}{4}$  | = | $\unit[(-2.186+8.97)]{MeV}$                   |
+   | \ding{193} | $\Delta M_{\text{at.}}c^2(21,5/2^+,3/2,-1/2)$ | = | $a^\prime-\tfrac{1}{2}b+\tfrac{c}{4}$  | = | $\unit[(-5.733+8.86)]{MeV}$                   |
+   | \ding{194} | $\Delta M_{\text{at.}}c^2(21,5/2^+,3/2,+1/2)$ | = | $a^\prime+\tfrac{1}{2}b+\tfrac{c}{4}$  | = | $\unit[(-2.186+8.97)]{MeV}$                   |
    | \ding{195} | $\Delta M_{\text{at.}}c^2(21,5/2^+,3/2,+3/2)$ | = | $a^\prime+\tfrac{3}{2}b+\tfrac{9}{4}c$ | = | $\Delta M_\text{at.}c^2(^{21}_{12}\text{Mg})$ |
 
    | \ding{195} $-$ \ding{192} | $3b=\Delta M_{\text{at.}}c^2(^{21}_{12}\text{Mg})+0.047$ |
@@ -2117,7 +2117,7 @@ d'interaction
 
 où\nbsp^{41}_{20}Ca^{21*} est un état excité du Calcium 41. On considèrera, en
 revanche, que les autres réactants sont à l'état fondamental
-$\vv{T}(\text{fonda.})=|T_3|=\tfrac{Z-N}{2}$.
+$T(\text{fonda.})=|T_3|=\tfrac{Z-N}{2}$.
 
 1) Les 4 précédentes réactions se font toutes par interaction forte : il faut
    donc s'assurer que l'isospin est conservé en plus des quantités telles que
@@ -2198,7 +2198,7 @@ rapport à l'axe du faisceau détectera ainsi $dn$ particules par unité de temp
 où $d\Omega$ = surface de détection/(distance cible-détecteur)^{2} = $\sin\theta
 d\theta d\phi$ avec $\theta\in[0,\pi]$ et $\phi\in[0,2\pi]$. Le terme
 $\left.\frac{d\sigma}{d\Omega}\right|_\theta$ est *la section efficace
-différentielle* à l'angle $\theta$ et s'exprime en barn par stéradian où 1 barn
+différentielle* à l'angle $\theta$ et s'exprime en barn par stéradian où 1 barn[fn:1]
 = 10^{-24} cm^{2} = 10^{-28} m^{2}=100 fm^{2}. De la section efficace
 différentielle, on déduit la section efficace totale $\sigma$ en intégrant sur
 l'angle solide total $d\Omega$ : $\sigma=\int\frac{d\sigma}{d\Omega}d\Omega$ et
@@ -2587,6 +2587,19 @@ particules constitutives de la cible.
     \end{axis}
   \end{tikzpicture}
 #+END_SRC
+** Footnotes
+
+[fn:1] l'étymologie du mot /barn/ est un peu loufoque : les physiciens
+américains l'ont adoptée lors des recherches sur la bombe atomique pendant la
+Seconde Guerre mondiale. Le nom de cette nouvelle unité serait issue d'une
+blague "/as big as a barn/" (aussi grande qu'une grange) car les sections
+efficaces de l'uranium 238 étaient très importantes dans le domaine épithermique
+(forêt de résonance) comparées aux sections efficaces typiques des réactions
+nucléaires. Initialement les physiciens américains utilisaient ce terme argot
+de barns dans le but de masquer le sujet de leurs recherches. Cependant après la
+Seconde Guerre mondiale, le barn est devenu une unité standard de la physique
+des particules.
+
 * COMMENT TD8 : Masses et désintégrations nucléaires
 ** Définitions
 - masse nucléaire :: la masse nucléaire correspond à la masse du noyau /i.e./
