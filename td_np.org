@@ -1739,7 +1739,7 @@ symétrique. Toutefois et comme nous le verrons dans l'exercice sur la parité
 intrinsèque du pion, la fonction d'onde globale de ces états demeure
 antisymétrique en raison du principe de Pauli généralisé qui impose que deux
 fermions soient dans des états quantiques différents.
-* TD6 : Structure nucléaire
+* COMMENT TD6 : Structure nucléaire
 ** COMMENT Introduction
 Dans l'approximation du champ moyen, l'hamiltonien d'un système à $N$ nucléons
 prend la forme suivante
@@ -2180,7 +2180,7 @@ $T(\text{fonda.})=|T_3|=\tfrac{Z-N}{2}$.
 [fn:8] la parité est égale à $(-1)^{\ell_1+\ell_2}$ où $\ell_1=\ell_2=\ell$ et
 donc $\pi=(-1)^{2\ell}=+1$
 
-* COMMENT TD7 : Réactions nucléaires
+* TD7 : Réactions nucléaires
 ** Introduction
 #+ATTR_LATEX: :float wrap :placement {l}{0.5\textwidth} :width 0.4\textwidth
 [[./figures/solid_angle.pdf]]
@@ -2242,7 +2242,7 @@ particules constitutives de la cible.
    #+BEGIN_SRC latex
      \begin{align*}
        \left.dn\right|_{30^\circ}&=\phi\frac{\mathcal{N}\rho_e}{A_\text{cible}}\left.\frac{d\sigma}{d\Omega}\right|_{\theta=30^\circ}\frac{S_\text{détecteur}}{d^2_\text{cible-détecteur}}\\
-       &=6\,10^{10}\times\pi 1^2\times\frac{6.02\,10^{23}\times2\,10^{-3}}{63}\times0.1\,10^{-24}\times\frac{4\times2}{100^2}\\
+       &=6\,10^{10}\times\pi\times1^2\times\frac{6.02\,10^{23}\times2\,10^{-3}}{63}\times0.1\,10^{-24}\times\frac{4\times2}{100^2}\\
        &=\unit[287]{deutons/s}
      \end{align*}
    #+END_SRC
@@ -2334,14 +2334,14 @@ particules constitutives de la cible.
            \begin{align*}
              \sigma&=\frac{32\pi\,\alpha^2(\hbar c)^2}{2E^2}\times\underbrace{\left[\frac{1}{\theta_1^2}-\frac{1}{\theta_2^2}\right]}_{=312.9}\\
              &=\frac{32\pi\times e^4\times\cancel{(\hbar c)^2}}{2\times(4\pi\epsilon_0\cancel{\hbar c})^2\times E^2}\times312.9\\
-             &=\frac{e^2}{\pi\epsilon_0^2\left.E\right|_\text{eV}^2}\times312.9=\unit[4\,10^{36}]{m}^2=\unit[4\,10^{-12}]{barn}=\unit[4]{picobarn}
+             &=\frac{e^2}{\pi\epsilon_0^2\left.E\right|_\text{eV}^2}\times312.9=\unit[4\,10^{-36}]{m}^2=\unit[4\,10^{-8}]{barn}=\unit[40]{nanobarn}
            \end{align*}
          #+END_SRC
       2) Le nombre d'interaction par seconde est
          $n=\frac{950}{3600}=\unit[0.2639]{s}^{-1}$. La luminosité est égale à
          #+BEGIN_SRC latex
            \begin{align*}
-             \mathcal{L}=\frac{n}{\sigma}=\frac{0.2639}{4\,10^{36}}=6.553\,10^{34}\,\text{m}^{-2}\text{.s}^{-1}
+             \mathcal{L}=\frac{n}{\sigma}=\frac{0.2639}{4\,10^{-36}}=6.553\,10^{34}\,\text{m}^{-2}\text{.s}^{-1}
            \end{align*}
          #+END_SRC
 
@@ -2449,7 +2449,7 @@ particules constitutives de la cible.
    $\left.\frac{d\sigma}{d\Omega}\right|_{20^\circ}=\unit[3.8]{mb/sr}$
    1) Pour calculer la section efficace totale $\sigma$, il s'agit d'intégrer la
       section efficace différentielle sur 4\pi stéradian : il faut donc
-      connaitre la dépendance angulare $(\theta,\phi)$ de
+      connaitre la dépendance angulaire $(\theta,\phi)$ de
       $\frac{d\sigma}{d\Omega}$.
    2) $\frac{d\sigma}{d\Omega}=\frac{K}{\sin\theta}$ avec
       $K=\left.\frac{d\sigma}{d\Omega}\right|_{20^\circ}\sin\,20^\circ=\unit[1.3]{mb/sr}$. La
