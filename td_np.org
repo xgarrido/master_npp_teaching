@@ -2180,7 +2180,7 @@ $T(\text{fonda.})=|T_3|=\tfrac{Z-N}{2}$.
 [fn:8] la parité est égale à $(-1)^{\ell_1+\ell_2}$ où $\ell_1=\ell_2=\ell$ et
 donc $\pi=(-1)^{2\ell}=+1$
 
-* TD7 : Réactions nucléaires
+* COMMENT TD7 : Réactions nucléaires
 ** Introduction
 #+ATTR_LATEX: :float wrap :placement {l}{0.5\textwidth} :width 0.4\textwidth
 [[./figures/solid_angle.pdf]]
@@ -2345,13 +2345,15 @@ particules constitutives de la cible.
            \end{align*}
          #+END_SRC
 
-         *Remarques :* La luminosité instantanée du LHC est voisine de 10^{34}
-         cm^{-2}.s^{-1} soit 10^{-2} pb^{-1}.s^{-1}. À titre de comparaison, le
-         collisionneur $p\bar{p}$ du Tevratron avait une luminosité de 3.2
-         10^{32} cm^{-2}.s^{-1} ce qui intégré sur son temps d'acquisition de
-         2001 à 2008 a fourni une luminosité intégrée de 5000 pb^{-1}. En un peu
-         moins d'une semaine de prise de données, le LHC a atteint la même
-         luminosité intégrée que le Tevatron.
+         #+BEGIN_REMARK
+         La luminosité instantanée du LHC est voisine de 10^{34} cm^{-2}.s^{-1}
+         soit 10^{-2} pb^{-1}.s^{-1}. À titre de comparaison, le collisionneur
+         $p\bar{p}$ du Tevratron avait une luminosité de 3.2 10^{32}
+         cm^{-2}.s^{-1} ce qui intégré sur son temps d'acquisition de 2001 à
+         2008 a fourni une luminosité intégrée de 5000 pb^{-1}. En un peu moins
+         d'une semaine de prise de données, le LHC a atteint la même luminosité
+         intégrée que le Tevatron.
+         #+END_REMARK
 
 ** Section efficace et neutrons thermiques
 1) $n_\text{th.}+^{10}_{5}\text{B}\rightarrow\alpha+^{7}_{3}\text{Li}$
@@ -2600,7 +2602,7 @@ de barns dans le but de masquer le sujet de leurs recherches. Cependant après l
 Seconde Guerre mondiale, le barn est devenu une unité standard de la physique
 des particules.
 
-* COMMENT TD8 : Masses et désintégrations nucléaires
+* TD8 : Masses et désintégrations nucléaires
 ** Définitions
 - masse nucléaire :: la masse nucléaire correspond à la masse du noyau /i.e./
      #+BEGIN_SRC latex
@@ -2619,7 +2621,7 @@ des particules.
                     #+END_SRC
                     où $B_e$ correspond à l'énergie de liaison des
                     électrons. Cette quantité est particulièrement faible (\sim
-                    3 keV/$e^-$) au regard des masses mises en jeu en physique
+                    3 keV/\(e^-\)) au regard des masses mises en jeu en physique
                     nucléaire. On aura donc tendance à la négliger si bien que
                     #+BEGIN_SRC latex
                       \begin{align*}
@@ -2646,10 +2648,10 @@ des particules.
      #+END_SRC
      Cette formule découle de l'analogie entre un fluide et un noyau à savoir
      que l'énergie de liaison d'une goutte liquide est d'autant plus grande que
-     son volume est important (terme $a_VA$ où $R\propto A$). Les nucléons en
+     son volume est important (terme $a_VA$ où \(R\propto A\)). Les nucléons en
      surface contribuent néanmoins moins puisqu'ils ont moins de voisins. La
      goutte cherche donc à minimiser sa surface d'où sa forme sphérique (terme
-     $a_SA^{2/3}$). Par ailleurs, il faut tenir compte de l'interaction
+     \(a_SA^{2/3}\)). Par ailleurs, il faut tenir compte de l'interaction
      coulombienne : la répulsion entre protons du noyau entraîne une diminution
      de l'énergie de liaison. De plus, l'énergie potentielle du noyau sera
      d'autant plus grande que les niveaux de Fermi des neutrons et protons
@@ -2730,7 +2732,7 @@ La chaleur de réaction $Q$ s'écrit
      \end{align*}
    #+END_SRC
 
-4) $^{23}\text{Na}+p\to^{22}\text{Ne}+p+n$
+4) $^{23}\text{Na}+p\to^{22}\text{Na}+p+n$
    #+BEGIN_SRC latex
      \begin{align*}
        Q&=\Delta M_\text{at.}\left(^{23}\text{Na}\right)c^2+\cancel{\Delta M_\text{at.}(p)c^2}-\Delta M_\text{at.}\left(^{22}\text{Na}\right)-\cancel{\Delta M_\text{at.}(p)c^2}-\Delta M_\text{at.}(n)c^2\\
@@ -2776,7 +2778,7 @@ La chaleur de réaction $Q$ s'écrit
       où
       #+BEGIN_SRC latex
         \begin{align*}
-          \cancel{-\lambda K_1e^{-\lambda t}}+\cancel{\lambda Ke^{-\lambda t}}+\lambda K_0&=n_i\\
+          \cancel{-\lambda K_1e^{-\lambda t}}+\cancel{\lambda K_1e^{-\lambda t}}+\lambda K_0&=n_i\\
           K_0&=\frac{n_i}{\lambda}
         \end{align*}
       #+END_SRC
@@ -2821,11 +2823,11 @@ La chaleur de réaction $Q$ s'écrit
         \end{align*}
       #+END_SRC
    5) La raie à 511 keV correspond aux photons issus de l'annihilation
-      $e^++e^-\to2\gamma$. En effet, dans 90% des cas, la désintégration se fait par
-      désintégration $\beta^+$ où le positron émis, une fois son énergie
+      $e^++e^-\to2\gamma$. En effet, dans 90% des cas, la désintégration se fait
+      par désintégration $\beta^+$ où le positron émis, une fois son énergie
       cinétique dissipée, s'annihilie avec les électrons de la matière. Par
       conservation de l'impulsion, les deux photons sont émis dos-à-dos, chacun
-      emportant une énergie cinétique de 0.511 keV soit la masse de
+      emportant une énergie cinétique de 511 keV soit la masse de
       l'électron/positron. Du fait que ces deux photons sont émis dans 90% des
       désintégrations, l'activité en photons de 511 keV est égale à
       #+BEGIN_SRC latex
@@ -2952,7 +2954,7 @@ de radioéléments\nbsp^{11}C est nul à $t=0$.
      l'élément stable pour une masse donnée /i.e./ pour $A$ fixé.
 
 3)
-   1) Pour une étoile à neutrons, l'énergie de liaison devient ($Z=0$)
+   1) Pour une étoile à neutrons, l'énergie de liaison devient (\(Z=0\))
       #+BEGIN_SRC latex
         \begin{align*}
           B_N&=a_VA-a_SA^{2/3}-\cancel{a_C\frac{Z^2}{A^{1/3}}}-a_A\frac{(Z-N)^2}{A}+\underbrace{\delta(Z,A)}_{\ll1}\\
@@ -3173,153 +3175,6 @@ de Chandrasekhar). En réalite, le rayon d'une étoile à neutron varie de 10 à
 km ce qui se traduit en terme de masse par une gamme entre 0.4 et 5 masses
 solaires.
 
-** Neutrinos : production, détection, masse
-*** Chaîne $pp$ : $4p\to\alpha+2\nu$
-1) Chaque réaction produit deux neutrinos et libère $Q=\unit[26.72]{MeV}$. Le
-   nombre de neutrinos produit par le Soleil est
-   #+BEGIN_SRC latex
-     \begin{align*}
-       N_\nu&=2\times\frac{P_\odot}{Q}=2\times\frac{3.83\,10^{26}}{26.76\,10^6\times1.6\,10^{-19}}\\
-       &=\unit[1.78\,10^{38}]{s}^{-1}
-     \end{align*}
-   #+END_SRC
-   Le flux de neutrinos sur Terre est alors
-   #+BEGIN_SRC latex
-     \begin{align*}
-       F_\nu&=\frac{N_\nu}{4\pi\,R^2}=\frac{1.78\,10^{38}}{4\pi\,(1.5\,10^{11})^2}\\
-       &=6.33\,10^{14}\,\text{m$^{-2}$.s$^{-1}$}
-     \end{align*}
-   #+END_SRC
-2) 3% de l'énergie libérée par chaque réaction $Q=\unit[26.72]{MeV}$ est
-   emportée par les deux neutrinos d'où
-   #+BEGIN_SRC latex
-     \begin{align*}
-       \langle E_\nu\rangle=\frac{3\%\,Q}{2}=\unit[0.4]{MeV}
-     \end{align*}
-   #+END_SRC
-*** Limite sur la masse des neutrinos
-1) Le temps d'arrivée d'un neutrino correspond à $t=\frac{D}{v}=\frac{D}{\beta
-   c}$. Or
-   #+BEGIN_SRC latex
-     \begin{align*}
-       \gamma&=\frac{E}{m_\nu c^2}=\frac{1}{\surd 1-\beta^2}\\
-       1-\beta^2&=\frac{(m_\nu c^2)^2}{E^2}\\
-       \beta&=\sqrt{1-\frac{(m_\nu c^2)^2}{E^2}}
-     \end{align*}
-   #+END_SRC
-   Le temps d'arrivé est ainsi
-   #+BEGIN_SRC latex
-     \begin{align*}
-       t=\frac{D}{c\surd1-\frac{(m_\nu c^2)^2}{E^2}}
-     \end{align*}
-   #+END_SRC
-2) Les neutrinos les plus énergétiques arriveront les premiers soit
-   #+BEGIN_SRC latex
-     \begin{align*}
-       \Updelta t&=t_1-t_2\\
-       &=\frac{D}{c}\left(\frac{1}{\surd1-\frac{m_\nu^2c^4}{E_1^2}}-\frac{1}{\surd1-\frac{m_\nu^2c^4}{E_2^2}}\right)\\
-       &\text{or }m_\nu c^2\ll E_{1,2}\\
-       &\simeq\frac{D}{c}\left(\cancel{1}+\frac{1}{2}\times\frac{m_\nu^2c^4}{E_1^2}-\cancel{1}-\frac{1}{2}\times\frac{m_\nu^2c^4}{E_2^2}\right)\\
-       &\simeq\frac{D}{c}\times\frac{m_\nu^2 c^4}{2}\left(\frac{1}{E_1^2}-\frac{1}{E_2^2}\right)
-     \end{align*}
-   #+END_SRC
-3) Du fait que $\Updelta t\leq\unit[10]{s}$, on déduit que la masse des neutrinos $m_\nu$
-   est nécessairement inférieure à
-   #+BEGIN_SRC latex
-     \begin{align*}
-       \Updelta t\leq\unit[10]{s}\Longleftrightarrow&m_\nu c^2\leq\sqrt{\frac{\Updelta t\times2c}{D}\times\frac{1}{1/E_1^2-1/E_2^2}}\\
-       &m_\nu c^2\leq\sqrt{\frac{2\Updelta tc}{D}\times\frac{E_1^2E_2^2}{E_2^2-E_1^2}}\\
-       &m_\nu c^2\leq E_1E_2\sqrt{\frac{2\Updelta tc}{D}\frac{1}{E_2^2-E_1^2}}\\
-       &m_\nu c^2\leq 5\times20\sqrt{\frac{20\times\cancel{c}}{1.7\,10^5\times\cancel{c}\times3600\times24\times365}\times\frac{1}{20^2-5^2}}\\
-       &m_\nu c^2\leq 5\times20\sqrt{\frac{20}{1.7\times3.15}\times\frac{1}{400-25}}\times\unit[10^{-6}]{MeV}\\
-       &m_\nu c^2\leq\unit[10]{eV}
-     \end{align*}
-   #+END_SRC
-
-   Le résultat final fut $m_{\nu_e}c^2\leq\unit[7]{eV}$ [fn:11], valeur qui,
-   grâce aux expériences de mesure directe de la masse du neutrino électronique
-   /via/ l'étude du /end-point/ du spectre de désintégration \beta du tritium,
-   Mainz et Troitztk, atteint aujourd'hui $m_{\nu_e}\leq\unit[2.2]{eV}$. La
-   future expérience Katrin devait gagner encore un ordre de grandeur sur la
-   sensibilité : $m_{\nu_e}\leq\unit[0.2]{eV}$.
-
-** Les mésons neutres $K^0$ et $\bar{K}^0$
-1) Les états "fictifs" $\ket{K^0_1}$ et $\ket{K^0_2}$ sont des états propres de
-   $\hat{\mathcal{C}}\hat{\mathcal{P}}$ de valeurs propres respectives +1 et
-   -1. Les états finaux hadroniques à 2 et 3 pions sont également états propres
-   de l'opérateur $\hat{\mathcal{C}}\hat{\mathcal{P}}$ et ont des valeurs
-   propres identiques à celle des états $\ket{K^0_1}$ et $\ket{K^0_2}$. Les
-   états physique $\ket{K^0}$ et $\ket{\bar{K}^0}$ étant un mélange des états
-   propres $\ket{K^0_1}$ et $\ket{K^0_2}$ et se désintégrant aussi bien en deux
-   et trois pions, on déduit, par association des valeurs propres, que l'état
-   $\ket{K^0_1}\equiv\ket{2\pi}$ et $\ket{K^0_2}\equiv\ket{3\pi}$. La durée de
-   vie moyenne de ces deux états est ainsi
-   #+BEGIN_SRC latex
-     \begin{align*}
-       \tau_1&=\frac{1}{\lambda_{2\pi}}=\unit[8.9\,10^{-11}]{s}\\
-       \tau_2&=\frac{1}{\lambda_{3\pi}}=\unit[5.2\,10^{-8}]{s}
-     \end{align*}
-   #+END_SRC
-   On note que ces deux durées de vie sont compatibles avec celles issues de
-   processus par intéraction faible.
-2) Soit un faisceau de particules de vitesse $v=\beta c$, de vie moyenne $\tau$
-   et d'intensité $I_0$
-   1) Dans le référentiel du faisceau /i.e./ du centre de masse, l'intensité est
-      égale $I=I_0\exp(-t^*/\tau)$. Dans le référentiel du laboratoire, cette
-      intensité devient $I=I_0\exp(-t/\gamma\tau)$. Par ailleurs, le temps
-      nécessaire pour parcourir la distance $L$ est
-      $t=\frac{L}{v}=\frac{L}{\beta c}$. On déduit que l'intensité du faisceau
-      après avoir parcouru une distance $L$ s'écrit
-      #+BEGIN_SRC latex
-        \begin{align*}
-          I=I_0\exp\left(-\frac{L}{\gamma\tau\beta c}\right)=I_0\exp\left(-\frac{L}{\ell}\right)
-        \end{align*}
-      #+END_SRC
-   2) Faisceau de $K^0$ à $p=\unit[10]{GeV/c}$. Initialement, le faisceau est
-      donc constitué pour moitié de "particules" $K_1^0$, l'autre moitié étant
-      les "particules" $K_2^0$. On suppose par ailleurs que la masse et
-      l'impulsion de ces particules sont identiques
-      ($\beta_1=\beta_2=\beta_{K^0}$).
-      1) Après un parcours de longueur $L=\unit[10]{m}$, l'intensité respective
-         de chaque composante, $K^0_1$ et $K^0_2$, du faisceau est
-         #+BEGIN_SRC latex
-           \begin{align*}
-             I_{1,2}&=I_{01,02}\exp\left(-\frac{L}{\gamma\tau_{1,2}\beta c}\right)\\
-             &\text{avec }I_{01}=I_{02}=\frac{I_0}{2}\\
-             \text{d'où }\rho=\frac{I_1}{I_2}&=\exp\left[-\frac{L}{\gamma\beta c}\left(\frac{1}{\tau_1}-\frac{1}{\tau_2}\right)\right]\\
-             \rho&=\exp\left[-\frac{L}{\gamma\beta c}\frac{\tau_2-\tau_1}{\tau_1\tau_2}\right]\\
-             &\simeq\exp\left[-\frac{L}{\gamma\beta c}\frac{1}{\tau_1}\right]
-           \end{align*}
-         #+END_SRC
-         Par ailleurs,
-         #+BEGIN_SRC latex
-           \begin{align*}
-             p_K^2c^2&=E^2-m_K^2c^4=(\gamma-1)m_K^2c^4\\
-             &\text{or }\gamma=\frac{1}{\surd 1-\beta^2}\to(\gamma\beta)^2=\gamma^2-1\\
-             \gamma\beta&=\frac{p_Kc}{m_Kc^2}=\frac{10}{0.4977}=20.1
-           \end{align*}
-         #+END_SRC
-         Le rapport \rho entre les intensités de chacun des états $\ket{K^0_1}$
-         et $\ket{K^0_2}$ est égal à
-         #+BEGIN_SRC latex
-           \begin{align*}
-             \rho=\frac{I_1}{I_2}=7.37\,10^{-9}\ll1
-           \end{align*}
-         #+END_SRC
-
-      2) Ainsi, au bout de 10 mètres et en raison de la désintégration des
-         $K^0_1$ et des $K^0_2$, il ne reste dans le faisceau que des particules
-         $K^0_2$. Or, ces dernières sont le fruit d'un mélange des états $K^0$
-         et $\bar{K}^0$ à savoir
-         $\ket{K^0_2}=\frac{1}{\surd2}\left(\ket{K^0}+\ket{\bar{K}^0}\right)$. Le
-         faisceau est ainsi constitué à part égale de mésons $K^0$ et de
-         mésons $\bar{K}^0$ : les mésons $K^0$ se sont donc "transformés" en
-         leur antiparticule $\bar{K}^0$. Cette transformation est le phénomène
-         d'oscillation $K^0\leftrightarrow\bar{K}^0$.
-** Footnotes
-
-[fn:11] W. David Arnett & Jonathan L. Roser [[http://journals.aps.org/prl/abstract/10.1103/PhysRevLett.58.1906][Physical Review Letter 58]], David
-N. Spergel & John N. Bahcall [[http://www.sciencedirect.com/science/article/pii/0370269388907903][Physical Letters B]]
 * COMMENT TD9 : Modèle Standard et au-delà : l'interaction faible
 ** Masse et largeur du $Z^0$ -- Nombre de familles de neutrinos
 Le LEP (pour /Large Electron Positron collider/) était un accélérateur de
