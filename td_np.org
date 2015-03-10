@@ -2974,7 +2974,7 @@ de radioéléments\nbsp^{11}C est nul à $t=0$.
       à $r_0\times N^{1/3}$ d'où
       #+BEGIN_SRC latex
         \begin{align*}
-          B_*&=\left(a_V-a_A\right)N-a_SN^{2/3}+\frac{3Gm_n^2\,N^2}{r_0\,N^{1/3}}
+          B_*&=\left(a_V-a_A\right)N-a_SN^{2/3}+\frac{3Gm_n^2\,N^2}{5r_0\,N^{1/3}}
         \end{align*}
       #+END_SRC
       Dans la mesure où le nombre de nucléons est grand, on pourra négliger le
@@ -3066,9 +3066,9 @@ de radioéléments\nbsp^{11}C est nul à $t=0$.
         La capture électronique correspond à la capture d'un électron du cortège
         électronique de l'atome : cet électron appartient aux couches les plus
         internes et donc les plus proches du noyau. En fonction de la couche
-        $K,L,M$ de laquelle est capturé l'électron, une réorgnisation du cortège
-        électronique intervient ayant pour conséquence l'émission d'un rayon X
-        de désexcitation.
+        $K,L,M$ de laquelle est capturé l'électron, une réorganisation du
+        cortège électronique intervient ayant pour conséquence l'émission de
+        rayons X de désexcitation.
 
 2) Le diagramme $M_\text{at.}c^2=f(Z)$ ou $\Delta M_\text{at.}c^2=f(Z)$ pour une
    famille d'isobares donnée est le suivant
@@ -3169,11 +3169,11 @@ cigarette : la plupart des fumeurs dépassent très vite le seuil légal
 d'exposition de la population générale.
 
 [fn:10] si l'on calcule la masse minimale de cet objet à partir de
-$M_*=N_0\times m_n$, on trouve une masse $M_*=0.04M_\odot$ soit sensiblement
-plus faible que la masse typique d'une étoile à neutron $M_*=1.4M_\odot$ (masse
-de Chandrasekhar). En réalite, le rayon d'une étoile à neutron varie de 10 à 20
-km ce qui se traduit en terme de masse par une gamme entre 0.4 et 5 masses
-solaires.
+$M_*=N_0\times m_n$, on trouve une masse $M_*=0.04M_\odot$ où $M_\odot$ est égal
+à 2 10^{30} kg soit sensiblement plus faible que la masse typique d'une étoile à
+neutron $M_*=1.4M_\odot$ (masse de Chandrasekhar). En réalite, le rayon d'une
+étoile à neutron varie de 10 à 20 km ($R_\odot=695\,800$ km) ce qui se traduit
+en terme de masse par une gamme entre 0.4 et 5 masses solaires.
 
 * COMMENT TD9 : Modèle Standard et au-delà : l'interaction faible
 ** Masse et largeur du $Z^0$ -- Nombre de familles de neutrinos
