@@ -465,8 +465,8 @@ $\vv{v}$ dans un champ d'induction $\vv{B}$ normal à $\vv{v}$.
      \end{align*}
    #+END_SRC
 
-* COMMENT TD2 : Nombres quantiques & Symétries
-** Énergie maximum des rayons cosmiques
+* TD2 : Nombres quantiques & Symétries
+** COMMENT Énergie maximum des rayons cosmiques
 
 #+CAPTION: *Spectre en énergie des rayons cosmiques*
 #+ATTR_HTML: :width 500
@@ -546,7 +546,7 @@ surabondance locale.
 #+ATTR_LATEX: :width \linewidth
 [[file:./figures/auger_spectrum.pdf]]
 
-** Étrangeté dans les rayons cosmiques
+** COMMENT Étrangeté dans les rayons cosmiques
 Cascade de réactions : $p\rightarrow\pi\rightarrow\mu\rightarrow e$
 Le muon est ainsi détecté pour la première fois car si sa durée de vie propre
 est de 2.2 \mu{}s, ce temps est "boosté" par le facteur de Lorentz soit \tau =
@@ -724,17 +724,18 @@ synchrotron a accéléré des protons au delà du GeV (1952 -- 1966) contribuant
 la découverte de l'ensemble des mésons chargés de même qu'à la mise en évidence
 de particules lourdes instables telles que les particules $V$.
 
-* COMMENT TD3 : Réactions de production et de désintégration de particules
+* TD3 : Réactions de production et de désintégration de particules
 
 #+CAPTION: *Modèle standard de la physique des particules*
 [[file:./figures/standard_model.pdf]]
 
 ** Production et désintégration de particules
 
-1) Les particules élémentaires sont les quarks et les leptons (du grec /leptos/
-   = léger) dont le spin demi-entier font de ces particules des fermions. À la
-   différence des leptons, les quarks n'apparaissent pas à l'état libre et sont
-   confinés dans les hadrons. On distingue deux familles de hadrons :
+1) Les particules élémentaires sont les quarks (/cf./ ci-dessous) et les leptons
+   (du grec /leptos/ = léger) dont le spin demi-entier font de ces particules des
+   fermions. À la différence des leptons, les quarks n'apparaissent pas à l'état
+   libre et sont confinés dans les hadrons (du grec /hadros/ = fort). On distingue
+   deux familles de hadrons :
    - les baryons :: (du grec /baryos/ = lourd) constitués de 3 quarks $q_1q_2q_3$,
                     de nombre baryonique égal à 1 et de spin 1/2
                     entier. Exemple : nucléons
@@ -747,7 +748,57 @@ de particules lourdes instables telles que les particules $V$.
       leptons neutres /i.e./ les neutrinos n'intéragissent que par interaction
       faible.
 
-2) Toutes les interactions conservent la charge électrique, le nombre
+#+BEGIN_REMARK
+Le nom /quark/ est tiré du roman /Finnegans Wake/ de James Joyce :
+#+BEGIN_QUOTE
+"Three quarks for Muster Mark!
+
+Sure he has not got much of a bark
+
+And sure any he has it's all beside the mark."
+#+END_QUOTE
+Murray Gell-Mann précisa par la suite l'origine du nom /quark/ dans son livre /The
+Quark and the Jaguar/:
+
+#+BEGIN_QUOTE
+"In 1963, when I assigned the name "quark" to the fundamental constituents of
+the nucleon, I had the sound first, without the spelling, which could have been
+"kwork". Then, in one of my occasional perusals of Finnegans Wake, by James
+Joyce, I came across the word "quark" in the phrase "Three quarks for Muster
+Mark". Since "quark" (meaning, for one thing, the cry of the gull) was clearly
+intended to rhyme with "Mark", as well as "bark" and other such words, I had to
+find an excuse to pronounce it as "kwork". But the book represents the dream of
+a publican named Humphrey Chimpden Earwicker. Words in the text are typically
+drawn from several sources at once, like the "portmanteau" words in "Through the
+Looking-Glass". From time to time, phrases occur in the book that are partially
+determined by calls for drinks at the bar. I argued, therefore, that perhaps one
+of the multiple sources of the cry "Three quarks for Muster Mark" might be
+"Three quarts for Mister Mark", in which case the pronunciation "kwork" would
+not be totally unjustified. In any case, the number three fitted perfectly the
+way quarks occur in nature."
+#+END_QUOTE
+
+L'origine des noms de saveur est multiple : les quarks /up/ et /down/ sont nommés en
+raison de la valeur d'isospin $T_3$ respectivement égale à \pm1/2. Le quark
+étrange tient son nom de la découverte des particules étranges dans le
+rayonnement cosmique (/cf./ TD précédent), l'étrangeté faisant référence à leur
+durée de vie particulièrement longue. Glashow, qui proposa le nom de charme avec
+Bjorken, expliqua ce choix en ces termes
+
+#+BEGIN_QUOTE
+"We called our construct the charmed quark, for we were fascinated and pleased
+by the symmetry it brought to the subnuclear world."
+#+END_QUOTE
+
+Finalement, les noms "bottom" et "top", proposés par Harari, furent logiquement
+choisis en tant que "partenaires" des quarks "up" et "down". Par le passé, ces
+quarks furent également appelés quark "beauty" et "truth": si le terme "truth"
+n'est jamais resté, l'utilisation du terme "beauty" est souvent utilisée en
+référence aux "beauty factories" (Babar, Belle) étudiant les propriétés de ce
+quark.
+#+END_REMARK
+
+2) [@2] Toutes les interactions conservent la charge électrique, le nombre
    baryonique, le nombre leptonique et le moment cinétique total.
 
    a) $K^- + p\rightarrow \bar{K}^0 + n$
@@ -2602,7 +2653,7 @@ de barns dans le but de masquer le sujet de leurs recherches. Cependant après l
 Seconde Guerre mondiale, le barn est devenu une unité standard de la physique
 des particules.
 
-* TD8 : Masses et désintégrations nucléaires
+* COMMENT TD8 : Masses et désintégrations nucléaires
 ** Définitions
 - masse nucléaire :: la masse nucléaire correspond à la masse du noyau /i.e./
      #+BEGIN_SRC latex
