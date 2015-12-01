@@ -965,15 +965,15 @@ Brookhaven en 1964.
 [fn:4] le moment cinétique total est également différent 5/2^{+} ou 7/2^{+} contre
 3/2^{+}
 
-* COMMENT TD4 : Modèle des quarks -- Les hadrons
+* TD4 : Modèle des quarks -- Les hadrons
 ** Les mésons constitués des quarks $u,d,s$ et de leurs antiquarks
-1) Opérateur conjugaison particule -- antiparticule $\hat{c}$ :
-   $q\overset{\hat{c}}{\rightarrow}\bar{q}$
+1) Opérateur conjugaison particule -- antiparticule $\hat{C}$ :
+   $q\overset{\hat{C}}{\rightarrow}\bar{q}$
 
-   - $\vv{T},\vv{I},mc^2\overset{\hat{c}}{\rightarrow}\vv{T},\vv{I},mc^2$
-   - $Q/e,B,T_3,S,c,b,t\overset{\hat{c}}{\rightarrow}-Q/e,-B,-T_3,-S,-c,-b,-t$
-   - Parite \pi : fermions $\pi\overset{\hat{c}}{\rightarrow}-\pi$, bosons
-     $\pi\overset{\hat{c}}{\rightarrow}\pi$
+   - $\vv{T},\vv{I},mc^2\overset{\hat{C}}{\rightarrow}\vv{T},\vv{I},mc^2$
+   - $Q/e,B,T_3,S,c,b,t\overset{\hat{C}}{\rightarrow}-Q/e,-B,-T_3,-S,-c,-b,-t$
+   - Parite \pi : fermions $\pi\overset{\hat{C}}{\rightarrow}-\pi$, bosons
+     $\pi\overset{\hat{C}}{\rightarrow}\pi$
 
    |-----------+-----+-------+------+-----+---------+-----+-----+-----+-----+-------|
    |           | $I$ | $Q/e$ | B    |   T | $T_{3}$ | $S$ | $c$ | $b$ | $t$ | $\pi$ |
@@ -982,7 +982,7 @@ Brookhaven en 1964.
    | $\bar{c}$ | 1/2 | -2/3  | -1/3 |   0 |       0 |   0 |  -1 |   0 |   0 |    -1 |
    | $\bar{s}$ | 1/2 | 1/3   | -1/3 |   0 |       0 |  +1 |   0 |   0 |   0 |    -1 |
    | $\bar{t}$ | 1/2 | -2/3  | -1/3 |   0 |       0 |   0 |   0 |   0 |  -1 |    -1 |
-   | $\bar{b}$ | 1/2 | 1/3   | -1/3 |   0 |       0 |   0 |   0 |  +1 |   0 |    -1 |
+   | $\bar{b}$ | 1/2 | 1/3   | -1/3 |   0 |       0 |   0 |   0 |   +1 |   0 |    -1 |
    |-----------+-----+-------+------+-----+---------+-----+-----+-----+-----+-------|
 
 2) $\vv{L_i} = \vv{0}$: méson \equiv 1 quark + 1 antiquark
