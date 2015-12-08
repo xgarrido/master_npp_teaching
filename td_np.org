@@ -790,12 +790,30 @@ Bjorken, expliqua ce choix en ces termes
 by the symmetry it brought to the subnuclear world."
 #+END_QUOTE
 
-Finalement, les noms "bottom" et "top", proposés par Harari, furent logiquement
-choisis en tant que "partenaires" des quarks "up" et "down". Par le passé, ces
-quarks furent également appelés quark "beauty" et "truth": si le terme "truth"
-n'est jamais resté, l'utilisation du terme "beauty" est souvent utilisée en
-référence aux "beauty factories" (Babar, Belle) étudiant les propriétés de ce
-quark.
+Les noms "bottom" et "top", proposés par Harari, furent logiquement choisis en
+tant que "partenaires" des quarks "up" et "down". Par le passé, ces quarks
+furent également appelés quark "beauty" et "truth": si le terme "truth" n'est
+jamais resté, l'utilisation du terme "beauty" est souvent utilisée en référence
+aux "beauty factories" (Babar, Belle) étudiant les propriétés de ce quark.
+
+Finalement, le nom de neutrino a été donné par Edoardo Amaldi à la suite du
+postulat d'existence de cette particule par Wolfang Pauli. Ce dernier l'avait
+initialement appelé neutron quelques mois avant que James Chadwick découvre le
+baryon neutron. Toutefois, la référence italienne au petit neutron au travers de
+l'ajout du suffixe /ino/ est plus complexe qu'il n'y parait : en toute rigueur, le
+petit neutron aurait du s'appeller /neutronino/. L'origine du nom neutrino est
+rapportée par Amaldi
+#+BEGIN_QUOTE
+"The name neutrino, (a funny and grammatically incorrect contraction of "little
+neutron" in Italian: neutronino) entered the international terminology through
+Fermi, who started to use it sometime between the conference in Paris in July
+1932 and the Solvay Conference October 1933 where Pauli used it. The word came
+out in a humorous conversation at the Instituto di Via Panisperna. Fermi, Amaldi
+and and few others were present and Fermi was explaining Pauli's hypothesis
+about his "light neutron". For distinguishing this particle from the Chadwick
+neutron, Amaldi jokingly used this funny name, - says Occhialini, who recalls of
+having shortly later told around this little story in Cambridge."
+#+END_QUOTE
 #+END_REMARK
 
 2) [@2] Toutes les interactions conservent la charge électrique, le nombre
@@ -922,6 +940,30 @@ hypercharge. Dans cet exercice, $c=b=t=0$ donc $Y = B$ + étrangeté $S$
    #+END_SRC
    d'où $I_R^\pi = 5/2^+$ ou $7/2^+$
 
+   #+BEGIN_REMARK
+   Le momenti cinétique total de la résonance $R$ de même que la parité de cette
+   particule ne font pas intervenir de moment angulaire relatif. La résonance
+   $R$ qui est un baryon est donc constituée de 3 quarks orbitant les uns par
+   rapport aux autres. Ainsi, le moment cinétique total de $R$ peut se
+   décomposer de la façon suivante
+   #+BEGIN_SRC latex
+     \begin{align*}
+       \vv{I}_R&=\vv{I}_{q_1}+\vv{I}_{q_2}+\vv{I}_{q_3}+\vv{L}_{q_1/q_2/q_3}\\
+       &=\vv{S}_{q_1}+\vv{S}_{q_2}+\vv{S}_{q_3}+\vv{L}_{q_1/q_2/q_3}
+      \end{align*}
+   #+END_SRC
+   étant donné que le moment cinétique intrinsèque d'une particule élémentaire
+   telle qu'un quark est son unique spin. De la même façon, la parité de la
+   résonance $R$ peut s'écrire
+   #+BEGIN_SRC latex
+     \begin{align*}
+       \pi(R)=\pi(q_1)\times\pi(q_2)\times\pi(q_2)\times\pi(q_3)\times(-1)^{L_{q_1/q_2/q_3}}
+     \end{align*}
+   #+END_SRC
+   Aussi, dans le cas de la détermination du moment cinétique et de la parité
+   d'une particule seule, le moment angulaire relatif des constituants
+   élementaires de cette particule n'intervient pas.
+   #+END_REMARK
 7) Conservation de $\vv{T}$ et $T_3$ dans la désintégration de $R\rightarrow
    K^++\Sigma^+$
 
