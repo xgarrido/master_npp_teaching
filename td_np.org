@@ -4,7 +4,7 @@
 #+OPTIONS: ^:{} toc:2 author:t email:t split:html
 #+LATEX_CLASS: teaching-class
 
-* COMMENT TD1 : Cinématique & Accélérateurs
+* TD1 : Cinématique & Accélérateurs
 ** COMMENT Introduction
 
 #+BEGIN_CENTER
@@ -1361,7 +1361,7 @@ $\vv{T}=\vv{0}$ et $\vv{S}=\vv{3}/2$, la somme n'est donc pas impaire. C'est
 l'introduction de la couleur qui permet de rendre cette fonction d'onde globale
 antisymétrique.
 
-* COMMENT TD5 : Isospin -- des quarks aux noyaux
+* TD5 : Isospin -- des quarks aux noyaux
 ** Introduction
 
 L'isospin $\vv{T}$ rend compte de l'indépendance de charge de l'intéraction
@@ -1832,7 +1832,7 @@ symétrique. Toutefois et comme nous le verrons dans l'exercice sur la parité
 intrinsèque du pion, la fonction d'onde globale de ces états demeure
 antisymétrique en raison du principe de Pauli généralisé qui impose que deux
 fermions soient dans des états quantiques différents.
-* COMMENT TD6 : Structure nucléaire
+* TD6 : Structure nucléaire
 ** COMMENT Introduction
 Dans l'approximation du champ moyen, l'hamiltonien d'un système à $N$ nucléons
 prend la forme suivante
@@ -2273,7 +2273,7 @@ $T(\text{fonda.})=|T_3|=\tfrac{Z-N}{2}$.
 [fn:8] la parité est égale à $(-1)^{\ell_1+\ell_2}$ où $\ell_1=\ell_2=\ell$ et
 donc $\pi=(-1)^{2\ell}=+1$
 
-* COMMENT TD7 : Réactions nucléaires
+* TD7 : Réactions nucléaires
 ** Introduction
 #+ATTR_LATEX: :float wrap :placement {l}{0.5\textwidth} :width 0.4\textwidth
 [[./figures/solid_angle.pdf]]
@@ -2695,7 +2695,7 @@ de barns dans le but de masquer le sujet de leurs recherches. Cependant après l
 Seconde Guerre mondiale, le barn est devenu une unité standard de la physique
 des particules.
 
-* COMMENT TD8 : Masses et désintégrations nucléaires
+* TD8 : Masses et désintégrations nucléaires
 ** Définitions
 - masse nucléaire :: la masse nucléaire correspond à la masse du noyau /i.e./
      #+BEGIN_SRC latex
@@ -3268,7 +3268,7 @@ neutron $M_*=1.4M_\odot$ (masse de Chandrasekhar). En réalite, le rayon d'une
 étoile à neutron varie de 10 à 20 km ($R_\odot=695\,800$ km) ce qui se traduit
 en terme de masse par une gamme entre 0.4 et 5 masses solaires.
 
-* COMMENT TD9 : Modèle Standard et au-delà : l'interaction faible
+* TD9 : Modèle Standard et au-delà : l'interaction faible
 ** Masse et largeur du $Z^0$ -- Nombre de familles de neutrinos
 Le LEP (pour /Large Electron Positron collider/) était un accélérateur de
 particules circulaire de 27 km de circonférence, passant sous le site du CERN
