@@ -3291,7 +3291,7 @@ incidents.
    $\Gamma(Z^0)=2\times(91.2-90)=\unit[2.4]{GeV}$ (contre 2.4952 \pm 0.0023 GeV
    dans le PDG).
 2) $\Gamma(Z^0)\gg\Gamma(Z^0\to e^+e^-)$. La durée de vie du boson $Z^0$ est une
-   propriété intrinsèque à cette particule : elle ne dépond donc pas du mode de
+   propriété intrinsèque à cette particule : elle ne dépend donc pas du mode de
    désintégration. À titre d'exemple, la mesure du taux de désintégration de
    $Z^0\to\mu^+\mu^-$ donnerait un résultat expérimental identique. À partir de
    la distribution en masse invariante, la largeur de la résonance est donc la
