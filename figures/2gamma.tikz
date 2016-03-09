@@ -1,0 +1,50 @@
+\tikzset{%
+  >=latex, % option for nice arrows
+  inner sep=0pt,%
+  outer sep=2pt,%
+  mark coordinate/.style={inner sep=0pt,outer sep=0pt,minimum size=3pt,
+    fill=black,circle}%
+}
+\begin{tikzpicture}[y=-1cm]
+  \sf
+  \definecolor{red}{RGB}{221,42,43}
+  \definecolor{green}{RGB}{132,184,24}
+  \definecolor{blue}{RGB}{0,51,153}
+  %% \definecolor{blue}{RGB}{0,72,112}
+  \definecolor{orange}{RGB}{192,128,64}
+  \definecolor{gray}{RGB}{107,108,110}
+  \colorlet{default}{blue}
+
+  \draw[default] (2.55905,26.09003) -- (2.62678,26.11332) -- (2.68393,26.15142) -- (2.72627,26.20645) -- (2.75378,26.26783) -- (2.76437,26.3398) -- (2.76437,26.34827) -- (2.76437,26.35885) -- (2.76225,26.36943) -- (2.76225,26.38002) -- (2.76013,26.38848);
+  \draw[default] (2.76013,26.38848) -- (2.70722,26.5176) -- (2.62678,26.62767) -- (2.52095,26.71022) -- (2.39607,26.76737) -- (2.2606,26.78853);
+
+  \draw[dashed,default,->] (2.05952,26.38848) -- (10.0584,26.38848) node[right] {$z$};
+
+  \draw[semithick,default,->] (2.05952,26.38848) -- (3.56023,25.38942);
+  \draw[semithick,default,->] (2.05952,26.38848) -- (2.55905,27.38967);
+  \draw[semithick,default,->] (0.05927,26.38848) -- (2.05952,26.38848);
+  \draw[semithick,default,<->] (8.5598,24.88988) -- (5.55837,27.8892);
+
+  \path (2.85962,26.88802) node[text=default,anchor=base west] {\fontsize{13.0}{15.6}\selectfont{}$\omega$};
+  \path (8.06027,26.18952) node[text=default,anchor=base west] {\fontsize{13.0}{15.6}\selectfont{}$\theta^*$};
+
+  \path (3.56023,25.18833) node[text=default,anchor=base west] {\fontsize{13.0}{15.6}\selectfont{}$\overrightarrow{p}_1$, $E_1$};
+
+  \draw[default] (7.55862,25.88895) -- (7.66657,25.91012) -- (7.75758,25.96303) --
+  (7.82955,26.03712) -- (7.87612,26.13237) -- (7.89305,26.2382) --
+  (7.89093,26.26995) -- (7.8867,26.3017) -- (7.88035,26.33133) --
+  (7.87188,26.36097) -- (7.85918,26.38848);
+
+  \path (0.26035,24.18927) node[text=default,anchor=base west] {\fontsize{13.0}{15.6}\selectfont{}Référentiel du laboratoire $\mathcal{R}$};
+  \path (5.75945,24.18927) node[text=default,anchor=base west] {\fontsize{13.0}{15.6}\selectfont{}Référentiel du CDM $\gamma_1\gamma_2$};
+
+  \path (0.26035,26.09003) node[text=default,anchor=base west] {\fontsize{13.0}{15.6}\selectfont{}$(m,E)$};
+  \path (0.95885,27.38967) node[text=default,anchor=base west] {\fontsize{13.0}{15.6}\selectfont{}$\overrightarrow{p}_2$, $E_2$};
+  \path (8.86037,25.18833) node[text=default,anchor=base west] {\fontsize{13.0}{15.6}\selectfont{}$\overrightarrow{p}_1^*$};
+  \path (6.65903,27.48915) node[text=default,anchor=base west] {\fontsize{13.0}{15.6}\selectfont{}$\overrightarrow{p}_2^*$};
+
+\end{tikzpicture}%
+%% Configure (x)emacs for this file ...
+%% Local Variables:
+%% mode: latex
+%% End:

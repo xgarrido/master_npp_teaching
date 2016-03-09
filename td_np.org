@@ -5,7 +5,7 @@
 #+LATEX_CLASS: teaching-class
 
 * TD1 : Cinématique & Accélérateurs
-** COMMENT Introduction
+** Introduction
 
 #+BEGIN_CENTER
 Noyau :\nbsp^{A}_{Z}X \rightarrow Z protons  + N neutrons = A nucléons (nombre de masse)
@@ -59,7 +59,14 @@ On déduit que le rayon d'un noyau est proportionnel à son nombre de nucléons 
 fermi où 1 fm = 10^{-15} m = 10^{-13} cm. La valeur la plus probable est $r_{0}$ =
 1.25 fm.
 
-** COMMENT Ordres de grandeurs
+** Ordres de grandeurs
+#+BEGIN_QUESTION
+Calculer le volume (en cm^{3}) et la masse volumique (en g/cm^{3}) d'un noyau
+de\nbsp^{12}_{6}C, qui est le noyau utilisé pour définir l'unité de masse
+atomique. Comparer à la masse volumique des matériaux courants comme le bois ou
+le fer.
+#+END_QUESTION
+
 - Volume du noyau de\nbsp^{12}_{6}C : approx. sphérique
 
   #+BEGIN_SRC latex
@@ -103,12 +110,23 @@ fer environ 10 g/cm^{3}, la Terre de 6 g/cm^{3} et l'Uranium de 19 g/cm^{3}.
 
 *Remarques :* la densité au sein d'une étoile à neutrons est voisine de 10^{11} g/cm^{3}
 
-** COMMENT Cinématique
+** Cinématique
 
-Désintégration en deux photons : $a \rightarrow \gamma_{1} + \gamma_{2}$, énergie
-de a au repos $mc^{2}$ et vitesse de $a \beta=v/c$
+#+BEGIN_QUESTION
+On veut étudier la désintégration en deux photons d'une particule $a$, d'énergie
+de masse au repos $mc^2$, animée d'une vitesse $\beta=v/c$ par rapport au
+référentiel du laboratoire $\mathcal{R}$, comme indiqué sur la figure ci-dessous.
+#+BEGIN_CENTER
+#+ATTR_LATEX: :width 0.7\linewidth
+[[file:figures/2gamma.pdf]]
+#+END_CENTER
+1) Exprimer les énergies totales $E_1$ et $E_2$ des deux photons dans le
+   référentiel $R$, en fonction de l'angle d'émission commun $\theta^*$ des
+   photons dans le référentiel du centre de masse $\mathcal{R}'$. En déduire les
+   bornes $E_\text{min}$ et $E_\text{max}$ de ces énergies.
+#+END_QUESTION
 
-1) dans $\mathcal{R^\prime}$ /i.e./ le référentiel du centre de masse où $a$ est
+1) dans $\mathcal{R}'$ /i.e./ le référentiel du centre de masse où $a$ est
    au repos et $\Upsigma\vv{p}^{*} = \vv{0}$ :
 
    *\rightarrow Conservation de l'énergie totale :*
@@ -189,7 +207,12 @@ de a au repos $mc^{2}$ et vitesse de $a \beta=v/c$
    [[file:figures/minimal_energy_kinematics.pdf]]
    #+END_CENTER
 
-2) Angle d'ouverture \omega en fonction de \theta^{*}
+#+BEGIN_QUESTION
+2) [@2] On s'intéresse à l'angle d'ouverture de la paire de photons, \omega,
+   dans le référentiel du laboratoire $\mathcal{R}$ (voir figure). Déterminer
+   l'expression de $\cos\omega$ en fonction de $\cos\theta^*$.
+#+END_QUESTION
+2) [@2] Angle d'ouverture \omega en fonction de \theta^{*}
 
   Invariant relativiste $I = (\Upsigma_{i}E_{i})^{2} -
   (\Upsigma_{i}\vv{p_{i}}^{*})^{2}\,c^{2}$ constant quelque soit le référentiel
@@ -231,9 +254,24 @@ de a au repos $mc^{2}$ et vitesse de $a \beta=v/c$
 
 ** Énergie seuil
 
-#+BEGIN_CENTER
-Réaction : $a + b \rightarrow c + d + e + f$
-#+END_CENTER
+#+BEGIN_QUESTION
+Soit une réaction entre deux particules $a$ et $b$, de masses respectives
+$m_ac^2$ et $m_bc^2$ :
+#+BEGIN_SRC latex
+\begin{align*}
+a + b \rightarrow c + d + e + f
+\end{align*}
+#+END_SRC
+Les particules produites lors de cette réaction $c$, $d$, $e$ et $f$ ont pour
+masses respectives $m_cc^2$, $m_dc^2$, m_ec^2$ et m_fc^2$.
+
+1) [@1] On suppose que la réaction a lieu dans le référentiel du centre de masse
+   des particules $a$ et $b$ et on se place dans le cas particulier où
+   $m_ac^2=m_bc^2$. Donner l'expression de l'énergie cinétique minimum, encore
+   appelée énergie seuil dans le référentiel du centre de masse, que doit
+   posséder chacune des deux particules $a$ et $b$ pour que la réaction puisse
+   avoir lieu ?
+#+END_QUESTION
 
 Par définition, l'énergie seuil est l'énergie *juste nécessaire* à la création
 des particules en voie de sortie sans que ces dernières n'aient d'impulsion
@@ -268,7 +306,15 @@ des particules en voie de sortie sans que ces dernières n'aient d'impulsion
    - Q < 0 :: la réaction est dite endoénergétique et n'est envisageable qu'à la
               condition de fournir de l'énergie (cinétique) en voie d'entrée.
 
-2) Réaction dans le référentiel du laboratoire : soit un faisceau de particule
+#+BEGIN_QUESTION
+2) [@2] On suppose à présent que la réaction a lieu dans le référentiel du
+   laboratoire, c'est-à-dire qu'on envoie une particule $a$, d'énergie cinétique
+   $T_a$, sur une particule $b$ au repos. Quelle est l'expression de la valeur
+   minimale $T_a$, encore appelée $T_S$ ou énergie seuil dans le référentiel du
+   laboratoire, pour que la réaction ait lieu ?
+#+END_QUESTION
+
+2) [@2] Réaction dans le référentiel du laboratoire : soit un faisceau de particule
    $a$ envoyé sur une cible fixe constituée de particule $b \rightarrow \vv{p_b}
    = \vv{0}$. L'énergie seuil est la valeur minimale de $T_{a}$ suffisant à la
    création des particules $c, d, e, f$ au repos. L'invariant relativiste $I$
@@ -334,6 +380,12 @@ L'énergie cinétique minimum du faisceau incident est ainsi
      sens inverse, afin de réaliser des collisions entre particules avec une
      énergie utilisable très élevée. Ce sont des collisionneurs.
 *** Exercice
+#+BEGIN_QUESTION
+Un proton de masse au repos $m$, de vitesse $\vv{v}$, se déplaçant dans un champ
+d'induction $\vv{B}$ normal à $\vv{v}$, parcourt une trajectoire circulaire de
+rayon $R$ dans un cyclotron.
+1) Établir la relation liant $R$ à $m, q, v$ et $B$ dans la cas relativiste.
+#+END_QUESTION
 
 Proton de masse $m = \unit[938.27]{MeV/c}^{2}$ se déplaçant à la vitesse
 $\vv{v}$ dans un champ d'induction $\vv{B}$ normal à $\vv{v}$.
@@ -354,7 +406,12 @@ $\vv{v}$ dans un champ d'induction $\vv{B}$ normal à $\vv{v}$.
 
    À chaque tour, $v\nearrow$ avec $\vv{B}=\text{constante}$ donc $R\nearrow$
 
-2) Calcul de $t_{0}$
+#+BEGIN_QUESTION
+2) [@2] Montrer que le temps $t_0$ mis par le proton pour parcourir une
+   trajectoire circulaire dans le cyclotron est indépendant de $v$ pour de
+   petites valeurs de $v$ (cas non relativiste).
+#+END_QUESTION
+2) [@2] Calcul de $t_{0}$
    #+BEGIN_SRC latex
      \begin{align*}
        \frac{\text{d}\theta}{\text{d}t} &= \omega = \frac{v}{R} = \frac{qbR}{\gamma{}mR} =
@@ -370,7 +427,12 @@ $\vv{v}$ dans un champ d'induction $\vv{B}$ normal à $\vv{v}$.
       \end{align*}
    #+END_SRC
 
-3) $B = 1.5$ T et $R = 0.5$ m.
+#+BEGIN_QUESTION
+3) [@3] Calculer dans ce cas l'impulsion et l'énergie cinétique (en MeV), ainsi
+   que le temps de parcours $t_0$ d'une trajectoire circulaire pour $B$ = 1.5
+   Tesla et $R$ = 0.5 m.
+#+END_QUESTION
+3) [@3] $B = 1.5$ T et $R = 0.5$ m.
 
    #+BEGIN_SRC latex
      \begin{align*}
@@ -393,7 +455,14 @@ $\vv{v}$ dans un champ d'induction $\vv{B}$ normal à $\vv{v}$.
      \end{align*}
    #+END_SRC
 
-4) $t = \frac{2\pi\gamma\,m}{qB}$ et $t_{0} = \frac{2\pi\,m}{qB}$
+#+BEGIN_QUESTION
+4) [@4] À partir de quelle valeur de l'énergie cinétique du proton (que l'on
+   suppose de nouveau relativiste), le temps $t$ mis par celui-ci pour parcourir
+   une trajectoire circulaire dans le champ d'induction $B$ diffère-t-il de plus
+   de 5% du temps $t_0$ calculé précédemment ? En déduire les limites d'un
+   cyclotron.
+#+END_QUESTION
+4) [@4] $t = \frac{2\pi\gamma\,m}{qB}$ et $t_{0} = \frac{2\pi\,m}{qB}$
 
    #+BEGIN_SRC latex
      \begin{align*}
@@ -408,7 +477,15 @@ $\vv{v}$ dans un champ d'induction $\vv{B}$ normal à $\vv{v}$.
    plus accélérée en phase avec le champ électrique accélérateur \rightarrow
    *synchrocyclotron ou synchrotron*
 
-5) La fréquence de rotation $f = \frac{v}{2\pi R} = \frac{qB}{2\pi m}$
+#+BEGIN_QUESTION
+5) [@5] Dans un synchrotron, le rayon de courbure de la trajectoire des protons
+   est maintenu constant au cours de l'accélération, tandis que l'induction
+   $\vv{B}$, toujours normale à la direction de la vitesse, a alors une valeur
+   variable. Sachant qu'en fin d'accélération, les protons ont une énergie
+   cinétique $T$ = 7 TeV pour $B$ = 5.4 Tesla, calculer le rayon de courbure de
+   la trajectoire.
+#+END_QUESTION
+5) [@5] La fréquence de rotation $f = \frac{v}{2\pi R} = \frac{qB}{2\pi m}$
    - synchrocyclotron :: on fait varier la fréquence $f$ d'accélération pour
         compenser la variation de $v$
    - synchrotron :: on fait varier le champ magnétique $B$ pour maintenir la
@@ -432,9 +509,19 @@ $\vv{v}$ dans un champ d'induction $\vv{B}$ normal à $\vv{v}$.
    #+END_SRC
    soit une circonférence de 26 km.
 
-6) $p + p \rightarrow p + p + N^{+} + N^{-}$
-
-   $T_{S} = |Q|/2$ avec $Q = \Upsigma\,m_\text{initiale}c^{2} -
+#+BEGIN_QUESTION
+6) [@6] On considère la collision de 2 protons d'énergie cinétique 7 TeV dans
+   des anneaux.
+   #+BEGIN_SRC latex
+     \begin{align*}
+       p + p \rightarrow p + p + N^+ + N^-
+     \end{align*}
+   #+END_SRC
+   où $N^+$ et $N^-$ sont des antiparticules (même masse mais charges
+   électriques opposées). Quelle est la masse maximale des particules $N$ qui
+   pourraient être ainsi créées dans la collision ?
+#+END_QUESTION
+6) [@6] $T_{S} = |Q|/2$ avec $Q = \Upsigma\,m_\text{initiale}c^{2} -
    \Upsigma\,m_\text{finale}c^{2}$ et
 
    #+BEGIN_SRC latex
@@ -447,7 +534,19 @@ $\vv{v}$ dans un champ d'induction $\vv{B}$ normal à $\vv{v}$.
      \end{align*}
    #+END_SRC
 
-7) Réaction sur cible fixe
+#+BEGIN_QUESTION
+7) [@7] On veut étudier la même réaction
+   #+BEGIN_SRC latex
+     \begin{align*}
+       p + p \rightarrow p + p + N^+ + N^-
+     \end{align*}
+   #+END_SRC
+   en bombardant une cible d'hydrogène au repos par un faisceau de
+   protons. Déterminer l'énergie seuil $T_S$ pour que la réaction ait lieu, en
+   supposant que les particules $N$ ont la masse déterminée à la question
+   précédente.
+#+END_QUESTION
+7) [@7] Réaction sur cible fixe
    #+BEGIN_SRC latex
      \begin{align*}
        T_{S} &= \frac{|Q|}{2}\cdot\frac{\Upsigma\,m_{if}c^{2}}{m_{p}c^{2}}\\
@@ -457,7 +556,11 @@ $\vv{v}$ dans un champ d'induction $\vv{B}$ normal à $\vv{v}$.
      \end{align*}
    #+END_SRC
 
-8) Rayon de courbure
+#+BEGIN_QUESTION
+8) [@8] Quel serait alors, dans un champ magnétique $B$ = 5.4 Tesla, le rayon de
+   courbure de la trajectoire d'un proton qui aurait l'énergie cinétique $T_S$ ?
+#+END_QUESTION
+8) [@8] Rayon de courbure
    #+BEGIN_SRC latex
      \begin{align*}
        R = \frac{pc}{qBc} \simeq \frac{T_{S}(\text{eV})}{Bc} =
@@ -1833,7 +1936,7 @@ intrinsèque du pion, la fonction d'onde globale de ces états demeure
 antisymétrique en raison du principe de Pauli généralisé qui impose que deux
 fermions soient dans des états quantiques différents.
 * TD6 : Structure nucléaire
-** COMMENT Introduction
+** Introduction
 Dans l'approximation du champ moyen, l'hamiltonien d'un système à $N$ nucléons
 prend la forme suivante
 #+BEGIN_SRC latex
@@ -1894,7 +1997,7 @@ pour les différents types de noyau :
      $|j_1-j_2|\leq j\leq j_1+j_2$. La parité $\pi$ est égale à
      $(-1)^{\ell_1+\ell_2}$. Toutes les valeurs de $j$ sont possibles
 
-** COMMENT Modèle des couches
+** Modèle des couches
 1) Moment cinétique $I$ et parité $\pi$ :
 
    - *\nbsp^{41}_{21}Sc*
@@ -2996,11 +3099,11 @@ de radioéléments\nbsp^{11}C est nul à $t=0$.
      \end{align*}
    #+END_SRC
 
-   - 30 minutes après irradiation, l'activité de la source injectée de l'ordre
-     de quelques centaines de MBq est suffisante pour réaliser une TEP autrement
-     dit pour observer les photons \gamma à 511 keV. Cette activité qui varie
-     entre 150 et 400 MBq pour un adulte correspond à une dose équivalente à 10
-     mSv[fn:9]
+   - 30 minutes après irradiation, l'activité de la source injectée, de l'ordre
+     de quelques centaines de MBq, est suffisante pour réaliser une TEP
+     autrement dit pour observer les photons \gamma à 511 keV. Cette activité
+     qui varie entre 150 et 400 MBq pour un adulte correspond à une dose
+     équivalente à 10 mSv[fn:9]
    - la période très courte du carbone 11 fait que l'activité de la source
      décroît rapidement, le radioélement étant à l'état de trace au bout de 24
      h. En réalité, la radioactivité disparaît encore plus rapidement car les
@@ -3028,7 +3131,7 @@ de radioéléments\nbsp^{11}C est nul à $t=0$.
    #+BEGIN_SRC latex
      \begin{align*}
        \left.\frac{\partial B_N}{\partial Z}\right|_{Z=Z_0}=-\frac{2a_CZ_0}{A^{1/3}}+4a_A\frac{A-2Z_0}{A}&=0\\
-       -a_CZ_0A^{2/3}+2A_AA-4a_AZ_0&=0\\
+       -a_CZ_0A^{2/3}+2a_AA-4a_AZ_0&=0\\
        Z_0&=\frac{2a_AA}{a_CA^{2/3}+4a_A}
      \end{align*}
    #+END_SRC
@@ -3291,7 +3394,7 @@ incidents.
    $\Gamma(Z^0)=2\times(91.2-90)=\unit[2.4]{GeV}$ (contre 2.4952 \pm 0.0023 GeV
    dans le PDG).
 2) $\Gamma(Z^0)\gg\Gamma(Z^0\to e^+e^-)$. La durée de vie du boson $Z^0$ est une
-   propriété intrinsèque à cette particule : elle ne dépend donc pas du mode de
+   propriété intrinsèque à cette particule : elle ne dépetnd donc pas du mode de
    désintégration. À titre d'exemple, la mesure du taux de désintégration de
    $Z^0\to\mu^+\mu^-$ donnerait un résultat expérimental identique. À partir de
    la distribution en masse invariante, la largeur de la résonance est donc la
