@@ -4,7 +4,7 @@
 #+OPTIONS: ^:{} toc:2 author:t email:t split:html
 #+LATEX_CLASS: teaching-class
 
-* TD1 : Cinématique & Accélérateurs
+* COMMENT TD1 : Cinématique & Accélérateurs
 ** Introduction
 
 #+BEGIN_CENTER
@@ -569,19 +569,30 @@ $\vv{v}$ dans un champ d'induction $\vv{B}$ normal à $\vv{v}$.
    #+END_SRC
 
 * TD2 : Nombres quantiques & Symétries
-** COMMENT Énergie maximum des rayons cosmiques
+** Énergie maximum des rayons cosmiques
 
 #+CAPTION: *Spectre en énergie des rayons cosmiques*
 #+ATTR_HTML: :width 500
 #+ATTR_LATEX: :width 0.7\linewidth :placement [h]
 [[file:./figures/spectrum.pdf]]
 
-#+BEGIN_SRC latex
-\begin{align*}
-p + \gamma &\rightarrow p + \pi^{+}\\
-p + \gamma &\rightarrow n + \pi^{0}
-\end{align*}
-#+END_SRC
+#+BEGIN_QUESTION
+1) On considère un proton émis par une source astrophysique (Soleil, noyaux
+   actifs de galaxie,...) et interagissant avec le rayonnement fossile à 2.7 K
+   (on admettra que $E_\gamma = 3kT_\gamma$ pour les photons, avec $k$ =
+   1,38.10^{-23} J/K) :
+   #+BEGIN_SRC latex
+     \begin{align*}
+       p + \gamma &\rightarrow p + \pi^0 \quad {\rm et}\\
+       p + \gamma &\rightarrow n + \pi^+
+     \end{align*}
+   #+END_SRC
+   Quelle est l'énergie seuil de ces réactions (on supposera le proton
+   ultra-relativiste) ?
+
+2) Que pouvez-vous en déduire sur l'énergie des protons dans le milieu
+   intergalactique ?
+#+END_QUESTION
 
 Calcul de l'invariant relativiste :
 #+BEGIN_SRC latex
@@ -649,15 +660,48 @@ surabondance locale.
 #+ATTR_LATEX: :width \linewidth
 [[file:./figures/auger_spectrum.pdf]]
 
-** COMMENT Étrangeté dans les rayons cosmiques
+#+LATEX: \cleardoublepage
+
+** Étrangeté dans les rayons cosmiques
+#+BEGIN_QUESTION
+À l'arrivée dans l'atmosphère, les protons réagissent avec les neutrons des
+noyaux, pour engendrer la cascade de réactions :
+#+BEGIN_SRC latex
+  \begin{align*}
+    p + n_\text{atm} &\rightarrow p + p + \pi^- \\
+    \pi^-+ p_\text{atm} &\rightarrow V_1 + V_2 \\
+    V_1 &\rightarrow p + \pi^-  \\
+    V_2 &\rightarrow \pi^+ + \pi^-  \\
+    \pi^- &\rightarrow \mu^- + \bar{\nu_\mu}  \\
+    \mu^- &\rightarrow e^- + \bar{\nu_e} +  \nu_\mu
+  \end{align*}
+#+END_SRC
+V$_1$ et V$_2$ sont des "V-particles", observées par Rochester & Butler
+en 1947. Ces particules neutres n'étaient détectées qu'au travers de leur
+produits de désintégration, ce qui formait un "V" de traces dans le détecteur
+(chambre à brouillard).
+#+END_QUESTION
+
+#+BEGIN_CENTER
+#+CAPTION: *Photographies de deux événements faisant apparaître la désintégration de deux particules $\bm{V}$*
+#+CAPTION: (référence [[http://www.nature.com/physics/looking-back/rochester/index.html][Rochester G. D. & Butler C. C. 1947]])
+[[file:figures/v_particles.jpg]]
+#+END_CENTER
+
+#+BEGIN_QUESTION
+1) [@1] V$_1$ se désintègre en émettant un pion et un proton d'impulsions
+   respectives $p_{\pi}c$ = 160 MeV et $p_{p}c$ = 320 MeV et faisant un angle
+   \theta_{1} = 65°. Dans le cas de V$_2$ deux pions chargés d'impulsions
+   $p_{\pi}c$ = 220 MeV sont émis avec un angle \theta_{2} = 135°. Quelle est la
+   masse de la particule mère dans ces deux cas ? Les "V-particles"
+   correspondent-elles à des particules connues à l'époque ? La plus massive
+   sera notée \Lambda^{0} et la plus légère $K^0$ dans la suite.
+#+END_QUESTION
+
 Cascade de réactions : $p\rightarrow\pi\rightarrow\mu\rightarrow e$
 Le muon est ainsi détecté pour la première fois car si sa durée de vie propre
 est de 2.2 \mu{}s, ce temps est "boosté" par le facteur de Lorentz soit \tau =
 \gamma\tau_{0} = quelques ms.
-
-#+CAPTION: *Photographies de deux événements faisant apparaître la désintégration de deux particules $\bm{V}$*
-#+CAPTION: (référence [[http://www.nature.com/physics/looking-back/rochester/index.html][Rochester G. D. & Butler C. C. 1947)]]
-[[file:./figures/v_particles.jpg]]
 
 1) Les particules $V$
 
@@ -702,7 +746,13 @@ est de 2.2 \mu{}s, ce temps est "boosté" par le facteur de Lorentz soit \tau =
    *Discussion :* À l'époque, seuls le proton, neutron, électron, pion et muon
    sont connus \rightarrow $V_1 = \Lambda^0$ et $V_2 = K^0$
 
-2) $d_{\Lambda^0} = \unit[3.2]{cm}$ et $d_{K^0} = \unit[0.8]{cm}$
+#+BEGIN_QUESTION
+2) [@2] Le \Lambda^{0} parcourt une distance de 3.2 cm dans le détecteur avant
+   de se désintègrer et le $K^0$ se désintègre après un vol de 0.8 cm. Quelle
+   est la durée de vie de ces deux particules, en faisant une hypothèse non
+   relativiste, que l'on justifiera ?
+#+END_QUESTION
+2) [@2] $d_{\Lambda^0} = \unit[3.2]{cm}$ et $d_{K^0} = \unit[0.8]{cm}$
    #+BEGIN_SRC latex
      \begin{align*}
        T_{\Lambda^0} &= \sqrt{m_{\Lambda^0}^2c^4 + p_{\Lambda^0}^2c^2} - m_{\Lambda^0}c^2 = \unit[73]{MeV} \ll m_{\Lambda^0}c^2\\
@@ -730,10 +780,19 @@ est de 2.2 \mu{}s, ce temps est "boosté" par le facteur de Lorentz soit \tau =
      \end{align*}
    #+END_SRC
 
-3) \tau est un temps caractéristique d'une désintégration par interaction
+#+BEGIN_QUESTION
+3) [@3] Quelle est l'interaction responsable de leur désintégration ?
+#+END_QUESTION
+3) [@3] \tau est un temps caractéristique d'une désintégration par interaction
    faible : \tau > 10^{-13} s (/cf./ page 30)
 
-4) Le fait que ces particules $K^0$ et $\Lambda^0$ soient toujours produites par
+#+BEGIN_QUESTION
+4) [@4] En 1952-1953 on observe, avec l'accélérateur du Brookhaven National
+   Laboratory (BNL), que la production de ces "V-particles" se fait
+   exclusivement par paires $p + \pi^- \rightarrow K^0 + \Lambda^0$. Que
+   pouvez-vous conjecturer d'après ces faits expérimentaux ?
+#+END_QUESTION
+4) [@4] Le fait que ces particules $K^0$ et $\Lambda^0$ soient toujours produites par
    paire implique la conservation d'une quantité jusqu'alors inconnue
    \rightarrow introduction de *l'étrangeté* $S$ comme nouveau nombre quantique.
    Cette quantité est ainsi conservée lors de la production des particules $V$
@@ -745,18 +804,43 @@ est de 2.2 \mu{}s, ce temps est "boosté" par le facteur de Lorentz soit \tau =
    Cosmotron[fn:3] de BNL) au début des années 60, modèle pour lequel il
    obtiendra le prix nobel de Physique en 1969.
 
-5) $p + n \rightarrow p + \Lambda^0$ et $n + n \rightarrow \Lambda^0 +
+#+BEGIN_QUESTION
+5) [@5] Au BNL, les réactions
+   #+BEGIN_SRC latex
+     \begin{align*}
+       p+n&\rightarrow p+\Lambda^0\quad\text{et}\\
+       n+n&\rightarrow \Lambda^0+\Lambda^0
+     \end{align*}
+   #+END_SRC
+   ne sont pas observées. Ceci fournit une limite supérieure sur leur taux
+   d'apparition qui est au moins 5 ordres de grandeur inférieur à la réaction
+   observée à la question 4). Ce fait expérimental est-il en accord avec votre
+   conjecture ?
+#+END_QUESTION
+5) [@5] $p + n \rightarrow p + \Lambda^0$ et $n + n \rightarrow \Lambda^0 +
    \Lambda^0$. Ces deux réactions ne conservent pas l'étrangeté $S$. Elles ne
    peuvent donc se produire par interaction forte. La très faible section
    efficace par rapport à la réaction $p + p \rightarrow K^0 + \Lambda^0$
    confirme cette hypothèse : \sigma_{forte} \gg \sigma_{faible}
 
-6) $\Lambda^0 \rightarrow \pi^+ + \pi^-$ : le nombre baryonique n'est pas
+#+BEGIN_QUESTION
+6) [@6] Pouvez-vous expliquer pourquoi la réaction
+   $\Lambda^0\rightarrow\pi^++\pi^-$ n'est jamais observée ?
+
+   Deux autres familles de particules "étranges" (\Sigma et \Xi) ont été
+   rapidement découvertes par la suite à la fois au BNL et dans les gerbes
+   atmosphériques. Cette profusion de nouvelles particules a initié le modèle
+   des quarks (/cf./ TD4) mais aussi la découverte de la violation de la parité.
+#+END_QUESTION
+6) [@6] $\Lambda^0 \rightarrow \pi^+ + \pi^-$ : le nombre baryonique n'est pas
    conservé or toutes intéractions conservent ce nombre (y compris l'interaction
    faible)
 
 ** La parité et sa violation
-
+#+BEGIN_QUESTION
+1) [@1] Rappeler la définition de la parité. Quelles sont ses propriétés ? Que
+   signifie formellement et intuitivement sa conservation ?
+#+END_QUESTION
 1) L'opérateur parité transforme une fonction $\psi(\vv{r})$ en
    $\psi(-\vv{r})$ : $\hat{\mathcal{P}}\,\psi(\vv{r}) = \psi(-\vv{r})$. Les
    valeurs propres \pi sont telles que $\hat{\mathcal{P}}\,\psi(\vv{r}) =
@@ -767,9 +851,11 @@ est de 2.2 \mu{}s, ce temps est "boosté" par le facteur de Lorentz soit \tau =
    implique qu'il n'y a pas de différence entre "gauche ou droite" (même image
    dans un miroir).
 
-2) $A^+\rightarrow\pi^++\pi^++\pi^-$
-
-   Conservation du moment cinétique total $\vv{I}$
+#+BEGIN_QUESTION
+2) [@2] On considère la réaction $A^+\rightarrow\pi^++\pi^++\pi^-$. Quelle est
+   la parité dans l'état final ? On donne $I(A)=0$ et $I^\pi(\pi)=0^-$.
+#+END_QUESTION
+2) [@2] Conservation du moment cinétique total $\vv{I}$
    #+BEGIN_SRC latex
      \begin{align*}
        \vv{I}(A^+) + \vv{L}_i = \vv{I}(\pi^+) + \vv{I}(\pi^+) + \vv{I}(\pi^-) +
@@ -793,16 +879,24 @@ est de 2.2 \mu{}s, ce temps est "boosté" par le facteur de Lorentz soit \tau =
      \end{align*}
    #+END_SRC
 
-3) $\theta^+\rightarrow\pi^++\pi^0$ avec $I(\theta)=0$ et $I^\pi(\pi)=0^-$. Le
-   moment angulaire relatif $L_i - L_f$ est donc nul.
+#+BEGIN_QUESTION
+3) [@3] On considère la réaction $\theta^+\rightarrow\pi^++\pi^0$. Quelle est la
+   parité dans l'état final ? On donne $I(\theta)=0$ et $I^\pi(\pi)=0^-$.
+#+END_QUESTION
+3) [@3] Le moment angulaire relatif $L_i - L_f$ est donc nul.
    #+BEGIN_SRC latex
      \begin{align*}
        \pi(\theta^+) = \pi(\pi^+)\,\pi(\pi^0)\,(-1)^0 = +1
      \end{align*}
      #+END_SRC
 
-4) $A^+$ et $\theta^+$ ont la même masse, mêmes durées de vie et même charge
-   électrique. Elles sont donc la même particule mais avec *une parité
+#+BEGIN_QUESTION
+4) [@4] On sait par ailleurs que $\theta^+$ et $A^+$ ont mêmes masses et durées
+   de vie. Qu'est ce que cela vous suggère-t-il ? Ce problème était connu à
+   l'époque sous le patronyme de "puzzle \theta/\tau".
+#+END_QUESTION
+4) [@4] $A^+$ et $\theta^+$ ont la même masse, mêmes durées de vie et même
+   charge électrique. Elles sont donc la même particule mais avec *une parité
    différente*. Les mésons se désintégrant par interaction faible, ce problème
    aussi connu sous le nom de "puzzle \theta/\tau" (\tau\equiv A^{+}) trouva sa
    solution dans le fait que l'interaction faible ne conserve pas la parité. Ces
