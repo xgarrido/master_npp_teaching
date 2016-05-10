@@ -568,7 +568,7 @@ $\vv{v}$ dans un champ d'induction $\vv{B}$ normal à $\vv{v}$.
      \end{align*}
    #+END_SRC
 
-* TD2 : Nombres quantiques & Symétries
+* COMMENT TD2 : Nombres quantiques & Symétries
 ** Énergie maximum des rayons cosmiques
 
 #+CAPTION: *Spectre en énergie des rayons cosmiques*
@@ -927,12 +927,19 @@ de particules lourdes instables telles que les particules $V$.
 [[file:./figures/standard_model.pdf]]
 
 ** Production et désintégration de particules
-
-1) Les particules élémentaires sont les quarks (/cf./ ci-dessous) et les leptons
-   (du grec /leptos/ = léger) dont le spin demi-entier font de ces particules des
-   fermions. À la différence des leptons, les quarks n'apparaissent pas à l'état
-   libre et sont confinés dans les hadrons (du grec /hadros/ = fort). On distingue
-   deux familles de hadrons :
+#+BEGIN_QUESTION
+/On utilisera les tables des caractéristiques des leptons et hadrons données en
+annexe./
+1) [@1] Les termes *quarks*, *lepton*, *hadron*, *baryon*, et *méson* sont utilisées dans
+   la classification des particules. Dire lesquels sont des constituants
+   élémentaires, donner des exemples de leur utilisation et distinguer entre
+   bosons et fermions.
+#+END_QUESTION
+1) [@1] Les particules élémentaires sont les quarks (/cf./ ci-dessous) et les
+   leptons (du grec /leptos/ = léger) dont le spin demi-entier font de ces
+   particules des fermions. À la différence des leptons, les quarks
+   n'apparaissent pas à l'état libre et sont confinés dans les hadrons (du grec
+   /hadros/ = fort). On distingue deux familles de hadrons :
    - les baryons :: (du grec /baryos/ = lourd) constitués de 3 quarks $q_1q_2q_3$,
                     de nombre baryonique égal à 1 et de spin 1/2
                     entier. Exemple : nucléons
@@ -1013,6 +1020,29 @@ having shortly later told around this little story in Cambridge."
 #+END_QUOTE
 #+END_REMARK
 
+#+BEGIN_QUESTION
+2) [@2] Parmi les réactions qui suivent, deux ne sont jamais possibles et deux
+   autres ne peuvent se produire par interaction forte. Trouver ces quatre
+   réactions en justifiant votre réponse (on supposera que les conditions
+   énergétiques sont satisfaites pour ces réactions).
+
+   1) $K^- + p   \rightarrow  \bar{K}^0 + n$
+
+   2) $\pi^+ + p  \rightarrow \Sigma^+ + K^+$
+
+   3) $\pi^- + p  \rightarrow \Sigma^0 + K^+ + \pi^-$
+
+   4) $\pi^- + p  \rightarrow \Sigma^+ + K^-$
+
+   5) $\bar{K}^0 + p  \rightarrow K^- + p + \pi^+$
+
+   6) $\bar{p} + p  \rightarrow \pi^+ + \pi^+ + \pi^- + \pi^- + \pi^+$
+
+   7) $\mu^+ \rightarrow e^+ + \nu_e + \bar{\nu}_{\mu}$
+
+   8) $K^+ + p  \rightarrow \Sigma^+ + n  + \pi^-$
+
+#+END_QUESTION
 2) [@2] Toutes les interactions conservent la charge électrique, le nombre
    baryonique, le nombre leptonique et le moment cinétique total.
 
@@ -1036,22 +1066,38 @@ having shortly later told around this little story in Cambridge."
    h) $K^+ + p \rightarrow \Sigma^+ + n + \pi^-$ *ne conserve pas la charge
    électrique ni le nombre baryonique*
 
-3) $\mu^+\rightarrow e^+ + \nu_e + \bar{\nu}_\mu$
+#+BEGIN_QUESTION
+3) [@3] Dessiner le diagramme de Feynman pour la réaction g)
+#+END_QUESTION
+3) [@3] $\mu^+\rightarrow e^+ + \nu_e + \bar{\nu}_\mu$
 
    #+ATTR_LATEX: :width 0.4\linewidth
    #+CAPTION: *Diagramme de Feynman de la désintégration de l'anti-muon*
    [[file:./figures/muon_decay_feynman.pdf]]
 
+#+LATEX: \clearpage
 ** Résonances
+#+BEGIN_QUESTION
+Le baryon $\Sigma^+$ et le méson $K^+$ ont pour isospins respectifs
+$\vv{T}(\Sigma) = \vv{1}$ et $\vv{T}(K)
+= \vv{1/2}$ (avec $T_3(\Sigma^+) = 1$ et $T_3(K^+) = 1/2$).
+On supposera $c=b=t=0$ pour tous les hadrons de cet exercice.
 
-Formule de Gell-Mann & Nishijima $Q/e = T_3 + Y/2$ avec $Y = B$ + saveur =
-hypercharge. Dans cet exercice, $c=b=t=0$ donc $Y = B$ + étrangeté $S$
+1) À l'aide de la formule de Gell-Mann et Nishijima, retrouver la valeur de
+l'étrangeté de chacun d'eux
+#+END_QUESTION
+1) [@1] Formule de Gell-Mann & Nishijima $Q/e = T_3 + Y/2$ avec $Y = B$ + saveur
+   = hypercharge. Dans cet exercice, $c=b=t=0$ donc $Y = B$ + étrangeté $S$
 
-1) $Y(\Sigma^+) = 2\cdot\left(\frac{Q}{e} - T_3\right) = 0$ d'où $S(\Sigma^+) =
+   $Y(\Sigma^+) = 2\cdot\left(\frac{Q}{e} - T_3\right) = 0$ d'où $S(\Sigma^+) =
    -B(\Sigma^+) = -1$
 
    $Y(K^+) = 2\cdot\left(\frac{Q}{e} - T_3\right) = 1$ d'où $S(\Sigma^+) = +1$
 
+#+BEGIN_QUESTION
+2) [@2] Quel ordre de grandeur attend-on pour le temps caractéristique de la
+   réaction $\pi^+ \, + \, p \, \rightarrow \, K^+ \, + \, \Sigma^+$?
+#+END_QUESTION
 2) Détermination du type d'interaction $\pi^+ + p\rightarrow K^+ + \Sigma^+$
 
    |----------+----------+---+------------+-------------+------------+---+------------+------------|
@@ -1078,7 +1124,15 @@ hypercharge. Dans cet exercice, $c=b=t=0$ donc $Y = B$ + étrangeté $S$
    forte*. Le temps caractéristique de la réaction est donc de l'ordre de
    *10^{-23} à 10^{-20} secondes*.
 
-3) Calcul de l'énergie seuil des pions :
+#+BEGIN_QUESTION
+3) [@3] Calculer l'énergie seuil de cette réaction, qui a lieu sur cible fixe,
+   en adoptant les valeurs suivantes :
+   #+BEGIN_CENTER
+   $m_{\pi}c^2$ = 140 MeV, $m_p c^2$ = 940 MeV, $m_K c^2$ = 494 MeV et
+   $m_{\Sigma}c^2$ = 1190 MeV
+   #+END_CENTER
+#+END_QUESTION
+3) [@3] Calcul de l'énergie seuil des pions :
    #+BEGIN_SRC latex
      \begin{align*}
        T_S &= \frac{|Q|\cdot\Upsigma m_\text{initiale,finale}c^2}{2\cdot m_pc^2}\\
@@ -1087,7 +1141,12 @@ hypercharge. Dans cet exercice, $c=b=t=0$ donc $Y = B$ + étrangeté $S$
      \end{align*}
    #+END_SRC
 
-4) $\pi^+ + p \rightarrow R \rightarrow K^+ + \Sigma^+$
+#+BEGIN_QUESTION
+4) [@4] La réaction citée présente une résonance lorsque l'impulsion des mésons
+   \pi incidents est voisine de 1.5 GeV/c. Quelle est la masse de cette
+   résonance ?
+#+END_QUESTION
+4) [@4] $\pi^+ + p \rightarrow R \rightarrow K^+ + \Sigma^+$
 
    Calcul de l'invariant relativiste $I$
    #+BEGIN_SRC latex
@@ -1105,7 +1164,10 @@ hypercharge. Dans cet exercice, $c=b=t=0$ donc $Y = B$ + étrangeté $S$
      \end{align*}
    #+END_SRC
 
-5) Largeur \Gamma = 240 MeV
+#+BEGIN_QUESTION
+5) [@5] Sa largeur est de l'ordre de 240 MeV. Quelle est sa vie moyenne ?
+#+END_QUESTION
+5) [@5] Largeur \Gamma = 240 MeV
 
    #+BEGIN_CENTER
    #+ATTR_LATEX: :width 0.5\linewidth
@@ -1122,7 +1184,12 @@ hypercharge. Dans cet exercice, $c=b=t=0$ donc $Y = B$ + étrangeté $S$
 
    \rightarrow désintégration par *interaction forte*
 
-6) $\vv{L}_i = \vv{3}$
+#+BEGIN_QUESTION
+6) [@6] Cette résonance est créée lorsque le moment orbital relatif dans la voie
+   d'entrée est $\vv{l} = \vv{3}$. Quelles sont les caractéristiques $I^{\pi}$
+   possibles pour cette résonance\nbsp?
+#+END_QUESTION
+6) [@6] $\vv{L}_i = \vv{3}$
 
    La réaction $\pi^+ + p \rightarrow K^+ + \Sigma^+$ se fait par interaction
    forte de même que $R\rightarrow K^+ + \Sigma^+$. La réaction de production de
@@ -1161,8 +1228,12 @@ hypercharge. Dans cet exercice, $c=b=t=0$ donc $Y = B$ + étrangeté $S$
    d'une particule seule, le moment angulaire relatif des constituants
    élementaires de cette particule n'intervient pas.
    #+END_REMARK
-7) Conservation de $\vv{T}$ et $T_3$ dans la désintégration de $R\rightarrow
-   K^++\Sigma^+$
+
+#+BEGIN_QUESTION
+7) [@7] Quel est son isospin ?
+#+END_QUESTION
+7) [@7] Conservation de $\vv{T}$ et $T_3$ dans la désintégration de
+   $R\rightarrow K^++\Sigma^+$
 
    #+BEGIN_SRC latex
      \begin{align*}
@@ -1173,7 +1244,10 @@ hypercharge. Dans cet exercice, $c=b=t=0$ donc $Y = B$ + étrangeté $S$
    #+END_SRC
    or comme $T_3(R) = 3/2 \Leftrightarrow \vv{T}(R) = \vv{3/2}$
 
-8) La conservation du nombre baryonique, de la charge électrique et de
+#+BEGIN_QUESTION
+8) [@8] Pour respecter les notations usuelles, quel nom doit-on lui donner ?
+#+END_QUESTION
+8) [@8] La conservation du nombre baryonique, de la charge électrique et de
    l'étrangeté font que $R$ est un baryon de charge $Q/e=+2$ et d'étrangeté
    nulle. En se reférant au tableau page 30, on note que cette résonance
    présente les mêmes propriétés que la baryon $\Delta^{++}$ à ceci près que sa
@@ -1181,7 +1255,12 @@ hypercharge. Dans cet exercice, $c=b=t=0$ donc $Y = B$ + étrangeté $S$
    courte[fn:4]. *La résonance $\bm{R}$ est donc un état excité de
    $\bm{\Delta^{++}}$.*
 
-9) $\pi^- + p \rightarrow K^+ + \Sigma^-$
+#+BEGIN_QUESTION
+9) [@9] Soit la réaction $\pi^-+p\rightarrow K^++\Sigma^-$, induite par des
+   $\pi^-$ de 1,5 GeV/c sur des protons. Montrer que cette réaction est possible
+   par interaction forte.
+#+END_QUESTION
+9) [@9] $\pi^- + p \rightarrow K^+ + \Sigma^-$
 
    $Q/e$, $B$, $I^\pi$ sont conservés.
 
@@ -1204,7 +1283,7 @@ Brookhaven en 1964.
 [fn:4] le moment cinétique total est également différent 5/2^{+} ou 7/2^{+} contre
 3/2^{+}
 
-* TD4 : Modèle des quarks -- Les hadrons
+* COMMENT TD4 : Modèle des quarks -- Les hadrons
 ** Les mésons constitués des quarks $u,d,s$ et de leurs antiquarks
 1) Opérateur conjugaison particule -- antiparticule $\hat{C}$ :
    $q\overset{\hat{C}}{\rightarrow}\bar{q}$
@@ -1558,7 +1637,7 @@ $\vv{T}=\vv{0}$ et $\vv{S}=\vv{3}/2$, la somme n'est donc pas impaire. C'est
 l'introduction de la couleur qui permet de rendre cette fonction d'onde globale
 antisymétrique.
 
-* TD5 : Isospin -- des quarks aux noyaux
+* COMMENT TD5 : Isospin -- des quarks aux noyaux
 ** Introduction
 
 L'isospin $\vv{T}$ rend compte de l'indépendance de charge de l'intéraction
@@ -2029,7 +2108,7 @@ symétrique. Toutefois et comme nous le verrons dans l'exercice sur la parité
 intrinsèque du pion, la fonction d'onde globale de ces états demeure
 antisymétrique en raison du principe de Pauli généralisé qui impose que deux
 fermions soient dans des états quantiques différents.
-* TD6 : Structure nucléaire
+* COMMENT TD6 : Structure nucléaire
 ** Introduction
 Dans l'approximation du champ moyen, l'hamiltonien d'un système à $N$ nucléons
 prend la forme suivante
@@ -2470,7 +2549,7 @@ $T(\text{fonda.})=|T_3|=\tfrac{Z-N}{2}$.
 [fn:8] la parité est égale à $(-1)^{\ell_1+\ell_2}$ où $\ell_1=\ell_2=\ell$ et
 donc $\pi=(-1)^{2\ell}=+1$
 
-* TD7 : Réactions nucléaires
+* COMMENT TD7 : Réactions nucléaires
 ** Introduction
 #+ATTR_LATEX: :float wrap :placement {l}{0.5\textwidth} :width 0.4\textwidth
 [[./figures/solid_angle.pdf]]
@@ -2892,7 +2971,7 @@ de barns dans le but de masquer le sujet de leurs recherches. Cependant après l
 Seconde Guerre mondiale, le barn est devenu une unité standard de la physique
 des particules.
 
-* TD8 : Masses et désintégrations nucléaires
+* COMMENT TD8 : Masses et désintégrations nucléaires
 ** Définitions
 - masse nucléaire :: la masse nucléaire correspond à la masse du noyau /i.e./
      #+BEGIN_SRC latex
@@ -3465,7 +3544,7 @@ neutron $M_*=1.4M_\odot$ (masse de Chandrasekhar). En réalite, le rayon d'une
 étoile à neutron varie de 10 à 20 km ($R_\odot=695\,800$ km) ce qui se traduit
 en terme de masse par une gamme entre 0.4 et 5 masses solaires.
 
-* TD9 : Modèle Standard et au-delà : l'interaction faible
+* COMMENT TD9 : Modèle Standard et au-delà : l'interaction faible
 ** Masse et largeur du $Z^0$ -- Nombre de familles de neutrinos
 Le LEP (pour /Large Electron Positron collider/) était un accélérateur de
 particules circulaire de 27 km de circonférence, passant sous le site du CERN
