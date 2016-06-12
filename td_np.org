@@ -921,7 +921,7 @@ synchrotron a accéléré des protons au delà du GeV (1952 -- 1966) contribuant
 la découverte de l'ensemble des mésons chargés de même qu'à la mise en évidence
 de particules lourdes instables telles que les particules $V$.
 
-* TD3 : Réactions de production et de désintégration de particules
+* COMMENT TD3 : Réactions de production et de désintégration de particules
 
 #+CAPTION: *Modèle standard de la physique des particules*
 [[file:./figures/standard_model.pdf]]
@@ -1283,9 +1283,13 @@ Brookhaven en 1964.
 [fn:4] le moment cinétique total est également différent 5/2^{+} ou 7/2^{+} contre
 3/2^{+}
 
-* COMMENT TD4 : Modèle des quarks -- Les hadrons
+* TD4 : Modèle des quarks -- Les hadrons
 ** Les mésons constitués des quarks $u,d,s$ et de leurs antiquarks
-1) Opérateur conjugaison particule -- antiparticule $\hat{C}$ :
+#+BEGIN_QUESTION
+1) [@1] D'après le tableau caractéristique des quarks, établir le même tableau
+   pour les antiquarks.
+#+END_QUESTION
+1) [@1] Opérateur conjugaison particule -- antiparticule $\hat{C}$ :
    $q\overset{\hat{C}}{\rightarrow}\bar{q}$
 
    - $\vv{T},\vv{I},mc^2\overset{\hat{C}}{\rightarrow}\vv{T},\vv{I},mc^2$
@@ -1303,7 +1307,12 @@ Brookhaven en 1964.
    | $\bar{b}$ | 1/2 | 1/3   | -1/3 |   0 |       0 |   0 |   0 |   +1 |   0 |    -1 |
    |-----------+-----+-------+------+-----+---------+-----+-----+-----+-----+-------|
 
-2) $\vv{L_i} = \vv{0}$: méson \equiv 1 quark + 1 antiquark
+#+BEGIN_QUESTION
+2) [@2] Dans le cas où le moment orbital relatif associé au mouvement des quarks
+   est nul, quelle est la parité d'un méson ? Quelles sont alors les valeurs
+   possibles du moment cinétique $\vv{I}$ et de l'isospin $\vv{T}$ ?
+#+END_QUESTION
+2) [@2] $\vv{L_i} = \vv{0}$: méson \equiv 1 quark + 1 antiquark
 
    #+BEGIN_SRC latex
      \begin{align*}
@@ -1329,7 +1338,20 @@ Brookhaven en 1964.
    - mésons contenant $u,d,\bar{u},\bar{d}$ $\vv{T} = \vv{1}/2$
    - mésons ne contenant ni $u,d,\bar{u},\bar{d}$ $\vv{T} = \vv{0}$
 
-3) $(u,d,s)\times(\bar{u},\bar{d},\bar{s}) = 3\times3 = 9$ mésons.
+#+BEGIN_QUESTION
+3) [@3]
+   1) Avec les quarks $u, d, s$, et leurs antiquarks, combien de mésons peut-on
+      constituer dans un état de moment cinétique donné ? Représenter ces mésons
+      sur un diagramme où la troisième composante de l'isospin $T_3$ est portée
+      en abscisse, et l'étrangeté $S$ en ordonnée. Indiquer sur le diagramme
+      la composition en quarks et en antiquarks de chacun de ces mésons.
+
+   2) On considère le diagramme des mésons de moment orbital relatif nul et de
+      moment cinétique $\vv{I} = \vv{0}$. Regrouper ces mésons en multiplets
+      d'isospin, et indiquer sur le diagramme où se trouvent les pions, ainsi
+      que les mésons étranges $K^+$, $K^-$, $K^0$ et $\bar{K^0}$.
+#+END_QUESTION
+3) [@3] $(u,d,s)\times(\bar{u},\bar{d},\bar{s}) = 3\times3 = 9$ mésons.
    L'étrangeté $S=-1,0,1$, la 3^{ème} composante de l'isospin $T_3$ \in
    [-1,-1/2,0,1/2,+1]
 
@@ -1358,102 +1380,144 @@ Brookhaven en 1964.
      $\eta\left(\frac{1}{\sqrt{6}}(u\bar{u}+d\bar{d}-2s\bar{s})\right)$ et
      $\eta\prime\left(\frac{1}{\sqrt{3}}(u\bar{u}+d\bar{d}+s\bar{s})\right)$
 
-** Multiplets de baryons
-1) Formule de Gell-Mann et Okubo :
+** Supermultiplets de baryons
+
+#+BEGIN_QUESTION
+1) La figure suivante présente le diagramme $S$ en fonction de $T_3$ pour le
+   décuplet de baryons $I^{\pi} = 3/2^+$.
+
+   #+BEGIN_CENTER
+   #+ATTR_LATEX: :width 0.7\linewidth
+   [[file:figures/decuplet.pdf]]
+   #+END_CENTER
+
+   La masse des baryons d'une même famille est donnée par la formule de
+   Gell-Mann et Okubo :
    #+BEGIN_SRC latex
-     \begin{align*}
+     \begin{align}
        M(Y,T)c^2 = M_0c^2 + a\,Y + b\,\left[T(T+1) - \frac{Y^2}{4}\right]
-     \end{align*}
+     \end{align}
    #+END_SRC
-   avec l'hypercharge $Y$ égale à $B+S = 1+S$. Pour $I^\pi=3/2^+$, nous avons
-   ainsi
-   - $S=0$ et $\vv{T}=\vv{3}/2$ : quadruplet \Delta^{-}, \Delta^{0}, \Delta^{+}
-     et \Delta^{++}
-     #+BEGIN_SRC latex
-       \begin{align*}
-         m_\Delta c^2 &= M_0c^2 + a + b\,\left[\frac{3}{2}\times\frac{5}{2} - \frac{1}{4}\right]\\
-         &= M_0c^2 + a + b\times\frac{7}{2} = \unit[1236]{MeV}
-       \end{align*}
-     #+END_SRC
-   - $S=-1$ et $\vv{T}=\vv{1}$ : triplet \Sigma^{-*}, \Sigma^{0*} et \Sigma^{+*}
-     (niveaux excités du baryon \Sigma)
-     #+BEGIN_SRC latex
-       \begin{align*}
-         m_\Sigma c^2 &= M_0c^2 + b\,\left[1\times2 - \frac{0}{4}\right]\\
-         &= M_0c^2 + 2b = \unit[1385]{MeV}
-       \end{align*}
-     #+END_SRC
-   - $S=-2$ et $\vv{T}=\vv{1}/2$ : doublet \Xi^{-*} et \Xi^{0*}
-     (niveaux excités du baryon \Xi)
-     #+BEGIN_SRC latex
-       \begin{align*}
-         m_\Xi c^2 &= M_0c^2 - a + b\,\left[\frac{1}{2}\times\frac{3}{2} - \frac{1}{4}\right]\\
-         &= M_0c^2 - a + \frac{b}{2} = \unit[1530]{MeV}
-       \end{align*}
-     #+END_SRC
-   - $S=-3$ et $\vv{T}=\vv{0}$ : singulet \Omega^{-}
-     #+BEGIN_SRC latex
-       \begin{align*}
-         m_\Omega c^2 &= M_0c^2 - 2a - b
-       \end{align*}
-     #+END_SRC
-   d'où
-   #+BEGIN_SRC latex
-     \begin{align*}
-       m_\Sigma c^2 - m_\Delta c^2 &= - a + 2b - \frac{7}{2}\,b = 1385 - 1236 = \unit[149]{MeV}\\
-       &= - a - \frac{3}{2}\,b = \unit[149]{MeV}\\
-       m_\Xi c^2 - m_\Sigma c^2 &= - a + \frac{b}{2} - 2b = 1530 - 1385 = \unit[145]{MeV}\\
-       &= - a - \frac{3}{2}\,b = \unit[145]{MeV}\\
-       m_\Omega c^2 - m_\Xi c^2 &= - 2a - b + a - \frac{b}{2} = \langle145; 149\rangle\unit[]{MeV}\\
-       &= - a - \frac{3}{2}\,b = \langle\unit[147]{MeV}\rangle
-     \end{align*}
-   #+END_SRC
-   #+BEGIN_SRC latex
-     \begin{align*}
-       m_\Omega c^2 = m_\Xi c^2 + \unit[147]{MeV} = \unit[1677]{MeV}
-     \end{align*}
-   #+END_SRC
-   soit un écart de 0.3% par rapport à la valeur mesurée expérimentalement.
+   où $M_0c^2$, $a$ et $b$ sont des constantes (en MeV); $T$ est le nombre
+   quantique d'isospin du baryon considéré, $Y$ est son hypercharge définie ici
+   par $Y = B+S$, avec $B$ le nombre baryonique et $S$ celui d'étrangeté, les
+   autres saveurs étant nulles.
 
-   Par ailleurs, le baryon \Omega^{-} est composé de 3 quarks $s$. L'isospin
-   $\vv{T} = \vv{0}$ et $T_3=0$, l'étrangeté est $S=-3$, le nombre baryonique
-   $B$ est égal à 1 tandis que le moment cinétique total $I=\frac{3}{2}$. Étant
-   donné que $\vv{L}=\vv{0}$ on a
-   #+BEGIN_SRC latex
-     \begin{align*}
-       \vv{I} = \vv{L} + \vv{S} = \vv{S}(s_1) +
-       \vv{S}(s_2) + \vv{S}(s_3)
-     \end{align*}
-   #+END_SRC
-   soit
-   #+BEGIN_SRC latex
-     \begin{align*}
-      \vv{I}=\frac{\vv{3}}{2} =
-      \frac{\vv{1}}{2} + \frac{\vv{1}}{2} + \frac{\vv{1}}{2}
-     \end{align*}
-   #+END_SRC
+   1) Lorsque la formule (1) a été établie, les baryons $\Delta$, $\Sigma$ et
+      $\Xi$ étaient connus parmi les baryons $I^\pi$ = 3/2$^+$, mais pas le
+      $\Omega$. Quelle masse pouvait-on alors prédire pour cette particule
+      $\Omega$ ? On utilisera pour cela la figure ci-dessous présentant deux
+      familles de baryons composés des quarks $u,d,s$ (leur masse est portée en
+      ordonnée).
+      #+BEGIN_CENTER
+      #+ATTR_LATEX: :width 0.9\linewidth
+      [[file:figures/bar1.pdf]]
+      #+END_CENTER
 
-   Les 3 quarks $s$ sont donc tous dans le même état de spin +1/2 ce qui par
-   définition est impossible en raison du principe d'exclusion de Pauli
-   \rightarrow introduction de la couleur $RVB$ comme nouveau nombre quantique
-   et justifiant l'existence des baryons \Omega^{-}, \Delta^{-} et
-   \Delta^{++}. Chaque quarks $s$ existe en 3 couleurs $R,V,B$ d'où $\Omega^{-}
-   = (s_R,s_V,s_B)$.
+   2) Justifier les nombres quantiques du $\Omega$ et discuter les symétries de
+      sa fonction d'onde, sachant que le moment orbital relatif des 3 quarks est
+      $\vv{L} = \vv{0}$.
+#+END_QUESTION
+1)
+   1) [@1] Pour $I^\pi=3/2^+$, nous avons ainsi
+      - $S=0$ et $\vv{T}=\vv{3}/2$ : quadruplet \Delta^{-}, \Delta^{0}, \Delta^{+}
+        et \Delta^{++}
+        #+BEGIN_SRC latex
+          \begin{align*}
+            m_\Delta c^2 &= M_0c^2 + a + b\,\left[\frac{3}{2}\times\frac{5}{2} - \frac{1}{4}\right]\\
+            &= M_0c^2 + a + b\times\frac{7}{2} = \unit[1236]{MeV}
+          \end{align*}
+        #+END_SRC
+      - $S=-1$ et $\vv{T}=\vv{1}$ : triplet \Sigma^{-*}, \Sigma^{0*} et \Sigma^{+*}
+        (niveaux excités du baryon \Sigma)
+        #+BEGIN_SRC latex
+          \begin{align*}
+            m_\Sigma c^2 &= M_0c^2 + b\,\left[1\times2 - \frac{0}{4}\right]\\
+            &= M_0c^2 + 2b = \unit[1385]{MeV}
+          \end{align*}
+        #+END_SRC
+      - $S=-2$ et $\vv{T}=\vv{1}/2$ : doublet \Xi^{-*} et \Xi^{0*}
+        (niveaux excités du baryon \Xi)
+        #+BEGIN_SRC latex
+          \begin{align*}
+            m_\Xi c^2 &= M_0c^2 - a + b\,\left[\frac{1}{2}\times\frac{3}{2} - \frac{1}{4}\right]\\
+            &= M_0c^2 - a + \frac{b}{2} = \unit[1530]{MeV}
+          \end{align*}
+        #+END_SRC
+      - $S=-3$ et $\vv{T}=\vv{0}$ : singulet \Omega^{-}
+        #+BEGIN_SRC latex
+          \begin{align*}
+            m_\Omega c^2 &= M_0c^2 - 2a - b
+          \end{align*}
+        #+END_SRC
+      d'où
+      #+BEGIN_SRC latex
+        \begin{align*}
+          m_\Sigma c^2 - m_\Delta c^2 &= - a + 2b - \frac{7}{2}\,b = 1385 - 1236 = \unit[149]{MeV}\\
+          &= - a - \frac{3}{2}\,b = \unit[149]{MeV}\\
+          m_\Xi c^2 - m_\Sigma c^2 &= - a + \frac{b}{2} - 2b = 1530 - 1385 = \unit[145]{MeV}\\
+          &= - a - \frac{3}{2}\,b = \unit[145]{MeV}\\
+          m_\Omega c^2 - m_\Xi c^2 &= - 2a - b + a - \frac{b}{2} = \langle145; 149\rangle\unit[]{MeV}\\
+          &= - a - \frac{3}{2}\,b = \langle\unit[147]{MeV}\rangle
+        \end{align*}
+      #+END_SRC
+      #+BEGIN_SRC latex
+        \begin{align*}
+          m_\Omega c^2 = m_\Xi c^2 + \unit[147]{MeV} = \unit[1677]{MeV}
+        \end{align*}
+      #+END_SRC
+      soit un écart de 0.3% par rapport à la valeur mesurée expérimentalement.
 
-   La fonction d'onde globale est antisymétrique dès lors que le nombre
-   quantique de couleur est introduit[fn:5].
+   2) Par ailleurs, le baryon \Omega^{-} est composé de 3 quarks
+      $s$. L'isospin $\vv{T} = \vv{0}$ et $T_3=0$, l'étrangeté est $S=-3$, le
+      nombre baryonique $B$ est égal à 1 tandis que le moment cinétique total
+      $I=\frac{3}{2}$. Étant donné que $\vv{L}=\vv{0}$ on a
+      #+BEGIN_SRC latex
+        \begin{align*}
+          \vv{I} = \vv{L} + \vv{S} = \vv{S}(s_1) +
+          \vv{S}(s_2) + \vv{S}(s_3)
+        \end{align*}
+      #+END_SRC
+      soit
+      #+BEGIN_SRC latex
+        \begin{align*}
+          \vv{I}=\frac{\vv{3}}{2} =
+          \frac{\vv{1}}{2} + \frac{\vv{1}}{2} + \frac{\vv{1}}{2}
+        \end{align*}
+      #+END_SRC
 
-2) proton \equiv $uud$ soit une masse $m_p c^2 = 2\,m_u c^2 + m_d c^2 \leq
+      Les 3 quarks $s$ sont donc tous dans le même état de spin +1/2 ce qui par
+      définition est impossible en raison du principe d'exclusion de Pauli
+      \rightarrow introduction de la couleur $RVB$ comme nouveau nombre
+      quantique et justifiant l'existence des baryons \Omega^{-}, \Delta^{-} et
+      \Delta^{++}. Chaque quarks $s$ existe en 3 couleurs $R,V,B$ d'où
+      $\Omega^{-} = (s_R,s_V,s_B)$.
+
+      La fonction d'onde globale est antisymétrique dès lors que le nombre
+      quantique de couleur est introduit[fn:5].
+
+#+BEGIN_QUESTION
+2) [@2] Le proton ayant pour nombres quantiques $Q/e=1$, $T_3$=1/2 et
+   $s=c=b=t=0$, donner sa composition en quarks. Calculer la masse du proton à
+   partir des masses des quarks qui le constituent. Qu'en concluez-vous ?
+#+END_QUESTION
+2) [@2] proton \equiv $uud$ soit une masse $m_p c^2 = 2\,m_u c^2 + m_d c^2 \leq
    2\times\unit[3]{MeV} + \unit[7]{MeV} = \unit[13]{MeV} \ll
-   \unit[938]{MeV}$. 99% de la masse du proton est due à la mer de
-   partons \equiv quarks et gluons et seulement 1% de la masse est portée par
-   les quarks de valence $uud$.
+   \unit[938]{MeV}$. 99% de la masse du proton est due à la mer de partons
+   \equiv quarks et gluons et seulement 1% de la masse est portée par les quarks
+   de valence $uud$.
 
-3) $\Delta^0\rightarrow p + \pi^-$ et $\Lambda^0\rightarrow p + \pi^-$
+#+BEGIN_QUESTION
+3) [@3] Le $\Delta^0$ et le $\Lambda^0$ se désintègrent tous deux en un proton
+   et un méson $\pi^-$. Décrire ces deux réactions en termes de quarks. En
+   déduire pourquoi la vie moyenne du $\Delta^0$ est environ 10^{-23} s alors
+   que celle du $\Lambda^0$ vaut 2.6 10^{-10} s.
+#+END_QUESTION
+3) [@3] $\Delta^0\rightarrow p + \pi^-$ et $\Lambda^0\rightarrow p + \pi^-$
 
    #+ATTR_LATEX: :align C{0.4\linewidth}C{0.4\linewidth}
    | [[file:./figures/delta0_diagram.pdf]]           | [[file:./figures/lambda0_diagram.pdf]]        |
-   | *Diagramme connecté*                        | *Diagramme déconnecté*                    |
+   | *Diagramme connecté*                          | *Diagramme déconnecté*                      |
    | Intéraction forte                           | Interaction faible (saveur non conservée) |
    | $\rightarrow\tau\sim$ 10^{-23} à 10^{-20} s | $\rightarrow\tau\gtrsim$ 10^{-13} s       |
 

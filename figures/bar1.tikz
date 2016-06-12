@@ -1,0 +1,77 @@
+\tikzset{%
+  >=latex, % option for nice arrows
+  inner sep=0pt,%
+  outer sep=2pt,%
+  mark coordinate/.style={inner sep=0pt,outer sep=0pt,minimum size=3pt,
+    fill=black,circle}%
+}
+\begin{tikzpicture}[y=-1cm]
+\sf
+  \definecolor{red}{RGB}{221,42,43}
+  \definecolor{green}{RGB}{132,184,24}
+  \definecolor{blue}{RGB}{0,51,153}
+  %% \definecolor{blue}{RGB}{0,72,112}
+  \definecolor{orange}{RGB}{192,128,64}
+  \definecolor{gray}{RGB}{107,108,110}
+  \colorlet{default}{blue}
+
+  \draw[default] (1.6002,26.15142) -- (3.10092,26.15142);
+\path (1.10067,26.44987) node[text=default,anchor=base west] {$p$};
+\path (1.10067,26.15142) node[text=default,anchor=base west] {$n$};
+\path (1.10067,25.55028) node[text=default,anchor=base west] {\normalsize$\Lambda^0$};
+\path (0.70062,25.35132) node[text=default,anchor=base west] {\normalsize$\Sigma^+$};
+\path (0.70062,25.05075) node[text=default,anchor=base west] {\normalsize$\Sigma^0$};
+\path (0.70062,24.75018) node[text=default,anchor=base west] {\normalsize$\Sigma^-$};
+\path (1.10067,24.15117) node[text=default,anchor=base west] {\normalsize$\Xi^-$};
+\path (1.10067,24.45173) node[text=default,anchor=base west] {\normalsize$\Xi^0$};
+\draw[default] (3.29988,24.6507) -- (3.36973,24.7015) -- (3.42688,24.76288) -- (3.4671,24.83485) -- (3.49462,24.91528) -- (3.50308,24.99995) -- (3.49462,25.08673) -- (3.4671,25.16505) -- (3.42688,25.23913) -- (3.36973,25.30052) -- (3.29988,25.35132);
+\draw[default] (1.6002,25.25183) -- (3.10092,25.25183);
+\draw[default] (1.6002,24.95127) -- (3.10092,24.95127);
+\draw[default] (1.6002,24.85178) -- (3.10092,24.85178);
+\draw[default] (1.6002,24.75018) -- (3.10092,24.75018);
+\draw[default] (1.6002,24.25065) -- (3.10092,24.25065);
+\draw[default] (1.6002,24.35013) -- (3.10092,24.35013);
+\draw[default] (6.10023,24.85178) -- (7.60095,24.85178);
+\draw[default] (6.10023,24.75018) -- (7.60095,24.75018);
+\draw[default] (6.10023,24.6507) -- (7.60095,24.6507);
+\draw[default] (6.10023,24.55122) -- (7.60095,24.55122);
+\draw[default] (6.10023,24.05168) -- (7.60095,24.05168);
+\draw[default] (6.10023,23.8506) -- (7.60095,23.8506);
+\draw[default] (1.6002,26.2509) -- (3.10092,26.2509);
+\draw[default] (6.10023,23.95008) -- (7.60095,23.95008);
+\draw[default] (6.10023,23.25158) -- (7.60095,23.25158);
+\draw[default] (6.10023,23.1521) -- (7.60095,23.1521);
+\draw[default] (6.10023,22.45148) -- (7.60095,22.45148);
+\draw[default,<-] (0.60113,22.65045) -- (0.60113,27.35157);
+
+
+\path (4.99957,22.45148) node[text=default,anchor=base west] {S = -3};
+\path (4.99957,23.25158) node[text=default,anchor=base west] {S = -2};
+\path (4.99957,24.05168) node[text=default,anchor=base west] {S = -1};
+\path (4.99957,24.75018) node[text=default,anchor=base west] {S =  0};
+\path (3.60045,24.35013) node[text=default,anchor=base west] {S = -2};
+\path (3.60045,25.15023) node[text=default,anchor=base west] {S = -1};
+\path (3.60045,26.35038) node[text=default,anchor=base west] {S =  0};
+
+\path (8.001,22.45148) node[text=default,anchor=base west] {$\Omega$};
+\path (8.001,23.25158) node[text=default,anchor=base west] {$\Xi$};
+\path (8.001,24.05168) node[text=default,anchor=base west] {$\Sigma$};
+\path (8.001,24.75018) node[text=default,anchor=base west] {$\Delta$};
+\path (8.50053,22.45148) node[text=default,anchor=base west] {(1.672 GeV)};
+\path (8.50053,23.25158) node[text=default,anchor=base west] {(1.530 GeV)};
+\path (8.50053,24.05168) node[text=default,anchor=base west] {(1.385 GeV)};
+\path (8.50053,24.75018) node[text=default,anchor=base west] {(1.236 GeV)};
+\path (0,26.84992) node[text=default,anchor=base west]     {\small{}0.8};
+\path (0,22.85153) node[text=default,anchor=base west]     {\small{}1.6};
+\path (0,23.8506) node[text=default,anchor=base west]      {\small{}1.4};
+\path (0,24.85178) node[text=default,anchor=base west]     {\small{}1.2};
+\path (0,25.85085) node[text=default,anchor=base west]     {\small{}1.0};
+\path (0.09948,22.352) node[text=default,anchor=base west] {\normalsize{}Masse en GeV/c$^2$};
+\path (0.89958,27.8511) node[text=default,anchor=base west] {a) baryons de spin-parite 1/2$^+$};
+\path (5.6007,27.8511) node[text=default,anchor=base west] {b) baryons de spin-parite 3/2$^+$};
+
+\end{tikzpicture}%
+%% Configure (x)emacs for this file ...
+%% Local Variables:
+%% mode: latex
+%% End:
