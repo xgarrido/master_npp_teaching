@@ -1522,8 +1522,16 @@ Brookhaven en 1964.
    | $\rightarrow\tau\sim$ 10^{-23} à 10^{-20} s | $\rightarrow\tau\gtrsim$ 10^{-13} s       |
 
 ** Les mésons $D$
+#+BEGIN_QUESTION
+Soit le méson $D^0$, ayant pour caractéeristiques : $mc^2$ = 1865 MeV, $I^{\pi}
+= 0^-$, $\vv{T} = \vv{1/2}$, $T_3 = -1/2$, $Q/e = 0$, et saveur "charmée" $c =
+1$.
 
-1) L'hypercharge $Y$ est égale à la somme du nombre baryonique $B$ et de la
+1) [@1] Quelle est la valeur de son hypercharge et quelles sont les
+   caractéristiques de son antiparticule $\bar{D}^0$ ?
+#+END_QUESTION
+
+1) [@1] L'hypercharge $Y$ est égale à la somme du nombre baryonique $B$ et de la
    saveur $S$. Le méson $D^0$ a, par définition, un nombre baryonique nul, sa
    saveur étant uniquement $c=1$ d'où $Y=1$. En utilisant, la formule de
    Gell-Mann & Nishijima $Q/E = T_3 + Y/2 = -1/2 + 1/2 = 0$, on obtient donc
@@ -1534,7 +1542,11 @@ Brookhaven en 1964.
    $c=-1$. Les mésons étant des bosons, la parité reste la même soit
    $I^\pi=0^-$.
 
-2) Multiplet d'isospin de $D^0$
+#+BEGIN_QUESTION
+2) [@2] Combien d'éléments comprend le multiplet d'isospin dont fait partie
+   $D^0$ ? Quelles sont les caractéristiques de ces éléments autres que $D^0$ ?
+#+END_QUESTION
+2) [@2] Multiplet d'isospin de $D^0$
 
    $\vv{T} = \vv{1}/2$, on a donc un doublet d'isospin $T_3=-1/2,+1/2$ de même
    saveur. En plus du méson $D^0$, le second membre du doublet a $T_3=+1/2$ soit
@@ -1542,13 +1554,17 @@ Brookhaven en 1964.
    l'antiparticule du $D^+$ est donc le méson $D^-$ ayant les mêmes propriétés
    que le $D^+$ à la charge (et donc \(T_3\)) près.
 
-3) Le méson $D^0$ est forcément constitué d'un quark charme et d'un antiquark
-   sans saveur /i.e./ $\bar{u}$ ou $\bar{d}$. Le fait qu'il est une charge nulle
-   implique nécessairement la présence d'un antiquark $u$. Le doublon d'isospin
-   de $D^0$ qu'est le méson $D^+$ est donc constitué d'un quark $c$ (même
-   saveur) et d'un antiquark $d$ (d'où sa charge électrique \(+e\)). De même,
-   les antiparticules $\bar{D}^0$ et $D^-$ sont constituées d'un antiquark $c$
-   et respectivement d'un quark $u$ et $d$.
+#+BEGIN_QUESTION
+3) [@3] Donner la composition en quarks de $D^0$ et $\bar{D}^0$, et des éléments
+   trouvés question 2, ainsi que de leurs antiparticules.
+#+END_QUESTION
+3) [@3] Le méson $D^0$ est forcément constitué d'un quark charme et d'un
+   antiquark sans saveur /i.e./ $\bar{u}$ ou $\bar{d}$. Le fait qu'il est une
+   charge nulle implique nécessairement la présence d'un antiquark $u$. Le
+   doublon d'isospin de $D^0$ qu'est le méson $D^+$ est donc constitué d'un
+   quark $c$ (même saveur) et d'un antiquark $d$ (d'où sa charge électrique
+   \(+e\)). De même, les antiparticules $\bar{D}^0$ et $D^-$ sont constituées
+   d'un antiquark $c$ et respectivement d'un quark $u$ et $d$.
 
    |-------------+------------|
    | $D^0$       | $c\bar{u}$ |
@@ -1557,7 +1573,12 @@ Brookhaven en 1964.
    | $D^-$       | $\bar{c}d$ |
    |-------------+------------|
 
-4) $\vv{I} = \vv{L} + \vv{S}$ soit $\vv{L} = \vv{I} + \vv{S} = \vv{0} +
+#+BEGIN_QUESTION
+4) [@4] Soit $\vv{L}$ le moment orbital relatif du système de quarks
+   composant le $D^0$ et $\vv{I}$ son moment cinétique total. Préciser
+   les valeurs de $\vv{L}$ et de $\vv{S}$.
+#+END_QUESTION
+4) [@4] $\vv{I} = \vv{L} + \vv{S}$ soit $\vv{L} = \vv{I} + \vv{S} = \vv{0} +
    \vv{S}_{c} + \vv{S}_{\bar{u}} = \vv{0} + \vv{1}/2 + \vv{1}/2 = \vv{0}$ ou
    $\vv{1}$. En tenant compte de la parité \pi, on obtient
    #+BEGIN_SRC latex
@@ -1570,7 +1591,14 @@ Brookhaven en 1964.
    conservations du moment cinétique total et de la parité sont donc
    $\vv{L}=\vv{0}$ et $\vv{S}=\vv{0}$.
 
-5) $D^0\rightarrow K^-+\pi^+$. Le fait de n'avoir à tester que la
+#+BEGIN_QUESTION
+5) [@5] On observe la désintégration $D^0 \rightarrow K^- + \pi^+$. En utilisant
+   seulement le moment cinétique total et la parité, dire quelle est
+   l'interaction responsable de cette désintégration. Trouver d'autres arguments
+   àa l'appui de cette réponse. On donne pour les kaons et les pions : I$^{\pi}$
+   = 0$^-$.
+#+END_QUESTION
+5) [@5] $D^0\rightarrow K^-+\pi^+$. Le fait de n'avoir à tester que la
    (non)conservation du moment cinétique total et de la parité semble indiquer
    que la réaction se fait par interaction faible.
    #+BEGIN_SRC latex
@@ -1592,7 +1620,13 @@ Brookhaven en 1964.
    $D^0$ impliquent la non-conservation de la saveur corroborant le résultat
    précédent.
 
-6) $e^++e^-\rightarrow D^0+\bar{D}^0$
+#+BEGIN_QUESTION
+6) [@6] Dans un anneau de collision ($e^+ e^-$), on veut produire la réaction
+   (1) : $e^+ + e^- \rightarrow D^0 + \bar{D}^0$ par interaction
+   électromagnétique. Quelle est l'énergie cinétique minimale de chacun des
+   faisceaux $T_s$ nécessaire pour que la réaction (1) soit possible ?
+#+END_QUESTION
+6) [@6] $e^++e^-\rightarrow D^0+\bar{D}^0$
 
    Collision de deux faisceaux d'impulsion opposés \rightarrow référentiel du
    centre de masse dans lequel l'énergie cinétique minimale est égale à la
@@ -1603,7 +1637,11 @@ Brookhaven en 1964.
      \end{align*}
    #+END_SRC
 
-7) $T_0=\unit[2014]{MeV}$
+#+BEGIN_QUESTION
+7) [@7] On utilise des faisceaux d'énergie $T_0$ = 2.014 GeV. Calculer les
+   impulsions du $D^0$ et du $\bar{D}^0$.
+#+END_QUESTION
+7) [@7] $T_0=\unit[2014]{MeV}$
 
    Toujours dans le référentiel du centre de masse, la conservation de
    l'impulsion implique que $\vv{p}_{D^0}=-\vv{p}_{\bar{D}^0}$. Les masses de
@@ -1620,8 +1658,26 @@ Brookhaven en 1964.
      \end{align*}
    #+END_SRC
 
-8) Le second pic correspond à la production du couple $D^0/\bar{D}^0$.
-9) $e^++e^-\rightarrow D^0 + X$
+#+BEGIN_QUESTION
+8) [@8] On mesure le spectre en impulsion des $D^0$ produits.
+   #+BEGIN_CENTER
+   #+ATTR_LATEX: :width 0.8\linewidth
+   [[file:figures/bar2.pdf]]
+   #+END_CENTER
+#+END_QUESTION
+8) [@8] Le second pic correspond à la production du couple $D^0/\bar{D}^0$.
+
+#+BEGIN_QUESTION
+9) [@9] L'autre pic correspond à la création d'une autre particule, $X$, par
+   interaction électromagnétique, via la réaction (2) suivante :
+   #+BEGIN_SRC latex
+     \begin{align*}
+       e^+ + e^- \rightarrow D^0 + X
+     \end{align*}
+   #+END_SRC
+   Calculer la masse de cette particule $X$ et donner la valeur de son hypercharge.
+#+END_QUESTION
+9) [@9] $e^++e^-\rightarrow D^0 + X$
 
    L'impulsion du $D^0$ est à présent, de 560 MeV. La conservation de
    l'impulsion suppose la même impulsion pour la particule $X$. Par ailleurs, la
@@ -1637,17 +1693,22 @@ Brookhaven en 1964.
      \end{align*}
    #+END_SRC
 
-10) L'interaction électromagnétique conserve la saveur (seul l'isospin n'est pas
-    conservé). La particule $X$ est donc nécessairement de saveur opposée au
-    méson $D^0$. Par ailleurs, la conservation du nombre baryonique et du nombre
-    leptonique implique que cette particule est un méson. Enfin, on déduit de la
-    conservation de la charge électrique que cette particule est neutre. La
-    particule $X$ est donc constituée d'un antiquark $c$ et soit d'un quark $u$
-    soit d'un quark $d$. La conservation de la charge électrique qui, dans ce
-    cas présent, est équivalente à la conservation de la troisième composante de
-    l'isospin $T_3$ (relation de Gell-Mann & Nishijima), implique que le second
-    quark est un quark $u$. La particule $X$ est ainsi identique en composition
-    à l'antiméson $\bar{D}^0$.
+#+BEGIN_QUESTION
+10) [@10] On attribue à la particule $X$ les caractéristiques : $I^{\pi}$ =
+    1^-, T = 1/2, T_3 = 1/2$. Quelle est sa composition en quarks ? Préciser
+    les valeurs possibles du moment orbital relatif $\vv{L}$ et du spin $\vv{S}$.
+#+END_QUESTION
+10) [@10] L'interaction électromagnétique conserve la saveur (seul l'isospin
+    n'est pas conservé). La particule $X$ est donc nécessairement de saveur
+    opposée au méson $D^0$. Par ailleurs, la conservation du nombre baryonique
+    et du nombre leptonique implique que cette particule est un méson. Enfin, on
+    déduit de la conservation de la charge électrique que cette particule est
+    neutre. La particule $X$ est donc constituée d'un antiquark $c$ et soit d'un
+    quark $u$ soit d'un quark $d$. La conservation de la charge électrique qui,
+    dans ce cas présent, est équivalente à la conservation de la troisième
+    composante de l'isospin $T_3$ (relation de Gell-Mann & Nishijima), implique
+    que le second quark est un quark $u$. La particule $X$ est ainsi identique
+    en composition à l'antiméson $\bar{D}^0$.
 
     Conservation du moment cinétique total $\vv{I}$
     #+BEGIN_SRC latex
@@ -1668,7 +1729,13 @@ Brookhaven en 1964.
     duquel on déduit que $L$ doit être pair. La valeur du spin de $X$ est donc 1
     et le moment orbital relatif est soit 0 ou 2.
 
-11) $X\rightarrow\bar{D}^0+\pi^0$
+#+BEGIN_QUESTION
+11) [@11] On observe la désintégration $X \rightarrow \bar{D}^0 +
+    \pi^0$. Montrer qu'elle est possible par interaction forte. Préciser les
+    moments orbitaux relatifs possibles dans l'état final.
+#+END_QUESTION
+
+11) [@11] $X\rightarrow\bar{D}^0+\pi^0$
 
     |----------+------------+-------------+-------------+---+----------+--------|
     |          |        $X$ | \rightarrow | $\bar{D}^0$ | + |  $\pi^0$ |        |
@@ -1687,10 +1754,13 @@ Brookhaven en 1964.
     puisque la chaleur de réaction $Q$ est égale à 2005 - (1865+135) = 5 MeV
     > 0.
 
-12) La particule $X$ est constituée des mêmes particules, à savoir le couple
-    $u\bar{c}$, que l'antiméson $\bar{D}^0$. Elle possède néanmoins un moment
-    cinétique total plus grand de même qu'une masse plus élevée que $\bar{D}^0$
-    ce qui semble indiquer que cette particule est un état excité de
+#+BEGIN_QUESTION
+12) [@12] Comment interpréter cette particule $X$ par rapport à $\bar{D}^0$ ?
+#+END_QUESTION
+12) [@12] La particule $X$ est constituée des mêmes particules, à savoir le
+    couple $u\bar{c}$, que l'antiméson $\bar{D}^0$. Elle possède néanmoins un
+    moment cinétique total plus grand de même qu'une masse plus élevée que
+    $\bar{D}^0$ ce qui semble indiquer que cette particule est un état excité de
     $\bar{D}^0$.
 
 ** Footnotes
