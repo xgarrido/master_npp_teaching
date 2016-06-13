@@ -1283,7 +1283,7 @@ Brookhaven en 1964.
 [fn:4] le moment cinétique total est également différent 5/2^{+} ou 7/2^{+} contre
 3/2^{+}
 
-* TD4 : Modèle des quarks -- Les hadrons
+* COMMENT TD4 : Modèle des quarks -- Les hadrons
 ** Les mésons constitués des quarks $u,d,s$ et de leurs antiquarks
 #+BEGIN_QUESTION
 1) [@1] D'après le tableau caractéristique des quarks, établir le même tableau
@@ -1771,7 +1771,7 @@ $\vv{T}=\vv{0}$ et $\vv{S}=\vv{3}/2$, la somme n'est donc pas impaire. C'est
 l'introduction de la couleur qui permet de rendre cette fonction d'onde globale
 antisymétrique.
 
-* COMMENT TD5 : Isospin -- des quarks aux noyaux
+* TD5 : Isospin -- des quarks aux noyaux
 ** Introduction
 
 L'isospin $\vv{T}$ rend compte de l'indépendance de charge de l'intéraction
@@ -1829,6 +1829,10 @@ où, de façon empirique, il est établi que l'état fondamental correspond à
 $T=|T_3|$, $T$ augmentant pour les états excités.
 
 ** Couplages nucléon-nucléon et nucléon-pion
+#+BEGIN_QUESTION
+1) Quelles sont les valeurs possibles $\vv{T}$ et $T_3$ pour l'isospin d'un
+   système résultant du couplage de deux nucléons ?
+#+END_QUESTION
 1) Système de deux nucléons :
 
    $\vv{T}=\Sigma\,\vv{t}_i$ et $T_3=\Sigma\,t_{3i}$ or selon Gell-Mann &
@@ -1851,7 +1855,21 @@ $T=|T_3|$, $T$ augmentant pour les états excités.
    - d'un triplet d'isospin $\vv{T}=\vv{1}$, $T_3=-1,0,+1$ définissant les
      états $\ket{1\,-1}$, $\ket{1\,0}$, $\ket{1\,1}$.
 
-2) Fonction d'onde d'isospin
+#+BEGIN_QUESTION
+2) [@2] Quelles sont les propriétés de symétrie des fonctions d'onde d'isospin
+   en fonction de $\vv{T}$ et de $T_3$, dans l'échange des deux nucléons ?
+
+   On rappelle que les coefficients de Clebsch-Gordan vérifient les relations
+   suivantes :
+   #+BEGIN_SRC latex
+     \begin{align*}
+       \rangle t_2 \, t_1 \, t_{32} \, t_{31} | T \, T_3\langle = \rangle t_1 \, t_2
+       \, -t_{31} \, - t_{32} |T \, -T_3\langle = (-1)^{(T-t_1-t_2)} \langle t_1 \, t_2 \,
+       t_{31} \, t_{32} | T\, T_3\rangle
+     \end{align*}
+   #+END_SRC
+#+END_QUESTION
+2) [@2] Fonction d'onde d'isospin
    #+BEGIN_SRC latex
      \begin{align*}
        \ket{TT_3}=\sum_{t_{31}}\sum_{t_{32}}\,\psh{t_1t_2t_{31}t_{32}}{TT_3}\ket{t_1t_2t_{31}t_{32}}
@@ -1873,7 +1891,11 @@ $T=|T_3|$, $T$ augmentant pour les états excités.
    d'onde d'isospin est antisymétrique si $T-1$ est impair et symétrique si
    $T-1$ est pair[fn:6].
 
-3) État singulet, $T=0$, $T_3=0$ est antisymétrique soit
+#+BEGIN_QUESTION
+3) [@3] Donner, à un facteur de phase près, les fonctions d'onde d'un système de
+   deux nucléons pour les différentes valeurs possibles de $\vv{T}$ et $T_3$.
+#+END_QUESTION
+3) [@3] État singulet, $T=0$, $T_3=0$ est antisymétrique soit
    $\ket{0\,0}=\frac{1}{\sqrt{2}}\left(\ket{pn}-\ket{np}\right)$. L'état triplet
    $T=1$, $T_3=-1,0,1$ est quant à lui symétrique. On obtient ainsi
 
@@ -1881,7 +1903,13 @@ $T=|T_3|$, $T$ augmentant pour les états excités.
    - $\ket{1\,0}=\frac{1}{\sqrt{2}}\left(\ket{pn}+\ket{np}\right)$
    - $\ket{1\,-1}=\ket{nn}$
 
-4) Pions : $\pi^{-},\pi^{0},\pi^{+}$
+#+BEGIN_QUESTION
+4) [@4] Les particules $\pi^-$, $\pi^0$ et $\pi^+$ (appelées pions ou mésons
+   $\pi$) ont des masses très voisines. Comme pour les nucléons, on leur
+   attribue un isospin $T$. Déterminer les valeurs $\vv{T}$ et $T_3$. On
+   utilisera la formule de Gell-Mann et Nishijima.
+#+END_QUESTION
+4) [@4] Pions : $\pi^{-},\pi^{0},\pi^{+}$
 
    Les pions étant des mésons sans saveur, l'hypercharge est ainsi nulle. On
    déduit ainsi de la formule de Gell-Mann & Nishijima, les valeurs de $T_3$ qui
@@ -1889,7 +1917,11 @@ $T=|T_3|$, $T$ augmentant pour les états excités.
    ailleurs compris entre $-T$ et $+T$, ces 3 mésons appartiennent ainsi au
    triplet d'isospin \(\vv{T}=\vv{1}\).
 
-5) Système pion-nucléon
+#+BEGIN_QUESTION
+5) [@5] Quelles sont les valeurs possibles de $\vv{T}$ et $T_3$ pour un système
+   pion-nucléon ?
+#+END_QUESTION
+5) [@5] Système pion-nucléon
 
    L'isospin d'un pion est $\vv{t}(\pi)=\vv{1}$, celui d'un nucléon
    $\vv{t}(N=n,p)=\vv{1}/2$. Par composition des isospins, un système pion-nucléon
@@ -1907,7 +1939,14 @@ $T=|T_3|$, $T$ augmentant pour les états excités.
    - d'un doublet d'isospin $\vv{T}=\vv{1}/2$ avec $T_3=\pm1/2$
    - d'un quadruplet d'isospin $\vv{T}=\vv{3}/2$ avec $T_3=\pm1/2, \pm3/2$
 
-6) Systèmes physiques $\ket{\pi^+p}$, $\ket{\pi^+n}$...
+#+BEGIN_QUESTION
+6) [@6] Donner les fonctions d'onde des systèmes physiques $\ket{\pi^+p}$ et
+   $\ket{\pi^+n}$ comme superposition des états $\ket{TT_3}$.
+
+Les valeurs des coefficients de Clebsch-Gordan sont données en annexe.
+#+END_QUESTION
+
+6) [@6] Systèmes physiques $\ket{\pi^+p}$, $\ket{\pi^+n}$...
 
    - $\ket{\pi^+p}$ : $t_3(\pi^+)=+1$ et $t_3(p)=1/2$ d'où
      $T_3(\pi^+p)=t_3(\pi^+)+t_3(p)=3/2$. La valeur de $T_3(\pi^+p)$ implique
@@ -1950,14 +1989,28 @@ $T=|T_3|$, $T$ augmentant pour les états excités.
      #+END_SRC
 
 ** Parité intrinsèque du $\pi^{-}$
-
+#+BEGIN_QUESTION
+Quand des pions négatifs de très basse énergie sont ralentis dans du deutérium,
+ils peuvent, par interaction coulombienne, occuper des états liés du deuton et
+constituer des atomes $\pi^-$ mésiques. Ils peuvent atteindre, en émettant des
+rayons X, l'état fondamental 1s puis être finalement capturés par le deuton
+dans cet état, sous l'effet des interactions nucléaires, via la réaction :
 #+BEGIN_SRC latex
   \begin{align*}
-    \pi^-+d\rightarrow n+n
+    \pi^- + d \rightarrow n + n
   \end{align*}
 #+END_SRC
+La parité intrinsèque du méson $\pi^-$ a été déterminée par l'observation de
+cette réaction, où $d$ est le deutérium, état lié proton-neutron de spin-parité
+$I^{\pi} = 1^+$. Le $\pi^-$ de spin 0 étant capturé à l'arrêt, on peut montrer
+que le moment orbital relatif du deutérium et du $\pi^-$ est nul.
 
-avec $I^\pi(d)=1^+$ et $\vv{L}_{\pi d}=\vv{0}$
+1) La voie d'entrée. Quel est le moment cinétique total du système $\pi^- d$
+   initial ? Exprimer sa parité en fonction de la parité intrinsèque du
+   $\pi^-$. La réaction étant due à une interaction forte, montrer que la
+   détermination de la parité du système neutron-neutron est une mesure de la
+   parité du $\pi^-$.
+#+END_QUESTION
 
 1) Moment cinétique total du système $\pi^-d$
 
@@ -1986,7 +2039,12 @@ avec $I^\pi(d)=1^+$ et $\vv{L}_{\pi d}=\vv{0}$
      \end{align*}
    #+END_SRC
 
-2) Le moment cinétique total s'écrit
+#+BEGIN_QUESTION
+2) [@2] La voie de sortie. Compte-tenu de l'antisymétrie de la fonction d'onde
+   dans l'échange des deux nucléons, déterminer complètement le couple $(l,s)$
+   du système des deux neutrons. En déduire la parité intrinsèque du $\pi^-$.
+#+END_QUESTION
+2) [@2] Le moment cinétique total s'écrit
 
    #+BEGIN_SRC latex
      \begin{align*}
@@ -2037,13 +2095,26 @@ avec $I^\pi(d)=1^+$ et $\vv{L}_{\pi d}=\vv{0}$
    #+END_SRC
 
 ** Sections efficaces de production de pions
-
+#+BEGIN_QUESTION
+On considère les réactions de production par interaction forte de mésons pi :
 #+BEGIN_SRC latex
   \begin{align*}
-    p+p&\rightarrow d+\pi^+\\
-    p+n&\rightarrow d+\pi^0
+    p + p &\rightarrow d + \pi^+\\
+    p + n &\rightarrow d + \pi^0
   \end{align*}
 #+END_SRC
+
+1) On réalise ces réactions en faisant interagir un proton d'énergie cinétique
+   $T$ sur un nucléon supposé au repos dans le référentiel du
+   laboratoire. Calculer l'énergie seuil de ces réactions. On prend comme masses
+   au repos :
+   #+BEGIN_SRC latex
+     \begin{align*}
+       m_p c^2 = m_n c^2 \sim \unit[940]{MeV} \quad\text{et}\quad m_{\pi^+}c^2 = m_{\pi^0}c^2 \sim\unit[140]{MeV}
+     \end{align*}
+   #+END_SRC
+   et on néglige l'énergie de liaison du deuton.
+#+END_QUESTION
 
 1) Calcul de l'énergie cinétique minimale
 
@@ -2084,7 +2155,11 @@ avec $I^\pi(d)=1^+$ et $\vv{L}_{\pi d}=\vv{0}$
      \end{align*}
    #+END_SRC
 
-2) $T_p=\unit[1]{GeV}>\unit[290]{MeV}$ et $T_\pi=\unit[600]{MeV}$
+#+BEGIN_QUESTION
+2) [@2] Si on réalise ces expériences avec des protons d'énergie cinétique 1
+   GeV, à quel angle détecte-t-on des pions de 600 MeV d'énergie cinétique ?
+#+END_QUESTION
+2) [@2] $T_p=\unit[1]{GeV}>\unit[290]{MeV}$ et $T_\pi=\unit[600]{MeV}$
 
    La conservation de l'impulsion implique que $\vv{p}_p=\vv{p}_\pi+\vv{p}_d$
    soit $\vv{p}_d=\vv{p}_p-\vv{p}_\pi$ et donc
@@ -2139,7 +2214,12 @@ avec $I^\pi(d)=1^+$ et $\vv{L}_{\pi d}=\vv{0}$
      \end{align*}
    #+END_SRC
 
-3) États d'isospin
+#+BEGIN_QUESTION
+3) [@3] Préciser l'état d'isospin de chacun des quatre systèmes : $\ket{p+p}$,
+   $\ket{d+\pi^+}$, $\ket{p+n}$ et $\ket{d+\pi^0}$. Les coefficients de
+   Clebsh-Gordan sont donnés en annexe et on donne l'isospin du deuton : $T=0$.
+#+END_QUESTION
+3) [@3] États d'isospin
 
    |----------+------------+------------+----------+----------+----------|
    |          | $p$        | $n$        | $d$      | $\pi^+$  | $\pi^0$  |
@@ -2174,8 +2254,13 @@ avec $I^\pi(d)=1^+$ et $\vv{L}_{\pi d}=\vv{0}$
 
    - $\ket{d+\pi^0} = \ket{d\pi^0} = \ket{0100}=\ket{10}$
 
-4) Intéraction forte \rightarrow conservation de l'isospin $\vv{T}$. Si ces 2
-   réactions sont réalisées dans les mêmes conditions cinématiques, on peut
+#+BEGIN_QUESTION
+4) [@4] Les deux réactions étant réalisées dans les mêmes conditions
+   cinématiques, montrer qu'il existe entre leurs sections efficaces une
+   relation simple que l'on précisera.
+#+END_QUESTION
+4) [@4] Intéraction forte \rightarrow conservation de l'isospin $\vv{T}$. Si ces
+   2 réactions sont réalisées dans les mêmes conditions cinématiques, on peut
    comparer leurs sections efficaces $\sigma_1$ et $\sigma_2$ en utilisant la
    formule
 
