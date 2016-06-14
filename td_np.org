@@ -2293,6 +2293,12 @@ On considère les réactions de production par interaction forte de mésons pi :
 
 ** Couplages de trois nucléons
 
+#+BEGIN_QUESTION
+On considère les noyaux comportant 3 nucléons.
+
+1) Quelles valeurs de l'isospin $\vv{T}$ peut-on obtenir pour ce
+   système ? Donner les multiplets d'isospin auxquels on s'attend.
+#+END_QUESTION
 1) Système de trois nucléons : $\vv{t}(n) = \vv{1}/2$ et
    $\vv{t}(p)=\vv{1}/2$. L'isospin de 3 nucléons $\vv{T}(3N) = \Upsigma
    \vv{t}_i$ soit
@@ -2307,8 +2313,13 @@ On considère les réactions de production par interaction forte de mésons pi :
    On obtient donc un double d'isospin $T_3(3N)=\pm\tfrac{1}{2}$ et un
    quadruplet d'isospin où $T_3(3N)=\pm\tfrac{1}{2}, \pm\tfrac{3}{2}$
 
-2) Les états $\ket{ppp}$ et $\ket{nnn}$ qui ont respectivement pour valeur de
-   $T_3$, 3/2 et -3/2 appartiennent tous les deux au quadruplet d'isospin
+#+BEGIN_QUESTION
+2) [@2] Sachant que le tri-neutron et le tri-proton ne sont pas des états stables
+   (on dit qu'ils sont non liés), donner la valeur de l'isospin de l'état
+   fondamental des noyaux\nbsp^{3}_{1}H et\nbsp^{3}_{2}He.
+#+END_QUESTION
+2) [@2] Les états $\ket{ppp}$ et $\ket{nnn}$ qui ont respectivement pour valeur
+   de $T_3$, 3/2 et -3/2 appartiennent tous les deux au quadruplet d'isospin
    $\vv{T}=\vv{3}/2$. Or, les forces nucléaires ne dependent que de l'isospin et
    sont donc indépendantes de charge (et donc de \(T_3\)). Étant donné que les
    états d'un même multiplet ont tous des propriétés communes vis-à-vis de
