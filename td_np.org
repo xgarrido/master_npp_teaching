@@ -1771,7 +1771,7 @@ $\vv{T}=\vv{0}$ et $\vv{S}=\vv{3}/2$, la somme n'est donc pas impaire. C'est
 l'introduction de la couleur qui permet de rendre cette fonction d'onde globale
 antisymétrique.
 
-* TD5 : Isospin -- des quarks aux noyaux
+* COMMENT TD5 : Isospin -- des quarks aux noyaux
 ** Introduction
 
 L'isospin $\vv{T}$ rend compte de l'indépendance de charge de l'intéraction
@@ -2338,7 +2338,7 @@ symétrique. Toutefois et comme nous le verrons dans l'exercice sur la parité
 intrinsèque du pion, la fonction d'onde globale de ces états demeure
 antisymétrique en raison du principe de Pauli généralisé qui impose que deux
 fermions soient dans des états quantiques différents.
-* COMMENT TD6 : Structure nucléaire
+* TD6 : Structure nucléaire
 ** Introduction
 Dans l'approximation du champ moyen, l'hamiltonien d'un système à $N$ nucléons
 prend la forme suivante
@@ -2401,7 +2401,17 @@ pour les différents types de noyau :
      $(-1)^{\ell_1+\ell_2}$. Toutes les valeurs de $j$ sont possibles
 
 ** Modèle des couches
-1) Moment cinétique $I$ et parité $\pi$ :
+#+BEGIN_QUESTION
+/On trouvera en annexe la séquence des couches donnée par le modèle./
+1) [@1] Dans le cadre du modèle des couches, quel moment cinétique I et quelle
+   parité \pi peut-on attribuer à l'état fondamental et au 1^{er} état excité
+   des noyaux suivants?
+
+   #+BEGIN_CENTER
+   \nbsp^{41}_{21}Sc,\nbsp^{57}_{28}Ni,\nbsp^{58}_{27}Co,\nbsp^{50}_{22}Ti
+   #+END_CENTER
+#+END_QUESTION
+1) [@1] Moment cinétique $I$ et parité $\pi$ :
 
    - *\nbsp^{41}_{21}Sc*
      - noyau impair-pair : 21 protons, 20 neutrons
@@ -2477,7 +2487,18 @@ pour les différents types de noyau :
      [[./figures/titane50_energy.pdf]]
      #+END_CENTER
 
-2) \nbsp^{39}_{19}K_{20} et\nbsp^{39}_{20}Ca_{19} \rightarrow noyaux
+#+BEGIN_QUESTION
+2) [@2] On donne les premiers niveaux des noyaux\nbsp^{39}_{19}K
+   et\nbsp^{39}_{20}Ca, avec pour chacun d'eux $I^\pi$ et l'énergie d'excitation
+   $E$ (en MeV). Interpréter ces moments cinétiques et parités dans le cadre du
+   modèle des couches. Que reflète la grande similitude entre les deux spectres
+   ?
+   #+BEGIN_CENTER
+   #+ATTR_LATEX: :width 0.9\linewidth
+   [[./figures/mod1_2.pdf]]
+   #+END_CENTER
+#+END_QUESTION
+2) [@2]\nbsp^{39}_{19}K_{20} et\nbsp^{39}_{20}Ca_{19} \rightarrow noyaux
    miroirs. Dans le cadre du modèle en couche, ces deux noyaux sont identiques
    ($p$ et $n$ sont "interchangeables" en raison de l'indépendance de charge de
    l'interaction forte).
@@ -2506,7 +2527,11 @@ pour les différents types de noyau :
    mêmes séquences de niveaux et les mêmes écarts en énergie $\Delta E$ entre
    ces niveaux aux effets coulombiens près.
 
-3) Noyau\nbsp^{75}_{33}As : 33 protons, 42 neutrons
+#+BEGIN_QUESTION
+3) [@3] L'état fondamental du noyau\nbsp^{75}_{33}As est un état $I^{\pi} =
+   \frac{3}{2}^-$. Expliquer ce résultat, non conforme au modèle en couches.
+#+END_QUESTION
+3) [@3] Noyau\nbsp^{75}_{33}As : 33 protons, 42 neutrons
 
    #+BEGIN_CENTER
    #+ATTR_LATEX: :width 0.6\linewidth
@@ -2529,7 +2554,18 @@ pour les différents types de noyau :
    plus, les couches sont proches en énergie et un noyau déformé peut "mélanger"
    les différentes couches.
 
-4)
+#+BEGIN_QUESTION
+4) [@4]
+   1) On donne ci-dessous le spectre des 8 premiers niveaux du noyau\nbsp^{90}_{40}Zr.
+      #+BEGIN_CENTER
+      #+ATTR_LATEX: :width 0.4\linewidth
+      [[./figures/Zr.pdf]]
+      #+END_CENTER
+      Chercher à expliquer ce spectre en supposant que le noyau
+      de\nbsp^{90}_{40}Zr est composé d'un coeur inerte de\nbsp^{88}_{38}Sr et
+      de deux protons.
+#+END_QUESTION
+4) [@4]
    1) \nbsp^{90}_{40}Zr =\nbsp^{88}_{38}Sr + 2$p$ : noyau pair-pair fermé en
       neutrons (50 : nombre magique)
 
@@ -2553,6 +2589,9 @@ pour les différents types de noyau :
       des noyaux pair-pair qui sont très stables et donc difficilement
       "excitable".
 
+#+BEGIN_QUESTION
+
+#+END_QUESTION
    2)
       1) \nbsp^{90}_{41}Nb : le noyau de Niobium est un noyau impair-impair : 41
          protons, 49 neutrons

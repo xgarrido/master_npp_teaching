@@ -1,0 +1,50 @@
+\tikzset{%
+  >=latex, % option for nice arrows
+  inner sep=0pt,%
+  outer sep=2pt,%
+  mark coordinate/.style={inner sep=0pt,outer sep=0pt,minimum size=3pt,
+    fill=black,circle}%
+}
+\begin{tikzpicture}[y=-1cm]
+  \sf
+  \definecolor{red}{RGB}{221,42,43}
+  \definecolor{green}{RGB}{132,184,24}
+  \definecolor{blue}{RGB}{0,51,153}
+  %% \definecolor{blue}{RGB}{0,72,112}
+  \definecolor{orange}{RGB}{192,128,64}
+  \definecolor{gray}{RGB}{107,108,110}
+  \colorlet{default}{blue}
+
+\path (3.8989,25.31957) node[text=default,anchor=base west] {\fontsize{13.0}{15.6}\selectfont{}0$^+$};
+\path (3.8989,22.81978) node[text=default,anchor=base west] {\fontsize{13.0}{15.6}\selectfont{}8$^+$};
+\path (3.8989,23.21983) node[text=default,anchor=base west] {\fontsize{13.0}{15.6}\selectfont{}6$^+$};
+\path (3.8989,23.61988) node[text=default,anchor=base west] {\fontsize{13.0}{15.6}\selectfont{}4$^+$};
+\path (3.8989,24.11942) node[text=default,anchor=base west] {\fontsize{13.0}{15.6}\selectfont{}4$^-$};
+\path (3.8989,24.51947) node[text=default,anchor=base west] {\fontsize{13.0}{15.6}\selectfont{}5$^-$};
+\path (3.8989,24.91952) node[text=default,anchor=base west] {\fontsize{13.0}{15.6}\selectfont{}2$^+$};
+\path (0.39793,25.31957) node[text=default,anchor=base west] {\fontsize{13.0}{15.6}\selectfont{}1.75};
+\path (0.39793,22.81978) node[text=default,anchor=base west] {\fontsize{13.0}{15.6}\selectfont{}3.59};
+\path (0.39793,23.21983) node[text=default,anchor=base west] {\fontsize{13.0}{15.6}\selectfont{}3.45};
+\path (0.39793,23.61988) node[text=default,anchor=base west] {\fontsize{13.0}{15.6}\selectfont{}3.08};
+\path (0.39793,24.11942) node[text=default,anchor=base west] {\fontsize{13.0}{15.6}\selectfont{}2.74};
+\path (0.39793,24.51947) node[text=default,anchor=base west] {\fontsize{13.0}{15.6}\selectfont{}2.32};
+\path (0.39793,24.91952) node[text=default,anchor=base west] {\fontsize{13.0}{15.6}\selectfont{}2.19};
+\draw[semithick,default] (1.59808,22.81978) -- (3.59833,22.81978);
+\draw[semithick,default] (1.59808,24.82003) -- (3.59833,24.82003);
+\draw[semithick,default] (1.59808,24.41998) -- (3.59833,24.41998);
+\draw[semithick,default] (1.59808,23.51828) -- (3.59833,23.51828);
+\draw[semithick,default] (1.59808,23.01875) -- (3.59833,23.01875);
+\draw[semithick,default] (1.59808,23.91833) -- (3.59833,23.91833);
+\draw[semithick,default] (1.59808,25.31957) -- (3.59833,25.31957);
+\path (3.8989,26.81817) node[text=default,anchor=base west] {\fontsize{13.0}{15.6}\selectfont{}0$^+$};
+\draw[semithick,default] (1.59808,26.81817) -- (3.59833,26.81817);
+\path (0.39793,26.81817) node[text=default,anchor=base west] {\fontsize{13.0}{15.6}\selectfont{}0};
+\path (3.8989,27.81935) node[text=default,anchor=base west] {\fontsize{13.0}{15.6}\selectfont{}$I^\pi$};
+\path (0,27.81935) node[text=default,anchor=base west] {\fontsize{13.0}{15.6}\selectfont{}$E$ (MeV)};
+\path (2.259927,27.61827) node[text=default,anchor=base west] {\fontsize{16.0}{15.6}\selectfont{}$^{90}_{40}$Zr};
+
+\end{tikzpicture}%
+%% Configure (x)emacs for this file ...
+%% Local Variables:
+%% mode: latex
+%% End:
