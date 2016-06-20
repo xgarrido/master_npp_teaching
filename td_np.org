@@ -2556,7 +2556,8 @@ pour les différents types de noyau :
 
 #+BEGIN_QUESTION
 4) [@4]
-   1) On donne ci-dessous le spectre des 8 premiers niveaux du noyau\nbsp^{90}_{40}Zr.
+   1) [@1] On donne ci-dessous le spectre des 8 premiers niveaux du
+      noyau\nbsp^{90}_{40}Zr.
       #+BEGIN_CENTER
       #+ATTR_LATEX: :width 0.4\linewidth
       [[./figures/Zr.pdf]]
@@ -2590,9 +2591,19 @@ pour les différents types de noyau :
       "excitable".
 
 #+BEGIN_QUESTION
-
+4) [@4]
+   2) [@2] On considère les 12 premiers niveaux du noyau\nbsp^{90}_{41}Nb.
+      #+BEGIN_CENTER
+      #+ATTR_LATEX: :width 0.4\linewidth
+      [[./figures/NbZr.pdf]]
+      #+END_CENTER
+      1) Expliquer ce spectre.
+      2) Que peut-on dire de la grande différence entre les densités de niveau
+         des deux noyaux\nbsp^{90}_{40}Zr et\nbsp^{90}_{41}Nb et entre les
+         intéractions résiduelles proton-proton et proton-neutron ?
 #+END_QUESTION
-   2)
+4) [@4]
+   2) [@2]
       1) \nbsp^{90}_{41}Nb : le noyau de Niobium est un noyau impair-impair : 41
          protons, 49 neutrons
 
