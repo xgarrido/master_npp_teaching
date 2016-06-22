@@ -2338,7 +2338,7 @@ symétrique. Toutefois et comme nous le verrons dans l'exercice sur la parité
 intrinsèque du pion, la fonction d'onde globale de ces états demeure
 antisymétrique en raison du principe de Pauli généralisé qui impose que deux
 fermions soient dans des états quantiques différents.
-* TD6 : Structure nucléaire
+* COMMENT TD6 : Structure nucléaire
 ** Introduction
 Dans l'approximation du champ moyen, l'hamiltonien d'un système à $N$ nucléons
 prend la forme suivante
@@ -2902,7 +2902,7 @@ $T(\text{fonda.})=|T_3|=\tfrac{Z-N}{2}$.
 [fn:8] la parité est égale à $(-1)^{\ell_1+\ell_2}$ où $\ell_1=\ell_2=\ell$ et
 donc $\pi=(-1)^{2\ell}=+1$
 
-* COMMENT TD7 : Réactions nucléaires
+* TD7 : Réactions nucléaires
 ** Introduction
 #+ATTR_LATEX: :float wrap :placement {l}{0.5\textwidth} :width 0.4\textwidth
 [[./figures/solid_angle.pdf]]
@@ -2953,6 +2953,20 @@ particules constitutives de la cible.
   #+END_SRC
 
 ** Accélérateur, section efficace et luminosité
+#+BEGIN_QUESTION
+1) On veut étudier la diffusion élastique des deutons\nbsp^2_1H, d'énergie
+   incidente 30 MeV, sur une cible de\nbsp^{63}_{29}Cu.
+
+   Le faisceau de deutons, de section droite circulaire de 2 cm de diamètre,
+   contient 6 10^{10} particules s^{-1} cm^{-2}, et est mesuré dans une cage de
+   Faraday. La cible de\nbsp^{63}Cu a une épaisseur de 2 mg/cm^{2}. Un détecteur
+   rectangulaire (4 cm \times 2 cm) est situé à 1 m de la cible à l'angle \theta
+   = 30°.
+
+   Calculer le nombre de deutons détectés par seconde par ce détecteur
+   rectangulaire, sachant qu'à l'angle de diffusion \theta = 30° et à 30 MeV, la
+   section efficace différentielle est de 0.1 barn/stéradian.
+#+END_QUESTION
 1) \nbsp^{2}_{1}H+\nbsp^{63}_{29}Cu\to\nbsp^{2}_{1}H+\nbsp^{63}_{29}Cu
    #+BEGIN_SRC latex
      \begin{align*}
@@ -2969,7 +2983,24 @@ particules constitutives de la cible.
      \end{align*}
    #+END_SRC
 
-2) \nbsp^{3}_{1}H+\nbsp^{9}_{4}Be\to\nbsp^{3}_{2}He+\nbsp^{9}_{3}Li
+#+BEGIN_QUESTION
+2) [@2] On veut étudier la réaction
+   #+BEGIN_SRC latex
+     \begin{align*}
+       ^9_4\text{Be} + ^3_1\text{H} \rightarrow ^3_2\text{He} + ^9_3\text{Li}
+     \end{align*}
+   #+END_SRC
+   Pour cela, on bombarde une cible de\nbsp^{9}Be de 100 \mu{}g/cm^{2} avec un
+   faisceau de tritium (^{3}_{1}H) de 25 MeV.
+   1) Quelle est la section efficace totale de la réaction, sachant que
+      l'intensité du faisceau incident est $I$ = 500 nA et que le nombre de
+      noyaux détectés par seconde est $n$ = 2000 ?
+
+   2) On détecte dans cette réaction les particules d'^{3}_{2}He. Donner le
+      schéma de principe d'une telle expérience. Quelle est l'allure du spectre
+      en énergie des noyaux d'^{3}_{2}He détectés ?
+#+END_QUESTION
+2) [@2] \nbsp^{3}_{1}H+\nbsp^{9}_{4}Be\to\nbsp^{3}_{2}He+\nbsp^{9}_{3}Li
 
    1) Le flux incident $\phi$ s'exprime en fonction de l'intensité $I$ du faisceau
       #+BEGIN_SRC latex
@@ -2997,7 +3028,59 @@ particules constitutives de la cible.
       énergie des noyaux de\nbsp^{3}_{2}He présente des raies correspondant aux
       niveaux en énergie de\nbsp^{3}_{2}He (ou\nbsp^{9}_{3}Li) → *énergies quantifiées*
 
-3)
+#+BEGIN_QUESTION
+3) [@3] Dans les faisceaux d'un anneau de collisions $e^+e^-$, les électrons
+   (positrons) sont regroupés en paquets qui se croisent à chaque tour. Le
+   collisionneur LEP-I auquel on s'intéresse ici était un synchrotron de
+   circonférence 27 km, dont le rayon de courbure valait $R$ ~ 4.5 km et dans
+   lequel circulaient, en sens inverses, 4 paquets de $N_1$ positrons et 4
+   paquets de $N_2$ électrons.
+
+   1) On caractérise une région d'intersection des faisceaux par sa luminosité
+      $\mathcal{L}$, telle que le nombre d'interactions par unité de temps soit
+      égal au produit $\mathcal{L}\sigma$ de la luminosité par la section
+      efficace.
+
+      En déduire la dimension et l'unité de $\mathcal{L}$.
+
+      On peut montrer que la luminosité s'exprime en fonction des intensités
+      $I_1$ et $I_2$ des courants électriques des faisceaux, du rayon $R$ de
+      l'anneau et de la surface $S$ de recouvrement des paquets par la
+      relation :
+      #+BEGIN_SRC latex
+        \begin{align*}
+          \mathcal{L} = \frac{2\pi R}{c} \frac{I_1 I_2}{e^2 S}
+        \end{align*}
+      #+END_SRC
+      où $e$ est la charge électrique élémentaire.
+
+      Calculer la luminosité $\mathcal{L}$, en cm^{-2}.s^{-1}, pour $I_1$ =
+      $I_2$ = 3 mA et $S$ = 0.5 mm^{2}.
+   2) Pour déterminer la luminosité effectivement obtenue auprès du
+      collisionneur, on observe en général une réaction de référence dont la
+      section efficace est bien connue. Il s'agit ici de la diffusion dite
+      "Bhabha" $e^+ e^- \rightarrow e^+ e^-$ dont la section efficace
+      différentielle, à l'approximation des petits angles que l'on utilisera
+      pour le calcul, est :
+      #+BEGIN_SRC latex
+        \begin{align*}
+          \frac{d\sigma}{d\Omega} = \frac{16 \alpha^2 c)^2}{E^2 \theta^4}
+        \end{align*}
+      #+END_SRC
+
+      où \alpha est la constante de structure fine, $E$ l'énergie totale et
+      \theta l'angle de diffusion.
+
+      Le détecteur qui compte les électrons diffusés a la forme d'une couronne,
+      centrée sur l'axe du faisceau. Il couvre tous les angles azimutaux \phi et
+      les angles polaires \theta compris entre 3 et 8 degrés.
+
+      1) Déterminer la section efficace de diffusion, à l'énergie $E$ = 90 GeV.
+
+      2) Si on observe 950 interactions dans ce détecteur en une heure de prise
+         de données, que vaut la luminosité associée ?
+#+END_QUESTION
+3) [@3]
    1) La luminosité $\mathcal{L}$ s'exprime comme le rapport du nombre de
       particules détectés par unité de temps sur la section efficace
       #+BEGIN_SRC latex
@@ -3078,6 +3161,26 @@ particules constitutives de la cible.
          #+END_REMARK
 
 ** Section efficace et neutrons thermiques
+#+BEGIN_QUESTION
+1) On appelle neutrons thermiques des neutrons lents en équilibre
+   thermodynamique avec le milieu dans lequel ils se trouvent.
+
+   On irradie une cible de\nbsp^{10}_{5}B avec un faisceau de neutrons
+   thermiques d'énergie cinétique $T$ = 2.5 10^{-2} eV, produits par un
+   réacteur, afin de créer des noyaux de\nbsp^{7}Li par la réaction :
+   #+BEGIN_SRC latex
+     \begin{align}
+       n_\text{th} + ^{10}_{5}\text{B} \rightarrow \alpha + ^7_3\text{Li}
+     \end{align}
+   #+END_SRC
+   On détecte les particules \alpha émises au cours de cette réaction. Quelle
+   est leur énergie cinétique $T_{\alpha}$ ?  On donne les masses nucléaires
+   suivantes, en MeV :
+   #+BEGIN_CENTER
+   $m_{\alpha}c^2$ = 3727.398, $m_{^7\text{Li}}c^2$ = 6533.877, $m_{^8\text{Li}}c^2$ =
+   7471.417, $m_{^{10}\text{B}}c^2$ = 9324.495, $m_{^{11}\text{B}}c^2$ = 10252.615
+   #+END_CENTER
+#+END_QUESTION
 1) $n_\text{th.}+^{10}_{5}\text{B}\rightarrow\alpha+^{7}_{3}\text{Li}$
 
    Calcul de la chaleur de réaction $Q$
@@ -3115,7 +3218,18 @@ particules constitutives de la cible.
        &=\unit[1.8]{MeV}
      \end{align*}
    #+END_SRC
-2) $n+^{11}_{5}\text{B}\rightarrow\alpha+^{8}_{3}\text{Li}$
+
+#+BEGIN_QUESTION
+2) [@2] On veut maintenant étudier la réaction~:
+   #+BEGIN_SRC latex
+     \begin{align}
+       n + ^{11}_{5}\text{B} \rightarrow \alpha + ^8_{3}\text{Li}
+     \end{align}
+   #+END_SRC
+   Dire, en justifiant votre réponse, si cette réaction est possible avec des
+   neutrons thermiques. Donner alors ses conditions d'étude.
+#+END_QUESTION
+2) [@2] $n+^{11}_{5}\text{B}\rightarrow\alpha+^{8}_{3}\text{Li}$
 
    Calcul de la chaleur de réaction $Q$
    #+BEGIN_SRC latex
@@ -3133,7 +3247,18 @@ particules constitutives de la cible.
      \end{align*}
    #+END_SRC
 
-3) Le nombre de particules \alpha détectées se déduit de l'expression suivante
+#+BEGIN_QUESTION
+3) [@3] On envoie le faisceau de neutrons thermiques sur une cible de Bore
+   naturel de surface 10 cm^{2}, d'épaisseur 1 \mu{}m, de densité \rho = 2.34
+   g/cm^{3} et de composition isotopique 19.8% de\nbsp^{10}B et 80.2%
+   de\nbsp^{11}B. La section efficace totale de la réaction (1) vaut \sigma =
+   3840 b. On sait de plus que la section efficace différentielle est isotrope
+   dans le système du centre de masse pour des neutrons lents. Le détecteur de
+   particules \alpha, de surface utile 5 cm^{2} et situé à 1 m de la cible,
+   enregistre 473 particules \alpha à la minute. Quel est le flux de neutrons
+   thermiques, en cm^{-2}s^{-1} ?
+#+END_QUESTION
+3) [@3] Le nombre de particules \alpha détectées se déduit de l'expression suivante
    #+BEGIN_SRC latex
      \begin{align*}
        dn_\alpha=\phi_{n_\text{th.}}\times\frac{\mathcal{N}\times\rho_e}{A_\text{cible}}\times\frac{d\sigma}{d\Omega}d\Omega
@@ -3169,7 +3294,19 @@ particules constitutives de la cible.
    La surface de la cible étant de 10 cm^{2}, le flux par seconde et par unité
    de surface est donc $F=\frac{\phi}{S_\text{cible}}=2\,10^6\,\text{cm}^{-2}\text{.s}^{-1}$.
 
-4) $T_n=\unit[13]{MeV}>T_S=\unit[7.21]{MeV}$ et
+#+BEGIN_QUESTION
+4) [@4] On irradie maintenant une cible isotopiquement séparée de\nbsp^{11}B
+   avec des neutrons de 13 MeV, pour lesquels la section efficace différentielle
+   de la réaction\nbsp(2) est $\frac{d\sigma}{d\Omega}$ = 3.8 mb/sr à 20°. On
+   détecte les particules \alpha avec le même détecteur que précédemment,
+   placé à 20°.
+   1) Quelles mesures supplémentaires faut-il faire afin de déterminer la
+      section efficace totale de la réaction ?
+   2) En supposant que ces mesures montrent une dépendance angulaire de la
+      forme $d\sigma/d\Omega = K/\sin\theta$, calculer la section efficace
+      totale.
+#+END_QUESTION
+4) [@4] $T_n=\unit[13]{MeV}>T_S=\unit[7.21]{MeV}$ et
    $\left.\frac{d\sigma}{d\Omega}\right|_{20^\circ}=\unit[3.8]{mb/sr}$
    1) Pour calculer la section efficace totale $\sigma$, il s'agit d'intégrer la
       section efficace différentielle sur 4\pi stéradian : il faut donc
@@ -3186,6 +3323,44 @@ particules constitutives de la cible.
       #+END_SRC
 
 ** Section efficace et rayon d'interaction
+#+BEGIN_QUESTION
+On donne les masses nucléaires suivantes, en MeV :
+
+#+BEGIN_CENTER
+$m_nc^2$ = 939.6; $m_{^{9}\text{Li}}c^2$ = 8406.9
+
+$m_{^{10}\text{Li}}c^2$ = 9347.3; $m_{^{11}\text{Li}}c^2$ = 10285.9
+#+END_CENTER
+1) On cherche à estimer le rayon du noyau de\nbsp^{11}Li. Pour cela, on effectue
+   tout d'abord des mesures de section efficace totale d'interaction.
+
+   1) On bombarde une cible de\nbsp^{9}Be de 50 mg/cm^{2} d'épaisseur avec un
+      faisceau de\nbsp^{11}Li, dont le flux incident vaut 10^{4}
+      particules/s. En 10 minutes, on détecte dans tout l'espace 10^{5}
+      réactions. Calculer la section efficace de la réaction\nbsp^{11}Li
+      +\nbsp^{9}Be.
+
+   2) Il a été montré que le rayon d'interaction nucléaire pouvait être estimé
+      de façon très simple par la mesure de la section efficace totale dans les
+      collisions d'ions lourds de haute énergie. Dans ce modèle simple, le rayon
+      d'interaction est défini par :
+      #+BEGIN_SRC latex
+        \begin{align*}
+          \sigma_\text{tot} = \pi(R_\text{proj.}+ R_\text{cible})^2
+        \end{align*}
+      #+END_SRC
+      sachant que $R_\text{proj.}$ et $R_\text{cible}$ sont respectivement les
+      rayons d'interaction du projectile et de la cible.
+
+      En supposant que le rayon d'interaction du\nbsp^{9}Be peut être approximé
+      par $R$(^{9}Be)=$r_0A^{1/3}$, déduire de ce modèle le rayon d'interaction
+      du\nbsp^{11}Li et comparer le résultat à la valeur
+      $R$(^{11}Li)=$r_0A^{1/3}$ donnée par le modèle de la goutte liquide.
+
+   3) On refait la même expérience avec un faisceau de\nbsp^{9}Li de même
+      intensité et on mesure 20000 réactions en 10 minutes. Déduire le rayon
+      d'interaction du\nbsp^{9}Li.
+#+END_QUESTION
 1) \nbsp^{11}Li\to\nbsp^{9}Be
    1) Le nombre de réactions $n$ par unité de temps s'écrit
       #+BEGIN_SRC latex
@@ -3224,7 +3399,32 @@ particules constitutives de la cible.
           &=\unit[3.04]{fm}\gtrsim\unit[2.6]{fm}
         \end{align*}
       #+END_SRC
-2)
+
+#+BEGIN_QUESTION
+2) [@2] On bombarde maintenant la cible de\nbsp^{9}Be avec le faisceau
+   de\nbsp^{11}Li précédent, pour réaliser des réactions de cassure
+   du\nbsp^{11}Li :
+   #+BEGIN_SRC latex
+     \begin{align}
+       ^{11}\text{Li} + ^9\text{Be} &\rightarrow ^{9}\text{Li} + n + n + ^9\text{Be}\\
+       ^{11}\text{Li} + ^9\text{Be} &\rightarrow ^{10}\text{Li} + n + ^9\text{Be}
+     \end{align}
+   #+END_SRC
+
+   1) En utilisant les masses nucléaires données précédemment, montrer que
+      #+BEGIN_SRC latex
+        \begin{align*}
+          ^{10}\text{Li} \rightarrow ^9\text{Li} + n
+        \end{align*}
+      #+END_SRC
+      est une réaction spontanée. En déduire la vie moyenne du\nbsp^{10}Li.
+
+   2) Le\nbsp^{11}Li est-il lié par interaction forte ?
+
+   3) Expliquer pourquoi on observe la réaction (1) mais pas la réaction
+      (2). Que peut-on en conclure pour le\nbsp^{10}Li ?
+#+END_QUESTION
+2) [@2]
    1) $^{10}\text{Li}\to^{9}\text{Li}+n$
 
       La chaleur de réaction $Q$ est égale à
@@ -3259,7 +3459,14 @@ particules constitutives de la cible.
       devient instantanément un noyau\nbsp^{9}Li. Seule la première réaction est
       observable et donc seul le rayon du\nbsp^{11}Li est mesurable.
 
-3) Comparaison $R_\text{int.}$ et modèle de la goutte liquide $R_\text{gl}$
+#+BEGIN_QUESTION
+3) [@3] Les rayons d'interaction ($R_\text{proj.}$) pour d'autres isotopes de
+   Lithium :\nbsp^{6}Li,\nbsp^{7}Li,\nbsp^{8}Li, sont respectivement 2.14, 2.25
+   et 2.38 fm. Porter sur un graphique $R=f(A)$ les rayons d'interaction de tous
+   les isotopes de Li entre $A=6$ et $A=11$. Comparer avec les prédictions
+   données par le modèle de la goutte liquide. Discuter ce résultat.
+#+END_QUESTION
+3) [@3] Comparaison $R_\text{int.}$ et modèle de la goutte liquide $R_\text{gl}$
 
    #+TBLNAME: radius
    |-----+--------------------+----------------------+--------|
