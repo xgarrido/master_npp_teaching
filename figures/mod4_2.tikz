@@ -1,0 +1,98 @@
+\tikzset{%
+  >=latex, % option for nice arrows
+  inner sep=0pt,%
+  outer sep=2pt,%
+  mark coordinate/.style={inner sep=0pt,outer sep=0pt,minimum size=3pt,
+    fill=black,circle}%
+}
+\begin{tikzpicture}[y=-1cm]
+\sf
+  \definecolor{red}{RGB}{221,42,43}
+  \definecolor{green}{RGB}{132,184,24}
+  \definecolor{blue}{RGB}{0,51,153}
+  %% \definecolor{blue}{RGB}{0,72,112}
+  \definecolor{orange}{RGB}{192,128,64}
+  \definecolor{gray}{RGB}{107,108,110}
+  \colorlet{default}{blue}
+\path (5.334,25.51218) node[text=default,anchor=base west] {\fontsize{13.0}{15.6}\selectfont{}3/2$^+$};
+\path (5.334,24.84543) node[text=default,anchor=base west] {\fontsize{13.0}{15.6}\selectfont{}5/2$^-$};
+\path (5.334,26.84568) node[text=default,anchor=base west] {\fontsize{13.0}{15.6}\selectfont{}7/2$^-$};
+\path (5.334,23.51193) node[text=default,anchor=base west] {\fontsize{13.0}{15.6}\selectfont{}1/2$^+$};
+\path (5.334,24.01147) node[text=default,anchor=base west] {\fontsize{13.0}{15.6}\selectfont{}5/2$^+$};
+\path (5.334,26.01172) node[text=default,anchor=base west] {\fontsize{13.0}{15.6}\selectfont{}3/2$^-$};
+\path (6.6675,19.51143) node[text=default,anchor=base west] {\fontsize{13.0}{15.6}\selectfont{}3/2};
+\path (6.6675,20.17818) node[text=default,anchor=base west] {\fontsize{13.0}{15.6}\selectfont{}3/2};
+\path (6.6675,21.51168) node[text=default,anchor=base west] {\fontsize{13.0}{15.6}\selectfont{}3/2};
+\path (6.6675,23.51193) node[text=default,anchor=base west] {\fontsize{13.0}{15.6}\selectfont{}1/2};
+\path (6.6675,24.01147) node[text=default,anchor=base west] {\fontsize{13.0}{15.6}\selectfont{}1/2};
+\path (6.6675,24.84543) node[text=default,anchor=base west] {\fontsize{13.0}{15.6}\selectfont{}1/2};
+\path (6.6675,25.51218) node[text=default,anchor=base west] {\fontsize{13.0}{15.6}\selectfont{}1/2};
+\path (6.6675,26.01172) node[text=default,anchor=base west] {\fontsize{13.0}{15.6}\selectfont{}1/2};
+\path (6.6675,26.84568) node[text=default,anchor=base west] {\fontsize{13.0}{15.6}\selectfont{}1/2};
+
+\path (2.76705,27.61192) node[text=default,anchor=base west] {\fontsize{16.0}{15.6}\selectfont{}$^{41}_{20}$Ca};
+\draw[dashed,default] (8.79898,18.51237) -- (8.79898,27.91248);
+\draw[join=bevel,default] (1.83303,19.51143) -- (4.50003,19.51143);
+\draw[join=bevel,dashed,default] (4.66725,19.51143) -- (6.50028,19.51143);
+\draw[join=bevel,dashed,default] (4.66725,20.17818) -- (6.50028,20.17818);
+\draw[join=bevel,default] (1.83303,21.51168) -- (4.50003,21.51168);
+\draw[join=bevel,dashed,default] (4.66725,21.51168) -- (6.50028,21.51168);
+\draw[join=bevel,default] (1.83303,22.01122) -- (4.50003,22.01122);
+\draw[join=bevel,default] (1.83303,22.17843) -- (4.50003,22.17843);
+\draw[join=bevel,default] (1.83303,22.34565) -- (4.50003,22.34565);
+\draw[join=bevel,default] (1.83303,22.51075) -- (4.50003,22.51075);
+\draw[join=bevel,default] (1.83303,22.67797) -- (4.50003,22.67797);
+\draw[join=bevel,default] (1.83303,22.84518) -- (4.50003,22.84518);
+\draw[join=bevel,default] (1.83303,23.0124) -- (4.50003,23.0124);
+\draw[join=bevel,default] (1.83303,23.1775) -- (4.50003,23.1775);
+\draw[join=bevel,default] (1.83303,23.34472) -- (4.50003,23.34472);
+\draw[join=bevel,default] (1.83303,23.51193) -- (4.50003,23.51193);
+\path (5.50122,18.84468) node[text=default,anchor=base west] {\fontsize{13.0}{15.6}\selectfont{}$I^\pi$};
+\draw[join=bevel,default] (1.83303,23.67915) -- (4.50003,23.67915);
+\path (0.16722,24.84543) node[text=default,anchor=base west] {\fontsize{13.0}{15.6}\selectfont{}2.604};
+\draw[join=bevel,default] (1.83303,24.84543) -- (4.50003,24.84543);
+\draw[join=bevel,default] (1.83303,25.51218) -- (4.50003,25.51218);
+\draw[join=bevel,default] (1.83303,25.67728) -- (4.50003,25.67728);
+\draw[join=bevel,default] (1.83303,26.84568) -- (4.50003,26.84568);
+\draw[join=bevel,dashed,default] (4.66725,23.51193) -- (5.16678,23.51193);
+\draw[join=bevel,dashed,default] (4.66725,23.67915) -- (5.16678,23.67915);
+\draw[join=bevel,dashed,default] (1.66793,23.67915) -- (1.16628,23.67915);
+\draw[join=bevel,dashed,default] (1.66793,21.51168) -- (1.16628,21.51168);
+\draw[join=bevel,dashed,default] (1.66793,20.17818) -- (1.16628,20.17818);
+\draw[join=bevel,dashed,default] (1.66793,19.51143) -- (1.16628,19.51143);
+\draw[join=bevel,dashed,default] (1.66793,23.51193) -- (1.16628,23.51193);
+\draw[join=bevel,default] (1.83303,20.17818) -- (4.50003,20.17818);
+\draw[join=bevel,default] (1.83303,21.84612) -- (4.50003,21.84612);
+\path (6.83307,18.84468) node[text=default,anchor=base west] {\fontsize{13.0}{15.6}\selectfont{}$T$};
+\path (0,18.84468) node[text=default,anchor=base west] {\fontsize{13.0}{15.6}\selectfont{}$E$ (MeV)};
+\path (0.16722,26.84568) node[text=default,anchor=base west] {\fontsize{13.0}{15.6}\selectfont{}0};
+\path (0.16722,19.51143) node[text=default,anchor=base west] {\fontsize{13.0}{15.6}\selectfont{}7.10};
+\path (0.16722,20.17818) node[text=default,anchor=base west] {\fontsize{13.0}{15.6}\selectfont{}6.85};
+\path (0.16722,21.51168) node[text=default,anchor=base west] {\fontsize{13.0}{15.6}\selectfont{}5.85};
+\path (0.16722,23.51193) node[text=default,anchor=base west] {\fontsize{13.0}{15.6}\selectfont{}3.84};
+\path (0.16722,23.84425) node[text=default,anchor=base west] {\fontsize{13.0}{15.6}\selectfont{}3.37};
+\path (0.16722,25.51218) node[text=default,anchor=base west] {\fontsize{13.0}{15.6}\selectfont{}2.01};
+\path (0.16722,25.8445) node[text=default,anchor=base west] {\fontsize{13.0}{15.6}\selectfont{}1.94};
+
+
+\begin{scope}[xshift=9cm,yshift=-0.16cm]
+  \draw[default] (1.5113,25.36825) -- (2.8448,25.36825) -- (4.1783,25.36825);
+\draw[default] (1.5113,26.70175) -- (2.8448,26.70175) -- (4.1783,26.70175);
+\path (0.01058,24.03475) node[text=default,anchor=base west] {\fontsize{13.0}{15.6}\selectfont{}$E$ (MeV)};
+\path (0.1778,26.70175) node[text=default,anchor=base west] {\fontsize{13.0}{15.6}\selectfont{}0};
+\path (5.17737,24.03475) node[text=default,anchor=base west] {\fontsize{13.0}{15.6}\selectfont{}$I^\pi$};
+\draw[default] (1.5113,24.7015) -- (2.8448,24.7015) -- (4.1783,24.7015);
+\path (5.01015,24.7015) node[text=default,anchor=base west] {\fontsize{13.0}{15.6}\selectfont{}7/2$^-$};
+\path (5.01015,25.36825) node[text=default,anchor=base west] {\fontsize{13.0}{15.6}\selectfont{}1/2$^+$};
+\path (5.01015,26.70175) node[text=default,anchor=base west] {\fontsize{13.0}{15.6}\selectfont{}3/2$^+$};
+\path (2.44532,27.5336) node[text=default,anchor=base west] {\fontsize{16.0}{15.6}\selectfont{}$^{41}_{19}$K};
+\path (0.1778,24.7015) node[text=default,anchor=base west] {\fontsize{13.0}{15.6}\selectfont{}1.29};
+\path (0.1778,25.36825) node[text=default,anchor=base west] {\fontsize{13.0}{15.6}\selectfont{}0.98};
+\end{scope}
+
+
+\end{tikzpicture}%
+%% Configure (x)emacs for this file ...
+%% Local Variables:
+%% mode: latex
+%% End:

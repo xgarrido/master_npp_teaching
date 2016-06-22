@@ -2637,6 +2637,18 @@ pour les différents types de noyau :
 
 ** Réactions nucléaires et états analogues isobariques
 *Étude des isobares\nbsp^{21}_{9}F,\nbsp^{21}_{10}Ne et\nbsp^{21}_{11}Na*
+#+BEGIN_QUESTION
+On considère les trois isobares\nbsp^{21}_{9}F,\nbsp^{21}_{10}Ne et\nbsp^{21}_{11}Na.
+
+1)
+   1) Donner les moment cinétique et parité I$^{\pi}$, ainsi que les
+      configurations de l'état fondamental et du premier état excité prévus par
+      le modèle des couches, pour le noyau\nbsp^{21}_9F.
+
+   2) On donne $I^{\pi} = \frac{3}{2}^+$ pour l'état fondamental des noyaux
+      $^{21}_{10}$Ne et $^{21}_{11}$Na. Commenter ce résultat non conforme au
+      modèle des couches.
+#+END_QUESTION
 1)
    1) Moment cinétique $I^\pi$ du\nbsp^{21}_{9}F
       #+BEGIN_CENTER
@@ -2663,7 +2675,20 @@ pour les différents types de noyau :
       mesure où les niveaux en énergie des couches
       $1d\tfrac{5}{2},2s\tfrac{1}{2}$ et $1d\tfrac{3}{2}$ sont relativement
       proches.
-2)
+
+#+BEGIN_QUESTION
+2) [@2]
+   1) Quelle est la valeur de la troisième composante de l'isospin $T_3$ pour
+      ces trois noyaux ? En déduire la valeur de l'isospin $T$ de leur état
+      fondamental.
+
+   2) Dans le cadre de l'indépendance de charge de l'interaction forte, discuter
+      ce résultat en termes de multiplets d'isospin. Quel(s) autre(s) noyau(x)
+      isobarique(s) appartienne(nt) à ce(s) multiplet(s) ? Peut-on prévoir le
+      spin et la parité de l'état fondamental et du premier état excité de ce(s)
+      noyau(x) ?
+#+END_QUESTION
+2) [@2]
    1) Pour un système constitué de $Z$ protons et $N$ neutrons, la troisième
       composante de l'isospin $T_3$ est égale à
       #+BEGIN_SRC latex
@@ -2697,7 +2722,33 @@ pour les différents types de noyau :
         de\nbsp^{21}F). Le noyau\nbsp^{21}Mg a la même séquence d'états
         que\nbsp^{21}F soit $I^\pi(\text{fonda.})=\tfrac{5}{2}^+$ et 1^{er} état
         excité $I^\pi=\tfrac{1}{2}^+$
-3) Calcul des excès de masse
+
+#+BEGIN_QUESTION
+3) [@3] On peut comparer les masses des états nucléaires (fondamental ou état
+   excité) ayant les mêmes caractéristiques ($A$, $I$, $\pi$ et $T$), en
+   utilisant la formule suivante\nbsp:
+   #+BEGIN_SRC latex
+       \begin{align*}
+       M_\text{at}c^2(A, I, \pi, T, T_3) = a(A,I,\pi,T) + b(A,I,\pi,T)\, T_3 + c(A,I,\pi,T)\, T_3^2
+     \end{align*}
+   #+END_SRC
+
+   On a identifié dans les noyaux de\nbsp^{21}Ne et\nbsp^{21}Na un état excité
+   $I^{\pi} = \frac{5}{2}^+$, d'isospin $\vv{T} = \vv{3/2}$, aux énergies
+   d'excitation respectives 8.86 MeV et 8.97 MeV.
+
+   Quel est l'excès de masse du noyau manquant dans le multiplet d'isospin
+   discuté à la question 2) ?
+
+   On donne les excès de masse suivants, en MeV :
+
+   #+BEGIN_CENTER
+   $\Delta Mc^2$(^{21}F) = -0.05 ; $\Delta Mc^2$(^{21}Ne) = -5.73 ;
+   $\Delta Mc^2$(^{21}Na) = -2.186
+   #+END_CENTER
+
+#+END_QUESTION
+3) [@3] Calcul des excès de masse
    #+BEGIN_CENTER
    #+ATTR_LATEX: :width 0.9\linewidth
    [[./figures/fluor_neon_sodium_magnesium_energy.pdf]]
@@ -2749,9 +2800,31 @@ pour les différents types de noyau :
    #+END_REMARK
 
 *Étude des niveaux d'énergie du\nbsp^{41}_{20}Ca*
+#+BEGIN_QUESTION
+On veut étudier les niveaux (fondamental et excités) du noyau\nbsp^{41}Ca. On
+effectue pour cela les réactions de diffusions inélastiques $(p,p')$ et
+$(\alpha,\alpha')$, et les réactions de transfert\nbsp^{40}Ca$(d,p)$\nbsp^{41}Ca
+et\nbsp^{42}Ca(^3_2He,$\alpha$)^{41}Ca, en utilisant respectivement des faisceaux
+de protons, alphas, deutons et\nbsp^3He de haute énergie.
+
+1) On donne ci-dessous, à gauche, le schéma des premiers niveaux du\nbsp^{41}Ca.
+   #+BEGIN_CENTER
+   #+ATTR_LATEX: :width 0.9\linewidth
+   [[./figures/mod4_2.pdf]]
+   #+END_CENTER
+
+   Lesquels de ces niveaux peut-on exciter dans chacune des réactions
+   d'interaction forte étudiées ici ? Justifier votre réponse.
+
+2) On donne sur le même schéma à droite les premiers niveaux du\nbsp^{41}_{19}K.
+
+   Quels moment cinétique et parité $I^{\pi}$ peut-on attribuer aux niveaux à
+   5.85 MeV, 6.85 MeV et 7.1 MeV d'énergie d'excitation du
+   noyau\nbsp^{41}_{20}Ca ?
+#+END_QUESTION
 
 Pour étudier les niveaux en énergie d'un noyau donné\nbsp^{A}_{Z}X (états
-d'excitation), on peut réaliser des collisions inélastiques $(p,p^\prime)$,
+d'excitation), on peut réaliser des collisions inélastiques $(p,p')$,
 $(\alpha,\alpha^\prime)$ ou des réactions de transfert durant lesquelles un
 neutron/proton est transféré soit au noyau étudié soit au projectile. On déduit
 de ces collisions la distribution angulaire de chaque pic d'excitation, le
