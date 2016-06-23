@@ -2902,7 +2902,7 @@ $T(\text{fonda.})=|T_3|=\tfrac{Z-N}{2}$.
 [fn:8] la parité est égale à $(-1)^{\ell_1+\ell_2}$ où $\ell_1=\ell_2=\ell$ et
 donc $\pi=(-1)^{2\ell}=+1$
 
-* TD7 : Réactions nucléaires
+* COMMENT TD7 : Réactions nucléaires
 ** Introduction
 #+ATTR_LATEX: :float wrap :placement {l}{0.5\textwidth} :width 0.4\textwidth
 [[./figures/solid_angle.pdf]]
@@ -3531,8 +3531,14 @@ de barns dans le but de masquer le sujet de leurs recherches. Cependant après l
 Seconde Guerre mondiale, le barn est devenu une unité standard de la physique
 des particules.
 
-* COMMENT TD8 : Masses et désintégrations nucléaires
+* TD8 : Masses et désintégrations nucléaires
 ** Définitions
+#+BEGIN_QUESTION
+Définir les termes : masse nucléaire, masse atomique, excès de masse atomique,
+énergie de liaison des nucléons dans le noyau, énergie de liaison moyenne par
+nucléon. Exprimer le $Q$ de la réaction $1+2 \rightarrow 3+4$ (où 1, 2, 3 et 4
+sont des noyaux) en fonction respectivement des quatre premiers termes.
+#+END_QUESTION
 - masse nucléaire :: la masse nucléaire correspond à la masse du noyau /i.e./
      #+BEGIN_SRC latex
        \begin{align*}
@@ -3618,11 +3624,20 @@ La chaleur de réaction $Q$ s'écrit
   \end{align*}
 #+END_SRC
 ** Décroissance radioactive du sodium 22
+#+BEGIN_QUESTION
+Le sodium 22 (^{22}_{11}Na), *qui sera étudié au cours des travaux pratiques*, est
+souvent employé comme source de positrons car sa période, $T$~2.6 ans, est
+relativement longue. Ce noyau se désintègre presqu'à 100% vers le premier
+état excité du néon 22, situé à 1.27 MeV, soit par émission \beta^{+} avec un
+rappport d'embranchement de 90%, soit par capture électronique.
+
+1) Ecrire les réactions de désintégration du\nbsp^{22}_{11}Na.
+#+END_QUESTION
+
 #+BEGIN_CENTER
 #+ATTR_LATEX: :width 0.55\linewidth
 [[./figures/sodium22_decay.pdf]]
 #+END_CENTER
-
 1) Décroissance radioactive $N(t)=N_0\,e^{-\lambda t}$ où $\lambda$ correspond à
    la probabilité de décroissance et est égale à $\frac{\ln 2}{T}$, $T$ étant la
    période. Ainsi,
@@ -3637,7 +3652,11 @@ La chaleur de réaction $Q$ s'écrit
      \end{align*}
    #+END_SRC
 
-2) Capture électronique : $^{22}_{11}\text{Na}+e^-\to^{22}_{10}\text{Ne}^*+\nu_e$
+#+BEGIN_QUESTION
+2) [@2] Quelle est la période partielle de capture électronique du\nbsp^{22}Na ?
+#+END_QUESTION
+2) [@2] Capture électronique :
+   $^{22}_{11}\text{Na}+e^-\to^{22}_{10}\text{Ne}^*+\nu_e$
 
    La charge étant conservé tout comme le nombre de nucléons, la chaleur de
    réaction de la capture électronique se déduit des excès de masse
@@ -3649,7 +3668,12 @@ La chaleur de réaction $Q$ s'écrit
      \end{align*}
    #+END_SRC
 
-3) Désintégration $\beta^+$ :
+#+BEGIN_QUESTION
+3) [@3] Les excès de masse atomique de\nbsp^{22}Na et\nbsp^{22}Ne sont
+   respectivement -5183 keV et -8025 keV. Calculer le $Q$ de la capture
+   électronique.
+#+END_QUESTION
+3) [@3] Désintégration $\beta^+$ :
    $^{22}_{11}\text{Na}\to^{22}_{10}\text{Ne}^*+e^++\nu_e$
 
    L'énergie cinétique maximale que puisse emporter le positron correspond au
@@ -3661,7 +3685,11 @@ La chaleur de réaction $Q$ s'écrit
      \end{align*}
    #+END_SRC
 
-4) $^{23}\text{Na}+p\to^{22}\text{Na}+p+n$
+#+BEGIN_QUESTION
+4) [@4] Estimer l'énergie cinétique maximale des positrons émis lors de la
+   transition $\beta^+$.
+#+END_QUESTION
+4) [@4] $^{23}\text{Na}+p\to^{22}\text{Na}+p+n$
    #+BEGIN_SRC latex
      \begin{align*}
        Q&=\Delta M_\text{at.}\left(^{23}\text{Na}\right)c^2+\cancel{\Delta M_\text{at.}(p)c^2}-\Delta M_\text{at.}\left(^{22}\text{Na}\right)-\cancel{\Delta M_\text{at.}(p)c^2}-\Delta M_\text{at.}(n)c^2\\
@@ -3677,7 +3705,34 @@ La chaleur de réaction $Q$ s'écrit
      \end{align*}
    #+END_SRC
 
-5)
+#+BEGIN_QUESTION
+5) [@5] Pour obtenir ainsi une source de\nbsp^{22}Na, on irradie une cible de
+   sel (NaCl) avec un faisceau de protons de 155 MeV, d'intensité $I$ = 10
+   \mu{}A. A cette énergie, la section efficace de la réaction citée est de 40
+   mb. La cible a une épaisseur de 2 mg/cm^{2} et on assimile le chlore naturel
+   au\nbsp^{35}Cl.
+
+   1) Calculer le nombre de noyaux de\nbsp^{22}_{11}Na produits par seconde.
+
+   2) Établir l'expression du nombre $N(t)$ de noyaux radioactifs obtenus si
+      l'on irradie une cible avec un faisceau d'intensité constante entre les
+      instants 0 et $t_0$. Que devient $N(t)$ lorsque l'on stoppe l'irradiation
+      ?  Tracer l'allure de la courbe représentant $N(t)$. Montrer que pendant
+      l'irradiation $N(t)$ tend vers une valeur limite $N_{\infty}$ et donner son
+      expression.
+
+   3) Calculer l'activité de la source de\nbsp^{22}Na en photons de 1.27 MeV,
+      quelques jours après une irradiation d'une heure. Exprimer le résultat
+      en Becquerel, puis en Curie.
+
+   4) Dans le spectre en énergie des photons émis par le\nbsp^{22}Na, on observe
+      une raie à 511 keV. Quelle est l'origine de cette raie ? Déduire
+      l'activité de la source en photons de 511 keV.
+
+   5) Combien de photons de 1.27 MeV devrait recevoir en une minute un détecteur
+      de 5 cm^{2} situé à 1 m de la source ?
+#+END_QUESTION
+5) [@5]
    1) Le nombre de noyaux de\nbsp^{22}Na produit est
       #+BEGIN_SRC latex
         \begin{align*}
@@ -3776,22 +3831,36 @@ La chaleur de réaction $Q$ s'écrit
       #+END_SRC
 
 ** Tomographie par émission de positrons
-
 #+ATTR_HTML: :width 300
 #+ATTR_LATEX: :width 0.35\textwidth
 #+CAPTION: *Vue axiale du cerveau par tomographie à émission de positrons*
 [[./figures/pet_cerveau.jpg]]
 
+#+BEGIN_QUESTION
+La tomographie par émission de positrons (TEP) est une technique d'imagerie
+isotopique utilisant des molécules biologiques marquées par des isotopes
+radioactifs émetteurs $\beta^+$ à demi-vie très brève, tel que le\nbsp^{11}C,
+qui permettent une visualisation des organes en fonctionnement, par mesure des
+deux photons de 511 keV émis simultanément à 180 degrés l'un de l'autre lors de
+l'annihilation $e^+e^-$. Les courtes périodes des radioisotopes utilisés pour la
+TEP (de 2 mn pour le\nbsp^{15}O à 110 mn pour le\nbsp^{18}F) imposent la
+présence simultanée d'un laboratoire de radiochimie et d'une caméra TEP sur le
+lieu de l'accélérateur produisant les radioéléments.
+
+L'isotope radioactif\nbsp^{11}C, de période radioactive $T_{1/2}$ = 20.36 min, est
+formé par la réaction nucléaire
 #+BEGIN_SRC latex
   \begin{align*}
-    p+^{14}_{7}\text{N}\to ^{11}_{6}\text{C}+\alpha\text{ avec }T\left(^{11}\text{C}\right)=\unit[20.36]{min}
+    p + ^{14}_{7}\text{N}\rightarrow ^{11}_{6}\text{C}+\alpha
   \end{align*}
 #+END_SRC
+en irradiant une cible d'azote de nombre de masse A = 14, d'épaisseur 10
+mg/cm^{2} avec un faisceau de protons contenant 4 10^{12} particules/seconde. La
+section efficace totale de cette réaction est \sigma = 200 mb. Au début de
+l'irradiation ($t=0$), il n'y a aucun noyau radioactif dans l'échantillon.
 
-Les caractéristiques du faisceau de proton incident et de la cible sont
-$\phi_p=\unit[4\,10^{12}]{protons/s}$, $\rho_e=\unit[10]{mg/cm}^2$ et une
-section efficace totale $\sigma_\text{tot.}=\unit[200]{mb}$. Le nombre initial
-de radioéléments\nbsp^{11}C est nul à $t=0$.
+1) Calculer le nombre de noyaux radioactifs obtenus au bout de 3h d'irradiation.
+#+END_QUESTION
 
 1) La variation du nombre de noyaux de carbone 11, $\frac{dn}{dt}$, est égale à
    au nombre de noyaux créés par irradiation soustrait du nombre de noyaux se
@@ -3813,8 +3882,15 @@ de radioéléments\nbsp^{11}C est nul à $t=0$.
        =&\,\unit[6.05\,10^{11}]{noyaux}
      \end{align*}
    #+END_SRC
-2) À $t=t_0=\unit[3]{h}$, l'irradiation est stoppée, les noyaux de carbone ne
-   faisant que se déintégrer. L'activité en radioéléments devient
+
+#+BEGIN_QUESTION
+2) [@2] On stoppe alors l'irradiation. Calculer l'activité qu'aura alors
+   l'échantillon au bout de 30 min, temps nécessaire pour introduire
+   le\nbsp^{11}C dans des molécules complexes qui sont alors injectées au
+   patient.
+#+END_QUESTION
+2) [@2] À $t=t_0=\unit[3]{h}$, l'irradiation est stoppée, les noyaux de carbone
+   ne faisant que se déintégrer. L'activité en radioéléments devient
    #+BEGIN_SRC latex
      \begin{align*}
        \mathcal{A}(t'=t-t_0=\unit[30]{min})&=\lambda\times n(t'=\unit[30]{min})\\
@@ -3824,7 +3900,12 @@ de radioéléments\nbsp^{11}C est nul à $t=0$.
        &=\unit[3.3]{mCi}\text{ où }\unit[1]{Ci}=\unit[3.7\,10^{10}]{Bq}
      \end{align*}
    #+END_SRC
-3) Après 24 heures, l'activité de la "source" sera
+
+#+BEGIN_QUESTION
+3) [@3] Quelle sera l'activité résiduelle 24h après la fin de l'irradiation ?
+   Commenter les deux résultats.
+#+END_QUESTION
+3) [@3] Après 24 heures, l'activité de la "source" sera
    #+BEGIN_SRC latex
      \begin{align*}
        \mathcal{A}(\unit[24]{h})&=\frac{\ln 2}{20.36\times60}\times6.05\,10^{11}\,e^{-\ln2\times24\times60/20.36}\\
@@ -3846,19 +3927,50 @@ de radioéléments\nbsp^{11}C est nul à $t=0$.
      cyclotron à proximité du centre d’examen.
 
 ** Formule de Bethe et Weizsäcker
-1) À partir de la question [[Définitions]], la masse atomique est égale à
-   #+BEGIN_SRC latex
-     \begin{align*}
-       M_\text{at.}(A,Z)c^2=&Z(m_pc^2+m_ec^2)+(A-Z)m_nc^2-B_N\\
-       =&Z(m_pc^2+m_ec^2)+(A-Z)m_nc^2\\
-       &-a_VA+a_SA^{2/3}+a_C\frac{Z^2}{A^{1/3}}+a_A\frac{(A-2Z)^2}{A}-\delta(Z,A)
-     \end{align*}
-   #+END_SRC
-   L'origine des différents termes de l'énergie de liaison $B_N$ est expliquée à
-   la question [[Définitions]].
-2) Le nombre de nucléons ou nombre de masse $A$ est impair pour les isobares
-   $A=21$ et $A=95$. Aussi, le terme d'appariement $\delta(Z,A)$ est donc
-   nul. L'élément le plus stable dans une famille d'isobares est celui avec
+#+BEGIN_QUESTION
+1)
+   1) Expliquer les différents termes intervenant dans la formule semi-empirique
+      donnant la masse atomique :
+      #+BEGIN_SRC latex
+        \begin{align*}
+          M_\text{at}(Z,A)c^2 &= Z(m_pc^2 + m_ec^2)+(A-Z)m_nc^2-a_v A\\
+          &+a_s A^{2/3}+a_c\frac{Z^2}{A^{1/3}}+a_A\frac{(A - 2Z)^2}{A}-\delta(Z,A)
+        \end{align*}
+      #+END_SRC
+      avec $\delta(Z,A) = +\frac{12\text{ MeV}}{\sqrt{A}}$ pour $Z$ et $N$
+      pairs, $-\frac{12\text{ MeV}}{\sqrt{A}}$ pour $Z$ et $N$ impairs, et 0
+      pour $A$ impair.
+
+   2) En déduire que l'excès de masse atomique $\Delta M_\text{at}c^2$ pour
+      des noyaux isobariques s'écrit comme un polynome du second degré en
+      $Z$. Combien y a-t-il de paraboles possibles ?
+#+END_QUESTION
+1) [@1]
+   1) À partir de la question [[Définitions]], la masse atomique est égale à
+      #+BEGIN_SRC latex
+        \begin{align*}
+          M_\text{at.}(A,Z)c^2=&Z(m_pc^2+m_ec^2)+(A-Z)m_nc^2-B_N\\
+          =&Z(m_pc^2+m_ec^2)+(A-Z)m_nc^2\\
+          &-a_VA+a_SA^{2/3}+a_C\frac{Z^2}{A^{1/3}}+a_A\frac{(A-2Z)^2}{A}-\delta(Z,A)
+        \end{align*}
+      #+END_SRC
+      L'origine des différents termes de l'énergie de liaison $B_N$ est expliquée à
+      la question [[Définitions]].
+   2) /cf./ Exercice [[Parabole de masse et désintégrations radioactives]]
+
+#+BEGIN_QUESTION
+2) [@2] En utilisant la formule de Bethe et Weizsäcker (BW), prévoir quel est
+   l'élément le plus stable des familles des isobares de nombre de masse $A$ =
+   21 et 95. On donne les valeurs suivantes des coefficients de la formule de
+   BW : $a_v$ = 15.56 MeV, $a_c$ = 0.697 MeV, $a_s$ = 17.23 MeV et $a_A$ =
+   23.285 MeV.
+
+   Expérimentalement, les noyaux suivants sont \beta-stables :\nbsp^{21}_{10}Ne
+   et\nbsp^{95}_{42}Mo. Discuter ce résultat.
+#+END_QUESTION
+2) [@2] Le nombre de nucléons ou nombre de masse $A$ est impair pour les
+   isobares $A=21$ et $A=95$. Aussi, le terme d'appariement $\delta(Z,A)$ est
+   donc nul. L'élément le plus stable dans une famille d'isobares est celui avec
    l'énergie de liaison $B_N$ maximale. Or, $B_N$ est maximum pour $Z=Z_0$ tel
    que $\left.\frac{\partial B_N}{\partial Z}\right|_{Z_0}=0$ d'où
    #+BEGIN_SRC latex
@@ -3882,7 +3994,24 @@ de radioéléments\nbsp^{11}C est nul à $t=0$.
      indicateur afin de déterminer si un noyau est loin, en terme de protons, de
      l'élément stable pour une masse donnée /i.e./ pour $A$ fixé.
 
-3)
+#+BEGIN_QUESTION
+3) [@3] On peut montrer que l'énergie potentielle d'attraction gravitationnelle
+   d'une masse sphérique $M$ de densité uniforme et de rayon $R$ est donnée par
+   $E_G=-\frac{3 GM^2}{5R}$.
+
+   1) Déterminer la formule donnant l'énergie de liaison d'une étoile à neutrons
+      ($Z = 0$) à partir de l'énergie de liaison des nucléons dans le noyau
+      donnée par la formule de BW (on négligera l'énergie d'appariement \delta),
+      en lui ajoutant un terme d'énergie potentielle de type $E_G$ (attention,
+      ce terme correspond à une contribution positive à l'énergie de liaison).
+
+   2) En déduire l'ordre de grandeur du rayon minimal d'une étoile à neutrons
+      ayant la densité nucléaire et n'ayant aucun autre constituant que des
+      neutrons (on supposera que ce nombre $N$ de neutrons est grand, et on
+      utilisera $G/c^4$ = 1.3239 10^{-39} GeV^{-1}.fm). Calculer sa
+      masse. Comparer au rayon et à la masse du Soleil.
+#+END_QUESTION
+3) [@3]
    1) Pour une étoile à neutrons, l'énergie de liaison devient (\(Z=0\))
       #+BEGIN_SRC latex
         \begin{align*}
@@ -3944,6 +4073,20 @@ de radioéléments\nbsp^{11}C est nul à $t=0$.
       #+END_SRC
 
 ** Parabole de masse et désintégrations radioactives
+#+BEGIN_QUESTION
+On s'intéresse aux isobares de nombre de masse $A$ = 58 dont on donne ci-dessous
+les excès de masse atomique $\Delta M_\text{at}c^2$, en MeV :
+#+BEGIN_SRC latex
+  \begin{align*}
+    \begin{array}{rrrrrrr}
+      ^{58}_{24}\text{Cr}&^{58}_{25}\text{Mn}&^{58}_{26}\text{Fe}&^{58}_{27}\text{Co}&^{58}_{28}\text{Ni}&^{58}_{29}\text{Cu}&^{58}_{30}\text{Zn}\\
+      -52.050&-55.830&-62.152&-59.844&-60.225&-51.662&-42.210
+    \end{array}
+  \end{align*}
+#+END_SRC
+1) Rappeler les différents types de désintégrations isobariques et les
+   conditions énergétiques associées.
+#+END_QUESTION
 1) Désintégrations isobariques (\beta^{-}, \beta^{+}, CE)
 
    - désintégration \beta^{-} ::
@@ -3999,8 +4142,11 @@ de radioéléments\nbsp^{11}C est nul à $t=0$.
         cortège électronique intervient ayant pour conséquence l'émission de
         rayons X de désexcitation.
 
-2) Le diagramme $M_\text{at.}c^2=f(Z)$ ou $\Delta M_\text{at.}c^2=f(Z)$ pour une
-   famille d'isobares donnée est le suivant
+#+BEGIN_QUESTION
+2) [@2] Estimer graphiquement l'énergie d'appariement $\delta(A)$ en MeV.
+#+END_QUESTION
+2) [@2] Le diagramme $M_\text{at.}c^2=f(Z)$ ou $\Delta M_\text{at.}c^2=f(Z)$
+   pour une famille d'isobares donnée est le suivant
 
    #+BEGIN_CENTER
    #+NAME: mass_parabola
@@ -4032,10 +4178,16 @@ de radioéléments\nbsp^{11}C est nul à $t=0$.
    soit $\delta=\unit[1.4]{MeV}$, relativement proche de la valeur issue de B&W
    $\frac{\unit[12]{MeV}}{\surd A}=\unit[1.58]{MeV}$.
 
-3) D'après la figure [[mass_parabola]], les désintégrations \beta^{-} sont Cr\to
-   Mn, Mn\to Fe et Co\to Ni. Les désintégrations \beta^{+} ou CE sont
-   Zn\to Cu, Cu\to Ni et Co\to Fe. Les deux noyaux stables de cette
-   famille sont donc le fer 58 et le nickel 58.
+#+BEGIN_QUESTION
+3) [@3] Quelles sont les désintégrations isobariques possibles pour les noyaux
+   \(A\)\nbsp=\nbsp58 donnés et l'énergie maximale des électrons (ou des
+   positrons) émis dans ces désintégrations ? Préciser le (ou les) noyau(x)
+   stable(s) vis à vis de ces désintégrations.
+#+END_QUESTION
+3) [@3] D'après la figure [[mass_parabola]], les désintégrations \beta^{-} sont
+   Cr\to Mn, Mn\to Fe et Co\to Ni. Les désintégrations \beta^{+} ou CE sont
+   Zn\to Cu, Cu\to Ni et Co\to Fe. Les deux noyaux stables de cette famille sont
+   donc le fer 58 et le nickel 58.
 
    L'énergie cinétique maximum des électrons/positrons émis respectivement par
    désintégration \beta^{-} et \beta^{+} sont les suivantes
