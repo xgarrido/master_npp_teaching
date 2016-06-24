@@ -3531,7 +3531,7 @@ de barns dans le but de masquer le sujet de leurs recherches. Cependant après l
 Seconde Guerre mondiale, le barn est devenu une unité standard de la physique
 des particules.
 
-* TD8 : Masses et désintégrations nucléaires
+* COMMENT TD8 : Masses et désintégrations nucléaires
 ** Définitions
 #+BEGIN_QUESTION
 Définir les termes : masse nucléaire, masse atomique, excès de masse atomique,
@@ -4256,8 +4256,22 @@ neutron $M_*=1.4M_\odot$ (masse de Chandrasekhar). En réalite, le rayon d'une
 étoile à neutron varie de 10 à 20 km ($R_\odot=695\,800$ km) ce qui se traduit
 en terme de masse par une gamme entre 0.4 et 5 masses solaires.
 
-* COMMENT TD9 : Modèle Standard et au-delà : l'interaction faible
+* TD9 : Modèle Standard et au-delà : l'interaction faible
 ** Masse et largeur du $Z^0$ -- Nombre de familles de neutrinos
+#+BEGIN_QUESTION
+La figure ci-dessous représente la distribution de masse invariante du boson
+d'interaction faible $Z^0$ pour sa désintégration en $e^+e^-$, obtenue par
+le détecteur ALEPH auprès du collisionneur $e^+e^-$ LEP du CERN.
+
+#+BEGIN_CENTER
+#+ATTR_LATEX: :width 0.7\textwidth
+[[./figures/aleph_ee.pdf]]
+#+END_CENTER
+
+1) D'après cette figure, correspondant aux événements issus des désintégrations
+   $Z^0 \rightarrow e^+e^-$, estimer la masse du $Z^0$, ainsi que la largeur
+   associée.
+#+END_QUESTION
 Le LEP (pour /Large Electron Positron collider/) était un accélérateur de
 particules circulaire de 27 km de circonférence, passant sous le site du CERN
 entre la France et la Suisse. En fonction de 1989 à 2000, le LEP demeure le plus
@@ -4269,30 +4283,84 @@ désintègre /via/ différents canaux dont la désintégration $Z^0\to e^+e^-$. 
 figure présente la section efficace en fonction de l'énergie des $e^+e^-$
 incidents.
 
-1) Les faisceaux d'électrons-positrons sont accélérés à la même énergie mais
-   avec des impulsions opposées. Par conservation de l'impulsion, le $Z^0$ ainsi
-   produit est au repos et les deux leptons produits par désintégration sont
-   donc émis dos-à-dos. La masse du $Z^0$ correspond donc à la position en
+1) [@1] Les faisceaux d'électrons-positrons sont accélérés à la même énergie
+   mais avec des impulsions opposées. Par conservation de l'impulsion, le $Z^0$
+   ainsi produit est au repos et les deux leptons produits par désintégration
+   sont donc émis dos-à-dos. La masse du $Z^0$ correspond donc à la position en
    énergie du maximum de production /i.e./ à la résonance soit une masse de
    $M_{Z^0}c^2=\unit[91.2]{GeV}$ (la mesure figurant dans le PDG donne 91.1876
    \pm 0.0021 GeV). La largeur à mi-hauteur mesurée est
    $\Gamma(Z^0)=2\times(91.2-90)=\unit[2.4]{GeV}$ (contre 2.4952 \pm 0.0023 GeV
    dans le PDG).
-2) $\Gamma(Z^0)\gg\Gamma(Z^0\to e^+e^-)$. La durée de vie du boson $Z^0$ est une
-   propriété intrinsèque à cette particule : elle ne dépetnd donc pas du mode de
-   désintégration. À titre d'exemple, la mesure du taux de désintégration de
-   $Z^0\to\mu^+\mu^-$ donnerait un résultat expérimental identique. À partir de
-   la distribution en masse invariante, la largeur de la résonance est donc la
-   convolution de l'ensemble des modes de désintégration du $Z^0$ (à laquelle
-   s'ajoute les effets expérimentaux tels que la résolution en énergie du
-   calorimètre électromagnétique). On ne peut donc expérimentalement isolé les
-   différents modes de désintégrations du $Z^0$.
-3) Diagrammes de Feynman
+
+#+BEGIN_QUESTION
+2) [@2] Le calcul en théorie électrofaible de la largeur partielle du $Z^0$ pour
+   sa désintégration en $e^+e^-$, est $\Gamma(Z^0 \rightarrow e^+ e^-)$ ~ 84
+   MeV. Pourquoi ne retrouve-t-on pas la largeur précédente ?
+#+END_QUESTION
+2) [@2] $\Gamma(Z^0)\gg\Gamma(Z^0\to e^+e^-)$. La durée de vie du boson $Z^0$
+   est une propriété intrinsèque à cette particule : elle ne dépetnd donc pas du
+   mode de désintégration. À titre d'exemple, la mesure du taux de
+   désintégration de $Z^0\to\mu^+\mu^-$ donnerait un résultat expérimental
+   identique. À partir de la distribution en masse invariante, la largeur de la
+   résonance est donc la convolution de l'ensemble des modes de désintégration
+   du $Z^0$ (à laquelle s'ajoute les effets expérimentaux tels que la résolution
+   en énergie du calorimètre électromagnétique). On ne peut donc
+   expérimentalement isolé les différents modes de désintégrations du $Z^0$.
+
+#+BEGIN_QUESTION
+3) [@3] Dessiner les diagrammes de Feynman correspondant à la collision $e^+e^-$
+   suivie d'une désintégration en $\nu \bar{\nu}$, $l^-l^+$ ou $q\bar{q}$ (où
+   $\nu$ ($\bar{\nu}$) représente un (anti)neutrino, $l^-$ ($l^+$) un
+   (anti)lepton chargé et $q$ ($\bar{q}$) un (anti)quark).
+#+END_QUESTION
+3) [@3] Diagrammes de Feynman
 
    #+ATTR_LATEX: :align C{0.25\textwidth}C{0.25\textwidth}C{0.25\textwidth}
    | [[./figures/Z0_qqbar_diagram.pdf]] | [[./figures/Z0_llbar_diagram.pdf]] | [[./figures/Z0_nunubar_diagram.pdf]] |
 
-4) Calcul du nombre de neutrinos
+#+BEGIN_QUESTION
+4) [@4] Lorsque plusieurs modes de désintégration existent, on associe à chacun
+   d'eux une largeur de désintégration partielle, dont la somme fournit la
+   largeur totale. Les modes principaux de désintégration du boson $Z^0$
+   correspondent à la création d'une paire fermion-antifermion, décomposés de la
+   façon suivante :
+   #+BEGIN_SRC latex
+     \begin{align*}
+       \Gamma_\text{tot.}(Z^0)=N_\nu\Gamma(Z^0\rightarrow\nu\bar{\nu})+N_\ell\Gamma(Z^0 \rightarrow \ell^- \ell^+)+\Gamma_\text{tot.} (Z^0\rightarrow q \bar{q})=\unit[2495]{MeV}
+     \end{align*}
+   #+END_SRC
+   Les 3 largeurs partielles de leptons chargés sont égales, et la largeur
+   partielle de désintégration en toutes les paires possibles quark-antiquark
+   vaut $\Gamma_\text{tot.}(Z^0 \rightarrow q\bar{q})$ = 1741 MeV.
+
+   La contribution d'une paire neutrino-antineutrino, de masse très inférieure à
+   celle du $Z^0$, se calcule en théorie électrofaible par la formule suivante :
+   #+BEGIN_SRC latex
+     \begin{align*}
+       \Gamma(Z^0\rightarrow\nu\bar{\nu}) = \frac{\alpha_{e.m.} \ M_Z c^2}{24\sin^2\theta_W\cos^2\theta_W}
+     \end{align*}
+   #+END_SRC
+
+   On prend comme valeur du couplage électromagnétique $\alpha_\text{em} =
+   \frac{e^2}{4\pi\epsilon_0\hbar c} = \frac{1}{128}$ à une échelle de $Q^2$
+   ~100 GeV^{2} (la différence entre cette valeur et celle du couplage effectif
+   $\alpha_\text{em} = 1/137$ à $Q^2$ = 0 provient de corrections
+   quantiques). Le paramètre $\theta_W$ est l'angle de mélange électrofaible. La
+   valeur de $\sin^2\theta_W$ dépend du schéma de renormalisation électrofaible
+   choisi : une valeur est donnée par la relation $\sin^2\theta_W = 1 -
+   (M_Wc^2/M_Zc^2)^2 = e^2/g^2$, où $e$ est la constante de couplage
+   électromagnétique et $g$ celle du groupe de symétrie SU(2)$_L$. On utilise
+   ici $\sin^2\theta_W\sim 0.23$.
+
+   Calculer la valeur du nombre de neutrinos légers $N_{\nu}$ existants.
+
+   /Remarque/ : Le résultat obtenu par les expériences LEP, $N_{\nu}$ = 3, se
+   traduit par une limite inférieure sur la masse d'un quatrième neutrino ayant
+   un couplage standard avec le $Z^0$. Cette limite est $M_{\nu_L} c^2 > M_Z /2$
+   45 GeV !
+#+END_QUESTION
+4) [@4] Calcul du nombre de neutrinos
    #+BEGIN_SRC latex
      \begin{align*}
        \Gamma_\text{tot.}(Z^0)=N_\nu\Gamma(Z^0\to\nu\bar{\nu})+N_\ell\Gamma(Z^0\to \ell^-\ell^+)+\Gamma_\text{tot.}(Z^0\to q\bar{q})=\unit[2495]{MeV}
@@ -4317,6 +4385,21 @@ incidents.
    #+END_SRC
 ** Neutrinos : production, détection, masse
 *** Chaîne $pp$ : $4p\to\alpha+2\nu$
+#+BEGIN_QUESTION
+ Dans la chaîne de conversion solaire dite "$pp$", les différentes réactions
+ aboutissant à la transformation de l'hydrogène en hélium émettent deux
+ neutrinos pour chaque conversion de quatre protons en une particule \alpha,
+ avec $Q$ = 26.72 MeV d'énergie libérée.
+
+1) Si on suppose que la chaîne "$pp$" est la seule responsable de la production
+   d'énergie solaire, estimer le flux de neutrinos solaires (en m^{-2}.s^{-1})
+   provenant de la chaîne "$pp$" et arrivant sur la Terre, sachant que la
+   puissance rayonnée par le Soleil vaut $P_{\odot}$ = 3.83 10^{26} J.s^{-1} et
+   que la distance Terre-Soleil vaut $R$ = 1.5\nbsp10^{8} km.
+
+2) Sachant que 3% de l'énergie solaire est emportée par les neutrinos, quelle
+   est leur énergie moyenne ?
+#+END_QUESTION
 1) Chaque réaction produit deux neutrinos et libère $Q=\unit[26.72]{MeV}$. Le
    nombre de neutrinos produit par le Soleil est
    #+BEGIN_SRC latex
@@ -4340,6 +4423,18 @@ incidents.
      \end{align*}
    #+END_SRC
 *** Limite sur la masse des neutrinos
+#+BEGIN_QUESTION
+La Supernova 1987A est située à une distance $D$ = 1.7 10^{5} années-lumière de
+la Terre. L'interaction de 10 neutrinos électroniques issus de cette source a
+été observée dans un détecteur contenant 1000 tonnes d'eau, pendant un
+intervalle de temps $\Delta t$ = 10\nbsp{}s. L'énergie moyenne des neutrinos était de
+10 MeV, et s'étendait de $E_1$ = 5 MeV à $E_2$ = 20 MeV. Les neutrinos ont été
+détectés par la réaction $\nu_e + n \rightarrow p + e^-$.
+
+1) Exprimer le temps d'arrivée d'un neutrino électronique en fonction de la
+   distance $D$, de sa masse $m_{\nu}c^2$ (supposée petite mais non nulle) et de
+   son énergie totale $E$.
+#+END_QUESTION
 1) Le temps d'arrivée d'un neutrino correspond à $t=\frac{D}{v}=\frac{D}{\beta
    c}$. Or
    #+BEGIN_SRC latex
@@ -4355,7 +4450,17 @@ incidents.
        t=\frac{D}{c\surd1-\frac{(m_\nu c^2)^2}{E^2}}
      \end{align*}
    #+END_SRC
-2) Les neutrinos les plus énergétiques arriveront les premiers soit
+
+#+BEGIN_QUESTION
+2) [@2] On suppose que les neutrinos sont tous émis au même instant. Montrer que
+   leur arrivée s'étale sur la durée :
+   #+BEGIN_SRC latex
+     \begin{align*}
+       \Delta t = \frac{D}{c} \frac{m_{\nu}^2c^4}{2} \left\{ \frac{1}{E_1^2} - \frac{1}{E_2^2}\right\}
+     \end{align*}
+   #+END_SRC
+#+END_QUESTION
+2) [@2] Les neutrinos les plus énergétiques arriveront les premiers soit
    #+BEGIN_SRC latex
      \begin{align*}
        \Updelta t&=t_1-t_2\\
@@ -4365,8 +4470,12 @@ incidents.
        &\simeq\frac{D}{c}\times\frac{m_\nu^2 c^4}{2}\left(\frac{1}{E_1^2}-\frac{1}{E_2^2}\right)
      \end{align*}
    #+END_SRC
-3) Du fait que $\Updelta t\leq\unit[10]{s}$, on déduit que la masse des neutrinos $m_\nu$
-   est nécessairement inférieure à
+
+#+BEGIN_QUESTION
+3) [@3] En déduire une limite supérieure sur la masse du neutrino électronique.
+#+END_QUESTION
+3) [@3] Du fait que $\Updelta t\leq\unit[10]{s}$, on déduit que la masse des
+   neutrinos $m_\nu$ est nécessairement inférieure à
    #+BEGIN_SRC latex
      \begin{align*}
        \Updelta t\leq\unit[10]{s}\Longleftrightarrow&m_\nu c^2\leq\sqrt{\frac{\Updelta t\times2c}{D}\times\frac{1}{1/E_1^2-1/E_2^2}}\\
@@ -4385,7 +4494,133 @@ incidents.
    future expérience Katrin devait gagner encore un ordre de grandeur sur la
    sensibilité : $m_{\nu_e}\leq\unit[0.2]{eV}$.
 
+** COMMENT Oscillations de neutrinos
+
+Si les (anti)neutrinos ont une masse, ils peuvent ne pas \^etre \'etats propres
+de l'hamiltonien d'interaction faible et osciller d'une esp\`ece \`a l'autre,
+comme dans le cas d'un syst\`eme quantique \`a deux \'etats, du fait de leur
+diff\'erence de masse $\Delta m^2 = |m_2^2 - m_1^2|c^4$. On appelle alors
+$\theta$ l'angle de m\'elange de ces deux \'etats.
+
+1) On suppose deux \'etats de neutrino qui se propagent $|\nu_a>$ et
+   $|\nu_b>$. Si ces \'etats ne sont pas \'etats propres de masse, on peut les
+   \'ecrire comme une rotation d'angle $\theta$ sur la base
+   ($|\nu_1>$,$|\nu_2>$). On appelle $\theta$ l'angle de m\'elange, tel que
+   $\sin \theta = <\nu_2|\nu_a>$, et on suppose que les \'etats propres de
+   masse, $|\nu_1>$ et $|\nu_2>$, de masses respectives $m_1c^2$ et $m_2c^2$, se
+   propagent suivant l'\'equation de Schr\"odinger~: $$|\nu_1(t)> = |\nu_1>
+   e^{-i\frac{E_1}{\hbar}t}\,\,\,\,\, {\rm et} \,\,\,\,\, |\nu_2(t)> = |\nu_2> e^{-i\frac{E_2}{\hbar}t}$$
+
+   1) Ecrire la fonction d'onde $|\nu (t)>$ des neutrinos qui se propagent, en
+      supposant qu'\`a l'instant initial les neutrinos de la source sont de type
+      (a).
+
+   2) En d\'eduire que la probabilit\'e de disparition $P(\nu_a \rightarrow
+      \nu_a, t)$ pour que ces neutrinos apparaissent toujours de type (a) dans
+      le d\'etecteur s'\'ecrit\footnote {Remarque: on suppose que les impulsions
+      des neutrinos sont les m\^emes, bien que leur \'energie soit
+      diff\'erente. De ce fait, ils se d\'eplacent depuis le m\^eme point
+      d'\'emission \`a des vitesses diff\'erentes, mais on consid\`erera qu'ils
+      ne sont pas s\'epar\'es car la longueur de coh\'erence est bien plus
+      grande que la distance source-d\'etecteur.}~:
+
+   3) On s'int\'eresse \`a la possibilit\'e d'un m\'elange de deux saveurs $a$
+      et $b$, avec un angle de m\'elange $\theta$. On peut montrer que la
+      probabilit\'e de disparition $P(\nu_a \rightarrow \nu_a, t)$, pour que des
+      neutrinos de type (a) issus d'une source apparaissent toujours de type (a)
+      en arrivant au temps $t$ dans un d\'etecteur, s'\'ecrit\footnote
+      {Remarque: on suppose que les impulsions des neutrinos sont les m\^emes,
+      bien que leur \'energie soit diff\'erente. De ce fait, ils se d\'eplacent
+      depuis le m\^eme point d'\'emission \`a des vitesses diff\'erentes, mais
+      on consid\`erera qu'ils ne sont pas s\'epar\'es car la longueur de
+      coh\'erence est bien plus grande que la distance source-d\'etecteur.}~: $$
+      P(\nu_a \rightarrow \nu_a, t) = 1\, - \, \sin^2 (2\theta) \, \sin^2
+      (\frac{\Delta E}{2\hbar} t)$$ o\`u $\Delta E = E_2 - E_1$ est la
+      diff\'erence d'\'energie entre les deux neutrinos.
+
+     En d\'eduire que la probabilit\'e de d\'etecter un neutrino $\nu_a$ \`a la
+      distance $L$ d'une source s'\'ecrit~:$$ P(\nu_a \rightarrow \nu_a) = 1\, -
+      \, \sin^2 (2\theta) \, \sin^2 (\frac{1.27\, \Delta m^2 ({\rm eV}^2)\, L
+      ({\rm m})}{E_{\nu}({\rm MeV})})$$ o\`u $E_{\nu}$ est l'\'energie moyenne
+      des neutrinos.
+
+2) L'exp\'erience CHOOZ, utilisant le r\'eacteur de l'ancienne centrale
+   nucl\'eaire des Ardennes comme source tr\`es pure d'antineutrinos
+   \'electroniques ($\sim 100\% \,\bar{\nu}_e$), a pris des donn\'ees de mars
+   \`a octobre 1997, en recherchant un signal de disparition (d\'etection d'un
+   signal associ\'e \`a la pr\'esence de $\bar{\nu}_e$). Pour ce d\'etecteur, on
+   donne $L \sim 1$~km et $E_{\nu} \sim 3$~MeV. Le r\'esultat publi\'e est le
+   suivant~: le nombre d'\'ev\'enements attendus \'etant de $(25.0\pm
+   1.0)$/jour, l'exp\'erience en a d\'etect\'e $(25.5\pm 1.0)$/jour, ce qui
+   correspond \`a {\bf aucune observation d'oscillation $\bar{\nu}_e \rightarrow
+   \bar{\nu}_i$, avec $i = \mu , \tau$, \`a $90\%$ de confiance}. Ils ont aussi
+   fourni le plot d'exclusion associ\'e, pr\'esent\'e sur la figure page
+   suivante, qui d\'efinit comme r\'egion sans oscillation la zone \`a droite et
+   au dessus du contour.
+
+   V\'erifier les limites de ce contour d'exclusion donn\'ees par $P <
+   1-P_{lim}$ (pour CHOOZ, on a $P_{lim}~=~\frac{2.3}{25.5}$ en tenant compte de
+   la limite statistique de Poisson \`a $90\%$ de confiance)~:
+
+   - valeur de $\sin^22\theta$ \`a grand $\Delta m^2$~?
+
+   - valeur de $\Delta m^2$ pour le m\'elange maximal $\sin^22\theta =1$~?
+
+   - valeurs de  $\Delta m^2$ et $\sin^22\theta$ au niveau du coude?
+
+\begin{figure}[h]
+\begin{center}
+\includegraphics[width=13cm,scale=0.5]{./figures/chooz.eps}
+\end{center}
+\end{figure}
+
 ** Les mésons neutres $K^0$ et $\bar{K}^0$
+#+BEGIN_QUESTION
+Le $K^0$ et le $\bar{K^0}$ sont des mésons étranges, produits par interaction
+forte et se désintègrant par interaction faible. Le $\bar{K^0}$, antiparticule
+du $K^0$, a la même masse que lui.
+
+Le $K^0$, comme le $\bar{K^0}$, se désintègre soit en deux pions, soit en
+trois pions, avec des constantes radioactives différentes :
+#+BEGIN_SRC latex
+  \begin{align*}
+    \lambda_{2\pi} = \unit[1.12\,10^{10}]{s^{-1}} \quad \text{et} \quad \lambda_{3\pi} = \unit[1.93\,10^7]{s^{-1}}
+  \end{align*}
+#+END_SRC
+
+Les états $K^0$ et $\bar{K^0}$ ne sont pas états propres de $\hat{\mathcal{C}}
+\hat{\mathcal{P}}$ (avec $\hat{\mathcal{P}}$ opération de parité ou symétrie
+droite-gauche et $\hat{\mathcal{C}}$ opération de conjugaison de charge ou
+symétrie particule-antiparticule).
+
+On est amené à définir les particules fictives $\ket{K^0_1}$ et $\ket{K^0_2}$
+#+BEGIN_SRC latex
+  \begin{align*}
+    \ket{K^0_1} = \frac{1}{\sqrt{2}} \ket{K^0} - \frac{1}{\sqrt{2}} \ket{\bar{K^0}} \quad\text{et}\quad \ket{K^0_2} = \frac{1}{\sqrt{2}} \ket{K^0} + \frac{1}{\sqrt{2}} \ket{\bar{K^0}}
+  \end{align*}
+#+END_SRC
+qui sont états propres de $\hat{\mathcal{C}}\hat{\mathcal{P}}$ avec les valeurs
+propres respectives +1 et -1.
+
+On a de la même manière
+#+BEGIN_SRC latex
+  \begin{align*}
+    \ket{K^0} = \frac{1}{\sqrt{2}} \ket{K^0_1} + \frac{1}{\sqrt{2}} \ket{K^0_2} \quad\text{et}\quad \ket{\bar{K^0}} = -\frac{1}{\sqrt{2}} \ket{K^0_1} + \frac{1}{\sqrt{2}} \ket{K^0_2}
+  \end{align*}
+#+END_SRC
+$\ket{K^0}$ et $\ket{\bar{K^0}}$ d'une part, $\ket{K^0_1}$ et $\ket{K^0_2}$
+d'autre part, formant deux bases orthonormées.
+
+1) On peut montrer que les états finaux hadroniques (à 2 ou 3 pions) de la
+   désintégration d'un $K^0$ ($\bar{K^0}$) sont des états propres de l'opération
+   $\hat{\mathcal{C}}\hat{\mathcal{P}}$, avec :
+   #+BEGIN_SRC latex
+     \begin{align*}
+       \hat{\mathcal{C}} \hat{\mathcal{P}} \ket{2\pi} = + \ket{2\pi} \quad\text{et}\quad \hat{\mathcal{C}} \hat{\mathcal{P}} \ket{3\pi} = - \ket{3\pi}
+     \end{align*}
+   #+END_SRC
+   En déduire le mode de désintégration de $K^0_1$ (resp.  $K^0_2$) et sa vie moyenne $\tau_1$ (resp. $\tau_2$).
+#+END_QUESTION
 1) Les états "fictifs" $\ket{K^0_1}$ et $\ket{K^0_2}$ sont des états propres de
    $\hat{\mathcal{C}}\hat{\mathcal{P}}$ de valeurs propres respectives +1 et
    -1. Les états finaux hadroniques à 2 et 3 pions sont également états propres
@@ -4404,8 +4639,33 @@ incidents.
    #+END_SRC
    On note que ces deux durées de vie sont compatibles avec celles issues de
    processus par intéraction faible.
-2) Soit un faisceau de particules de vitesse $v=\beta c$, de vie moyenne $\tau$
-   et d'intensité $I_0$
+
+#+BEGIN_QUESTION
+2) [@2] Les particules "physiques" $K^0$ et $\bar{K^0}$ sont considérées comme
+   des combinaisons linéaires des particules "fictives" $K^0_1$ et $K^0_2$. La
+   désintégration des $K^0$ et $\bar{K^0}$ peut alors se décomposer en deux
+   problèmes indépendants : la désintégration du $K^0_1$ et la désintégration du
+   $K^0_2$.
+
+   Soit un faisceau de particules de vitesse $v = \beta c$, de vie moyenne
+   $\tau$ et d'intensité $I_0$. On se place dans le référentiel du laboratoire.
+
+   1) Après un parcours de longueur $L$, montrer que l'intensité du faisceau est
+      réduite à $I = I_0 e^{-L/\ell}$, où $\ell = \gamma \beta c \tau$.
+
+   2) On produit un faisceau de $K^0$ d'impulsion $p$ = 10 GeV/c. On suppose que
+      les $K^0_1$ et $K^0_2$ ont même masse et même impulsion que les $K^0$
+      du faisceau initial.
+      1) Quel est, après un parcours de longueur $L$ = 10 m, le rapport $\rho =
+         I_1 / I_2$ de l'intensité des $K^0_1$ à celle des $K^0_2$ dans le
+         faisceau ?
+
+      2) Indiquer quel est alors, dans le faisceau, le rapport du nombre de
+         particules "physiques" $K^0$ à celui des particules "physiques"
+         $\bar{K^0}$.
+#+END_QUESTION
+2) [@2] Soit un faisceau de particules de vitesse $v=\beta c$, de vie moyenne
+   $\tau$ et d'intensité $I_0$
    1) Dans le référentiel du faisceau /i.e./ du centre de masse, l'intensité est
       égale $I=I_0\exp(-t^*/\tau)$. Dans le référentiel du laboratoire, cette
       intensité devient $I=I_0\exp(-t/\gamma\tau)$. Par ailleurs, le temps
