@@ -1,0 +1,77 @@
+\begin{tikzpicture}[y=-1cm]
+  \sf
+  \definecolor{red}{RGB}{221,42,43}
+  \definecolor{green}{RGB}{132,184,24}
+  \definecolor{blue}{RGB}{0,51,153}
+  %% \definecolor{blue}{RGB}{0,72,112}
+  \definecolor{orange}{RGB}{192,128,64}
+  \definecolor{gray}{RGB}{107,108,110}
+  \colorlet{default}{blue}
+
+
+  %% \path (0,20.91478) node[text=black,anchor=base west] {\fontsize{13.0}{15.6}\selectfont{}Tableau des coefficients de Clebsh-Gordan};
+  %% \path (0,21.41432) node[text=black,anchor=base west] {\fontsize{13.0}{15.6}\selectfont{}Note : Les coefficients ont tous une racine $\sqrt{}$};
+  \draw[black] (9.30063,21.34658) rectangle (10.79923,22.94678);
+  \draw[black] (10.79923,21.34658) rectangle (13.00057,22.94678);
+  \draw[black] (10.79923,21.34658) rectangle (13.00057,20.447);
+  \path (10.90083,22.24828) node[text=black,anchor=base west] {\fontsize{11.0}{15.6}\selectfont{}Coefficients};
+  \path (9.00007,20.41525) node[text=black,anchor=base west] {\fontsize{11.0}{15.6}\selectfont{}Notation};
+  \path (9.6012,21.01427) node[text=black,anchor=base west] {\fontsize{11.0}{15.6}\selectfont{}\color{green}$j_1$   $j_2$};
+  \path (11.00032,20.94865) node[text=black,anchor=base west] {\fontsize{11.0}{15.6}\selectfont{}\color{blue}$J$};
+  \path (11.59933,20.94865) node[text=black,anchor=base west] {\fontsize{11.0}{15.6}\selectfont{}\color{blue}$J$};
+  \path (12.20047,20.84705) node[text=black,anchor=base west] {\fontsize{13.0}{15.6}\selectfont{}\color{blue}...};
+  \path (10.90083,21.2471) node[text=black,anchor=base west] {\fontsize{11.0}{15.6}\selectfont{} \color{blue}$m$};
+  \path (11.49985,21.2471) node[text=black,anchor=base west] {\fontsize{11.0}{15.6}\selectfont{} \color{blue}$m$};
+  \path (12.20047,21.14762) node[text=black,anchor=base west] {\fontsize{13.0}{15.6}\selectfont{}\color{blue}...};
+  \path (9.40012,22.24828) node[text=black,anchor=base west] {\fontsize{11.0}{15.6}\selectfont{}\color{red}$m_1$   $m_2$};
+  \path (9.4996,22.54673) node[text=black,anchor=base west]  {\fontsize{13.0}{15.6}\selectfont{}\color{red}.};
+  \path (10.2997,22.54673) node[text=black,anchor=base west] {\fontsize{13.0}{15.6}\selectfont{}\color{red}.};
+  \path (9.4996,22.74782) node[text=black,anchor=base west]  {\fontsize{13.0}{15.6}\selectfont{}\color{red}.};
+  \path (10.2997,22.74782) node[text=black,anchor=base west] {\fontsize{13.0}{15.6}\selectfont{}\color{red}.};
+  \path (9.4996,22.64833) node[text=black,anchor=base west]  {\fontsize{13.0}{15.6}\selectfont{}\color{red}.};
+  \path (10.2997,22.64833) node[text=black,anchor=base west] {\fontsize{13.0}{15.6}\selectfont{}\color{red}.};
+
+  \renewcommand{\arraystretch}{0.7}
+  \setlength\tabcolsep{2pt}
+  \path (7,25.0) node[text=black,anchor=base west] {\fontsize{8.8}{15.6}\selectfont{}
+    \begin{tabular}{|r|r|r|r|r|r|r|r|}
+      \cline{3-3}
+      \multicolumn{2}{r|}{\color{green}\multirow{2}{*}{1 $\times$ \nicefrac{1}{2}}}&\color{blue}\nicefrac{3}{2}\\
+      \cline{4-5}
+      \multicolumn{2}{r|}{}&\color{blue}\nicefrac{+3}{2}&\multicolumn{1}{r}{\color{blue}\nicefrac{3}{2}}&\color{blue}\nicefrac{1}{2}\\
+      \cline{1-3}
+      \multicolumn{1}{|r}{\color{red}+1}&\color{red}\nicefrac{+1}{2}&1&\multicolumn{1}{r}{\color{blue}\nicefrac{+1}{2}}&\color{blue}\nicefrac{+1}{2}\\
+      \cline{1-7}
+      \multicolumn{1}{r|}{}&\multicolumn{1}{r}{\color{red}+1}&\color{red}\nicefrac{-1}{2}&\multicolumn{1}{r}{\nicefrac{1}{3}}&\nicefrac{2}{3}& \multicolumn{1}{r}{\color{blue}\nicefrac{3}{2}}& \color{blue}\nicefrac{1}{2}\\
+      \multicolumn{1}{r|}{}&\multicolumn{1}{r}{\color{red}0}&\color{red}\nicefrac{+1}{2}& \multicolumn{1}{r}{\nicefrac{2}{3}}&\nicefrac{-1}{3}&\multicolumn{1}{r}{\color{blue}\nicefrac{-1}{2}}&\color{blue}\nicefrac{-1}{2}\\
+      \cline{2-8}
+      \multicolumn{3}{r|}{}&\multicolumn{1}{r}{\color{red}0}& \color{red}\nicefrac{-1}{2}& \multicolumn{1}{r}{\nicefrac{2}{3}}&\nicefrac{1}{3}&\color{blue}\nicefrac{3}{2}\\
+      \multicolumn{3}{r|}{}&\multicolumn{1}{r}{\color{red}-1}&\color{red}\nicefrac{+1}{2}&\multicolumn{1}{r}{\nicefrac{1}{3}}&\nicefrac{-2}{3}&\color{blue}\nicefrac{-3}{2}\\
+      \cline{4-8}
+      \multicolumn{5}{r|}{}&\multicolumn{1}{r}{\color{red}-1}&\color{red}\nicefrac{-1}{2}&1\\
+      \cline{6-8}
+    \end{tabular}
+  };
+
+  \path (1,23.0) node[text=black,anchor=base west] {\fontsize{8.8}{15.6}\selectfont{}
+    \begin{tabular}{|r|r|r|r|r|r|}
+      \cline{3-3}
+      \multicolumn{2}{r|}{\color{green}\multirow{2}{*}{\nicefrac{1}{2} $\times$ \nicefrac{1}{2}}}&\color{blue}1\\
+      \cline{4-5}
+      \multicolumn{2}{r|}{}&\color{blue}+1&\multicolumn{1}{r}{\color{blue}1}&\color{blue}0\\
+      \cline{1-3}
+      \multicolumn{1}{|r}{\color{red}\nicefrac{+1}{2}}&\color{red}\nicefrac{+1}{2}&1&\multicolumn{1}{r}{\color{blue}0}&\color{blue}0\\
+      \cline{1-6}
+      \multicolumn{1}{r|}{}&\multicolumn{1}{r}{\color{red}\nicefrac{1}{2}}&\color{red}\nicefrac{-1}{2}&\multicolumn{1}{r}{\nicefrac{1}{2}}&\nicefrac{1}{2}&\color{blue}1\\
+      \multicolumn{1}{r|}{}&\multicolumn{1}{r}{\color{red}\nicefrac{-1}{2}}&\color{red}\nicefrac{+1}{2}&\multicolumn{1}{r}{\nicefrac{1}{2}}&\nicefrac{-1}{2}&\color{blue}-1\\
+      \cline{2-6}
+      \multicolumn{3}{r|}{}&\multicolumn{1}{r}{\color{red}\nicefrac{-1}{2}}&\color{red}\nicefrac{-1}{2}&1\\
+      \cline{4-6}
+    \end{tabular}
+  };
+
+\end{tikzpicture}%
+%% Configure (x)emacs for this file ...
+%% Local Variables:
+%% mode: latex
+%% End:

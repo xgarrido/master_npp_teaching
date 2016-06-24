@@ -4722,3 +4722,94 @@ d'autre part, formant deux bases orthonormées.
 
 [fn:11] W. David Arnett & Jonathan L. Roser [[http://journals.aps.org/prl/abstract/10.1103/PhysRevLett.58.1906][Physical Review Letter 58]], David
 N. Spergel & John N. Bahcall [[http://www.sciencedirect.com/science/article/pii/0370269388907903][Physical Letters B]]
+
+
+* Annexes
+:PROPERTIES:
+:UNNUMBERED: t
+:END:
+
+** Rappels de relativité restreinte
+*** Paramètres de Lorentz
+Pour une particule de masse $m$ :
+#+BEGIN_SRC latex
+  \begin{align*}
+    \beta = \frac{v}{c} = \frac{pc}{E} \quad \gamma = \frac{1}{\sqrt{1-\beta^2}}=\frac{E}{m_0c^2}
+  \end{align*}
+#+END_SRC
+
+*** Énergie des particules
+
+- Énergie de masse au repos : $E_0 = m_0 c^2$, Énergie totale : $E = mc^2 =
+  \gamma m_0 c^2 = T + m_0 c^2$
+
+- Énergie cinétique $T = (\gamma - 1) m_0 c^2$
+
+- Pour une particule, on a $\vv{p}^2c^2 = T(T + 2 m_0 c^2)$ et $E^2 -
+  {\vv{p}}^2c^2 = m_0^2 c^4$
+
+- Pour un système de $n$ particules, la quantité $(\sum_{i=1}^{n} E_i)^2 -
+  (\sum_{i=1}^n \vv{p})^2 c^2$ est un invariant dans tout changement de
+  référentiel.
+
+- Pour des particules de masse nulle ($\beta$ = 1, $\gamma\rightarrow\infty$)
+  #+BEGIN_SRC latex
+    \begin{align*}
+      E = pc = h\nu
+    \end{align*}
+  #+END_SRC
+
+*** Transformation de Lorentz
+#+BEGIN_SRC latex
+  \begin{align*}
+    \left(\begin{array}{c}
+      X^{0\prime} \\ X^{1\prime} \\ X^{2\prime} \\ X^{3\prime}
+    \end{array} \right) =
+    \left(\begin{array}{rrrr} \gamma & 0 & 0 & -\beta \gamma \\
+      0 & 1 & 0 & 0 \\ 0 & 0 & 1 & 0 \\
+      -\beta \gamma & 0 & 0 & \gamma \end{array} \right)
+    \left(\begin{array}{c} X^0 \\ X^1 \\ X^2 \\ X^3 \end{array} \right)
+  \end{align*}
+#+END_SRC
+$\{ X^{\mu}\}$ et $\{ X^{\mu \prime}\}$ sont les composantes d'un même
+quadrivecteur dans les référentiels S (labo) et S'(CdM).  S' est animé d'un
+mouvement de translation de vitesse $v = \beta c$ le long de l'axe $Oz$ de S. La
+transformation inverse s'obtient en changeant $\beta$ en $-\beta$.
+
+*** Quadrivecteurs
+
+#+BEGIN_SRC latex
+  \begin{align*}
+    \begin{array}{lllll}
+      \text{4-position :} & X^0 = ct,& X^1 = x,& X^2 = y,& X^3 = z \\
+      \text{4-impulsion :}& X^0 = E/c,& X^1 = p_x,& X^2 = p_y,& X^3 = p_z
+    \end{array}
+  \end{align*}
+#+END_SRC
+
+*** Invariants
+
+Produit scalaire de deux quadrivecteurs : $X^0 Y^0 - X^1 Y^1 - X^2 Y^2 - X^3 Y^3$
+
+Temps propre : $c^2 d\tau^2 = c^2 dt^2 - dx^2 -dy^2 - dz^2$
+
+Masse effective : $m^2 c^4 = E^2 - \vv{p}^2c^2 = E^2 - p_x^2 c^2 - p_y^2c^2 -
+p_z^2c^2$
+** Tableau des coefficients de Clebsh-Gordan
+On ne donne ci-dessous que les coefficients de Clebsh-Gordan utilisables en
+TD. Tous les coefficients $C$ donnés dans cette table doivent être lus comme
+$\sqrt{C}$.
+
+#+BEGIN_CENTER
+#+ATTR_LATEX: :width 0.9\linewidth
+[[file:figures/clebsh.pdf]]
+#+END_CENTER
+
+Par exemple, le coefficient correspondant à $j_1$ = 1, $j_2$ = \nicefrac{1}{2},
+$m_1$ = 1, $m_2$ = \nicefrac{-1}{2}, $J$ = \nicefrac{3}{2}, $M$ =
+\nicefrac{1}{2} vaut :
+#+BEGIN_SRC latex
+  \begin{align*}
+    \left\langle 1 \frac{1}{2} 1 \frac{-1}{2} \Big| \frac{3}{2} \frac{1}{2} \right\rangle = \frac{1}{\sqrt{3}}
+  \end{align*}
+#+END_SRC
