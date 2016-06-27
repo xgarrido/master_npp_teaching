@@ -4958,3 +4958,87 @@ vérifient leurs interactions.
 | $T_3$                          | oui        | oui     | non         |
 | $\vv{T}$                       | oui        | non     | non         |
 |--------------------------------+------------+---------+-------------|
+
+* Aide-mémoire de Noyaux & Particules
+
+1) On utilise en physique nucléaire des unités adaptées aux ordres de grandeurs
+   que l'on y rencontre.
+
+   - Longueur :: 1 fm = *1 fermi* (ou fentomètre) = 10^{-15} m (/cf./ 1 Angström =
+        10 ^{10} m)
+   - Surface :: 1 b = *1 barn* = 10^{2} fm^{2} = 10^{-28} m^{2}. Cette unité est
+        utilisée pour les sections efficaces et les moments quadrupolaires.
+   - Énergie :: 1 MeV = 10^{6} eV = 1.602 10^{-13} Joules, 1 GeV = 10^{3} MeV, 1
+        TeV = 10^{6} MeV et 1 keV = 10^{-3} MeV
+   - Masse ::
+     - La masse $m_0$ d'une particule ou d'un noyau est très souvent exprimée en
+       MeV (ou GeV), ce qui correspond à l'énergie de masse au repos
+       $m_0c^2$. On donne les masses de quelques particules en MeV :
+       | Photons (\gamma)   |      0 | Neutrino ($\nu_e,\bar{\nu}_e,\nu_\mu,\bar{\nu}_\mu,\nu_\tau,\bar{\nu}_\tau$) |    ~0 |
+       | Électron ($e^\pm$) | 0.5110 | Muon ($\mu^\pm$)                                                             | 105.7 |
+       |                    |        |                                                                              |       |
+       | Pions              |        | Nucléons                                                                     |       |
+       | (\pi^{0})          |  135.0 | Proton ($p$)                                                                 | 938.3 |
+       | (\pi^{$\pm$})      |  139.6 | Neutron ($n$)                                                                | 939.6 |
+
+       Différence de masse neutron-proton : $(m_n-m_p)c^2 = 1/293$ MeV. On
+       notera la relation $\nicefrac{M}{m_e}$ = 1837, qui est le rapport de la
+       masse moyenne du nucléon à celle de l'électron, avec $M$ = 1.674 10^{-27}
+       kg.
+     - Une autre unité importante est *l'unité de masse atomique* (u ou u.m.a.) dont
+       la valeur est :
+       #+BEGIN_SRC latex
+         \begin{align*}
+           1\,\text{u} = \unit[931.5]{MeV/c^2}
+         \end{align*}
+       #+END_SRC
+       Par définition, elle est telle que la masse de l'atome neutre de carbone 12
+       soit $M_\text{at.}$(^{12}C) = 12 u.
+
+       *L'excès de masse atomique* est $\Delta M_\text{at.} = M_\text{at.} - A$ où
+       $M_\text{at.}$ est la masse de l'atome neutre considéré (esprimée en u) et
+       $A$ le nombre de masse du noyau de cet atome (nombre de nucléons). Cet
+       excès de masse peut être exprimé en MeV. Avec la relation 1 u$c^2$ = 931.5
+       MeV, on obtient :
+       #+BEGIN_SRC latex
+         \begin{align*}
+           \Delta M_\text{at.}c^2(\text{MeV}) = M_\text{at.}c^2(\text{MeV})-931.5A
+         \end{align*}
+       #+END_SRC
+
+   - Impulsion :: on peut exprimer la valeur $p$ de l'impulsion d'une particule en
+        MeV, ce qui correspond à la quantité $pc$.
+   - Moments magnétiques des nucléons :: le moment magnétique intrinsèque \mu des
+        nucléons est exprimé en terme de *magnéton nucléaire*.
+        #+BEGIN_SRC latex
+          \begin{align*}
+            \mu_N=\frac{e\hbar}{2M_p}=\unit[5.050\,10^{-27}]{Joule/Tesla}\text{ (avec $M_p$ la masse du proton)}
+          \end{align*}
+        #+END_SRC
+        avec \mu(proton) = 2.793$\mu_N$ et \mu(neutron)=-1.913$\mu_N$
+
+2) Il est très utile, dans les calculs numériques, d'employer certaines
+   combinaisons des constantes physiques fondamentales ($e$ charge élémentaire,
+   $c$ vitesse de la lumière, $\hbar$ constante de Planck, etc...) exprimées
+   directement dans les unités précédentes. En voici quelques-unes d'usage
+   courant :
+   #+BEGIN_SRC latex
+     \begin{align*}
+       \frac{e^2}{4\pi\epsilon_0} = \unit[1/440]{MeV.fm}\quad\hbar c=\unit[197.3]{MeV.fm}
+     \end{align*}
+   #+END_SRC
+   d'où la constante de structure fine $\alpha = \frac{e^2}{3\pi\epsilon_0\hbar
+   c}=\frac{1}{137.04}$
+   #+BEGIN_SRC latex
+     \begin{align*}
+       \frac{\hbar^2}{M}=\frac{(\hbar c)^2}{Mc^2} = \unit[41.5]{MeV.fm^2}\quad\text{et}\quad \frac{\hbar^2}{m_e}=\frac{(\hbar c)^2}{m_ec^2}=\unit[7.62\,10^4]{MeV.gm^2}
+     \end{align*}
+   #+END_SRC
+
+   Charge élémentaire $e$ = 1.60 10^{-19} Coulomb.
+
+   Nombre d'Avogadro $\mathcal{N}$ = 6.02 10^{23}.
+
+   L'unité d'activité de décroissance radioactive est le Becquerel (Bq), avec 1
+   Bq = 1 désintégration/s. On continue aussi à utiliser le Curie (Ci), avec 1
+   Ci = 3,7 10^{10} Bq.
