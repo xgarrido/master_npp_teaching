@@ -1,0 +1,319 @@
+\tikzset{%
+  >=latex, % option for nice arrows
+  inner sep=0pt,%
+  outer sep=2pt,%
+  mark coordinate/.style={inner sep=0pt,outer sep=0pt,minimum size=3pt,
+    fill=black,circle}%
+}
+\begin{tikzpicture}[y=-1cm]
+\sf
+  \definecolor{red}{RGB}{221,42,43}
+  \definecolor{green}{RGB}{132,184,24}
+  \definecolor{blue}{RGB}{0,51,153}
+  %% \definecolor{blue}{RGB}{0,72,112}
+  \definecolor{orange}{RGB}{192,128,64}
+  \definecolor{gray}{RGB}{107,108,110}
+  \colorlet{default}{blue}
+
+  \draw[black] (1.40123,15.82843) -- (1.5494,15.82843) -- (1.69968,15.82843);
+  \draw[black] (1.40123,16.22848) -- (1.5494,16.22848) -- (1.69968,16.22848);
+  \draw[black] (1.40123,16.9291) -- (1.5494,16.9291) -- (1.69968,16.9291);
+
+\path (0,16.33008) node[text=green,anchor=base west] {\fontsize{13.0}{15.6}\selectfont{}even};
+\path (0,15.93003) node[text=green,anchor=base west] {\fontsize{13.0}{15.6}\selectfont{}6$\hbar\omega$};
+\path (0.09948,19.42888) node[text=green,anchor=base west] {\fontsize{13.0}{15.6}\selectfont{}odd};
+\path (0,19.02883) node[text=green,anchor=base west] {\fontsize{13.0}{15.6}\selectfont{}5$\hbar\omega$};
+\path (0,22.12975) node[text=green,anchor=base west] {\fontsize{13.0}{15.6}\selectfont{}even};
+\path (0,21.7297) node[text=green,anchor=base west] {\fontsize{13.0}{15.6}\selectfont{}4$\hbar\omega$};
+\path (0.09948,24.52793) node[text=green,anchor=base west] {\fontsize{13.0}{15.6}\selectfont{}odd};
+\path (0,24.12788) node[text=green,anchor=base west] {\fontsize{13.0}{15.6}\selectfont{}3$\hbar\omega$};
+\path (0,26.02865) node[text=green,anchor=base west] {\fontsize{13.0}{15.6}\selectfont{}even};
+\path (0,25.6286) node[text=green,anchor=base west] {\fontsize{13.0}{15.6}\selectfont{}2$\hbar\omega$};
+\path (0.09948,27.12932) node[text=green,anchor=base west] {\fontsize{13.0}{15.6}\selectfont{}odd};
+\path (0,26.72927) node[text=green,anchor=base west] {\fontsize{13.0}{15.6}\selectfont{}1$\hbar\omega$};
+\path (0.40005,27.82782) node[text=green,anchor=base west] {\fontsize{13.0}{15.6}\selectfont{}0};
+
+\draw [decorate,decoration={brace,amplitude=5pt,mirror},green] (1.3,15.3) -- (1.3,17);
+\draw [decorate,decoration={brace,amplitude=5pt,mirror},green] (1.3,18.3) -- (1.3,20.3);
+\draw [decorate,decoration={brace,amplitude=5pt,mirror},green] (1.3,21) -- (1.3,22.8);
+\draw [decorate,decoration={brace,amplitude=5pt,mirror},green] (1.3,23.8) -- (1.3,24.6);
+\draw [decorate,decoration={brace,amplitude=5pt,mirror},green] (1.3,25.4) -- (1.3,26.1);
+
+
+\draw[black] (3.39937,14.72988) -- (3.64913,14.72988) -- (3.90102,14.72988);
+\draw[black] (5.39962,14.72988) -- (6.90033,14.72988) -- (8.39893,14.72988);
+\draw[black] (9.40012,14.72988) -- (9.64988,14.72988) -- (9.89965,14.72988);
+\draw[black] (11.00032,14.72988) -- (11.19928,14.72988) -- (11.40037,14.72988);
+\draw[black] (3.39937,15.02833) -- (4.65032,15.02833) -- (5.89915,15.02833);
+\draw[black] (7.30038,15.02833) -- (7.85072,15.02833) -- (8.39893,15.02833);
+\draw[dashed,black] (3.39937,15.02833) -- (3.1496,15.42838) -- (2.89983,15.82843);
+\draw[dashed,black] (2.89983,15.42838) -- (3.1496,15.42838) -- (3.39937,15.42838);
+\draw[black] (2.30082,15.42838) -- (2.59927,15.42838) -- (2.89983,15.42838);
+\draw[black] (3.39937,15.42838) -- (3.90102,15.42838) -- (4.40055,15.42838);
+\draw[black] (5.6007,15.42838) -- (6.99982,15.42838) -- (8.39893,15.42838);
+\draw[black] (2.30082,16.22848) -- (2.59927,16.22848) -- (2.89983,16.22848);
+\draw[black] (3.39937,15.72895) -- (4.99957,15.72895) -- (6.59977,15.72895);
+\draw[black] (7.79992,15.72895) -- (8.10048,15.72895) -- (8.39893,15.72895);
+\draw[dashed,black] (3.39937,15.72895) -- (3.1496,15.97872) -- (2.89983,16.22848);
+\draw[dashed,black] (2.89983,16.22848) -- (3.1496,16.47825) -- (3.39937,16.73013);
+\draw[black] (2.30082,16.9291) -- (2.59927,16.9291) -- (2.89983,16.9291);
+\draw[dashed,black] (3.39937,16.02952) -- (3.1496,16.47825) -- (2.89983,16.9291);
+\draw[black] (3.39937,16.73013) -- (5.24933,16.73013) -- (7.0993,16.73013);
+\draw[black] (8.19997,16.73013) -- (8.29945,16.73013) -- (8.39893,16.73013);
+\draw[black] (2.30082,15.82843) -- (2.59927,15.82843) -- (2.89983,15.82843);
+\draw[black] (3.39937,16.02952) -- (3.64913,16.02952) -- (3.90102,16.02952);
+\draw[black] (5.20065,16.02952) -- (6.80085,16.02952) -- (8.39893,16.02952);
+\draw[black] (3.39937,16.33008) -- (4.40055,16.33008) -- (5.39962,16.33008);
+\draw[black] (6.59977,16.33008) -- (7.49935,16.33008) -- (8.39893,16.33008);
+\draw[black] (9.40012,15.02833) -- (9.64988,15.02833) -- (9.89965,15.02833);
+\draw[black] (9.40012,15.72895) -- (9.64988,15.72895) -- (9.89965,15.72895);
+\draw[black] (9.40012,15.42838) -- (9.64988,15.42838) -- (9.89965,15.42838);
+\draw[black] (9.40012,16.02952) -- (9.64988,16.02952) -- (9.89965,16.02952);
+\draw[black] (9.40012,16.33008) -- (9.64988,16.33008) -- (9.89965,16.33008);
+\draw[black] (9.40012,16.73013) -- (9.64988,16.73013) -- (9.89965,16.73013);
+\draw[dashed,black] (2.89983,15.82843) -- (3.1496,16.0782) -- (3.39937,16.33008);
+\draw[dashed,black] (2.89983,14.22823) -- (3.1496,14.48012) -- (3.39937,14.72988);
+\draw[dashed,black] (2.89983,16.9291) -- (3.1496,17.42863) -- (3.39937,17.92817);
+\draw[dashed,black] (3.39937,18.22873) -- (3.1496,18.32822) -- (2.89983,18.42982);
+\draw[dashed,black] (2.89983,18.42982) -- (3.1496,18.5293) -- (3.39937,18.62878);
+\draw[dashed,black] (3.39937,18.92935) -- (3.1496,19.02883) -- (2.89983,19.12832);
+\draw[dashed,black] (2.89983,19.12832) -- (3.1496,19.22992) -- (3.39937,19.3294);
+\draw[dashed,black] (3.39937,19.62997) -- (3.1496,19.92842) -- (2.89983,20.22898);
+\draw[dashed,black] (2.89983,20.22898) -- (3.1496,20.52955) -- (3.39937,20.828);
+\draw[black] (1.40123,18.42982) -- (1.5494,18.42982) -- (1.69968,18.42982);
+\draw[black] (1.40123,19.12832) -- (1.5494,19.12832) -- (1.69968,19.12832);
+\draw[black] (1.40123,20.22898) -- (1.5494,20.22898) -- (1.69968,20.22898);
+\draw[black] (2.4003,18.42982) -- (2.65007,18.42982) -- (2.89983,18.42982);
+\draw[black] (2.30082,19.12832) -- (2.59927,19.12832) -- (2.89983,19.12832);
+\draw[black] (2.4003,20.22898) -- (2.65007,20.22898) -- (2.89983,20.22898);
+\draw[black] (3.39937,17.92817) -- (4.55083,17.92817) -- (5.70018,17.92817);
+\draw[black] (6.99982,17.92817) -- (7.70043,17.92817) -- (8.39893,17.92817);
+\draw[black] (3.39937,18.22873) -- (3.64913,18.22873) -- (3.90102,18.22873);
+\draw[black] (5.10117,18.22873) -- (6.75005,18.22873) -- (8.39893,18.22873);
+\draw[black] (3.39937,18.62878) -- (3.64913,18.62878) -- (3.90102,18.62878);
+\draw[black] (3.39937,18.92935) -- (4.30107,18.92935) -- (5.20065,18.92935);
+\draw[black] (3.39937,19.3294) -- (4.30107,19.3294) -- (5.20065,19.3294);
+\draw[black] (3.39937,19.62997) -- (4.95088,19.62997) -- (6.50028,19.62997);
+\draw[black] (3.39937,20.828) -- (4.95088,20.828) -- (6.50028,20.828);
+\draw[black] (7.70043,19.62997) -- (8.04968,19.62997) -- (8.39893,19.62997);
+\draw[black] (7.8994,20.828) -- (8.14917,20.828) -- (8.39893,20.828);
+\draw[black] (6.2992,18.92935) -- (7.34907,18.92935) -- (8.39893,18.92935);
+\draw[black] (6.2992,19.3294) -- (7.34907,19.3294) -- (8.39893,19.3294);
+\draw[black] (9.40012,17.92817) -- (9.64988,17.92817) -- (9.89965,17.92817);
+\draw[black] (9.40012,18.22873) -- (9.64988,18.22873) -- (9.89965,18.22873);
+\draw[black] (9.40012,18.92935) -- (9.64988,18.92935) -- (9.89965,18.92935);
+\draw[black] (9.40012,19.3294) -- (9.64988,19.3294) -- (9.89965,19.3294);
+\draw[black] (9.40012,19.62997) -- (9.64988,19.62997) -- (9.89965,19.62997);
+\draw[black] (9.40012,20.828) -- (9.64988,20.828) -- (9.89965,20.828);
+\draw[black] (11.00032,17.92817) -- (11.19928,17.92817) -- (11.40037,17.92817);
+\draw[black] (5.10117,18.62878) -- (6.75005,18.62878) -- (8.39893,18.62878);
+\draw[black] (11.00032,20.828) -- (11.19928,20.828) -- (11.40037,20.828);
+\draw[dashed,black] (2.89983,21.12857) -- (3.1496,21.12857) -- (3.39937,21.12857);
+\draw[dashed,black] (3.39937,21.42913) -- (3.1496,21.52862) -- (2.89983,21.6281);
+\draw[dashed,black] (2.89983,21.6281) -- (3.1496,21.7297) -- (3.39937,21.82918);
+\draw[dashed,black] (3.39937,22.12975) -- (3.1496,22.4282) -- (2.89983,22.72877);
+\draw[dashed,black] (2.89983,22.72877) -- (3.1496,23.02933) -- (3.39937,23.32778);
+\draw[dashed,black] (3.39937,23.62835) -- (3.1496,23.77863) -- (2.89983,23.92892);
+\draw[dashed,black] (3.39937,23.92892) -- (3.1496,24.22948) -- (2.89983,24.52793);
+\draw[dashed,black] (2.89983,23.92892) -- (3.1496,24.0792) -- (3.39937,24.22948);
+\draw[dashed,black] (2.89983,24.52793) -- (3.1496,24.77982) -- (3.39937,25.02958);
+\draw[black] (3.39937,21.12857) -- (3.85022,21.12857) -- (4.30107,21.12857);
+\draw[black] (5.39962,21.12857) -- (6.90033,21.12857) -- (8.39893,21.12857);
+\draw[black] (3.39937,21.42913) -- (4.40055,21.42913) -- (5.39962,21.42913);
+\draw[black] (6.69925,21.42913) -- (7.55015,21.42913) -- (8.39893,21.42913);
+\draw[black] (3.39937,21.82918) -- (5.14985,21.82918) -- (6.90033,21.82918);
+\draw[black] (8.10048,21.82918) -- (8.25077,21.82918) -- (8.39893,21.82918);
+\draw[black] (3.39937,22.12975) -- (4.09998,22.12975) -- (4.8006,22.12975);
+\draw[black] (3.39937,23.32778) -- (4.09998,23.32778) -- (4.8006,23.32778);
+\draw[black] (5.89915,22.12975) -- (7.1501,22.12975) -- (8.39893,22.12975);
+\draw[black] (5.89915,23.32778) -- (7.1501,23.32778) -- (8.39893,23.32778);
+\draw[black] (3.39937,23.62835) -- (3.60045,23.62835) -- (3.79942,23.62835);
+\draw[black] (3.39937,23.92892) -- (4.44923,23.92892) -- (5.4991,23.92892);
+\draw[black] (3.39937,24.22948) -- (3.60045,24.22948) -- (3.79942,24.22948);
+\draw[black] (3.39937,25.02958) -- (4.50003,25.02958) -- (5.6007,25.02958);
+\draw[black] (4.90008,23.62835) -- (6.65057,23.62835) -- (8.39893,23.62835);
+\draw[black] (6.59977,23.92892) -- (7.49935,23.92892) -- (8.39893,23.92892);
+\draw[black] (4.90008,24.22948) -- (6.65057,24.22948) -- (8.39893,24.22948);
+\draw[black] (6.69925,25.02958) -- (7.55015,25.02958) -- (8.39893,25.02958);
+\draw[black] (1.40123,21.12857) -- (1.5494,21.12857) -- (1.69968,21.12857);
+\draw[black] (1.40123,21.6281) -- (1.5494,21.6281) -- (1.69968,21.6281);
+\draw[black] (1.40123,22.72877) -- (1.5494,22.72877) -- (1.69968,22.72877);
+\draw[black] (1.40123,24.52793) -- (1.5494,24.52793) -- (1.69968,24.52793);
+\draw[black] (2.30082,21.12857) -- (2.55058,21.12857) -- (2.80035,21.12857);
+\draw[black] (2.4003,21.6281) -- (2.65007,21.6281) -- (2.89983,21.6281);
+\draw[black] (2.4003,22.72877) -- (2.65007,22.72877) -- (2.89983,22.72877);
+\draw[black] (2.4003,23.92892) -- (2.65007,23.92892) -- (2.89983,23.92892);
+\draw[black] (2.4003,24.52793) -- (2.65007,24.52793) -- (2.89983,24.52793);
+\draw[black] (1.40123,23.92892) -- (1.5494,23.92892) -- (1.69968,23.92892);
+\draw[black] (9.40012,21.12857) -- (9.64988,21.12857) -- (9.89965,21.12857);
+\draw[black] (9.40012,21.42913) -- (9.64988,21.42913) -- (9.89965,21.42913);
+\draw[black] (9.40012,21.82918) -- (9.64988,21.82918) -- (9.89965,21.82918);
+\draw[black] (9.40012,22.12975) -- (9.64988,22.12975) -- (9.89965,22.12975);
+\draw[black] (9.40012,23.32778) -- (9.64988,23.32778) -- (9.89965,23.32778);
+\draw[black] (9.40012,23.62835) -- (9.64988,23.62835) -- (9.89965,23.62835);
+\draw[black] (9.40012,23.92892) -- (9.64988,23.92892) -- (9.89965,23.92892);
+\draw[black] (9.40012,24.22948) -- (9.64988,24.22948) -- (9.89965,24.22948);
+\draw[black] (9.40012,27.72833) -- (9.64988,27.72833) -- (9.89965,27.72833);
+\draw[black] (9.40012,27.12932) -- (9.64988,27.12932) -- (9.89965,27.12932);
+\draw[black] (9.40012,26.72927) -- (9.64988,26.72927) -- (9.89965,26.72927);
+\draw[black] (9.40012,26.22973) -- (9.64988,26.22973) -- (9.89965,26.22973);
+\draw[black] (9.40012,25.92917) -- (9.64988,25.92917) -- (9.89965,25.92917);
+\draw[black] (1.40123,15.42838) -- (1.5494,15.42838) -- (1.69968,15.42838);
+\draw[black] (9.40012,25.6286) -- (9.64988,25.6286) -- (9.89965,25.6286);
+\draw[black] (9.40012,25.02958) -- (9.64988,25.02958) -- (9.89965,25.02958);
+\draw[black] (7.60095,27.72833) -- (8.001,27.72833) -- (8.39893,27.72833);
+\draw[black] (5.10117,27.12932) -- (6.75005,27.12932) -- (8.39893,27.12932);
+\draw[black] (5.10117,26.72927) -- (6.75005,26.72927) -- (8.39893,26.72927);
+\draw[black] (7.60095,26.22973) -- (8.001,26.22973) -- (8.39893,26.22973);
+\draw[black] (5.20065,25.92917) -- (6.80085,25.92917) -- (8.39893,25.92917);
+\draw[black] (7.60095,25.6286) -- (8.001,25.6286) -- (8.39893,25.6286);
+\draw[black] (3.39937,27.72833) -- (4.95088,27.72833) -- (6.50028,27.72833);
+\draw[black] (3.39937,27.12932) -- (3.69993,27.12932) -- (4.0005,27.12932);
+\draw[black] (3.39937,26.72927) -- (3.69993,26.72927) -- (4.0005,26.72927);
+\draw[black] (3.39937,26.22973) -- (4.95088,26.22973) -- (6.50028,26.22973);
+\draw[black] (3.39937,25.92917) -- (3.69993,25.92917) -- (4.0005,25.92917);
+\draw[black] (3.39937,25.6286) -- (4.95088,25.6286) -- (6.50028,25.6286);
+\draw[black] (1.40123,27.72833) -- (1.5494,27.72833) -- (1.69968,27.72833);
+\draw[black] (1.40123,26.92823) -- (1.5494,26.92823) -- (1.69968,26.92823);
+\draw[black] (1.40123,25.92917) -- (1.5494,25.92917) -- (1.69968,25.92917);
+\draw[black] (1.40123,25.52912) -- (1.5494,25.52912) -- (1.69968,25.52912);
+\draw[black] (2.4003,27.72833) -- (2.65007,27.72833) -- (2.89983,27.72833);
+\draw[black] (2.4003,26.92823) -- (2.65007,26.92823) -- (2.89983,26.92823);
+\draw[black] (2.4003,25.92917) -- (2.65007,25.92917) -- (2.89983,25.92917);
+\draw[black] (2.4003,25.52912) -- (2.65007,25.52912) -- (2.89983,25.52912);
+\draw[dashed,black] (2.89983,25.52912) -- (3.1496,25.72808) -- (3.39937,25.92917);
+\draw[dashed,black] (2.89983,25.92917) -- (3.1496,26.07945) -- (3.39937,26.22973);
+\draw[dashed,black] (3.39937,25.6286) -- (3.1496,25.77888) -- (2.89983,25.92917);
+\draw[dashed,black] (2.89983,26.92823) -- (3.1496,27.02772) -- (3.39937,27.12932);
+\draw[dashed,black] (3.39937,26.72927) -- (3.1496,26.82875) -- (2.89983,26.92823);
+\draw[dashed,black] (2.89983,27.72833) -- (3.1496,27.72833) -- (3.39937,27.72833);
+\draw[black] (11.00032,23.32778) -- (11.19928,23.32778) -- (11.40037,23.32778);
+\draw[black] (11.00032,25.02958) -- (11.19928,25.02958) -- (11.40037,25.02958);
+\draw[black] (11.00032,25.6286) -- (11.19928,25.6286) -- (11.40037,25.6286);
+\draw[black] (11.00032,26.72927) -- (11.19928,26.72927) -- (11.40037,26.72927);
+\draw[black] (11.00032,27.72833) -- (11.19928,27.72833) -- (11.40037,27.72833);
+\draw[black] (9.40012,18.5293) -- (9.64988,18.5293) -- (9.89965,18.5293);
+
+\path (4.09998,14.82937) node[text=black,anchor=base west] {\fontsize{11.0}{15.6}\selectfont{}1j \nicefrac{15}{2}};
+\path (6.10023,15.12993) node[text=black,anchor=base west] {\fontsize{11.0}{15.6}\selectfont{}3d \nicefrac{3}{2}};
+\path (4.50003,15.52998) node[text=black,anchor=base west] {\fontsize{11.0}{15.6}\selectfont{}4s \nicefrac{1}{2}};
+\path (6.69925,15.82843) node[text=black,anchor=base west] {\fontsize{11.0}{15.6}\selectfont{}2g \nicefrac{7}{2}};
+\path (7.2009,16.82962)  node[text=black,anchor=base west] {\fontsize{11.0}{15.6}\selectfont{}2g \nicefrac{9}{2}};
+\path (4.0005,16.129)    node[text=black,anchor=base west] {\fontsize{11.0}{15.6}\selectfont{}1i \nicefrac{11}{2}};
+\path (5.4991,16.42957)  node[text=black,anchor=base west] {\fontsize{11.0}{15.6}\selectfont{}3d \nicefrac{5}{2}};
+\path (4.0005,18.32822)  node[text=black,anchor=base west] {\fontsize{11.0}{15.6}\selectfont{}3p \nicefrac{1}{2}};
+\path (4.0005,18.72827)  node[text=black,anchor=base west] {\fontsize{11.0}{15.6}\selectfont{}3p \nicefrac{3}{2}};
+\path (5.30013,19.02883) node[text=black,anchor=base west] {\fontsize{11.0}{15.6}\selectfont{}2f \nicefrac{5}{2}};
+\path (5.30013,19.42888) node[text=black,anchor=base west] {\fontsize{11.0}{15.6}\selectfont{}2f \nicefrac{7}{2}};
+\path (6.59977,19.72945) node[text=black,anchor=base west] {\fontsize{11.0}{15.6}\selectfont{}1h \nicefrac{9}{2}};
+\path (5.79967,18.02977) node[text=black,anchor=base west] {\fontsize{11.0}{15.6}\selectfont{}1i \nicefrac{13}{2}};
+\path (6.59977,20.9296)  node[text=black,anchor=base west] {\fontsize{11.0}{15.6}\selectfont{}1h \nicefrac{11}{2}};
+\path (4.40055,21.22805) node[text=black,anchor=base west] {\fontsize{11.0}{15.6}\selectfont{}3s \nicefrac{1}{2}};
+\path (5.6007,21.52862)  node[text=black,anchor=base west] {\fontsize{11.0}{15.6}\selectfont{}2d \nicefrac{3}{2}};
+\path (4.8006,22.22923)  node[text=black,anchor=base west] {\fontsize{11.0}{15.6}\selectfont{}1g \nicefrac{7}{2}};
+\path (4.8006,23.42938)  node[text=black,anchor=base west] {\fontsize{11.0}{15.6}\selectfont{}1g \nicefrac{9}{2}};
+\path (6.99982,21.92867) node[text=black,anchor=base west] {\fontsize{11.0}{15.6}\selectfont{}2d \nicefrac{5}{2}};
+\path (3.79942,23.72783) node[text=black,anchor=base west] {\fontsize{11.0}{15.6}\selectfont{}2p \nicefrac{1}{2}};
+\path (3.79942,24.32897) node[text=black,anchor=base west] {\fontsize{11.0}{15.6}\selectfont{}2p \nicefrac{3}{2}};
+\path (5.6007,24.0284)   node[text=black,anchor=base west] {\fontsize{11.0}{15.6}\selectfont{}1f \nicefrac{5}{2}};
+\path (5.6007,25.12907)  node[text=black,anchor=base west] {\fontsize{11.0}{15.6}\selectfont{}1f \nicefrac{7}{2}};
+\path (6.59977,26.32922) node[text=black,anchor=base west] {\fontsize{11.0}{15.6}\selectfont{}1d \nicefrac{5}{2}};
+\path (6.59977,25.72808) node[text=black,anchor=base west] {\fontsize{11.0}{15.6}\selectfont{}1d \nicefrac{3}{2}};
+\path (6.59977,27.82782) node[text=black,anchor=base west] {\fontsize{11.0}{15.6}\selectfont{}1s \nicefrac{1}{2}};
+\path (4.0005,27.2288)   node[text=black,anchor=base west] {\fontsize{11.0}{15.6}\selectfont{}1p \nicefrac{3}{2}};
+\path (4.0005,26.82875)  node[text=black,anchor=base west] {\fontsize{11.0}{15.6}\selectfont{}1p \nicefrac{1}{2}};
+\path (4.09998,26.02865) node[text=black,anchor=base west] {\fontsize{11.0}{15.6}\selectfont{}2s \nicefrac{1}{2}};
+
+\path (1.80077,15.52998) node[text=black,anchor=base west] {\fontsize{11.0}{15.6}\selectfont{}4s};
+\path (1.80077,15.93003) node[text=black,anchor=base west] {\fontsize{11.0}{15.6}\selectfont{}3d};
+\path (1.80077,16.33008) node[text=black,anchor=base west] {\fontsize{11.0}{15.6}\selectfont{}2g};
+\path (1.80077,17.02858) node[text=black,anchor=base west] {\fontsize{11.0}{15.6}\selectfont{}1i};
+\path (1.80077,19.22992) node[text=black,anchor=base west] {\fontsize{11.0}{15.6}\selectfont{}2f};
+\path (1.80077,20.32847) node[text=black,anchor=base west] {\fontsize{11.0}{15.6}\selectfont{}1h};
+\path (1.80077,18.5293)  node[text=black,anchor=base west] {\fontsize{11.0}{15.6}\selectfont{}3p};
+\path (1.80077,21.22805) node[text=black,anchor=base west] {\fontsize{11.0}{15.6}\selectfont{}3s};
+\path (1.80077,24.62953) node[text=black,anchor=base west] {\fontsize{11.0}{15.6}\selectfont{}1f};
+\path (1.80077,22.82825) node[text=black,anchor=base west] {\fontsize{11.0}{15.6}\selectfont{}1g};
+\path (1.80077,21.7297)  node[text=black,anchor=base west] {\fontsize{11.0}{15.6}\selectfont{}2d};
+\path (1.80077,24.0284)  node[text=black,anchor=base west] {\fontsize{11.0}{15.6}\selectfont{}2p};
+\path (1.80077,27.82782) node[text=black,anchor=base west] {\fontsize{11.0}{15.6}\selectfont{}1s};
+\path (1.80077,27.02772) node[text=black,anchor=base west] {\fontsize{11.0}{15.6}\selectfont{}1p};
+\path (1.80077,26.02865) node[text=black,anchor=base west] {\fontsize{11.0}{15.6}\selectfont{}1d};
+\path (1.80077,25.6286)  node[text=black,anchor=base west] {\fontsize{11.0}{15.6}\selectfont{}2s};
+
+\path (10.8510073,24.32897) node[text=blue,anchor=base east] {\tt\fontsize{9.0}{15.6}\selectfont{}[32]};
+\path (10.8510073,14.82937) node[text=blue,anchor=base east] {\tt\fontsize{9.0}{15.6}\selectfont{}[184]};
+\path (10.8510073,18.02977) node[text=blue,anchor=base east] {\tt\fontsize{9.0}{15.6}\selectfont{}[126]};
+\path (10.8510073,19.42888) node[text=blue,anchor=base east] {\tt\fontsize{9.0}{15.6}\selectfont{}[100]};
+\path (10.8510073,20.9296)  node[text=blue,anchor=base east] {\tt\fontsize{9.0}{15.6}\selectfont{}[82]};
+\path (10.8510073,21.92867) node[text=blue,anchor=base east] {\tt\fontsize{9.0}{15.6}\selectfont{}[64]};
+\path (10.8510073,23.42938) node[text=blue,anchor=base east] {\tt\fontsize{9.0}{15.6}\selectfont{}[50]};
+\path (10.8510073,23.72783) node[text=blue,anchor=base east] {\tt\fontsize{9.0}{15.6}\selectfont{}[40]};
+\path (10.8510073,24.0284)  node[text=blue,anchor=base east] {\tt\fontsize{9.0}{15.6}\selectfont{}[38]};
+\path (10.8510073,25.12907) node[text=blue,anchor=base east] {\tt\fontsize{9.0}{15.6}\selectfont{}[28]};
+\path (10.8510073,27.82782) node[text=blue,anchor=base east] {\tt\fontsize{9.0}{15.6}\selectfont{}[2]};
+\path (10.8510073,27.2288)  node[text=blue,anchor=base east] {\tt\fontsize{9.0}{15.6}\selectfont{}[6]};
+\path (10.8510073,26.82875) node[text=blue,anchor=base east] {\tt\fontsize{9.0}{15.6}\selectfont{}[8]};
+\path (10.8510073,26.32922) node[text=blue,anchor=base east] {\tt\fontsize{9.0}{15.6}\selectfont{}[14]};
+\path (10.8510073,26.02865) node[text=blue,anchor=base east] {\tt\fontsize{9.0}{15.6}\selectfont{}[16]};
+\path (10.8510073,25.72808) node[text=blue,anchor=base east] {\tt\fontsize{9.0}{15.6}\selectfont{}[20]};
+\path (10.8510073,18.32822) node[text=blue,anchor=base east] {\tt\fontsize{9.0}{15.6}\selectfont{}[112]};
+\path (10.8510073,19.02883) node[text=blue,anchor=base east] {\tt\fontsize{9.0}{15.6}\selectfont{}[106]};
+\path (10.8510073,18.62878) node[text=blue,anchor=base east] {\tt\fontsize{9.0}{15.6}\selectfont{}[110]};
+\path (10.8510073,19.72945) node[text=blue,anchor=base east] {\tt\fontsize{9.0}{15.6}\selectfont{}[ 92]};
+\path (10.8510073,15.12993) node[text=blue,anchor=base east] {\tt\fontsize{9.0}{15.6}\selectfont{}[168]};
+\path (10.8510073,15.52998) node[text=blue,anchor=base east] {\tt\fontsize{9.0}{15.6}\selectfont{}[164]};
+\path (10.8510073,15.82843) node[text=blue,anchor=base east] {\tt\fontsize{9.0}{15.6}\selectfont{}[162]};
+\path (10.8510073,16.129)   node[text=blue,anchor=base east] {\tt\fontsize{9.0}{15.6}\selectfont{}[154]};
+\path (10.8510073,16.42957) node[text=blue,anchor=base east] {\tt\fontsize{9.0}{15.6}\selectfont{}[142]};
+\path (10.8510073,16.82962) node[text=blue,anchor=base east] {\tt\fontsize{9.0}{15.6}\selectfont{}[136]};
+\path (10.8510073,22.22923) node[text=blue,anchor=base east] {\tt\fontsize{9.0}{15.6}\selectfont{}[58]};
+\path (10.8510073,21.52862) node[text=blue,anchor=base east] {\tt\fontsize{9.0}{15.6}\selectfont{}[68]};
+\path (10.8510073,21.22805) node[text=blue,anchor=base east] {\tt\fontsize{9.0}{15.6}\selectfont{}[70]};
+
+\path (11.40037,27.82782) node[text=red,anchor=base west] {\fontsize{13.0}{15.6}\selectfont{}2};
+\path (11.40037,26.82875) node[text=red,anchor=base west] {\fontsize{13.0}{15.6}\selectfont{}8};
+\path (11.40037,25.72808) node[text=red,anchor=base west] {\fontsize{13.0}{15.6}\selectfont{}20};
+\path (11.40037,25.12907) node[text=red,anchor=base west] {\fontsize{13.0}{15.6}\selectfont{}28};
+\path (11.40037,23.42938) node[text=red,anchor=base west] {\fontsize{13.0}{15.6}\selectfont{}50};
+\path (11.40037,20.9296) node[text=red,anchor=base west] {\fontsize{13.0}{15.6}\selectfont{}82};
+\path (11.40037,18.02977) node[text=red,anchor=base west] {\fontsize{13.0}{15.6}\selectfont{}126};
+\path (11.40037,14.82937) node[text=red,anchor=base west] {\fontsize{13.0}{15.6}\selectfont{}184};
+
+
+\path (8.460002,18.02977) node[text=blue,anchor=base west] {\tt\fontsize{9.0}{15.6}\selectfont{}(14)};
+\path (8.460002,18.42982) node[text=blue,anchor=base west] {\tt\fontsize{9.0}{15.6}\selectfont{}(2)};
+\path (8.460002,18.72827) node[text=blue,anchor=base west] {\tt\fontsize{9.0}{15.6}\selectfont{}(4)};
+\path (8.460002,19.02883) node[text=blue,anchor=base west] {\tt\fontsize{9.0}{15.6}\selectfont{}(6)};
+\path (8.460002,19.42888) node[text=blue,anchor=base west] {\tt\fontsize{9.0}{15.6}\selectfont{}(8)};
+\path (8.460002,19.82893) node[text=blue,anchor=base west] {\tt\fontsize{9.0}{15.6}\selectfont{}(10)};
+\path (8.460002,23.42938) node[text=blue,anchor=base west] {\tt\fontsize{9.0}{15.6}\selectfont{}(10)};
+\path (8.460002,25.12907) node[text=blue,anchor=base west] {\tt\fontsize{9.0}{15.6}\selectfont{}(8)};
+\path (8.460002,24.32897) node[text=blue,anchor=base west] {\tt\fontsize{9.0}{15.6}\selectfont{}(4)};
+\path (8.460002,24.0284)  node[text=blue,anchor=base west] {\tt\fontsize{9.0}{15.6}\selectfont{}(6)};
+\path (8.460002,23.72783) node[text=blue,anchor=base west] {\tt\fontsize{9.0}{15.6}\selectfont{}(2)};
+\path (8.460002,22.22923) node[text=blue,anchor=base west] {\tt\fontsize{9.0}{15.6}\selectfont{}(8)};
+\path (8.460002,21.92867) node[text=blue,anchor=base west] {\tt\fontsize{9.0}{15.6}\selectfont{}(6)};
+\path (8.460002,21.6281)  node[text=blue,anchor=base west] {\tt\fontsize{9.0}{15.6}\selectfont{}(4)};
+\path (8.460002,21.32965) node[text=blue,anchor=base west] {\tt\fontsize{9.0}{15.6}\selectfont{}(2)};
+\path (8.460002,20.9296)  node[text=blue,anchor=base west] {\tt\fontsize{9.0}{15.6}\selectfont{}(12)};
+\path (8.460002,14.82937) node[text=blue,anchor=base west] {\tt\fontsize{9.0}{15.6}\selectfont{}(16)};
+\path (8.460002,15.12993) node[text=blue,anchor=base west] {\tt\fontsize{9.0}{15.6}\selectfont{}(4)};
+\path (8.460002,15.52998) node[text=blue,anchor=base west] {\tt\fontsize{9.0}{15.6}\selectfont{}(2)};
+\path (8.460002,15.82843) node[text=blue,anchor=base west] {\tt\fontsize{9.0}{15.6}\selectfont{}(8)};
+\path (8.460002,16.129)   node[text=blue,anchor=base west] {\tt\fontsize{9.0}{15.6}\selectfont{}(12)};
+\path (8.460002,16.42957) node[text=blue,anchor=base west] {\tt\fontsize{9.0}{15.6}\selectfont{}(6)};
+\path (8.460002,16.82962) node[text=blue,anchor=base west] {\tt\fontsize{9.0}{15.6}\selectfont{}(10)};
+\path (8.460002,27.82782) node[text=blue,anchor=base west] {\tt\fontsize{9.0}{15.6}\selectfont{}(2)};
+\path (8.460002,27.2288)  node[text=blue,anchor=base west] {\tt\fontsize{9.0}{15.6}\selectfont{}(4)};
+\path (8.460002,26.82875) node[text=blue,anchor=base west] {\tt\fontsize{9.0}{15.6}\selectfont{}(2) };
+\path (8.460002,26.32922) node[text=blue,anchor=base west] {\tt\fontsize{9.0}{15.6}\selectfont{}(6)};
+\path (8.460002,26.02865) node[text=blue,anchor=base west] {\tt\fontsize{9.0}{15.6}\selectfont{}(2)};
+\path (8.460002,25.72808) node[text=blue,anchor=base west] {\tt\fontsize{9.0}{15.6}\selectfont{}(4)};
+
+
+\end{tikzpicture}%
+%% Configure (x)emacs for this file ...
+%% Local Variables:
+%% mode: latex
+%% End:
