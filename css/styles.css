@@ -50,7 +50,7 @@ h4, h5, h6 {
 }
 
 a {
-    color: #3399cc;
+    color: #003399;
     text-decoration:none;
 }
 
@@ -116,7 +116,7 @@ cite {
 .tag {
      display:inline-block;
      white-space:no-wrap;
-     background:#3399cc;
+     background:#003399;
      color:#ffffff;
      float: right;
      font-size:.6em;
@@ -175,7 +175,7 @@ img.hidden {
 }
 
 .cbox {
-    color:#3399cc;
+    color:#003399;
 }
 
 .cbox p:before {
@@ -186,11 +186,11 @@ img.hidden {
 }
 
 .question, .QUESTION {
-    border-left:2px solid #3399cc;
+    border-left:2px solid #003399;
     margin:0;
     padding:0 0 0 20px;
     font-style:italic;
-    color: #3399cc;
+    color: #003399;
 }
 
 #table-of-contents {
@@ -237,7 +237,7 @@ img.hidden {
 }
 
 #toc ul {
-    color: #3399cc;
+    color: #003399;
 }
 
 #toc:hover:before {
