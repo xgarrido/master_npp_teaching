@@ -4986,7 +4986,7 @@ vérifient leurs interactions.
        la valeur est :
        #+BEGIN_SRC latex
          \begin{align*}
-           1\,\text{u} = \unit[931.5]{MeV/c^2}
+           1\,\text{u} = \unit[931.5]{MeV/c}^2
          \end{align*}
        #+END_SRC
        Par définition, elle est telle que la masse de l'atome neutre de carbone 12
