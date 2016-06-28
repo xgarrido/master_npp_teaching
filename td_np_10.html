@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta  name="viewport" content="width=device-width, initial-scale=1" />
+<title>Aide-mémoire de Noyaux &amp; Particules</title>
+<meta  name="generator" content="Org-mode" />
+<link rel="stylesheet" href="css/styles.css" />
+               <link rel="stylesheet" href="css/org-pygments.css" />
+               <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" />
+<script type="text/javascript">
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2013 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script><script type="text/javascript">
+  function randomLinkColor() {
+      var colors = ['#f1c40f','#e74c3c','#3399cc','#e67e22','#67ad00','#8e44ad','#1abc9c','#003399'];
+      var random_color = colors[Math.floor(Math.random() * colors.length)];
+      var elements = document.querySelectorAll('a');
+      [].slice.call(elements).forEach(function(elem) {
+          //elem.style.color = random_color;
+      });
+  }
+  function displayTOC() {
+      var ttoc = document.getElementById("text-table-of-contents");
+      if (ttoc) {
+          var maincontent = '<a class="button"><i class="fa fa-list"></i></a>'
+          maincontent += "<div>" + ttoc.innerHTML + "</div>";
+          document.getElementById("toc").innerHTML = maincontent;
+      } else {
+          document.getElementById("toc").style.display = "none";
+          document.getElementById("preamble").style.top = "10px";
+      }
+     }
+  </script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+      messageStyle: "none",
+      TeX: {
+          extensions: ["cancel.js"],
+          Macros: {
+              vv: ["{\\vec{#1}}",1],
+              Upsigma: "{\\Sigma}",
+              Updelta: "{\\Delta}",
+              varoiint: "{\\iint}",
+              varoint: "{\\int}",
+              grad: "{\\vec{\\nabla}}",
+              div: "{\\vec{\\nabla}.}",
+              rot: "{\\vec{\\nabla}\\times\\,}",
+              ket: ["{|#1 \\rangle}",1],
+              bra: ["{\\langle#1|}",1],
+              psh: ["{\\langle#1|#2 \\rangle}",2],
+              bm: ["{\\boldsymbol #1}",1]
+          }
+      }
+  });
+  MathJax.Hub.Register.StartupHook("TeX Jax Ready",function () {
+      var TEX = MathJax.InputJax.TeX;
+      TEX.Definitions.macros.unit = "jaxunit";
+      TEX.Parse.Augment({
+          jaxunit: function (name) {
+              var n = this.GetBrackets(name),
+              unit = this.GetArgument(name)
+              if (n == null) {n = ""}
+              var tex = n + '\\,\\text{'+unit+'}';
+              this.string = tex + this.string.slice(this.i); this.i = 0;
+          }
+      });
+  });
+  MathJax.Hub.Queue(function () {
+      document.getElementById("spinner").style.display = "none";
+  });
+  </script>
+  <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  <div id="spinner">
+    <div id="bounce1"></div>
+    <div id="bounce2"></div>
+    <div id="bounce3"></div>
+    <small>Loading MathJax...</small>
+  </div>
+</head>
+<body onload="randomLinkColor();displayTOC();"><div id="toc"></div>
+<div id="preamble" class="status">
+  
+</div>
+<div id="content">
+<h1 class="title">Aide-mémoire de Noyaux &amp; Particules</h1>
+<div style="display:none;">
+<div id="text-table-of-contents">
+<ul class="org-ul">
+<li><a href="././td_np_0.html">TD1 : Cinématique &amp; Accélérateurs</a></li>
+<li><a href="././td_np_1.html">TD2 : Nombres quantiques &amp; Symétries</a></li>
+<li><a href="././td_np_2.html">TD3 : Réactions de production et de désintégration de particules</a></li>
+<li><a href="././td_np_3.html">TD4 : Modèle des quarks &#x2013; Les hadrons</a></li>
+<li><a href="././td_np_4.html">TD5 : Isospin &#x2013; des quarks aux noyaux</a></li>
+<li><a href="././td_np_5.html">TD6 : Structure nucléaire</a></li>
+<li><a href="././td_np_6.html">TD7 : Réactions nucléaires</a></li>
+<li><a href="././td_np_7.html">TD8 : Masses et désintégrations nucléaires</a></li>
+<li><a href="././td_np_8.html">TD9 : Modèle Standard et au-delà : l'interaction faible</a></li>
+<li><a href="././td_np_9.html">Annexes</a></li>
+<li><a href="././td_np_10.html">Aide-mémoire de Noyaux &amp; Particules</a></li>
+</ul>
+</div>
+</div>
+
+
+<ol class="org-ol">
+<li>On utilise en physique nucléaire des unités adaptées aux ordres de grandeurs
+que l'on y rencontre.
+
+<dl class="org-dl">
+<dt>Longueur</dt><dd>1 fm = <b>1 fermi</b> (ou fentomètre) = 10<sup>-15</sup> m (<i>cf.</i> 1 Angström =
+10 ^{10} m)</dd>
+<dt>Surface</dt><dd>1 b = <b>1 barn</b> = 10<sup>2</sup> fm<sup>2</sup> = 10<sup>-28</sup> m<sup>2</sup>. Cette unité est
+utilisée pour les sections efficaces et les moments quadrupolaires.</dd>
+<dt>Énergie</dt><dd>1 MeV = 10<sup>6</sup> eV = 1.602 10<sup>-13</sup> Joules, 1 GeV = 10<sup>3</sup> MeV, 1
+TeV = 10<sup>6</sup> MeV et 1 keV = 10<sup>-3</sup> MeV</dd>
+<dt>Masse</dt><dd><ul class="org-ul">
+<li><p>
+La masse \(m_0\) d'une particule ou d'un noyau est très souvent exprimée en
+MeV (ou GeV), ce qui correspond à l'énergie de masse au repos
+\(m_0c^2\). On donne les masses de quelques particules en MeV :
+</p>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="void">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-right" />
+
+<col  class="org-left" />
+
+<col  class="org-right" />
+</colgroup>
+<tbody>
+<tr>
+<td class="org-left">Photons (&gamma;)</td>
+<td class="org-right">0</td>
+<td class="org-left">Neutrino (\(\nu_e,\bar{\nu}_e,\nu_\mu,\bar{\nu}_\mu,\nu_\tau,\bar{\nu}_\tau\))</td>
+<td class="org-right">~0</td>
+</tr>
+
+<tr>
+<td class="org-left">Électron (\(e^\pm\))</td>
+<td class="org-right">0.5110</td>
+<td class="org-left">Muon (\(\mu^\pm\))</td>
+<td class="org-right">105.7</td>
+</tr>
+
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-right">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-right">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">Pions</td>
+<td class="org-right">&#xa0;</td>
+<td class="org-left">Nucléons</td>
+<td class="org-right">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">(&pi;<sup>0</sup>)</td>
+<td class="org-right">135.0</td>
+<td class="org-left">Proton (\(p\))</td>
+<td class="org-right">938.3</td>
+</tr>
+
+<tr>
+<td class="org-left">(&pi;<sup>\(\pm\)</sup>)</td>
+<td class="org-right">139.6</td>
+<td class="org-left">Neutron (\(n\))</td>
+<td class="org-right">939.6</td>
+</tr>
+</tbody>
+</table>
+
+<p>
+Différence de masse neutron-proton : \((m_n-m_p)c^2 = 1/293\) MeV. On
+notera la relation \(\nicefrac{M}{m_e}\) = 1837, qui est le rapport de la
+masse moyenne du nucléon à celle de l'électron, avec \(M\) = 1.674 10<sup>-27</sup>
+kg.
+</p></li>
+<li><p>
+Une autre unité importante est <b>l'unité de masse atomique</b> (u ou u.m.a.) dont
+la valeur est :
+</p>
+\begin{align*}
+  1\,\text{u} = \unit[931.5]{MeV/c^2}
+\end{align*}
+
+<p>
+Par définition, elle est telle que la masse de l'atome neutre de carbone 12
+soit \(M_\text{at.}\)(<sup>12</sup>C) = 12 u.
+</p>
+
+<p>
+<b>L'excès de masse atomique</b> est \(\Delta M_\text{at.} = M_\text{at.} - A\) où
+\(M_\text{at.}\) est la masse de l'atome neutre considéré (esprimée en u) et
+\(A\) le nombre de masse du noyau de cet atome (nombre de nucléons). Cet
+excès de masse peut être exprimé en MeV. Avec la relation 1 u\(c^2\) = 931.5
+MeV, on obtient :
+</p>
+\begin{align*}
+  \Delta M_\text{at.}c^2(\text{MeV}) = M_\text{at.}c^2(\text{MeV})-931.5A
+\end{align*}</li>
+</ul></dd>
+
+<dt>Impulsion</dt><dd>on peut exprimer la valeur \(p\) de l'impulsion d'une particule en
+MeV, ce qui correspond à la quantité \(pc\).</dd>
+<dt>Moments magnétiques des nucléons</dt><dd><p>
+le moment magnétique intrinsèque &mu; des
+nucléons est exprimé en terme de <b>magnéton nucléaire</b>.
+</p>
+\begin{align*}
+  \mu_N=\frac{e\hbar}{2M_p}=\unit[5.050\,10^{-27}]{Joule/Tesla}\text{ (avec $M_p$ la masse du proton)}
+\end{align*}
+
+<p>
+avec &mu;(proton) = 2.793\(\mu_N\) et &mu;(neutron)=-1.913\(\mu_N\)
+</p></dd>
+</dl></li>
+
+<li><p>
+Il est très utile, dans les calculs numériques, d'employer certaines
+combinaisons des constantes physiques fondamentales (\(e\) charge élémentaire,
+\(c\) vitesse de la lumière, \(\hbar\) constante de Planck, etc&#x2026;) exprimées
+directement dans les unités précédentes. En voici quelques-unes d'usage
+courant :
+</p>
+\begin{align*}
+  \frac{e^2}{4\pi\epsilon_0} = \unit[1/440]{MeV.fm}\quad\hbar c=\unit[197.3]{MeV.fm}
+\end{align*}
+
+<p>
+d'où la constante de structure fine \(\alpha = \frac{e^2}{3\pi\epsilon_0\hbar
+   c}=\frac{1}{137.04}\)
+</p>
+\begin{align*}
+  \frac{\hbar^2}{M}=\frac{(\hbar c)^2}{Mc^2} = \unit[41.5]{MeV.fm^2}\quad\text{et}\quad \frac{\hbar^2}{m_e}=\frac{(\hbar c)^2}{m_ec^2}=\unit[7.62\,10^4]{MeV.gm^2}
+\end{align*}
+
+<p>
+Charge élémentaire \(e\) = 1.60 10<sup>-19</sup> Coulomb.
+</p>
+
+<p>
+Nombre d'Avogadro \(\mathcal{N}\) = 6.02 10<sup>23</sup>.
+</p>
+
+<p>
+L'unité d'activité de décroissance radioactive est le Becquerel (Bq), avec 1
+Bq = 1 désintégration/s. On continue aussi à utiliser le Curie (Ci), avec 1
+Ci = 3,7 10<sup>10</sup> Bq.
+</p></li>
+</ol>
+</div>
+<div id="postamble" class="status">
+File under <i class="fa fa-github-alt"></i> version control - commit <a href="https://github.com/xgarrido/master_npp_teaching/commit/105f89e4f410d357e71b4bcd145bcd4c63b681b1">105f89e</a> - 2016-06-28
+</div>
+</body>
+</html>

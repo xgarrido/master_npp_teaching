@@ -1,0 +1,1117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta  name="viewport" content="width=device-width, initial-scale=1" />
+<title>Annexes</title>
+<meta  name="generator" content="Org-mode" />
+<link rel="stylesheet" href="css/styles.css" />
+               <link rel="stylesheet" href="css/org-pygments.css" />
+               <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" />
+<script type="text/javascript">
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2013 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script><script type="text/javascript">
+  function randomLinkColor() {
+      var colors = ['#f1c40f','#e74c3c','#3399cc','#e67e22','#67ad00','#8e44ad','#1abc9c','#003399'];
+      var random_color = colors[Math.floor(Math.random() * colors.length)];
+      var elements = document.querySelectorAll('a');
+      [].slice.call(elements).forEach(function(elem) {
+          //elem.style.color = random_color;
+      });
+  }
+  function displayTOC() {
+      var ttoc = document.getElementById("text-table-of-contents");
+      if (ttoc) {
+          var maincontent = '<a class="button"><i class="fa fa-list"></i></a>'
+          maincontent += "<div>" + ttoc.innerHTML + "</div>";
+          document.getElementById("toc").innerHTML = maincontent;
+      } else {
+          document.getElementById("toc").style.display = "none";
+          document.getElementById("preamble").style.top = "10px";
+      }
+     }
+  </script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+      messageStyle: "none",
+      TeX: {
+          extensions: ["cancel.js"],
+          Macros: {
+              vv: ["{\\vec{#1}}",1],
+              Upsigma: "{\\Sigma}",
+              Updelta: "{\\Delta}",
+              varoiint: "{\\iint}",
+              varoint: "{\\int}",
+              grad: "{\\vec{\\nabla}}",
+              div: "{\\vec{\\nabla}.}",
+              rot: "{\\vec{\\nabla}\\times\\,}",
+              ket: ["{|#1 \\rangle}",1],
+              bra: ["{\\langle#1|}",1],
+              psh: ["{\\langle#1|#2 \\rangle}",2],
+              bm: ["{\\boldsymbol #1}",1]
+          }
+      }
+  });
+  MathJax.Hub.Register.StartupHook("TeX Jax Ready",function () {
+      var TEX = MathJax.InputJax.TeX;
+      TEX.Definitions.macros.unit = "jaxunit";
+      TEX.Parse.Augment({
+          jaxunit: function (name) {
+              var n = this.GetBrackets(name),
+              unit = this.GetArgument(name)
+              if (n == null) {n = ""}
+              var tex = n + '\\,\\text{'+unit+'}';
+              this.string = tex + this.string.slice(this.i); this.i = 0;
+          }
+      });
+  });
+  MathJax.Hub.Queue(function () {
+      document.getElementById("spinner").style.display = "none";
+  });
+  </script>
+  <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  <div id="spinner">
+    <div id="bounce1"></div>
+    <div id="bounce2"></div>
+    <div id="bounce3"></div>
+    <small>Loading MathJax...</small>
+  </div>
+</head>
+<body onload="randomLinkColor();displayTOC();"><div id="toc"></div>
+<div id="preamble" class="status">
+  
+</div>
+<div id="content">
+<h1 class="title">Annexes</h1>
+<div style="display:none;">
+<div id="text-table-of-contents">
+<ul class="org-ul">
+<li><a href="././td_np_0.html">TD1 : Cinématique &amp; Accélérateurs</a></li>
+<li><a href="././td_np_1.html">TD2 : Nombres quantiques &amp; Symétries</a></li>
+<li><a href="././td_np_2.html">TD3 : Réactions de production et de désintégration de particules</a></li>
+<li><a href="././td_np_3.html">TD4 : Modèle des quarks &#x2013; Les hadrons</a></li>
+<li><a href="././td_np_4.html">TD5 : Isospin &#x2013; des quarks aux noyaux</a></li>
+<li><a href="././td_np_5.html">TD6 : Structure nucléaire</a></li>
+<li><a href="././td_np_6.html">TD7 : Réactions nucléaires</a></li>
+<li><a href="././td_np_7.html">TD8 : Masses et désintégrations nucléaires</a></li>
+<li><a href="././td_np_8.html">TD9 : Modèle Standard et au-delà : l'interaction faible</a></li>
+<li><a href="././td_np_9.html">Annexes</a></li>
+<li><a href="././td_np_10.html">Aide-mémoire de Noyaux &amp; Particules</a></li>
+</ul>
+</div>
+</div>
+
+<p>
+
+</p>
+
+<div id="outline-container-orgheadline6" class="outline-2">
+<h2 id="orgheadline6"><span class="section-number-2">1</span> Rappels de relativité restreinte</h2>
+<div class="outline-text-2" id="text-1">
+</div><div id="outline-container-orgheadline1" class="outline-3">
+<h3 id="orgheadline1"><span class="section-number-3">1.1</span> Paramètres de Lorentz</h3>
+<div class="outline-text-3" id="text-1-1">
+<p>
+Pour une particule de masse \(m\) :
+</p>
+\begin{align*}
+  \beta = \frac{v}{c} = \frac{pc}{E} \quad \gamma = \frac{1}{\sqrt{1-\beta^2}}=\frac{E}{m_0c^2}
+\end{align*}
+</div>
+</div>
+
+<div id="outline-container-orgheadline2" class="outline-3">
+<h3 id="orgheadline2"><span class="section-number-3">1.2</span> Énergie des particules</h3>
+<div class="outline-text-3" id="text-1-2">
+<ul class="org-ul">
+<li>Énergie de masse au repos : \(E_0 = m_0 c^2\), Énergie totale : \(E = mc^2 =
+  \gamma m_0 c^2 = T + m_0 c^2\)</li>
+
+<li>Énergie cinétique \(T = (\gamma - 1) m_0 c^2\)</li>
+
+<li>Pour une particule, on a \(\vv{p}^2c^2 = T(T + 2 m_0 c^2)\) et \(E^2 -
+  {\vv{p}}^2c^2 = m_0^2 c^4\)</li>
+
+<li>Pour un système de \(n\) particules, la quantité \((\sum_{i=1}^{n} E_i)^2 -
+  (\sum_{i=1}^n \vv{p})^2 c^2\) est un invariant dans tout changement de
+référentiel.</li>
+
+<li><p>
+Pour des particules de masse nulle (\(\beta\) = 1, \(\gamma\rightarrow\infty\))
+</p>
+\begin{align*}
+  E = pc = h\nu
+\end{align*}</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgheadline3" class="outline-3">
+<h3 id="orgheadline3"><span class="section-number-3">1.3</span> Transformation de Lorentz</h3>
+<div class="outline-text-3" id="text-1-3">
+\begin{align*}
+  \left(\begin{array}{c}
+    X^{0\prime} \\ X^{1\prime} \\ X^{2\prime} \\ X^{3\prime}
+  \end{array} \right) =
+  \left(\begin{array}{rrrr} \gamma & 0 & 0 & -\beta \gamma \\
+    0 & 1 & 0 & 0 \\ 0 & 0 & 1 & 0 \\
+    -\beta \gamma & 0 & 0 & \gamma \end{array} \right)
+  \left(\begin{array}{c} X^0 \\ X^1 \\ X^2 \\ X^3 \end{array} \right)
+\end{align*}
+
+<p>
+\(\{ X^{\mu}\}\) et \(\{ X^{\mu \prime}\}\) sont les composantes d'un même
+quadrivecteur dans les référentiels S (labo) et S'(CdM).  S' est animé d'un
+mouvement de translation de vitesse \(v = \beta c\) le long de l'axe \(Oz\) de S. La
+transformation inverse s'obtient en changeant \(\beta\) en \(-\beta\).
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgheadline4" class="outline-3">
+<h3 id="orgheadline4"><span class="section-number-3">1.4</span> Quadrivecteurs</h3>
+<div class="outline-text-3" id="text-1-4">
+\begin{align*}
+  \begin{array}{lllll}
+    \text{4-position :} & X^0 = ct,& X^1 = x,& X^2 = y,& X^3 = z \\
+    \text{4-impulsion :}& X^0 = E/c,& X^1 = p_x,& X^2 = p_y,& X^3 = p_z
+  \end{array}
+\end{align*}
+</div>
+</div>
+
+<div id="outline-container-orgheadline5" class="outline-3">
+<h3 id="orgheadline5"><span class="section-number-3">1.5</span> Invariants</h3>
+<div class="outline-text-3" id="text-1-5">
+<p>
+Produit scalaire de deux quadrivecteurs : \(X^0 Y^0 - X^1 Y^1 - X^2 Y^2 - X^3 Y^3\)
+</p>
+
+<p>
+Temps propre : \(c^2 d\tau^2 = c^2 dt^2 - dx^2 -dy^2 - dz^2\)
+</p>
+
+<p>
+Masse effective : \(m^2 c^4 = E^2 - \vv{p}^2c^2 = E^2 - p_x^2 c^2 - p_y^2c^2 -
+p_z^2c^2\)
+</p>
+</div>
+</div>
+</div>
+<div id="outline-container-orgheadline7" class="outline-2">
+<h2 id="orgheadline7"><span class="section-number-2">2</span> Tableau des coefficients de Clebsh-Gordan</h2>
+<div class="outline-text-2" id="text-2">
+<p>
+On ne donne ci-dessous que les coefficients de Clebsh-Gordan utilisables en
+TD. Tous les coefficients \(C\) donnés dans cette table doivent être lus comme
+\(\sqrt{C}\).
+</p>
+
+<div class="center">
+
+<div class="figure">
+<p><img src="figures/clebsh.png" alt="clebsh.png" />
+</p>
+</div>
+</div>
+
+<p>
+Par exemple, le coefficient correspondant à \(j_1\) = 1, \(j_2\) = \nicefrac{1}{2},
+\(m_1\) = 1, \(m_2\) = \nicefrac{-1}{2}, \(J\) = \nicefrac{3}{2}, \(M\) =
+\nicefrac{1}{2} vaut :
+</p>
+\begin{align*}
+  \left\langle 1 \frac{1}{2} 1 \frac{-1}{2} \Big| \frac{3}{2} \frac{1}{2} \right\rangle = \frac{1}{\sqrt{3}}
+\end{align*}
+</div>
+</div>
+
+<div id="outline-container-orgheadline8" class="outline-2">
+<h2 id="orgheadline8"><span class="section-number-2">3</span> Potentiel de Woods-Saxon</h2>
+<div class="outline-text-2" id="text-3">
+<div class="center">
+
+<div class="figure">
+<p><img src="figures/couches.png" alt="couches.png" />
+</p>
+</div>
+</div>
+
+<p>
+<b>Séquence des couches du modèle :</b> Si, dans un premier temps, on approxime le
+potentiel nucléaire de Woods-Saxon par une parabole (oscillateur harmonique), on
+aboutit à la situation esquissée à l'extrême gauche de la figure : les couches
+équidistantes (séparées par l'énergie \(\hbar\omega\)) comportent plusieurs
+sous-couches à la même énergie. Ces sous-couches "dégénérées" se séparent
+lorsqu'on fait évoluer le potentiel du modèle à partir de la forme parabolique
+vers la forme de Woods-Saxon. La plus basse dans un "multiplet" (sous-couches
+reliées par une accolade) est alors celle à laquelle est associée le nombre
+quantique azimutal le plus élevé. En fait, pour reproduire les nombres magiques,
+il faut adjoindre au potentiel de Woods-Saxon un potentiel dit de "spin-orbite",
+de la forme \(-\alpha\vv{\ell}.\vv{s}\), où \(\alpha\) est un paramètre, \(\ell\) est
+le moment orbital du nucléon considéré, et \(s\) son spin. Chaque sous-couche,
+caractérisée par \(n\) (nombre quantique radial) et \(\ell\) (nombre quantique
+azimutal), éclate alors en deux sous-couches caractérisées par \(n\), \(\ell\) et
+\(\jmath\) car le moment cinétique total (\(\vv{\jmath} = \vv{\ell} + \vv{s}\)) ne
+peut prendre que deux valeurs pour \(s = \pm 1/2\), à savoir \(\jmath = \ell \pm
+1/2\) . Une sous-couche de \(\jmath\) donné possède \(2\jmath +1\) sous-états
+magnétiques. En vertu du principe de Pauli, elle ne peut contenir au maximum que
+\(2\jmath +1\) nucléons identiques (nombre entre parenthèses dans la partie droite
+de la figure). On aboutit aux nombres magiques (indiqués à l'extrtême droite de
+la figure).
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgheadline9" class="outline-2">
+<h2 id="orgheadline9"><span class="section-number-2">4</span> Tableau des caractéristiques des leptons</h2>
+<div class="outline-text-2" id="text-4">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="void">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">lepton</th>
+<th scope="col" class="org-left">masse [MeV]</th>
+<th scope="col" class="org-left">charge</th>
+<th scope="col" class="org-left">vie moyenne</th>
+<th scope="col" class="org-left">spin</th>
+<th scope="col" class="org-right">\(L_e\)</th>
+<th scope="col" class="org-right">\(L_\mu\)</th>
+<th scope="col" class="org-right">\(L_\tau\)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">\(e^-\)</td>
+<td class="org-left">0.511</td>
+<td class="org-left">\(-e\)</td>
+<td class="org-left">stable</td>
+<td class="org-left">1/2</td>
+<td class="org-right">1</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+</tr>
+
+<tr>
+<td class="org-left">\(\nu_e\)</td>
+<td class="org-left">&lt; 3 10<sup>-6</sup></td>
+<td class="org-left">0</td>
+<td class="org-left">oscillations</td>
+<td class="org-left">1/2</td>
+<td class="org-right">1</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+</tr>
+
+<tr>
+<td class="org-left">\(\mu^-\)</td>
+<td class="org-left">105.66</td>
+<td class="org-left">\(-e\)</td>
+<td class="org-left">2.2 10<sup>-6</sup> s</td>
+<td class="org-left">1/2</td>
+<td class="org-right">0</td>
+<td class="org-right">1</td>
+<td class="org-right">0</td>
+</tr>
+
+<tr>
+<td class="org-left">\(\nu_\mu\)</td>
+<td class="org-left">&lt; 0.170</td>
+<td class="org-left">0</td>
+<td class="org-left">oscillations</td>
+<td class="org-left">1/2</td>
+<td class="org-right">0</td>
+<td class="org-right">1</td>
+<td class="org-right">0</td>
+</tr>
+
+<tr>
+<td class="org-left">\(\tau^-\)</td>
+<td class="org-left">1776.99</td>
+<td class="org-left">\(-e\)</td>
+<td class="org-left">2.8 10<sup>-13</sup> s</td>
+<td class="org-left">1/2</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">1</td>
+</tr>
+
+<tr>
+<td class="org-left">\(\nu_\tau\)</td>
+<td class="org-left">&lt; 18.2</td>
+<td class="org-left">0</td>
+<td class="org-left">oscillations</td>
+<td class="org-left">1/2</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">1</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+<div id="outline-container-orgheadline10" class="outline-2">
+<h2 id="orgheadline10"><span class="section-number-2">5</span> Tableau des caractéristiques principales des quarks</h2>
+<div class="outline-text-2" id="text-5">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="void">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Famille</th>
+<th scope="col" class="org-left">Quark</th>
+<th scope="col" class="org-left">Masse</th>
+<th scope="col" class="org-left">spin</th>
+<th scope="col" class="org-left">\(Q/e\)</th>
+<th scope="col" class="org-left">\(B\)</th>
+<th scope="col" class="org-right">\(T\)</th>
+<th scope="col" class="org-right">\(T_3\)</th>
+<th scope="col" class="org-right">\(s\)</th>
+<th scope="col" class="org-right">\(c\)</th>
+<th scope="col" class="org-right">\(b\)</th>
+<th scope="col" class="org-right">\(t\)</th>
+<th scope="col" class="org-right">&pi;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left" rowspan="2">"légers"</td>
+<td class="org-left">\(u\) (<i>up</i>)</td>
+<td class="org-left">1.7 à 3.3 MeV</td>
+<td class="org-left">1/2</td>
+<td class="org-left">+2/3</td>
+<td class="org-left">1/3</td>
+<td class="org-right">1/2</td>
+<td class="org-right">+1/2</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">+1</td>
+</tr>
+
+<tr>
+<td class="org-left">\(d\) (<i>down</i>)</td>
+<td class="org-left">4 à 6 MeV</td>
+<td class="org-left">1/2</td>
+<td class="org-left">-1/3</td>
+<td class="org-left">1/3</td>
+<td class="org-right">1/2</td>
+<td class="org-right">-1/2</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">+1</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left" rowspan="2">"mi-lourds"</td>
+<td class="org-left">\(c\) (<i>charm</i>)</td>
+<td class="org-left">1.27 &plusmn; 0.09 GeV</td>
+<td class="org-left">1/2</td>
+<td class="org-left">+2/3</td>
+<td class="org-left">1/3</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">1</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">+1</td>
+</tr>
+
+<tr>
+<td class="org-left">\(s\) (<i>strange</i>)</td>
+<td class="org-left">101 &plusmn; 25 MeV</td>
+<td class="org-left">1/2</td>
+<td class="org-left">-1/3</td>
+<td class="org-left">1/3</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">-1</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">+1</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left" rowspan="2">"lourds"</td>
+<td class="org-left">\(t\) (<i>top</i>)</td>
+<td class="org-left">172.0 &plusmn; 2.2 GeV</td>
+<td class="org-left">1/2</td>
+<td class="org-left">+2/3</td>
+<td class="org-left">1/3</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">1</td>
+<td class="org-right">+1</td>
+</tr>
+
+<tr>
+<td class="org-left">\(b\) (<i>bottom</i>)</td>
+<td class="org-left">4.20 &plusmn; 0.07 GeV</td>
+<td class="org-left">1/2</td>
+<td class="org-left">-1/3</td>
+<td class="org-left">1/3</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">-1</td>
+<td class="org-right">0</td>
+<td class="org-right">+1</td>
+</tr>
+</tbody>
+</table>
+
+<p>
+Les nombres quantiques \(s,c,b\) et \(t\) représentent les saveurs respectives des
+quarks (étrangeté, charme, &#x2026;) et &pi; est la parité intrinsèque du quark.
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgheadline11" class="outline-2">
+<h2 id="orgheadline11"><span class="section-number-2">6</span> Caractéristiques de quelques hadrons constitués de \(u, d, s, \bar{u}, \bar{d}, \bar{s}\)</h2>
+<div class="outline-text-2" id="text-6">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="void">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">&#xa0;</th>
+<th scope="col" class="org-right">\(Q/e\)</th>
+<th scope="col" class="org-right">masse [MeV]</th>
+<th scope="col" class="org-left">\(I^\pi\)</th>
+<th scope="col" class="org-left">\(T\)</th>
+<th scope="col" class="org-left">\(T_3\)</th>
+<th scope="col" class="org-right">\(B\)</th>
+<th scope="col" class="org-right">\(s\)</th>
+<th scope="col" class="org-left">\(\tau\) [s]</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">\(p\)</td>
+<td class="org-right">1</td>
+<td class="org-right">938.3</td>
+<td class="org-left">1/2<sup>+</sup></td>
+<td class="org-left">1/2</td>
+<td class="org-left">+1/2</td>
+<td class="org-right">1</td>
+<td class="org-right">0</td>
+<td class="org-left">stable</td>
+</tr>
+
+<tr>
+<td class="org-left">\(n\)</td>
+<td class="org-right">0</td>
+<td class="org-right">939.6</td>
+<td class="org-left">1/2<sup>+</sup></td>
+<td class="org-left">1/2</td>
+<td class="org-left">-1/2</td>
+<td class="org-right">1</td>
+<td class="org-right">0</td>
+<td class="org-left">887</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left" rowspan="4">\(\Delta\)</td>
+<td class="org-right">2</td>
+<td class="org-right">1232</td>
+<td class="org-left">3/2<sup>+</sup></td>
+<td class="org-left">3/2</td>
+<td class="org-left">+3/2</td>
+<td class="org-right">1</td>
+<td class="org-right">0</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-right">1</td>
+<td class="org-right">1232</td>
+<td class="org-left">3/2<sup>+</sup></td>
+<td class="org-left">3/2</td>
+<td class="org-left">+1/2</td>
+<td class="org-right">1</td>
+<td class="org-right">0</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-right">0</td>
+<td class="org-right">1232</td>
+<td class="org-left">3/2<sup>+</sup></td>
+<td class="org-left">3/2</td>
+<td class="org-left">-1/2</td>
+<td class="org-right">1</td>
+<td class="org-right">0</td>
+<td class="org-left">5.5 10<sup>-24</sup></td>
+</tr>
+
+<tr>
+<td class="org-right">-1</td>
+<td class="org-right">1232</td>
+<td class="org-left">3/2<sup>+</sup></td>
+<td class="org-left">3/2</td>
+<td class="org-left">-3/2</td>
+<td class="org-right">1</td>
+<td class="org-right">0</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">&Lambda;</td>
+<td class="org-right">0</td>
+<td class="org-right">1115.6</td>
+<td class="org-left">1/2<sup>+</sup></td>
+<td class="org-left">0</td>
+<td class="org-left">0</td>
+<td class="org-right">1</td>
+<td class="org-right">-1</td>
+<td class="org-left">2.6 10<sup>-10</sup></td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left" rowspan="3">\(\Sigma\)</td>
+<td class="org-right">1</td>
+<td class="org-right">1189.4</td>
+<td class="org-left">1/2<sup>+</sup></td>
+<td class="org-left">1</td>
+<td class="org-left">1</td>
+<td class="org-right">1</td>
+<td class="org-right">-1</td>
+<td class="org-left">0.8 10<sup>-10</sup></td>
+</tr>
+
+<tr>
+<td class="org-right">0</td>
+<td class="org-right">1192.5</td>
+<td class="org-left">1/2<sup>+</sup></td>
+<td class="org-left">1</td>
+<td class="org-left">0</td>
+<td class="org-right">1</td>
+<td class="org-right">-1</td>
+<td class="org-left">7.4 10<sup>-20</sup></td>
+</tr>
+
+<tr>
+<td class="org-right">-1</td>
+<td class="org-right">1197.4</td>
+<td class="org-left">1/2<sup>+</sup></td>
+<td class="org-left">1</td>
+<td class="org-left">-1</td>
+<td class="org-right">1</td>
+<td class="org-right">-1</td>
+<td class="org-left">1.5 10<sup>-10</sup></td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left" rowspan="2">\(\Xi\)</td>
+<td class="org-right">0</td>
+<td class="org-right">1314.9</td>
+<td class="org-left">1/2<sup>+</sup></td>
+<td class="org-left">1/2</td>
+<td class="org-left">+1/2</td>
+<td class="org-right">1</td>
+<td class="org-right">-2</td>
+<td class="org-left">2.9 10<sup>-10</sup></td>
+</tr>
+
+<tr>
+<td class="org-right">-1</td>
+<td class="org-right">1321.3</td>
+<td class="org-left">1/2<sup>+</sup></td>
+<td class="org-left">1/2</td>
+<td class="org-left">-1/2</td>
+<td class="org-right">1</td>
+<td class="org-right">-2</td>
+<td class="org-left">1.6 10<sup>-10</sup></td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">&Omega;</td>
+<td class="org-right">-1</td>
+<td class="org-right">1672.2</td>
+<td class="org-left">3/2<sup>+</sup></td>
+<td class="org-left">0</td>
+<td class="org-left">0</td>
+<td class="org-right">1</td>
+<td class="org-right">-3</td>
+<td class="org-left">8.2 10<sup>-11</sup></td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left" rowspan="3">\(\pi\)</td>
+<td class="org-right">1</td>
+<td class="org-right">139.6</td>
+<td class="org-left">0<sup>-</sup></td>
+<td class="org-left">1</td>
+<td class="org-left">+1</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-left">2.6 10<sup>-8</sup></td>
+</tr>
+
+<tr>
+<td class="org-right">0</td>
+<td class="org-right">135</td>
+<td class="org-left">0<sup>-</sup></td>
+<td class="org-left">1</td>
+<td class="org-left">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-left">8.4 10<sup>-17</sup></td>
+</tr>
+
+<tr>
+<td class="org-right">-1</td>
+<td class="org-right">139.6</td>
+<td class="org-left">0<sup>-</sup></td>
+<td class="org-left">1</td>
+<td class="org-left">-1</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-left">2.6 10<sup>-8</sup></td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">\(K^+\)</td>
+<td class="org-right">1</td>
+<td class="org-right">493.7</td>
+<td class="org-left">0<sup>-</sup></td>
+<td class="org-left">1/2</td>
+<td class="org-left">+1/2</td>
+<td class="org-right">0</td>
+<td class="org-right">1</td>
+<td class="org-left">1.2 10<sup>-8</sup></td>
+</tr>
+
+<tr>
+<td class="org-left">\(K^0\)</td>
+<td class="org-right">0</td>
+<td class="org-right">497.7</td>
+<td class="org-left">0<sup>-</sup></td>
+<td class="org-left">1/2</td>
+<td class="org-left">-1/2</td>
+<td class="org-right">0</td>
+<td class="org-right">1</td>
+<td class="org-left">0.9 10<sup>-10</sup> ou 5.2 10<sup>-8</sup></td>
+</tr>
+
+<tr>
+<td class="org-left">\(K^-\)</td>
+<td class="org-right">-1</td>
+<td class="org-right">493.7</td>
+<td class="org-left">0<sup>-</sup></td>
+<td class="org-left">1/2</td>
+<td class="org-left">-1/2</td>
+<td class="org-right">0</td>
+<td class="org-right">-1</td>
+<td class="org-left">idem \(K^+\)</td>
+</tr>
+
+<tr>
+<td class="org-left">\(\bar{K}^0\)</td>
+<td class="org-right">0</td>
+<td class="org-right">497.7</td>
+<td class="org-left">0<sup>-</sup></td>
+<td class="org-left">1/2</td>
+<td class="org-left">+1/2</td>
+<td class="org-right">0</td>
+<td class="org-right">-1</td>
+<td class="org-left">idem \(K^0\)</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+<div id="outline-container-orgheadline12" class="outline-2">
+<h2 id="orgheadline12"><span class="section-number-2">7</span> Caractéristiques des interactions fondamentales</h2>
+<div class="outline-text-2" id="text-7">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="void">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Interaction</th>
+<th scope="col" class="org-left">Forte</th>
+<th scope="col" class="org-left">Électromagnétique</th>
+<th scope="col" class="org-left">Faible</th>
+<th scope="col" class="org-left">Gravitation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">Particules de jauge</td>
+<td class="org-left">gluons</td>
+<td class="org-left">photons (&gamma;)</td>
+<td class="org-left">\(W^\pm, Z^0\)</td>
+<td class="org-left">graviton</td>
+</tr>
+
+<tr>
+<td class="org-left">\(I^\pi\)</td>
+<td class="org-left">1<sup>-</sup></td>
+<td class="org-left">1<sup>-</sup></td>
+<td class="org-left">1</td>
+<td class="org-left">2<sup>+</sup></td>
+</tr>
+
+<tr>
+<td class="org-left" rowspan="2">Masse [GeV]</td>
+<td class="org-left">0</td>
+<td class="org-left">0</td>
+<td class="org-left">\(M_Wc^2\) = 80.4</td>
+<td class="org-left">0</td>
+</tr>
+
+<tr>
+<td class="org-left">\(M_Zc^2\) = 91.2</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left" rowspan="2">Source</td>
+<td class="org-left">Charge de</td>
+<td class="org-left">Charge</td>
+<td class="org-left">Charge faible</td>
+<td class="org-left">Masse</td>
+</tr>
+
+<tr>
+<td class="org-left">couleur</td>
+<td class="org-left">électrique</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">Portée [m]</td>
+<td class="org-left">&le; 10<sup>-15</sup></td>
+<td class="org-left">&infin;</td>
+<td class="org-left">10<sup>-18</sup></td>
+<td class="org-left">&infin;</td>
+</tr>
+
+<tr>
+<td class="org-left" rowspan="3">Couplage</td>
+<td class="org-left">\(\alpha_S=\frac{g_S^2}{4\pi\hbar c}\leq1\)</td>
+<td class="org-left">\(\alpha=\frac{e^2}{4\pi\epsilon_0\hbar c}=\frac{1}{137}\)</td>
+<td class="org-left">\(\alpha_W=\frac{g_W^2}{4\pi\hbar c}\)</td>
+<td class="org-left">\(\frac{G_NM^2}{4\pi\hbar c}\)</td>
+</tr>
+
+<tr>
+<td class="org-left">~ 1 (\(r\) grand)</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">~ 10<sup>-6</sup></td>
+<td class="org-left">\(=5 10^{-40}\)</td>
+</tr>
+
+<tr>
+<td class="org-left">&lt; 1 (\(r\) petit)</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">Section efficace</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">&sigma; caractéristique</td>
+<td class="org-left">10<sup>-3</sup> à 100 b</td>
+<td class="org-left">~ 10<sup>-6</sup> b</td>
+<td class="org-left">~ 10<sup>-14</sup> b</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">Vie moyenne</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">&tau; caractéristique</td>
+<td class="org-left">10<sup>-23</sup> à 10<sup>-20</sup> s</td>
+<td class="org-left">10<sup>-20</sup> à 10<sup>-15</sup> s</td>
+<td class="org-left">&gt; 10<sup>-13</sup> s</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+</tbody>
+</table>
+
+<p>
+Les deux tableaux suivants résument les interactions auxquelles sont soumises
+les différentes particules élémentaires et les lois de conservation que
+vérifient leurs interactions.
+</p>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="void">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Particules</th>
+<th scope="col" class="org-left">Int. forte</th>
+<th scope="col" class="org-left">Int. EM</th>
+<th scope="col" class="org-left">Int. faible</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">quarks</td>
+<td class="org-left">oui</td>
+<td class="org-left">oui</td>
+<td class="org-left">oui</td>
+</tr>
+
+<tr>
+<td class="org-left">\(e,\mu,\tau\)</td>
+<td class="org-left">non</td>
+<td class="org-left">oui</td>
+<td class="org-left">oui</td>
+</tr>
+
+<tr>
+<td class="org-left">neutrinos</td>
+<td class="org-left">non</td>
+<td class="org-left">non</td>
+<td class="org-left">oui</td>
+</tr>
+</tbody>
+</table>
+
+<p>
+<b>Toutes les interactions conservent l'énergie, l'impulsion, le moment cinétique,
+ le nombre baryonique, les nombes leptoniques et la charge électrique.</b>
+</p>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="void">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Nombre quantique ou</th>
+<th scope="col" class="org-left">&#xa0;</th>
+<th scope="col" class="org-left">&#xa0;</th>
+<th scope="col" class="org-left">&#xa0;</th>
+</tr>
+
+<tr>
+<th scope="col" class="org-left">symétrie conservés</th>
+<th scope="col" class="org-left">Int. forte</th>
+<th scope="col" class="org-left">Int. EM</th>
+<th scope="col" class="org-left">Int. faible</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">Parité</td>
+<td class="org-left">oui</td>
+<td class="org-left">oui</td>
+<td class="org-left">non</td>
+</tr>
+
+<tr>
+<td class="org-left">Conjugaison de charge</td>
+<td class="org-left">oui</td>
+<td class="org-left">oui</td>
+<td class="org-left">non</td>
+</tr>
+
+<tr>
+<td class="org-left">Saveur (étrangeté, charme,&#x2026;)</td>
+<td class="org-left">oui</td>
+<td class="org-left">oui</td>
+<td class="org-left">non</td>
+</tr>
+
+<tr>
+<td class="org-left">\(T_3\)</td>
+<td class="org-left">oui</td>
+<td class="org-left">oui</td>
+<td class="org-left">non</td>
+</tr>
+
+<tr>
+<td class="org-left">\(\vv{T}\)</td>
+<td class="org-left">oui</td>
+<td class="org-left">non</td>
+<td class="org-left">non</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+File under <i class="fa fa-github-alt"></i> version control - commit <a href="https://github.com/xgarrido/master_npp_teaching/commit/105f89e4f410d357e71b4bcd145bcd4c63b681b1">105f89e</a> - 2016-06-28
+</div>
+</body>
+</html>
