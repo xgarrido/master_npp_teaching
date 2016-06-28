@@ -3,12 +3,13 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<title>TD2 : Nombres Quantiques &amp; Symétries</title>
 <meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta  name="viewport" content="width=device-width, initial-scale=1" />
+<title>TD2 : Nombres quantiques &amp; Symétries</title>
 <meta  name="generator" content="Org-mode" />
 <link rel="stylesheet" href="css/styles.css" />
                <link rel="stylesheet" href="css/org-pygments.css" />
-               <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" />
+               <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" />
 <script type="text/javascript">
 /*
 @licstart  The following is the entire license notice for the
@@ -123,37 +124,30 @@ for the JavaScript code in this tag.
 </head>
 <body onload="randomLinkColor();displayTOC();"><div id="toc"></div>
 <div id="preamble" class="status">
- 
+  
 </div>
 <div id="content">
-<h1 class="title">TD2 : Nombres Quantiques &amp; Symétries</h1>
+<h1 class="title">TD2 : Nombres quantiques &amp; Symétries</h1>
 <div style="display:none;">
 <div id="text-table-of-contents">
 <ul class="org-ul">
-<li><a href="././td_np_0.html">TD1 : Cinématique &amp; Accélérateurs</a>
-</li>
-<li><a href="././td_np_1.html">TD2 : Nombres Quantiques &amp; Symétries</a>
-</li>
-<li><a href="././td_np_2.html">TD3 : Réactions de production et de désintégration de particules</a>
-</li>
-<li><a href="././td_np_3.html">TD4 : Modèle des quarks &#x2013; Les hadrons</a>
-</li>
-<li><a href="././td_np_4.html">TD5 : Isospin &#x2013; des quarks aux noyaux</a>
-</li>
-<li><a href="././td_np_5.html">TD6 : Structure nucléaire</a>
-</li>
-<li><a href="././td_np_6.html">TD7 : Réactions nucléaires</a>
-</li>
-<li><a href="././td_np_7.html">TD8 : Masses et désintégrations nucléaires</a>
-</li>
-<li><a href="././td_np_8.html">TD9 : Modèle Standard et au-delà : l'interaction faible</a>
-</li>
+<li><a href="././td_np_0.html">TD1 : Cinématique &amp; Accélérateurs</a></li>
+<li><a href="././td_np_1.html">TD2 : Nombres quantiques &amp; Symétries</a></li>
+<li><a href="././td_np_2.html">TD3 : Réactions de production et de désintégration de particules</a></li>
+<li><a href="././td_np_3.html">TD4 : Modèle des quarks &#x2013; Les hadrons</a></li>
+<li><a href="././td_np_4.html">TD5 : Isospin &#x2013; des quarks aux noyaux</a></li>
+<li><a href="././td_np_5.html">TD6 : Structure nucléaire</a></li>
+<li><a href="././td_np_6.html">TD7 : Réactions nucléaires</a></li>
+<li><a href="././td_np_7.html">TD8 : Masses et désintégrations nucléaires</a></li>
+<li><a href="././td_np_8.html">TD9 : Modèle Standard et au-delà : l'interaction faible</a></li>
+<li><a href="././td_np_9.html">Annexes</a></li>
+<li><a href="././td_np_10.html">Aide-mémoire de Noyaux &amp; Particules</a></li>
 </ul>
 </div>
 </div>
 
-<div id="outline-container-sec-1" class="outline-2">
-<h2 id="sec-1"><span class="section-number-2">1</span> Énergie maximum des rayons cosmiques</h2>
+<div id="outline-container-orgheadline1" class="outline-2">
+<h2 id="orgheadline1"><span class="section-number-2">1</span> Énergie maximum des rayons cosmiques</h2>
 <div class="outline-text-2" id="text-1">
 
 <div class="figure">
@@ -162,10 +156,29 @@ for the JavaScript code in this tag.
 <p><span class="figure-number">Figure 1:</span> <b>Spectre en énergie des rayons cosmiques</b></p>
 </div>
 
-<p>
-\[p + \gamma \rightarrow p + \pi^{+}\]
-\[p + \gamma \rightarrow n + \pi^{0}\]
+<div class="QUESTION">
+<ol class="org-ol">
+<li><p>
+On considère un proton émis par une source astrophysique (Soleil, noyaux
+actifs de galaxie,&#x2026;) et interagissant avec le rayonnement fossile à 2.7 K
+(on admettra que \(E_\gamma = 3kT_\gamma\) pour les photons, avec \(k\) =
+1,38.10<sup>-23</sup> J/K) :
 </p>
+\begin{align*}
+  p + \gamma &\rightarrow p + \pi^0 \quad {\rm et}\\
+  p + \gamma &\rightarrow n + \pi^+
+\end{align*}
+
+<p>
+Quelle est l'énergie seuil de ces réactions (on supposera le proton
+ultra-relativiste) ?
+</p></li>
+
+<li>Que pouvez-vous en déduire sur l'énergie des protons dans le milieu
+intergalactique ?</li>
+</ol>
+
+</div>
 
 <p>
 Calcul de l'invariant relativiste :
@@ -184,25 +197,30 @@ Proton ultra-relativiste \(E_{p}\sim T_{p} = p_{p}c\)
 \end{align*}
 
 <p>
-d'où l'énergie seuil \[E_{p} \sim T_{p} =
-\frac{\left(\Upsigma\,m_\text{finale}c^{2}\right)^{2}}{2E_{\gamma}(1-\cos\theta)}\]
+d'où l'énergie seuil
 </p>
+\begin{align*}
+  E_{p} \sim T_{p} =
+  \frac{\left(\Upsigma\,m_\text{finale}c^{2}\right)^{2}}{2E_{\gamma}(1-\cos\theta)}
+\end{align*}
 
 <p>
-Cas limites: \[\theta\rightarrow0; T_{p}\rightarrow\infty\] et \[\theta =
-180^\circ; T_{p} =
-\frac{\left(\Upsigma\,m_\text{finale}c^{2}\right)^{2}}{4E_{\gamma}}\]
+Cas limites:
 </p>
+<ul class="org-ul">
+<li>\(\theta\rightarrow0; T_{p}\rightarrow\infty\)</li>
+<li>\(\theta = 180^\circ; T_{p} = \frac{\left(\Upsigma\,m_\text{finale}c^{2}\right)^{2}}{4E_{\gamma}}\)</li>
+</ul>
 
 <p>
 AN: \(m_{\pi^{0}}c^{2}\) = 135 MeV et \(m_{\pi^{+}}c^{2}\) = 139.6 MeV
 </p>
 \begin{align*}
-  T_{p}(\pi^{0}/\pi^{+}) &= \frac{(135/139.6 + 938.3)^{2}\cdot1.6\,10^{-13}}{4\cdot3\cdot1.38\,10^{-23}\cdot2.7} = 4.1\,10^{20}\,eV\\
+  T_{p}(\pi^{0}/\pi^{+}) &= \frac{(135/139.6 + 938.3)^{2}\cdot1.6\,10^{-13}}{4\cdot3\cdot1.38\,10^{-23}\cdot2.7} = \unit[4.1\,10^{20}]{eV}\\
 \end{align*}
 
 
-<div id="fig::proton_attenuation" class="figure">
+<div id="orgparagraph1" class="figure">
 <p><img src="./figures/proton_attenuation_result.png" alt="proton_attenuation_result.png" width="500" />
 </p>
 <p><span class="figure-number">Figure 2:</span> <b>Énergie moyenne des protons en fonction de leur distance à la source</b></p>
@@ -213,7 +231,7 @@ AN: \(m_{\pi^{0}}c^{2}\) = 135 MeV et \(m_{\pi^{+}}c^{2}\) = 139.6 MeV
 pions sont de l’ordre de 15% par interaction ; le libre parcours moyen &lambda;
 est typiquement le mégaparsec<sup><a id="fnr.1" class="footref" href="#fn.1">1</a></sup>. Ainsi, l’énergie moyenne d’un proton
 diminue de façon significative au cours de sa propagation dans l’Univers comme
-le montre la Figure <a href="#fig::proton_attenuation">2</a>. Un proton avec une énergie initiale
+le montre la Figure <a href="#orgparagraph1">2</a>. Un proton avec une énergie initiale
 de 10<sup>22</sup> eV voit son énergie réduite à 10<sup>20</sup> eV après avoir parcouru 100
 Mpc. Une diminution nette du flux appelée coupure GZK est alors attendue au
 seuil de la réaction de photoproduction de pions <i>i.e.</i> 10<sup>19.6</sup> eV<sup><a id="fnr.2" class="footref" href="#fn.2">2</a></sup>. La
@@ -222,8 +240,8 @@ sources considérées sont ou non uniformément réparties dans l’Univers. En
 particulier, la forme du spectre au delà du seuil GZK permet, en théorie,
 d’évaluer la répartition des sources et de mettre en exergue une éventuelle
 surabondance locale.
- <div class="footdef"><sup><a id="fn.1" class="footnum" href="#fnr.1">1</a></sup> <p class="footpara"> 1 pc = 1 parsec = 3.26 années lumières = 30.856 10<sup>12</sup> km. </p><br/>
- <sup><a id="fn.2" class="footnum" href="#fnr.2">2</a></sup> <p class="footpara"> dans l’hypothèse où les RCUHEs sont des noyaux, la photodésintégration par interaction avec les photons du CMB et le fond infrarouge, devient importante dans la région 5 10<sup>19</sup> &#x2013; 2 10<sup>20</sup> eV. La longueur de perte d’énergie, i.e. le rapport entre le libre parcours moyen et l’inélasticité de la réaction, est typiquement de 100 Mpc pour un noyau de fer de 100 EeV. Le rayonnement gamma est quant à lui fortement attenué en raison, principalement, des interactions avec le fond radio \(\gamma + \gamma_{radio} \rightarrow e^{+} + e^{-}\). </p><br/></div>
+ <div class="footdef"><sup><a id="fn.1" class="footnum" href="#fnr.1">1</a></sup> <div class="footpara"><p class="footpara"> 1 pc = 1 parsec = 3.26 années lumières = 30.856 10<sup>12</sup> km. </p></div><br/>
+ <sup><a id="fn.2" class="footnum" href="#fnr.2">2</a></sup> <div class="footpara"><p class="footpara"> dans l’hypothèse où les RCUHEs sont des noyaux, la photodésintégration par interaction avec les photons du CMB et le fond infrarouge, devient importante dans la région 5 10<sup>19</sup> &#x2013; 2 10<sup>20</sup> eV. La longueur de perte d’énergie, i.e. le rapport entre le libre parcours moyen et l’inélasticité de la réaction, est typiquement de 100 Mpc pour un noyau de fer de 100 EeV. Le rayonnement gamma est quant à lui fortement attenué en raison, principalement, des interactions avec le fond radio \(\gamma + \gamma_{radio} \rightarrow e^{+} + e^{-}\). </p></div><br/></div>
 </p>
 
 
@@ -242,9 +260,54 @@ surabondance locale.
 </div>
 </div>
 
-<div id="outline-container-sec-2" class="outline-2">
-<h2 id="sec-2"><span class="section-number-2">2</span> Étrangeté dans les rayons cosmiques</h2>
+<div id="outline-container-orgheadline2" class="outline-2">
+<h2 id="orgheadline2"><span class="section-number-2">2</span> Étrangeté dans les rayons cosmiques</h2>
 <div class="outline-text-2" id="text-2">
+<div class="QUESTION">
+<p>
+À l'arrivée dans l'atmosphère, les protons réagissent avec les neutrons des
+noyaux, pour engendrer la cascade de réactions :
+</p>
+\begin{align*}
+  p + n_\text{atm} &\rightarrow p + p + \pi^- \\
+  \pi^-+ p_\text{atm} &\rightarrow V_1 + V_2 \\
+  V_1 &\rightarrow p + \pi^-  \\
+  V_2 &\rightarrow \pi^+ + \pi^-  \\
+  \pi^- &\rightarrow \mu^- + \bar{\nu_\mu}  \\
+  \mu^- &\rightarrow e^- + \bar{\nu_e} +  \nu_\mu
+\end{align*}
+
+<p>
+V\(_1\) et V\(_2\) sont des "V-particles", observées par Rochester &amp; Butler
+en 1947. Ces particules neutres n'étaient détectées qu'au travers de leur
+produits de désintégration, ce qui formait un "V" de traces dans le détecteur
+(chambre à brouillard).
+</p>
+
+</div>
+
+<div class="center">
+
+<div class="figure">
+<p><img src="figures/v_particles.jpg" alt="v_particles.jpg" />
+</p>
+<p><span class="figure-number">Figure 5:</span> <b>Photographies de deux événements faisant apparaître la désintégration de deux particules \(\bm{V}\)</b> (référence <a href="http://www.nature.com/physics/looking-back/rochester/index.html">Rochester G. D. &amp; Butler C. C. 1947</a>)</p>
+</div>
+</div>
+
+<div class="QUESTION">
+<ol class="org-ol">
+<li value="1">V\(_1\) se désintègre en émettant un pion et un proton d'impulsions
+respectives \(p_{\pi}c\) = 160 MeV et \(p_{p}c\) = 320 MeV et faisant un angle
+&theta;<sub>1</sub> = 65°. Dans le cas de V\(_2\) deux pions chargés d'impulsions
+\(p_{\pi}c\) = 220 MeV sont émis avec un angle &theta;<sub>2</sub> = 135°. Quelle est la
+masse de la particule mère dans ces deux cas ? Les "V-particles"
+correspondent-elles à des particules connues à l'époque ? La plus massive
+sera notée &Lambda;<sup>0</sup> et la plus légère \(K^0\) dans la suite.</li>
+</ol>
+
+</div>
+
 <p>
 Cascade de réactions : \(p\rightarrow\pi\rightarrow\mu\rightarrow e\)
 Le muon est ainsi détecté pour la première fois car si sa durée de vie propre
@@ -252,15 +315,10 @@ est de 2.2 &mu;s, ce temps est "boosté" par le facteur de Lorentz soit &tau; =
 &gamma;&tau;<sub>0</sub> = quelques ms.
 </p>
 
-
-<div class="figure">
-<p><img src="./figures/v_particles.jpg" alt="v_particles.jpg" />
-</p>
-<p><span class="figure-number">Figure 5:</span> <b>Photographies de deux événements faisant apparaître la désintégration de deux particules \(\bm{V}\)</b> (référence <a href="http://www.nature.com/physics/looking-back/rochester/index.html">Rochester G. D. &amp; Butler C. C. 1947)</a></p>
-</div>
-
 <ol class="org-ol">
-<li>Les particules \(V\)
+<li><p>
+Les particules \(V\)
+</p>
 
 <div class="center">
 <p>
@@ -285,12 +343,10 @@ Conservation de l'énergie et de l'impulsion
   \end{bmatrix}
 \end{equation*}
 
-<p>
-\[E_{V_1} = E_\pi + E_p \Leftrightarrow p_{V}^2c^2 + m_{V}^2c^4 =
-   \left[\sqrt{p_\pi^2c^2 + m_\pi^2c^4} + \sqrt{p_p^2c^2 + m_p^2c^4}\right]^2\]
-\[\vv{p_{V}} = \vv{p_\pi} + \vv{p_p} \Leftrightarrow p_{V}^2c^2 =
-   p_\pi^2c^2 + p_p^2c^2 + 2p_\pi p_p c^2\cos\theta\]
-</p>
+\begin{align*}
+  E_{V_1} &= E_\pi + E_p \Leftrightarrow p_{V}^2c^2 + m_{V}^2c^4 = \left[\sqrt{p_\pi^2c^2 + m_\pi^2c^4} + \sqrt{p_p^2c^2 + m_p^2c^4}\right]^2\\
+  \vv{p}_{V} &= \vv{p}_\pi + \vv{p}_p \Leftrightarrow p_{V}^2c^2 = p_\pi^2c^2 + p_p^2c^2 + 2p_\pi p_p c^2\cos\theta
+\end{align*}
 
 <p>
 <b>AN :</b>
@@ -305,20 +361,38 @@ Conservation de l'énergie et de l'impulsion
 <p>
 <b>Discussion :</b> À l'époque, seuls le proton, neutron, électron, pion et muon
 sont connus &rarr; \(V_1 = \Lambda^0\) et \(V_2 = K^0\)
-</p>
-</li>
+</p></li>
+</ol>
 
-<li>\(d_{\Lambda^0} = \unit[3.2]{cm}\) et \(d_{K^0} = \unit[0.8]{cm}\)
+<div class="QUESTION">
+<ol class="org-ol">
+<li value="2">Le &Lambda;<sup>0</sup> parcourt une distance de 3.2 cm dans le détecteur avant
+de se désintègrer et le \(K^0\) se désintègre après un vol de 0.8 cm. Quelle
+est la durée de vie de ces deux particules, en faisant une hypothèse non
+relativiste, que l'on justifiera ?</li>
+</ol>
+
+</div>
+<ol class="org-ol">
+<li value="2"><p>
+\(d_{\Lambda^0} = \unit[3.2]{cm}\) et \(d_{K^0} = \unit[0.8]{cm}\)
+</p>
 \begin{align*}
   T_{\Lambda^0} &= \sqrt{m_{\Lambda^0}^2c^4 + p_{\Lambda^0}^2c^2} - m_{\Lambda^0}c^2 = \unit[73]{MeV} \ll m_{\Lambda^0}c^2\\
   T_{K^0} &= \sqrt{m_{K^0}^2c^4 + p_{K^0}^2c^2} - m_{K^0}c^2 = \unit[28]{MeV} \ll m_{K^0}c^2
 \end{align*}
 
+\begin{align*}
+  \tau_{\Lambda^0} = \frac{d_{\Lambda^0}}{v}
+\end{align*}
+
 <p>
-\[\tau_{\Lambda^0} = \frac{d_{\Lambda^0}}{v}\] or \(p=mv\) d'où
-\[\tau_{\Lambda^0} = \frac{d_{\Lambda^0}\cdot m_{\Lambda^0}}{p} =
-   \frac{d_{\Lambda^0}}{c}\cdot \frac{m_{\Lambda^0}c^2}{pc}\]
+or \(p=mv\) d'où
 </p>
+\begin{align*}
+  \tau_{\Lambda^0} = \frac{d_{\Lambda^0}\cdot m_{\Lambda^0}}{p} =
+  \frac{d_{\Lambda^0}}{c}\cdot \frac{m_{\Lambda^0}c^2}{pc}
+\end{align*}
 
 <p>
 <b>AN :</b>
@@ -326,17 +400,31 @@ sont connus &rarr; \(V_1 = \Lambda^0\) et \(V_2 = K^0\)
 \begin{align*}
   \tau_{\Lambda^0} &= \frac{\unit[0.032]{m}}{\unit[3\,10^8]{m/s}}\cdot\frac{\unit[1130]{MeV}}{\unit[413]{MeV}} = \unit[2.9\,10^{-10}]{s}\\
   \tau_{K^0} &= \frac{\unit[0.008]{m}}{\unit[3\,10^8]{m/s}}\cdot\frac{\unit[493]{MeV}}{\unit[168]{MeV}} = \unit[7.8\,10^{-11}]{s}
-\end{align*}
-</li>
+\end{align*}</li>
 </ol>
 
-
+<div class="QUESTION">
 <ol class="org-ol">
-<li>&tau; est un temps caractéristique d'une désintégration par interaction
-faible : &tau; &gt; 10<sup>-13</sup> s (<i>cf.</i> page 30)
-</li>
+<li value="3">Quelle est l'interaction responsable de leur désintégration ?</li>
+</ol>
 
-<li>Le fait que ces particules \(K^0\) et \(\Lambda^0\) soient toujours produites par
+</div>
+<ol class="org-ol">
+<li value="3">&tau; est un temps caractéristique d'une désintégration par interaction
+faible : &tau; &gt; 10<sup>-13</sup> s (<i>cf.</i> page 30)</li>
+</ol>
+
+<div class="QUESTION">
+<ol class="org-ol">
+<li value="4">En 1952-1953 on observe, avec l'accélérateur du Brookhaven National
+Laboratory (BNL), que la production de ces "V-particles" se fait
+exclusivement par paires \(p + \pi^- \rightarrow K^0 + \Lambda^0\). Que
+pouvez-vous conjecturer d'après ces faits expérimentaux ?</li>
+</ol>
+
+</div>
+<ol class="org-ol">
+<li value="4">Le fait que ces particules \(K^0\) et \(\Lambda^0\) soient toujours produites par
 paire implique la conservation d'une quantité jusqu'alors inconnue
 &rarr; introduction de <b>l'étrangeté</b> \(S\) comme nouveau nombre quantique.
 Cette quantité est ainsi conservée lors de la production des particules \(V\)
@@ -346,27 +434,71 @@ pour toutes les particules connues jusqu'à présent. Il découlera de ces
 résultats expérimentaux le modèle des quarks introduit par Murray Gell-Mann
 (déjà à l'origine de l'étrangeté pour expliquer les résultats du
 Cosmotron<sup><a id="fnr.3" class="footref" href="#fn.3">3</a></sup> de BNL) au début des années 60, modèle pour lequel il
-obtiendra le prix nobel de Physique en 1969.
-</li>
+obtiendra le prix nobel de Physique en 1969.</li>
+</ol>
 
-<li>\(p + n \rightarrow p + \Lambda^0\) et \(n + n \rightarrow \Lambda^0 +
+<div class="QUESTION">
+<ol class="org-ol">
+<li value="5"><p>
+Au BNL, les réactions
+ <div class="footdef"><sup><a id="fn.3" class="footnum" href="#fnr.3">3</a></sup> <div class="footpara"><p class="footpara"> le Cosmotron du laboratoire national de Brookhaven fut le premier synchrotron a accéléré des protons au delà du GeV (1952 &#x2013; 1966) contribuant à la découverte de l'ensemble des mésons chargés de même qu'à la mise en évidence de particules lourdes instables telles que les particules \(V\). </p></div><br/></div>
+</p>
+\begin{align*}
+  p+n&\rightarrow p+\Lambda^0\quad\text{et}\\
+  n+n&\rightarrow \Lambda^0+\Lambda^0
+\end{align*}
+
+<p>
+ne sont pas observées. Ceci fournit une limite supérieure sur leur taux
+d'apparition qui est au moins 5 ordres de grandeur inférieur à la réaction
+observée à la question 4). Ce fait expérimental est-il en accord avec votre
+conjecture ?
+</p></li>
+</ol>
+
+</div>
+<ol class="org-ol">
+<li value="5">\(p + n \rightarrow p + \Lambda^0\) et \(n + n \rightarrow \Lambda^0 +
    \Lambda^0\). Ces deux réactions ne conservent pas l'étrangeté \(S\). Elles ne
 peuvent donc se produire par interaction forte. La très faible section
 efficace par rapport à la réaction \(p + p \rightarrow K^0 + \Lambda^0\)
-confirme cette hypothèse : &sigma;<sub>forte</sub> &Gt; &sigma;<sub>faible</sub>
-</li>
+confirme cette hypothèse : &sigma;<sub>forte</sub> &Gt; &sigma;<sub>faible</sub></li>
+</ol>
 
-<li>\(\Lambda^0 \rightarrow \pi^+ + \pi^-\) : le nombre baryonique n'est pas
+<div class="QUESTION">
+<ol class="org-ol">
+<li value="6"><p>
+Pouvez-vous expliquer pourquoi la réaction
+\(\Lambda^0\rightarrow\pi^++\pi^-\) n'est jamais observée ?
+</p>
+
+<p>
+Deux autres familles de particules "étranges" (&Sigma; et &Xi;) ont été
+rapidement découvertes par la suite à la fois au BNL et dans les gerbes
+atmosphériques. Cette profusion de nouvelles particules a initié le modèle
+des quarks (<i>cf.</i> TD4) mais aussi la découverte de la violation de la parité.
+</p></li>
+</ol>
+
+</div>
+<ol class="org-ol">
+<li value="6">\(\Lambda^0 \rightarrow \pi^+ + \pi^-\) : le nombre baryonique n'est pas
 conservé or toutes intéractions conservent ce nombre (y compris l'interaction
-faible)
-</li>
+faible)</li>
 </ol>
 </div>
 </div>
 
-<div id="outline-container-sec-3" class="outline-2">
-<h2 id="sec-3"><span class="section-number-2">3</span> La parité et sa violation</h2>
+<div id="outline-container-orgheadline3" class="outline-2">
+<h2 id="orgheadline3"><span class="section-number-2">3</span> La parité et sa violation</h2>
 <div class="outline-text-2" id="text-3">
+<div class="QUESTION">
+<ol class="org-ol">
+<li value="1">Rappeler la définition de la parité. Quelles sont ses propriétés ? Que
+signifie formellement et intuitivement sa conservation ?</li>
+</ol>
+
+</div>
 <ol class="org-ol">
 <li>L'opérateur parité transforme une fonction \(\psi(\vv{r})\) en
 \(\psi(-\vv{r})\) : \(\hat{\mathcal{P}}\,\psi(\vv{r}) = \psi(-\vv{r})\). Les
@@ -376,57 +508,75 @@ valeurs propres &pi; sont telles que \(\hat{\mathcal{P}}\,\psi(\vv{r}) =
 donc unitaire et les valeurs propres sont &pi; = &plusmn;1 (à une phase
 près). L'invariance sous \(\hat{\mathcal{P}}\) <i>i.e.</i> conservation de la parité
 implique qu'il n'y a pas de différence entre "gauche ou droite" (même image
-dans un miroir).
-</li>
+dans un miroir).</li>
+</ol>
 
-<li>\(A^+\rightarrow\pi^++\pi^++\pi^+-\)
+<div class="QUESTION">
+<ol class="org-ol">
+<li value="2">On considère la réaction \(A^+\rightarrow\pi^++\pi^++\pi^-\). Quelle est
+la parité dans l'état final ? On donne \(I(A)=0\) et \(I^\pi(\pi)=0^-\).</li>
+</ol>
 
-<p>
+</div>
+<ol class="org-ol">
+<li value="2"><p>
 Conservation du moment cinétique total \(\vv{I}\)
- <div class="footdef"><sup><a id="fn.3" class="footnum" href="#fnr.3">3</a></sup> <p class="footpara"> le Cosmotron du laboratoire national de Brookhaven fut le premier synchrotron a accéléré des protons au delà du GeV (1952 &#x2013; 1966) contribuant à la découverte de l'ensemble des mésons chargés de même qu'à la mise en évidence de particules lourdes instables telles que les particules \(V\). </p><br/></div>
 </p>
-
-<p>
-$$\vv{I}(A^+) + \vv{L}_i = \vv{I}(\pi^+) + \vv{I}(\pi^+) + \vv{I}(\pi^-) +
-   \vv{L}_f$$
-</p>
+\begin{align*}
+  \vv{I}(A^+) + \vv{L}_i = \vv{I}(\pi^+) + \vv{I}(\pi^+) + \vv{I}(\pi^-) +
+  \vv{L}_f
+\end{align*}
 
 <p>
 où \(\vv{L}_i\) et \(\vv{L}_f\) sont les moments angulaires relatifs des
 particules en voie d'entrée et de sortie. La conservation de la parité &pi; se
 traduit par l'équation suivante
 </p>
-
-<p>
-\[\pi(A^+)\,(-1)^{L_i} = \pi(\pi^+)\,\pi(\pi^+)\,\pi(\pi^-)\,(-1)^{L_f}\]
-</p>
+\begin{align*}
+  \pi(A^+)\,(-1)^{L_i} = \pi(\pi^+)\,\pi(\pi^+)\,\pi(\pi^-)\,(-1)^{L_f}
+\end{align*}
 
 <p>
 Du fait que \(I(A^+) = I(\pi^\pm) = 0\), on déduit que \(\vv{L_f} - \vv{L_i} =
    \vv{0}\) soit la parité dans l'état final \(A^+\)
 </p>
+\begin{align*}
+  \pi(A^+) = (-1)\,(-1)\,(-1)\,(-1)^0 = -1
+\end{align*}</li>
+</ol>
 
-<p>
-$$\pi(A^+) = (-1)\,(-1)\,(-1)\,(-1)^0 = -1$$
+<div class="QUESTION">
+<ol class="org-ol">
+<li value="3">On considère la réaction \(\theta^+\rightarrow\pi^++\pi^0\). Quelle est la
+parité dans l'état final ? On donne \(I(\theta)=0\) et \(I^\pi(\pi)=0^-\).</li>
+</ol>
+
+</div>
+<ol class="org-ol">
+<li value="3"><p>
+Le moment angulaire relatif \(L_i - L_f\) est donc nul.
 </p>
-</li>
+\begin{align*}
+  \pi(\theta^+) = \pi(\pi^+)\,\pi(\pi^0)\,(-1)^0 = +1
+\end{align*}</li>
+</ol>
 
-<li>\(\theta^+\rightarrow\pi^++\pi^0\) avec \(I(\theta)=0\) et \(I^\pi(\pi)=0^-\). Le
-moment angulaire relatif \(L_i - L_f\) est donc nul.
+<div class="QUESTION">
+<ol class="org-ol">
+<li value="4">On sait par ailleurs que \(\theta^+\) et \(A^+\) ont mêmes masses et durées
+de vie. Qu'est ce que cela vous suggère-t-il ? Ce problème était connu à
+l'époque sous le patronyme de "puzzle &theta;/&tau;".</li>
+</ol>
 
-<p>
-\[\pi(\theta^+) = \pi(\pi^+)\,\pi(\pi^0)\,(-1)^0 = +1\]
-</p>
-</li>
-
-<li>\(A^+\) et \(\theta^+\) ont la même masse, mêmes durées de vie et même charge
-électrique. Elles sont donc la même particule mais avec <b>une parité
+</div>
+<ol class="org-ol">
+<li value="4">\(A^+\) et \(\theta^+\) ont la même masse, mêmes durées de vie et même
+charge électrique. Elles sont donc la même particule mais avec <b>une parité
 différente</b>. Les mésons se désintégrant par interaction faible, ce problème
 aussi connu sous le nom de "puzzle &theta;/&tau;" (&tau;&equiv; A<sup>+</sup>) trouva sa
 solution dans le fait que l'interaction faible ne conserve pas la parité. Ces
 deux particules sont donc une seule et même particule appelée à présent
-\(K^+\).
-</li>
+\(K^+\).</li>
 </ol>
 </div>
 </div>
@@ -441,7 +591,7 @@ deux particules sont donc une seule et même particule appelée à présent
 </div>
 </div></div>
 <div id="postamble" class="status">
-File under <i class="fa fa-github-alt"></i> version control - commit <a href="https://github.com/xgarrido/master_npp_teaching/commit/89d83a85f0a9130bb70ecb7542a8376a91b9543a">89d83a8</a> - 2014-05-14
+File under <i class="fa fa-github-alt"></i> version control - commit <a href="https://github.com/xgarrido/master_npp_teaching/commit/105f89e4f410d357e71b4bcd145bcd4c63b681b1">105f89e</a> - 2016-06-28
 </div>
 </body>
 </html>
