@@ -4,7 +4,7 @@
 #+OPTIONS: ^:{} toc:2 author:t email:t split:html
 #+LATEX_CLASS: teaching-class
 
-* COMMENT TD1 : Cinématique & Accélérateurs
+* TD1 : Cinématique & Accélérateurs
 ** Introduction
 
 #+BEGIN_CENTER
@@ -263,7 +263,7 @@ a + b \rightarrow c + d + e + f
 \end{align*}
 #+END_SRC
 Les particules produites lors de cette réaction $c$, $d$, $e$ et $f$ ont pour
-masses respectives $m_cc^2$, $m_dc^2$, m_ec^2$ et m_fc^2$.
+masses respectives $m_cc^2$, $m_dc^2$, $m_ec^2$ et $m_fc^2$.
 
 1) [@1] On suppose que la réaction a lieu dans le référentiel du centre de masse
    des particules $a$ et $b$ et on se place dans le cas particulier où
@@ -568,7 +568,7 @@ $\vv{v}$ dans un champ d'induction $\vv{B}$ normal à $\vv{v}$.
      \end{align*}
    #+END_SRC
 
-* COMMENT TD2 : Nombres quantiques & Symétries
+* TD2 : Nombres quantiques & Symétries
 ** Énergie maximum des rayons cosmiques
 
 #+CAPTION: *Spectre en énergie des rayons cosmiques*
@@ -921,7 +921,7 @@ synchrotron a accéléré des protons au delà du GeV (1952 -- 1966) contribuant
 la découverte de l'ensemble des mésons chargés de même qu'à la mise en évidence
 de particules lourdes instables telles que les particules $V$.
 
-* COMMENT TD3 : Réactions de production et de désintégration de particules
+* TD3 : Réactions de production et de désintégration de particules
 
 #+CAPTION: *Modèle standard de la physique des particules*
 [[file:./figures/standard_model.pdf]]
@@ -1283,7 +1283,7 @@ Brookhaven en 1964.
 [fn:4] le moment cinétique total est également différent 5/2^{+} ou 7/2^{+} contre
 3/2^{+}
 
-* COMMENT TD4 : Modèle des quarks -- Les hadrons
+* TD4 : Modèle des quarks -- Les hadrons
 ** Les mésons constitués des quarks $u,d,s$ et de leurs antiquarks
 #+BEGIN_QUESTION
 1) [@1] D'après le tableau caractéristique des quarks, établir le même tableau
@@ -1771,7 +1771,7 @@ $\vv{T}=\vv{0}$ et $\vv{S}=\vv{3}/2$, la somme n'est donc pas impaire. C'est
 l'introduction de la couleur qui permet de rendre cette fonction d'onde globale
 antisymétrique.
 
-* COMMENT TD5 : Isospin -- des quarks aux noyaux
+* TD5 : Isospin -- des quarks aux noyaux
 ** Introduction
 
 L'isospin $\vv{T}$ rend compte de l'indépendance de charge de l'intéraction
@@ -2338,7 +2338,7 @@ symétrique. Toutefois et comme nous le verrons dans l'exercice sur la parité
 intrinsèque du pion, la fonction d'onde globale de ces états demeure
 antisymétrique en raison du principe de Pauli généralisé qui impose que deux
 fermions soient dans des états quantiques différents.
-* COMMENT TD6 : Structure nucléaire
+* TD6 : Structure nucléaire
 ** Introduction
 Dans l'approximation du champ moyen, l'hamiltonien d'un système à $N$ nucléons
 prend la forme suivante
@@ -2902,7 +2902,7 @@ $T(\text{fonda.})=|T_3|=\tfrac{Z-N}{2}$.
 [fn:8] la parité est égale à $(-1)^{\ell_1+\ell_2}$ où $\ell_1=\ell_2=\ell$ et
 donc $\pi=(-1)^{2\ell}=+1$
 
-* COMMENT TD7 : Réactions nucléaires
+* TD7 : Réactions nucléaires
 ** Introduction
 #+ATTR_LATEX: :float wrap :placement {l}{0.5\textwidth} :width 0.4\textwidth
 [[./figures/solid_angle.pdf]]
@@ -3531,7 +3531,7 @@ de barns dans le but de masquer le sujet de leurs recherches. Cependant après l
 Seconde Guerre mondiale, le barn est devenu une unité standard de la physique
 des particules.
 
-* COMMENT TD8 : Masses et désintégrations nucléaires
+* TD8 : Masses et désintégrations nucléaires
 ** Définitions
 #+BEGIN_QUESTION
 Définir les termes : masse nucléaire, masse atomique, excès de masse atomique,
@@ -4723,7 +4723,6 @@ d'autre part, formant deux bases orthonormées.
 [fn:11] W. David Arnett & Jonathan L. Roser [[http://journals.aps.org/prl/abstract/10.1103/PhysRevLett.58.1906][Physical Review Letter 58]], David
 N. Spergel & John N. Bahcall [[http://www.sciencedirect.com/science/article/pii/0370269388907903][Physical Letters B]]
 
-
 * Annexes
 :PROPERTIES:
 :UNNUMBERED: t
@@ -4871,7 +4870,7 @@ la figure).
 |------------------------------+---------------+-------------------+------+-------+-----+-----+-------+-----+-----+-----+-----+-----|
 
 Les nombres quantiques $s,c,b$ et $t$ représentent les saveurs respectives des
-quarks (étrangeté, charme, ...) et \pi est la partité intrinsèque du quark.
+quarks (étrangeté, charme, ...) et \pi est la parité intrinsèque du quark.
 
 ** Caractéristiques de quelques hadrons constitués de $u, d, s, \bar{u}, \bar{d}, \bar{s}$
 
@@ -4909,11 +4908,9 @@ quarks (étrangeté, charme, ...) et \pi est la partité intrinsèque du quark.
 |----------------------------+-------+-------------+---------+-----+-------+-----+-----+-----------------------------|
 
 ** Caractéristiques des interactions fondamentales
-# #+ATTR_LATEX: :align *{5}{p{2.8cm}}
 
 |------------------------------+-------------------------------------------+----------------------------------------------------------+--------------------------------------+------------------------------|
 | Interaction                  | Forte                                     | Électromagnétique                                        | Faible                               | Gravitation                  |
-|                              |                                           |                                                          |                                      |                              |
 |------------------------------+-------------------------------------------+----------------------------------------------------------+--------------------------------------+------------------------------|
 | Particules de jauge          | gluons                                    | photons (\gamma)                                         | $W^\pm, Z^0$                         | graviton                     |
 | $I^\pi$                      | 1^{-}                                     | 1^{-}                                                    | 1                                    | 2^{+}                        |
