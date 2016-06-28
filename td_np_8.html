@@ -98,8 +98,10 @@ for the JavaScript code in this tag.
       }
   });
   MathJax.Hub.Register.StartupHook("TeX Jax Ready",function () {
-      var TEX = MathJax.InputJax.TeX;
+      var TEX = MathJax.InputJax.TeX,
+          MML = MathJax.ElementJax.mml;
       TEX.Definitions.macros.unit = "jaxunit";
+      TEX.Definitions.macros.nicefrac = "jaxfrac";
       TEX.Parse.Augment({
           jaxunit: function (name) {
               var n = this.GetBrackets(name),
@@ -107,6 +109,11 @@ for the JavaScript code in this tag.
               if (n == null) {n = ""}
               var tex = n + '\\,\\text{'+unit+'}';
               this.string = tex + this.string.slice(this.i); this.i = 0;
+          },
+          jaxfrac: function (name) {
+              var num = this.ParseArg(name),
+                  den = this.ParseArg(name);
+              this.Push(MML.mfrac(num,den).With({bevelled: true}));
           }
       });
   });
@@ -685,7 +692,7 @@ d'oscillation \(K^0\leftrightarrow\bar{K}^0\).</li>
 </div>
 </div></div>
 <div id="postamble" class="status">
-File under <i class="fa fa-github-alt"></i> version control - commit <a href="https://github.com/xgarrido/master_npp_teaching/commit/105f89e4f410d357e71b4bcd145bcd4c63b681b1">105f89e</a> - 2016-06-28
+File under <i class="fa fa-github-alt"></i> version control - commit <a href="https://github.com/xgarrido/master_npp_teaching/commit/15edcc3f2b8dcf1e42ba4cd5ec2942d8a7d0a234">15edcc3</a> - 2016-06-28
 </div>
 </body>
 </html>
