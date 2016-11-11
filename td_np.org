@@ -41,7 +41,7 @@ l'énergie incident (fonction d'excitation) ou en fonction de l'angle de sortie
 d'Ernest Rutherford, mettent en évidence le noyau atomique en étudiant la
 diffusion de particules \alpha sur des atomes d'or (Au). Antérieurement à cette
 expérience, la matière était conçue sous la forme d'atome contenant deux parties
-chargées électriquement de façons opposées. L'expérience de Rutherford montra
+de charge électrique opposée. L'expérience de Rutherford montra
 qu'en réalité le noyau chargé positivement est de taille très petite devant le
 nuage électronique qui l'entoure, chargé négativement.
 
@@ -96,7 +96,7 @@ d'où
   \end{align*}
 #+END_SRC
 
-On en déduite que la masse volumique est égale à
+On en déduit que la masse volumique est égale à
 
 #+BEGIN_SRC latex
   \begin{align*}
@@ -583,7 +583,7 @@ $\vv{v}$ dans un champ d'induction $\vv{B}$ normal à $\vv{v}$.
    1,38.10^{-23} J/K) :
    #+BEGIN_SRC latex
      \begin{align*}
-       p + \gamma &\rightarrow p + \pi^0 \quad {\rm et}\\
+       p + \gamma &\rightarrow p + \pi^0 \quad \text{ et}\\
        p + \gamma &\rightarrow n + \pi^+
      \end{align*}
    #+END_SRC
@@ -3643,7 +3643,7 @@ rappport d'embranchement de 90%, soit par capture électronique.
    période. Ainsi,
    $\lambda_\text{tot.}=\lambda_{\beta^+}+\lambda_\text{CE}=\frac{\ln 2}{T}$
    avec $\frac{\lambda_{\beta^+}}{\lambda_\text{tot.}}=90\%$ et
-   $\frac{\lambda_\text{CE}}{\lambda_\text{tot.}}=10\%$. On déduite que la
+   $\frac{\lambda_\text{CE}}{\lambda_\text{tot.}}=10\%$. On déduit que la
    période la capture électronique est
    #+BEGIN_SRC latex
      \begin{align*}
