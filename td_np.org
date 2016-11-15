@@ -281,7 +281,7 @@ des particules en voie de sortie sans que ces dernières n'aient d'impulsion
    l'énergie totale sachant que les particules produites sont au repos /i.e./
    $\vv{p_c}^* = \vv{p_d}^* = \vv{p_e}^* = \vv{p_f}^* = \vv{0}$. Par ailleurs,
    $\vv{p_a}^* = -\vv{p_b}^*$ donc $T_{a} = T_{b} = T_{S}$ et étant donné que
-   $m_{a} = m_{b}$, l'énergie totale de la particule a est égale à celle de la
+   $m_{a} = m_{b}$, l'énergie totale de la particule $a$ est égale à celle de la
    particule $b$. En appliquant le principe de conservation de l'énergie totale,
    on obtient
    #+BEGIN_SRC latex
@@ -636,7 +636,7 @@ AN: $m_{\pi^{0}}c^{2}$ = 135 MeV et $m_{\pi^{+}}c^{2}$ = 139.6 MeV
 [[file:./figures/proton_attenuation_result.pdf]]
 
 *Discussion :* Les pertes énergétiques résultantes de la photoproduction de
-pions sont de l’ordre de 15% par interaction ; le libre parcours moyen \lambda
+pions sont de l’ordre de 15% par interaction; le libre parcours moyen \lambda
 est typiquement le mégaparsec[fn:1]. Ainsi, l’énergie moyenne d’un proton
 diminue de façon significative au cours de sa propagation dans l’Univers comme
 le montre la Figure [[fig::proton_attenuation]]. Un proton avec une énergie initiale
