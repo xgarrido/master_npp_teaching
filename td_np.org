@@ -676,7 +676,7 @@ noyaux, pour engendrer la cascade de réactions :
     \mu^- &\rightarrow e^- + \bar{\nu_e} +  \nu_\mu
   \end{align*}
 #+END_SRC
-V$_1$ et V$_2$ sont des "V-particles", observées par Rochester & Butler
+V_{1} et V_{2} sont des "V-particles", observées par Rochester & Butler
 en 1947. Ces particules neutres n'étaient détectées qu'au travers de leur
 produits de désintégration, ce qui formait un "V" de traces dans le détecteur
 (chambre à brouillard).
@@ -689,7 +689,7 @@ produits de désintégration, ce qui formait un "V" de traces dans le détecteur
 #+END_CENTER
 
 #+BEGIN_QUESTION
-1) [@1] V$_1$ se désintègre en émettant un pion et un proton d'impulsions
+1) [@1] V_{1} se désintègre en émettant un pion et un proton d'impulsions
    respectives $p_{\pi}c$ = 160 MeV et $p_{p}c$ = 320 MeV et faisant un angle
    \theta_{1} = 65°. Dans le cas de V$_2$ deux pions chargés d'impulsions
    $p_{\pi}c$ = 220 MeV sont émis avec un angle \theta_{2} = 135°. Quelle est la
@@ -833,7 +833,7 @@ est de 2.2 \mu{}s, ce temps est "boosté" par le facteur de Lorentz soit \tau =
    des quarks (/cf./ TD4) mais aussi la découverte de la violation de la parité.
 #+END_QUESTION
 6) [@6] $\Lambda^0 \rightarrow \pi^+ + \pi^-$ : le nombre baryonique n'est pas
-   conservé or toutes intéractions conservent ce nombre (y compris l'interaction
+   conservé or toutes interactions conservent ce nombre (y compris l'interaction
    faible)
 
 ** La parité et sa violation
@@ -1084,7 +1084,7 @@ $\vv{T}(\Sigma) = \vv{1}$ et $\vv{T}(K)
 On supposera $c=b=t=0$ pour tous les hadrons de cet exercice.
 
 1) À l'aide de la formule de Gell-Mann et Nishijima, retrouver la valeur de
-l'étrangeté de chacun d'eux
+   l'étrangeté de chacun d'eux
 #+END_QUESTION
 1) [@1] Formule de Gell-Mann & Nishijima $Q/e = T_3 + Y/2$ avec $Y = B$ + saveur
    = hypercharge. Dans cet exercice, $c=b=t=0$ donc $Y = B$ + étrangeté $S$
