@@ -858,21 +858,20 @@ est de 2.2 \mu{}s, ce temps est "boosté" par le facteur de Lorentz soit \tau =
 2) [@2] Conservation du moment cinétique total $\vv{I}$
    #+BEGIN_SRC latex
      \begin{align*}
-       \vv{I}(A^+) + \vv{L}_i = \vv{I}(\pi^+) + \vv{I}(\pi^+) + \vv{I}(\pi^-) +
+       \vv{I}(A^+) = \vv{I}(\pi^+) + \vv{I}(\pi^+) + \vv{I}(\pi^-) +
        \vv{L}_f
      \end{align*}
    #+END_SRC
-   où $\vv{L}_i$ et $\vv{L}_f$ sont les moments angulaires relatifs des
-   particules en voie d'entrée et de sortie. La conservation de la parité \pi se
-   traduit par l'équation suivante
+   où $\vv{L}_f$ est le moment angulaire relatif des particules en voie de
+   sortie. La conservation de la parité \pi se traduit par l'équation suivante
    #+BEGIN_SRC latex
      \begin{align*}
-       \pi(A^+)\,(-1)^{L_i} = \pi(\pi^+)\,\pi(\pi^+)\,\pi(\pi^-)\,(-1)^{L_f}
+       \pi(A^+) = \pi(\pi^+)\,\pi(\pi^+)\,\pi(\pi^-)\,(-1)^{L_f}
      \end{align*}
    #+END_SRC
 
-   Du fait que $I(A^+) = I(\pi^\pm) = 0$, on déduit que $\vv{L_f} - \vv{L_i} =
-   \vv{0}$ soit la parité dans l'état final $A^+$
+   Du fait que $I(A^+) = I(\pi^\pm) = 0$, on déduit que $\vv{L_f} = \vv{0}$ soit
+   la parité dans l'état final $A^+$
    #+BEGIN_SRC latex
      \begin{align*}
        \pi(A^+) = (-1)\,(-1)\,(-1)\,(-1)^0 = -1
@@ -883,7 +882,7 @@ est de 2.2 \mu{}s, ce temps est "boosté" par le facteur de Lorentz soit \tau =
 3) [@3] On considère la réaction $\theta^+\rightarrow\pi^++\pi^0$. Quelle est la
    parité dans l'état final ? On donne $I(\theta)=0$ et $I^\pi(\pi)=0^-$.
 #+END_QUESTION
-3) [@3] Le moment angulaire relatif $L_i - L_f$ est donc nul.
+3) [@3] Le moment angulaire relatif $L_f$ est donc nul.
    #+BEGIN_SRC latex
      \begin{align*}
        \pi(\theta^+) = \pi(\pi^+)\,\pi(\pi^0)\,(-1)^0 = +1
@@ -1098,7 +1097,8 @@ On supposera $c=b=t=0$ pour tous les hadrons de cet exercice.
 2) [@2] Quel ordre de grandeur attend-on pour le temps caractéristique de la
    réaction $\pi^+ \, + \, p \, \rightarrow \, K^+ \, + \, \Sigma^+$?
 #+END_QUESTION
-2) Détermination du type d'interaction $\pi^+ + p\rightarrow K^+ + \Sigma^+$
+2) [@2] Détermination du type d'interaction $\pi^+ + p\rightarrow K^+ +
+   \Sigma^+$
 
    |----------+----------+---+------------+-------------+------------+---+------------+------------|
    |          |  $\pi^+$ | + |          p | \rightarrow |      $K^+$ | + | $\Sigma^+$ |            |
