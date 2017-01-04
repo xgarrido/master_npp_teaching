@@ -1497,7 +1497,7 @@ Brookhaven en 1964.
       quantique de couleur est introduit[fn:5].
 
 #+BEGIN_QUESTION
-2) [@2] Le proton ayant pour nombres quantiques $Q/e=1$, $T_3$=1/2 et
+2) [@2] Le proton ayant pour nombres quantiques $Q/e=1$, $T_3$ = 1/2 et
    $s=c=b=t=0$, donner sa composition en quarks. Calculer la masse du proton à
    partir des masses des quarks qui le constituent. Qu'en concluez-vous ?
 #+END_QUESTION
@@ -1523,7 +1523,7 @@ Brookhaven en 1964.
 
 ** Les mésons $D$
 #+BEGIN_QUESTION
-Soit le méson $D^0$, ayant pour caractéeristiques : $mc^2$ = 1865 MeV, $I^{\pi}
+Soit le méson $D^0$, ayant pour caracténauristiques : $mc^2$ = 1865 MeV, $I^{\pi}
 = 0^-$, $\vv{T} = \vv{1/2}$, $T_3 = -1/2$, $Q/e = 0$, et saveur "charmée" $c =
 1$.
 
@@ -1595,7 +1595,7 @@ Soit le méson $D^0$, ayant pour caractéeristiques : $mc^2$ = 1865 MeV, $I^{\pi
 5) [@5] On observe la désintégration $D^0 \rightarrow K^- + \pi^+$. En utilisant
    seulement le moment cinétique total et la parité, dire quelle est
    l'interaction responsable de cette désintégration. Trouver d'autres arguments
-   àa l'appui de cette réponse. On donne pour les kaons et les pions : I$^{\pi}$
+   à l'appui de cette réponse. On donne pour les kaons et les pions : I$^{\pi}$
    = 0$^-$.
 #+END_QUESTION
 5) [@5] $D^0\rightarrow K^-+\pi^+$. Le fait de n'avoir à tester que la
@@ -1695,8 +1695,9 @@ Soit le méson $D^0$, ayant pour caractéeristiques : $mc^2$ = 1865 MeV, $I^{\pi
 
 #+BEGIN_QUESTION
 10) [@10] On attribue à la particule $X$ les caractéristiques : $I^{\pi}$ =
-    1^-, T = 1/2, T_3 = 1/2$. Quelle est sa composition en quarks ? Préciser
-    les valeurs possibles du moment orbital relatif $\vv{L}$ et du spin $\vv{S}$.
+    1^{-}, $T$ = 1/2, $T_{3}$ = 1/2. Quelle est sa composition en quarks ?
+    Préciser les valeurs possibles du moment orbital relatif $\vv{L}$ et du spin
+    $\vv{S}$.
 #+END_QUESTION
 10) [@10] L'interaction électromagnétique conserve la saveur (seul l'isospin
     n'est pas conservé). La particule $X$ est donc nécessairement de saveur
@@ -1863,12 +1864,12 @@ $T=|T_3|$, $T$ augmentant pour les états excités.
    suivantes :
    #+BEGIN_SRC latex
      \begin{align*}
-       \rangle t_2 \, t_1 \, t_{32} \, t_{31} | T \, T_3\langle = \rangle t_1 \, t_2
-       \, -t_{31} \, - t_{32} |T \, -T_3\langle = (-1)^{(T-t_1-t_2)} \langle t_1 \, t_2 \,
-       t_{31} \, t_{32} | T\, T_3\rangle
+       \psh{t_2t_1t_{32}t_{31}}{TT_3} &= \psh{t_1t_2-t_{31}-t_{32}}{T-T_3}\\
+       & = (-1)^{(T-t_1-t_2)} \psh{t_1t_2t_{31}t_{32}}{TT_3}
      \end{align*}
    #+END_SRC
 #+END_QUESTION
+
 2) [@2] Fonction d'onde d'isospin
    #+BEGIN_SRC latex
      \begin{align*}
