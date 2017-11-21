@@ -120,10 +120,9 @@ référentiel du laboratoire $\mathcal{R}$, comme indiqué sur la figure ci-dess
 #+ATTR_LATEX: :width 0.7\linewidth
 [[file:figures/2gamma.pdf]]
 #+END_CENTER
-1) Exprimer les énergies totales $E_1$ et $E_2$ des deux photons dans le
-   référentiel $R$, en fonction de l'angle d'émission commun $\theta^*$ des
-   photons dans le référentiel du centre de masse $\mathcal{R}'$. En déduire les
-   bornes $E_\text{min}$ et $E_\text{max}$ de ces énergies.
+1) Exprimer les énergies totales $E_1$ et $E_2$ des deux photons dans le référentiel $\mathcal{R}$,
+   en fonction de l'angle d'émission commun $\theta^*$ des photons dans le référentiel du centre de
+   masse $\mathcal{R}'$. En déduire les bornes $E_\text{min}$ et $E_\text{max}$ de ces énergies.
 #+END_QUESTION
 
 1) dans $\mathcal{R}'$ /i.e./ le référentiel du centre de masse où $a$ est
@@ -3634,18 +3633,29 @@ rappport d'embranchement de 90%, soit par capture électronique.
 
 1) Ecrire les réactions de désintégration du\nbsp^{22}_{11}Na.
 #+END_QUESTION
-
 #+BEGIN_CENTER
 #+ATTR_LATEX: :width 0.55\linewidth
 [[./figures/sodium22_decay.pdf]]
 #+END_CENTER
-1) Décroissance radioactive $N(t)=N_0\,e^{-\lambda t}$ où $\lambda$ correspond à
-   la probabilité de décroissance et est égale à $\frac{\ln 2}{T}$, $T$ étant la
-   période. Ainsi,
+
+1) Les réactions de désintégration sont
+   #+BEGIN_SRC latex
+     \begin{align*}
+       ^{22}\text{Na}\to ^{22}\text{Ne}^*+e^++\nu_e&\quad\beta^+\text{(90\%)}\\
+       ^{22}\text{Na}+e^-\to ^{22}\text{Ne}^*+\nu_e&\quad\text{CE (10\%)}
+     \end{align*}
+   #+END_SRC
+
+#+BEGIN_QUESTION
+2) [@2] Quelle est la période partielle de capture électronique du\nbsp^{22}Na ?
+#+END_QUESTION
+2) [@2] Décroissance radioactive $N(t)=N_0\,e^{-\lambda t}$ où $\lambda$
+   correspond à la probabilité de décroissance et est égale à $\frac{\ln 2}{T}$,
+   $T$ étant la période. Ainsi,
    $\lambda_\text{tot.}=\lambda_{\beta^+}+\lambda_\text{CE}=\frac{\ln 2}{T}$
    avec $\frac{\lambda_{\beta^+}}{\lambda_\text{tot.}}=90\%$ et
    $\frac{\lambda_\text{CE}}{\lambda_\text{tot.}}=10\%$. On déduit que la
-   période la capture électronique est
+   période partielle de capture électronique est
    #+BEGIN_SRC latex
      \begin{align*}
        T_\text{CE}&=\frac{\ln 2}{\lambda_\text{CE}}=\frac{\ln 2}{0.1\,\lambda_{tot.}}\\
@@ -3654,12 +3664,14 @@ rappport d'embranchement de 90%, soit par capture électronique.
    #+END_SRC
 
 #+BEGIN_QUESTION
-2) [@2] Quelle est la période partielle de capture électronique du\nbsp^{22}Na ?
+3) [@3] Les excès de masse atomique de\nbsp^{22}Na et\nbsp^{22}Ne sont
+   respectivement -5183 keV et -8025 keV. Calculer le $Q$ de la capture
+   électronique.
 #+END_QUESTION
-2) [@2] Capture électronique :
+3) [@3] Capture électronique :
    $^{22}_{11}\text{Na}+e^-\to^{22}_{10}\text{Ne}^*+\nu_e$
 
-   La charge étant conservé tout comme le nombre de nucléons, la chaleur de
+   La charge étant conservée tout comme le nombre de nucléons, la chaleur de
    réaction de la capture électronique se déduit des excès de masse
    #+BEGIN_SRC latex
      \begin{align*}
@@ -3670,11 +3682,10 @@ rappport d'embranchement de 90%, soit par capture électronique.
    #+END_SRC
 
 #+BEGIN_QUESTION
-3) [@3] Les excès de masse atomique de\nbsp^{22}Na et\nbsp^{22}Ne sont
-   respectivement -5183 keV et -8025 keV. Calculer le $Q$ de la capture
-   électronique.
+4) [@4] Estimer l'énergie cinétique maximale des positrons émis lors de la
+   transition $\beta^+$.
 #+END_QUESTION
-3) [@3] Désintégration $\beta^+$ :
+4) [@4] Désintégration $\beta^+$ :
    $^{22}_{11}\text{Na}\to^{22}_{10}\text{Ne}^*+e^++\nu_e$
 
    L'énergie cinétique maximale que puisse emporter le positron correspond au
@@ -3683,26 +3694,6 @@ rappport d'embranchement de 90%, soit par capture électronique.
      \begin{align*}
        T_\text{max}(e^+)&=Q_{\beta^+}=Q_\text{CE}-2m_ec^2\\
        &=1572-1022=\unit[550]{keV}
-     \end{align*}
-   #+END_SRC
-
-#+BEGIN_QUESTION
-4) [@4] Estimer l'énergie cinétique maximale des positrons émis lors de la
-   transition $\beta^+$.
-#+END_QUESTION
-4) [@4] $^{23}\text{Na}+p\to^{22}\text{Na}+p+n$
-   #+BEGIN_SRC latex
-     \begin{align*}
-       Q&=\Delta M_\text{at.}\left(^{23}\text{Na}\right)c^2+\cancel{\Delta M_\text{at.}(p)c^2}-\Delta M_\text{at.}\left(^{22}\text{Na}\right)-\cancel{\Delta M_\text{at.}(p)c^2}-\Delta M_\text{at.}(n)c^2\\
-       &=-9528+5183-8071=\unit[-12.416]{MeV}<0
-     \end{align*}
-   #+END_SRC
-   L'énergie cinétique seuil nécessaire à la réalisation de cette réaction est
-   #+BEGIN_SRC latex
-     \begin{align*}
-       T_S&=\frac{|Q|}{2}\times\frac{\sum m_{i,f}c^2}{m_\text{cible}c^2}\\
-       &\simeq\frac{|Q|}{2}\times\frac{\sum A}{A_\text{cible}}\\
-       &\simeq\frac{12.416}{2}\times\frac{23\times2+2}{23}=\unit[12.96]{MeV}
      \end{align*}
    #+END_SRC
 
@@ -3733,7 +3724,22 @@ rappport d'embranchement de 90%, soit par capture électronique.
    5) Combien de photons de 1.27 MeV devrait recevoir en une minute un détecteur
       de 5 cm^{2} situé à 1 m de la source ?
 #+END_QUESTION
-5) [@5]
+5) [@5] $^{23}\text{Na}+p\to^{22}\text{Na}+p+n$
+
+   #+BEGIN_SRC latex
+     \begin{align*}
+       Q&=\Delta M_\text{at.}\left(^{23}\text{Na}\right)c^2+\cancel{\Delta M_\text{at.}(p)c^2}-\Delta M_\text{at.}\left(^{22}\text{Na}\right)-\cancel{\Delta M_\text{at.}(p)c^2}-\Delta M_\text{at.}(n)c^2\\
+       &=-9528+5183-8071=\unit[-12.416]{MeV}<0
+     \end{align*}
+   #+END_SRC
+   L'énergie cinétique seuil nécessaire à la réalisation de cette réaction est
+   #+BEGIN_SRC latex
+     \begin{align*}
+       T_S&=\frac{|Q|}{2}\times\frac{\sum m_{i,f}c^2}{m_\text{cible}c^2}\\
+       &\simeq\frac{|Q|}{2}\times\frac{\sum A}{A_\text{cible}}\\
+       &\simeq\frac{12.416}{2}\times\frac{23\times2+2}{23}=\unit[12.96]{MeV}
+     \end{align*}
+   #+END_SRC
    1) Le nombre de noyaux de\nbsp^{22}Na produit est
       #+BEGIN_SRC latex
         \begin{align*}
@@ -3741,13 +3747,6 @@ rappport d'embranchement de 90%, soit par capture électronique.
           &=\frac{I}{Ze}\times\rho_e\sigma_\text{tot.}\times\frac{\mathcal{N}}{A\left(^{23}\text{Na}\right)+A\left(^{35}\text{Cl}\right)}\\
           &=\frac{10^{-5}}{1.6\,10^{-19}}\times2\,10^{-3}\times40\,10^{-3}\times10^{-24}\times\frac{6.02\,10^{23}}{58}\\
           &=\unit[5.19\,10^7]{/s}
-        \end{align*}
-      #+END_SRC
-   2) Les réactions de désintégration sont
-      #+BEGIN_SRC latex
-        \begin{align*}
-          ^{22}\text{Na}\to ^{22}\text{Ne}^*+e^++\nu_e&\quad\beta^+\text{(90\%)}\\
-          ^{22}\text{Na}+e^-\to ^{22}\text{Ne}^*+\nu_e&\quad\text{CE (10\%)}
         \end{align*}
       #+END_SRC
    3) La variation du nombre de noyau de\nbsp^{22}Na est égal au nombre de noyau
@@ -4839,7 +4838,7 @@ peut prendre que deux valeurs pour $s = \pm 1/2$, à savoir $\jmath = \ell \pm
 1/2$ . Une sous-couche de $\jmath$ donné possède $2\jmath +1$ sous-états
 magnétiques. En vertu du principe de Pauli, elle ne peut contenir au maximum que
 $2\jmath +1$ nucléons identiques (nombre entre parenthèses dans la partie droite
-de la figure). On aboutit aux nombres magiques (indiqués à l'extrtême droite de
+de la figure). On aboutit aux nombres magiques (indiqués à l'extrême droite de
 la figure).
 
 ** Tableau des caractéristiques des leptons
