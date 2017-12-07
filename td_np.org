@@ -1090,7 +1090,7 @@ On supposera $c=b=t=0$ pour tous les hadrons de cet exercice.
    $Y(\Sigma^+) = 2\cdot\left(\frac{Q}{e} - T_3\right) = 0$ d'où $S(\Sigma^+) =
    -B(\Sigma^+) = -1$
 
-   $Y(K^+) = 2\cdot\left(\frac{Q}{e} - T_3\right) = 1$ d'où $S(\Sigma^+) = +1$
+   $Y(K^+) = 2\cdot\left(\frac{Q}{e} - T_3\right) = 1$ d'où $S(K^+) = +1$
 
 #+BEGIN_QUESTION
 2) [@2] Quel ordre de grandeur attend-on pour le temps caractéristique de la
