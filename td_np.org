@@ -2623,11 +2623,10 @@ On considère les trois isobares\nbsp^{21}_{9}F,\nbsp^{21}_{10}Ne et\nbsp^{21}_{
 1)
    1) Donner les moment cinétique et parité I$^{\pi}$, ainsi que les
       configurations de l'état fondamental et du premier état excité prévus par
-      le modèle des couches, pour le noyau\nbsp^{21}_9F.
+      le modèle des couches, pour le noyau\nbsp^{21}_{9}F.
 
-   2) On donne $I^{\pi} = \frac{3}{2}^+$ pour l'état fondamental des noyaux
-      $^{21}_{10}$Ne et $^{21}_{11}$Na. Commenter ce résultat non conforme au
-      modèle des couches.
+   2) On donne $I^{\pi} = \frac{3}{2}^+$ pour l'état fondamental des noyaux\nbsp^{21}_{10}Ne
+      et\nbsp^{21}_{11}Na. Commenter ce résultat non conforme au modèle des couches.
 #+END_QUESTION
 1)
    1) Moment cinétique $I^\pi$ du\nbsp^{21}_{9}F
@@ -2666,7 +2665,7 @@ On considère les trois isobares\nbsp^{21}_{9}F,\nbsp^{21}_{10}Ne et\nbsp^{21}_{
       ce résultat en termes de multiplets d'isospin. Quel(s) autre(s) noyau(x)
       isobarique(s) appartienne(nt) à ce(s) multiplet(s) ? Peut-on prévoir le
       spin et la parité de l'état fondamental et du premier état excité de ce(s)
-      noyau(x) ?
+      noyau(x)\nbsp?
 #+END_QUESTION
 2) [@2]
    1) Pour un système constitué de $Z$ protons et $N$ neutrons, la troisième
@@ -2695,13 +2694,13 @@ On considère les trois isobares\nbsp^{21}_{9}F,\nbsp^{21}_{10}Ne et\nbsp^{21}_{
       | $\vv{T}_{\text{fonda.}}$ | $\vv{3}/2$                     | $\vv{1}/2$                     | $\vv{1}/2$                     |
       |--------------------------+--------------------------------+--------------------------------+--------------------------------|
    2)
-      - 1 doublet d'isospin $\vv{T}=\vv{1}/2$ correspondant aux 2 noyaux
-        de\nbsp^{21}Ne et\nbsp^{21}F
-      - 1 quadruplet d'isospin $\vv{T}=\vv{3}/2$ comprenant les états des 4
-        noyaux\nbsp^{21}F,\nbsp^{21}Ne,\nbsp^{21}F et\nbsp^{21}Mg (noyau miroir
-        de\nbsp^{21}F). Le noyau\nbsp^{21}Mg a la même séquence d'états
-        que\nbsp^{21}F soit $I^\pi(\text{fonda.})=\tfrac{5}{2}^+$ et 1^{er} état
-        excité $I^\pi=\tfrac{1}{2}^+$
+      - 1 doublet d'isospin $\vv{T}=\vv{1}/2$ correspondant au niveau fondamental des 2 noyaux
+        de\nbsp^{21}Ne et\nbsp^{21}Na
+      - 1 quadruplet d'isospin $\vv{T}=\vv{3}/2$ comprenant les états fondamentaux des
+        noyaux\nbsp^{21}F et\nbsp^{21}Mg (noyau miroir de\nbsp^{21}F) ainsi que les premiers états
+        excités des noyaux de \nbsp^{21}Ne et\nbsp^{21}Na. Le noyau\nbsp^{21}Mg a la même séquence
+        d'états que\nbsp^{21}F soit $I^\pi(\text{fonda.})=\tfrac{5}{2}^+$ et 1^{er} état excité
+        $I^\pi=\tfrac{1}{2}^+$
 
 #+BEGIN_QUESTION
 3) [@3] On peut comparer les masses des états nucléaires (fondamental ou état
@@ -2783,9 +2782,9 @@ On considère les trois isobares\nbsp^{21}_{9}F,\nbsp^{21}_{10}Ne et\nbsp^{21}_{
 #+BEGIN_QUESTION
 On veut étudier les niveaux (fondamental et excités) du noyau\nbsp^{41}Ca. On
 effectue pour cela les réactions de diffusions inélastiques $(p,p')$ et
-$(\alpha,\alpha')$, et les réactions de transfert\nbsp^{40}Ca$(d,p)$\nbsp^{41}Ca
-et\nbsp^{42}Ca(^3_2He,$\alpha$)^{41}Ca, en utilisant respectivement des faisceaux
-de protons, alphas, deutons et\nbsp^3He de haute énergie.
+$(\alpha,\alpha')$, et les réactions de transfert\nbsp^{40}Ca\((d,p)\)\nbsp^{41}Ca
+et\nbsp^{42}Ca(^{3}_{2}He,$\alpha$)^{41}Ca, en utilisant respectivement des faisceaux
+de protons, alphas, deutons et\nbsp^{3}He de haute énergie.
 
 1) On donne ci-dessous, à gauche, le schéma des premiers niveaux du\nbsp^{41}Ca.
    #+BEGIN_CENTER
