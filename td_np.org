@@ -3199,7 +3199,7 @@ particules constitutives de la cible.
    #+END_SRC
 
 #+BEGIN_QUESTION
-2) [@2] On veut maintenant étudier la réaction~:
+2) [@2] On veut maintenant étudier la réaction :
    #+BEGIN_SRC latex
      \begin{align}
        n + ^{11}_{5}\text{B} \rightarrow \alpha + ^8_{3}\text{Li}
@@ -3604,11 +3604,10 @@ La chaleur de réaction $Q$ s'écrit
 #+END_SRC
 ** Décroissance radioactive du sodium 22
 #+BEGIN_QUESTION
-Le sodium 22 (^{22}_{11}Na), *qui sera étudié au cours des travaux pratiques*, est
-souvent employé comme source de positrons car sa période, $T$~2.6 ans, est
-relativement longue. Ce noyau se désintègre presqu'à 100% vers le premier
-état excité du néon 22, situé à 1.27 MeV, soit par émission \beta^{+} avec un
-rappport d'embranchement de 90%, soit par capture électronique.
+Le sodium 22 (^{22}_{11}Na), *qui sera étudié au cours des travaux pratiques*, est souvent employé
+comme source de positrons car sa période, \(T\)~2.6 ans, est relativement longue. Ce noyau se
+désintègre presqu'à 100% vers le premier état excité du néon\nbsp{}22, situé à 1.27 MeV, soit par
+émission \beta^{+} avec un rappport d'embranchement de 90%, soit par capture électronique.
 
 1) Ecrire les réactions de désintégration du\nbsp^{22}_{11}Na.
 #+END_QUESTION
@@ -3643,15 +3642,14 @@ rappport d'embranchement de 90%, soit par capture électronique.
    #+END_SRC
 
 #+BEGIN_QUESTION
-3) [@3] Les excès de masse atomique de\nbsp^{22}Na et\nbsp^{22}Ne sont
-   respectivement -5183 keV et -8025 keV. Calculer le $Q$ de la capture
-   électronique.
+3) [@3] Les excès de masse atomique de\nbsp^{22}Na et\nbsp^{22}Ne sont respectivement -5183 keV et
+   -8025 keV. Calculer le $Q$ de la capture électronique.
 #+END_QUESTION
 3) [@3] Capture électronique :
    $^{22}_{11}\text{Na}+e^-\to^{22}_{10}\text{Ne}^*+\nu_e$
 
-   La charge étant conservée tout comme le nombre de nucléons, la chaleur de
-   réaction de la capture électronique se déduit des excès de masse
+   La charge étant conservée tout comme le nombre de nucléons, la chaleur de réaction de la capture
+   électronique se déduit des excès de masse
    #+BEGIN_SRC latex
      \begin{align*}
        Q_\text{CE}&=\Delta M_\text{at.}\left(^{22}\text{Na}\right)c^2-\Delta M_\text{at.}\left(^{22}\text{Ne}^*\right)c^2\\
@@ -3661,8 +3659,7 @@ rappport d'embranchement de 90%, soit par capture électronique.
    #+END_SRC
 
 #+BEGIN_QUESTION
-4) [@4] Estimer l'énergie cinétique maximale des positrons émis lors de la
-   transition $\beta^+$.
+4) [@4] Estimer l'énergie cinétique maximale des positrons émis lors de la transition\nbsp{}$\beta^+$.
 #+END_QUESTION
 4) [@4] Désintégration $\beta^+$ :
    $^{22}_{11}\text{Na}\to^{22}_{10}\text{Ne}^*+e^++\nu_e$
@@ -3677,31 +3674,10 @@ rappport d'embranchement de 90%, soit par capture électronique.
    #+END_SRC
 
 #+BEGIN_QUESTION
-5) [@5] Pour obtenir ainsi une source de\nbsp^{22}Na, on irradie une cible de
-   sel (NaCl) avec un faisceau de protons de 155 MeV, d'intensité $I$ = 10
-   \mu{}A. A cette énergie, la section efficace de la réaction citée est de 40
-   mb. La cible a une épaisseur de 2 mg/cm^{2} et on assimile le chlore naturel
-   au\nbsp^{35}Cl.
-
-   1) Calculer le nombre de noyaux de\nbsp^{22}_{11}Na produits par seconde.
-
-   2) Établir l'expression du nombre $N(t)$ de noyaux radioactifs obtenus si
-      l'on irradie une cible avec un faisceau d'intensité constante entre les
-      instants 0 et $t_0$. Que devient $N(t)$ lorsque l'on stoppe l'irradiation
-      ?  Tracer l'allure de la courbe représentant $N(t)$. Montrer que pendant
-      l'irradiation $N(t)$ tend vers une valeur limite $N_{\infty}$ et donner son
-      expression.
-
-   3) Calculer l'activité de la source de\nbsp^{22}Na en photons de 1.27 MeV,
-      quelques jours après une irradiation d'une heure. Exprimer le résultat
-      en Becquerel, puis en Curie.
-
-   4) Dans le spectre en énergie des photons émis par le\nbsp^{22}Na, on observe
-      une raie à 511 keV. Quelle est l'origine de cette raie ? Déduire
-      l'activité de la source en photons de 511 keV.
-
-   5) Combien de photons de 1.27 MeV devrait recevoir en une minute un détecteur
-      de 5 cm^{2} situé à 1 m de la source ?
+5) [@5] Une façon de produire le\nbsp^{22}Na consiste à exploiter la
+   réaction\nbsp^{23}Na($p,pn$)\nbsp^{22}Na. Sachant que l'excès de masse atomique de\nbsp^{23}Na,
+   du neutron et du proton sont respectivement -9528 keV, 8071 keV et 7289 keV, estimer l'énergie
+   seuil de cette réaction.
 #+END_QUESTION
 5) [@5] $^{23}\text{Na}+p\to^{22}\text{Na}+p+n$
 
@@ -3719,6 +3695,32 @@ rappport d'embranchement de 90%, soit par capture électronique.
        &\simeq\frac{12.416}{2}\times\frac{23\times2+2}{23}=\unit[12.96]{MeV}
      \end{align*}
    #+END_SRC
+
+#+BEGIN_QUESTION
+6) [@6] Pour obtenir ainsi une source de\nbsp^{22}Na, on irradie une cible de sel (NaCl) avec un
+   faisceau de protons de 155 MeV, d'intensité $I$ = 10 \mu{}A. À cette énergie, la section efficace
+   de la réaction citée est de 40 mb. La cible a une épaisseur de 2 mg/cm^{2} et on assimile le
+   chlore naturel au\nbsp^{35}Cl.
+
+   1) Calculer le nombre de noyaux de\nbsp^{22}_{11}Na produits par seconde.
+
+   2) Établir l'expression du nombre $N(t)$ de noyaux radioactifs obtenus si l'on irradie une cible
+      avec un faisceau d'intensité constante entre les instants 0 et $t_0$. Que devient $N(t)$
+      lorsque l'on stoppe l'irradiation ?  Tracer l'allure de la courbe représentant $N(t)$. Montrer
+      que pendant l'irradiation $N(t)$ tend vers une valeur limite $N_{\infty}$ et donner son
+      expression.
+
+   3) Calculer l'activité de la source de\nbsp^{22}Na en photons de 1.27 MeV, quelques jours après
+      une irradiation d'une heure. Exprimer le résultat en Becquerel, puis en Curie.
+
+   4) Dans le spectre en énergie des photons émis par le\nbsp^{22}Na, on observe une raie à 511
+      keV. Quelle est l'origine de cette raie ? Déduire l'activité de la source en photons de 511
+      keV.
+
+   5) Combien de photons de 1.27 MeV devrait recevoir en une minute un détecteur de 5 cm^{2} situé à
+      1 m de la source ?
+#+END_QUESTION
+6) [@6]
    1) Le nombre de noyaux de\nbsp^{22}Na produit est
       #+BEGIN_SRC latex
         \begin{align*}
@@ -3728,17 +3730,15 @@ rappport d'embranchement de 90%, soit par capture électronique.
           &=\unit[5.19\,10^7]{/s}
         \end{align*}
       #+END_SRC
-   3) La variation du nombre de noyau de\nbsp^{22}Na est égal au nombre de noyau
-      crée par irradiation auquel vient se soustraire le nombre de noyau s'étant
-      désintégré soit
+   3) La variation du nombre de noyaux de\nbsp^{22}Na est égal au nombre de noyaux créés par
+      irradiation auquel vient se soustraire le nombre de noyaux s'étant désintégrés soit
       #+BEGIN_SRC latex
         \begin{align*}
           dn\left(^{22}\text{Na}\right)&=n_idt-\lambda ndt\\
           \frac{dn}{dt}+\lambda n&=n_i=\text{constante}
         \end{align*}
       #+END_SRC
-      La solution de cette équation est de la forme $n(t)=K_1e^{-\lambda t}+K_0$
-      où
+      La solution de cette équation est de la forme $n(t)=K_1e^{-\lambda t}+K_0$ où
       #+BEGIN_SRC latex
         \begin{align*}
           \cancel{-\lambda K_1e^{-\lambda t}}+\cancel{\lambda K_1e^{-\lambda t}}+\lambda K_0&=n_i\\
@@ -3751,33 +3751,30 @@ rappport d'embranchement de 90%, soit par capture électronique.
           n(t)=\frac{n_i}{\lambda}\left(1-e^{-\lambda t}\right)
         \end{align*}
       #+END_SRC
-      Pour une durée d'irradiation $t\to\infty$, le nombre de noyau crée tend
-      asymptotiquement vers $n_\infty\to\frac{n_i}{\lambda}$
+      Pour une durée d'irradiation $t\to\infty$, le nombre de noyau crée tend asymptotiquement vers
+      $n_\infty\to\frac{n_i}{\lambda}$
       #+BEGIN_CENTER
       #+ATTR_LATEX: :width 0.7\linewidth
       [[./figures/sodium22_rate.pdf]]
       #+END_CENTER
 
-   4) $t_0=\unit[1]{h}\ll T=\unit[2.6]{ans}$ d'où $\lambda t=\ln
-      2\frac{t}{T}\ll1$. Le temps d'irradiation étant significativement plus
-      court que la durée de vie du sodium, on peut approximer le nombre de noyau
-      produit par
+   4) $t_0=\unit[1]{h}\ll T=\unit[2.6]{ans}$ d'où $\lambda t=\ln 2\frac{t}{T}\ll1$. Le temps
+      d'irradiation étant significativement plus court que la durée de vie du sodium, on peut
+      approximer le nombre de noyau produit par
       #+BEGIN_SRC latex
         \begin{align*}
           n(t)\simeq\frac{n_i}{\lambda}\left(1-1+\lambda t\right)=n_i\times t
         \end{align*}
       #+END_SRC
-      ce qui traduit que le nombre d'irradiation est tès largement supérieur au
-      nombre de désintégrations. Ainsi, pour une heure d'irradiation, le nombre
-      de noyau produit sera
+      ce qui traduit que le nombre d'irradiation est très largement supérieur au nombre de
+      désintégrations. Ainsi, pour une heure d'irradiation, le nombre de noyau produit sera
       #+BEGIN_SRC latex
         \begin{align*}
           n(\unit[1]{h})=5.19\,10^7\times3600=1.87\,10^{11}
         \end{align*}
       #+END_SRC
-      Sachant que 100% des désintégrations tombe sur le premier niveau excité du
-      néon 22 et génère ainsi un photon \gamma de 1.27 MeV, on peut déduire
-      l'activité en photon \gamma
+      Sachant que 100% des désintégrations tombent sur le premier niveau excité du néon 22 et génère
+      ainsi un photon \gamma de 1.27 MeV, on peut déduire l'activité en photon \gamma
       #+BEGIN_SRC latex
         \begin{align*}
           \mathcal{A}(t)&=\lambda n(t)=\frac{\ln 2}{T}\times n(\unit[1]{h})\\
@@ -3785,14 +3782,13 @@ rappport d'embranchement de 90%, soit par capture électronique.
           &=\unit[1581]{Bq}=\unit[42.7]{nCi}\text{ où 1 Ci = 3.7 10$^{10}$ Bq}
         \end{align*}
       #+END_SRC
-   5) La raie à 511 keV correspond aux photons issus de l'annihilation
-      $e^++e^-\to2\gamma$. En effet, dans 90% des cas, la désintégration se fait
-      par désintégration $\beta^+$ où le positron émis, une fois son énergie
-      cinétique dissipée, s'annihilie avec les électrons de la matière. Par
-      conservation de l'impulsion, les deux photons sont émis dos-à-dos, chacun
-      emportant une énergie cinétique de 511 keV soit la masse de
-      l'électron/positron. Du fait que ces deux photons sont émis dans 90% des
-      désintégrations, l'activité en photons de 511 keV est égale à
+   5) La raie à 511 keV correspond aux photons issus de l'annihilation $e^++e^-\to2\gamma$. En
+      effet, dans 90% des cas, la désintégration se fait par désintégration $\beta^+$ où le positron
+      émis, une fois son énergie cinétique dissipée, s'annihilie avec les électrons de la
+      matière. Par conservation de l'impulsion, les deux photons sont émis dos-à-dos, chacun
+      emportant une énergie cinétique de 511 keV soit la masse de l'électron/positron. Du fait que
+      ces deux photons sont émis dans 90% des désintégrations, l'activité en photons de 511 keV est
+      égale à
       #+BEGIN_SRC latex
         \begin{align*}
           \mathcal{A}_{\gamma_{0.511}}=2\times90\%\times\mathcal{A}_{\gamma_{1.27}}=\unit[2846]{Bq}
