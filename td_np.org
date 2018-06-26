@@ -3931,7 +3931,7 @@ l'irradiation ($t=0$), il n'y a aucun noyau radioactif dans l'échantillon.
       #+END_SRC
       L'origine des différents termes de l'énergie de liaison $B_N$ est expliquée à
       la question [[Définitions]].
-   2) /cf./ Exercice [[Parabole de masse et désintégrations radioactives]]
+   2) /cf./ ci-dessous.
 
 #+BEGIN_QUESTION
 2) [@2] En utilisant la formule de Bethe et Weizsäcker (BW), prévoir quel est
@@ -3969,85 +3969,6 @@ l'irradiation ($t=0$), il n'y a aucun noyau radioactif dans l'échantillon.
      indicateur afin de déterminer si un noyau est loin, en terme de protons, de
      l'élément stable pour une masse donnée /i.e./ pour $A$ fixé.
 
-#+BEGIN_QUESTION
-3) [@3] On peut montrer que l'énergie potentielle d'attraction gravitationnelle
-   d'une masse sphérique $M$ de densité uniforme et de rayon $R$ est donnée par
-   $E_G=-\frac{3 GM^2}{5R}$.
-
-   1) Déterminer la formule donnant l'énergie de liaison d'une étoile à neutrons
-      ($Z = 0$) à partir de l'énergie de liaison des nucléons dans le noyau
-      donnée par la formule de BW (on négligera l'énergie d'appariement \delta),
-      en lui ajoutant un terme d'énergie potentielle de type $E_G$ (attention,
-      ce terme correspond à une contribution positive à l'énergie de liaison).
-
-   2) En déduire l'ordre de grandeur du rayon minimal d'une étoile à neutrons
-      ayant la densité nucléaire et n'ayant aucun autre constituant que des
-      neutrons (on supposera que ce nombre $N$ de neutrons est grand, et on
-      utilisera $G/c^4$ = 1.3239 10^{-39} GeV^{-1}.fm). Calculer sa
-      masse. Comparer au rayon et à la masse du Soleil.
-#+END_QUESTION
-3) [@3]
-   1) Pour une étoile à neutrons, l'énergie de liaison devient (\(Z=0\))
-      #+BEGIN_SRC latex
-        \begin{align*}
-          B_N&=a_VA-a_SA^{2/3}-\cancel{a_C\frac{Z^2}{A^{1/3}}}-a_A\frac{(Z-N)^2}{A}+\underbrace{\delta(Z,A)}_{\ll1}\\
-          &\text{ avec }A=Z+N=N\quad B_N=a_VN-a_SN^{2/3}-a_A\frac{N^{\cancel{2}}}{\cancel{N}}\\
-          B_N&=\left(a_V-a_A\right)N-a_SN^{2/3}<0
-        \end{align*}
-      #+END_SRC
-      En tenant compte de l'énergie potentielle gravitationnelle, l'énergie de
-      liaison d'une étoile à neutrons devient
-      #+BEGIN_SRC latex
-        \begin{align*}
-          B_*&=B_N-E_G=\left(a_V-a_A\right)N-a_SN^{2/3}+\frac{3GM^2}{5R}
-        \end{align*}
-      #+END_SRC
-   2) En considérant l'étoile uniquement constituée de neutrons, sa masse
-      s'écrit $M=N\times m_n$. Par ailleurs, le rayon de cette étoile est égal
-      à $r_0\times N^{1/3}$ d'où
-      #+BEGIN_SRC latex
-        \begin{align*}
-          B_*&=\left(a_V-a_A\right)N-a_SN^{2/3}+\frac{3Gm_n^2\,N^2}{5r_0\,N^{1/3}}
-        \end{align*}
-      #+END_SRC
-      Dans la mesure où le nombre de nucléons est grand, on pourra négliger le
-      terme relatif aux effets de surface $a_SN^{2/3}$ devant ceux proportionnel
-      à $N$ et l'énergie gravitationnelle. Ainsi, l'énergie de liaison se réduit
-      à
-      #+BEGIN_SRC latex
-        \begin{align*}
-          B_*&=\underbrace{\left(a_V-a_A\right)N}_{<0}+\underbrace{\frac{3Gm_n^2\,N^{5/3}}{5r_0}}_{>0}
-        \end{align*}
-      #+END_SRC
-      Le premier terme négatif traduit le fait qu'un "noyau/étoile" uniquement
-      constitué de neutrons n'est pas un système physiquement stable. Toutefois,
-      le caractère instable de ce système est contrebalancé par l'effondrement
-      gravitationnel qui est d'autant plus fort que le nombre de neutrons /i.e./
-      la masse est grande. Ainsi, au-delà d'une valeur critique $N=N_0$ telle
-      que $B_*=0$, l'énergie gravitationnelle devient supérieure à l'instabilité
-      inhérente à la composition en neutrons du "noyau/étoile". La valeur
-      critique $N_0$ se traduit également en terme de rayon minimal pour qu'une
-      étoile à neutrons subsiste $R_\text{min}=r_0\times N_0^{1/3}$. La valeur
-      critique du nombre de neutrons est
-      #+BEGIN_SRC latex
-        \begin{align*}
-          B_*&=\left(a_V-a_A\right)N_0+\frac{3Gm_n^2\,N_0^{5/3}}{5r_0}=0\\
-          N_0^{-2/3}&=-\frac{3Gm_n^2}{5r_0\left(a_V-a_A\right)}\\
-          N_0^{2/3}&=\frac{5r_0\left(a_A-a_V\right)}{3Gm_n^2}\\
-          &\text{où }m_n=\unit[0.939]{GeV/c}^2\to Gm_n^2=1.3239\,10^{-39}\times(0.939)^2\\
-          N_0^{2/3}&=\frac{5\times1.25\times\left(23.285-15.56\right)\,10^{-3}}{3\times1.3239\,10^{-39}\times(0.939)^2}\\
-          &=1.377\,10^{37}\to N_0=5.11\,10^{55}
-        \end{align*}
-      #+END_SRC
-      Le rayon minimal d'une étoile à neutron est donc[fn:10]
-      #+BEGIN_SRC latex
-        \begin{align*}
-          R_\text{min}&=r_0\times N_0^{1/3}=1.25\,10^{-15}\times\left(5.11\,10^{55}\right)^{1/3}\\
-          &=\unit[4.64]{km}
-        \end{align*}
-      #+END_SRC
-
-** Parabole de masse et désintégrations radioactives
 #+BEGIN_QUESTION
 On s'intéresse aux isobares de nombre de masse $A$ = 58 dont on donne ci-dessous
 les excès de masse atomique $\Delta M_\text{at}c^2$, en MeV :
@@ -4120,7 +4041,7 @@ les excès de masse atomique $\Delta M_\text{at}c^2$, en MeV :
 #+BEGIN_QUESTION
 2) [@2] Estimer graphiquement l'énergie d'appariement $\delta(A)$ en MeV.
 #+END_QUESTION
-2) [@2] Le diagramme $M_\text{at.}c^2=f(Z)$ ou $\Delta M_\text{at.}c^2=f(Z)$
+1) Le diagramme $M_\text{at.}c^2=f(Z)$ ou $\Delta M_\text{at.}c^2=f(Z)$
    pour une famille d'isobares donnée est le suivant
 
    #+BEGIN_CENTER
@@ -4159,7 +4080,7 @@ les excès de masse atomique $\Delta M_\text{at}c^2$, en MeV :
    positrons) émis dans ces désintégrations ? Préciser le (ou les) noyau(x)
    stable(s) vis à vis de ces désintégrations.
 #+END_QUESTION
-3) [@3] D'après la figure [[mass_parabola]], les désintégrations \beta^{-} sont
+2) D'après la figure [[mass_parabola]], les désintégrations \beta^{-} sont
    Cr\to Mn, Mn\to Fe et Co\to Ni. Les désintégrations \beta^{+} ou CE sont
    Zn\to Cu, Cu\to Ni et Co\to Fe. Les deux noyaux stables de cette famille sont
    donc le fer 58 et le nickel 58.
@@ -4213,6 +4134,83 @@ les excès de masse atomique $\Delta M_\text{at}c^2$, en MeV :
          Q_{\beta^+}&=Q_\text{CE} - 2m_ec^2=\unit[1.29]{MeV}=T_\text{max}(e^+)
        \end{align*}
      #+END_SRC
+
+** COMMENT Étoiles à neutrons
+#+BEGIN_QUESTION
+On peut montrer que l'énergie potentielle d'attraction gravitationnelle d'une masse sphérique $M$ de
+densité uniforme et de rayon $R$ est donnée par $E_G=-\frac{3 GM^2}{5R}$.
+
+   1) Déterminer la formule donnant l'énergie de liaison d'une étoile à neutrons
+      ($Z = 0$) à partir de l'énergie de liaison des nucléons dans le noyau
+      donnée par la formule de BW (on négligera l'énergie d'appariement \delta),
+      en lui ajoutant un terme d'énergie potentielle de type $E_G$ (attention,
+      ce terme correspond à une contribution positive à l'énergie de liaison).
+
+   2) En déduire l'ordre de grandeur du rayon minimal d'une étoile à neutrons
+      ayant la densité nucléaire et n'ayant aucun autre constituant que des
+      neutrons (on supposera que ce nombre $N$ de neutrons est grand, et on
+      utilisera $G/c^4$ = 1.3239 10^{-39} GeV^{-1}.fm). Calculer sa
+      masse. Comparer au rayon et à la masse du Soleil.
+#+END_QUESTION
+1) Pour une étoile à neutrons, l'énergie de liaison devient (\(Z=0\))
+   #+BEGIN_SRC latex
+     \begin{align*}
+       B_N&=a_VA-a_SA^{2/3}-\cancel{a_C\frac{Z^2}{A^{1/3}}}-a_A\frac{(Z-N)^2}{A}+\underbrace{\delta(Z,A)}_{\ll1}\\
+       &\text{ avec }A=Z+N=N\quad B_N=a_VN-a_SN^{2/3}-a_A\frac{N^{\cancel{2}}}{\cancel{N}}\\
+       B_N&=\left(a_V-a_A\right)N-a_SN^{2/3}<0
+     \end{align*}
+   #+END_SRC
+   En tenant compte de l'énergie potentielle gravitationnelle, l'énergie de
+   liaison d'une étoile à neutrons devient
+   #+BEGIN_SRC latex
+     \begin{align*}
+       B_*&=B_N-E_G=\left(a_V-a_A\right)N-a_SN^{2/3}+\frac{3GM^2}{5R}
+     \end{align*}
+   #+END_SRC
+2) En considérant l'étoile uniquement constituée de neutrons, sa masse
+   s'écrit $M=N\times m_n$. Par ailleurs, le rayon de cette étoile est égal
+   à $r_0\times N^{1/3}$ d'où
+   #+BEGIN_SRC latex
+     \begin{align*}
+       B_*&=\left(a_V-a_A\right)N-a_SN^{2/3}+\frac{3Gm_n^2\,N^2}{5r_0\,N^{1/3}}
+     \end{align*}
+   #+END_SRC
+   Dans la mesure où le nombre de nucléons est grand, on pourra négliger le
+   terme relatif aux effets de surface $a_SN^{2/3}$ devant ceux proportionnel
+   à $N$ et l'énergie gravitationnelle. Ainsi, l'énergie de liaison se réduit
+   à
+   #+BEGIN_SRC latex
+     \begin{align*}
+       B_*&=\underbrace{\left(a_V-a_A\right)N}_{<0}+\underbrace{\frac{3Gm_n^2\,N^{5/3}}{5r_0}}_{>0}
+     \end{align*}
+   #+END_SRC
+   Le premier terme négatif traduit le fait qu'un "noyau/étoile" uniquement
+   constitué de neutrons n'est pas un système physiquement stable. Toutefois,
+   le caractère instable de ce système est contrebalancé par l'effondrement
+   gravitationnel qui est d'autant plus fort que le nombre de neutrons /i.e./
+   la masse est grande. Ainsi, au-delà d'une valeur critique $N=N_0$ telle
+   que $B_*=0$, l'énergie gravitationnelle devient supérieure à l'instabilité
+   inhérente à la composition en neutrons du "noyau/étoile". La valeur
+   critique $N_0$ se traduit également en terme de rayon minimal pour qu'une
+   étoile à neutrons subsiste $R_\text{min}=r_0\times N_0^{1/3}$. La valeur
+   critique du nombre de neutrons est
+   #+BEGIN_SRC latex
+     \begin{align*}
+       B_*&=\left(a_V-a_A\right)N_0+\frac{3Gm_n^2\,N_0^{5/3}}{5r_0}=0\\
+       N_0^{-2/3}&=-\frac{3Gm_n^2}{5r_0\left(a_V-a_A\right)}\\
+       N_0^{2/3}&=\frac{5r_0\left(a_A-a_V\right)}{3Gm_n^2}\\
+       &\text{où }m_n=\unit[0.939]{GeV/c}^2\to Gm_n^2=1.3239\,10^{-39}\times(0.939)^2\\
+       N_0^{2/3}&=\frac{5\times1.25\times\left(23.285-15.56\right)\,10^{-3}}{3\times1.3239\,10^{-39}\times(0.939)^2}\\
+       &=1.377\,10^{37}\to N_0=5.11\,10^{55}
+     \end{align*}
+   #+END_SRC
+   Le rayon minimal d'une étoile à neutron est donc[fn:10]
+   #+BEGIN_SRC latex
+     \begin{align*}
+       R_\text{min}&=r_0\times N_0^{1/3}=1.25\,10^{-15}\times\left(5.11\,10^{55}\right)^{1/3}\\
+       &=\unit[4.64]{km}
+     \end{align*}
+   #+END_SRC
 
 ** Footnotes
 
