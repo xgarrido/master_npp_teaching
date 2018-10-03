@@ -1,115 +1,11 @@
-#+TITLE: Travaux Dirigés Noyaux & Particules -- Master 1
-#+AUTHOR: Xavier Garrido
+#+TITLE: Noyaux & Particules -- Master 1
+#+SUBTITLE: Travaux Dirigés du Magistère de Physique Fondamentale d'Orsay
+#+AUTHOR: Corinne Augier, Xavier Garrido
 #+EMAIL:  xavier.garrido@u-psud.fr
-#+OPTIONS: ^:{} toc:2 author:t email:t split:html
+#+OPTIONS: ^:{} toc:2 author:nil email:nil split:html
 #+LATEX_CLASS: teaching-class
 
-* TD1 : Cinématique & Accélérateurs
-** Introduction
-
-#+BEGIN_CENTER
-Noyau :\nbsp^{A}_{Z}X \rightarrow Z protons  + N neutrons = A nucléons (nombre de masse)
-#+END_CENTER
-
-- Noyau ayant le "même" nombre de protons Z sont appelés des *isotopes* tandis que
-  ceux présentant le même nombre de nucléons A sont des *isobares*
-
-- Noyau \equiv objet quantique
-  - une fonction d'onde décrit les propriétés du noyau
-  - les nombres quantiques associés : spin, parité, isospin
-  - il possède un état fondamental et des états excités
-  - chaque état possède un moment électronique et un moment magnétique
-
-Certains noyaux sont stables, d'autres radioactifs se désintégrant spontanément
-
-#+BEGIN_SRC latex
-  \begin{align*}
-    ^{14}_{6}\text{C} \rightarrow\,^{14}_{7}\text{N} + e^{-} + \bar{\nu}_{e}
-  \end{align*}
-#+END_SRC
-
-Pour étudier le noyau, on forme des réactions nucléaires qui obéissent à des
-lois de conservation (charge, nombre de nucléons, parité...). On bombarde une
-cible avec \neq projectiles (\gamma, e^{-}, n, p, ions lourds), à \neq
-énergies. Ces réactions sont possibles avec \neq probabilités (section
-efficace). On peut étudier chaque réaction dont les états finaux peuvent
-différer et déterminer la variation de la section efficace en fonction de
-l'énergie incident (fonction d'excitation) ou en fonction de l'angle de sortie
-(distribution angulaire).
-
-*Rayon des noyaux :* En 1909, Hans Geiger et Ernest Marsden sous la direction
-d'Ernest Rutherford, mettent en évidence le noyau atomique en étudiant la
-diffusion de particules \alpha sur des atomes d'or (Au). Antérieurement à cette
-expérience, la matière était conçue sous la forme d'atome contenant deux parties
-de charge électrique opposée. L'expérience de Rutherford montra
-qu'en réalité le noyau chargé positivement est de taille très petite devant le
-nuage électronique qui l'entoure, chargé négativement.
-
-En supposant que le noyau soit une sphère uniformément chargée en volume et
-contenant A nucléons
-
-#+BEGIN_SRC latex
-  \begin{align*}
-    V = \frac{4}{3}\pi\,R^{3} \propto A
-  \end{align*}
-#+END_SRC
-
-On déduit que le rayon d'un noyau est proportionnel à son nombre de nucléons $R
-= r_{0} \times A^{1/3}$. Expérimentalement, $r_{0}$ est compris entre 1.2 et 1.5
-fermi où 1 fm = 10^{-15} m = 10^{-13} cm. La valeur la plus probable est $r_{0}$ =
-1.25 fm.
-
-** Ordres de grandeurs
-#+BEGIN_QUESTION
-Calculer le volume (en cm^{3}) et la masse volumique (en g/cm^{3}) d'un noyau
-de\nbsp^{12}_{6}C, qui est le noyau utilisé pour définir l'unité de masse
-atomique. Comparer à la masse volumique des matériaux courants comme le bois ou
-le fer.
-#+END_QUESTION
-
-- Volume du noyau de\nbsp^{12}_{6}C : approx. sphérique
-
-  #+BEGIN_SRC latex
-    \begin{align*}
-      V = \frac{4}{3}\pi\,R^{3} &= \frac{4}{3}\pi\,(r_{0}\,A^{1/3})^3 \\
-      V(^{12}_{6}\text{C})&= \frac{4}{3}\pi\,(1.25\times12^{1/3})^3 \\
-      &\simeq \unit[100]{fm}^3 = \unit[10^{-37}]{cm}^3
-    \end{align*}
-  #+END_SRC
-
-- Masse volumique
-  \nbsp^{12}_{6}C \rightarrow noyau particulier à partir duquel est défini
-  l'unité de masse atomique
-
-  #+BEGIN_SRC latex
-    \begin{align*}
-      \unit[1]{u.m.a} = \frac{\text{masse}(^{12}_{6}\text{C})}{12} = \unit[931.5]{MeV/c}^{2}
-    \end{align*}
-  #+END_SRC
-
-d'où
-
-#+BEGIN_SRC latex
-  \begin{align*}
-    m(^{12}_{6}\text{C})c^2 &= 12\times\unit[931.5]{MeV} = 12\times931.5\times10^6\times\unit[1.6\,10^{-19}]{J} \\
-    m(^{12}_{6}\text{C})    &= \frac{12\times931.5\times1.6\,10^{-19}}{(3\,10^8)^2} = \unit[2\,10^{-26}]{kg} = \unit[2\,10^{-23}]{g}\\
-  \end{align*}
-#+END_SRC
-
-On en déduit que la masse volumique est égale à
-
-#+BEGIN_SRC latex
-  \begin{align*}
-    \rho(^{12}_{6}\text{C}) = \frac{m(^{12}_{6}\text{C})}{V(^{12}_{6}\text{C})} =
-    \frac{2\,10^{-23}}{10^{-37}} = \unit[2\,10^{14}]{g/cm}^3
-  \end{align*}
-#+END_SRC
-
-À titre de comparaison, le bois a une densité moyenne de 0.6 -- 1 g/cm^{3}, le
-fer environ 10 g/cm^{3}, la Terre de 6 g/cm^{3} et l'Uranium de 19 g/cm^{3}.
-
-*Remarques :* la densité au sein d'une étoile à neutrons est voisine de 10^{11} g/cm^{3}
-
+* TD1 : Cinématique
 ** Cinématique
 
 #+BEGIN_QUESTION
@@ -354,6 +250,7 @@ L'énergie cinétique minimum du faisceau incident est ainsi
   \end{align*}
 #+END_SRC
 
+* TD2 : Accélérateurs & section efficace
 ** Accélérateurs
 *** Introduction
 - cyclotron :: Le cyclotron est un type d’accélérateur de particules circulaire
@@ -567,7 +464,377 @@ $\vv{v}$ dans un champ d'induction $\vv{B}$ normal à $\vv{v}$.
      \end{align*}
    #+END_SRC
 
-* TD2 : Nombres quantiques & Symétries
+** Accélérateur, section efficace et luminosité
+#+BEGIN_QUESTION
+1) On veut étudier la diffusion élastique des deutons\nbsp^2_1H, d'énergie
+   incidente 30 MeV, sur une cible de\nbsp^{63}_{29}Cu.
+
+   Le faisceau de deutons, de section droite circulaire de 2 cm de diamètre,
+   contient 6 10^{10} particules s^{-1} cm^{-2}, et est mesuré dans une cage de
+   Faraday. La cible de\nbsp^{63}Cu a une épaisseur de 2 mg/cm^{2}. Un détecteur
+   rectangulaire (4 cm \times 2 cm) est situé à 1 m de la cible à l'angle \theta
+   = 30°.
+
+   Calculer le nombre de deutons détectés par seconde par ce détecteur
+   rectangulaire, sachant qu'à l'angle de diffusion \theta = 30° et à 30 MeV, la
+   section efficace différentielle est de 0.1 barn/stéradian.
+#+END_QUESTION
+1) \nbsp^{2}_{1}H+\nbsp^{63}_{29}Cu\to\nbsp^{2}_{1}H+\nbsp^{63}_{29}Cu
+   #+BEGIN_SRC latex
+     \begin{align*}
+       dn=\phi Ne\frac{d\sigma}{d\Omega}d\Omega=\phi\frac{\mathcal{N}\rho_e}{A_\text{cible}}\frac{d\sigma}{d\Omega}d\Omega
+     \end{align*}
+   #+END_SRC
+   où $\phi=\phi'\pi R^2$ et $\phi'=6\,10^{10}\,\text{s}^{-1}\text{.cm}^{-2}$. Le
+   nombre de deutons détectés est
+   #+BEGIN_SRC latex
+     \begin{align*}
+       \left.dn\right|_{30^\circ}&=\phi\frac{\mathcal{N}\rho_e}{A_\text{cible}}\left.\frac{d\sigma}{d\Omega}\right|_{\theta=30^\circ}\frac{S_\text{détecteur}}{d^2_\text{cible-détecteur}}\\
+       &=6\,10^{10}\times\pi\times1^2\times\frac{6.02\,10^{23}\times2\,10^{-3}}{63}\times0.1\,10^{-24}\times\frac{4\times2}{100^2}\\
+       &=\unit[287]{deutons/s}
+     \end{align*}
+   #+END_SRC
+
+#+BEGIN_QUESTION
+2) [@2] On veut étudier la réaction
+   #+BEGIN_SRC latex
+     \begin{align*}
+       ^9_4\text{Be} + ^3_1\text{H} \rightarrow ^3_2\text{He} + ^9_3\text{Li}
+     \end{align*}
+   #+END_SRC
+   Pour cela, on bombarde une cible de\nbsp^{9}Be de 100 \mu{}g/cm^{2} avec un
+   faisceau de tritium (^{3}_{1}H) de 25 MeV.
+   1) Quelle est la section efficace totale de la réaction, sachant que
+      l'intensité du faisceau incident est $I$ = 500 nA et que le nombre de
+      noyaux détectés par seconde est $n$ = 2000 ?
+
+   2) On détecte dans cette réaction les particules d'^{3}_{2}He. Donner le
+      schéma de principe d'une telle expérience. Quelle est l'allure du spectre
+      en énergie des noyaux d'^{3}_{2}He détectés ?
+#+END_QUESTION
+2) [@2] \nbsp^{3}_{1}H+\nbsp^{9}_{4}Be\to\nbsp^{3}_{2}He+\nbsp^{9}_{3}Li
+
+   1) Le flux incident $\phi$ s'exprime en fonction de l'intensité $I$ du faisceau
+      #+BEGIN_SRC latex
+        \begin{align*}
+          \phi=\frac{I}{Ze}
+        \end{align*}
+      #+END_SRC
+      Par ailleurs, le nombre de noyaux détectés $n=2000$ soit
+      #+BEGIN_SRC latex
+        \begin{align*}
+          n&=\phi\times N\times e\times\sigma=2000\\
+          &=\frac{I}{Ze}\times\frac{\mathcal{N}\rho_e}{A_\text{cible}}\times\sigma\\
+          \sigma&=\frac{n\times A_\text{cible}\times Ze}{I\times\mathcal{N}\times\rho_e}\\
+          \sigma&=\unit[9.6\,10^{-29}]{cm}^2=\unit[9.6\,10^{-5}]{barn}=\unit[96]{microbarn}
+        \end{align*}
+      #+END_SRC
+   2) Principe expérimental
+      #+BEGIN_CENTER
+      #+ATTR_LATEX: :width 0.5\linewidth
+      [[./figures/HBe_HeLi_production.pdf]]
+      #+END_CENTER
+
+      L'énergie totale est fixé par l'énergie cinétique du faisceau incident (+
+      les énergies de masse de la cible et du faisceau) : la distribution en
+      énergie des noyaux de\nbsp^{3}_{2}He présente des raies correspondant aux
+      niveaux en énergie de\nbsp^{3}_{2}He (ou\nbsp^{9}_{3}Li) → *énergies quantifiées*
+
+#+BEGIN_QUESTION
+3) [@3] Dans les faisceaux d'un anneau de collisions $e^+e^-$, les électrons
+   (positrons) sont regroupés en paquets qui se croisent à chaque tour. Le
+   collisionneur LEP-I auquel on s'intéresse ici était un synchrotron de
+   circonférence 27 km, dont le rayon de courbure valait $R$ ~ 4.5 km et dans
+   lequel circulaient, en sens inverses, 4 paquets de $N_1$ positrons et 4
+   paquets de $N_2$ électrons.
+
+   1) On caractérise une région d'intersection des faisceaux par sa luminosité
+      $\mathcal{L}$, telle que le nombre d'interactions par unité de temps soit
+      égal au produit $\mathcal{L}\sigma$ de la luminosité par la section
+      efficace.
+
+      En déduire la dimension et l'unité de $\mathcal{L}$.
+
+      On peut montrer que la luminosité s'exprime en fonction des intensités
+      $I_1$ et $I_2$ des courants électriques des faisceaux, du rayon $R$ de
+      l'anneau et de la surface $S$ de recouvrement des paquets par la
+      relation :
+      #+BEGIN_SRC latex
+        \begin{align*}
+          \mathcal{L} = \frac{2\pi R}{c} \frac{I_1 I_2}{e^2 S}
+        \end{align*}
+      #+END_SRC
+      où $e$ est la charge électrique élémentaire.
+
+      Calculer la luminosité $\mathcal{L}$, en cm^{-2}.s^{-1}, pour $I_1$ =
+      $I_2$ = 3 mA et $S$ = 0.5 mm^{2}.
+   2) Pour déterminer la luminosité effectivement obtenue auprès du
+      collisionneur, on observe en général une réaction de référence dont la
+      section efficace est bien connue. Il s'agit ici de la diffusion dite
+      "Bhabha" $e^+ e^- \rightarrow e^+ e^-$ dont la section efficace
+      différentielle, à l'approximation des petits angles que l'on utilisera
+      pour le calcul, est :
+      #+BEGIN_SRC latex
+        \begin{align*}
+          \frac{d\sigma}{d\Omega} = \frac{16 \alpha^2 c)^2}{E^2 \theta^4}
+        \end{align*}
+      #+END_SRC
+
+      où \alpha est la constante de structure fine, $E$ l'énergie totale et
+      \theta l'angle de diffusion.
+
+      Le détecteur qui compte les électrons diffusés a la forme d'une couronne,
+      centrée sur l'axe du faisceau. Il couvre tous les angles azimutaux \phi et
+      les angles polaires \theta compris entre 3 et 8 degrés.
+
+      1) Déterminer la section efficace de diffusion, à l'énergie $E$ = 90 GeV.
+
+      2) Si on observe 950 interactions dans ce détecteur en une heure de prise
+         de données, que vaut la luminosité associée ?
+#+END_QUESTION
+3) [@3]
+   1) La luminosité $\mathcal{L}$ s'exprime comme le rapport du nombre de
+      particules détectés par unité de temps sur la section efficace
+      #+BEGIN_SRC latex
+        \begin{align*}
+          \mathcal{L}=\frac{n}{\sigma}
+        \end{align*}
+      #+END_SRC
+      Ainsi, une réaction/interaction de section efficace $\sigma$ sera d'autant
+      "mieux" observée que la luminosité sera grande et donc que le nombre de
+      particules résultantes de cette réaction/interaction sera
+      conséquente. L'unité de luminosité est donc
+      #+BEGIN_SRC latex
+        \begin{align*}
+          \left[\mathcal{L}\right]=\frac{\left[n\right]}{\left[\sigma\right]}=T^{-1}.L^{-2}
+        \end{align*}
+      #+END_SRC
+
+      La luminosité dépend de l'intensité de chacun des faisceau entrant en
+      collision
+      #+BEGIN_SRC latex
+        \begin{align*}
+          \mathcal{L}&=\frac{2\pi R}{c}\times\frac{I_1\,I_2}{e^2S}\\
+          &=\frac{2\pi\times4.5\,10^3}{3\,10^8}\times\frac{9\,10^{-6}}{(1.6\,10^{-19})^2\times0.5\,10^{-6}}\\
+          &=6.63\,10^{34}\,\text{m}^2\text{.s}^{-1}=6.63\,10^{30}\,\text{cm}^2\text{.s}^{-1}
+        \end{align*}
+      #+END_SRC
+   2) Diffusion [[http://en.wikipedia.org/wiki/Homi_J._Bhabha][Bhabha]] $e^+e^-\to e^+e^-$
+      #+BEGIN_CENTER
+      #+ATTR_LATEX: :width 0.4\linewidth
+      [[./figures/bhabha_diagram.pdf]]
+      #+END_CENTER
+
+      #+BEGIN_SRC latex
+        \begin{align*}
+          \frac{d\sigma}{d\Omega}=\frac{16\alpha^2(\hbar c)^2}{E^2\theta^4}
+        \end{align*}
+      #+END_SRC
+      avec $E=\unit[90]{GeV}$ et $\alpha=\frac{e^2}{4\pi\epsilon_0\hbar c}$ où
+      $\hbar c=\unit[197.3]{MeV.fm}$
+      1) La section efficace totale $\sigma$ est égale à
+         #+BEGIN_SRC latex
+           \begin{align*}
+             \sigma&=\int\frac{d\sigma}{d\Omega}d\Omega\\
+             &=\int_0^{2\pi}\int_{\theta_1}^{\theta_2}\sin\theta d\theta d\phi\frac{d\sigma}{d\Omega}\\
+             &=2\pi\frac{16\,\alpha^2(\hbar c)^2}{E^2}\int_{\theta_1}^{\theta_2}\frac{\sin\theta}{\theta^4}d\theta
+           \end{align*}
+         #+END_SRC
+         Dans la mesure où $\theta\ll1$, $\sin\theta\sim\theta$ soit
+         #+BEGIN_SRC latex
+           \begin{align*}
+             \sigma=2\pi\frac{16\,\alpha^2(\hbar c)^2}{E^2}\int_{\theta_1}^{\theta_2}\frac{d\theta}{\theta^3}
+           \end{align*}
+         #+END_SRC
+         avec $\theta_1=3^\circ=\unit[0.0524]{rad}$ et $\theta_2=8^\circ=\unit[0.1396]{rad}$.
+         #+BEGIN_SRC latex
+           \begin{align*}
+             \sigma&=\frac{32\pi\,\alpha^2(\hbar c)^2}{2E^2}\times\underbrace{\left[\frac{1}{\theta_1^2}-\frac{1}{\theta_2^2}\right]}_{=312.9}\\
+             &=\frac{32\pi\times e^4\times\cancel{(\hbar c)^2}}{2\times(4\pi\epsilon_0\cancel{\hbar c})^2\times E^2}\times312.9\\
+             &=\frac{e^2}{\pi\epsilon_0^2\left.E\right|_\text{eV}^2}\times312.9=\unit[4\,10^{-36}]{m}^2=\unit[4\,10^{-8}]{barn}=\unit[40]{nanobarn}
+           \end{align*}
+         #+END_SRC
+      2) Le nombre d'interaction par seconde est
+         $n=\frac{950}{3600}=\unit[0.2639]{s}^{-1}$. La luminosité est égale à
+         #+BEGIN_SRC latex
+           \begin{align*}
+             \mathcal{L}=\frac{n}{\sigma}=\frac{0.2639}{4\,10^{-36}}=6.553\,10^{34}\,\text{m}^{-2}\text{.s}^{-1}
+           \end{align*}
+         #+END_SRC
+
+         #+BEGIN_REMARK
+         La luminosité instantanée du LHC est voisine de 10^{34} cm^{-2}.s^{-1}
+         soit 10^{-2} pb^{-1}.s^{-1}. À titre de comparaison, le collisionneur
+         $p\bar{p}$ du Tevratron avait une luminosité de 3.2 10^{32}
+         cm^{-2}.s^{-1} ce qui intégré sur son temps d'acquisition de 2001 à
+         2008 a fourni une luminosité intégrée de 5000 pb^{-1}. En un peu moins
+         d'une semaine de prise de données, le LHC a atteint la même luminosité
+         intégrée que le Tevatron.
+         #+END_REMARK
+
+** Section efficace et neutrons thermiques
+#+BEGIN_QUESTION
+1) On appelle neutrons thermiques des neutrons lents en équilibre
+   thermodynamique avec le milieu dans lequel ils se trouvent.
+
+   On irradie une cible de\nbsp^{10}_{5}B avec un faisceau de neutrons
+   thermiques d'énergie cinétique $T$ = 2.5 10^{-2} eV, produits par un
+   réacteur, afin de créer des noyaux de\nbsp^{7}Li par la réaction :
+   #+BEGIN_SRC latex
+     \begin{align}
+       n_\text{th} + ^{10}_{5}\text{B} \rightarrow \alpha + ^7_3\text{Li}
+     \end{align}
+   #+END_SRC
+   On détecte les particules \alpha émises au cours de cette réaction. Quelle
+   est leur énergie cinétique $T_{\alpha}$ ?  On donne les masses nucléaires
+   suivantes, en MeV :
+   #+BEGIN_CENTER
+   $m_{\alpha}c^2$ = 3727.398, $m_{^7\text{Li}}c^2$ = 6533.877, $m_{^8\text{Li}}c^2$ =
+   7471.417, $m_{^{10}\text{B}}c^2$ = 9324.495, $m_{^{11}\text{B}}c^2$ = 10252.615
+   #+END_CENTER
+#+END_QUESTION
+1) $n_\text{th.}+^{10}_{5}\text{B}\rightarrow\alpha+^{7}_{3}\text{Li}$
+
+   Calcul de la chaleur de réaction $Q$
+   #+BEGIN_SRC latex
+     \begin{align*}
+       Q&=m_nc^2+m_{^{10}_{5}\text{B}}c^2-m_\alpha c^2-m_{^{7}_{3}\text{Li}}c^2\\
+       &=939.6 + 9324.495 - 3727.398 - 6533.877=\unit[2.82]{MeV}>0
+     \end{align*}
+   #+END_SRC
+   La réaction est donc exoénergétique ou spontanée et ne requiert pas
+   nécessairement d'énergie cinétique pour les neutrons
+   $T_{n_\text{th.}}\ll1\sim0$. On considèrera la réaction se faisant au repos
+   $T_{n_\text{th.}}=T_{^{10}_{5}\text{B}}\sim0$. La conservation de l'impulsion
+   implique donc que $\vv{p}_\alpha=-\vv{p}_{^{7}_{3}\text{Li}}$ soit
+   #+BEGIN_SRC latex
+     \begin{align*}
+       p_\alpha c&=p_{^{7}_{3}\text{Li}}c\\
+       T_\alpha^2+2T_\alpha\,m_\alpha c^2&=T_{^{7}_{3}\text{Li}}^2+2T_{^{7}_{3}\text{Li}}\,m_{^{7}_{3}\text{Li}}c^2
+     \end{align*}
+   #+END_SRC
+   La conservation de l'énergie implique quant à elle
+   #+BEGIN_SRC latex
+     \begin{align*}
+       E_n+E_{^{10}_{5}\text{B}}&=E_\alpha+E_{^{7}_{3}\text{Li}}\\
+       m_nc^2+m_{^{10}_{5}\text{B}}c^2&=m_\alpha c^2+m_{^{7}_{3}\text{Li}}c^2+T_\alpha+T_{^{7}_{3}\text{Li}}\\
+       Q&=T_\alpha+T_{^{7}_{3}\text{Li}}
+     \end{align*}
+   #+END_SRC
+   soit
+   #+BEGIN_SRC latex
+     \begin{align*}
+       T_\alpha^2+2T_\alpha\,m_\alpha c^2&=\left(Q-T_\alpha\right)^2+2\left(Q-T_\alpha\right)\,m_{^{7}_{3}\text{Li}}c^2\\
+       T_\alpha\times\left(2m_\alpha c^2+2m_{^{7}_{3}\text{Li}}+2Q\right)&=Q^2+2Qm_{^{7}_{3}\text{Li}}c^2\\
+       T_\alpha&=\frac{Q^2+2Qm_{^{7}_{3}\text{Li}}c^2}{2\left(m_n c^2+m_{^{10}_{5}\text{B}}c^2\right)}\\
+       &=\unit[1.8]{MeV}
+     \end{align*}
+   #+END_SRC
+
+#+BEGIN_QUESTION
+2) [@2] On veut maintenant étudier la réaction :
+   #+BEGIN_SRC latex
+     \begin{align}
+       n + ^{11}_{5}\text{B} \rightarrow \alpha + ^8_{3}\text{Li}
+     \end{align}
+   #+END_SRC
+   Dire, en justifiant votre réponse, si cette réaction est possible avec des
+   neutrons thermiques. Donner alors ses conditions d'étude.
+#+END_QUESTION
+2) [@2] $n+^{11}_{5}\text{B}\rightarrow\alpha+^{8}_{3}\text{Li}$
+
+   Calcul de la chaleur de réaction $Q$
+   #+BEGIN_SRC latex
+     \begin{align*}
+       Q&=m_nc^2+m_{^{11}_{5}\text{B}}c^2-m_\alpha c^2-m_{^{8}_{3}\text{Li}}c^2\\
+       &=939.6 + 10252.615 - 3727.398 - 7471.417=\unit[-6.6]{MeV}<0
+     \end{align*}
+   #+END_SRC
+   /i.e./ une réaction endoénergétique qui, pour se réaliser, implique que les
+   neutrons aient une énergie cinétique minimale $T_S$ de
+   #+BEGIN_SRC latex
+     \begin{align*}
+       T_S&=\frac{|Q|\times\Sigma m_{if}c^2}{2m_{^{11}_{5}\text{B}}c^2}\\
+       &=\unit[7.21]{MeV}\gg\unit[2.5\,10^{-2}]{eV}
+     \end{align*}
+   #+END_SRC
+
+#+BEGIN_QUESTION
+3) [@3] On envoie le faisceau de neutrons thermiques sur une cible de Bore
+   naturel de surface 10 cm^{2}, d'épaisseur 1 \mu{}m, de densité \rho = 2.34
+   g/cm^{3} et de composition isotopique 19.8% de\nbsp^{10}B et 80.2%
+   de\nbsp^{11}B. La section efficace totale de la réaction (1) vaut \sigma =
+   3840 b. On sait de plus que la section efficace différentielle est isotrope
+   dans le système du centre de masse pour des neutrons lents. Le détecteur de
+   particules \alpha, de surface utile 5 cm^{2} et situé à 1 m de la cible,
+   enregistre 473 particules \alpha à la minute. Quel est le flux de neutrons
+   thermiques, en cm^{-2}s^{-1} ?
+#+END_QUESTION
+3) [@3] Le nombre de particules \alpha détectées se déduit de l'expression suivante
+   #+BEGIN_SRC latex
+     \begin{align*}
+       dn_\alpha=\phi_{n_\text{th.}}\times\frac{\mathcal{N}\times\rho_e}{A_\text{cible}}\times\frac{d\sigma}{d\Omega}d\Omega
+     \end{align*}
+   #+END_SRC
+   Le flux incident de neutrons thermiques est donc
+   #+BEGIN_SRC latex
+     \begin{align*}
+       \phi_{n_\text{th.}}=\frac{dn_\alpha\,A_\text{cible}}{\mathcal{N}\times\rho_e\times\frac{d\sigma}{d\Omega}d\Omega}
+     \end{align*}
+   #+END_SRC
+
+   Bore naturel → 19.8%\nbsp^{10}B+80.2%\nbsp^{11}B. Le nombre de nucléons moyen
+   de la cible est donc
+   #+BEGIN_SRC latex
+     \begin{align*}
+       A_\text{cible}=0.198\times10+0.802\times11=10.802
+     \end{align*}
+   #+END_SRC
+   Par ailleurs, l'épaisseur de cible $\rho_e=\unit[2.34\,10^{-4}]{g/cm}^2$ est
+   seulement constituée de 19.8% de\nbsp^{10}B nécessaire à la réaction. On
+   introduit donc une épaisseur "effective" de\nbsp^{10}B correspondant à
+   19.8%$\cdot\rho_e$. Finalement la section efficace différentielle
+   $\frac{d\sigma}{d\Omega}$ est isotrope soit
+   $\frac{d\sigma}{d\Omega}=\frac{\sigma}{4\pi}$. On déduit ainsi le flux par
+   seconde $\phi_{n_\text{th.}}$
+   #+BEGIN_SRC latex
+     \begin{align*}
+       \phi_{n_\text{th.}}&=\frac{\frac{473}{60}\times10.802}{6.02\,10^{23}\times0.198\times2.34\,10^{-4}\times\frac{3840\,10^{-24}}{4\pi}\times\frac{5}{100^2}}\\
+       &=\unit[2\,10^7]{s}^{-1}
+     \end{align*}
+   #+END_SRC
+   La surface de la cible étant de 10 cm^{2}, le flux par seconde et par unité
+   de surface est donc $F=\frac{\phi}{S_\text{cible}}=2\,10^6\,\text{cm}^{-2}\text{.s}^{-1}$.
+
+#+BEGIN_QUESTION
+4) [@4] On irradie maintenant une cible isotopiquement séparée de\nbsp^{11}B
+   avec des neutrons de 13 MeV, pour lesquels la section efficace différentielle
+   de la réaction\nbsp(2) est $\frac{d\sigma}{d\Omega}$ = 3.8 mb/sr à 20°. On
+   détecte les particules \alpha avec le même détecteur que précédemment,
+   placé à 20°.
+   1) Quelles mesures supplémentaires faut-il faire afin de déterminer la
+      section efficace totale de la réaction ?
+   2) En supposant que ces mesures montrent une dépendance angulaire de la
+      forme $d\sigma/d\Omega = K/\sin\theta$, calculer la section efficace
+      totale.
+#+END_QUESTION
+4) [@4] $T_n=\unit[13]{MeV}>T_S=\unit[7.21]{MeV}$ et
+   $\left.\frac{d\sigma}{d\Omega}\right|_{20^\circ}=\unit[3.8]{mb/sr}$
+   1) Pour calculer la section efficace totale $\sigma$, il s'agit d'intégrer la
+      section efficace différentielle sur 4\pi stéradian : il faut donc
+      connaitre la dépendance angulaire $(\theta,\phi)$ de
+      $\frac{d\sigma}{d\Omega}$.
+   2) $\frac{d\sigma}{d\Omega}=\frac{K}{\sin\theta}$ avec
+      $K=\left.\frac{d\sigma}{d\Omega}\right|_{20^\circ}\sin\,20^\circ=\unit[1.3]{mb/sr}$. La
+      section efficace totale devient
+      #+BEGIN_SRC latex
+        \begin{align*}
+          \sigma&=\int\frac{d\sigma}{d\Omega}d\Omega=\int_0^{2\pi}d\phi\int_0^\pi\frac{K}{\sin\theta}\sin\theta d\theta\\
+          &=2\pi^2\,K=\unit[25.65]{mb}
+        \end{align*}
+      #+END_SRC
+
+* TD3 : Nombres quantiques & Symétries
 ** Énergie maximum des rayons cosmiques
 
 #+CAPTION: *Spectre en énergie des rayons cosmiques*
@@ -835,72 +1102,6 @@ est de 2.2 \mu{}s, ce temps est "boosté" par le facteur de Lorentz soit \tau =
    conservé or toutes interactions conservent ce nombre (y compris l'interaction
    faible)
 
-** La parité et sa violation
-#+BEGIN_QUESTION
-1) [@1] Rappeler la définition de la parité. Quelles sont ses propriétés ? Que
-   signifie formellement et intuitivement sa conservation ?
-#+END_QUESTION
-1) L'opérateur parité transforme une fonction $\psi(\vv{r})$ en
-   $\psi(-\vv{r})$ : $\hat{\mathcal{P}}\,\psi(\vv{r}) = \psi(-\vv{r})$. Les
-   valeurs propres \pi sont telles que $\hat{\mathcal{P}}\,\psi(\vv{r}) =
-   \pi\,\psi(\vv{r})$ or $\hat{\mathcal{P}}^2\,\psi(\vv{r}) =
-   \hat{\mathcal{P}}\,\psi(-\vv{r}) = \psi(\vv{r})$. $\hat{\mathcal{P}}$ est
-   donc unitaire et les valeurs propres sont \pi = \pm1 (à une phase
-   près). L'invariance sous $\hat{\mathcal{P}}$ /i.e./ conservation de la parité
-   implique qu'il n'y a pas de différence entre "gauche ou droite" (même image
-   dans un miroir).
-
-#+BEGIN_QUESTION
-2) [@2] On considère la réaction $A^+\rightarrow\pi^++\pi^++\pi^-$. Quelle est
-   la parité dans l'état final ? On donne $I(A)=0$ et $I^\pi(\pi)=0^-$.
-#+END_QUESTION
-2) [@2] Conservation du moment cinétique total $\vv{I}$
-   #+BEGIN_SRC latex
-     \begin{align*}
-       \vv{I}(A^+) = \vv{I}(\pi^+) + \vv{I}(\pi^+) + \vv{I}(\pi^-) +
-       \vv{L}_f
-     \end{align*}
-   #+END_SRC
-   où $\vv{L}_f$ est le moment angulaire relatif des particules en voie de
-   sortie. La conservation de la parité \pi se traduit par l'équation suivante
-   #+BEGIN_SRC latex
-     \begin{align*}
-       \pi(A^+) = \pi(\pi^+)\,\pi(\pi^+)\,\pi(\pi^-)\,(-1)^{L_f}
-     \end{align*}
-   #+END_SRC
-
-   Du fait que $I(A^+) = I(\pi^\pm) = 0$, on déduit que $\vv{L_f} = \vv{0}$ soit
-   la parité dans l'état final $A^+$
-   #+BEGIN_SRC latex
-     \begin{align*}
-       \pi(A^+) = (-1)\,(-1)\,(-1)\,(-1)^0 = -1
-     \end{align*}
-   #+END_SRC
-
-#+BEGIN_QUESTION
-3) [@3] On considère la réaction $\theta^+\rightarrow\pi^++\pi^0$. Quelle est la
-   parité dans l'état final ? On donne $I(\theta)=0$ et $I^\pi(\pi)=0^-$.
-#+END_QUESTION
-3) [@3] Le moment angulaire relatif $L_f$ est donc nul.
-   #+BEGIN_SRC latex
-     \begin{align*}
-       \pi(\theta^+) = \pi(\pi^+)\,\pi(\pi^0)\,(-1)^0 = +1
-     \end{align*}
-     #+END_SRC
-
-#+BEGIN_QUESTION
-4) [@4] On sait par ailleurs que $\theta^+$ et $A^+$ ont mêmes masses et durées
-   de vie. Qu'est ce que cela vous suggère-t-il ? Ce problème était connu à
-   l'époque sous le patronyme de "puzzle \theta/\tau".
-#+END_QUESTION
-4) [@4] $A^+$ et $\theta^+$ ont la même masse, mêmes durées de vie et même
-   charge électrique. Elles sont donc la même particule mais avec *une parité
-   différente*. Les mésons se désintégrant par interaction faible, ce problème
-   aussi connu sous le nom de "puzzle \theta/\tau" (\tau\equiv A^{+}) trouva sa
-   solution dans le fait que l'interaction faible ne conserve pas la parité. Ces
-   deux particules sont donc une seule et même particule appelée à présent
-   $K^+$.
-
 ** Footnotes
 
 [fn:1] 1 pc = 1 parsec = 3.26 années lumières = 30.856 10^{12} km.
@@ -919,7 +1120,7 @@ synchrotron a accéléré des protons au delà du GeV (1952 -- 1966) contribuant
 la découverte de l'ensemble des mésons chargés de même qu'à la mise en évidence
 de particules lourdes instables telles que les particules $V$.
 
-* TD3 : Réactions de production et de désintégration de particules
+* TD4 : Réactions de production et de désintégration de particules
 
 #+CAPTION: *Modèle standard de la physique des particules*
 [[file:./figures/standard_model.pdf]]
@@ -1277,12 +1478,544 @@ haut". Le principe de Pauli exclut une telle configuration pour des fermions. En
 ajoutant le nombre quantique de couleur, la chromodynamique quantique permet un
 tel état tout comme pour le baryon \Omega^{-} postulé par Gell-Mann et découvert à
 Brookhaven en 1964.
+** La parité et sa violation
+#+BEGIN_QUESTION
+1) [@1] Rappeler la définition de la parité. Quelles sont ses propriétés ? Que
+   signifie formellement et intuitivement sa conservation ?
+#+END_QUESTION
+1) L'opérateur parité transforme une fonction $\psi(\vv{r})$ en
+   $\psi(-\vv{r})$ : $\hat{\mathcal{P}}\,\psi(\vv{r}) = \psi(-\vv{r})$. Les
+   valeurs propres \pi sont telles que $\hat{\mathcal{P}}\,\psi(\vv{r}) =
+   \pi\,\psi(\vv{r})$ or $\hat{\mathcal{P}}^2\,\psi(\vv{r}) =
+   \hat{\mathcal{P}}\,\psi(-\vv{r}) = \psi(\vv{r})$. $\hat{\mathcal{P}}$ est
+   donc unitaire et les valeurs propres sont \pi = \pm1 (à une phase
+   près). L'invariance sous $\hat{\mathcal{P}}$ /i.e./ conservation de la parité
+   implique qu'il n'y a pas de différence entre "gauche ou droite" (même image
+   dans un miroir).
+
+#+BEGIN_QUESTION
+2) [@2] On considère la réaction $A^+\rightarrow\pi^++\pi^++\pi^-$. Quelle est
+   la parité dans l'état final ? On donne $I(A)=0$ et $I^\pi(\pi)=0^-$.
+#+END_QUESTION
+2) [@2] Conservation du moment cinétique total $\vv{I}$
+   #+BEGIN_SRC latex
+     \begin{align*}
+       \vv{I}(A^+) = \vv{I}(\pi^+) + \vv{I}(\pi^+) + \vv{I}(\pi^-) +
+       \vv{L}_f
+     \end{align*}
+   #+END_SRC
+   où $\vv{L}_f$ est le moment angulaire relatif des particules en voie de
+   sortie. La conservation de la parité \pi se traduit par l'équation suivante
+   #+BEGIN_SRC latex
+     \begin{align*}
+       \pi(A^+) = \pi(\pi^+)\,\pi(\pi^+)\,\pi(\pi^-)\,(-1)^{L_f}
+     \end{align*}
+   #+END_SRC
+
+   Du fait que $I(A^+) = I(\pi^\pm) = 0$, on déduit que $\vv{L_f} = \vv{0}$ soit
+   la parité dans l'état final $A^+$
+   #+BEGIN_SRC latex
+     \begin{align*}
+       \pi(A^+) = (-1)\,(-1)\,(-1)\,(-1)^0 = -1
+     \end{align*}
+   #+END_SRC
+
+#+BEGIN_QUESTION
+3) [@3] On considère la réaction $\theta^+\rightarrow\pi^++\pi^0$. Quelle est la
+   parité dans l'état final ? On donne $I(\theta)=0$ et $I^\pi(\pi)=0^-$.
+#+END_QUESTION
+3) [@3] Le moment angulaire relatif $L_f$ est donc nul.
+   #+BEGIN_SRC latex
+     \begin{align*}
+       \pi(\theta^+) = \pi(\pi^+)\,\pi(\pi^0)\,(-1)^0 = +1
+     \end{align*}
+     #+END_SRC
+
+#+BEGIN_QUESTION
+4) [@4] On sait par ailleurs que $\theta^+$ et $A^+$ ont mêmes masses et durées
+   de vie. Qu'est ce que cela vous suggère-t-il ? Ce problème était connu à
+   l'époque sous le patronyme de "puzzle \theta/\tau".
+#+END_QUESTION
+4) [@4] $A^+$ et $\theta^+$ ont la même masse, mêmes durées de vie et même
+   charge électrique. Elles sont donc la même particule mais avec *une parité
+   différente*. Les mésons se désintégrant par interaction faible, ce problème
+   aussi connu sous le nom de "puzzle \theta/\tau" (\tau\equiv A^{+}) trouva sa
+   solution dans le fait que l'interaction faible ne conserve pas la parité. Ces
+   deux particules sont donc une seule et même particule appelée à présent
+   $K^+$.
+
 ** Footnotes
 
 [fn:4] le moment cinétique total est également différent 5/2^{+} ou 7/2^{+} contre
 3/2^{+}
+* TD5 : Modèle Standard et au-delà : l'interaction faible
+** Masse et largeur du $Z^0$ -- Nombre de familles de neutrinos
+#+BEGIN_QUESTION
+La figure ci-dessous représente la distribution de masse invariante du boson
+d'interaction faible $Z^0$ pour sa désintégration en $e^+e^-$, obtenue par
+le détecteur ALEPH auprès du collisionneur $e^+e^-$ LEP du CERN.
 
-* TD4 : Modèle des quarks -- Les hadrons
+#+BEGIN_CENTER
+#+ATTR_LATEX: :width 0.7\textwidth
+[[./figures/aleph_ee.pdf]]
+#+END_CENTER
+
+1) D'après cette figure, correspondant aux événements issus des désintégrations
+   $Z^0 \rightarrow e^+e^-$, estimer la masse du $Z^0$, ainsi que la largeur
+   associée.
+#+END_QUESTION
+Le LEP (pour /Large Electron Positron collider/) était un accélérateur de
+particules circulaire de 27 km de circonférence, passant sous le site du CERN
+entre la France et la Suisse. En fonction de 1989 à 2000, le LEP demeure le plus
+puissant collisionneur de leptons jamais construit
+($E_{\text{max}}=\unit[200]{GeV}$).
+
+La production de $Z^0$ intervient par la collision de $e^+e^-$. Ce boson se
+désintègre /via/ différents canaux dont la désintégration $Z^0\to e^+e^-$. La
+figure présente la section efficace en fonction de l'énergie des $e^+e^-$
+incidents.
+
+1) [@1] Les faisceaux d'électrons-positrons sont accélérés à la même énergie
+   mais avec des impulsions opposées. Par conservation de l'impulsion, le $Z^0$
+   ainsi produit est au repos et les deux leptons produits par désintégration
+   sont donc émis dos-à-dos. La masse du $Z^0$ correspond donc à la position en
+   énergie du maximum de production /i.e./ à la résonance soit une masse de
+   $M_{Z^0}c^2=\unit[91.2]{GeV}$ (la mesure figurant dans le PDG donne 91.1876
+   \pm 0.0021 GeV). La largeur à mi-hauteur mesurée est
+   $\Gamma(Z^0)=2\times(91.2-90)=\unit[2.4]{GeV}$ (contre 2.4952 \pm 0.0023 GeV
+   dans le PDG).
+
+#+BEGIN_QUESTION
+2) [@2] Le calcul en théorie électrofaible de la largeur partielle du $Z^0$ pour
+   sa désintégration en $e^+e^-$, est $\Gamma(Z^0 \rightarrow e^+ e^-)$ ~ 84
+   MeV. Pourquoi ne retrouve-t-on pas la largeur précédente ?
+#+END_QUESTION
+2) [@2] $\Gamma(Z^0)\gg\Gamma(Z^0\to e^+e^-)$. La durée de vie du boson $Z^0$
+   est une propriété intrinsèque à cette particule : elle ne dépetnd donc pas du
+   mode de désintégration. À titre d'exemple, la mesure du taux de
+   désintégration de $Z^0\to\mu^+\mu^-$ donnerait un résultat expérimental
+   identique. À partir de la distribution en masse invariante, la largeur de la
+   résonance est donc la convolution de l'ensemble des modes de désintégration
+   du $Z^0$ (à laquelle s'ajoute les effets expérimentaux tels que la résolution
+   en énergie du calorimètre électromagnétique). On ne peut donc
+   expérimentalement isolé les différents modes de désintégrations du $Z^0$.
+
+#+BEGIN_QUESTION
+3) [@3] Dessiner les diagrammes de Feynman correspondant à la collision $e^+e^-$
+   suivie d'une désintégration en $\nu \bar{\nu}$, $l^-l^+$ ou $q\bar{q}$ (où
+   $\nu$ ($\bar{\nu}$) représente un (anti)neutrino, $l^-$ ($l^+$) un
+   (anti)lepton chargé et $q$ ($\bar{q}$) un (anti)quark).
+#+END_QUESTION
+3) [@3] Diagrammes de Feynman
+
+   #+ATTR_LATEX: :align C{0.25\textwidth}C{0.25\textwidth}C{0.25\textwidth}
+   | [[./figures/Z0_qqbar_diagram.pdf]] | [[./figures/Z0_llbar_diagram.pdf]] | [[./figures/Z0_nunubar_diagram.pdf]] |
+
+#+BEGIN_QUESTION
+4) [@4] Lorsque plusieurs modes de désintégration existent, on associe à chacun
+   d'eux une largeur de désintégration partielle, dont la somme fournit la
+   largeur totale. Les modes principaux de désintégration du boson $Z^0$
+   correspondent à la création d'une paire fermion-antifermion, décomposés de la
+   façon suivante :
+   #+BEGIN_SRC latex
+     \begin{align*}
+       \Gamma_\text{tot.}(Z^0)=N_\nu\Gamma(Z^0\rightarrow\nu\bar{\nu})+N_\ell\Gamma(Z^0 \rightarrow \ell^- \ell^+)+\Gamma_\text{tot.} (Z^0\rightarrow q \bar{q})=\unit[2495]{MeV}
+     \end{align*}
+   #+END_SRC
+   Les 3 largeurs partielles de leptons chargés sont égales, et la largeur
+   partielle de désintégration en toutes les paires possibles quark-antiquark
+   vaut $\Gamma_\text{tot.}(Z^0 \rightarrow q\bar{q})$ = 1741 MeV.
+
+   La contribution d'une paire neutrino-antineutrino, de masse très inférieure à
+   celle du $Z^0$, se calcule en théorie électrofaible par la formule suivante :
+   #+BEGIN_SRC latex
+     \begin{align*}
+       \Gamma(Z^0\rightarrow\nu\bar{\nu}) = \frac{\alpha_{e.m.} \ M_Z c^2}{24\sin^2\theta_W\cos^2\theta_W}
+     \end{align*}
+   #+END_SRC
+
+   On prend comme valeur du couplage électromagnétique $\alpha_\text{em} =
+   \frac{e^2}{4\pi\epsilon_0\hbar c} = \frac{1}{128}$ à une échelle de $Q^2$
+   ~100 GeV^{2} (la différence entre cette valeur et celle du couplage effectif
+   $\alpha_\text{em} = 1/137$ à $Q^2$ = 0 provient de corrections
+   quantiques). Le paramètre $\theta_W$ est l'angle de mélange électrofaible. La
+   valeur de $\sin^2\theta_W$ dépend du schéma de renormalisation électrofaible
+   choisi : une valeur est donnée par la relation $\sin^2\theta_W = 1 -
+   (M_Wc^2/M_Zc^2)^2 = e^2/g^2$, où $e$ est la constante de couplage
+   électromagnétique et $g$ celle du groupe de symétrie SU(2)$_L$. On utilise
+   ici $\sin^2\theta_W\sim 0.23$.
+
+   Calculer la valeur du nombre de neutrinos légers $N_{\nu}$ existants.
+
+   /Remarque/ : Le résultat obtenu par les expériences LEP, $N_{\nu}$ = 3, se
+   traduit par une limite inférieure sur la masse d'un quatrième neutrino ayant
+   un couplage standard avec le $Z^0$. Cette limite est $M_{\nu_L} c^2 > M_Z /2$
+   45 GeV !
+#+END_QUESTION
+4) [@4] Calcul du nombre de neutrinos
+   #+BEGIN_SRC latex
+     \begin{align*}
+       \Gamma_\text{tot.}(Z^0)=N_\nu\Gamma(Z^0\to\nu\bar{\nu})+N_\ell\Gamma(Z^0\to \ell^-\ell^+)+\Gamma_\text{tot.}(Z^0\to q\bar{q})=\unit[2495]{MeV}
+     \end{align*}
+   #+END_SRC
+   avec $\Gamma_\text{tot.}(Z^0\to q\bar{q})=\unit[1741]{MeV}$, $\Gamma(Z^0\to
+   \ell^-\ell^+)=\Gamma(Z^0\to e^-e^+)=\unit[84]{MeV}$ et
+   #+BEGIN_SRC latex
+     \begin{align*}
+       \Gamma(Z^0\to\nu\bar{\nu})=\frac{\alpha_\text{em}\,M_{Z^0}c^2}{24\sin^2\theta_W\cos^2\theta_W}
+     \end{align*}
+   #+END_SRC
+
+   Ainsi, le nombre de neutrinos $N_\nu$ s'écrit
+   #+BEGIN_SRC latex
+     \begin{align*}
+       N_\nu&=\frac{\Gamma_\text{tot.}(Z^0)-N_\ell\Gamma(Z^0\to \ell^-\ell^+)-\Gamma_\text{tot.}(Z^0\to q\bar{q})}{\Gamma(Z^0\to\nu\bar{\nu})}\\
+       &=\frac{\Gamma_\text{tot.}(Z^0)-N_\ell\Gamma(Z^0\to \ell^-\ell^+)-\Gamma_\text{tot.}(Z^0\to q\bar{q})}{\alpha_\text{em}\,M_{Z^0}c^2}\times24\sin^2\theta_W\cos^2\theta_W\\
+       &=\frac{2495-3\times84-1741}{91.2\,10^3}\times128\times24\times0.23\times(1-0.23)\\
+       &=2.99\text{ soit 3 familles de neutrinos}
+     \end{align*}
+   #+END_SRC
+** Neutrinos : production, détection, masse
+*** Chaîne $pp$ : $4p\to\alpha+2\nu$
+#+BEGIN_QUESTION
+ Dans la chaîne de conversion solaire dite "$pp$", les différentes réactions
+ aboutissant à la transformation de l'hydrogène en hélium émettent deux
+ neutrinos pour chaque conversion de quatre protons en une particule \alpha,
+ avec $Q$ = 26.72 MeV d'énergie libérée.
+
+1) Si on suppose que la chaîne "$pp$" est la seule responsable de la production
+   d'énergie solaire, estimer le flux de neutrinos solaires (en m^{-2}.s^{-1})
+   provenant de la chaîne "$pp$" et arrivant sur la Terre, sachant que la
+   puissance rayonnée par le Soleil vaut $P_{\odot}$ = 3.83 10^{26} J.s^{-1} et
+   que la distance Terre-Soleil vaut $R$ = 1.5\nbsp10^{8} km.
+
+2) Sachant que 3% de l'énergie solaire est emportée par les neutrinos, quelle
+   est leur énergie moyenne ?
+#+END_QUESTION
+1) Chaque réaction produit deux neutrinos et libère $Q=\unit[26.72]{MeV}$. Le
+   nombre de neutrinos produit par le Soleil est
+   #+BEGIN_SRC latex
+     \begin{align*}
+       N_\nu&=2\times\frac{P_\odot}{Q}=2\times\frac{3.83\,10^{26}}{26.76\,10^6\times1.6\,10^{-19}}\\
+       &=\unit[1.78\,10^{38}]{s}^{-1}
+     \end{align*}
+   #+END_SRC
+   Le flux de neutrinos sur Terre est alors
+   #+BEGIN_SRC latex
+     \begin{align*}
+       F_\nu&=\frac{N_\nu}{4\pi\,R^2}=\frac{1.78\,10^{38}}{4\pi\,(1.5\,10^{11})^2}\\
+       &=6.33\,10^{14}\,\text{m$^{-2}$.s$^{-1}$}
+     \end{align*}
+   #+END_SRC
+2) 3% de l'énergie libérée par chaque réaction $Q=\unit[26.72]{MeV}$ est
+   emportée par les deux neutrinos d'où
+   #+BEGIN_SRC latex
+     \begin{align*}
+       \langle E_\nu\rangle=\frac{3\%\,Q}{2}=\unit[0.4]{MeV}
+     \end{align*}
+   #+END_SRC
+*** Limite sur la masse des neutrinos
+#+BEGIN_QUESTION
+La Supernova 1987A est située à une distance $D$ = 1.7 10^{5} années-lumière de
+la Terre. L'interaction de 10 neutrinos électroniques issus de cette source a
+été observée dans un détecteur contenant 1000 tonnes d'eau, pendant un
+intervalle de temps $\Delta t$ = 10\nbsp{}s. L'énergie moyenne des neutrinos était de
+10 MeV, et s'étendait de $E_1$ = 5 MeV à $E_2$ = 20 MeV. Les neutrinos ont été
+détectés par la réaction $\nu_e + n \rightarrow p + e^-$.
+
+1) Exprimer le temps d'arrivée d'un neutrino électronique en fonction de la
+   distance $D$, de sa masse $m_{\nu}c^2$ (supposée petite mais non nulle) et de
+   son énergie totale $E$.
+#+END_QUESTION
+1) Le temps d'arrivée d'un neutrino correspond à $t=\frac{D}{v}=\frac{D}{\beta
+   c}$. Or
+   #+BEGIN_SRC latex
+     \begin{align*}
+       \gamma&=\frac{E}{m_\nu c^2}=\frac{1}{\surd 1-\beta^2}\\
+       1-\beta^2&=\frac{(m_\nu c^2)^2}{E^2}\\
+       \beta&=\sqrt{1-\frac{(m_\nu c^2)^2}{E^2}}
+     \end{align*}
+   #+END_SRC
+   Le temps d'arrivé est ainsi
+   #+BEGIN_SRC latex
+     \begin{align*}
+       t=\frac{D}{c\surd1-\frac{(m_\nu c^2)^2}{E^2}}
+     \end{align*}
+   #+END_SRC
+
+#+BEGIN_QUESTION
+2) [@2] On suppose que les neutrinos sont tous émis au même instant. Montrer que
+   leur arrivée s'étale sur la durée :
+   #+BEGIN_SRC latex
+     \begin{align*}
+       \Delta t = \frac{D}{c} \frac{m_{\nu}^2c^4}{2} \left\{ \frac{1}{E_1^2} - \frac{1}{E_2^2}\right\}
+     \end{align*}
+   #+END_SRC
+#+END_QUESTION
+2) [@2] Les neutrinos les plus énergétiques arriveront les premiers soit
+   #+BEGIN_SRC latex
+     \begin{align*}
+       \Updelta t&=t_1-t_2\\
+       &=\frac{D}{c}\left(\frac{1}{\surd1-\frac{m_\nu^2c^4}{E_1^2}}-\frac{1}{\surd1-\frac{m_\nu^2c^4}{E_2^2}}\right)\\
+       &\text{or }m_\nu c^2\ll E_{1,2}\\
+       &\simeq\frac{D}{c}\left(\cancel{1}+\frac{1}{2}\times\frac{m_\nu^2c^4}{E_1^2}-\cancel{1}-\frac{1}{2}\times\frac{m_\nu^2c^4}{E_2^2}\right)\\
+       &\simeq\frac{D}{c}\times\frac{m_\nu^2 c^4}{2}\left(\frac{1}{E_1^2}-\frac{1}{E_2^2}\right)
+     \end{align*}
+   #+END_SRC
+
+#+BEGIN_QUESTION
+3) [@3] En déduire une limite supérieure sur la masse du neutrino électronique.
+#+END_QUESTION
+3) [@3] Du fait que $\Updelta t\leq\unit[10]{s}$, on déduit que la masse des
+   neutrinos $m_\nu$ est nécessairement inférieure à
+   #+BEGIN_SRC latex
+     \begin{align*}
+       \Updelta t\leq\unit[10]{s}\Longleftrightarrow&m_\nu c^2\leq\sqrt{\frac{\Updelta t\times2c}{D}\times\frac{1}{1/E_1^2-1/E_2^2}}\\
+       &m_\nu c^2\leq\sqrt{\frac{2\Updelta tc}{D}\times\frac{E_1^2E_2^2}{E_2^2-E_1^2}}\\
+       &m_\nu c^2\leq E_1E_2\sqrt{\frac{2\Updelta tc}{D}\frac{1}{E_2^2-E_1^2}}\\
+       &m_\nu c^2\leq 5\times20\sqrt{\frac{20\times\cancel{c}}{1.7\,10^5\times\cancel{c}\times3600\times24\times365}\times\frac{1}{20^2-5^2}}\\
+       &m_\nu c^2\leq 5\times20\sqrt{\frac{20}{1.7\times3.15}\times\frac{1}{400-25}}\times\unit[10^{-6}]{MeV}\\
+       &m_\nu c^2\leq\unit[10]{eV}
+     \end{align*}
+   #+END_SRC
+
+   Le résultat final fut $m_{\nu_e}c^2\leq\unit[7]{eV}$ [fn:11], valeur qui,
+   grâce aux expériences de mesure directe de la masse du neutrino électronique
+   /via/ l'étude du /end-point/ du spectre de désintégration \beta du tritium,
+   Mainz et Troitztk, atteint aujourd'hui $m_{\nu_e}\leq\unit[2.2]{eV}$. La
+   future expérience Katrin devait gagner encore un ordre de grandeur sur la
+   sensibilité : $m_{\nu_e}\leq\unit[0.2]{eV}$.
+
+** COMMENT Oscillations de neutrinos
+
+Si les (anti)neutrinos ont une masse, ils peuvent ne pas \^etre \'etats propres
+de l'hamiltonien d'interaction faible et osciller d'une esp\`ece \`a l'autre,
+comme dans le cas d'un syst\`eme quantique \`a deux \'etats, du fait de leur
+diff\'erence de masse $\Delta m^2 = |m_2^2 - m_1^2|c^4$. On appelle alors
+$\theta$ l'angle de m\'elange de ces deux \'etats.
+
+1) On suppose deux \'etats de neutrino qui se propagent $|\nu_a>$ et
+   $|\nu_b>$. Si ces \'etats ne sont pas \'etats propres de masse, on peut les
+   \'ecrire comme une rotation d'angle $\theta$ sur la base
+   ($|\nu_1>$,$|\nu_2>$). On appelle $\theta$ l'angle de m\'elange, tel que
+   $\sin \theta = <\nu_2|\nu_a>$, et on suppose que les \'etats propres de
+   masse, $|\nu_1>$ et $|\nu_2>$, de masses respectives $m_1c^2$ et $m_2c^2$, se
+   propagent suivant l'\'equation de Schr\"odinger~: $$|\nu_1(t)> = |\nu_1>
+   e^{-i\frac{E_1}{\hbar}t}\,\,\,\,\, {\rm et} \,\,\,\,\, |\nu_2(t)> = |\nu_2> e^{-i\frac{E_2}{\hbar}t}$$
+
+   1) Ecrire la fonction d'onde $|\nu (t)>$ des neutrinos qui se propagent, en
+      supposant qu'\`a l'instant initial les neutrinos de la source sont de type
+      (a).
+
+   2) En d\'eduire que la probabilit\'e de disparition $P(\nu_a \rightarrow
+      \nu_a, t)$ pour que ces neutrinos apparaissent toujours de type (a) dans
+      le d\'etecteur s'\'ecrit\footnote {Remarque: on suppose que les impulsions
+      des neutrinos sont les m\^emes, bien que leur \'energie soit
+      diff\'erente. De ce fait, ils se d\'eplacent depuis le m\^eme point
+      d'\'emission \`a des vitesses diff\'erentes, mais on consid\`erera qu'ils
+      ne sont pas s\'epar\'es car la longueur de coh\'erence est bien plus
+      grande que la distance source-d\'etecteur.}~:
+
+   3) On s'int\'eresse \`a la possibilit\'e d'un m\'elange de deux saveurs $a$
+      et $b$, avec un angle de m\'elange $\theta$. On peut montrer que la
+      probabilit\'e de disparition $P(\nu_a \rightarrow \nu_a, t)$, pour que des
+      neutrinos de type (a) issus d'une source apparaissent toujours de type (a)
+      en arrivant au temps $t$ dans un d\'etecteur, s'\'ecrit\footnote
+      {Remarque: on suppose que les impulsions des neutrinos sont les m\^emes,
+      bien que leur \'energie soit diff\'erente. De ce fait, ils se d\'eplacent
+      depuis le m\^eme point d'\'emission \`a des vitesses diff\'erentes, mais
+      on consid\`erera qu'ils ne sont pas s\'epar\'es car la longueur de
+      coh\'erence est bien plus grande que la distance source-d\'etecteur.}~: $$
+      P(\nu_a \rightarrow \nu_a, t) = 1\, - \, \sin^2 (2\theta) \, \sin^2
+      (\frac{\Delta E}{2\hbar} t)$$ o\`u $\Delta E = E_2 - E_1$ est la
+      diff\'erence d'\'energie entre les deux neutrinos.
+
+     En d\'eduire que la probabilit\'e de d\'etecter un neutrino $\nu_a$ \`a la
+      distance $L$ d'une source s'\'ecrit~:$$ P(\nu_a \rightarrow \nu_a) = 1\, -
+      \, \sin^2 (2\theta) \, \sin^2 (\frac{1.27\, \Delta m^2 ({\rm eV}^2)\, L
+      ({\rm m})}{E_{\nu}({\rm MeV})})$$ o\`u $E_{\nu}$ est l'\'energie moyenne
+      des neutrinos.
+
+2) L'exp\'erience CHOOZ, utilisant le r\'eacteur de l'ancienne centrale
+   nucl\'eaire des Ardennes comme source tr\`es pure d'antineutrinos
+   \'electroniques ($\sim 100\% \,\bar{\nu}_e$), a pris des donn\'ees de mars
+   \`a octobre 1997, en recherchant un signal de disparition (d\'etection d'un
+   signal associ\'e \`a la pr\'esence de $\bar{\nu}_e$). Pour ce d\'etecteur, on
+   donne $L \sim 1$~km et $E_{\nu} \sim 3$~MeV. Le r\'esultat publi\'e est le
+   suivant~: le nombre d'\'ev\'enements attendus \'etant de $(25.0\pm
+   1.0)$/jour, l'exp\'erience en a d\'etect\'e $(25.5\pm 1.0)$/jour, ce qui
+   correspond \`a {\bf aucune observation d'oscillation $\bar{\nu}_e \rightarrow
+   \bar{\nu}_i$, avec $i = \mu , \tau$, \`a $90\%$ de confiance}. Ils ont aussi
+   fourni le plot d'exclusion associ\'e, pr\'esent\'e sur la figure page
+   suivante, qui d\'efinit comme r\'egion sans oscillation la zone \`a droite et
+   au dessus du contour.
+
+   V\'erifier les limites de ce contour d'exclusion donn\'ees par $P <
+   1-P_{lim}$ (pour CHOOZ, on a $P_{lim}~=~\frac{2.3}{25.5}$ en tenant compte de
+   la limite statistique de Poisson \`a $90\%$ de confiance)~:
+
+   - valeur de $\sin^22\theta$ \`a grand $\Delta m^2$~?
+
+   - valeur de $\Delta m^2$ pour le m\'elange maximal $\sin^22\theta =1$~?
+
+   - valeurs de  $\Delta m^2$ et $\sin^22\theta$ au niveau du coude?
+
+\begin{figure}[h]
+\begin{center}
+\includegraphics[width=13cm,scale=0.5]{./figures/chooz.eps}
+\end{center}
+\end{figure}
+
+** Les mésons neutres $K^0$ et $\bar{K}^0$
+#+BEGIN_QUESTION
+Le $K^0$ et le $\bar{K^0}$ sont des mésons étranges, produits par interaction
+forte et se désintègrant par interaction faible. Le $\bar{K^0}$, antiparticule
+du $K^0$, a la même masse que lui.
+
+Le $K^0$, comme le $\bar{K^0}$, se désintègre soit en deux pions, soit en
+trois pions, avec des constantes radioactives différentes :
+#+BEGIN_SRC latex
+  \begin{align*}
+    \lambda_{2\pi} = \unit[1.12\,10^{10}]{s^{-1}} \quad \text{et} \quad \lambda_{3\pi} = \unit[1.93\,10^7]{s^{-1}}
+  \end{align*}
+#+END_SRC
+
+Les états $K^0$ et $\bar{K^0}$ ne sont pas états propres de $\hat{\mathcal{C}}
+\hat{\mathcal{P}}$ (avec $\hat{\mathcal{P}}$ opération de parité ou symétrie
+droite-gauche et $\hat{\mathcal{C}}$ opération de conjugaison de charge ou
+symétrie particule-antiparticule).
+
+On est amené à définir les particules fictives $\ket{K^0_1}$ et $\ket{K^0_2}$
+#+BEGIN_SRC latex
+  \begin{align*}
+    \ket{K^0_1} = \frac{1}{\sqrt{2}} \ket{K^0} - \frac{1}{\sqrt{2}} \ket{\bar{K^0}} \quad\text{et}\quad \ket{K^0_2} = \frac{1}{\sqrt{2}} \ket{K^0} + \frac{1}{\sqrt{2}} \ket{\bar{K^0}}
+  \end{align*}
+#+END_SRC
+qui sont états propres de $\hat{\mathcal{C}}\hat{\mathcal{P}}$ avec les valeurs
+propres respectives +1 et -1.
+
+On a de la même manière
+#+BEGIN_SRC latex
+  \begin{align*}
+    \ket{K^0} = \frac{1}{\sqrt{2}} \ket{K^0_1} + \frac{1}{\sqrt{2}} \ket{K^0_2} \quad\text{et}\quad \ket{\bar{K^0}} = -\frac{1}{\sqrt{2}} \ket{K^0_1} + \frac{1}{\sqrt{2}} \ket{K^0_2}
+  \end{align*}
+#+END_SRC
+$\ket{K^0}$ et $\ket{\bar{K^0}}$ d'une part, $\ket{K^0_1}$ et $\ket{K^0_2}$
+d'autre part, formant deux bases orthonormées.
+
+1) On peut montrer que les états finaux hadroniques (à 2 ou 3 pions) de la
+   désintégration d'un $K^0$ ($\bar{K^0}$) sont des états propres de l'opération
+   $\hat{\mathcal{C}}\hat{\mathcal{P}}$, avec :
+   #+BEGIN_SRC latex
+     \begin{align*}
+       \hat{\mathcal{C}} \hat{\mathcal{P}} \ket{2\pi} = + \ket{2\pi} \quad\text{et}\quad \hat{\mathcal{C}} \hat{\mathcal{P}} \ket{3\pi} = - \ket{3\pi}
+     \end{align*}
+   #+END_SRC
+   En déduire le mode de désintégration de $K^0_1$ (resp.  $K^0_2$) et sa vie moyenne $\tau_1$ (resp. $\tau_2$).
+#+END_QUESTION
+1) Les états "fictifs" $\ket{K^0_1}$ et $\ket{K^0_2}$ sont des états propres de
+   $\hat{\mathcal{C}}\hat{\mathcal{P}}$ de valeurs propres respectives +1 et
+   -1. Les états finaux hadroniques à 2 et 3 pions sont également états propres
+   de l'opérateur $\hat{\mathcal{C}}\hat{\mathcal{P}}$ et ont des valeurs
+   propres identiques à celle des états $\ket{K^0_1}$ et $\ket{K^0_2}$. Les
+   états physique $\ket{K^0}$ et $\ket{\bar{K}^0}$ étant un mélange des états
+   propres $\ket{K^0_1}$ et $\ket{K^0_2}$ et se désintégrant aussi bien en deux
+   et trois pions, on déduit, par association des valeurs propres, que l'état
+   $\ket{K^0_1}\equiv\ket{2\pi}$ et $\ket{K^0_2}\equiv\ket{3\pi}$. La durée de
+   vie moyenne de ces deux états est ainsi
+   #+BEGIN_SRC latex
+     \begin{align*}
+       \tau_1&=\frac{1}{\lambda_{2\pi}}=\unit[8.9\,10^{-11}]{s}\\
+       \tau_2&=\frac{1}{\lambda_{3\pi}}=\unit[5.2\,10^{-8}]{s}
+     \end{align*}
+   #+END_SRC
+   On note que ces deux durées de vie sont compatibles avec celles issues de
+   processus par intéraction faible.
+
+#+BEGIN_QUESTION
+2) [@2] Les particules "physiques" $K^0$ et $\bar{K^0}$ sont considérées comme
+   des combinaisons linéaires des particules "fictives" $K^0_1$ et $K^0_2$. La
+   désintégration des $K^0$ et $\bar{K^0}$ peut alors se décomposer en deux
+   problèmes indépendants : la désintégration du $K^0_1$ et la désintégration du
+   $K^0_2$.
+
+   Soit un faisceau de particules de vitesse $v = \beta c$, de vie moyenne
+   $\tau$ et d'intensité $I_0$. On se place dans le référentiel du laboratoire.
+
+   1) Après un parcours de longueur $L$, montrer que l'intensité du faisceau est
+      réduite à $I = I_0 e^{-L/\ell}$, où $\ell = \gamma \beta c \tau$.
+
+   2) On produit un faisceau de $K^0$ d'impulsion $p$ = 10 GeV/c. On suppose que
+      les $K^0_1$ et $K^0_2$ ont même masse et même impulsion que les $K^0$
+      du faisceau initial.
+      1) Quel est, après un parcours de longueur $L$ = 10 m, le rapport $\rho =
+         I_1 / I_2$ de l'intensité des $K^0_1$ à celle des $K^0_2$ dans le
+         faisceau ?
+
+      2) Indiquer quel est alors, dans le faisceau, le rapport du nombre de
+         particules "physiques" $K^0$ à celui des particules "physiques"
+         $\bar{K^0}$.
+#+END_QUESTION
+2) [@2] Soit un faisceau de particules de vitesse $v=\beta c$, de vie moyenne
+   $\tau$ et d'intensité $I_0$
+   1) Dans le référentiel du faisceau /i.e./ du centre de masse, l'intensité est
+      égale $I=I_0\exp(-t^*/\tau)$. Dans le référentiel du laboratoire, cette
+      intensité devient $I=I_0\exp(-t/\gamma\tau)$. Par ailleurs, le temps
+      nécessaire pour parcourir la distance $L$ est
+      $t=\frac{L}{v}=\frac{L}{\beta c}$. On déduit que l'intensité du faisceau
+      après avoir parcouru une distance $L$ s'écrit
+      #+BEGIN_SRC latex
+        \begin{align*}
+          I=I_0\exp\left(-\frac{L}{\gamma\tau\beta c}\right)=I_0\exp\left(-\frac{L}{\ell}\right)
+        \end{align*}
+      #+END_SRC
+   2) Faisceau de $K^0$ à $p=\unit[10]{GeV/c}$. Initialement, le faisceau est
+      donc constitué pour moitié de "particules" $K_1^0$, l'autre moitié étant
+      les "particules" $K_2^0$. On suppose par ailleurs que la masse et
+      l'impulsion de ces particules sont identiques
+      ($\beta_1=\beta_2=\beta_{K^0}$).
+      1) Après un parcours de longueur $L=\unit[10]{m}$, l'intensité respective
+         de chaque composante, $K^0_1$ et $K^0_2$, du faisceau est
+         #+BEGIN_SRC latex
+           \begin{align*}
+             I_{1,2}&=I_{01,02}\exp\left(-\frac{L}{\gamma\tau_{1,2}\beta c}\right)\\
+             &\text{avec }I_{01}=I_{02}=\frac{I_0}{2}\\
+             \text{d'où }\rho=\frac{I_1}{I_2}&=\exp\left[-\frac{L}{\gamma\beta c}\left(\frac{1}{\tau_1}-\frac{1}{\tau_2}\right)\right]\\
+             \rho&=\exp\left[-\frac{L}{\gamma\beta c}\frac{\tau_2-\tau_1}{\tau_1\tau_2}\right]\\
+             &\simeq\exp\left[-\frac{L}{\gamma\beta c}\frac{1}{\tau_1}\right]
+           \end{align*}
+         #+END_SRC
+         Par ailleurs,
+         #+BEGIN_SRC latex
+           \begin{align*}
+             p_K^2c^2&=E^2-m_K^2c^4=(\gamma-1)m_K^2c^4\\
+             &\text{or }\gamma=\frac{1}{\surd 1-\beta^2}\to(\gamma\beta)^2=\gamma^2-1\\
+             \gamma\beta&=\frac{p_Kc}{m_Kc^2}=\frac{10}{0.4977}=20.1
+           \end{align*}
+         #+END_SRC
+         Le rapport \rho entre les intensités de chacun des états $\ket{K^0_1}$
+         et $\ket{K^0_2}$ est égal à
+         #+BEGIN_SRC latex
+           \begin{align*}
+             \rho=\frac{I_1}{I_2}=7.37\,10^{-9}\ll1
+           \end{align*}
+         #+END_SRC
+
+      2) Ainsi, au bout de 10 mètres et en raison de la désintégration des
+         $K^0_1$ et des $K^0_2$, il ne reste dans le faisceau que des particules
+         $K^0_2$. Or, ces dernières sont le fruit d'un mélange des états $K^0$
+         et $\bar{K}^0$ à savoir
+         $\ket{K^0_2}=\frac{1}{\surd2}\left(\ket{K^0}+\ket{\bar{K}^0}\right)$. Le
+         faisceau est ainsi constitué à part égale de mésons $K^0$ et de
+         mésons $\bar{K}^0$ : les mésons $K^0$ se sont donc "transformés" en
+         leur antiparticule $\bar{K}^0$. Cette transformation est le phénomène
+         d'oscillation $K^0\leftrightarrow\bar{K}^0$.
+** Footnotes
+
+[fn:11] W. David Arnett & Jonathan L. Roser [[http://journals.aps.org/prl/abstract/10.1103/PhysRevLett.58.1906][Physical Review Letter 58]], David
+N. Spergel & John N. Bahcall [[http://www.sciencedirect.com/science/article/pii/0370269388907903][Physical Letters B]]
+
+* TD6 : Modèle des quarks -- Les hadrons
 ** Les mésons constitués des quarks $u,d,s$ et de leurs antiquarks
 #+BEGIN_QUESTION
 1) [@1] D'après le tableau caractéristique des quarks, établir le même tableau
@@ -1750,8 +2483,7 @@ impaire pour que la fonction d'onde soit antisymétrique. $\vv{L}=\vv{0}$,
 $\vv{T}=\vv{0}$ et $\vv{S}=\vv{3}/2$, la somme n'est donc pas impaire. C'est
 l'introduction de la couleur qui permet de rendre cette fonction d'onde globale
 antisymétrique.
-
-* TD5 : Isospin -- des quarks aux noyaux
+* TD7 : Isospin -- des quarks aux noyaux
 ** Introduction
 
 L'isospin $\vv{T}$ rend compte de l'indépendance de charge de l'intéraction
@@ -2075,131 +2807,131 @@ que le moment orbital relatif du deutérium et du $\pi^-$ est nul.
    #+END_SRC
 
 ** Sections efficaces de production de pions
+# #+BEGIN_QUESTION
+# On considère les réactions de production par interaction forte de mésons pi :
+# #+BEGIN_SRC latex
+#   \begin{align*}
+#     p + p &\rightarrow d + \pi^+\\
+#     p + n &\rightarrow d + \pi^0
+#   \end{align*}
+# #+END_SRC
+
+# 1) On réalise ces réactions en faisant interagir un proton d'énergie cinétique
+#    $T$ sur un nucléon supposé au repos dans le référentiel du
+#    laboratoire. Calculer l'énergie seuil de ces réactions. On prend comme masses
+#    au repos :
+#    #+BEGIN_SRC latex
+#      \begin{align*}
+#        m_p c^2 = m_n c^2 \sim \unit[940]{MeV} \quad\text{et}\quad m_{\pi^+}c^2 = m_{\pi^0}c^2 \sim\unit[140]{MeV}
+#      \end{align*}
+#    #+END_SRC
+#    et on néglige l'énergie de liaison du deuton.
+# #+END_QUESTION
+
+# 1) Calcul de l'énergie cinétique minimale
+
+#    #+BEGIN_CENTER
+#    #+ATTR_LATEX: :width 0.5\linewidth
+#    [[./figures/pn_dpi_production.pdf]]
+#    #+END_CENTER
+
+#    Dans le référentiel du laboratoire, l'énergie cinétique minimale $T_S$ nécessaire à
+#    la production de particules s'écrit
+#    #+BEGIN_SRC latex
+#      \begin{align*}
+#        T_S^\text{lab.} = \frac{|Q|}{2}\cdot\frac{\Upsigma
+#          m_\text{initiale,finale}c^2}{m_\text{cible}c^2}
+#      \end{align*}
+#    #+END_SRC
+#    où $Q$ est la chaleur de réaction et est égale à
+#    #+BEGIN_SRC latex
+#      \begin{align*}
+#        Q = \Upsigma m_\text{initiale}c^2 - \Upsigma m_\text{finale}c^2
+#      \end{align*}
+#    #+END_SRC
+
+#    En négligeant l'énergie de liaison $B_d$ du noyau de deutérium, la masse
+#    $m_d$ est égale à deux fois la masse du proton (\(m_{n}\simeq
+#    m_{p}\sim\unit[940]{MeV}\). La chaleur de réaction est ainsi égale
+#    #+BEGIN_SRC latex
+#      \begin{align*}
+#        Q = 2m_pc^2 - 2m_pc^2 - m_\pi c^2 = -m_\pi c^2
+#      \end{align*}
+#    #+END_SRC
+
+#    On déduit l'énergie cinétique seuil
+#    #+BEGIN_SRC latex
+#      \begin{align*}
+#        T_S&=\frac{m_\pi c^2}{m_nc^2}\times\frac{4m_pc^2+m_\pi c^2}{2}\\
+#        &=\frac{140}{940}\times\frac{4\times940+140}{2} = \unit[290.4]{MeV}
+#      \end{align*}
+#    #+END_SRC
+
+# #+BEGIN_QUESTION
+# 2) [@2] Si on réalise ces expériences avec des protons d'énergie cinétique 1
+#    GeV, à quel angle détecte-t-on des pions de 600 MeV d'énergie cinétique ?
+# #+END_QUESTION
+# 2) [@2] $T_p=\unit[1]{GeV}>\unit[290]{MeV}$ et $T_\pi=\unit[600]{MeV}$
+
+#    La conservation de l'impulsion implique que $\vv{p}_p=\vv{p}_\pi+\vv{p}_d$
+#    soit $\vv{p}_d=\vv{p}_p-\vv{p}_\pi$ et donc
+#    $p_d^2=p_p^2+p_\pi^2-2p_pp_\pi\cos\theta$. L'angle \theta s'exprime ainsi
+#    #+BEGIN_SRC latex
+#      \begin{align*}
+#        \cos\theta=\frac{p_p^2+p_\pi^2-p_d^2}{2p_pp_\pi}
+#      \end{align*}
+#    #+END_SRC
+
+#    L'impulsion s'exprime en fonction de l'énergie cinétique $T$ suivant
+
+#    #+BEGIN_SRC latex
+#      \begin{align*}
+#        (pc)^2&=E^2 - m^2c^4\\
+#        &=(T+mc^2)^2 - m^2c^4\\
+#        &=T(T+2mc^2)
+#      \end{align*}
+#    #+END_SRC
+
+#    On déduit ainsi les valeurs d'impulsion du proton et du pion et /via/ la
+#    conservation de l'énergie totale, on a
+#    #+BEGIN_SRC latex
+#      \begin{align*}
+#        E_p + m_nc^2 = E_\pi+E_d
+#      \end{align*}
+#    #+END_SRC
+#    soit
+#    #+BEGIN_SRC latex
+#      \begin{align*}
+#        T_p + 2m_pc^2 = T_\pi+m_\pi c^2+T_d+2m_pc^2
+#      \end{align*}
+#    #+END_SRC
+#    et donc
+#    #+BEGIN_SRC latex
+#      \begin{align*}
+#        T_d = T_p - T_\pi - m_\pi c^2
+#      \end{align*}
+#    #+END_SRC
+
+#    *AN :*
+#    #+BEGIN_SRC latex
+#      \begin{align*}
+#        (p_pc)^2 &= 1000(1000+2\times940) = \unit[2.88\,10^6]{MeV}^2 \text{ soit } p_pc = \unit[1697]{MeV}\\
+#        (p_\pi c)^2 &= 600(600+2\times140) = \unit[5.28\,10^5]{MeV}^2 \text{ soit } p_\pi c = \unit[726.6]{MeV}\\
+#        (p_dc)^2 &= (1000-600-140)(260+4\times140) = \unit[1.045\,10^6]{MeV}^2 \text{ soit } p_dc = \unit[1022]{MeV}
+#      \end{align*}
+#      \begin{align*}
+#        \cos\theta&=\frac{2.88+0.528-1.045}{2\times\sqrt{2.88}\sqrt{0.528}}\\
+#        &=0.958\\
+#        \theta&=16.7^\circ
+#      \end{align*}
+#    #+END_SRC
+
 #+BEGIN_QUESTION
-On considère les réactions de production par interaction forte de mésons pi :
-#+BEGIN_SRC latex
-  \begin{align*}
-    p + p &\rightarrow d + \pi^+\\
-    p + n &\rightarrow d + \pi^0
-  \end{align*}
-#+END_SRC
-
-1) On réalise ces réactions en faisant interagir un proton d'énergie cinétique
-   $T$ sur un nucléon supposé au repos dans le référentiel du
-   laboratoire. Calculer l'énergie seuil de ces réactions. On prend comme masses
-   au repos :
-   #+BEGIN_SRC latex
-     \begin{align*}
-       m_p c^2 = m_n c^2 \sim \unit[940]{MeV} \quad\text{et}\quad m_{\pi^+}c^2 = m_{\pi^0}c^2 \sim\unit[140]{MeV}
-     \end{align*}
-   #+END_SRC
-   et on néglige l'énergie de liaison du deuton.
+1) [@1] Préciser l'état d'isospin de chacun des quatre systèmes : $\ket{p+p}$, $\ket{d+\pi^+}$,
+   $\ket{p+n}$ et $\ket{d+\pi^0}$. Les coefficients de Clebsh-Gordan sont donnés en annexe et on
+   donne l'isospin du deuton : $T=0$.
 #+END_QUESTION
-
-1) Calcul de l'énergie cinétique minimale
-
-   #+BEGIN_CENTER
-   #+ATTR_LATEX: :width 0.5\linewidth
-   [[./figures/pn_dpi_production.pdf]]
-   #+END_CENTER
-
-   Dans le référentiel du laboratoire, l'énergie cinétique minimale $T_S$ nécessaire à
-   la production de particules s'écrit
-   #+BEGIN_SRC latex
-     \begin{align*}
-       T_S^\text{lab.} = \frac{|Q|}{2}\cdot\frac{\Upsigma
-         m_\text{initiale,finale}c^2}{m_\text{cible}c^2}
-     \end{align*}
-   #+END_SRC
-   où $Q$ est la chaleur de réaction et est égale à
-   #+BEGIN_SRC latex
-     \begin{align*}
-       Q = \Upsigma m_\text{initiale}c^2 - \Upsigma m_\text{finale}c^2
-     \end{align*}
-   #+END_SRC
-
-   En négligeant l'énergie de liaison $B_d$ du noyau de deutérium, la masse
-   $m_d$ est égale à deux fois la masse du proton (\(m_{n}\simeq
-   m_{p}\sim\unit[940]{MeV}\). La chaleur de réaction est ainsi égale
-   #+BEGIN_SRC latex
-     \begin{align*}
-       Q = 2m_pc^2 - 2m_pc^2 - m_\pi c^2 = -m_\pi c^2
-     \end{align*}
-   #+END_SRC
-
-   On déduit l'énergie cinétique seuil
-   #+BEGIN_SRC latex
-     \begin{align*}
-       T_S&=\frac{m_\pi c^2}{m_nc^2}\times\frac{4m_pc^2+m_\pi c^2}{2}\\
-       &=\frac{140}{940}\times\frac{4\times940+140}{2} = \unit[290.4]{MeV}
-     \end{align*}
-   #+END_SRC
-
-#+BEGIN_QUESTION
-2) [@2] Si on réalise ces expériences avec des protons d'énergie cinétique 1
-   GeV, à quel angle détecte-t-on des pions de 600 MeV d'énergie cinétique ?
-#+END_QUESTION
-2) [@2] $T_p=\unit[1]{GeV}>\unit[290]{MeV}$ et $T_\pi=\unit[600]{MeV}$
-
-   La conservation de l'impulsion implique que $\vv{p}_p=\vv{p}_\pi+\vv{p}_d$
-   soit $\vv{p}_d=\vv{p}_p-\vv{p}_\pi$ et donc
-   $p_d^2=p_p^2+p_\pi^2-2p_pp_\pi\cos\theta$. L'angle \theta s'exprime ainsi
-   #+BEGIN_SRC latex
-     \begin{align*}
-       \cos\theta=\frac{p_p^2+p_\pi^2-p_d^2}{2p_pp_\pi}
-     \end{align*}
-   #+END_SRC
-
-   L'impulsion s'exprime en fonction de l'énergie cinétique $T$ suivant
-
-   #+BEGIN_SRC latex
-     \begin{align*}
-       (pc)^2&=E^2 - m^2c^4\\
-       &=(T+mc^2)^2 - m^2c^4\\
-       &=T(T+2mc^2)
-     \end{align*}
-   #+END_SRC
-
-   On déduit ainsi les valeurs d'impulsion du proton et du pion et /via/ la
-   conservation de l'énergie totale, on a
-   #+BEGIN_SRC latex
-     \begin{align*}
-       E_p + m_nc^2 = E_\pi+E_d
-     \end{align*}
-   #+END_SRC
-   soit
-   #+BEGIN_SRC latex
-     \begin{align*}
-       T_p + 2m_pc^2 = T_\pi+m_\pi c^2+T_d+2m_pc^2
-     \end{align*}
-   #+END_SRC
-   et donc
-   #+BEGIN_SRC latex
-     \begin{align*}
-       T_d = T_p - T_\pi - m_\pi c^2
-     \end{align*}
-   #+END_SRC
-
-   *AN :*
-   #+BEGIN_SRC latex
-     \begin{align*}
-       (p_pc)^2 &= 1000(1000+2\times940) = \unit[2.88\,10^6]{MeV}^2 \text{ soit } p_pc = \unit[1697]{MeV}\\
-       (p_\pi c)^2 &= 600(600+2\times140) = \unit[5.28\,10^5]{MeV}^2 \text{ soit } p_\pi c = \unit[726.6]{MeV}\\
-       (p_dc)^2 &= (1000-600-140)(260+4\times140) = \unit[1.045\,10^6]{MeV}^2 \text{ soit } p_dc = \unit[1022]{MeV}
-     \end{align*}
-     \begin{align*}
-       \cos\theta&=\frac{2.88+0.528-1.045}{2\times\sqrt{2.88}\sqrt{0.528}}\\
-       &=0.958\\
-       \theta&=16.7^\circ
-     \end{align*}
-   #+END_SRC
-
-#+BEGIN_QUESTION
-3) [@3] Préciser l'état d'isospin de chacun des quatre systèmes : $\ket{p+p}$,
-   $\ket{d+\pi^+}$, $\ket{p+n}$ et $\ket{d+\pi^0}$. Les coefficients de
-   Clebsh-Gordan sont donnés en annexe et on donne l'isospin du deuton : $T=0$.
-#+END_QUESTION
-3) [@3] États d'isospin
+1) [@1] États d'isospin
 
    |----------+------------+------------+----------+----------+----------|
    |          | $p$        | $n$        | $d$      | $\pi^+$  | $\pi^0$  |
@@ -2207,11 +2939,11 @@ On considère les réactions de production par interaction forte de mésons pi :
    | $\vv{T}$ | $\vv{1}/2$ | $\vv{1}/2$ | $\vv{0}$ | $\vv{1}$ | $\vv{1}$ |
    |----------+------------+------------+----------+----------+----------|
 
-   Remarque: $T_3(d)=t_3(n)+t_3(p) = 0$ et $\vv{T}(d)=\vv{0}$ ou $\vv{1}$. On
-   considère que $T(d) = T_\text{fond.}(d) = |T_3| = 0$.
+   Remarque: $T_3(d)=t_3(n)+t_3(p) = 0$ et $\vv{T}(d)=\vv{0}$ ou $\vv{1}$. On considère que $T(d) =
+   T_\text{fond.}(d) = |T_3| = 0$.
 
-   - $\ket{p+p}$ : $T_3 = t_3(p) + t_3(p) = 1$ et $\vv{T} = \vv{0}$ ou $\vv{1}$
-     mais seul $\vv{T}=\vv{1}$ est possible du fait que $T_3=1$
+   - $\ket{p+p}$ : $T_3 = t_3(p) + t_3(p) = 1$ et $\vv{T} = \vv{0}$ ou $\vv{1}$ mais seul
+     $\vv{T}=\vv{1}$ est possible du fait que $T_3=1$
 
    - $\ket{d+\pi^+}$ : $T_3=+1$ et $\vv{T}=\vv{1}$
 
@@ -2228,21 +2960,19 @@ On considère les réactions de production par interaction forte de mésons pi :
    - $\ket{d+\pi^+} = \ket{d\pi^+} = \ket{0101}=\ket{11}$
 
    - $\ket{p+n} = \ket{pn} =
-     \ket{\tfrac{1}{2}\tfrac{1}{2}\tfrac{1}{2}\tfrac{-1}{2}}=\alpha\ket{10}+\beta\ket{00}$
-     avec $\alpha=\psh{\tfrac{1}{2}\tfrac{1}{2}\tfrac{1}{2}\tfrac{-1}{2}}{10} = \tfrac{1}{\sqrt{2}}$
-     et $\beta=\psh{\tfrac{1}{2}\tfrac{1}{2}\tfrac{1}{2}\tfrac{-1}{2}}{00} = \tfrac{1}{\sqrt{2}}$
+     \ket{\tfrac{1}{2}\tfrac{1}{2}\tfrac{1}{2}\tfrac{-1}{2}}=\alpha\ket{10}+\beta\ket{00}$ avec
+     $\alpha=\psh{\tfrac{1}{2}\tfrac{1}{2}\tfrac{1}{2}\tfrac{-1}{2}}{10} = \tfrac{1}{\sqrt{2}}$ et
+     $\beta=\psh{\tfrac{1}{2}\tfrac{1}{2}\tfrac{1}{2}\tfrac{-1}{2}}{00} = \tfrac{1}{\sqrt{2}}$
 
    - $\ket{d+\pi^0} = \ket{d\pi^0} = \ket{0100}=\ket{10}$
 
 #+BEGIN_QUESTION
-4) [@4] Les deux réactions étant réalisées dans les mêmes conditions
-   cinématiques, montrer qu'il existe entre leurs sections efficaces une
-   relation simple que l'on précisera.
+2) [@2] Les deux réactions étant réalisées dans les mêmes conditions cinématiques, montrer qu'il
+   existe entre leurs sections efficaces une relation simple que l'on précisera.
 #+END_QUESTION
-4) [@4] Intéraction forte \rightarrow conservation de l'isospin $\vv{T}$. Si ces
-   2 réactions sont réalisées dans les mêmes conditions cinématiques, on peut
-   comparer leurs sections efficaces $\sigma_1$ et $\sigma_2$ en utilisant la
-   formule
+2) [@2] Intéraction forte \rightarrow conservation de l'isospin $\vv{T}$. Si ces 2 réactions sont
+   réalisées dans les mêmes conditions cinématiques, on peut comparer leurs sections efficaces
+   $\sigma_1$ et $\sigma_2$ en utilisant la formule
 
    #+BEGIN_SRC latex
      \begin{align*}
@@ -2260,9 +2990,8 @@ On considère les réactions de production par interaction forte de mésons pi :
        &\propto\tfrac{1}{2}\left|\bra{10}V_\text{IF}\ket{00}+\bra{10}V_\text{IF}\ket{10}\right|^2
      \end{align*}
    #+END_SRC
-   or $\bra{10}V_\text{IF}\ket{00}$ est nul car $T_f\neq T_i$ et
-   $\bra{10}V_\text{IF}\ket{10}$ est une fonction dépendant uniquement de
-   $T=1$. On obtient ainsi que
+   or $\bra{10}V_\text{IF}\ket{00}$ est nul car $T_f\neq T_i$ et $\bra{10}V_\text{IF}\ket{10}$ est
+   une fonction dépendant uniquement de $T=1$. On obtient ainsi que
    #+BEGIN_SRC latex
      \begin{align*}
        \frac{\sigma_1}{\sigma_2}=\frac{\sigma(pp\rightarrow d\pi^+)}{\sigma(pn\rightarrow d\pi^0)}=2
@@ -2318,7 +3047,112 @@ symétrique. Toutefois et comme nous le verrons dans l'exercice sur la parité
 intrinsèque du pion, la fonction d'onde globale de ces états demeure
 antisymétrique en raison du principe de Pauli généralisé qui impose que deux
 fermions soient dans des états quantiques différents.
-* TD6 : Structure nucléaire
+* TD8 : Structure nucléaire
+** Introduction
+#+BEGIN_CENTER
+Noyau :\nbsp^{A}_{Z}X \rightarrow Z protons  + N neutrons = A nucléons (nombre de masse)
+#+END_CENTER
+
+- Noyau ayant le "même" nombre de protons Z sont appelés des *isotopes* tandis que
+  ceux présentant le même nombre de nucléons A sont des *isobares*
+
+- Noyau \equiv objet quantique
+  - une fonction d'onde décrit les propriétés du noyau
+  - les nombres quantiques associés : spin, parité, isospin
+  - il possède un état fondamental et des états excités
+  - chaque état possède un moment électronique et un moment magnétique
+
+Certains noyaux sont stables, d'autres radioactifs se désintégrant spontanément
+
+#+BEGIN_SRC latex
+  \begin{align*}
+    ^{14}_{6}\text{C} \rightarrow\,^{14}_{7}\text{N} + e^{-} + \bar{\nu}_{e}
+  \end{align*}
+#+END_SRC
+
+Pour étudier le noyau, on forme des réactions nucléaires qui obéissent à des
+lois de conservation (charge, nombre de nucléons, parité...). On bombarde une
+cible avec \neq projectiles (\gamma, e^{-}, n, p, ions lourds), à \neq
+énergies. Ces réactions sont possibles avec \neq probabilités (section
+efficace). On peut étudier chaque réaction dont les états finaux peuvent
+différer et déterminer la variation de la section efficace en fonction de
+l'énergie incident (fonction d'excitation) ou en fonction de l'angle de sortie
+(distribution angulaire).
+
+*Rayon des noyaux :* En 1909, Hans Geiger et Ernest Marsden sous la direction
+d'Ernest Rutherford, mettent en évidence le noyau atomique en étudiant la
+diffusion de particules \alpha sur des atomes d'or (Au). Antérieurement à cette
+expérience, la matière était conçue sous la forme d'atome contenant deux parties
+de charge électrique opposée. L'expérience de Rutherford montra
+qu'en réalité le noyau chargé positivement est de taille très petite devant le
+nuage électronique qui l'entoure, chargé négativement.
+
+En supposant que le noyau soit une sphère uniformément chargée en volume et
+contenant A nucléons
+
+#+BEGIN_SRC latex
+  \begin{align*}
+    V = \frac{4}{3}\pi\,R^{3} \propto A
+  \end{align*}
+#+END_SRC
+
+On déduit que le rayon d'un noyau est proportionnel à son nombre de nucléons $R
+= r_{0} \times A^{1/3}$. Expérimentalement, $r_{0}$ est compris entre 1.2 et 1.5
+fermi où 1 fm = 10^{-15} m = 10^{-13} cm. La valeur la plus probable est $r_{0}$ =
+1.25 fm.
+
+** Ordres de grandeurs
+#+BEGIN_QUESTION
+Calculer le volume (en cm^{3}) et la masse volumique (en g/cm^{3}) d'un noyau
+de\nbsp^{12}_{6}C, qui est le noyau utilisé pour définir l'unité de masse
+atomique. Comparer à la masse volumique des matériaux courants comme le bois ou
+le fer.
+#+END_QUESTION
+
+- Volume du noyau de\nbsp^{12}_{6}C : approx. sphérique
+
+  #+BEGIN_SRC latex
+    \begin{align*}
+      V = \frac{4}{3}\pi\,R^{3} &= \frac{4}{3}\pi\,(r_{0}\,A^{1/3})^3 \\
+      V(^{12}_{6}\text{C})&= \frac{4}{3}\pi\,(1.25\times12^{1/3})^3 \\
+      &\simeq \unit[100]{fm}^3 = \unit[10^{-37}]{cm}^3
+    \end{align*}
+  #+END_SRC
+
+- Masse volumique
+  \nbsp^{12}_{6}C \rightarrow noyau particulier à partir duquel est défini
+  l'unité de masse atomique
+
+  #+BEGIN_SRC latex
+    \begin{align*}
+      \unit[1]{u.m.a} = \frac{\text{masse}(^{12}_{6}\text{C})}{12} = \unit[931.5]{MeV/c}^{2}
+    \end{align*}
+  #+END_SRC
+
+d'où
+
+#+BEGIN_SRC latex
+  \begin{align*}
+    m(^{12}_{6}\text{C})c^2 &= 12\times\unit[931.5]{MeV} = 12\times931.5\times10^6\times\unit[1.6\,10^{-19}]{J} \\
+    m(^{12}_{6}\text{C})    &= \frac{12\times931.5\times1.6\,10^{-19}}{(3\,10^8)^2} = \unit[2\,10^{-26}]{kg} = \unit[2\,10^{-23}]{g}\\
+  \end{align*}
+#+END_SRC
+
+On en déduit que la masse volumique est égale à
+
+#+BEGIN_SRC latex
+  \begin{align*}
+    \rho(^{12}_{6}\text{C}) = \frac{m(^{12}_{6}\text{C})}{V(^{12}_{6}\text{C})} =
+    \frac{2\,10^{-23}}{10^{-37}} = \unit[2\,10^{14}]{g/cm}^3
+  \end{align*}
+#+END_SRC
+
+À titre de comparaison, le bois a une densité moyenne de 0.6 -- 1 g/cm^{3}, le
+fer environ 10 g/cm^{3}, la Terre de 6 g/cm^{3} et l'Uranium de 19 g/cm^{3}.
+
+*Remarques :* la densité au sein d'une étoile à neutrons est voisine de 10^{11} g/cm^{3}
+
+** Modèle des couches
 ** Introduction
 Dans l'approximation du champ moyen, l'hamiltonien d'un système à $N$ nucléons
 prend la forme suivante
@@ -2380,7 +3214,6 @@ pour les différents types de noyau :
      $|j_1-j_2|\leq j\leq j_1+j_2$. La parité $\pi$ est égale à
      $(-1)^{\ell_1+\ell_2}$. Toutes les valeurs de $j$ sont possibles
 
-** Modèle des couches
 #+BEGIN_QUESTION
 /On trouvera en annexe la séquence des couches donnée par le modèle./
 1) [@1] Dans le cadre du modèle des couches, quel moment cinétique I et quelle
@@ -2881,7 +3714,7 @@ $T(\text{fonda.})=|T_3|=\tfrac{Z-N}{2}$.
 [fn:8] la parité est égale à $(-1)^{\ell_1+\ell_2}$ où $\ell_1=\ell_2=\ell$ et
 donc $\pi=(-1)^{2\ell}=+1$
 
-* TD7 : Réactions nucléaires
+* COMMENT TD7 : Réactions nucléaires
 ** Introduction
 #+ATTR_LATEX: :float wrap :placement {l}{0.5\textwidth} :width 0.4\textwidth
 [[./figures/solid_angle.pdf]]
@@ -2930,376 +3763,6 @@ particules constitutives de la cible.
       \phi=\frac{I}{Ze}\text{ où $e$ correspond à la charge élémentaire}
     \end{align*}
   #+END_SRC
-
-** Accélérateur, section efficace et luminosité
-#+BEGIN_QUESTION
-1) On veut étudier la diffusion élastique des deutons\nbsp^2_1H, d'énergie
-   incidente 30 MeV, sur une cible de\nbsp^{63}_{29}Cu.
-
-   Le faisceau de deutons, de section droite circulaire de 2 cm de diamètre,
-   contient 6 10^{10} particules s^{-1} cm^{-2}, et est mesuré dans une cage de
-   Faraday. La cible de\nbsp^{63}Cu a une épaisseur de 2 mg/cm^{2}. Un détecteur
-   rectangulaire (4 cm \times 2 cm) est situé à 1 m de la cible à l'angle \theta
-   = 30°.
-
-   Calculer le nombre de deutons détectés par seconde par ce détecteur
-   rectangulaire, sachant qu'à l'angle de diffusion \theta = 30° et à 30 MeV, la
-   section efficace différentielle est de 0.1 barn/stéradian.
-#+END_QUESTION
-1) \nbsp^{2}_{1}H+\nbsp^{63}_{29}Cu\to\nbsp^{2}_{1}H+\nbsp^{63}_{29}Cu
-   #+BEGIN_SRC latex
-     \begin{align*}
-       dn=\phi Ne\frac{d\sigma}{d\Omega}d\Omega=\phi\frac{\mathcal{N}\rho_e}{A_\text{cible}}\frac{d\sigma}{d\Omega}d\Omega
-     \end{align*}
-   #+END_SRC
-   où $\phi=\phi'\pi R^2$ et $\phi'=6\,10^{10}\,\text{s}^{-1}\text{.cm}^{-2}$. Le
-   nombre de deutons détectés est
-   #+BEGIN_SRC latex
-     \begin{align*}
-       \left.dn\right|_{30^\circ}&=\phi\frac{\mathcal{N}\rho_e}{A_\text{cible}}\left.\frac{d\sigma}{d\Omega}\right|_{\theta=30^\circ}\frac{S_\text{détecteur}}{d^2_\text{cible-détecteur}}\\
-       &=6\,10^{10}\times\pi\times1^2\times\frac{6.02\,10^{23}\times2\,10^{-3}}{63}\times0.1\,10^{-24}\times\frac{4\times2}{100^2}\\
-       &=\unit[287]{deutons/s}
-     \end{align*}
-   #+END_SRC
-
-#+BEGIN_QUESTION
-2) [@2] On veut étudier la réaction
-   #+BEGIN_SRC latex
-     \begin{align*}
-       ^9_4\text{Be} + ^3_1\text{H} \rightarrow ^3_2\text{He} + ^9_3\text{Li}
-     \end{align*}
-   #+END_SRC
-   Pour cela, on bombarde une cible de\nbsp^{9}Be de 100 \mu{}g/cm^{2} avec un
-   faisceau de tritium (^{3}_{1}H) de 25 MeV.
-   1) Quelle est la section efficace totale de la réaction, sachant que
-      l'intensité du faisceau incident est $I$ = 500 nA et que le nombre de
-      noyaux détectés par seconde est $n$ = 2000 ?
-
-   2) On détecte dans cette réaction les particules d'^{3}_{2}He. Donner le
-      schéma de principe d'une telle expérience. Quelle est l'allure du spectre
-      en énergie des noyaux d'^{3}_{2}He détectés ?
-#+END_QUESTION
-2) [@2] \nbsp^{3}_{1}H+\nbsp^{9}_{4}Be\to\nbsp^{3}_{2}He+\nbsp^{9}_{3}Li
-
-   1) Le flux incident $\phi$ s'exprime en fonction de l'intensité $I$ du faisceau
-      #+BEGIN_SRC latex
-        \begin{align*}
-          \phi=\frac{I}{Ze}
-        \end{align*}
-      #+END_SRC
-      Par ailleurs, le nombre de noyaux détectés $n=2000$ soit
-      #+BEGIN_SRC latex
-        \begin{align*}
-          n&=\phi\times N\times e\times\sigma=2000\\
-          &=\frac{I}{Ze}\times\frac{\mathcal{N}\rho_e}{A_\text{cible}}\times\sigma\\
-          \sigma&=\frac{n\times A_\text{cible}\times Ze}{I\times\mathcal{N}\times\rho_e}\\
-          \sigma&=\unit[9.6\,10^{-29}]{cm}^2=\unit[9.6\,10^{-5}]{barn}=\unit[96]{microbarn}
-        \end{align*}
-      #+END_SRC
-   2) Principe expérimental
-      #+BEGIN_CENTER
-      #+ATTR_LATEX: :width 0.5\linewidth
-      [[./figures/HBe_HeLi_production.pdf]]
-      #+END_CENTER
-
-      L'énergie totale est fixé par l'énergie cinétique du faisceau incident (+
-      les énergies de masse de la cible et du faisceau) : la distribution en
-      énergie des noyaux de\nbsp^{3}_{2}He présente des raies correspondant aux
-      niveaux en énergie de\nbsp^{3}_{2}He (ou\nbsp^{9}_{3}Li) → *énergies quantifiées*
-
-#+BEGIN_QUESTION
-3) [@3] Dans les faisceaux d'un anneau de collisions $e^+e^-$, les électrons
-   (positrons) sont regroupés en paquets qui se croisent à chaque tour. Le
-   collisionneur LEP-I auquel on s'intéresse ici était un synchrotron de
-   circonférence 27 km, dont le rayon de courbure valait $R$ ~ 4.5 km et dans
-   lequel circulaient, en sens inverses, 4 paquets de $N_1$ positrons et 4
-   paquets de $N_2$ électrons.
-
-   1) On caractérise une région d'intersection des faisceaux par sa luminosité
-      $\mathcal{L}$, telle que le nombre d'interactions par unité de temps soit
-      égal au produit $\mathcal{L}\sigma$ de la luminosité par la section
-      efficace.
-
-      En déduire la dimension et l'unité de $\mathcal{L}$.
-
-      On peut montrer que la luminosité s'exprime en fonction des intensités
-      $I_1$ et $I_2$ des courants électriques des faisceaux, du rayon $R$ de
-      l'anneau et de la surface $S$ de recouvrement des paquets par la
-      relation :
-      #+BEGIN_SRC latex
-        \begin{align*}
-          \mathcal{L} = \frac{2\pi R}{c} \frac{I_1 I_2}{e^2 S}
-        \end{align*}
-      #+END_SRC
-      où $e$ est la charge électrique élémentaire.
-
-      Calculer la luminosité $\mathcal{L}$, en cm^{-2}.s^{-1}, pour $I_1$ =
-      $I_2$ = 3 mA et $S$ = 0.5 mm^{2}.
-   2) Pour déterminer la luminosité effectivement obtenue auprès du
-      collisionneur, on observe en général une réaction de référence dont la
-      section efficace est bien connue. Il s'agit ici de la diffusion dite
-      "Bhabha" $e^+ e^- \rightarrow e^+ e^-$ dont la section efficace
-      différentielle, à l'approximation des petits angles que l'on utilisera
-      pour le calcul, est :
-      #+BEGIN_SRC latex
-        \begin{align*}
-          \frac{d\sigma}{d\Omega} = \frac{16 \alpha^2 c)^2}{E^2 \theta^4}
-        \end{align*}
-      #+END_SRC
-
-      où \alpha est la constante de structure fine, $E$ l'énergie totale et
-      \theta l'angle de diffusion.
-
-      Le détecteur qui compte les électrons diffusés a la forme d'une couronne,
-      centrée sur l'axe du faisceau. Il couvre tous les angles azimutaux \phi et
-      les angles polaires \theta compris entre 3 et 8 degrés.
-
-      1) Déterminer la section efficace de diffusion, à l'énergie $E$ = 90 GeV.
-
-      2) Si on observe 950 interactions dans ce détecteur en une heure de prise
-         de données, que vaut la luminosité associée ?
-#+END_QUESTION
-3) [@3]
-   1) La luminosité $\mathcal{L}$ s'exprime comme le rapport du nombre de
-      particules détectés par unité de temps sur la section efficace
-      #+BEGIN_SRC latex
-        \begin{align*}
-          \mathcal{L}=\frac{n}{\sigma}
-        \end{align*}
-      #+END_SRC
-      Ainsi, une réaction/interaction de section efficace $\sigma$ sera d'autant
-      "mieux" observée que la luminosité sera grande et donc que le nombre de
-      particules résultantes de cette réaction/interaction sera
-      conséquente. L'unité de luminosité est donc
-      #+BEGIN_SRC latex
-        \begin{align*}
-          \left[\mathcal{L}\right]=\frac{\left[n\right]}{\left[\sigma\right]}=T^{-1}.L^{-2}
-        \end{align*}
-      #+END_SRC
-
-      La luminosité dépend de l'intensité de chacun des faisceau entrant en
-      collision
-      #+BEGIN_SRC latex
-        \begin{align*}
-          \mathcal{L}&=\frac{2\pi R}{c}\times\frac{I_1\,I_2}{e^2S}\\
-          &=\frac{2\pi\times4.5\,10^3}{3\,10^8}\times\frac{9\,10^{-6}}{(1.6\,10^{-19})^2\times0.5\,10^{-6}}\\
-          &=6.63\,10^{34}\,\text{m}^2\text{.s}^{-1}=6.63\,10^{30}\,\text{cm}^2\text{.s}^{-1}
-        \end{align*}
-      #+END_SRC
-   2) Diffusion [[http://en.wikipedia.org/wiki/Homi_J._Bhabha][Bhabha]] $e^+e^-\to e^+e^-$
-      #+BEGIN_CENTER
-      #+ATTR_LATEX: :width 0.4\linewidth
-      [[./figures/bhabha_diagram.pdf]]
-      #+END_CENTER
-
-      #+BEGIN_SRC latex
-        \begin{align*}
-          \frac{d\sigma}{d\Omega}=\frac{16\alpha^2(\hbar c)^2}{E^2\theta^4}
-        \end{align*}
-      #+END_SRC
-      avec $E=\unit[90]{GeV}$ et $\alpha=\frac{e^2}{4\pi\epsilon_0\hbar c}$ où
-      $\hbar c=\unit[197.3]{MeV.fm}$
-      1) La section efficace totale $\sigma$ est égale à
-         #+BEGIN_SRC latex
-           \begin{align*}
-             \sigma&=\int\frac{d\sigma}{d\Omega}d\Omega\\
-             &=\int_0^{2\pi}\int_{\theta_1}^{\theta_2}\sin\theta d\theta d\phi\frac{d\sigma}{d\Omega}\\
-             &=2\pi\frac{16\,\alpha^2(\hbar c)^2}{E^2}\int_{\theta_1}^{\theta_2}\frac{\sin\theta}{\theta^4}d\theta
-           \end{align*}
-         #+END_SRC
-         Dans la mesure où $\theta\ll1$, $\sin\theta\sim\theta$ soit
-         #+BEGIN_SRC latex
-           \begin{align*}
-             \sigma=2\pi\frac{16\,\alpha^2(\hbar c)^2}{E^2}\int_{\theta_1}^{\theta_2}\frac{d\theta}{\theta^3}
-           \end{align*}
-         #+END_SRC
-         avec $\theta_1=3^\circ=\unit[0.0524]{rad}$ et $\theta_2=8^\circ=\unit[0.1396]{rad}$.
-         #+BEGIN_SRC latex
-           \begin{align*}
-             \sigma&=\frac{32\pi\,\alpha^2(\hbar c)^2}{2E^2}\times\underbrace{\left[\frac{1}{\theta_1^2}-\frac{1}{\theta_2^2}\right]}_{=312.9}\\
-             &=\frac{32\pi\times e^4\times\cancel{(\hbar c)^2}}{2\times(4\pi\epsilon_0\cancel{\hbar c})^2\times E^2}\times312.9\\
-             &=\frac{e^2}{\pi\epsilon_0^2\left.E\right|_\text{eV}^2}\times312.9=\unit[4\,10^{-36}]{m}^2=\unit[4\,10^{-8}]{barn}=\unit[40]{nanobarn}
-           \end{align*}
-         #+END_SRC
-      2) Le nombre d'interaction par seconde est
-         $n=\frac{950}{3600}=\unit[0.2639]{s}^{-1}$. La luminosité est égale à
-         #+BEGIN_SRC latex
-           \begin{align*}
-             \mathcal{L}=\frac{n}{\sigma}=\frac{0.2639}{4\,10^{-36}}=6.553\,10^{34}\,\text{m}^{-2}\text{.s}^{-1}
-           \end{align*}
-         #+END_SRC
-
-         #+BEGIN_REMARK
-         La luminosité instantanée du LHC est voisine de 10^{34} cm^{-2}.s^{-1}
-         soit 10^{-2} pb^{-1}.s^{-1}. À titre de comparaison, le collisionneur
-         $p\bar{p}$ du Tevratron avait une luminosité de 3.2 10^{32}
-         cm^{-2}.s^{-1} ce qui intégré sur son temps d'acquisition de 2001 à
-         2008 a fourni une luminosité intégrée de 5000 pb^{-1}. En un peu moins
-         d'une semaine de prise de données, le LHC a atteint la même luminosité
-         intégrée que le Tevatron.
-         #+END_REMARK
-
-** Section efficace et neutrons thermiques
-#+BEGIN_QUESTION
-1) On appelle neutrons thermiques des neutrons lents en équilibre
-   thermodynamique avec le milieu dans lequel ils se trouvent.
-
-   On irradie une cible de\nbsp^{10}_{5}B avec un faisceau de neutrons
-   thermiques d'énergie cinétique $T$ = 2.5 10^{-2} eV, produits par un
-   réacteur, afin de créer des noyaux de\nbsp^{7}Li par la réaction :
-   #+BEGIN_SRC latex
-     \begin{align}
-       n_\text{th} + ^{10}_{5}\text{B} \rightarrow \alpha + ^7_3\text{Li}
-     \end{align}
-   #+END_SRC
-   On détecte les particules \alpha émises au cours de cette réaction. Quelle
-   est leur énergie cinétique $T_{\alpha}$ ?  On donne les masses nucléaires
-   suivantes, en MeV :
-   #+BEGIN_CENTER
-   $m_{\alpha}c^2$ = 3727.398, $m_{^7\text{Li}}c^2$ = 6533.877, $m_{^8\text{Li}}c^2$ =
-   7471.417, $m_{^{10}\text{B}}c^2$ = 9324.495, $m_{^{11}\text{B}}c^2$ = 10252.615
-   #+END_CENTER
-#+END_QUESTION
-1) $n_\text{th.}+^{10}_{5}\text{B}\rightarrow\alpha+^{7}_{3}\text{Li}$
-
-   Calcul de la chaleur de réaction $Q$
-   #+BEGIN_SRC latex
-     \begin{align*}
-       Q&=m_nc^2+m_{^{10}_{5}\text{B}}c^2-m_\alpha c^2-m_{^{7}_{3}\text{Li}}c^2\\
-       &=939.6 + 9324.495 - 3727.398 - 6533.877=\unit[2.82]{MeV}>0
-     \end{align*}
-   #+END_SRC
-   La réaction est donc exoénergétique ou spontanée et ne requiert pas
-   nécessairement d'énergie cinétique pour les neutrons
-   $T_{n_\text{th.}}\ll1\sim0$. On considèrera la réaction se faisant au repos
-   $T_{n_\text{th.}}=T_{^{10}_{5}\text{B}}\sim0$. La conservation de l'impulsion
-   implique donc que $\vv{p}_\alpha=-\vv{p}_{^{7}_{3}\text{Li}}$ soit
-   #+BEGIN_SRC latex
-     \begin{align*}
-       p_\alpha c&=p_{^{7}_{3}\text{Li}}c\\
-       T_\alpha^2+2T_\alpha\,m_\alpha c^2&=T_{^{7}_{3}\text{Li}}^2+2T_{^{7}_{3}\text{Li}}\,m_{^{7}_{3}\text{Li}}c^2
-     \end{align*}
-   #+END_SRC
-   La conservation de l'énergie implique quant à elle
-   #+BEGIN_SRC latex
-     \begin{align*}
-       E_n+E_{^{10}_{5}\text{B}}&=E_\alpha+E_{^{7}_{3}\text{Li}}\\
-       m_nc^2+m_{^{10}_{5}\text{B}}c^2&=m_\alpha c^2+m_{^{7}_{3}\text{Li}}c^2+T_\alpha+T_{^{7}_{3}\text{Li}}\\
-       Q&=T_\alpha+T_{^{7}_{3}\text{Li}}
-     \end{align*}
-   #+END_SRC
-   soit
-   #+BEGIN_SRC latex
-     \begin{align*}
-       T_\alpha^2+2T_\alpha\,m_\alpha c^2&=\left(Q-T_\alpha\right)^2+2\left(Q-T_\alpha\right)\,m_{^{7}_{3}\text{Li}}c^2\\
-       T_\alpha\times\left(2m_\alpha c^2+2m_{^{7}_{3}\text{Li}}+2Q\right)&=Q^2+2Qm_{^{7}_{3}\text{Li}}c^2\\
-       T_\alpha&=\frac{Q^2+2Qm_{^{7}_{3}\text{Li}}c^2}{2\left(m_n c^2+m_{^{10}_{5}\text{B}}c^2\right)}\\
-       &=\unit[1.8]{MeV}
-     \end{align*}
-   #+END_SRC
-
-#+BEGIN_QUESTION
-2) [@2] On veut maintenant étudier la réaction :
-   #+BEGIN_SRC latex
-     \begin{align}
-       n + ^{11}_{5}\text{B} \rightarrow \alpha + ^8_{3}\text{Li}
-     \end{align}
-   #+END_SRC
-   Dire, en justifiant votre réponse, si cette réaction est possible avec des
-   neutrons thermiques. Donner alors ses conditions d'étude.
-#+END_QUESTION
-2) [@2] $n+^{11}_{5}\text{B}\rightarrow\alpha+^{8}_{3}\text{Li}$
-
-   Calcul de la chaleur de réaction $Q$
-   #+BEGIN_SRC latex
-     \begin{align*}
-       Q&=m_nc^2+m_{^{11}_{5}\text{B}}c^2-m_\alpha c^2-m_{^{8}_{3}\text{Li}}c^2\\
-       &=939.6 + 10252.615 - 3727.398 - 7471.417=\unit[-6.6]{MeV}<0
-     \end{align*}
-   #+END_SRC
-   /i.e./ une réaction endoénergétique qui, pour se réaliser, implique que les
-   neutrons aient une énergie cinétique minimale $T_S$ de
-   #+BEGIN_SRC latex
-     \begin{align*}
-       T_S&=\frac{|Q|\times\Sigma m_{if}c^2}{2m_{^{11}_{5}\text{B}}c^2}\\
-       &=\unit[7.21]{MeV}\gg\unit[2.5\,10^{-2}]{eV}
-     \end{align*}
-   #+END_SRC
-
-#+BEGIN_QUESTION
-3) [@3] On envoie le faisceau de neutrons thermiques sur une cible de Bore
-   naturel de surface 10 cm^{2}, d'épaisseur 1 \mu{}m, de densité \rho = 2.34
-   g/cm^{3} et de composition isotopique 19.8% de\nbsp^{10}B et 80.2%
-   de\nbsp^{11}B. La section efficace totale de la réaction (1) vaut \sigma =
-   3840 b. On sait de plus que la section efficace différentielle est isotrope
-   dans le système du centre de masse pour des neutrons lents. Le détecteur de
-   particules \alpha, de surface utile 5 cm^{2} et situé à 1 m de la cible,
-   enregistre 473 particules \alpha à la minute. Quel est le flux de neutrons
-   thermiques, en cm^{-2}s^{-1} ?
-#+END_QUESTION
-3) [@3] Le nombre de particules \alpha détectées se déduit de l'expression suivante
-   #+BEGIN_SRC latex
-     \begin{align*}
-       dn_\alpha=\phi_{n_\text{th.}}\times\frac{\mathcal{N}\times\rho_e}{A_\text{cible}}\times\frac{d\sigma}{d\Omega}d\Omega
-     \end{align*}
-   #+END_SRC
-   Le flux incident de neutrons thermiques est donc
-   #+BEGIN_SRC latex
-     \begin{align*}
-       \phi_{n_\text{th.}}=\frac{dn_\alpha\,A_\text{cible}}{\mathcal{N}\times\rho_e\times\frac{d\sigma}{d\Omega}d\Omega}
-     \end{align*}
-   #+END_SRC
-
-   Bore naturel → 19.8%\nbsp^{10}B+80.2%\nbsp^{11}B. Le nombre de nucléons moyen
-   de la cible est donc
-   #+BEGIN_SRC latex
-     \begin{align*}
-       A_\text{cible}=0.198\times10+0.802\times11=10.802
-     \end{align*}
-   #+END_SRC
-   Par ailleurs, l'épaisseur de cible $\rho_e=\unit[2.34\,10^{-4}]{g/cm}^2$ est
-   seulement constituée de 19.8% de\nbsp^{10}B nécessaire à la réaction. On
-   introduit donc une épaisseur "effective" de\nbsp^{10}B correspondant à
-   19.8%$\cdot\rho_e$. Finalement la section efficace différentielle
-   $\frac{d\sigma}{d\Omega}$ est isotrope soit
-   $\frac{d\sigma}{d\Omega}=\frac{\sigma}{4\pi}$. On déduit ainsi le flux par
-   seconde $\phi_{n_\text{th.}}$
-   #+BEGIN_SRC latex
-     \begin{align*}
-       \phi_{n_\text{th.}}&=\frac{\frac{473}{60}\times10.802}{6.02\,10^{23}\times0.198\times2.34\,10^{-4}\times\frac{3840\,10^{-24}}{4\pi}\times\frac{5}{100^2}}\\
-       &=\unit[2\,10^7]{s}^{-1}
-     \end{align*}
-   #+END_SRC
-   La surface de la cible étant de 10 cm^{2}, le flux par seconde et par unité
-   de surface est donc $F=\frac{\phi}{S_\text{cible}}=2\,10^6\,\text{cm}^{-2}\text{.s}^{-1}$.
-
-#+BEGIN_QUESTION
-4) [@4] On irradie maintenant une cible isotopiquement séparée de\nbsp^{11}B
-   avec des neutrons de 13 MeV, pour lesquels la section efficace différentielle
-   de la réaction\nbsp(2) est $\frac{d\sigma}{d\Omega}$ = 3.8 mb/sr à 20°. On
-   détecte les particules \alpha avec le même détecteur que précédemment,
-   placé à 20°.
-   1) Quelles mesures supplémentaires faut-il faire afin de déterminer la
-      section efficace totale de la réaction ?
-   2) En supposant que ces mesures montrent une dépendance angulaire de la
-      forme $d\sigma/d\Omega = K/\sin\theta$, calculer la section efficace
-      totale.
-#+END_QUESTION
-4) [@4] $T_n=\unit[13]{MeV}>T_S=\unit[7.21]{MeV}$ et
-   $\left.\frac{d\sigma}{d\Omega}\right|_{20^\circ}=\unit[3.8]{mb/sr}$
-   1) Pour calculer la section efficace totale $\sigma$, il s'agit d'intégrer la
-      section efficace différentielle sur 4\pi stéradian : il faut donc
-      connaitre la dépendance angulaire $(\theta,\phi)$ de
-      $\frac{d\sigma}{d\Omega}$.
-   2) $\frac{d\sigma}{d\Omega}=\frac{K}{\sin\theta}$ avec
-      $K=\left.\frac{d\sigma}{d\Omega}\right|_{20^\circ}\sin\,20^\circ=\unit[1.3]{mb/sr}$. La
-      section efficace totale devient
-      #+BEGIN_SRC latex
-        \begin{align*}
-          \sigma&=\int\frac{d\sigma}{d\Omega}d\Omega=\int_0^{2\pi}d\phi\int_0^\pi\frac{K}{\sin\theta}\sin\theta d\theta\\
-          &=2\pi^2\,K=\unit[25.65]{mb}
-        \end{align*}
-      #+END_SRC
 
 ** Section efficace et rayon d'interaction
 #+BEGIN_QUESTION
@@ -3499,18 +3962,16 @@ $m_{^{10}\text{Li}}c^2$ = 9347.3; $m_{^{11}\text{Li}}c^2$ = 10285.9
 #+END_SRC
 ** Footnotes
 
-[fn:1] l'étymologie du mot /barn/ est un peu loufoque : les physiciens
-américains l'ont adoptée lors des recherches sur la bombe atomique pendant la
-Seconde Guerre mondiale. Le nom de cette nouvelle unité serait issue d'une
-blague "/as big as a barn/" (aussi grande qu'une grange) car les sections
-efficaces de l'uranium 238 étaient très importantes dans le domaine épithermique
-(forêt de résonance) comparées aux sections efficaces typiques des réactions
-nucléaires. Initialement les physiciens américains utilisaient ce terme argot
-de barns dans le but de masquer le sujet de leurs recherches. Cependant après la
-Seconde Guerre mondiale, le barn est devenu une unité standard de la physique
-des particules.
+[fn:1] l'étymologie du mot /barn/ est un peu loufoque : les physiciens américains l'ont adoptée lors
+des recherches sur la bombe atomique pendant la Seconde Guerre mondiale. Le nom de cette nouvelle
+unité serait issue d'une blague "/as big as a barn/" (aussi grande qu'une grange) car les sections
+efficaces de l'uranium 238 étaient très importantes dans le domaine épithermique (forêt de
+résonance) comparées aux sections efficaces typiques des réactions nucléaires. Initialement les
+physiciens américains utilisaient ce terme argot de barns dans le but de masquer le sujet de leurs
+recherches. Cependant après la Seconde Guerre mondiale, le barn est devenu une unité standard de la
+physique des particules.
 
-* TD8 : Masses et désintégrations nucléaires
+* TD9 : Masses et désintégrations nucléaires
 ** Définitions
 #+BEGIN_QUESTION
 Définir les termes : masse nucléaire, masse atomique, excès de masse atomique,
@@ -3969,6 +4430,7 @@ l'irradiation ($t=0$), il n'y a aucun noyau radioactif dans l'échantillon.
      indicateur afin de déterminer si un noyau est loin, en terme de protons, de
      l'élément stable pour une masse donnée /i.e./ pour $A$ fixé.
 
+** Parabole de masse et désintégrations radioactives
 #+BEGIN_QUESTION
 On s'intéresse aux isobares de nombre de masse $A$ = 58 dont on donne ci-dessous
 les excès de masse atomique $\Delta M_\text{at}c^2$, en MeV :
@@ -4228,473 +4690,6 @@ $M_*=N_0\times m_n$, on trouve une masse $M_*=0.04M_\odot$ où $M_\odot$ est ég
 neutron $M_*=1.4M_\odot$ (masse de Chandrasekhar). En réalite, le rayon d'une
 étoile à neutron varie de 10 à 20 km ($R_\odot=695\,800$ km) ce qui se traduit
 en terme de masse par une gamme entre 0.4 et 5 masses solaires.
-
-* TD9 : Modèle Standard et au-delà : l'interaction faible
-** Masse et largeur du $Z^0$ -- Nombre de familles de neutrinos
-#+BEGIN_QUESTION
-La figure ci-dessous représente la distribution de masse invariante du boson
-d'interaction faible $Z^0$ pour sa désintégration en $e^+e^-$, obtenue par
-le détecteur ALEPH auprès du collisionneur $e^+e^-$ LEP du CERN.
-
-#+BEGIN_CENTER
-#+ATTR_LATEX: :width 0.7\textwidth
-[[./figures/aleph_ee.pdf]]
-#+END_CENTER
-
-1) D'après cette figure, correspondant aux événements issus des désintégrations
-   $Z^0 \rightarrow e^+e^-$, estimer la masse du $Z^0$, ainsi que la largeur
-   associée.
-#+END_QUESTION
-Le LEP (pour /Large Electron Positron collider/) était un accélérateur de
-particules circulaire de 27 km de circonférence, passant sous le site du CERN
-entre la France et la Suisse. En fonction de 1989 à 2000, le LEP demeure le plus
-puissant collisionneur de leptons jamais construit
-($E_{\text{max}}=\unit[200]{GeV}$).
-
-La production de $Z^0$ intervient par la collision de $e^+e^-$. Ce boson se
-désintègre /via/ différents canaux dont la désintégration $Z^0\to e^+e^-$. La
-figure présente la section efficace en fonction de l'énergie des $e^+e^-$
-incidents.
-
-1) [@1] Les faisceaux d'électrons-positrons sont accélérés à la même énergie
-   mais avec des impulsions opposées. Par conservation de l'impulsion, le $Z^0$
-   ainsi produit est au repos et les deux leptons produits par désintégration
-   sont donc émis dos-à-dos. La masse du $Z^0$ correspond donc à la position en
-   énergie du maximum de production /i.e./ à la résonance soit une masse de
-   $M_{Z^0}c^2=\unit[91.2]{GeV}$ (la mesure figurant dans le PDG donne 91.1876
-   \pm 0.0021 GeV). La largeur à mi-hauteur mesurée est
-   $\Gamma(Z^0)=2\times(91.2-90)=\unit[2.4]{GeV}$ (contre 2.4952 \pm 0.0023 GeV
-   dans le PDG).
-
-#+BEGIN_QUESTION
-2) [@2] Le calcul en théorie électrofaible de la largeur partielle du $Z^0$ pour
-   sa désintégration en $e^+e^-$, est $\Gamma(Z^0 \rightarrow e^+ e^-)$ ~ 84
-   MeV. Pourquoi ne retrouve-t-on pas la largeur précédente ?
-#+END_QUESTION
-2) [@2] $\Gamma(Z^0)\gg\Gamma(Z^0\to e^+e^-)$. La durée de vie du boson $Z^0$
-   est une propriété intrinsèque à cette particule : elle ne dépetnd donc pas du
-   mode de désintégration. À titre d'exemple, la mesure du taux de
-   désintégration de $Z^0\to\mu^+\mu^-$ donnerait un résultat expérimental
-   identique. À partir de la distribution en masse invariante, la largeur de la
-   résonance est donc la convolution de l'ensemble des modes de désintégration
-   du $Z^0$ (à laquelle s'ajoute les effets expérimentaux tels que la résolution
-   en énergie du calorimètre électromagnétique). On ne peut donc
-   expérimentalement isolé les différents modes de désintégrations du $Z^0$.
-
-#+BEGIN_QUESTION
-3) [@3] Dessiner les diagrammes de Feynman correspondant à la collision $e^+e^-$
-   suivie d'une désintégration en $\nu \bar{\nu}$, $l^-l^+$ ou $q\bar{q}$ (où
-   $\nu$ ($\bar{\nu}$) représente un (anti)neutrino, $l^-$ ($l^+$) un
-   (anti)lepton chargé et $q$ ($\bar{q}$) un (anti)quark).
-#+END_QUESTION
-3) [@3] Diagrammes de Feynman
-
-   #+ATTR_LATEX: :align C{0.25\textwidth}C{0.25\textwidth}C{0.25\textwidth}
-   | [[./figures/Z0_qqbar_diagram.pdf]] | [[./figures/Z0_llbar_diagram.pdf]] | [[./figures/Z0_nunubar_diagram.pdf]] |
-
-#+BEGIN_QUESTION
-4) [@4] Lorsque plusieurs modes de désintégration existent, on associe à chacun
-   d'eux une largeur de désintégration partielle, dont la somme fournit la
-   largeur totale. Les modes principaux de désintégration du boson $Z^0$
-   correspondent à la création d'une paire fermion-antifermion, décomposés de la
-   façon suivante :
-   #+BEGIN_SRC latex
-     \begin{align*}
-       \Gamma_\text{tot.}(Z^0)=N_\nu\Gamma(Z^0\rightarrow\nu\bar{\nu})+N_\ell\Gamma(Z^0 \rightarrow \ell^- \ell^+)+\Gamma_\text{tot.} (Z^0\rightarrow q \bar{q})=\unit[2495]{MeV}
-     \end{align*}
-   #+END_SRC
-   Les 3 largeurs partielles de leptons chargés sont égales, et la largeur
-   partielle de désintégration en toutes les paires possibles quark-antiquark
-   vaut $\Gamma_\text{tot.}(Z^0 \rightarrow q\bar{q})$ = 1741 MeV.
-
-   La contribution d'une paire neutrino-antineutrino, de masse très inférieure à
-   celle du $Z^0$, se calcule en théorie électrofaible par la formule suivante :
-   #+BEGIN_SRC latex
-     \begin{align*}
-       \Gamma(Z^0\rightarrow\nu\bar{\nu}) = \frac{\alpha_{e.m.} \ M_Z c^2}{24\sin^2\theta_W\cos^2\theta_W}
-     \end{align*}
-   #+END_SRC
-
-   On prend comme valeur du couplage électromagnétique $\alpha_\text{em} =
-   \frac{e^2}{4\pi\epsilon_0\hbar c} = \frac{1}{128}$ à une échelle de $Q^2$
-   ~100 GeV^{2} (la différence entre cette valeur et celle du couplage effectif
-   $\alpha_\text{em} = 1/137$ à $Q^2$ = 0 provient de corrections
-   quantiques). Le paramètre $\theta_W$ est l'angle de mélange électrofaible. La
-   valeur de $\sin^2\theta_W$ dépend du schéma de renormalisation électrofaible
-   choisi : une valeur est donnée par la relation $\sin^2\theta_W = 1 -
-   (M_Wc^2/M_Zc^2)^2 = e^2/g^2$, où $e$ est la constante de couplage
-   électromagnétique et $g$ celle du groupe de symétrie SU(2)$_L$. On utilise
-   ici $\sin^2\theta_W\sim 0.23$.
-
-   Calculer la valeur du nombre de neutrinos légers $N_{\nu}$ existants.
-
-   /Remarque/ : Le résultat obtenu par les expériences LEP, $N_{\nu}$ = 3, se
-   traduit par une limite inférieure sur la masse d'un quatrième neutrino ayant
-   un couplage standard avec le $Z^0$. Cette limite est $M_{\nu_L} c^2 > M_Z /2$
-   45 GeV !
-#+END_QUESTION
-4) [@4] Calcul du nombre de neutrinos
-   #+BEGIN_SRC latex
-     \begin{align*}
-       \Gamma_\text{tot.}(Z^0)=N_\nu\Gamma(Z^0\to\nu\bar{\nu})+N_\ell\Gamma(Z^0\to \ell^-\ell^+)+\Gamma_\text{tot.}(Z^0\to q\bar{q})=\unit[2495]{MeV}
-     \end{align*}
-   #+END_SRC
-   avec $\Gamma_\text{tot.}(Z^0\to q\bar{q})=\unit[1741]{MeV}$, $\Gamma(Z^0\to
-   \ell^-\ell^+)=\Gamma(Z^0\to e^-e^+)=\unit[84]{MeV}$ et
-   #+BEGIN_SRC latex
-     \begin{align*}
-       \Gamma(Z^0\to\nu\bar{\nu})=\frac{\alpha_\text{em}\,M_{Z^0}c^2}{24\sin^2\theta_W\cos^2\theta_W}
-     \end{align*}
-   #+END_SRC
-
-   Ainsi, le nombre de neutrinos $N_\nu$ s'écrit
-   #+BEGIN_SRC latex
-     \begin{align*}
-       N_\nu&=\frac{\Gamma_\text{tot.}(Z^0)-N_\ell\Gamma(Z^0\to \ell^-\ell^+)-\Gamma_\text{tot.}(Z^0\to q\bar{q})}{\Gamma(Z^0\to\nu\bar{\nu})}\\
-       &=\frac{\Gamma_\text{tot.}(Z^0)-N_\ell\Gamma(Z^0\to \ell^-\ell^+)-\Gamma_\text{tot.}(Z^0\to q\bar{q})}{\alpha_\text{em}\,M_{Z^0}c^2}\times24\sin^2\theta_W\cos^2\theta_W\\
-       &=\frac{2495-3\times84-1741}{91.2\,10^3}\times128\times24\times0.23\times(1-0.23)\\
-       &=2.99\text{ soit 3 familles de neutrinos}
-     \end{align*}
-   #+END_SRC
-** Neutrinos : production, détection, masse
-*** Chaîne $pp$ : $4p\to\alpha+2\nu$
-#+BEGIN_QUESTION
- Dans la chaîne de conversion solaire dite "$pp$", les différentes réactions
- aboutissant à la transformation de l'hydrogène en hélium émettent deux
- neutrinos pour chaque conversion de quatre protons en une particule \alpha,
- avec $Q$ = 26.72 MeV d'énergie libérée.
-
-1) Si on suppose que la chaîne "$pp$" est la seule responsable de la production
-   d'énergie solaire, estimer le flux de neutrinos solaires (en m^{-2}.s^{-1})
-   provenant de la chaîne "$pp$" et arrivant sur la Terre, sachant que la
-   puissance rayonnée par le Soleil vaut $P_{\odot}$ = 3.83 10^{26} J.s^{-1} et
-   que la distance Terre-Soleil vaut $R$ = 1.5\nbsp10^{8} km.
-
-2) Sachant que 3% de l'énergie solaire est emportée par les neutrinos, quelle
-   est leur énergie moyenne ?
-#+END_QUESTION
-1) Chaque réaction produit deux neutrinos et libère $Q=\unit[26.72]{MeV}$. Le
-   nombre de neutrinos produit par le Soleil est
-   #+BEGIN_SRC latex
-     \begin{align*}
-       N_\nu&=2\times\frac{P_\odot}{Q}=2\times\frac{3.83\,10^{26}}{26.76\,10^6\times1.6\,10^{-19}}\\
-       &=\unit[1.78\,10^{38}]{s}^{-1}
-     \end{align*}
-   #+END_SRC
-   Le flux de neutrinos sur Terre est alors
-   #+BEGIN_SRC latex
-     \begin{align*}
-       F_\nu&=\frac{N_\nu}{4\pi\,R^2}=\frac{1.78\,10^{38}}{4\pi\,(1.5\,10^{11})^2}\\
-       &=6.33\,10^{14}\,\text{m$^{-2}$.s$^{-1}$}
-     \end{align*}
-   #+END_SRC
-2) 3% de l'énergie libérée par chaque réaction $Q=\unit[26.72]{MeV}$ est
-   emportée par les deux neutrinos d'où
-   #+BEGIN_SRC latex
-     \begin{align*}
-       \langle E_\nu\rangle=\frac{3\%\,Q}{2}=\unit[0.4]{MeV}
-     \end{align*}
-   #+END_SRC
-*** Limite sur la masse des neutrinos
-#+BEGIN_QUESTION
-La Supernova 1987A est située à une distance $D$ = 1.7 10^{5} années-lumière de
-la Terre. L'interaction de 10 neutrinos électroniques issus de cette source a
-été observée dans un détecteur contenant 1000 tonnes d'eau, pendant un
-intervalle de temps $\Delta t$ = 10\nbsp{}s. L'énergie moyenne des neutrinos était de
-10 MeV, et s'étendait de $E_1$ = 5 MeV à $E_2$ = 20 MeV. Les neutrinos ont été
-détectés par la réaction $\nu_e + n \rightarrow p + e^-$.
-
-1) Exprimer le temps d'arrivée d'un neutrino électronique en fonction de la
-   distance $D$, de sa masse $m_{\nu}c^2$ (supposée petite mais non nulle) et de
-   son énergie totale $E$.
-#+END_QUESTION
-1) Le temps d'arrivée d'un neutrino correspond à $t=\frac{D}{v}=\frac{D}{\beta
-   c}$. Or
-   #+BEGIN_SRC latex
-     \begin{align*}
-       \gamma&=\frac{E}{m_\nu c^2}=\frac{1}{\surd 1-\beta^2}\\
-       1-\beta^2&=\frac{(m_\nu c^2)^2}{E^2}\\
-       \beta&=\sqrt{1-\frac{(m_\nu c^2)^2}{E^2}}
-     \end{align*}
-   #+END_SRC
-   Le temps d'arrivé est ainsi
-   #+BEGIN_SRC latex
-     \begin{align*}
-       t=\frac{D}{c\surd1-\frac{(m_\nu c^2)^2}{E^2}}
-     \end{align*}
-   #+END_SRC
-
-#+BEGIN_QUESTION
-2) [@2] On suppose que les neutrinos sont tous émis au même instant. Montrer que
-   leur arrivée s'étale sur la durée :
-   #+BEGIN_SRC latex
-     \begin{align*}
-       \Delta t = \frac{D}{c} \frac{m_{\nu}^2c^4}{2} \left\{ \frac{1}{E_1^2} - \frac{1}{E_2^2}\right\}
-     \end{align*}
-   #+END_SRC
-#+END_QUESTION
-2) [@2] Les neutrinos les plus énergétiques arriveront les premiers soit
-   #+BEGIN_SRC latex
-     \begin{align*}
-       \Updelta t&=t_1-t_2\\
-       &=\frac{D}{c}\left(\frac{1}{\surd1-\frac{m_\nu^2c^4}{E_1^2}}-\frac{1}{\surd1-\frac{m_\nu^2c^4}{E_2^2}}\right)\\
-       &\text{or }m_\nu c^2\ll E_{1,2}\\
-       &\simeq\frac{D}{c}\left(\cancel{1}+\frac{1}{2}\times\frac{m_\nu^2c^4}{E_1^2}-\cancel{1}-\frac{1}{2}\times\frac{m_\nu^2c^4}{E_2^2}\right)\\
-       &\simeq\frac{D}{c}\times\frac{m_\nu^2 c^4}{2}\left(\frac{1}{E_1^2}-\frac{1}{E_2^2}\right)
-     \end{align*}
-   #+END_SRC
-
-#+BEGIN_QUESTION
-3) [@3] En déduire une limite supérieure sur la masse du neutrino électronique.
-#+END_QUESTION
-3) [@3] Du fait que $\Updelta t\leq\unit[10]{s}$, on déduit que la masse des
-   neutrinos $m_\nu$ est nécessairement inférieure à
-   #+BEGIN_SRC latex
-     \begin{align*}
-       \Updelta t\leq\unit[10]{s}\Longleftrightarrow&m_\nu c^2\leq\sqrt{\frac{\Updelta t\times2c}{D}\times\frac{1}{1/E_1^2-1/E_2^2}}\\
-       &m_\nu c^2\leq\sqrt{\frac{2\Updelta tc}{D}\times\frac{E_1^2E_2^2}{E_2^2-E_1^2}}\\
-       &m_\nu c^2\leq E_1E_2\sqrt{\frac{2\Updelta tc}{D}\frac{1}{E_2^2-E_1^2}}\\
-       &m_\nu c^2\leq 5\times20\sqrt{\frac{20\times\cancel{c}}{1.7\,10^5\times\cancel{c}\times3600\times24\times365}\times\frac{1}{20^2-5^2}}\\
-       &m_\nu c^2\leq 5\times20\sqrt{\frac{20}{1.7\times3.15}\times\frac{1}{400-25}}\times\unit[10^{-6}]{MeV}\\
-       &m_\nu c^2\leq\unit[10]{eV}
-     \end{align*}
-   #+END_SRC
-
-   Le résultat final fut $m_{\nu_e}c^2\leq\unit[7]{eV}$ [fn:11], valeur qui,
-   grâce aux expériences de mesure directe de la masse du neutrino électronique
-   /via/ l'étude du /end-point/ du spectre de désintégration \beta du tritium,
-   Mainz et Troitztk, atteint aujourd'hui $m_{\nu_e}\leq\unit[2.2]{eV}$. La
-   future expérience Katrin devait gagner encore un ordre de grandeur sur la
-   sensibilité : $m_{\nu_e}\leq\unit[0.2]{eV}$.
-
-** COMMENT Oscillations de neutrinos
-
-Si les (anti)neutrinos ont une masse, ils peuvent ne pas \^etre \'etats propres
-de l'hamiltonien d'interaction faible et osciller d'une esp\`ece \`a l'autre,
-comme dans le cas d'un syst\`eme quantique \`a deux \'etats, du fait de leur
-diff\'erence de masse $\Delta m^2 = |m_2^2 - m_1^2|c^4$. On appelle alors
-$\theta$ l'angle de m\'elange de ces deux \'etats.
-
-1) On suppose deux \'etats de neutrino qui se propagent $|\nu_a>$ et
-   $|\nu_b>$. Si ces \'etats ne sont pas \'etats propres de masse, on peut les
-   \'ecrire comme une rotation d'angle $\theta$ sur la base
-   ($|\nu_1>$,$|\nu_2>$). On appelle $\theta$ l'angle de m\'elange, tel que
-   $\sin \theta = <\nu_2|\nu_a>$, et on suppose que les \'etats propres de
-   masse, $|\nu_1>$ et $|\nu_2>$, de masses respectives $m_1c^2$ et $m_2c^2$, se
-   propagent suivant l'\'equation de Schr\"odinger~: $$|\nu_1(t)> = |\nu_1>
-   e^{-i\frac{E_1}{\hbar}t}\,\,\,\,\, {\rm et} \,\,\,\,\, |\nu_2(t)> = |\nu_2> e^{-i\frac{E_2}{\hbar}t}$$
-
-   1) Ecrire la fonction d'onde $|\nu (t)>$ des neutrinos qui se propagent, en
-      supposant qu'\`a l'instant initial les neutrinos de la source sont de type
-      (a).
-
-   2) En d\'eduire que la probabilit\'e de disparition $P(\nu_a \rightarrow
-      \nu_a, t)$ pour que ces neutrinos apparaissent toujours de type (a) dans
-      le d\'etecteur s'\'ecrit\footnote {Remarque: on suppose que les impulsions
-      des neutrinos sont les m\^emes, bien que leur \'energie soit
-      diff\'erente. De ce fait, ils se d\'eplacent depuis le m\^eme point
-      d'\'emission \`a des vitesses diff\'erentes, mais on consid\`erera qu'ils
-      ne sont pas s\'epar\'es car la longueur de coh\'erence est bien plus
-      grande que la distance source-d\'etecteur.}~:
-
-   3) On s'int\'eresse \`a la possibilit\'e d'un m\'elange de deux saveurs $a$
-      et $b$, avec un angle de m\'elange $\theta$. On peut montrer que la
-      probabilit\'e de disparition $P(\nu_a \rightarrow \nu_a, t)$, pour que des
-      neutrinos de type (a) issus d'une source apparaissent toujours de type (a)
-      en arrivant au temps $t$ dans un d\'etecteur, s'\'ecrit\footnote
-      {Remarque: on suppose que les impulsions des neutrinos sont les m\^emes,
-      bien que leur \'energie soit diff\'erente. De ce fait, ils se d\'eplacent
-      depuis le m\^eme point d'\'emission \`a des vitesses diff\'erentes, mais
-      on consid\`erera qu'ils ne sont pas s\'epar\'es car la longueur de
-      coh\'erence est bien plus grande que la distance source-d\'etecteur.}~: $$
-      P(\nu_a \rightarrow \nu_a, t) = 1\, - \, \sin^2 (2\theta) \, \sin^2
-      (\frac{\Delta E}{2\hbar} t)$$ o\`u $\Delta E = E_2 - E_1$ est la
-      diff\'erence d'\'energie entre les deux neutrinos.
-
-     En d\'eduire que la probabilit\'e de d\'etecter un neutrino $\nu_a$ \`a la
-      distance $L$ d'une source s'\'ecrit~:$$ P(\nu_a \rightarrow \nu_a) = 1\, -
-      \, \sin^2 (2\theta) \, \sin^2 (\frac{1.27\, \Delta m^2 ({\rm eV}^2)\, L
-      ({\rm m})}{E_{\nu}({\rm MeV})})$$ o\`u $E_{\nu}$ est l'\'energie moyenne
-      des neutrinos.
-
-2) L'exp\'erience CHOOZ, utilisant le r\'eacteur de l'ancienne centrale
-   nucl\'eaire des Ardennes comme source tr\`es pure d'antineutrinos
-   \'electroniques ($\sim 100\% \,\bar{\nu}_e$), a pris des donn\'ees de mars
-   \`a octobre 1997, en recherchant un signal de disparition (d\'etection d'un
-   signal associ\'e \`a la pr\'esence de $\bar{\nu}_e$). Pour ce d\'etecteur, on
-   donne $L \sim 1$~km et $E_{\nu} \sim 3$~MeV. Le r\'esultat publi\'e est le
-   suivant~: le nombre d'\'ev\'enements attendus \'etant de $(25.0\pm
-   1.0)$/jour, l'exp\'erience en a d\'etect\'e $(25.5\pm 1.0)$/jour, ce qui
-   correspond \`a {\bf aucune observation d'oscillation $\bar{\nu}_e \rightarrow
-   \bar{\nu}_i$, avec $i = \mu , \tau$, \`a $90\%$ de confiance}. Ils ont aussi
-   fourni le plot d'exclusion associ\'e, pr\'esent\'e sur la figure page
-   suivante, qui d\'efinit comme r\'egion sans oscillation la zone \`a droite et
-   au dessus du contour.
-
-   V\'erifier les limites de ce contour d'exclusion donn\'ees par $P <
-   1-P_{lim}$ (pour CHOOZ, on a $P_{lim}~=~\frac{2.3}{25.5}$ en tenant compte de
-   la limite statistique de Poisson \`a $90\%$ de confiance)~:
-
-   - valeur de $\sin^22\theta$ \`a grand $\Delta m^2$~?
-
-   - valeur de $\Delta m^2$ pour le m\'elange maximal $\sin^22\theta =1$~?
-
-   - valeurs de  $\Delta m^2$ et $\sin^22\theta$ au niveau du coude?
-
-\begin{figure}[h]
-\begin{center}
-\includegraphics[width=13cm,scale=0.5]{./figures/chooz.eps}
-\end{center}
-\end{figure}
-
-** Les mésons neutres $K^0$ et $\bar{K}^0$
-#+BEGIN_QUESTION
-Le $K^0$ et le $\bar{K^0}$ sont des mésons étranges, produits par interaction
-forte et se désintègrant par interaction faible. Le $\bar{K^0}$, antiparticule
-du $K^0$, a la même masse que lui.
-
-Le $K^0$, comme le $\bar{K^0}$, se désintègre soit en deux pions, soit en
-trois pions, avec des constantes radioactives différentes :
-#+BEGIN_SRC latex
-  \begin{align*}
-    \lambda_{2\pi} = \unit[1.12\,10^{10}]{s^{-1}} \quad \text{et} \quad \lambda_{3\pi} = \unit[1.93\,10^7]{s^{-1}}
-  \end{align*}
-#+END_SRC
-
-Les états $K^0$ et $\bar{K^0}$ ne sont pas états propres de $\hat{\mathcal{C}}
-\hat{\mathcal{P}}$ (avec $\hat{\mathcal{P}}$ opération de parité ou symétrie
-droite-gauche et $\hat{\mathcal{C}}$ opération de conjugaison de charge ou
-symétrie particule-antiparticule).
-
-On est amené à définir les particules fictives $\ket{K^0_1}$ et $\ket{K^0_2}$
-#+BEGIN_SRC latex
-  \begin{align*}
-    \ket{K^0_1} = \frac{1}{\sqrt{2}} \ket{K^0} - \frac{1}{\sqrt{2}} \ket{\bar{K^0}} \quad\text{et}\quad \ket{K^0_2} = \frac{1}{\sqrt{2}} \ket{K^0} + \frac{1}{\sqrt{2}} \ket{\bar{K^0}}
-  \end{align*}
-#+END_SRC
-qui sont états propres de $\hat{\mathcal{C}}\hat{\mathcal{P}}$ avec les valeurs
-propres respectives +1 et -1.
-
-On a de la même manière
-#+BEGIN_SRC latex
-  \begin{align*}
-    \ket{K^0} = \frac{1}{\sqrt{2}} \ket{K^0_1} + \frac{1}{\sqrt{2}} \ket{K^0_2} \quad\text{et}\quad \ket{\bar{K^0}} = -\frac{1}{\sqrt{2}} \ket{K^0_1} + \frac{1}{\sqrt{2}} \ket{K^0_2}
-  \end{align*}
-#+END_SRC
-$\ket{K^0}$ et $\ket{\bar{K^0}}$ d'une part, $\ket{K^0_1}$ et $\ket{K^0_2}$
-d'autre part, formant deux bases orthonormées.
-
-1) On peut montrer que les états finaux hadroniques (à 2 ou 3 pions) de la
-   désintégration d'un $K^0$ ($\bar{K^0}$) sont des états propres de l'opération
-   $\hat{\mathcal{C}}\hat{\mathcal{P}}$, avec :
-   #+BEGIN_SRC latex
-     \begin{align*}
-       \hat{\mathcal{C}} \hat{\mathcal{P}} \ket{2\pi} = + \ket{2\pi} \quad\text{et}\quad \hat{\mathcal{C}} \hat{\mathcal{P}} \ket{3\pi} = - \ket{3\pi}
-     \end{align*}
-   #+END_SRC
-   En déduire le mode de désintégration de $K^0_1$ (resp.  $K^0_2$) et sa vie moyenne $\tau_1$ (resp. $\tau_2$).
-#+END_QUESTION
-1) Les états "fictifs" $\ket{K^0_1}$ et $\ket{K^0_2}$ sont des états propres de
-   $\hat{\mathcal{C}}\hat{\mathcal{P}}$ de valeurs propres respectives +1 et
-   -1. Les états finaux hadroniques à 2 et 3 pions sont également états propres
-   de l'opérateur $\hat{\mathcal{C}}\hat{\mathcal{P}}$ et ont des valeurs
-   propres identiques à celle des états $\ket{K^0_1}$ et $\ket{K^0_2}$. Les
-   états physique $\ket{K^0}$ et $\ket{\bar{K}^0}$ étant un mélange des états
-   propres $\ket{K^0_1}$ et $\ket{K^0_2}$ et se désintégrant aussi bien en deux
-   et trois pions, on déduit, par association des valeurs propres, que l'état
-   $\ket{K^0_1}\equiv\ket{2\pi}$ et $\ket{K^0_2}\equiv\ket{3\pi}$. La durée de
-   vie moyenne de ces deux états est ainsi
-   #+BEGIN_SRC latex
-     \begin{align*}
-       \tau_1&=\frac{1}{\lambda_{2\pi}}=\unit[8.9\,10^{-11}]{s}\\
-       \tau_2&=\frac{1}{\lambda_{3\pi}}=\unit[5.2\,10^{-8}]{s}
-     \end{align*}
-   #+END_SRC
-   On note que ces deux durées de vie sont compatibles avec celles issues de
-   processus par intéraction faible.
-
-#+BEGIN_QUESTION
-2) [@2] Les particules "physiques" $K^0$ et $\bar{K^0}$ sont considérées comme
-   des combinaisons linéaires des particules "fictives" $K^0_1$ et $K^0_2$. La
-   désintégration des $K^0$ et $\bar{K^0}$ peut alors se décomposer en deux
-   problèmes indépendants : la désintégration du $K^0_1$ et la désintégration du
-   $K^0_2$.
-
-   Soit un faisceau de particules de vitesse $v = \beta c$, de vie moyenne
-   $\tau$ et d'intensité $I_0$. On se place dans le référentiel du laboratoire.
-
-   1) Après un parcours de longueur $L$, montrer que l'intensité du faisceau est
-      réduite à $I = I_0 e^{-L/\ell}$, où $\ell = \gamma \beta c \tau$.
-
-   2) On produit un faisceau de $K^0$ d'impulsion $p$ = 10 GeV/c. On suppose que
-      les $K^0_1$ et $K^0_2$ ont même masse et même impulsion que les $K^0$
-      du faisceau initial.
-      1) Quel est, après un parcours de longueur $L$ = 10 m, le rapport $\rho =
-         I_1 / I_2$ de l'intensité des $K^0_1$ à celle des $K^0_2$ dans le
-         faisceau ?
-
-      2) Indiquer quel est alors, dans le faisceau, le rapport du nombre de
-         particules "physiques" $K^0$ à celui des particules "physiques"
-         $\bar{K^0}$.
-#+END_QUESTION
-2) [@2] Soit un faisceau de particules de vitesse $v=\beta c$, de vie moyenne
-   $\tau$ et d'intensité $I_0$
-   1) Dans le référentiel du faisceau /i.e./ du centre de masse, l'intensité est
-      égale $I=I_0\exp(-t^*/\tau)$. Dans le référentiel du laboratoire, cette
-      intensité devient $I=I_0\exp(-t/\gamma\tau)$. Par ailleurs, le temps
-      nécessaire pour parcourir la distance $L$ est
-      $t=\frac{L}{v}=\frac{L}{\beta c}$. On déduit que l'intensité du faisceau
-      après avoir parcouru une distance $L$ s'écrit
-      #+BEGIN_SRC latex
-        \begin{align*}
-          I=I_0\exp\left(-\frac{L}{\gamma\tau\beta c}\right)=I_0\exp\left(-\frac{L}{\ell}\right)
-        \end{align*}
-      #+END_SRC
-   2) Faisceau de $K^0$ à $p=\unit[10]{GeV/c}$. Initialement, le faisceau est
-      donc constitué pour moitié de "particules" $K_1^0$, l'autre moitié étant
-      les "particules" $K_2^0$. On suppose par ailleurs que la masse et
-      l'impulsion de ces particules sont identiques
-      ($\beta_1=\beta_2=\beta_{K^0}$).
-      1) Après un parcours de longueur $L=\unit[10]{m}$, l'intensité respective
-         de chaque composante, $K^0_1$ et $K^0_2$, du faisceau est
-         #+BEGIN_SRC latex
-           \begin{align*}
-             I_{1,2}&=I_{01,02}\exp\left(-\frac{L}{\gamma\tau_{1,2}\beta c}\right)\\
-             &\text{avec }I_{01}=I_{02}=\frac{I_0}{2}\\
-             \text{d'où }\rho=\frac{I_1}{I_2}&=\exp\left[-\frac{L}{\gamma\beta c}\left(\frac{1}{\tau_1}-\frac{1}{\tau_2}\right)\right]\\
-             \rho&=\exp\left[-\frac{L}{\gamma\beta c}\frac{\tau_2-\tau_1}{\tau_1\tau_2}\right]\\
-             &\simeq\exp\left[-\frac{L}{\gamma\beta c}\frac{1}{\tau_1}\right]
-           \end{align*}
-         #+END_SRC
-         Par ailleurs,
-         #+BEGIN_SRC latex
-           \begin{align*}
-             p_K^2c^2&=E^2-m_K^2c^4=(\gamma-1)m_K^2c^4\\
-             &\text{or }\gamma=\frac{1}{\surd 1-\beta^2}\to(\gamma\beta)^2=\gamma^2-1\\
-             \gamma\beta&=\frac{p_Kc}{m_Kc^2}=\frac{10}{0.4977}=20.1
-           \end{align*}
-         #+END_SRC
-         Le rapport \rho entre les intensités de chacun des états $\ket{K^0_1}$
-         et $\ket{K^0_2}$ est égal à
-         #+BEGIN_SRC latex
-           \begin{align*}
-             \rho=\frac{I_1}{I_2}=7.37\,10^{-9}\ll1
-           \end{align*}
-         #+END_SRC
-
-      2) Ainsi, au bout de 10 mètres et en raison de la désintégration des
-         $K^0_1$ et des $K^0_2$, il ne reste dans le faisceau que des particules
-         $K^0_2$. Or, ces dernières sont le fruit d'un mélange des états $K^0$
-         et $\bar{K}^0$ à savoir
-         $\ket{K^0_2}=\frac{1}{\surd2}\left(\ket{K^0}+\ket{\bar{K}^0}\right)$. Le
-         faisceau est ainsi constitué à part égale de mésons $K^0$ et de
-         mésons $\bar{K}^0$ : les mésons $K^0$ se sont donc "transformés" en
-         leur antiparticule $\bar{K}^0$. Cette transformation est le phénomène
-         d'oscillation $K^0\leftrightarrow\bar{K}^0$.
-** Footnotes
-
-[fn:11] W. David Arnett & Jonathan L. Roser [[http://journals.aps.org/prl/abstract/10.1103/PhysRevLett.58.1906][Physical Review Letter 58]], David
-N. Spergel & John N. Bahcall [[http://www.sciencedirect.com/science/article/pii/0370269388907903][Physical Letters B]]
 
 * Annexes
 :PROPERTIES:
