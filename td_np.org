@@ -363,7 +363,7 @@ $\vv{v}$ dans un champ d'induction $\vv{B}$ normal à $\vv{v}$.
    #+BEGIN_SRC latex
      \begin{align*}
        \frac{t-t_{0}}{t_{0}}&\ge5\%\\
-       \frac{t_{lim.}}{t_{0}} &= \gamma = 1.05\\
+       \frac{t_\text{lim.}}{t_{0}} &= \gamma = 1.05\\
        T = (\gamma - 1)mc^{2} &= 5\%\cdot\unit[938.3]{MeV} = \unit[47]{MeV}
      \end{align*}
    #+END_SRC
@@ -466,7 +466,7 @@ $\vv{v}$ dans un champ d'induction $\vv{B}$ normal à $\vv{v}$.
 
 ** Accélérateur, section efficace et luminosité
 #+BEGIN_QUESTION
-1) On veut étudier la diffusion élastique des deutons\nbsp^2_1H, d'énergie
+1) On veut étudier la diffusion élastique des deutons\nbsp^{2}_{1}H, d'énergie
    incidente 30 MeV, sur une cible de\nbsp^{63}_{29}Cu.
 
    Le faisceau de deutons, de section droite circulaire de 2 cm de diamètre,
@@ -482,14 +482,14 @@ $\vv{v}$ dans un champ d'induction $\vv{B}$ normal à $\vv{v}$.
 1) \nbsp^{2}_{1}H+\nbsp^{63}_{29}Cu\to\nbsp^{2}_{1}H+\nbsp^{63}_{29}Cu
    #+BEGIN_SRC latex
      \begin{align*}
-       dn=\phi Ne\frac{d\sigma}{d\Omega}d\Omega=\phi\frac{\mathcal{N}\rho_e}{A_\text{cible}}\frac{d\sigma}{d\Omega}d\Omega
+       dn=\phi Ne\frac{\d\sigma}{\d\Omega}d\Omega=\phi\frac{\mathcal{N}\rho_e}{A_\text{cible}}\frac{\d\sigma}{\d\Omega}\d\Omega
      \end{align*}
    #+END_SRC
    où $\phi=\phi'\pi R^2$ et $\phi'=6\,10^{10}\,\text{s}^{-1}\text{.cm}^{-2}$. Le
    nombre de deutons détectés est
    #+BEGIN_SRC latex
      \begin{align*}
-       \left.dn\right|_{30^\circ}&=\phi\frac{\mathcal{N}\rho_e}{A_\text{cible}}\left.\frac{d\sigma}{d\Omega}\right|_{\theta=30^\circ}\frac{S_\text{détecteur}}{d^2_\text{cible-détecteur}}\\
+       \left.dn\right|_{30^\circ}&=\phi\frac{\mathcal{N}\rho_e}{A_\text{cible}}\left.\frac{\d\sigma}{\d\Omega}\right|_{\theta=30^\circ}\frac{S_\text{détecteur}}{d^2_\text{cible-détecteur}}\\
        &=6\,10^{10}\times\pi\times1^2\times\frac{6.02\,10^{23}\times2\,10^{-3}}{63}\times0.1\,10^{-24}\times\frac{4\times2}{100^2}\\
        &=\unit[287]{deutons/s}
      \end{align*}
@@ -635,15 +635,15 @@ $\vv{v}$ dans un champ d'induction $\vv{B}$ normal à $\vv{v}$.
       1) La section efficace totale $\sigma$ est égale à
          #+BEGIN_SRC latex
            \begin{align*}
-             \sigma&=\int\frac{d\sigma}{d\Omega}d\Omega\\
-             &=\int_0^{2\pi}\int_{\theta_1}^{\theta_2}\sin\theta d\theta d\phi\frac{d\sigma}{d\Omega}\\
-             &=2\pi\frac{16\,\alpha^2(\hbar c)^2}{E^2}\int_{\theta_1}^{\theta_2}\frac{\sin\theta}{\theta^4}d\theta
+             \sigma&=\int\frac{\d\sigma}{\d\Omega}\d\Omega\\
+             &=\int_0^{2\pi}\int_{\theta_1}^{\theta_2}\sin\theta \d\theta \d\phi\frac{\d\sigma}{\d\Omega}\\
+             &=2\pi\frac{16\,\alpha^2(\hbar c)^2}{E^2}\int_{\theta_1}^{\theta_2}\frac{\sin\theta}{\theta^4}\d\theta
            \end{align*}
          #+END_SRC
          Dans la mesure où $\theta\ll1$, $\sin\theta\sim\theta$ soit
          #+BEGIN_SRC latex
            \begin{align*}
-             \sigma=2\pi\frac{16\,\alpha^2(\hbar c)^2}{E^2}\int_{\theta_1}^{\theta_2}\frac{d\theta}{\theta^3}
+             \sigma=2\pi\frac{16\,\alpha^2(\hbar c)^2}{E^2}\int_{\theta_1}^{\theta_2}\frac{\d\theta}{\theta^3}
            \end{align*}
          #+END_SRC
          avec $\theta_1=3^\circ=\unit[0.0524]{rad}$ et $\theta_2=8^\circ=\unit[0.1396]{rad}$.
@@ -773,13 +773,13 @@ $\vv{v}$ dans un champ d'induction $\vv{B}$ normal à $\vv{v}$.
 3) [@3] Le nombre de particules \alpha détectées se déduit de l'expression suivante
    #+BEGIN_SRC latex
      \begin{align*}
-       dn_\alpha=\phi_{n_\text{th.}}\times\frac{\mathcal{N}\times\rho_e}{A_\text{cible}}\times\frac{d\sigma}{d\Omega}d\Omega
+       dn_\alpha=\phi_{n_\text{th.}}\times\frac{\mathcal{N}\times\rho_e}{A_\text{cible}}\times\frac{\d\sigma}{\d\Omega}\d\Omega
      \end{align*}
    #+END_SRC
    Le flux incident de neutrons thermiques est donc
    #+BEGIN_SRC latex
      \begin{align*}
-       \phi_{n_\text{th.}}=\frac{dn_\alpha\,A_\text{cible}}{\mathcal{N}\times\rho_e\times\frac{d\sigma}{d\Omega}d\Omega}
+       \phi_{n_\text{th.}}=\frac{\d n_\alpha\,A_\text{cible}}{\mathcal{N}\times\rho_e\times\frac{\d\sigma}{\d\Omega}\d\Omega}
      \end{align*}
    #+END_SRC
 
@@ -790,13 +790,11 @@ $\vv{v}$ dans un champ d'induction $\vv{B}$ normal à $\vv{v}$.
        A_\text{cible}=0.198\times10+0.802\times11=10.802
      \end{align*}
    #+END_SRC
-   Par ailleurs, l'épaisseur de cible $\rho_e=\unit[2.34\,10^{-4}]{g/cm}^2$ est
-   seulement constituée de 19.8% de\nbsp^{10}B nécessaire à la réaction. On
-   introduit donc une épaisseur "effective" de\nbsp^{10}B correspondant à
-   19.8%$\cdot\rho_e$. Finalement la section efficace différentielle
-   $\frac{d\sigma}{d\Omega}$ est isotrope soit
-   $\frac{d\sigma}{d\Omega}=\frac{\sigma}{4\pi}$. On déduit ainsi le flux par
-   seconde $\phi_{n_\text{th.}}$
+   Par ailleurs, l'épaisseur de cible $\rho_e=\unit[2.34\,10^{-4}]{g/cm}^2$ est seulement constituée
+   de 19.8% de\nbsp^{10}B nécessaire à la réaction. On introduit donc une épaisseur "effective"
+   de\nbsp^{10}B correspondant à 19.8%$\cdot\rho_e$. Finalement la section efficace différentielle
+   $\frac{\d\sigma}{\d\Omega}$ est isotrope soit $\frac{\d\sigma}{\d\Omega}=\frac{\sigma}{4\pi}$. On
+   déduit ainsi le flux par seconde $\phi_{n_\text{th.}}$
    #+BEGIN_SRC latex
      \begin{align*}
        \phi_{n_\text{th.}}&=\frac{\frac{473}{60}\times10.802}{6.02\,10^{23}\times0.198\times2.34\,10^{-4}\times\frac{3840\,10^{-24}}{4\pi}\times\frac{5}{100^2}}\\
@@ -807,29 +805,26 @@ $\vv{v}$ dans un champ d'induction $\vv{B}$ normal à $\vv{v}$.
    de surface est donc $F=\frac{\phi}{S_\text{cible}}=2\,10^6\,\text{cm}^{-2}\text{.s}^{-1}$.
 
 #+BEGIN_QUESTION
-4) [@4] On irradie maintenant une cible isotopiquement séparée de\nbsp^{11}B
-   avec des neutrons de 13 MeV, pour lesquels la section efficace différentielle
-   de la réaction\nbsp(2) est $\frac{d\sigma}{d\Omega}$ = 3.8 mb/sr à 20°. On
-   détecte les particules \alpha avec le même détecteur que précédemment,
-   placé à 20°.
-   1) Quelles mesures supplémentaires faut-il faire afin de déterminer la
-      section efficace totale de la réaction ?
-   2) En supposant que ces mesures montrent une dépendance angulaire de la
-      forme $d\sigma/d\Omega = K/\sin\theta$, calculer la section efficace
-      totale.
+4) [@4] On irradie maintenant une cible isotopiquement séparée de\nbsp^{11}B avec des neutrons de 13
+   MeV, pour lesquels la section efficace différentielle de la réaction\nbsp(2) est
+   $\frac{\d\sigma}{\d\Omega}$ = 3.8 mb/sr à 20°. On détecte les particules \alpha avec le même
+   détecteur que précédemment, placé à 20°.
+   1) Quelles mesures supplémentaires faut-il faire afin de déterminer la section efficace totale de
+      la réaction ?
+   2) En supposant que ces mesures montrent une dépendance angulaire de la forme $d\sigma/d\Omega =
+      K/\sin\theta$, calculer la section efficace totale.
 #+END_QUESTION
 4) [@4] $T_n=\unit[13]{MeV}>T_S=\unit[7.21]{MeV}$ et
-   $\left.\frac{d\sigma}{d\Omega}\right|_{20^\circ}=\unit[3.8]{mb/sr}$
-   1) Pour calculer la section efficace totale $\sigma$, il s'agit d'intégrer la
-      section efficace différentielle sur 4\pi stéradian : il faut donc
-      connaitre la dépendance angulaire $(\theta,\phi)$ de
-      $\frac{d\sigma}{d\Omega}$.
-   2) $\frac{d\sigma}{d\Omega}=\frac{K}{\sin\theta}$ avec
-      $K=\left.\frac{d\sigma}{d\Omega}\right|_{20^\circ}\sin\,20^\circ=\unit[1.3]{mb/sr}$. La
+   $\left.\frac{\d\sigma}{\d\Omega}\right|_{20^\circ}=\unit[3.8]{mb/sr}$
+   1) Pour calculer la section efficace totale $\sigma$, il s'agit d'intégrer la section efficace
+      différentielle sur 4\pi stéradian : il faut donc connaitre la dépendance angulaire
+      $(\theta,\phi)$ de $\frac{\d\sigma}{\d\Omega}$.
+   2) $\frac{\d\sigma}{\d\Omega}=\frac{K}{\sin\theta}$ avec
+      $K=\left.\frac{\d\sigma}{\d\Omega}\right|_{20^\circ}\sin\,20^\circ=\unit[1.3]{mb/sr}$. La
       section efficace totale devient
       #+BEGIN_SRC latex
         \begin{align*}
-          \sigma&=\int\frac{d\sigma}{d\Omega}d\Omega=\int_0^{2\pi}d\phi\int_0^\pi\frac{K}{\sin\theta}\sin\theta d\theta\\
+          \sigma&=\int\frac{\d\sigma}{\d\Omega}\d\Omega=\int_0^{2\pi}\d\phi\int_0^\pi\frac{K}{\sin\theta}\sin\theta \d\theta\\
           &=2\pi^2\,K=\unit[25.65]{mb}
         \end{align*}
       #+END_SRC
@@ -843,21 +838,18 @@ $\vv{v}$ dans un champ d'induction $\vv{B}$ normal à $\vv{v}$.
 [[file:./figures/spectrum.pdf]]
 
 #+BEGIN_QUESTION
-1) On considère un proton émis par une source astrophysique (Soleil, noyaux
-   actifs de galaxie,...) et interagissant avec le rayonnement fossile à 2.7 K
-   (on admettra que $E_\gamma = 3kT_\gamma$ pour les photons, avec $k$ =
-   1,38.10^{-23} J/K) :
+1) On considère un proton émis par une source astrophysique (Soleil, noyaux actifs de galaxie,...)
+   et interagissant avec le rayonnement fossile à 2.7 K (on admettra que $E_\gamma = 3kT_\gamma$
+   pour les photons, avec $k$ = 1,38.10^{-23} J/K) :
    #+BEGIN_SRC latex
      \begin{align*}
        p + \gamma &\rightarrow p + \pi^0 \quad \text{ et}\\
        p + \gamma &\rightarrow n + \pi^+
      \end{align*}
    #+END_SRC
-   Quelle est l'énergie seuil de ces réactions (on supposera le proton
-   ultra-relativiste) ?
+   Quelle est l'énergie seuil de ces réactions (on supposera le proton ultra relativiste)\nbsp?
 
-2) Que pouvez-vous en déduire sur l'énergie des protons dans le milieu
-   intergalactique ?
+2) Que pouvez-vous en déduire sur l'énergie des protons dans le milieu intergalactique ?
 #+END_QUESTION
 
 Calcul de l'invariant relativiste :
@@ -1013,10 +1005,9 @@ est de 2.2 \mu{}s, ce temps est "boosté" par le facteur de Lorentz soit \tau =
    sont connus \rightarrow $V_1 = \Lambda^0$ et $V_2 = K^0$
 
 #+BEGIN_QUESTION
-2) [@2] Le \Lambda^{0} parcourt une distance de 3.2 cm dans le détecteur avant
-   de se désintègrer et le $K^0$ se désintègre après un vol de 0.8 cm. Quelle
-   est la durée de vie de ces deux particules, en faisant une hypothèse non
-   relativiste, que l'on justifiera ?
+2) [@2] Le \Lambda^{0} parcourt une distance de 3.2 cm dans le détecteur avant de se désintègrer et
+   le $K^0$ se désintègre après un vol de 0.8 cm. Quelle est la durée de vie de ces deux particules,
+   en faisant une hypothèse non relativiste, que l'on justifiera\nbsp?
 #+END_QUESTION
 2) [@2] $d_{\Lambda^0} = \unit[3.2]{cm}$ et $d_{K^0} = \unit[0.8]{cm}$
    #+BEGIN_SRC latex
@@ -2286,12 +2277,12 @@ Soit le méson $D^0$, ayant pour caractéristiques : $mc^2$ = 1865 MeV, $I^{\pi}
 3) [@3] Donner la composition en quarks de $D^0$ et $\bar{D}^0$, et des éléments trouvés question 2,
    ainsi que de leurs antiparticules.
 #+END_QUESTION
-3) [@3] Le méson $D^0$ est forcément constitué d'un quark charme et d'un antiquark sans saveur /i.e./
-   $\bar{u}$ ou $\bar{d}$. Le fait qu'il est une charge nulle implique nécessairement la présence
-   d'un antiquark $u$. Le doublon d'isospin de $D^0$ qu'est le méson $D^+$ est donc constitué d'un
-   quark $c$ (même saveur) et d'un antiquark $d$ (d'où sa charge électrique \(+e\)). De même, les
-   antiparticules $\bar{D}^0$ et $D^-$ sont constituées d'un antiquark $c$ et respectivement d'un
-   quark $u$ et $d$.
+3) [@3] Le méson $D^0$ est forcément constitué d'un quark charme et d'un antiquark sans saveur et
+   d'isospin non nul /i.e./ $\bar{u}$ ou $\bar{d}$. Le fait qu'il est une charge nulle implique
+   nécessairement la présence d'un antiquark $\bar{u}$. Le doublon d'isospin de $D^0$ qu'est le
+   méson $D^+$ est donc constitué d'un quark $c$ (même saveur) et d'un antiquark $\bar{d}$ (d'où sa
+   charge électrique \(+e\)). De même, les antiparticules $\bar{D}^0$ et $D^-$ sont constituées d'un
+   antiquark $c$ et respectivement d'un quark $u$ et $d$.
 
    |-------------+------------|
    | $D^0$       | $c\bar{u}$ |
@@ -4758,7 +4749,7 @@ transformation inverse s'obtient en changeant $\beta$ en $-\beta$.
 
 Produit scalaire de deux quadrivecteurs : $X^0 Y^0 - X^1 Y^1 - X^2 Y^2 - X^3 Y^3$
 
-Temps propre : $c^2 d\tau^2 = c^2 dt^2 - dx^2 -dy^2 - dz^2$
+Temps propre : $c^2 \d\tau^2 = c^2 \d t^2 - \d x^2 -\d y^2 - \d z^2$
 
 Masse effective : $m^2 c^4 = E^2 - \vv{p}^2c^2 = E^2 - p_x^2 c^2 - p_y^2c^2 -
 p_z^2c^2$

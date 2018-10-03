@@ -40,8 +40,8 @@
     \path (390.0609,634.8214) node  {\normalsize\ding{108}};
     \path (-110.0609,634.8214) node  {\normalsize\ding{108}};
     \path (-110.0609,604.8214) node {$d\bar{u}$};
-    \path (24.0609,844.8214) node   {\normalsize\ding{108}\fontsize{30.0}{27.6}\selectfont{} $d\bar{s}$};
-    \path (24.0609,414.8214) node   {\normalsize\ding{108}\fontsize{30.0}{27.6}\selectfont{} $s\bar{u}$};
+    \path (24.0609,844.8214) node   {\normalsize\ding{108}\fontsize{30.0}{27.6}\selectfont{} $s\bar{u}$};
+    \path (24.0609,414.8214) node   {\normalsize\ding{108}\fontsize{30.0}{27.6}\selectfont{} $d\bar{s}$};
     \path (100.0609,604.8214) node  {$u\bar{u}$};
     \path (180.0609,604.8214) node  {$d\bar{d}$};
     \path (180.0609,654.8214) node  {$s\bar{s}$};
