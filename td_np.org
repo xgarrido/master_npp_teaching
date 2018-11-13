@@ -465,6 +465,55 @@ $\vv{v}$ dans un champ d'induction $\vv{B}$ normal à $\vv{v}$.
    #+END_SRC
 
 ** Accélérateur, section efficace et luminosité
+*** Introduction
+#+ATTR_LATEX: :float wrap :placement {l}{0.5\textwidth} :width 0.4\textwidth
+[[./figures/solid_angle.pdf]]
+Les mesures de section efficace sont des mesures typiques de physique des
+particules. Elles traduisent la probabilité de passage d'un état initial de la
+matière $\psi_i$ à un état final $\psi_f$.
+
+Un détecteur couvrant un angle solide $\d\Omega$ et situé à un angle $\theta$ par
+rapport à l'axe du faisceau détectera ainsi $\d n$ particules par unité de temps
+#+BEGIN_SRC latex
+  \begin{align*}
+    \d n=\underbrace{\text{flux incident}}_{\substack{\text{nbr. particules incidentes}\\\text{/unité de temps}}}\times\underbrace{\text{ nbr. de noyaux cible}}_{\substack{\text{nbr. centre diffuseurs}\\\text{/unité de volume}}}\times\text{ épaisseur cible}\times\frac{\d\sigma}{\d\Omega}\d\Omega
+  \end{align*}
+#+END_SRC
+où $\d\Omega$ = surface de détection/(distance cible-détecteur)^{2} = $\sin\theta
+\d\theta\d\phi$ avec $\theta\in[0,\pi]$ et $\phi\in[0,2\pi]$. Le terme
+$\left.\frac{\d\sigma}{\d\Omega}\right|_\theta$ est *la section efficace
+différentielle* à l'angle $\theta$ et s'exprime en barn par stéradian où 1 barn[fn:1]
+= 10^{-24} cm^{2} = 10^{-28} m^{2}=100 fm^{2}. De la section efficace
+différentielle, on déduit la section efficace totale $\sigma$ en intégrant sur
+l'angle solide total $\d\Omega$ : $\sigma=\int\frac{\d\sigma}{\d\Omega}\d\Omega$ et
+correspond à la probabilité qu'une particule incidente ait intéragi avec les
+particules constitutives de la cible.
+
+#+BEGIN_SRC latex
+  \begin{align*}
+    \d n&=\phi\times N\times e\times\frac{\d\sigma}{\d\Omega}\d\Omega\text{ ou }n=\phi\times N\times e\times\sigma\\
+    \text{avec }&N=\frac{\text{nbr. centre diffuseurs}}{\text{unité de volume}}=\rho\times\frac{\mathcal{N}}{M_\text{at.}}\simeq\rho\times\frac{\mathcal{N}}{A}\\
+    \text{où }&\rho = \text{masse volumique ou densité volumique (g/cm$^{3}$)}\\
+    &\mathcal{N} = \text{nombre d'Avogadro}=\unit[6.02\,10^{23}]{mol}^{-1}\\
+    &A = \text{nombre de nucléons} = \text{masse molaire (g/mol)}
+  \end{align*}
+#+END_SRC
+
+*Remarques :*
+
+- l'épaisseur de la cible est souvent donnée en terme de densité surfacique
+  exprimée en g/cm^{2} et correspond donc au produit de la densité volumique par
+  l'épaisseur physique de la cible.
+
+- le flux $\phi$ incident est parfois donné en terme d'intensité du faisceau
+  (exprimé en Ampères). Le nombre de particules incidentes par unité de temps
+  devient
+  #+BEGIN_SRC latex
+    \begin{align*}
+      \phi=\frac{I}{Ze}\text{ où $e$ correspond à la charge élémentaire}
+    \end{align*}
+  #+END_SRC
+
 #+BEGIN_QUESTION
 1) On veut étudier la diffusion élastique des deutons\nbsp^{2}_{1}H, d'énergie
    incidente 30 MeV, sur une cible de\nbsp^{63}_{29}Cu.
@@ -3706,55 +3755,6 @@ $T(\text{fonda.})=|T_3|=\tfrac{Z-N}{2}$.
 donc $\pi=(-1)^{2\ell}=+1$
 
 * COMMENT TD7 : Réactions nucléaires
-** Introduction
-#+ATTR_LATEX: :float wrap :placement {l}{0.5\textwidth} :width 0.4\textwidth
-[[./figures/solid_angle.pdf]]
-Les mesures de section efficace sont des mesures typiques de physique des
-particules. Elles traduisent la probabilité de passage d'un état initial de la
-matière $\psi_i$ à un état final $\psi_f$.
-
-Un détecteur couvrant un angle solide $d\Omega$ et situé à un angle $\theta$ par
-rapport à l'axe du faisceau détectera ainsi $dn$ particules par unité de temps
-#+BEGIN_SRC latex
-  \begin{align*}
-    dn=\underbrace{\text{flux incident}}_{\substack{\text{nbr. particules incidentes}\\\text{/unité de temps}}}\times\underbrace{\text{ nbr. de noyaux cible}}_{\substack{\text{nbr. centre diffuseurs}\\\text{/unité de volume}}}\times\text{ épaisseur cible}\times\frac{d\sigma}{d\Omega}d\Omega
-  \end{align*}
-#+END_SRC
-où $d\Omega$ = surface de détection/(distance cible-détecteur)^{2} = $\sin\theta
-d\theta d\phi$ avec $\theta\in[0,\pi]$ et $\phi\in[0,2\pi]$. Le terme
-$\left.\frac{d\sigma}{d\Omega}\right|_\theta$ est *la section efficace
-différentielle* à l'angle $\theta$ et s'exprime en barn par stéradian où 1 barn[fn:1]
-= 10^{-24} cm^{2} = 10^{-28} m^{2}=100 fm^{2}. De la section efficace
-différentielle, on déduit la section efficace totale $\sigma$ en intégrant sur
-l'angle solide total $d\Omega$ : $\sigma=\int\frac{d\sigma}{d\Omega}d\Omega$ et
-correspond à la probabilité qu'une particule incidente ait intéragi avec les
-particules constitutives de la cible.
-
-#+BEGIN_SRC latex
-  \begin{align*}
-    dn&=\phi\times N\times e\times\frac{d\sigma}{d\Omega}d\Omega\text{ ou }n=\phi\times N\times e\times\sigma\\
-    \text{avec }&N=\frac{\text{nbr. centre diffuseurs}}{\text{unité de volume}}=\rho\times\frac{\mathcal{N}}{M_\text{at.}}\simeq\rho\times\frac{\mathcal{N}}{A}\\
-    \text{où }&\rho = \text{masse volumique ou densité volumique (g/cm$^{3}$)}\\
-    &\mathcal{N} = \text{nombre d'Avogadro}=\unit[6.02\,10^{23}]{mol}^{-1}\\
-    &A = \text{nombre de nucléons} = \text{masse molaire (g/mol)}
-  \end{align*}
-#+END_SRC
-
-*Remarques :*
-
-- l'épaisseur de la cible est souvent donnée en terme de densité surfacique
-  exprimée en g/cm^{2} et correspond donc au produit de la densité volumique par
-  l'épaisseur physique de la cible.
-
-- le flux $\phi$ incident est parfois donné en terme d'intensité du faisceau
-  (exprimé en Ampères). Le nombre de particules incidentes par unité de temps
-  devient
-  #+BEGIN_SRC latex
-    \begin{align*}
-      \phi=\frac{I}{Ze}\text{ où $e$ correspond à la charge élémentaire}
-    \end{align*}
-  #+END_SRC
-
 ** Section efficace et rayon d'interaction
 #+BEGIN_QUESTION
 On donne les masses nucléaires suivantes, en MeV :
