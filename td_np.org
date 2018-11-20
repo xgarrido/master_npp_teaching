@@ -625,7 +625,7 @@ particules constitutives de la cible.
       pour le calcul, est :
       #+BEGIN_SRC latex
         \begin{align*}
-          \frac{d\sigma}{d\Omega} = \frac{16 \alpha^2 c)^2}{E^2 \theta^4}
+          \frac{d\sigma}{d\Omega} = \frac{16 \alpha^2(\hbar c)^2}{E^2 \theta^4}
         \end{align*}
       #+END_SRC
 
@@ -665,7 +665,7 @@ particules constitutives de la cible.
         \begin{align*}
           \mathcal{L}&=\frac{2\pi R}{c}\times\frac{I_1\,I_2}{e^2S}\\
           &=\frac{2\pi\times4.5\,10^3}{3\,10^8}\times\frac{9\,10^{-6}}{(1.6\,10^{-19})^2\times0.5\,10^{-6}}\\
-          &=6.63\,10^{34}\,\text{m}^2\text{.s}^{-1}=6.63\,10^{30}\,\text{cm}^2\text{.s}^{-1}
+          &=6.63\,10^{34}\,\text{m}^{-2}\text{.s}^{-1}=6.63\,10^{30}\,\text{cm}^{-2}\text{.s}^{-1}
         \end{align*}
       #+END_SRC
    2) Diffusion [[http://en.wikipedia.org/wiki/Homi_J._Bhabha][Bhabha]] $e^+e^-\to e^+e^-$
