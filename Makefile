@@ -16,6 +16,6 @@ doc/html/%.html: %.org
 	@zsh -i -c "org-pages --html --color=darkblue --generate-home-link --debug generate"
 
 clean:
-	@rm -rf	latex.d doc *.tex *.pdf *.toc *.fdb* *~ README.el
+	@rm -rf	latex.d doc *.tex *.pdf *.toc *.fdb* *~ README.el *.out *.aux *.xdv *.log *.fls _minted*
 
 .PHONY: all pdf html clean
