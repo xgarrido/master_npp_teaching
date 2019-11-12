@@ -1445,7 +1445,7 @@ On supposera $c=b=t=0$ pour tous les hadrons de cet exercice.
    d'où $I_R^\pi = 5/2^+$ ou $7/2^+$
 
    #+BEGIN_REMARK
-   Le momenti cinétique total de la résonance $R$ de même que la parité de cette
+   Le moment cinétique total de la résonance $R$ de même que la parité de cette
    particule ne font pas intervenir de moment angulaire relatif. La résonance
    $R$ qui est un baryon est donc constituée de 3 quarks orbitant les uns par
    rapport aux autres. Ainsi, le moment cinétique total de $R$ peut se
@@ -1638,7 +1638,7 @@ incidents.
    résonance est donc la convolution de l'ensemble des modes de désintégration
    du $Z^0$ (à laquelle s'ajoute les effets expérimentaux tels que la résolution
    en énergie du calorimètre électromagnétique). On ne peut donc
-   expérimentalement isolé les différents modes de désintégrations du $Z^0$.
+   expérimentalement isoler les différents modes de désintégrations du $Z^0$.
 
 #+BEGIN_QUESTION
 3) [@3] Dessiner les diagrammes de Feynman correspondant à la collision $e^+e^-$
