@@ -8,7 +8,7 @@ all: pdf
 pdf: $(files_pdf)
 doc/pdf/%.pdf: %.org
 	@echo "NOTICE: Exporting $< to pdf..."
-	@zsh -i -c "org-pages --pdf --debug generate"
+	@zsh -i -c "org-pages --pdf --debug generate --keep-tmp-files"
 
 html: $(files_html)
 doc/html/%.html: %.org

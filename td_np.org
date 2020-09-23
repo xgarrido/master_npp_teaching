@@ -9,9 +9,9 @@
 ** Cinématique
 
 #+BEGIN_QUESTION
-On veut étudier la désintégration en deux photons d'une particule $a$, d'énergie
-de masse au repos $mc^2$, animée d'une vitesse $\beta=v/c$ par rapport au
-référentiel du laboratoire $\mathcal{R}$, comme indiqué sur la figure ci-dessous.
+On veut étudier la désintégration en deux photons d'une particule $a$, d'énergie de masse au repos
+$mc^2$, animée d'une vitesse $\beta=v/c$ par rapport au référentiel du laboratoire $\mathcal{R}$,
+comme indiqué sur la figure ci-dessous.
 #+BEGIN_CENTER
 #+ATTR_LATEX: :width 0.7\linewidth
 [[file:figures/2gamma.pdf]]
@@ -21,8 +21,8 @@ référentiel du laboratoire $\mathcal{R}$, comme indiqué sur la figure ci-dess
    masse $\mathcal{R}'$. En déduire les bornes $E_\text{min}$ et $E_\text{max}$ de ces énergies.
 #+END_QUESTION
 
-1) dans $\mathcal{R}'$ /i.e./ le référentiel du centre de masse où $a$ est
-   au repos et $\Upsigma\vv{p}^{*} = \vv{0}$ :
+1) dans $\mathcal{R}'$ /i.e./ le référentiel du centre de masse où $a$ est au repos et
+   $\Upsigma\vv{p}^{*} = \vv{0}$ :
 
    *\rightarrow Conservation de l'énergie totale :*
    #+BEGIN_SRC latex
@@ -44,10 +44,9 @@ référentiel du laboratoire $\mathcal{R}$, comme indiqué sur la figure ci-dess
    or $E_{1}^{*} = p_{1}^{*}c$ et $E_{2}^{*} = p_{2}^{*}c$ d'où $E_{1}^{*} =
    E_{2}^{*} = \frac{mc^{2}}{2}$.
 
-   Pour déterminer les valeurs d'énergie et d'impulsion dans le référentiel du
-   laboratoire $\mathcal{R}$, on applique la transformation de Lorentz le long
-   de l'axe $z$ au quadrivecteur énergie-impulsion
-
+   Pour déterminer les valeurs d'énergie et d'impulsion dans le référentiel du laboratoire
+   $\mathcal{R}$, on applique la transformation de Lorentz le long de l'axe $z$ au quadrivecteur
+   énergie-impulsion
    #+BEGIN_SRC latex
      \begin{equation*}
        \begin{bmatrix}
@@ -88,8 +87,8 @@ référentiel du laboratoire $\mathcal{R}$, comme indiqué sur la figure ci-dess
      \end{align*}
    #+END_SRC
 
-   L'énergie minimum $E_\text{min}$ et maximum $E_\text{max}$ sont les mêmes
-   pour $E_{1}$ et $E_{2}$ avec $\cos\theta^{*}\in[-1;1]$ /i.e./
+   L'énergie minimum $E_\text{min}$ et maximum $E_\text{max}$ sont les mêmes pour $E_{1}$ et $E_{2}$
+   avec $\cos\theta^{*}\in[-1;1]$ /i.e./
    #+BEGIN_SRC latex
      \begin{align*}
        E_\text{min} &= \frac{\gamma mc^2}{2}(1 - \beta) = \frac{mc^2}{2}\sqrt{\frac{1-\beta}{1+\beta}}\\
@@ -97,21 +96,24 @@ référentiel du laboratoire $\mathcal{R}$, comme indiqué sur la figure ci-dess
      \end{align*}
    #+END_SRC
    où $\gamma=1/\sqrt{1-\beta^{2}}$.
+
+
    #+BEGIN_CENTER
    #+ATTR_LATEX: :width 0.7\linewidth
    [[file:figures/minimal_energy_kinematics.pdf]]
    #+END_CENTER
 
 #+BEGIN_QUESTION
-2) [@2] On s'intéresse à l'angle d'ouverture de la paire de photons, \omega,
-   dans le référentiel du laboratoire $\mathcal{R}$ (voir figure). Déterminer
-   l'expression de $\cos\omega$ en fonction de $\cos\theta^*$.
+2) [@2] On s'intéresse à l'angle d'ouverture de la paire de photons, \omega, dans le référentiel du
+   laboratoire $\mathcal{R}$ (voir figure). Déterminer l'expression de $\cos\omega$ en fonction de
+   $\cos\theta^*$.
 #+END_QUESTION
+
+
 2) [@2] Angle d'ouverture \omega en fonction de \theta^{*}
 
-  Invariant relativiste $I = (\Upsigma_{i}E_{i})^{2} -
-  (\Upsigma_{i}\vv{p_{i}}^{*})^{2}\,c^{2}$ constant quelque soit le référentiel
-  \rightarrow $I_\text{cdm} = I_\text{lab.}$
+  Invariant relativiste $I = (\Upsigma_{i}E_{i})^{2} - (\Upsigma_{i}\vv{p_{i}}^{*})^{2}\,c^{2}$
+   constant quelque soit le référentiel \rightarrow $I_\text{cdm} = I_\text{lab.}$
 
   #+BEGIN_SRC latex
     \begin{align*}
@@ -126,9 +128,10 @@ référentiel du laboratoire $\mathcal{R}$, comme indiqué sur la figure ci-dess
       \frac{(mc^2)^2}{2} &= E_1E_2\cdot(1 - \cos\omega)
     \end{align*}
   #+END_SRC
-  En remplaçant $E_{1,2}$ par leurs expressions déduites de la question 1), on a
-  $E_{1}E_{2} = \left(\frac{\gamma mc^2}{2}\right)^2\cdot\left(1 -
-  \beta^2\cos^2\theta^*\right)$, soit finalement
+
+
+  En remplaçant $E_{1,2}$ par leurs expressions déduites de la question 1), on a $E_{1}E_{2} =
+   \left(\frac{\gamma mc^2}{2}\right)^2\cdot\left(1 - \beta^2\cos^2\theta^*\right)$, soit finalement
   #+BEGIN_SRC latex
     \begin{align*}
       1 - \cos\omega = \frac{2}{\gamma^2\,(1 - \beta^2\cos^2\theta^*)}
@@ -143,42 +146,35 @@ référentiel du laboratoire $\mathcal{R}$, comme indiqué sur la figure ci-dess
   [[file:figures/two_photons_kinematics.pdf]]
   #+END_CENTER
 
-  La figure [[fig::omega_angle]] indique que plus la particule aura une vitesse
-   grande et voisine de $c$, plus l'émission des deux photons se fera vers
-   l'avant $\omega\to0$.
+  La figure [[fig::omega_angle]] indique que plus la particule aura une vitesse grande et voisine de
+   $c$, plus l'émission des deux photons se fera vers l'avant $\omega\to0$.
 
 ** Énergie seuil
 
 #+BEGIN_QUESTION
-Soit une réaction entre deux particules $a$ et $b$, de masses respectives
-$m_ac^2$ et $m_bc^2$ :
+Soit une réaction entre deux particules $a$ et $b$, de masses respectives $m_ac^2$ et $m_bc^2$ :
 #+BEGIN_SRC latex
 \begin{align*}
 a + b \rightarrow c + d + e + f
 \end{align*}
 #+END_SRC
-Les particules produites lors de cette réaction $c$, $d$, $e$ et $f$ ont pour
-masses respectives $m_cc^2$, $m_dc^2$, $m_ec^2$ et $m_fc^2$.
+Les particules produites lors de cette réaction $c$, $d$, $e$ et $f$ ont pour masses respectives
+$m_cc^2$, $m_dc^2$, $m_ec^2$ et $m_fc^2$.
 
-1) [@1] On suppose que la réaction a lieu dans le référentiel du centre de masse
-   des particules $a$ et $b$ et on se place dans le cas particulier où
-   $m_ac^2=m_bc^2$. Donner l'expression de l'énergie cinétique minimum, encore
-   appelée énergie seuil dans le référentiel du centre de masse, que doit
-   posséder chacune des deux particules $a$ et $b$ pour que la réaction puisse
-   avoir lieu ?
+1) [@1] On suppose que la réaction a lieu dans le référentiel du centre de masse des particules $a$
+   et $b$ et on se place dans le cas particulier où $m_ac^2=m_bc^2$. Donner l'expression de
+   l'énergie cinétique minimum, encore appelée énergie seuil dans le référentiel du centre de masse,
+   que doit posséder chacune des deux particules $a$ et $b$ pour que la réaction puisse avoir lieu ?
 #+END_QUESTION
 
-Par définition, l'énergie seuil est l'énergie *juste nécessaire* à la création
-des particules en voie de sortie sans que ces dernières n'aient d'impulsion
-/i.e./ d'énergie cinétique.
+Par définition, l'énergie seuil est l'énergie *juste nécessaire* à la création des particules en voie
+de sortie sans que ces dernières n'aient d'impulsion /i.e./ d'énergie cinétique.
 
-1) Dans le référentiel du centre de masse, on applique la conservation de
-   l'énergie totale sachant que les particules produites sont au repos /i.e./
-   $\vv{p_c}^* = \vv{p_d}^* = \vv{p_e}^* = \vv{p_f}^* = \vv{0}$. Par ailleurs,
-   $\vv{p_a}^* = -\vv{p_b}^*$ donc $T_{a} = T_{b} = T_{S}$ et étant donné que
-   $m_{a} = m_{b}$, l'énergie totale de la particule $a$ est égale à celle de la
-   particule $b$. En appliquant le principe de conservation de l'énergie totale,
-   on obtient
+1) Dans le référentiel du centre de masse, on applique la conservation de l'énergie totale sachant
+   que les particules produites sont au repos /i.e./ $\vv{p_c}^* = \vv{p_d}^* = \vv{p_e}^* =
+   \vv{p_f}^* = \vv{0}$. Par ailleurs, $\vv{p_a}^* = -\vv{p_b}^*$ donc $T_{a} = T_{b} = T_{S}$ et
+   étant donné que $m_{a} = m_{b}$, l'énergie totale de la particule $a$ est égale à celle de la
+   particule $b$. En appliquant le principe de conservation de l'énergie totale, on obtient
    #+BEGIN_SRC latex
      \begin{align*}
        E_a^* + E_b^* &= m_cc^2 + m_dc^2 + m_ec^2 + m_fc^2 = \Upsigma m_\text{finale}c^2\\
@@ -192,28 +188,27 @@ des particules en voie de sortie sans que ces dernières n'aient d'impulsion
      \end{align*}
    #+END_SRC
 
-   En définissant $Q$ comme la chaleur de réaction /i.e./ l'énergie disponible
-   dans la réaction où $Q = \Upsigma m_\text{initiale}c^{2} - \Upsigma
-   m_\text{finale}c^{2}$ et $T_{S} = |Q|/2$, on distingue 3 situations :
+   En définissant $Q$ comme la chaleur de réaction /i.e./ l'énergie disponible dans la réaction où $Q
+   = \Upsigma m_\text{initiale}c^{2} - \Upsigma m_\text{finale}c^{2}$ et $T_{S} = |Q|/2$, on
+   distingue 2 situations :
 
-   - Q > 0 :: la réaction est éxoénergétique c'est-à-dire spontanée. Dans ce cas,
-              il n'y a pas d'énergie seuil, la réaction se faisant d'elle même,
-   - Q < 0 :: la réaction est dite endoénergétique et n'est envisageable qu'à la
-              condition de fournir de l'énergie (cinétique) en voie d'entrée.
+   - Q > 0 :: la réaction est éxoénergétique c'est-à-dire spontanée. Dans ce cas, il n'y a pas
+              d'énergie seuil, la réaction se faisant d'elle même,
+   - Q < 0 :: la réaction est dite endoénergétique et n'est envisageable qu'à la condition de
+              fournir de l'énergie (cinétique) en voie d'entrée.
+
 
 #+BEGIN_QUESTION
-2) [@2] On suppose à présent que la réaction a lieu dans le référentiel du
-   laboratoire, c'est-à-dire qu'on envoie une particule $a$, d'énergie cinétique
-   $T_a$, sur une particule $b$ au repos. Quelle est l'expression de la valeur
-   minimale $T_a$, encore appelée $T_S$ ou énergie seuil dans le référentiel du
-   laboratoire, pour que la réaction ait lieu ?
+2) [@2] On suppose à présent que la réaction a lieu dans le référentiel du laboratoire, c'est-à-dire
+   qu'on envoie une particule $a$, d'énergie cinétique $T_a$, sur une particule $b$ au repos. Quelle
+   est l'expression de la valeur minimale $T_a$, encore appelée $T_S$ ou énergie seuil dans le
+   référentiel du laboratoire, pour que la réaction ait lieu ?
 #+END_QUESTION
 
-2) [@2] Réaction dans le référentiel du laboratoire : soit un faisceau de particule
-   $a$ envoyé sur une cible fixe constituée de particule $b \rightarrow \vv{p_b}
-   = \vv{0}$. L'énergie seuil est la valeur minimale de $T_{a}$ suffisant à la
-   création des particules $c, d, e, f$ au repos. L'invariant relativiste $I$
-   est égal à
+2) [@2] Réaction dans le référentiel du laboratoire : soit un faisceau de particule $a$ envoyé sur
+   une cible fixe constituée de particule $b \rightarrow \vv{p_b} = \vv{0}$. L'énergie seuil est la
+   valeur minimale de $T_{a}$ suffisant à la création des particules $c, d, e, f$ au
+   repos. L'invariant relativiste $I$ est égal à
    #+BEGIN_SRC latex
      \begin{align*}
        I_\text{lab.} = \left(\Upsigma m_\text{finale}c^2\right)^2 &= \left(\Upsigma E\right)^2 - \left(\Upsigma pc\right)^2\\
@@ -222,8 +217,8 @@ des particules en voie de sortie sans que ces dernières n'aient d'impulsion
      \end{align*}
    #+END_SRC
 
-   or $E^{2} = p^{2}c^{2} + m^{2}c^{4} = (T + mc^{2})^{2} \rightarrow (pc)^{2} =
-   T^{2} + 2Tmc^{2}$. On déduit ainsi l'expression de $I_\text{lab.}$
+   or $E^{2} = p^{2}c^{2} + m^{2}c^{4} = (T + mc^{2})^{2} \rightarrow (pc)^{2} = T^{2} +
+   2Tmc^{2}$. On déduit ainsi l'expression de $I_\text{lab.}$
    #+BEGIN_SRC latex
      \begin{align*}
        I_\text{lab.} = \left(\Upsigma m_\text{finale}c^2\right)^2 &= T_S^2 + 2T_S\Upsigma m_\text{initiale}c^2 + \left(\Upsigma m_\text{initiale}c^2\right)^2 - T_S^2 - 2T_Sm_ac^2\\
@@ -241,6 +236,7 @@ Finalement,
   \end{align*}
 #+END_SRC
 
+
 L'énergie cinétique minimum du faisceau incident est ainsi
 #+BEGIN_SRC latex
   \begin{align*}
@@ -252,7 +248,7 @@ L'énergie cinétique minimum du faisceau incident est ainsi
 
 * TD2 : Accélérateurs & section efficace
 ** Accélérateurs
-*** Introduction
+*** COMMENT Introduction
 - cyclotron :: Le cyclotron est un type d’accélérateur de particules circulaire
      inventé par Ernest Orlando Lawrence et Milton S. Livingston de l'université
      de Californie à Berkeley au début des années 1930. Dans un cyclotron, les
@@ -277,25 +273,23 @@ L'énergie cinétique minimum du faisceau incident est ainsi
      énergie utilisable très élevée. Ce sont des collisionneurs.
 *** Exercice
 #+BEGIN_QUESTION
-Un proton de masse au repos $m$, de vitesse $\vv{v}$, se déplaçant dans un champ
-d'induction $\vv{B}$ normal à $\vv{v}$, parcourt une trajectoire circulaire de
-rayon $R$ dans un cyclotron.
-1) Établir la relation liant $R$ à $m, q, v$ et $B$ dans la cas relativiste.
+Un proton de masse au repos $m$, de vitesse $\vv{v}$, se déplaçant dans un champ d'induction
+$\vv{B}$ normal à $\vv{v}$, parcourt une trajectoire circulaire de rayon $R$ dans un cyclotron.
+1) Établir la relation liant $R$ à $m, q, v$ et $B$ dans le cas relativiste.
 #+END_QUESTION
 
-Proton de masse $m = \unit[938.27]{MeV/c}^{2}$ se déplaçant à la vitesse
-$\vv{v}$ dans un champ d'induction $\vv{B}$ normal à $\vv{v}$.
+Proton de masse $m = \unit[938.27]{MeV/c}^{2}$ se déplaçant à la vitesse $\vv{v}$ dans un champ
+d'induction $\vv{B}$ normal à $\vv{v}$.
 
 1) PDF: $\Upsigma\vv{F} = m\vv{a} = \frac{d\vv{p}}{dt}$
 
-   Régime relativiste $m = \gamma{}m_{0} \rightarrow \vv{p} =
-   \gamma{}m_{0}\vv{v}$ et donc $\text{d}\vv{p}/\text{d}t =
-   \gamma{}m_{0}\text{d}\vv{v}/\text{d}t$. Or $\text{d}\vv{v}/\text{d}t =
-   R(\text{d}\theta/\text{d}t)^{2}\vv{u}_{r} = v^{2}/R\vv{u}_{r}$. Soit
+   Régime relativiste $m = \gamma{}m \rightarrow \vv{p} = \gamma{}m_{0}\vv{v}$ et donc
+   $\text{d}\vv{p}/\text{d}t = \gamma{}m\text{d}\vv{v}/\text{d}t$. Or $\text{d}\vv{v}/\text{d}t
+   = R(\text{d}\theta/\text{d}t)^{2}\vv{u}_{r} = v^{2}/R\vv{u}_{r}$. Soit
    #+BEGIN_SRC latex
      \begin{align*}
        \Upsigma\vv{F} &= q\vv{v}\times\vv{B} = qvB\vv{u}_r\\
-       qvB &= \frac{\gamma{}m_{0}v^{2}}{R}\\
+       qvB &= \frac{\gamma{}mv^{2}}{R}\\
        R &= \frac{\gamma{}mv}{qB} = \frac{p}{qB}\\
      \end{align*}
    #+END_SRC
@@ -303,16 +297,13 @@ $\vv{v}$ dans un champ d'induction $\vv{B}$ normal à $\vv{v}$.
    À chaque tour, $v\nearrow$ avec $\vv{B}=\text{constante}$ donc $R\nearrow$
 
 #+BEGIN_QUESTION
-2) [@2] Montrer que le temps $t_0$ mis par le proton pour parcourir une
-   trajectoire circulaire dans le cyclotron est indépendant de $v$ pour de
-   petites valeurs de $v$ (cas non relativiste).
+2) [@2] Montrer que le temps $t_0$ mis par le proton pour parcourir une trajectoire circulaire dans
+   le cyclotron est indépendant de $v$ pour de petites valeurs de $v$ (cas non relativiste).
 #+END_QUESTION
 2) [@2] Calcul de $t_{0}$
    #+BEGIN_SRC latex
      \begin{align*}
-       \frac{\text{d}\theta}{\text{d}t} &= \omega = \frac{v}{R} = \frac{qbR}{\gamma{}mR} =
-       \frac{qB}{\gamma{}m}\\
-       t_{0} &= \frac{2\pi}{\omega} = \frac{2\pi}{qB}\cdot\gamma{}m
+       t_{0} &= \frac{2\pi R}{v} = \frac{2\pi}{qB}\cdot\gamma{}m
      \end{align*}
    #+END_SRC
 
@@ -324,23 +315,22 @@ $\vv{v}$ dans un champ d'induction $\vv{B}$ normal à $\vv{v}$.
    #+END_SRC
 
 #+BEGIN_QUESTION
-3) [@3] Calculer dans ce cas l'impulsion et l'énergie cinétique (en MeV), ainsi
-   que le temps de parcours $t_0$ d'une trajectoire circulaire pour $B$ = 1.5
-   Tesla et $R$ = 0.5 m.
+3) [@3] Calculer dans ce cas l'impulsion et l'énergie cinétique (en MeV), ainsi que le temps de
+   parcours $t_0$ d'une trajectoire circulaire pour $B$ = 1.5 Tesla et $R$ = 0.5 m.
 #+END_QUESTION
 3) [@3] $B = 1.5$ T et $R = 0.5$ m.
 
    #+BEGIN_SRC latex
      \begin{align*}
        p  &= qBR\\
-       pc &= qRBc\\
-       pc &= 0.5\cdot1.5\cdot3\,10^{8} = \unit[225]{MeV}
+       \left.pc\right|_\text{Joules} &= qBRc\\
+       \left.pc\right|_\text{eV} &= BRc = 0.5\cdot1.5\cdot3\,10^{8} = \unit[225]{MeV}
      \end{align*}
    #+END_SRC
 
    #+BEGIN_SRC latex
      \begin{align*}
-       T = \frac{p^{2}}{2m} = \frac{p^{2}c^{2}}{2mc^{2}} =
+       T = \frac{1}{2}mv^2 = \frac{p^{2}}{2m} = \frac{p^{2}c^{2}}{2mc^{2}} =
        \frac{225^{2}}{2\cdot938.3} = \unit[27]{MeV}
      \end{align*}
    #+END_SRC
@@ -352,42 +342,38 @@ $\vv{v}$ dans un champ d'induction $\vv{B}$ normal à $\vv{v}$.
    #+END_SRC
 
 #+BEGIN_QUESTION
-4) [@4] À partir de quelle valeur de l'énergie cinétique du proton (que l'on
-   suppose de nouveau relativiste), le temps $t$ mis par celui-ci pour parcourir
-   une trajectoire circulaire dans le champ d'induction $B$ diffère-t-il de plus
-   de 5% du temps $t_0$ calculé précédemment ? En déduire les limites d'un
-   cyclotron.
+4) [@4] À partir de quelle valeur de l'énergie cinétique du proton (que l'on suppose de nouveau
+   relativiste), le temps $t$ mis par celui-ci pour parcourir une trajectoire circulaire dans le
+   champ d'induction $B$ diffère-t-il de plus de 5% du temps $t_0$ calculé précédemment ? En déduire
+   les limites d'un cyclotron.
 #+END_QUESTION
-4) [@4] $t = \frac{2\pi\gamma\,m}{qB}$ et $t_{0} = \frac{2\pi\,m}{qB}$
+4) [@4] $t_{0} = \frac{2\pi\,m}{qB}$ et $t = \gamma\frac{2\pi\,m}{qB}=\gamma t_0$
 
    #+BEGIN_SRC latex
      \begin{align*}
        \frac{t-t_{0}}{t_{0}}&\ge5\%\\
-       \frac{t_\text{lim.}}{t_{0}} &= \gamma = 1.05\\
-       T = (\gamma - 1)mc^{2} &= 5\%\cdot\unit[938.3]{MeV} = \unit[47]{MeV}
+       \frac{t_\text{lim.}}{t_{0}} &= \gamma_\text{lim.} = 1.05\\
+       T_\text{lim.} = (\gamma_\text{lim.} - 1)mc^{2} &= 5\%\cdot\unit[938.3]{MeV} = \unit[47]{MeV}
      \end{align*}
    #+END_SRC
 
-   Dans un cyclotron, dès lors que l'énergie par nucléon devient supérieure à
-   ~50 MeV, des problèmes relativistes apparaissent /i.e./ la particule n'est
-   plus accélérée en phase avec le champ électrique accélérateur \rightarrow
-   *synchrocyclotron ou synchrotron*
+   Dans un cyclotron, dès lors que l'énergie par nucléon devient supérieure à ~50 MeV, des problèmes
+   relativistes apparaissent /i.e./ la particule n'est plus accélérée en phase avec le champ
+   électrique accélérateur \rightarrow *synchrocyclotron ou synchrotron*
+
+   - synchrocyclotron :: on fait varier la fréquence $f= \frac{v}{2\pi R}$ d'accélération pour
+        compenser la variation de $v$
+   - synchrotron :: on fait varier le champ magnétique $B$ pour maintenir la particule sur la même
+                    trajectoire /i.e./ le même rayon $R$
 
 #+BEGIN_QUESTION
-5) [@5] Dans un synchrotron, le rayon de courbure de la trajectoire des protons
-   est maintenu constant au cours de l'accélération, tandis que l'induction
-   $\vv{B}$, toujours normale à la direction de la vitesse, a alors une valeur
-   variable. Sachant qu'en fin d'accélération, les protons ont une énergie
-   cinétique $T$ = 7 TeV pour $B$ = 5.4 Tesla, calculer le rayon de courbure de
-   la trajectoire.
+5) [@5] Dans un synchrotron, le rayon de courbure de la trajectoire des protons est maintenu
+   constant au cours de l'accélération, tandis que l'induction $\vv{B}$, toujours normale à la
+   direction de la vitesse, a alors une valeur variable. Sachant qu'en fin d'accélération, les
+   protons ont une énergie cinétique $T$ = 7 TeV pour $B$ = 5.4 Tesla, calculer le rayon de courbure
+   de la trajectoire.
 #+END_QUESTION
-5) [@5] La fréquence de rotation $f = \frac{v}{2\pi R} = \frac{qB}{2\pi m}$
-   - synchrocyclotron :: on fait varier la fréquence $f$ d'accélération pour
-        compenser la variation de $v$
-   - synchrotron :: on fait varier le champ magnétique $B$ pour maintenir la
-                    particule sur la même trajectoire /i.e./ le même rayon $R$
-
-   $T$ = 7 TeV et $B$ = 5.4 T avec $R = \frac{\gamma mv}{qB} = \frac{pc}{qBc}$. Or
+5) [@5] $T$ = 7 TeV et $B$ = 5.4 T avec $R = \frac{\gamma mv}{qB} = \frac{pc}{qBc}$. Or
    #+BEGIN_SRC latex
      \begin{align*}
        (pc)^{2} &= E^{2} - m^{2}c^{4}\\
@@ -406,16 +392,14 @@ $\vv{v}$ dans un champ d'induction $\vv{B}$ normal à $\vv{v}$.
    soit une circonférence de 26 km.
 
 #+BEGIN_QUESTION
-6) [@6] On considère la collision de 2 protons d'énergie cinétique 7 TeV dans
-   des anneaux.
+6) [@6] On considère la collision de 2 protons d'énergie cinétique 7 TeV dans des anneaux.
    #+BEGIN_SRC latex
      \begin{align*}
        p + p \rightarrow p + p + N^+ + N^-
      \end{align*}
    #+END_SRC
-   où $N^+$ et $N^-$ sont des antiparticules (même masse mais charges
-   électriques opposées). Quelle est la masse maximale des particules $N$ qui
-   pourraient être ainsi créées dans la collision ?
+   où $N^+$ et $N^-$ sont des antiparticules (même masse mais charges électriques opposées). Quelle
+   est la masse maximale des particules $N$ qui pourraient être ainsi créées dans la collision ?
 #+END_QUESTION
 6) [@6] $T_{S} = |Q|/2$ avec $Q = \Upsigma\,m_\text{initiale}c^{2} -
    \Upsigma\,m_\text{finale}c^{2}$ et
@@ -437,10 +421,9 @@ $\vv{v}$ dans un champ d'induction $\vv{B}$ normal à $\vv{v}$.
        p + p \rightarrow p + p + N^+ + N^-
      \end{align*}
    #+END_SRC
-   en bombardant une cible d'hydrogène au repos par un faisceau de
-   protons. Déterminer l'énergie seuil $T_S$ pour que la réaction ait lieu, en
-   supposant que les particules $N$ ont la masse déterminée à la question
-   précédente.
+   en bombardant une cible d'hydrogène au repos par un faisceau de protons. Déterminer l'énergie
+   seuil $T_S$ pour que la réaction ait lieu, en supposant que les particules $N$ ont la masse
+   déterminée à la question précédente.
 #+END_QUESTION
 7) [@7] Réaction sur cible fixe
    #+BEGIN_SRC latex
@@ -448,18 +431,18 @@ $\vv{v}$ dans un champ d'induction $\vv{B}$ normal à $\vv{v}$.
        T_{S} &= \frac{|Q|}{2}\cdot\frac{\Upsigma\,m_{if}c^{2}}{m_{p}c^{2}}\\
        &= \frac{2m_{N}c^{2}}{2}\cdot\frac{4m_{p}c^{2}+2m_{N}c^{2}}{m_{p}c^{2}}\\
        &\simeq\frac{2\,(m_{N}c^{2})^{2}}{m_{p}c^{2}}\\
-       &\simeq\unit[100\,10^{6}]{GeV} = \unit[100]{PeV}
+       &\simeq\unit[100\,10^{15}]{eV} = \unit[100]{PeV}
      \end{align*}
    #+END_SRC
 
 #+BEGIN_QUESTION
-8) [@8] Quel serait alors, dans un champ magnétique $B$ = 5.4 Tesla, le rayon de
-   courbure de la trajectoire d'un proton qui aurait l'énergie cinétique $T_S$ ?
+8) [@8] Quel serait alors, dans un champ magnétique $B$ = 5.4 Tesla, le rayon de courbure de la
+   trajectoire d'un proton qui aurait l'énergie cinétique $T_S$ ?
 #+END_QUESTION
 8) [@8] Rayon de courbure
    #+BEGIN_SRC latex
      \begin{align*}
-       R = \frac{pc}{qBc} \simeq \frac{T_{S}(\text{eV})}{Bc} =
+       R = \frac{pc}{qBc} \simeq \frac{\left.T_{S}\right|_\text{eV}}{Bc} =
        \frac{100\,\text{PeV}}{5.4\cdot3\,10^{8}} = \unit[60\, 000]{km}
      \end{align*}
    #+END_SRC
@@ -467,27 +450,25 @@ $\vv{v}$ dans un champ d'induction $\vv{B}$ normal à $\vv{v}$.
 ** Accélérateur, section efficace et luminosité
 *** Introduction
 #+ATTR_LATEX: :float wrap :placement {l}{0.5\textwidth} :width 0.4\textwidth
-[[./figures/solid_angle.pdf]]
-Les mesures de section efficace sont des mesures typiques de physique des
-particules. Elles traduisent la probabilité de passage d'un état initial de la
-matière $\psi_i$ à un état final $\psi_f$.
+[[./figures/solid_angle.pdf]] Les mesures de section efficace sont des mesures typiques de physique des
+particules. Elles traduisent la probabilité de passage d'un état initial de la matière $\psi_i$ à un
+état final $\psi_f$.
 
-Un détecteur couvrant un angle solide $\d\Omega$ et situé à un angle $\theta$ par
-rapport à l'axe du faisceau détectera ainsi $\d n$ particules par unité de temps
+Un détecteur couvrant un angle solide $\d\Omega$ et situé à un angle $\theta$ par rapport à l'axe du
+faisceau détectera ainsi $\d n$ particules par unité de temps
 #+BEGIN_SRC latex
   \begin{align*}
     \d n=\underbrace{\text{flux incident}}_{\substack{\text{nbr. particules incidentes}\\\text{/unité de temps}}}\times\underbrace{\text{ nbr. de noyaux cible}}_{\substack{\text{nbr. centre diffuseurs}\\\text{/unité de volume}}}\times\text{ épaisseur cible}\times\frac{\d\sigma}{\d\Omega}\d\Omega
   \end{align*}
 #+END_SRC
-où $\d\Omega$ = surface de détection/(distance cible-détecteur)^{2} = $\sin\theta
-\d\theta\d\phi$ avec $\theta\in[0,\pi]$ et $\phi\in[0,2\pi]$. Le terme
-$\left.\frac{\d\sigma}{\d\Omega}\right|_\theta$ est *la section efficace
-différentielle* à l'angle $\theta$ et s'exprime en barn par stéradian où 1 barn[fn:1]
-= 10^{-24} cm^{2} = 10^{-28} m^{2}=100 fm^{2}. De la section efficace
-différentielle, on déduit la section efficace totale $\sigma$ en intégrant sur
-l'angle solide total $\d\Omega$ : $\sigma=\int\frac{\d\sigma}{\d\Omega}\d\Omega$ et
-correspond à la probabilité qu'une particule incidente ait intéragi avec les
-particules constitutives de la cible.
+où $\d\Omega$ = surface de détection/(distance cible-détecteur)^{2} = $\sin\theta \d\theta\d\phi$
+avec $\theta\in[0,\pi]$ et $\phi\in[0,2\pi]$. Le terme
+$\left.\frac{\d\sigma}{\d\Omega}\right|_\theta$ est *la section efficace différentielle* à l'angle
+$\theta$ et s'exprime en barn par stéradian où 1 barn[fn:1] = 10^{-24} cm^{2} = 10^{-28} m^{2}=100
+fm^{2}. De la section efficace différentielle, on déduit la section efficace totale $\sigma$ en
+intégrant sur l'angle solide total $\d\Omega$ : $\sigma=\int\frac{\d\sigma}{\d\Omega}\d\Omega$ et
+correspond à la probabilité qu'une particule incidente ait intéragi avec les particules
+constitutives de la cible.
 
 #+BEGIN_SRC latex
   \begin{align*}
@@ -501,13 +482,11 @@ particules constitutives de la cible.
 
 *Remarques :*
 
-- l'épaisseur de la cible est souvent donnée en terme de densité surfacique
-  exprimée en g/cm^{2} et correspond donc au produit de la densité volumique par
-  l'épaisseur physique de la cible.
+- l'épaisseur de la cible est souvent donnée en terme de densité surfacique exprimée en g/cm^{2} et
+  correspond donc au produit de la densité volumique par l'épaisseur physique de la cible.
 
-- le flux $\phi$ incident est parfois donné en terme d'intensité du faisceau
-  (exprimé en Ampères). Le nombre de particules incidentes par unité de temps
-  devient
+- le flux $\phi$ incident est parfois donné en terme d'intensité du faisceau (exprimé en
+  Ampères). Le nombre de particules incidentes par unité de temps devient
   #+BEGIN_SRC latex
     \begin{align*}
       \phi=\frac{I}{Ze}\text{ où $e$ correspond à la charge élémentaire}
@@ -515,18 +494,17 @@ particules constitutives de la cible.
   #+END_SRC
 
 #+BEGIN_QUESTION
-1) On veut étudier la diffusion élastique des deutons\nbsp^{2}_{1}H, d'énergie
-   incidente 30 MeV, sur une cible de\nbsp^{63}_{29}Cu.
+1) On veut étudier la diffusion élastique des deutons\nbsp^{2}_{1}H, d'énergie incidente 30 MeV, sur
+   une cible de\nbsp^{63}_{29}Cu.
 
-   Le faisceau de deutons, de section droite circulaire de 2 cm de diamètre,
-   contient 6 10^{10} particules s^{-1} cm^{-2}, et est mesuré dans une cage de
-   Faraday. La cible de\nbsp^{63}Cu a une épaisseur de 2 mg/cm^{2}. Un détecteur
-   rectangulaire (4 cm \times 2 cm) est situé à 1 m de la cible à l'angle \theta
-   = 30°.
+   Le faisceau de deutons, de section droite circulaire de 2 cm de diamètre, contient 6 10^{10}
+   particules s^{-1} cm^{-2}, et est mesuré dans une cage de Faraday. La cible de\nbsp^{63}Cu a une
+   épaisseur de 2 mg/cm^{2}. Un détecteur rectangulaire (4 cm \times 2 cm) est situé à 1 m de la
+   cible à l'angle \theta = 30°.
 
-   Calculer le nombre de deutons détectés par seconde par ce détecteur
-   rectangulaire, sachant qu'à l'angle de diffusion \theta = 30° et à 30 MeV, la
-   section efficace différentielle est de 0.1 barn/stéradian.
+   Calculer le nombre de deutons détectés par seconde par ce détecteur rectangulaire, sachant qu'à
+   l'angle de diffusion \theta = 30° et à 30 MeV, la section efficace différentielle est de 0.1
+   barn/stéradian.
 #+END_QUESTION
 1) \nbsp^{2}_{1}H+\nbsp^{63}_{29}Cu\to\nbsp^{2}_{1}H+\nbsp^{63}_{29}Cu
    #+BEGIN_SRC latex
@@ -712,16 +690,14 @@ particules constitutives de la cible.
          #+END_SRC
 
          #+BEGIN_REMARK
-         La luminosité instantanée du LHC est voisine de 10^{34} cm^{-2}.s^{-1}
-         soit 10^{-2} pb^{-1}.s^{-1}. À titre de comparaison, le collisionneur
-         $p\bar{p}$ du Tevratron avait une luminosité de 3.2 10^{32}
-         cm^{-2}.s^{-1} ce qui intégré sur son temps d'acquisition de 2001 à
-         2008 a fourni une luminosité intégrée de 5000 pb^{-1}. En un peu moins
-         d'une semaine de prise de données, le LHC a atteint la même luminosité
-         intégrée que le Tevatron.
+         La luminosité instantanée du LHC est voisine de 10^{34} cm^{-2}.s^{-1} soit 10^{-2}
+         pb^{-1}.s^{-1}. À titre de comparaison, le collisionneur $p\bar{p}$ du Tevratron avait une
+         luminosité de 3.2 10^{32} cm^{-2}.s^{-1} ce qui intégré sur son temps d'acquisition de 2001
+         à 2008 a fourni une luminosité intégrée de 5000 pb^{-1}. En un peu moins d'une semaine de
+         prise de données, le LHC a atteint la même luminosité intégrée que le Tevatron.
          #+END_REMARK
 
-** Section efficace et neutrons thermiques
+** COMMENT Section efficace et neutrons thermiques
 #+BEGIN_QUESTION
 1) On appelle neutrons thermiques des neutrons lents en équilibre
    thermodynamique avec le milieu dans lequel ils se trouvent.
@@ -878,7 +854,18 @@ particules constitutives de la cible.
         \end{align*}
       #+END_SRC
 
-* TD3 : Nombres quantiques & Symétries
+** Footnotes
+
+[fn:1] l'étymologie du mot /barn/ est un peu loufoque : les physiciens américains l'ont adopté lors
+des recherches sur la bombe atomique pendant la Seconde Guerre mondiale. Le nom de cette nouvelle
+unité serait issu d'une blague "/as big as a barn/" (aussi grande qu'une grange) car les sections
+efficaces de l'uranium 238 étaient très importantes dans le domaine épithermique (forêt de
+résonance) comparées aux sections efficaces typiques des réactions nucléaires. Initialement les
+physiciens américains utilisaient ce terme argot de barns dans le but de masquer le sujet de leurs
+recherches. Cependant après la Seconde Guerre mondiale, le barn est devenu une unité standard de la
+physique des particules.
+
+* COMMENT TD3 : Nombres quantiques & Symétries
 ** Énergie maximum des rayons cosmiques
 
 #+CAPTION: *Spectre en énergie des rayons cosmiques*
@@ -942,19 +929,16 @@ AN: $m_{\pi^{0}}c^{2}$ = 135 MeV et $m_{\pi^{+}}c^{2}$ = 139.6 MeV
 #+ATTR_LATEX: :width 0.7\linewidth
 [[file:./figures/proton_attenuation_result.pdf]]
 
-*Discussion :* Les pertes énergétiques résultantes de la photoproduction de
-pions sont de l’ordre de 15% par interaction; le libre parcours moyen \lambda
-est typiquement le mégaparsec[fn:1]. Ainsi, l’énergie moyenne d’un proton
-diminue de façon significative au cours de sa propagation dans l’Univers comme
-le montre la Figure [[fig::proton_attenuation]]. Un proton avec une énergie initiale
-de 10^{22} eV voit son énergie réduite à 10^{20} eV après avoir parcouru 100
-Mpc. Une diminution nette du flux appelée coupure GZK est alors attendue au
-seuil de la réaction de photoproduction de pions /i.e./ 10^{19.6} eV[fn:2]. La
-position exacte de cette coupure GZK peut varier sensiblement suivant que les
-sources considérées sont ou non uniformément réparties dans l’Univers. En
-particulier, la forme du spectre au delà du seuil GZK permet, en théorie,
-d’évaluer la répartition des sources et de mettre en exergue une éventuelle
-surabondance locale.
+*Discussion :* Les pertes énergétiques résultantes de la photoproduction de pions sont de l’ordre de
+15% par interaction; le libre parcours moyen \lambda est typiquement le mégaparsec[fn:1]. Ainsi,
+l’énergie moyenne d’un proton diminue de façon significative au cours de sa propagation dans
+l’Univers comme le montre la Figure [[fig::proton_attenuation]]. Un proton avec une énergie initiale de
+10^{22} eV voit son énergie réduite à 10^{20} eV après avoir parcouru 100 Mpc. Une diminution nette
+du flux appelée coupure GZK est alors attendue au seuil de la réaction de photoproduction de pions
+/i.e./ 10^{19.6} eV[fn:2]. La position exacte de cette coupure GZK peut varier sensiblement suivant
+que les sources considérées sont ou non uniformément réparties dans l’Univers. En particulier, la
+forme du spectre au delà du seuil GZK permet, en théorie, d’évaluer la répartition des sources et de
+mettre en exergue une éventuelle surabondance locale.
 
 #+CAPTION: *Diagramme de Hillas de différents objets compacts.*
 #+CAPTION: Les axes correspondent respectivement au logarithme décimal du champ magnétique et à la taille caractéristique de l'objet.
@@ -1160,7 +1144,7 @@ synchrotron a accéléré des protons au delà du GeV (1952 -- 1966) contribuant
 la découverte de l'ensemble des mésons chargés de même qu'à la mise en évidence
 de particules lourdes instables telles que les particules $V$.
 
-* TD4 : Réactions de production et de désintégration de particules
+* COMMENT TD4 : Réactions de production et de désintégration de particules
 
 #+CAPTION: *Modèle standard de la physique des particules*
 [[file:./figures/standard_model.pdf]]
@@ -1588,7 +1572,7 @@ Brookhaven en 1964.
 
 [fn:4] le moment cinétique total est également différent 5/2^{+} ou 7/2^{+} contre
 3/2^{+}
-* TD5 : Modèle Standard et au-delà : l'interaction faible
+* COMMENT TD5 : Modèle Standard et au-delà : l'interaction faible
 ** Masse et largeur du $Z^0$ -- Nombre de familles de neutrinos
 #+BEGIN_QUESTION
 La figure ci-dessous représente la distribution de masse invariante du boson
@@ -2055,7 +2039,7 @@ d'autre part, formant deux bases orthonormées.
 [fn:11] W. David Arnett & Jonathan L. Roser [[http://journals.aps.org/prl/abstract/10.1103/PhysRevLett.58.1906][Physical Review Letter 58]], David
 N. Spergel & John N. Bahcall [[http://www.sciencedirect.com/science/article/pii/0370269388907903][Physical Letters B]]
 
-* TD6 : Modèle des quarks -- Les hadrons
+* COMMENT TD6 : Modèle des quarks -- Les hadrons
 ** Les mésons constitués des quarks $u,d,s$ et de leurs antiquarks
 #+BEGIN_QUESTION
 1) [@1] D'après le tableau caractéristique des quarks, établir le même tableau
@@ -2523,7 +2507,7 @@ impaire pour que la fonction d'onde soit antisymétrique. $\vv{L}=\vv{0}$,
 $\vv{T}=\vv{0}$ et $\vv{S}=\vv{3}/2$, la somme n'est donc pas impaire. C'est
 l'introduction de la couleur qui permet de rendre cette fonction d'onde globale
 antisymétrique.
-* TD7 : Isospin -- des quarks aux noyaux
+* COMMENT TD7 : Isospin -- des quarks aux noyaux
 ** Introduction
 
 L'isospin $\vv{T}$ rend compte de l'indépendance de charge de l'intéraction
@@ -3085,7 +3069,7 @@ symétrique. Toutefois et comme nous le verrons dans l'exercice sur la parité
 intrinsèque du pion, la fonction d'onde globale de ces états demeure
 antisymétrique en raison du principe de Pauli généralisé qui impose que deux
 fermions soient dans des états quantiques différents.
-* TD8 : Structure nucléaire
+* COMMENT TD8 : Structure nucléaire
 ** Introduction
 #+BEGIN_CENTER
 Noyau :\nbsp^{A}_{Z}X \rightarrow Z protons  + N neutrons = A nucléons (nombre de masse)
@@ -3752,215 +3736,7 @@ $T(\text{fonda.})=|T_3|=\tfrac{Z-N}{2}$.
 [fn:8] la parité est égale à $(-1)^{\ell_1+\ell_2}$ où $\ell_1=\ell_2=\ell$ et
 donc $\pi=(-1)^{2\ell}=+1$
 
-* COMMENT TD7 : Réactions nucléaires
-** Section efficace et rayon d'interaction
-#+BEGIN_QUESTION
-On donne les masses nucléaires suivantes, en MeV :
-
-#+BEGIN_CENTER
-$m_nc^2$ = 939.6; $m_{^{9}\text{Li}}c^2$ = 8406.9
-
-$m_{^{10}\text{Li}}c^2$ = 9347.3; $m_{^{11}\text{Li}}c^2$ = 10285.9
-#+END_CENTER
-1) On cherche à estimer le rayon du noyau de\nbsp^{11}Li. Pour cela, on effectue
-   tout d'abord des mesures de section efficace totale d'interaction.
-
-   1) On bombarde une cible de\nbsp^{9}Be de 50 mg/cm^{2} d'épaisseur avec un
-      faisceau de\nbsp^{11}Li, dont le flux incident vaut 10^{4}
-      particules/s. En 10 minutes, on détecte dans tout l'espace 10^{5}
-      réactions. Calculer la section efficace de la réaction\nbsp^{11}Li
-      +\nbsp^{9}Be.
-
-   2) Il a été montré que le rayon d'interaction nucléaire pouvait être estimé
-      de façon très simple par la mesure de la section efficace totale dans les
-      collisions d'ions lourds de haute énergie. Dans ce modèle simple, le rayon
-      d'interaction est défini par :
-      #+BEGIN_SRC latex
-        \begin{align*}
-          \sigma_\text{tot} = \pi(R_\text{proj.}+ R_\text{cible})^2
-        \end{align*}
-      #+END_SRC
-      sachant que $R_\text{proj.}$ et $R_\text{cible}$ sont respectivement les
-      rayons d'interaction du projectile et de la cible.
-
-      En supposant que le rayon d'interaction du\nbsp^{9}Be peut être approximé
-      par $R$(^{9}Be)=$r_0A^{1/3}$, déduire de ce modèle le rayon d'interaction
-      du\nbsp^{11}Li et comparer le résultat à la valeur
-      $R$(^{11}Li)=$r_0A^{1/3}$ donnée par le modèle de la goutte liquide.
-
-   3) On refait la même expérience avec un faisceau de\nbsp^{9}Li de même
-      intensité et on mesure 20000 réactions en 10 minutes. Déduire le rayon
-      d'interaction du\nbsp^{9}Li.
-#+END_QUESTION
-1) \nbsp^{11}Li\to\nbsp^{9}Be
-   1) Le nombre de réactions $n$ par unité de temps s'écrit
-      #+BEGIN_SRC latex
-        \begin{align*}
-          n&=\phi\times\rho_e\times\frac{\mathcal{N}}{A_\text{cible}}\times\sigma
-        \end{align*}
-      #+END_SRC
-      d'où
-      #+BEGIN_SRC latex
-        \begin{align*}
-          \sigma&=\frac{N}{\phi}\times\frac{A_\text{cible}}{\mathcal{N}\rho_e}\\
-          &=\frac{10^5/600\times9}{10^4\times6\,10^{23}\times50\,10^{-3}}\\
-          \sigma(^{11}\text{Li}+^{9}\text{Be})&\simeq\unit[5\,10^{-24}]{cm}^2=\unit[5]{barn}
-        \end{align*}
-      #+END_SRC
-   2) Soit le rayon du\nbsp^{9}Be
-      #+BEGIN_SRC latex
-        \begin{align*}
-          R(^{9}\text{Be})=r_0\times A^{1/3}=\unit[1.25]{fm}\times9^{1/3}=\unit[2.6]{fm}
-        \end{align*}
-      #+END_SRC
-      La section efficace devient
-      #+BEGIN_SRC latex
-        \begin{align*}
-          \sigma(^{11}\text{Li}+^{9}\text{Be})&=\pi\left(R(^{11}\text{Li})+R(^{9}\text{Be})\right)^2=\unit[5]{barn}=\unit[500]{fm}^2\\
-          R(^{11}\text{Li})&=\sqrt{\frac{\sigma}{\pi}}-R(^{9}\text{Be})\\
-          &=\sqrt{\frac{\unit[500]{fm}^2}{\pi}}-\unit[2.6]{fm}\\
-          &=\unit[10]{fm}\gg1.25\times11^{1/3}=\unit[2.78]{fm}
-        \end{align*}
-      #+END_SRC
-   3) $\sigma(^{9}\text{Li}+^{9}\text{Be})=\sigma(^{11}\text{Li}+^{9}\text{Be})/5$
-      d'où
-      #+BEGIN_SRC latex
-        \begin{align*}
-          R(^{9}\text{Li})&=\sqrt{\frac{\unit[100]{fm}^2}{\pi}}-\unit[2.6]{fm}\\
-          &=\unit[3.04]{fm}\gtrsim\unit[2.6]{fm}
-        \end{align*}
-      #+END_SRC
-
-#+BEGIN_QUESTION
-2) [@2] On bombarde maintenant la cible de\nbsp^{9}Be avec le faisceau
-   de\nbsp^{11}Li précédent, pour réaliser des réactions de cassure
-   du\nbsp^{11}Li :
-   #+BEGIN_SRC latex
-     \begin{align}
-       ^{11}\text{Li} + ^9\text{Be} &\rightarrow ^{9}\text{Li} + n + n + ^9\text{Be}\\
-       ^{11}\text{Li} + ^9\text{Be} &\rightarrow ^{10}\text{Li} + n + ^9\text{Be}
-     \end{align}
-   #+END_SRC
-
-   1) En utilisant les masses nucléaires données précédemment, montrer que
-      #+BEGIN_SRC latex
-        \begin{align*}
-          ^{10}\text{Li} \rightarrow ^9\text{Li} + n
-        \end{align*}
-      #+END_SRC
-      est une réaction spontanée. En déduire la vie moyenne du\nbsp^{10}Li.
-
-   2) Le\nbsp^{11}Li est-il lié par interaction forte ?
-
-   3) Expliquer pourquoi on observe la réaction (1) mais pas la réaction
-      (2). Que peut-on en conclure pour le\nbsp^{10}Li ?
-#+END_QUESTION
-2) [@2]
-   1) $^{10}\text{Li}\to^{9}\text{Li}+n$
-
-      La chaleur de réaction $Q$ est égale à
-      #+BEGIN_SRC latex
-        \begin{align*}
-          Q&=m_{^{10}\text{Li}}c^2-m_{^{9}\text{Li}}c^2-m_{n}c^2\\
-          &=9347.3-8406.9-939.6=\unit[800]{keV}
-        \end{align*}
-      #+END_SRC
-      justifiant une réaction spontanée. Le Lithium 10 se désintègre ainsi
-      presque instantanément en Lithium 9.
-   2) Si on considère la réaction de cassure du\nbsp^{11}Li en\nbsp^{10}Li +
-      neutron, la chaleur de réaction est
-      #+BEGIN_SRC latex
-        \begin{align*}
-          Q&=m_{^{11}\text{Li}}c^2-m_{^{10}\text{Li}}c^2-m_{n}c^2\\
-          &=10285.9-9347.3-939.6=\unit[-1]{MeV}
-        \end{align*}
-      #+END_SRC
-      Le noyau de\nbsp^{11}Li est donc stable et lié par intéraction forte. On
-      peut modéliser ce noyau comme un c\oe ur de\nbsp^{9}Li "entouré" de 2
-      neutrons. Ce système à trois corps est un noyau borroméen en référence aux
-      armoiries de la famille italienne Borromée. En effet, de la même manière
-      que casser un des anneaux libère les deux autres, rompre une
-      liaison\nbsp^{9}Li -- neutron, brise instantanément la
-      seconde :\nbsp^{11}Li\to\nbsp^{9}Li.
-
-      #+ATTR_LATEX: :align C{0.35\textwidth}C{0.5\textwidth}
-      | [[./figures/borromean_rings.pdf]]  | [[./figures/borromean_nucleus.pdf]] |
-
-   3) La seconde réaction n'est pas observable/mesurable du fait que\nbsp^{10}Li
-      devient instantanément un noyau\nbsp^{9}Li. Seule la première réaction est
-      observable et donc seul le rayon du\nbsp^{11}Li est mesurable.
-
-#+BEGIN_QUESTION
-3) [@3] Les rayons d'interaction ($R_\text{proj.}$) pour d'autres isotopes de
-   Lithium :\nbsp^{6}Li,\nbsp^{7}Li,\nbsp^{8}Li, sont respectivement 2.14, 2.25
-   et 2.38 fm. Porter sur un graphique $R=f(A)$ les rayons d'interaction de tous
-   les isotopes de Li entre $A=6$ et $A=11$. Comparer avec les prédictions
-   données par le modèle de la goutte liquide. Discuter ce résultat.
-#+END_QUESTION
-3) [@3] Comparaison $R_\text{int.}$ et modèle de la goutte liquide $R_\text{gl}$
-
-   #+TBLNAME: radius
-   |-----+--------------------+----------------------+--------|
-   | $A$ | $R_\text{gl}$ [fm] | $R_\text{int.}$ [fm] |    [%] |
-   |-----+--------------------+----------------------+--------|
-   |   6 |               2.27 |                 2.14 |    5.7 |
-   |   7 |               2.39 |                 2.25 |    5.9 |
-   |   8 |                2.5 |                 2.38 |    4.8 |
-   |   9 |                2.6 |                 3.04 |  -16.9 |
-   |  10 |               2.69 |                  $-$ |    $-$ |
-   |  11 |               2.78 |                   10 | -259.7 |
-   |-----+--------------------+----------------------+--------|
-   #+TBLFM: $2=round(1.25*pow($1,0.333),2)::$4=round((1-$3/$2)*100,1)
-
-   #+BEGIN_CENTER
-   #+ATTR_LATEX: :width 0.7\linewidth
-   [[./figures/interaction_radius.pdf]]
-   #+END_CENTER
-
-*** COMMENT A way to handle the table and generate a plot
-#+HEADERS: :var A6=radius[3,0]  :var gl6=radius[3,1]  :var int6=radius[3,2]
-#+HEADERS: :var A7=radius[4,0]  :var gl7=radius[4,1]  :var int7=radius[4,2]
-#+HEADERS: :var A8=radius[5,0]  :var gl8=radius[5,1]  :var int8=radius[5,2]
-#+HEADERS: :var A9=radius[6,0]  :var gl9=radius[6,1]  :var int9=radius[6,2]
-#+HEADERS: :var A10=radius[7,0] :var gl10=radius[7,1]
-#+HEADERS: :var A11=radius[8,0] :var gl11=radius[8,1] :var int11=radius[8,2]
-#+BEGIN_SRC latex
-  \centering
-  \begin{tikzpicture}
-    \begin{axis}[
-        axis x line=bottom,
-        axis y line=left,
-        x axis line style={-},
-        y axis line style={-},
-        ylabel={Radius [fm]},
-        enlargelimits=0.15,
-        symbolic x coords={$^6$Li,$^7$Li,$^8$Li,$^9$Li,$^{10}$Li,$^{11}$Li},
-        xtick=data,
-        %% width=0.5\textwidth,
-        legend style={at={(0.5,-0.15)},anchor=north,legend columns=-1,draw=none},
-      ]
-      \addplot+[only marks,color=blue] coordinates {
-        ($^A6$Li,gl6) ($^A7$Li,gl7) ($^A8$Li,gl8) ($^A9$Li,gl9) ($^{A10}$Li,gl10) ($^{A11}$Li,gl11)
-      };
-      \addplot+[only marks, color=red] coordinates {
-        ($^A6$Li,int6) ($^A7$Li,int7) ($^A8$Li,int8) ($^A9$Li,int9) ($^{A11}$Li,int11)
-      };
-      \legend{$R_\text{gl}$,$R_\text{int.}$}
-    \end{axis}
-  \end{tikzpicture}
-#+END_SRC
-** Footnotes
-
-[fn:1] l'étymologie du mot /barn/ est un peu loufoque : les physiciens américains l'ont adoptée lors
-des recherches sur la bombe atomique pendant la Seconde Guerre mondiale. Le nom de cette nouvelle
-unité serait issue d'une blague "/as big as a barn/" (aussi grande qu'une grange) car les sections
-efficaces de l'uranium 238 étaient très importantes dans le domaine épithermique (forêt de
-résonance) comparées aux sections efficaces typiques des réactions nucléaires. Initialement les
-physiciens américains utilisaient ce terme argot de barns dans le but de masquer le sujet de leurs
-recherches. Cependant après la Seconde Guerre mondiale, le barn est devenu une unité standard de la
-physique des particules.
-
-* TD9 : Masses et désintégrations nucléaires
+* COMMENT TD9 : Masses et désintégrations nucléaires
 ** Définitions
 #+BEGIN_QUESTION
 Définir les termes : masse nucléaire, masse atomique, excès de masse atomique,
@@ -4010,23 +3786,20 @@ sont des noyaux) en fonction respectivement des quatre premiers termes.
          B_N=\underbrace{a_VA - a_SA^{2/3}}_{\text{modèle de la goutte liquide}}-\underbrace{a_{C}\frac{Z^2}{A^{1/3}}}_{\text{Coulomb}}-\underbrace{a_{A}\frac{\left(N-Z\right)^2}{A}}_{\text{asymétrie}}+\underbrace{\delta(A,Z)}_{\text{appariement}}
        \end{align*}
      #+END_SRC
-     Cette formule découle de l'analogie entre un fluide et un noyau à savoir
-     que l'énergie de liaison d'une goutte liquide est d'autant plus grande que
-     son volume est important (terme $a_VA$ où \(R\propto A\)). Les nucléons en
-     surface contribuent néanmoins moins puisqu'ils ont moins de voisins. La
-     goutte cherche donc à minimiser sa surface d'où sa forme sphérique (terme
-     \(a_SA^{2/3}\)). Par ailleurs, il faut tenir compte de l'interaction
-     coulombienne : la répulsion entre protons du noyau entraîne une diminution
-     de l'énergie de liaison. De plus, l'énergie potentielle du noyau sera
-     d'autant plus grande que les niveaux de Fermi des neutrons et protons
-     seront proches (terme symétrique \(a_{A}\frac{\left(N-Z\right)^2}{A}\)). Ce
-     terme d'asymétrie traduit le fait que les nucléons étant des fermions,
-     avoir un excédent de proton ou de neutron a tendance à augmenter l'énergie
-     et donc diminuer la liaison du noyau en raison du remplissage des niveaux
-     de Fermi. Ainsi, un noyau cherche à égaliser le nombre de proton et de
-     neutrons tout du moins pour les noyaux légers. Enfin, l'appariement
-     $\delta(A,Z)$ joue un rôle important dans l'énergie de liaison : les noyaux
-     ayant un nombre pair de protons/neutrons seront plus liés.
+     Cette formule découle de l'analogie entre un fluide et un noyau à savoir que l'énergie de
+     liaison d'une goutte liquide est d'autant plus grande que son volume est important (terme
+     $a_VA$ où \(V\propto A\)). Toutefois, les nucléons en surface contribuent moins puisqu'ils ont
+     moins de voisins. La goutte cherche donc à minimiser sa surface d'où sa forme sphérique (terme
+     \(a_SA^{2/3}\)). Par ailleurs, il faut tenir compte de l'interaction coulombienne : la
+     répulsion entre protons du noyau entraîne une diminution de l'énergie de liaison. De plus,
+     l'énergie potentielle du noyau sera d'autant plus grande que les niveaux de Fermi des neutrons
+     et protons seront proches (terme symétrique \(a_{A}\tfrac{\left(N-Z\right)^2}{A}\)). Ce terme
+     d'asymétrie traduit le fait que les nucléons étant des fermions, avoir un excédent de proton ou
+     de neutron a tendance à augmenter l'énergie et donc diminuer la liaison du noyau en raison du
+     remplissage des niveaux de Fermi. Ainsi, un noyau cherche à égaliser le nombre de proton et de
+     neutrons tout du moins pour les noyaux légers. Enfin, l'appariement $\delta(A,Z)$ joue un rôle
+     important dans l'énergie de liaison : les noyaux ayant un nombre pair de protons/neutrons
+     seront plus liés.
      #+BEGIN_SRC latex
        \begin{align*}
          \delta(A,Z)=\left\{
@@ -4354,21 +4127,19 @@ l'irradiation ($t=0$), il n'y a aucun noyau radioactif dans l'échantillon.
 ** Formule de Bethe et Weizsäcker
 #+BEGIN_QUESTION
 1)
-   1) Expliquer les différents termes intervenant dans la formule semi-empirique
-      donnant la masse atomique :
+   1) Expliquer les différents termes intervenant dans la formule semi-empirique donnant la masse
+      atomique :
       #+BEGIN_SRC latex
         \begin{align*}
           M_\text{at}(Z,A)c^2 &= Z(m_pc^2 + m_ec^2)+(A-Z)m_nc^2-a_v A\\
           &+a_s A^{2/3}+a_c\frac{Z^2}{A^{1/3}}+a_A\frac{(A - 2Z)^2}{A}-\delta(Z,A)
         \end{align*}
       #+END_SRC
-      avec $\delta(Z,A) = +\frac{12\text{ MeV}}{\sqrt{A}}$ pour $Z$ et $N$
-      pairs, $-\frac{12\text{ MeV}}{\sqrt{A}}$ pour $Z$ et $N$ impairs, et 0
-      pour $A$ impair.
+      avec $\delta(Z,A) = +\frac{12\text{ MeV}}{\sqrt{A}}$ pour $Z$ et $N$ pairs, $-\frac{12\text{
+      MeV}}{\sqrt{A}}$ pour $Z$ et $N$ impairs, et 0 pour $A$ impair.
 
-   2) En déduire que l'excès de masse atomique $\Delta M_\text{at}c^2$ pour
-      des noyaux isobariques s'écrit comme un polynome du second degré en
-      $Z$. Combien y a-t-il de paraboles possibles ?
+   2) En déduire que l'excès de masse atomique $\Delta M_\text{at}c^2$ pour des noyaux isobariques
+      s'écrit comme un polynome du second degré en $Z$. Combien y a-t-il de paraboles possibles ?
 #+END_QUESTION
 1) [@1]
    1) À partir de la question [[Définitions]], la masse atomique est égale à
@@ -4379,19 +4150,18 @@ l'irradiation ($t=0$), il n'y a aucun noyau radioactif dans l'échantillon.
           &-a_VA+a_SA^{2/3}+a_C\frac{Z^2}{A^{1/3}}+a_A\frac{(A-2Z)^2}{A}-\delta(Z,A)
         \end{align*}
       #+END_SRC
-      L'origine des différents termes de l'énergie de liaison $B_N$ est expliquée à
-      la question [[Définitions]].
+      L'origine des différents termes de l'énergie de liaison $B_N$ est expliquée à la
+      question\nbsp{}[[Définitions]].
    2) /cf./ ci-dessous.
 
 #+BEGIN_QUESTION
-2) [@2] En utilisant la formule de Bethe et Weizsäcker (BW), prévoir quel est
-   l'élément le plus stable des familles des isobares de nombre de masse $A$ =
-   21 et 95. On donne les valeurs suivantes des coefficients de la formule de
-   BW : $a_v$ = 15.56 MeV, $a_c$ = 0.697 MeV, $a_s$ = 17.23 MeV et $a_A$ =
-   23.285 MeV.
+2) [@2] En utilisant la formule de Bethe et Weizsäcker (BW), prévoir quel est l'élément le plus
+   stable des familles des isobares de nombre de masse $A$ = 21 et 95. On donne les valeurs
+   suivantes des coefficients de la formule de BW : $a_v$ = 15.56 MeV, $a_c$ = 0.697 MeV, $a_s$ =
+   17.23 MeV et $a_A$ = 23.285 MeV.
 
-   Expérimentalement, les noyaux suivants sont \beta-stables :\nbsp^{21}_{10}Ne
-   et\nbsp^{95}_{42}Mo. Discuter ce résultat.
+   Expérimentalement, les noyaux suivants sont \beta-stables : \(^{21}_{10}\)Ne et
+   \(^{95}_{42}\)Mo. Discuter ce résultat.
 #+END_QUESTION
 2) [@2] Le nombre de nucléons ou nombre de masse $A$ est impair pour les
    isobares $A=21$ et $A=95$. Aussi, le terme d'appariement $\delta(Z,A)$ est
@@ -4421,8 +4191,8 @@ l'irradiation ($t=0$), il n'y a aucun noyau radioactif dans l'échantillon.
 
 ** Parabole de masse et désintégrations radioactives
 #+BEGIN_QUESTION
-On s'intéresse aux isobares de nombre de masse $A$ = 58 dont on donne ci-dessous
-les excès de masse atomique $\Delta M_\text{at}c^2$, en MeV :
+On s'intéresse aux isobares de nombre de masse $A$ = 58 dont on donne ci-dessous les excès de masse
+atomique $\Delta M_\text{at}c^2$, en MeV :
 #+BEGIN_SRC latex
   \begin{align*}
     \begin{array}{rrrrrrr}
@@ -4431,8 +4201,8 @@ les excès de masse atomique $\Delta M_\text{at}c^2$, en MeV :
     \end{array}
   \end{align*}
 #+END_SRC
-1) Rappeler les différents types de désintégrations isobariques et les
-   conditions énergétiques associées.
+1) Rappeler les différents types de désintégrations isobariques et les conditions énergétiques
+   associées.
 #+END_QUESTION
 1) Désintégrations isobariques (\beta^{-}, \beta^{+}, CE)
 
@@ -4492,8 +4262,8 @@ les excès de masse atomique $\Delta M_\text{at}c^2$, en MeV :
 #+BEGIN_QUESTION
 2) [@2] Estimer graphiquement l'énergie d'appariement $\delta(A)$ en MeV.
 #+END_QUESTION
-1) Le diagramme $M_\text{at.}c^2=f(Z)$ ou $\Delta M_\text{at.}c^2=f(Z)$
-   pour une famille d'isobares donnée est le suivant
+2) [@2] Le diagramme $M_\text{at.}c^2=f(Z)$ ou $\Delta M_\text{at.}c^2=f(Z)$ pour une famille
+   d'isobares donnée est le suivant
 
    #+BEGIN_CENTER
    #+NAME: mass_parabola
@@ -4531,13 +4301,12 @@ les excès de masse atomique $\Delta M_\text{at}c^2$, en MeV :
    positrons) émis dans ces désintégrations ? Préciser le (ou les) noyau(x)
    stable(s) vis à vis de ces désintégrations.
 #+END_QUESTION
-2) D'après la figure [[mass_parabola]], les désintégrations \beta^{-} sont
-   Cr\to Mn, Mn\to Fe et Co\to Ni. Les désintégrations \beta^{+} ou CE sont
-   Zn\to Cu, Cu\to Ni et Co\to Fe. Les deux noyaux stables de cette famille sont
-   donc le fer 58 et le nickel 58.
+3) [@3] D'après la figure [[mass_parabola]], les désintégrations \beta^{-} sont Cr\to Mn, Mn\to Fe et
+   Co\to Ni. Les désintégrations \beta^{+} ou CE sont Zn\to Cu, Cu\to Ni et Co\to Fe. Les deux
+   noyaux stables de cette famille sont donc le fer 58 et le nickel 58.
 
-   L'énergie cinétique maximum des électrons/positrons émis respectivement par
-   désintégration \beta^{-} et \beta^{+} sont les suivantes
+   L'énergie cinétique maximum des électrons/positrons émis respectivement par désintégration
+   \beta^{-} et \beta^{+} sont les suivantes
 
    - $^{58}_{24}\text{Cr}\to ^{58}_{25}\text{Mn}+e^-+\bar{\nu}_e$
      #+BEGIN_SRC latex
@@ -4586,7 +4355,7 @@ les excès de masse atomique $\Delta M_\text{at}c^2$, en MeV :
        \end{align*}
      #+END_SRC
 
-** COMMENT Étoiles à neutrons
+** Étoiles à neutrons
 #+BEGIN_QUESTION
 On peut montrer que l'énergie potentielle d'attraction gravitationnelle d'une masse sphérique $M$ de
 densité uniforme et de rayon $R$ est donnée par $E_G=-\frac{3 GM^2}{5R}$.
@@ -4663,6 +4432,202 @@ densité uniforme et de rayon $R$ est donnée par $E_G=-\frac{3 GM^2}{5R}$.
      \end{align*}
    #+END_SRC
 
+** COMMENT Section efficace et rayon d'interaction
+#+BEGIN_QUESTION
+On donne les masses nucléaires suivantes, en MeV :
+
+#+BEGIN_CENTER
+$m_nc^2$ = 939.6; $m_{^{9}\text{Li}}c^2$ = 8406.9
+
+$m_{^{10}\text{Li}}c^2$ = 9347.3; $m_{^{11}\text{Li}}c^2$ = 10285.9
+#+END_CENTER
+1) On cherche à estimer le rayon du noyau de\nbsp^{11}Li. Pour cela, on effectue
+   tout d'abord des mesures de section efficace totale d'interaction.
+
+   1) On bombarde une cible de\nbsp^{9}Be de 50 mg/cm^{2} d'épaisseur avec un
+      faisceau de\nbsp^{11}Li, dont le flux incident vaut 10^{4}
+      particules/s. En 10 minutes, on détecte dans tout l'espace 10^{5}
+      réactions. Calculer la section efficace de la réaction\nbsp^{11}Li
+      +\nbsp^{9}Be.
+
+   2) Il a été montré que le rayon d'interaction nucléaire pouvait être estimé
+      de façon très simple par la mesure de la section efficace totale dans les
+      collisions d'ions lourds de haute énergie. Dans ce modèle simple, le rayon
+      d'interaction est défini par :
+      #+BEGIN_SRC latex
+        \begin{align*}
+          \sigma_\text{tot} = \pi(R_\text{proj.}+ R_\text{cible})^2
+        \end{align*}
+      #+END_SRC
+      sachant que $R_\text{proj.}$ et $R_\text{cible}$ sont respectivement les
+      rayons d'interaction du projectile et de la cible.
+
+      En supposant que le rayon d'interaction du\nbsp^{9}Be peut être approximé
+      par $R$(^{9}Be)=$r_0A^{1/3}$, déduire de ce modèle le rayon d'interaction
+      du\nbsp^{11}Li et comparer le résultat à la valeur
+      $R$(^{11}Li)=$r_0A^{1/3}$ donnée par le modèle de la goutte liquide.
+
+   3) On refait la même expérience avec un faisceau de\nbsp^{9}Li de même
+      intensité et on mesure 20000 réactions en 10 minutes. Déduire le rayon
+      d'interaction du\nbsp^{9}Li.
+#+END_QUESTION
+1) \nbsp^{11}Li\to\nbsp^{9}Be
+   1) Le nombre de réactions $n$ par unité de temps s'écrit
+      #+BEGIN_SRC latex
+        \begin{align*}
+          n&=\phi\times\rho_e\times\frac{\mathcal{N}}{A_\text{cible}}\times\sigma
+        \end{align*}
+      #+END_SRC
+      d'où
+      #+BEGIN_SRC latex
+        \begin{align*}
+          \sigma&=\frac{N}{\phi}\times\frac{A_\text{cible}}{\mathcal{N}\rho_e}\\
+          &=\frac{10^5/600\times9}{10^4\times6\,10^{23}\times50\,10^{-3}}\\
+          \sigma(^{11}\text{Li}+^{9}\text{Be})&\simeq\unit[5\,10^{-24}]{cm}^2=\unit[5]{barn}
+        \end{align*}
+      #+END_SRC
+   2) Soit le rayon du\nbsp^{9}Be
+      #+BEGIN_SRC latex
+        \begin{align*}
+          R(^{9}\text{Be})=r_0\times A^{1/3}=\unit[1.25]{fm}\times9^{1/3}=\unit[2.6]{fm}
+        \end{align*}
+      #+END_SRC
+      La section efficace devient
+      #+BEGIN_SRC latex
+        \begin{align*}
+          \sigma(^{11}\text{Li}+^{9}\text{Be})&=\pi\left(R(^{11}\text{Li})+R(^{9}\text{Be})\right)^2=\unit[5]{barn}=\unit[500]{fm}^2\\
+          R(^{11}\text{Li})&=\sqrt{\frac{\sigma}{\pi}}-R(^{9}\text{Be})\\
+          &=\sqrt{\frac{\unit[500]{fm}^2}{\pi}}-\unit[2.6]{fm}\\
+          &=\unit[10]{fm}\gg1.25\times11^{1/3}=\unit[2.78]{fm}
+        \end{align*}
+      #+END_SRC
+   3) $\sigma(^{9}\text{Li}+^{9}\text{Be})=\sigma(^{11}\text{Li}+^{9}\text{Be})/5$
+      d'où
+      #+BEGIN_SRC latex
+        \begin{align*}
+          R(^{9}\text{Li})&=\sqrt{\frac{\unit[100]{fm}^2}{\pi}}-\unit[2.6]{fm}\\
+          &=\unit[3.04]{fm}\gtrsim\unit[2.6]{fm}
+        \end{align*}
+      #+END_SRC
+
+#+BEGIN_QUESTION
+2) [@2] On bombarde maintenant la cible de\nbsp^{9}Be avec le faisceau
+   de\nbsp^{11}Li précédent, pour réaliser des réactions de cassure
+   du\nbsp^{11}Li :
+   #+BEGIN_SRC latex
+     \begin{align}
+       ^{11}\text{Li} + ^9\text{Be} &\rightarrow ^{9}\text{Li} + n + n + ^9\text{Be}\\
+       ^{11}\text{Li} + ^9\text{Be} &\rightarrow ^{10}\text{Li} + n + ^9\text{Be}
+     \end{align}
+   #+END_SRC
+
+   1) En utilisant les masses nucléaires données précédemment, montrer que
+      #+BEGIN_SRC latex
+        \begin{align*}
+          ^{10}\text{Li} \rightarrow ^9\text{Li} + n
+        \end{align*}
+      #+END_SRC
+      est une réaction spontanée. En déduire la vie moyenne du\nbsp^{10}Li.
+
+   2) Le\nbsp^{11}Li est-il lié par interaction forte ?
+
+   3) Expliquer pourquoi on observe la réaction (1) mais pas la réaction
+      (2). Que peut-on en conclure pour le\nbsp^{10}Li ?
+#+END_QUESTION
+2) [@2]
+   1) $^{10}\text{Li}\to^{9}\text{Li}+n$
+
+      La chaleur de réaction $Q$ est égale à
+      #+BEGIN_SRC latex
+        \begin{align*}
+          Q&=m_{^{10}\text{Li}}c^2-m_{^{9}\text{Li}}c^2-m_{n}c^2\\
+          &=9347.3-8406.9-939.6=\unit[800]{keV}
+        \end{align*}
+      #+END_SRC
+      justifiant une réaction spontanée. Le Lithium 10 se désintègre ainsi
+      presque instantanément en Lithium 9.
+   2) Si on considère la réaction de cassure du\nbsp^{11}Li en\nbsp^{10}Li +
+      neutron, la chaleur de réaction est
+      #+BEGIN_SRC latex
+        \begin{align*}
+          Q&=m_{^{11}\text{Li}}c^2-m_{^{10}\text{Li}}c^2-m_{n}c^2\\
+          &=10285.9-9347.3-939.6=\unit[-1]{MeV}
+        \end{align*}
+      #+END_SRC
+      Le noyau de\nbsp^{11}Li est donc stable et lié par intéraction forte. On
+      peut modéliser ce noyau comme un c\oe ur de\nbsp^{9}Li "entouré" de 2
+      neutrons. Ce système à trois corps est un noyau borroméen en référence aux
+      armoiries de la famille italienne Borromée. En effet, de la même manière
+      que casser un des anneaux libère les deux autres, rompre une
+      liaison\nbsp^{9}Li -- neutron, brise instantanément la
+      seconde :\nbsp^{11}Li\to\nbsp^{9}Li.
+
+      #+ATTR_LATEX: :align C{0.35\textwidth}C{0.5\textwidth}
+      | [[./figures/borromean_rings.pdf]]  | [[./figures/borromean_nucleus.pdf]] |
+
+   3) La seconde réaction n'est pas observable/mesurable du fait que\nbsp^{10}Li
+      devient instantanément un noyau\nbsp^{9}Li. Seule la première réaction est
+      observable et donc seul le rayon du\nbsp^{11}Li est mesurable.
+
+#+BEGIN_QUESTION
+3) [@3] Les rayons d'interaction ($R_\text{proj.}$) pour d'autres isotopes de
+   Lithium :\nbsp^{6}Li,\nbsp^{7}Li,\nbsp^{8}Li, sont respectivement 2.14, 2.25
+   et 2.38 fm. Porter sur un graphique $R=f(A)$ les rayons d'interaction de tous
+   les isotopes de Li entre $A=6$ et $A=11$. Comparer avec les prédictions
+   données par le modèle de la goutte liquide. Discuter ce résultat.
+#+END_QUESTION
+3) [@3] Comparaison $R_\text{int.}$ et modèle de la goutte liquide $R_\text{gl}$
+
+   #+TBLNAME: radius
+   |-----+--------------------+----------------------+--------|
+   | $A$ | $R_\text{gl}$ [fm] | $R_\text{int.}$ [fm] |    [%] |
+   |-----+--------------------+----------------------+--------|
+   |   6 |               2.27 |                 2.14 |    5.7 |
+   |   7 |               2.39 |                 2.25 |    5.9 |
+   |   8 |                2.5 |                 2.38 |    4.8 |
+   |   9 |                2.6 |                 3.04 |  -16.9 |
+   |  10 |               2.69 |                  $-$ |    $-$ |
+   |  11 |               2.78 |                   10 | -259.7 |
+   |-----+--------------------+----------------------+--------|
+   #+TBLFM: $2=round(1.25*pow($1,0.333),2)::$4=round((1-$3/$2)*100,1)
+
+   #+BEGIN_CENTER
+   #+ATTR_LATEX: :width 0.7\linewidth
+   [[./figures/interaction_radius.pdf]]
+   #+END_CENTER
+
+*** COMMENT A way to handle the table and generate a plot
+#+HEADERS: :var A6=radius[3,0]  :var gl6=radius[3,1]  :var int6=radius[3,2]
+#+HEADERS: :var A7=radius[4,0]  :var gl7=radius[4,1]  :var int7=radius[4,2]
+#+HEADERS: :var A8=radius[5,0]  :var gl8=radius[5,1]  :var int8=radius[5,2]
+#+HEADERS: :var A9=radius[6,0]  :var gl9=radius[6,1]  :var int9=radius[6,2]
+#+HEADERS: :var A10=radius[7,0] :var gl10=radius[7,1]
+#+HEADERS: :var A11=radius[8,0] :var gl11=radius[8,1] :var int11=radius[8,2]
+#+BEGIN_SRC latex
+  \centering
+  \begin{tikzpicture}
+    \begin{axis}[
+        axis x line=bottom,
+        axis y line=left,
+        x axis line style={-},
+        y axis line style={-},
+        ylabel={Radius [fm]},
+        enlargelimits=0.15,
+        symbolic x coords={$^6$Li,$^7$Li,$^8$Li,$^9$Li,$^{10}$Li,$^{11}$Li},
+        xtick=data,
+        %% width=0.5\textwidth,
+        legend style={at={(0.5,-0.15)},anchor=north,legend columns=-1,draw=none},
+      ]
+      \addplot+[only marks,color=blue] coordinates {
+        ($^A6$Li,gl6) ($^A7$Li,gl7) ($^A8$Li,gl8) ($^A9$Li,gl9) ($^{A10}$Li,gl10) ($^{A11}$Li,gl11)
+      };
+      \addplot+[only marks, color=red] coordinates {
+        ($^A6$Li,int6) ($^A7$Li,int7) ($^A8$Li,int8) ($^A9$Li,int9) ($^{A11}$Li,int11)
+      };
+      \legend{$R_\text{gl}$,$R_\text{int.}$}
+    \end{axis}
+  \end{tikzpicture}
+#+END_SRC
 ** Footnotes
 
 [fn:9] cette dose est équivalente à celle d'un scanner thoraco-abdominal. En
