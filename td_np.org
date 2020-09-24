@@ -272,6 +272,7 @@ L'énergie cinétique minimum du faisceau incident est ainsi
      sens inverse, afin de réaliser des collisions entre particules avec une
      énergie utilisable très élevée. Ce sont des collisionneurs.
 *** Exercice
+
 #+BEGIN_QUESTION
 Un proton de masse au repos $m$, de vitesse $\vv{v}$, se déplaçant dans un champ d'induction
 $\vv{B}$ normal à $\vv{v}$, parcourt une trajectoire circulaire de rayon $R$ dans un cyclotron.
@@ -281,14 +282,20 @@ $\vv{B}$ normal à $\vv{v}$, parcourt une trajectoire circulaire de rayon $R$ da
 Proton de masse $m = \unit[938.27]{MeV/c}^{2}$ se déplaçant à la vitesse $\vv{v}$ dans un champ
 d'induction $\vv{B}$ normal à $\vv{v}$.
 
-1) PDF: $\Upsigma\vv{F} = m\vv{a} = \frac{d\vv{p}}{dt}$
+#+BEGIN_CENTER
+#+ATTR_LATEX: :width 0.5\linewidth
+[[file:figures/cyclotron1.pdf]]
+#+END_CENTER
 
-   Régime relativiste $m = \gamma{}m \rightarrow \vv{p} = \gamma{}m_{0}\vv{v}$ et donc
-   $\text{d}\vv{p}/\text{d}t = \gamma{}m\text{d}\vv{v}/\text{d}t$. Or $\text{d}\vv{v}/\text{d}t
-   = R(\text{d}\theta/\text{d}t)^{2}\vv{u}_{r} = v^{2}/R\vv{u}_{r}$. Soit
+1) PFD: $\Upsigma\vv{F} = m\vv{a} = \frac{d\vv{p}}{dt}$
+
+   Régime relativiste $m = \gamma{}m \rightarrow \vv{p} = \gamma{}m\vv{v}$ et donc
+   $\text{d}\vv{p}/\text{d}t = \gamma{}m\text{d}\vv{v}/\text{d}t$. Or
+   $\vv{v}=R\dot\theta\vv{u}_\theta$ ($\dot\theta < 0$) soit $\text{d}\vv{v}/\text{d}t =
+   -R(\text{d}\theta/\text{d}t)^{2}\vv{u}_{r} = -v^{2}/R\vv{u}_{r}$. 
    #+BEGIN_SRC latex
      \begin{align*}
-       \Upsigma\vv{F} &= q\vv{v}\times\vv{B} = qvB\vv{u}_r\\
+       \Upsigma\vv{F} &= q\vv{v}\times\vv{B} = -qvB\vv{u}_r\\
        qvB &= \frac{\gamma{}mv^{2}}{R}\\
        R &= \frac{\gamma{}mv}{qB} = \frac{p}{qB}\\
      \end{align*}
@@ -300,10 +307,11 @@ d'induction $\vv{B}$ normal à $\vv{v}$.
 2) [@2] Montrer que le temps $t_0$ mis par le proton pour parcourir une trajectoire circulaire dans
    le cyclotron est indépendant de $v$ pour de petites valeurs de $v$ (cas non relativiste).
 #+END_QUESTION
+
 2) [@2] Calcul de $t_{0}$
    #+BEGIN_SRC latex
      \begin{align*}
-       t_{0} &= \frac{2\pi R}{v} = \frac{2\pi}{qB}\cdot\gamma{}m
+       t &= \frac{2\pi R}{v} = \frac{2\pi}{qB}\cdot\gamma{}m
      \end{align*}
    #+END_SRC
 
@@ -318,6 +326,7 @@ d'induction $\vv{B}$ normal à $\vv{v}$.
 3) [@3] Calculer dans ce cas l'impulsion et l'énergie cinétique (en MeV), ainsi que le temps de
    parcours $t_0$ d'une trajectoire circulaire pour $B$ = 1.5 Tesla et $R$ = 0.5 m.
 #+END_QUESTION
+
 3) [@3] $B = 1.5$ T et $R = 0.5$ m.
 
    #+BEGIN_SRC latex
@@ -347,7 +356,9 @@ d'induction $\vv{B}$ normal à $\vv{v}$.
    champ d'induction $B$ diffère-t-il de plus de 5% du temps $t_0$ calculé précédemment ? En déduire
    les limites d'un cyclotron.
 #+END_QUESTION
+
 4) [@4] $t_{0} = \frac{2\pi\,m}{qB}$ et $t = \gamma\frac{2\pi\,m}{qB}=\gamma t_0$
+
 
    #+BEGIN_SRC latex
      \begin{align*}
@@ -366,6 +377,7 @@ d'induction $\vv{B}$ normal à $\vv{v}$.
    - synchrotron :: on fait varier le champ magnétique $B$ pour maintenir la particule sur la même
                     trajectoire /i.e./ le même rayon $R$
 
+
 #+BEGIN_QUESTION
 5) [@5] Dans un synchrotron, le rayon de courbure de la trajectoire des protons est maintenu
    constant au cours de l'accélération, tandis que l'induction $\vv{B}$, toujours normale à la
@@ -373,6 +385,8 @@ d'induction $\vv{B}$ normal à $\vv{v}$.
    protons ont une énergie cinétique $T$ = 7 TeV pour $B$ = 5.4 Tesla, calculer le rayon de courbure
    de la trajectoire.
 #+END_QUESTION
+
+
 5) [@5] $T$ = 7 TeV et $B$ = 5.4 T avec $R = \frac{\gamma mv}{qB} = \frac{pc}{qBc}$. Or
    #+BEGIN_SRC latex
      \begin{align*}
@@ -401,6 +415,7 @@ d'induction $\vv{B}$ normal à $\vv{v}$.
    où $N^+$ et $N^-$ sont des antiparticules (même masse mais charges électriques opposées). Quelle
    est la masse maximale des particules $N$ qui pourraient être ainsi créées dans la collision ?
 #+END_QUESTION
+
 6) [@6] $T_{S} = |Q|/2$ avec $Q = \Upsigma\,m_\text{initiale}c^{2} -
    \Upsigma\,m_\text{finale}c^{2}$ et
 
@@ -425,6 +440,7 @@ d'induction $\vv{B}$ normal à $\vv{v}$.
    seuil $T_S$ pour que la réaction ait lieu, en supposant que les particules $N$ ont la masse
    déterminée à la question précédente.
 #+END_QUESTION
+
 7) [@7] Réaction sur cible fixe
    #+BEGIN_SRC latex
      \begin{align*}
@@ -439,6 +455,7 @@ d'induction $\vv{B}$ normal à $\vv{v}$.
 8) [@8] Quel serait alors, dans un champ magnétique $B$ = 5.4 Tesla, le rayon de courbure de la
    trajectoire d'un proton qui aurait l'énergie cinétique $T_S$ ?
 #+END_QUESTION
+
 8) [@8] Rayon de courbure
    #+BEGIN_SRC latex
      \begin{align*}
@@ -446,6 +463,7 @@ d'induction $\vv{B}$ normal à $\vv{v}$.
        \frac{100\,\text{PeV}}{5.4\cdot3\,10^{8}} = \unit[60\, 000]{km}
      \end{align*}
    #+END_SRC
+
 
 ** Accélérateur, section efficace et luminosité
 *** Introduction
@@ -506,6 +524,9 @@ constitutives de la cible.
    l'angle de diffusion \theta = 30° et à 30 MeV, la section efficace différentielle est de 0.1
    barn/stéradian.
 #+END_QUESTION
+
+
+
 1) \nbsp^{2}_{1}H+\nbsp^{63}_{29}Cu\to\nbsp^{2}_{1}H+\nbsp^{63}_{29}Cu
    #+BEGIN_SRC latex
      \begin{align*}
@@ -514,6 +535,7 @@ constitutives de la cible.
    #+END_SRC
    où $\phi=\phi'\pi R^2$ et $\phi'=6\,10^{10}\,\text{s}^{-1}\text{.cm}^{-2}$. Le
    nombre de deutons détectés est
+
    #+BEGIN_SRC latex
      \begin{align*}
        \left.dn\right|_{30^\circ}&=\phi\frac{\mathcal{N}\rho_e}{A_\text{cible}}\left.\frac{\d\sigma}{\d\Omega}\right|_{\theta=30^\circ}\frac{S_\text{détecteur}}{d^2_\text{cible-détecteur}}\\
@@ -521,6 +543,9 @@ constitutives de la cible.
        &=\unit[287]{deutons/s}
      \end{align*}
    #+END_SRC
+
+
+#+BEGIN_COMMENT
 
 #+BEGIN_QUESTION
 2) [@2] On veut étudier la réaction
@@ -696,6 +721,7 @@ constitutives de la cible.
          à 2008 a fourni une luminosité intégrée de 5000 pb^{-1}. En un peu moins d'une semaine de
          prise de données, le LHC a atteint la même luminosité intégrée que le Tevatron.
          #+END_REMARK
+#+END_COMMENT
 
 ** COMMENT Section efficace et neutrons thermiques
 #+BEGIN_QUESTION

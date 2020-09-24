@@ -8,7 +8,7 @@
 }
 \begin{tikzpicture}
   \newcounter{step}
-  \setcounter{step}{0}
+  \setcounter{step}{4}
 
   \sf
   \definecolor{red}{RGB}{221,42,43}
@@ -17,10 +17,9 @@
   \definecolor{orange}{RGB}{192,128,64}
   \definecolor{gray}{RGB}{107,108,110}
 
-  %% some definitions
+  \def\R{2.5} % sphere radius
 
   \ifnum \value{step}<10{%
-    \def\R{2.5} % sphere radius
 
     \begin{scope}[yshift=0.5cm]
       \draw[black, fill=gray!20] (0.8*\R,0) arc(0:180:0.8*\R);
