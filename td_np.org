@@ -5,179 +5,7 @@
 #+OPTIONS: ^:{} toc:2 author:nil email:nil split:html
 #+LATEX_CLASS: teaching-class
 
-* TD1 : Cinématique
-** Cinématique
-
-#+BEGIN_QUESTION
-On veut étudier la désintégration en deux photons d'une particule $a$, d'énergie de masse au repos
-$mc^2$, animée d'une vitesse $\beta=v/c$ par rapport au référentiel du laboratoire $\mathcal{R}$,
-comme indiqué sur la figure ci-dessous.
-#+BEGIN_CENTER
-#+ATTR_LATEX: :width 0.7\linewidth
-[[file:figures/2gamma.pdf]]
-#+END_CENTER
-1) Exprimer les énergies totales $E_1$ et $E_2$ des deux photons dans le référentiel $\mathcal{R}$,
-   en fonction de l'angle d'émission commun $\theta^*$ des photons dans le référentiel du centre de
-   masse $\mathcal{R}'$. En déduire les bornes $E_\text{min}$ et $E_\text{max}$ de ces énergies.
-#+END_QUESTION
-
-1) dans $\mathcal{R}'$ /i.e./ le référentiel du centre de masse où $a$ est au repos et
-   $\Upsigma\vv{p}^{*} = \vv{0}$ :
-
-   *\rightarrow Conservation de l'énergie totale :*
-   #+BEGIN_SRC latex
-     \begin{align*}
-       E_{a}^* &= E_1^* + E_2^*\\
-       mc^2 &= E_1^* + E_2^*
-     \end{align*}
-   #+END_SRC
-
-   *\rightarrow Conservation de l'impulsion :*
-   #+BEGIN_SRC latex
-     \begin{align*}
-       \vv{p_a}^* &= \vv{p_1}^* + \vv{p_2}^* \\
-       \vv{0} &= \vv{p_1}^* + \vv{p_2}^* \\
-       \|\vv{p_1}^*\| &= \|\vv{p_2}^*\|
-     \end{align*}
-   #+END_SRC
-
-   or $E_{1}^{*} = p_{1}^{*}c$ et $E_{2}^{*} = p_{2}^{*}c$ d'où $E_{1}^{*} =
-   E_{2}^{*} = \frac{mc^{2}}{2}$.
-
-   Pour déterminer les valeurs d'énergie et d'impulsion dans le référentiel du laboratoire
-   $\mathcal{R}$, on applique la transformation de Lorentz le long de l'axe $z$ au quadrivecteur
-   énergie-impulsion
-   #+BEGIN_SRC latex
-     \begin{equation*}
-       \begin{bmatrix}
-         E\\p_xc\\p_yc\\p_zc
-       \end{bmatrix}
-       =
-       \begin{bmatrix}
-         \gamma&0&0&\beta\gamma\\
-         0&1&0&0\\
-         0&0&1&0\\
-         \beta\gamma&0&0&\gamma
-       \end{bmatrix}
-       \cdot
-       \begin{bmatrix}
-         E^*\\p_x^*c\\p_y^*c\\p_z^*c
-       \end{bmatrix}
-     \end{equation*}
-   #+END_SRC
-
-   #+BEGIN_SRC latex
-     \begin{align*}
-       E_1 &= \gamma\,E_1^* + \beta\gamma\,p_{1z}^*c = \gamma\,(mc^2/2 + \beta c\,p_{1z}^*)\\
-       E_2 &= \gamma\,E_2^* + \beta\gamma\,p_{2z}^*c = \gamma\,(mc^2/2 + \beta c\,p_{2z}^*)
-     \end{align*}
-   #+END_SRC
-   et
-   #+BEGIN_SRC latex
-     \begin{align*}
-       p_{1z}^* &= p_{1}^*\,\cos\theta^* = +\frac{mc}{2}\,\cos\theta^*\\
-       p_{2z}^* &= -p_{2}^*\,\cos\theta^* = -\frac{mc}{2}\,\cos\theta^*
-     \end{align*}
-   #+END_SRC
-   soit
-   #+BEGIN_SRC latex
-     \begin{align*}
-       E_1 &= \frac{\gamma\,mc^2}{2}(1 + \beta\cos\theta^*) \\
-       E_2 &= \frac{\gamma\,mc^2}{2}(1 - \beta\cos\theta^*)
-     \end{align*}
-   #+END_SRC
-
-   L'énergie minimum $E_\text{min}$ et maximum $E_\text{max}$ sont les mêmes pour $E_{1}$ et $E_{2}$
-   avec $\cos\theta^{*}\in[-1;1]$ /i.e./
-   #+BEGIN_SRC latex
-     \begin{align*}
-       E_\text{min} &= \frac{\gamma mc^2}{2}(1 - \beta) = \frac{mc^2}{2}\sqrt{\frac{1-\beta}{1+\beta}}\\
-       E_\text{max} &= \frac{\gamma mc^2}{2}(1 + \beta) = \frac{mc^2}{2}\sqrt{\frac{1+\beta}{1-\beta}}
-     \end{align*}
-   #+END_SRC
-   où $\gamma=1/\sqrt{1-\beta^{2}}$.
-
-
-   #+BEGIN_CENTER
-   #+ATTR_LATEX: :width 0.7\linewidth
-   [[file:figures/minimal_energy_kinematics.pdf]]
-   #+END_CENTER
-
-#+BEGIN_QUESTION
-2) [@2] On s'intéresse à l'angle d'ouverture de la paire de photons, \omega, dans le référentiel du
-   laboratoire $\mathcal{R}$ (voir figure). Déterminer l'expression de $\cos\omega$ en fonction de
-   $\cos\theta^*$.
-#+END_QUESTION
-
-
-2) [@2] Angle d'ouverture \omega en fonction de \theta^{*}
-
-  Invariant relativiste $I = (\Upsigma_{i}E_{i})^{2} - (\Upsigma_{i}\vv{p_{i}}^{*})^{2}\,c^{2}$
-   constant quelque soit le référentiel \rightarrow $I_\text{cdm} = I_\text{lab.}$
-
-  #+BEGIN_SRC latex
-    \begin{align*}
-      (E_1^* + E_2^*)^2 - \vv{0} &= (E_1 + E_2)^2 - (\vv{p_1}c + \vv{p_2}c)^2 \\
-      (mc^2)^2 &= E_1^2 + E_2^2 + 2E_1E_2 - (p_1c)^2 - (p_2c)^2 - 2p_1p_2c^2\,\cos\omega
-    \end{align*}
-  #+END_SRC
-  or $E_{1} = p_{1}c$ et $E_{2} = p_{2}c$ d'où
-  #+BEGIN_SRC latex
-    \begin{align*}
-      \frac{(mc^2)^2}{2} &= E_1E_2 - p_1p_2c^2\,\cos\omega\\
-      \frac{(mc^2)^2}{2} &= E_1E_2\cdot(1 - \cos\omega)
-    \end{align*}
-  #+END_SRC
-
-
-  En remplaçant $E_{1,2}$ par leurs expressions déduites de la question 1), on a $E_{1}E_{2} =
-   \left(\frac{\gamma mc^2}{2}\right)^2\cdot\left(1 - \beta^2\cos^2\theta^*\right)$, soit finalement
-  #+BEGIN_SRC latex
-    \begin{align*}
-      1 - \cos\omega = \frac{2}{\gamma^2\,(1 - \beta^2\cos^2\theta^*)}
-    \end{align*}
-  #+END_SRC
-
-  #+BEGIN_CENTER
-  #+NAME: fig::omega_angle
-  #+CAPTION: *Variation de l'angle d'émission \omega entre les deux photons émis*
-  #+CAPTION: *en fonction de la vitesse \beta de la particule désintégrée.*
-  #+ATTR_LATEX: :width 0.7\linewidth
-  [[file:figures/two_photons_kinematics.pdf]]
-  #+END_CENTER
-
-  La figure [[fig::omega_angle]] indique que plus la particule aura une vitesse grande et voisine de
-   $c$, plus l'émission des deux photons se fera vers l'avant $\omega\to0$.
-
-** Énergie seuil
-
-#+BEGIN_QUESTION
-Soit une réaction entre deux particules $a$ et $b$, de masses respectives $m_ac^2$ et $m_bc^2$ :
-#+BEGIN_SRC latex
-\begin{align*}
-a + b \rightarrow c + d + e + f
-\end{align*}
-#+END_SRC
-Les particules produites lors de cette réaction $c$, $d$, $e$ et $f$ ont pour masses respectives
-$m_cc^2$, $m_dc^2$, $m_ec^2$ et $m_fc^2$.
-
-1) [@1] On suppose que la réaction a lieu dans le référentiel du centre de masse des particules $a$
-   et $b$ et on se place dans le cas particulier où $m_ac^2=m_bc^2$. Donner l'expression de
-   l'énergie cinétique minimum, encore appelée énergie seuil dans le référentiel du centre de masse,
-   que doit posséder chacune des deux particules $a$ et $b$ pour que la réaction puisse avoir lieu ?
-#+END_QUESTION
-
-Par définition, l'énergie seuil est l'énergie *juste nécessaire* à la création des particules en voie
-de sortie sans que ces dernières n'aient d'impulsion /i.e./ d'énergie cinétique.
-
-1) Dans le référentiel du centre de masse, on applique la conservation de l'énergie totale sachant
-   que les particules produites sont au repos /i.e./ $\vv{p_c}^* = \vv{p_d}^* = \vv{p_e}^* =
-   \vv{p_f}^* = \vv{0}$. Par ailleurs, $\vv{p_a}^* = -\vv{p_b}^*$ donc $T_{a} = T_{b} = T_{S}$ et
-   étant donné que $m_{a} = m_{b}$, l'énergie totale de la particule $a$ est égale à celle de la
-   particule $b$. En appliquant le principe de conservation de l'énergie totale, on obtient
-   #+BEGIN_SRC latex
-     \begin{align*}
-       E_a^* + E_b^* &= m_cc^2 + m_dc^2 + m_ec^2 + m_fc^2 = \Upsigma m_\text{finale}c^2\\
+* COMMENT TD1 : Cinématiquegma m_\text{finale}c^2\\
        2T_S + 2mc^2 &= \Upsigma m_\text{finale}c^2
      \end{align*}
    #+END_SRC
@@ -248,29 +76,27 @@ L'énergie cinétique minimum du faisceau incident est ainsi
 
 * TD2 : Accélérateurs & section efficace
 ** Accélérateurs
-*** COMMENT Introduction
-- cyclotron :: Le cyclotron est un type d’accélérateur de particules circulaire
-     inventé par Ernest Orlando Lawrence et Milton S. Livingston de l'université
-     de Californie à Berkeley au début des années 1930. Dans un cyclotron, les
-     particules placées dans un champ magnétique suivent une trajectoire en
-     forme de spirale et sont accélérées par un champ électrique alternatif à
-     des énergies de quelques MeV à une trentaine de MeV.
-- synchrocyclotron :: Le cyclotron perd de son efficacité quand on cherche à
-     accélérer des protons au-delà de 10 à 20 MeV, en raison de la variation
-     relativiste de la masse qui perturbe le fonctionnement quand elle atteint
-     une grandeur de 1 ou 2 %. Un synchrocyclotron est un cyclotron dont la
-     fréquence du champ électrique est changée (progressivement diminuée) pour
-     compenser le gain de masse des particules accélérées pendant que leur
-     vitesse commence à approcher la vitesse de la lumière. Le synchrocyclotron
-     permet d'atteindre des énergies de l'ordre de centaines de MeV. Le premier
-     synchrocyclotron a été construit à l’Université de Californie (Berkeley)
-     en 1946.
-- synchrotron :: La caractéristique du synchrotron est que l'intensité du champ
-     magnétique de l'anneau est adaptée de façon synchrone à l'énergie du
-     faisceau de particules, afin de les maintenir sur une trajectoire fixe. Il
-     peut en outre y avoir un second anneau, avec des particules tournant en
-     sens inverse, afin de réaliser des collisions entre particules avec une
-     énergie utilisable très élevée. Ce sont des collisionneurs.
+*** Introduction
+- cyclotron :: Le cyclotron est un type d’accélérateur de particules circulaire inventé par Ernest
+               Orlando Lawrence et Milton S. Livingston de l'université de Californie à Berkeley au
+               début des années 1930. Dans un cyclotron, les particules placées dans un champ
+               magnétique suivent une trajectoire en forme de spirale et sont accélérées par un
+               champ électrique alternatif à des énergies de quelques MeV à une trentaine de MeV.
+- synchrocyclotron :: Le cyclotron perd de son efficacité quand on cherche à accélérer des protons
+     au-delà de 10 à 20 MeV, en raison de la variation relativiste de la masse qui perturbe le
+     fonctionnement quand elle atteint une grandeur de 1 ou 2 %. Un synchrocyclotron est un
+     cyclotron dont la fréquence du champ électrique est changée (progressivement diminuée) pour
+     compenser le gain de masse des particules accélérées pendant que leur vitesse commence à
+     approcher la vitesse de la lumière. Le synchrocyclotron permet d'atteindre des énergies de
+     l'ordre de centaines de MeV. Le premier synchrocyclotron a été construit à l’Université de
+     Californie (Berkeley) en 1946.
+- synchrotron :: La caractéristique du synchrotron est que l'intensité du champ magnétique de
+                 l'anneau est adaptée de façon synchrone à l'énergie du faisceau de particules, afin
+                 de les maintenir sur une trajectoire fixe. Il peut en outre y avoir un second
+                 anneau, avec des particules tournant en sens inverse, afin de réaliser des
+                 collisions entre particules avec une énergie utilisable très élevée. Ce sont des
+                 collisionneurs.
+
 *** Exercice
 
 #+BEGIN_QUESTION
@@ -289,10 +115,9 @@ d'induction $\vv{B}$ normal à $\vv{v}$.
 
 1) PFD: $\Upsigma\vv{F} = m\vv{a} = \frac{d\vv{p}}{dt}$
 
-   Régime relativiste $m = \gamma{}m \rightarrow \vv{p} = \gamma{}m\vv{v}$ et donc
-   $\text{d}\vv{p}/\text{d}t = \gamma{}m\text{d}\vv{v}/\text{d}t$. Or
-   $\vv{v}=R\dot\theta\vv{u}_\theta$ ($\dot\theta < 0$) soit $\text{d}\vv{v}/\text{d}t =
-   -R(\text{d}\theta/\text{d}t)^{2}\vv{u}_{r} = -v^{2}/R\vv{u}_{r}$. 
+   Régime relativiste $\vv{p} = \gamma{}m\vv{v}$ et donc $\text{d}\vv{p}/\text{d}t =
+   \gamma{}m\text{d}\vv{v}/\text{d}t$. Or $\vv{v}=R\dot\theta\vv{u}_\theta$ ($\dot\theta < 0$) soit
+   $\text{d}\vv{v}/\text{d}t = -R(\text{d}\theta/\text{d}t)^{2}\vv{u}_{r} = -v^{2}/R\vv{u}_{r}$.
    #+BEGIN_SRC latex
      \begin{align*}
        \Upsigma\vv{F} &= q\vv{v}\times\vv{B} = -qvB\vv{u}_r\\
@@ -464,7 +289,6 @@ d'induction $\vv{B}$ normal à $\vv{v}$.
      \end{align*}
    #+END_SRC
 
-
 ** Accélérateur, section efficace et luminosité
 *** Introduction
 #+ATTR_LATEX: :float wrap :placement {l}{0.5\textwidth} :width 0.4\textwidth
@@ -476,11 +300,11 @@ Un détecteur couvrant un angle solide $\d\Omega$ et situé à un angle $\theta$
 faisceau détectera ainsi $\d n$ particules par unité de temps
 #+BEGIN_SRC latex
   \begin{align*}
-    \d n=\underbrace{\text{flux incident}}_{\substack{\text{nbr. particules incidentes}\\\text{/unité de temps}}}\times\underbrace{\text{ nbr. de noyaux cible}}_{\substack{\text{nbr. centre diffuseurs}\\\text{/unité de volume}}}\times\text{ épaisseur cible}\times\frac{\d\sigma}{\d\Omega}\d\Omega
+    \d n=\underbrace{\text{flux incident}}_{\substack{\text{nbr. particules incidentes}\\\text{/unité de temps}}}\times\underbrace{\text{ nbr. de noyaux cible}}_{\substack{\text{nbr. centre diffuseurs}\\\text{/unité de volume}}}\times\text{ épaisseur cible}\times\frac{\d\sigma}{\d\Omega}\d\Omega_\text{détection}
   \end{align*}
 #+END_SRC
-où $\d\Omega$ = surface de détection/(distance cible-détecteur)^{2} = $\sin\theta \d\theta\d\phi$
-avec $\theta\in[0,\pi]$ et $\phi\in[0,2\pi]$. Le terme
+où $\d\Omega_\text{détection}$ = surface de détection/(distance cible-détecteur)^{2} = $\sin\theta
+\d\theta\d\phi$ avec $\theta\in[0,\pi]$ et $\phi\in[0,2\pi]$. Le terme
 $\left.\frac{\d\sigma}{\d\Omega}\right|_\theta$ est *la section efficace différentielle* à l'angle
 $\theta$ et s'exprime en barn par stéradian où 1 barn[fn:1] = 10^{-24} cm^{2} = 10^{-28} m^{2}=100
 fm^{2}. De la section efficace différentielle, on déduit la section efficace totale $\sigma$ en
@@ -525,8 +349,6 @@ constitutives de la cible.
    barn/stéradian.
 #+END_QUESTION
 
-
-
 1) \nbsp^{2}_{1}H+\nbsp^{63}_{29}Cu\to\nbsp^{2}_{1}H+\nbsp^{63}_{29}Cu
    #+BEGIN_SRC latex
      \begin{align*}
@@ -544,9 +366,6 @@ constitutives de la cible.
      \end{align*}
    #+END_SRC
 
-
-#+BEGIN_COMMENT
-
 #+BEGIN_QUESTION
 2) [@2] On veut étudier la réaction
    #+BEGIN_SRC latex
@@ -554,16 +373,15 @@ constitutives de la cible.
        ^9_4\text{Be} + ^3_1\text{H} \rightarrow ^3_2\text{He} + ^9_3\text{Li}
      \end{align*}
    #+END_SRC
-   Pour cela, on bombarde une cible de\nbsp^{9}Be de 100 \mu{}g/cm^{2} avec un
-   faisceau de tritium (^{3}_{1}H) de 25 MeV.
-   1) Quelle est la section efficace totale de la réaction, sachant que
-      l'intensité du faisceau incident est $I$ = 500 nA et que le nombre de
-      noyaux détectés par seconde est $n$ = 2000 ?
+   Pour cela, on bombarde une cible de\nbsp^{9}Be de 100 \mu{}g/cm^{2} avec un faisceau de tritium
+   (^{3}_{1}H) de 25 MeV.
+   1) Quelle est la section efficace totale de la réaction, sachant que l'intensité du faisceau
+      incident est $I$ = 500 nA et que le nombre de noyaux détectés par seconde est $n$ = 2000 ?
 
-   2) On détecte dans cette réaction les particules d'^{3}_{2}He. Donner le
-      schéma de principe d'une telle expérience. Quelle est l'allure du spectre
-      en énergie des noyaux d'^{3}_{2}He détectés ?
+   2) On détecte dans cette réaction les particules d'^{3}_{2}He. Donner le schéma de principe d'une
+      telle expérience. Quelle est l'allure du spectre en énergie des noyaux d'^{3}_{2}He détectés ?
 #+END_QUESTION
+
 2) [@2] \nbsp^{3}_{1}H+\nbsp^{9}_{4}Be\to\nbsp^{3}_{2}He+\nbsp^{9}_{3}Li
 
    1) Le flux incident $\phi$ s'exprime en fonction de l'intensité $I$ du faisceau
@@ -572,7 +390,7 @@ constitutives de la cible.
           \phi=\frac{I}{Ze}
         \end{align*}
       #+END_SRC
-      Par ailleurs, le nombre de noyaux détectés $n=2000$ soit
+      Par ailleurs, le nombre de noyaux détectés $n=\unit[2000]{/s}$ soit
       #+BEGIN_SRC latex
         \begin{align*}
           n&=\phi\times N\times e\times\sigma=2000\\
@@ -581,36 +399,34 @@ constitutives de la cible.
           \sigma&=\unit[9.6\,10^{-29}]{cm}^2=\unit[9.6\,10^{-5}]{barn}=\unit[96]{microbarn}
         \end{align*}
       #+END_SRC
+
    2) Principe expérimental
       #+BEGIN_CENTER
       #+ATTR_LATEX: :width 0.5\linewidth
       [[./figures/HBe_HeLi_production.pdf]]
       #+END_CENTER
 
-      L'énergie totale est fixé par l'énergie cinétique du faisceau incident (+
-      les énergies de masse de la cible et du faisceau) : la distribution en
-      énergie des noyaux de\nbsp^{3}_{2}He présente des raies correspondant aux
-      niveaux en énergie de\nbsp^{3}_{2}He (ou\nbsp^{9}_{3}Li) → *énergies quantifiées*
+      L'énergie totale est fixé par l'énergie cinétique du faisceau incident (+ les énergies de
+      masse de la cible et du faisceau) : la distribution en énergie des noyaux de\nbsp^{3}_{2}He
+      présente des raies correspondant aux niveaux en énergie de\nbsp^{3}_{2}He (ou\nbsp^{9}_{3}Li)
+      → *énergies quantifiées*
 
 #+BEGIN_QUESTION
-3) [@3] Dans les faisceaux d'un anneau de collisions $e^+e^-$, les électrons
-   (positrons) sont regroupés en paquets qui se croisent à chaque tour. Le
-   collisionneur LEP-I auquel on s'intéresse ici était un synchrotron de
-   circonférence 27 km, dont le rayon de courbure valait $R$ ~ 4.5 km et dans
-   lequel circulaient, en sens inverses, 4 paquets de $N_1$ positrons et 4
-   paquets de $N_2$ électrons.
+3) [@3] Dans les faisceaux d'un anneau de collisions $e^+e^-$, les électrons (positrons) sont
+   regroupés en paquets qui se croisent à chaque tour. Le collisionneur LEP-I auquel on s'intéresse
+   ici était un synchrotron de circonférence 27 km, dont le rayon de courbure valait $R$ ~ 4.5 km et
+   dans lequel circulaient, en sens inverses, 4 paquets de $N_1$ positrons et 4 paquets de $N_2$
+   électrons.
 
-   1) On caractérise une région d'intersection des faisceaux par sa luminosité
-      $\mathcal{L}$, telle que le nombre d'interactions par unité de temps soit
-      égal au produit $\mathcal{L}\sigma$ de la luminosité par la section
-      efficace.
+   1) On caractérise une région d'intersection des faisceaux par sa luminosité $\mathcal{L}$, telle
+      que le nombre d'interactions par unité de temps soit égal au produit $\mathcal{L}\sigma$ de la
+      luminosité par la section efficace.
 
       En déduire la dimension et l'unité de $\mathcal{L}$.
 
-      On peut montrer que la luminosité s'exprime en fonction des intensités
-      $I_1$ et $I_2$ des courants électriques des faisceaux, du rayon $R$ de
-      l'anneau et de la surface $S$ de recouvrement des paquets par la
-      relation :
+      On peut montrer que la luminosité s'exprime en fonction des intensités $I_1$ et $I_2$ des
+      courants électriques des faisceaux, du rayon $R$ de l'anneau et de la surface $S$ de
+      recouvrement des paquets par la relation :
       #+BEGIN_SRC latex
         \begin{align*}
           \mathcal{L} = \frac{2\pi R}{c} \frac{I_1 I_2}{e^2 S}
@@ -618,44 +434,42 @@ constitutives de la cible.
       #+END_SRC
       où $e$ est la charge électrique élémentaire.
 
-      Calculer la luminosité $\mathcal{L}$, en cm^{-2}.s^{-1}, pour $I_1$ =
-      $I_2$ = 3 mA et $S$ = 0.5 mm^{2}.
-   2) Pour déterminer la luminosité effectivement obtenue auprès du
-      collisionneur, on observe en général une réaction de référence dont la
-      section efficace est bien connue. Il s'agit ici de la diffusion dite
-      "Bhabha" $e^+ e^- \rightarrow e^+ e^-$ dont la section efficace
-      différentielle, à l'approximation des petits angles que l'on utilisera
-      pour le calcul, est :
+      Calculer la luminosité $\mathcal{L}$, en cm^{-2}.s^{-1}, pour $I_1$ = $I_2$ = 3 mA et $S$ =
+      0.5 mm^{2}.
+   2) Pour déterminer la luminosité effectivement obtenue auprès du collisionneur, on observe en
+      général une réaction de référence dont la section efficace est bien connue. Il s'agit ici de
+      la diffusion dite "Bhabha" $e^+ e^- \rightarrow e^+ e^-$ dont la section efficace
+      différentielle, à l'approximation des petits angles que l'on utilisera pour le calcul, est :
       #+BEGIN_SRC latex
         \begin{align*}
-          \frac{d\sigma}{d\Omega} = \frac{16 \alpha^2(\hbar c)^2}{E^2 \theta^4}
+          \frac{\d\sigma}{\d\Omega} = \frac{16 \alpha^2(\hbar c)^2}{E^2 \theta^4}
         \end{align*}
       #+END_SRC
 
-      où \alpha est la constante de structure fine, $E$ l'énergie totale et
-      \theta l'angle de diffusion.
+      où \alpha est la constante de structure fine, $E$ l'énergie totale et \theta l'angle de
+      diffusion.
 
-      Le détecteur qui compte les électrons diffusés a la forme d'une couronne,
-      centrée sur l'axe du faisceau. Il couvre tous les angles azimutaux \phi et
-      les angles polaires \theta compris entre 3 et 8 degrés.
+      Le détecteur qui compte les électrons diffusés a la forme d'une couronne, centrée sur l'axe du
+      faisceau. Il couvre tous les angles azimutaux \phi et les angles polaires \theta compris entre
+      3 et 8 degrés.
 
       1) Déterminer la section efficace de diffusion, à l'énergie $E$ = 90 GeV.
 
-      2) Si on observe 950 interactions dans ce détecteur en une heure de prise
-         de données, que vaut la luminosité associée ?
+      2) Si on observe 950 interactions dans ce détecteur en une heure de prise de données, que vaut
+         la luminosité associée ?
 #+END_QUESTION
+
 3) [@3]
-   1) La luminosité $\mathcal{L}$ s'exprime comme le rapport du nombre de
-      particules détectés par unité de temps sur la section efficace
+   1) La luminosité $\mathcal{L}$ s'exprime comme le rapport du nombre de particules détectés par
+      unité de temps sur la section efficace
       #+BEGIN_SRC latex
         \begin{align*}
           \mathcal{L}=\frac{n}{\sigma}
         \end{align*}
       #+END_SRC
-      Ainsi, une réaction/interaction de section efficace $\sigma$ sera d'autant
-      "mieux" observée que la luminosité sera grande et donc que le nombre de
-      particules résultantes de cette réaction/interaction sera
-      conséquente. L'unité de luminosité est donc
+      Ainsi, une réaction/interaction de section efficace $\sigma$ sera d'autant "mieux" observée
+      que la luminosité sera grande et donc que le nombre de particules résultantes de cette
+      réaction/interaction sera conséquente. L'unité de luminosité est donc
       #+BEGIN_SRC latex
         \begin{align*}
           \left[\mathcal{L}\right]=\frac{\left[n\right]}{\left[\sigma\right]}=T^{-1}.L^{-2}
@@ -671,6 +485,7 @@ constitutives de la cible.
           &=6.63\,10^{34}\,\text{m}^{-2}\text{.s}^{-1}=6.63\,10^{30}\,\text{cm}^{-2}\text{.s}^{-1}
         \end{align*}
       #+END_SRC
+
    2) Diffusion [[http://en.wikipedia.org/wiki/Homi_J._Bhabha][Bhabha]] $e^+e^-\to e^+e^-$
       #+BEGIN_CENTER
       #+ATTR_LATEX: :width 0.4\linewidth
@@ -684,7 +499,7 @@ constitutives de la cible.
       #+END_SRC
       avec $E=\unit[90]{GeV}$ et $\alpha=\frac{e^2}{4\pi\epsilon_0\hbar c}$ où
       $\hbar c=\unit[197.3]{MeV.fm}$
-      1) La section efficace totale $\sigma$ est égale à
+      1) La section efficace $\sigma$ est égale à
          #+BEGIN_SRC latex
            \begin{align*}
              \sigma&=\int\frac{\d\sigma}{\d\Omega}\d\Omega\\
@@ -721,27 +536,25 @@ constitutives de la cible.
          à 2008 a fourni une luminosité intégrée de 5000 pb^{-1}. En un peu moins d'une semaine de
          prise de données, le LHC a atteint la même luminosité intégrée que le Tevatron.
          #+END_REMARK
-#+END_COMMENT
 
-** COMMENT Section efficace et neutrons thermiques
+** Section efficace et neutrons thermiques
 #+BEGIN_QUESTION
-1) On appelle neutrons thermiques des neutrons lents en équilibre
-   thermodynamique avec le milieu dans lequel ils se trouvent.
+1) On appelle neutrons thermiques des neutrons lents en équilibre thermodynamique avec le milieu
+   dans lequel ils se trouvent.
 
-   On irradie une cible de\nbsp^{10}_{5}B avec un faisceau de neutrons
-   thermiques d'énergie cinétique $T$ = 2.5 10^{-2} eV, produits par un
-   réacteur, afin de créer des noyaux de\nbsp^{7}Li par la réaction :
+   On irradie une cible de\nbsp^{10}_{5}B avec un faisceau de neutrons thermiques d'énergie
+   cinétique $T$ = 2.5 10^{-2} eV, produits par un réacteur, afin de créer des noyaux de\nbsp^{7}Li
+   par la réaction :
    #+BEGIN_SRC latex
      \begin{align}
        n_\text{th} + ^{10}_{5}\text{B} \rightarrow \alpha + ^7_3\text{Li}
      \end{align}
    #+END_SRC
-   On détecte les particules \alpha émises au cours de cette réaction. Quelle
-   est leur énergie cinétique $T_{\alpha}$ ?  On donne les masses nucléaires
-   suivantes, en MeV :
+   On détecte les particules \alpha émises au cours de cette réaction. Quelle est leur énergie
+   cinétique $T_{\alpha}$ ?  On donne les masses nucléaires suivantes, en MeV :
    #+BEGIN_CENTER
-   $m_{\alpha}c^2$ = 3727.398, $m_{^7\text{Li}}c^2$ = 6533.877, $m_{^8\text{Li}}c^2$ =
-   7471.417, $m_{^{10}\text{B}}c^2$ = 9324.495, $m_{^{11}\text{B}}c^2$ = 10252.615
+   $m_{\alpha}c^2$ = 3727.398, $m_{^7\text{Li}}c^2$ = 6533.877, $m_{^8\text{Li}}c^2$ = 7471.417,
+   $m_{^{10}\text{B}}c^2$ = 9324.495, $m_{^{11}\text{B}}c^2$ = 10252.615
    #+END_CENTER
 #+END_QUESTION
 1) $n_\text{th.}+^{10}_{5}\text{B}\rightarrow\alpha+^{7}_{3}\text{Li}$
@@ -753,14 +566,13 @@ constitutives de la cible.
        &=939.6 + 9324.495 - 3727.398 - 6533.877=\unit[2.82]{MeV}>0
      \end{align*}
    #+END_SRC
-   La réaction est donc exoénergétique ou spontanée et ne requiert pas
-   nécessairement d'énergie cinétique pour les neutrons
-   $T_{n_\text{th.}}\ll1\sim0$. On considèrera la réaction se faisant au repos
-   $T_{n_\text{th.}}=T_{^{10}_{5}\text{B}}\sim0$. La conservation de l'impulsion
-   implique donc que $\vv{p}_\alpha=-\vv{p}_{^{7}_{3}\text{Li}}$ soit
+   La réaction est donc exoénergétique ou spontanée et ne requiert pas nécessairement d'énergie
+   cinétique pour les neutrons $T_{n_\text{th.}}\ll1\sim0$. On considèrera la réaction se faisant au
+   repos $T_{n_\text{th.}}=T_{^{10}_{5}\text{B}}\sim0$. La conservation de l'impulsion implique donc
+   que $\vv{p}_\alpha=-\vv{p}_{^{7}_{3}\text{Li}}$ soit
    #+BEGIN_SRC latex
      \begin{align*}
-       p_\alpha c&=p_{^{7}_{3}\text{Li}}c\\
+       p_\alpha^2 c^2&=p_{^{7}_{3}\text{Li}}^2c^2\\
        T_\alpha^2+2T_\alpha\,m_\alpha c^2&=T_{^{7}_{3}\text{Li}}^2+2T_{^{7}_{3}\text{Li}}\,m_{^{7}_{3}\text{Li}}c^2
      \end{align*}
    #+END_SRC
@@ -789,8 +601,8 @@ constitutives de la cible.
        n + ^{11}_{5}\text{B} \rightarrow \alpha + ^8_{3}\text{Li}
      \end{align}
    #+END_SRC
-   Dire, en justifiant votre réponse, si cette réaction est possible avec des
-   neutrons thermiques. Donner alors ses conditions d'étude.
+   Dire, en justifiant votre réponse, si cette réaction est possible avec des neutrons
+   thermiques. Donner alors ses conditions d'étude.
 #+END_QUESTION
 2) [@2] $n+^{11}_{5}\text{B}\rightarrow\alpha+^{8}_{3}\text{Li}$
 
@@ -801,8 +613,8 @@ constitutives de la cible.
        &=939.6 + 10252.615 - 3727.398 - 7471.417=\unit[-6.6]{MeV}<0
      \end{align*}
    #+END_SRC
-   /i.e./ une réaction endoénergétique qui, pour se réaliser, implique que les
-   neutrons aient une énergie cinétique minimale $T_S$ de
+   /i.e./ une réaction endoénergétique qui, pour se réaliser, implique que les neutrons aient une
+   énergie cinétique minimale $T_S$ de
    #+BEGIN_SRC latex
      \begin{align*}
        T_S&=\frac{|Q|\times\Sigma m_{if}c^2}{2m_{^{11}_{5}\text{B}}c^2}\\
@@ -811,15 +623,13 @@ constitutives de la cible.
    #+END_SRC
 
 #+BEGIN_QUESTION
-3) [@3] On envoie le faisceau de neutrons thermiques sur une cible de Bore
-   naturel de surface 10 cm^{2}, d'épaisseur 1 \mu{}m, de densité \rho = 2.34
-   g/cm^{3} et de composition isotopique 19.8% de\nbsp^{10}B et 80.2%
-   de\nbsp^{11}B. La section efficace totale de la réaction (1) vaut \sigma =
-   3840 b. On sait de plus que la section efficace différentielle est isotrope
-   dans le système du centre de masse pour des neutrons lents. Le détecteur de
-   particules \alpha, de surface utile 5 cm^{2} et situé à 1 m de la cible,
-   enregistre 473 particules \alpha à la minute. Quel est le flux de neutrons
-   thermiques, en cm^{-2}s^{-1} ?
+3) [@3] On envoie le faisceau de neutrons thermiques sur une cible de Bore naturel de surface 10
+   cm^{2}, d'épaisseur 1 \mu{}m, de densité \rho = 2.34 g/cm^{3} et de composition isotopique 19.8%
+   de\nbsp^{10}B et 80.2% de\nbsp^{11}B. La section efficace totale de la réaction (1) vaut \sigma =
+   3840 b. On sait de plus que la section efficace différentielle est isotrope dans le système du
+   centre de masse pour des neutrons lents. Le détecteur de particules \alpha, de surface utile 5
+   cm^{2} et situé à 1 m de la cible, enregistre 473 particules \alpha à la minute. Quel est le flux
+   de neutrons thermiques, en cm^{-2}s^{-1} ?
 #+END_QUESTION
 3) [@3] Le nombre de particules \alpha détectées se déduit de l'expression suivante
    #+BEGIN_SRC latex
@@ -891,7 +701,7 @@ physiciens américains utilisaient ce terme argot de barns dans le but de masque
 recherches. Cependant après la Seconde Guerre mondiale, le barn est devenu une unité standard de la
 physique des particules.
 
-* COMMENT TD3 : Nombres quantiques & Symétries
+* TD3 : Nombres quantiques & Symétries
 ** Énergie maximum des rayons cosmiques
 
 #+CAPTION: *Spectre en énergie des rayons cosmiques*
@@ -979,7 +789,7 @@ mettre en exergue une éventuelle surabondance locale.
 
 #+LATEX: \cleardoublepage
 
-** Étrangeté dans les rayons cosmiques
+** COMMENT Étrangeté dans les rayons cosmiques
 #+BEGIN_QUESTION
 À l'arrivée dans l'atmosphère, les protons réagissent avec les neutrons des
 noyaux, pour engendrer la cascade de réactions :
