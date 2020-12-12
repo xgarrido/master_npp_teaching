@@ -74,7 +74,7 @@ L'énergie cinétique minimum du faisceau incident est ainsi
   \end{align*}
 #+END_SRC
 
-* TD2 : Accélérateurs & section efficace
+* COMMENT TD2 : Accélérateurs & section efficace
 ** Accélérateurs
 *** Introduction
 - cyclotron :: Le cyclotron est un type d’accélérateur de particules circulaire inventé par Ernest
@@ -701,7 +701,7 @@ physiciens américains utilisaient ce terme argot de barns dans le but de masque
 recherches. Cependant après la Seconde Guerre mondiale, le barn est devenu une unité standard de la
 physique des particules.
 
-* TD3 : Nombres quantiques & Symétries
+* COMMENT TD3 : Nombres quantiques & Symétries
 ** Énergie maximum des rayons cosmiques
 
 #+CAPTION: *Spectre en énergie des rayons cosmiques*
@@ -840,15 +840,15 @@ est de 2.2 \mu{}s, ce temps est "boosté" par le facteur de Lorentz soit \tau =
    #+BEGIN_SRC latex
      \begin{equation*}
        \begin{bmatrix}
-         E_{V_1}\\\vv{p_{V_1}}
+         E_{V_1}\\\vv{p_{V_1}}c
        \end{bmatrix}
        =
        \begin{bmatrix}
-         E_\pi\\\vv{p_\pi}
+         E_\pi\\\vv{p_\pi}c
        \end{bmatrix}
        +
        \begin{bmatrix}
-         E_p\\\vv{p_p}
+         E_p\\\vv{p_p}c
        \end{bmatrix}
      \end{equation*}
    #+END_SRC
@@ -865,8 +865,8 @@ est de 2.2 \mu{}s, ce temps est "boosté" par le facteur de Lorentz soit \tau =
      \begin{align*}
         p_{V_1}c &= \sqrt{160^2 + 320^2 + 2\cdot160\cdot320\cos 65} = \unit[413]{MeV}\\
         p_{V_2}c &= \sqrt{220^2 + 220^2 + 2\cdot220^2\cos 135} = \unit[168]{MeV}\\
-        m_{V_1}c^2 &= \left[\sqrt{160^2 + 140^2} + \sqrt{320^2 + 938^2} - 413^2\right]^{1/2} = \unit[1130]{MeV}\\
-        m_{V_2}c^2 &= \left[4\cdot(220^2 + 140^2) - 168^2\right]^{1/2} = \unit[493]{MeV}
+        m_{V_1}c^2 &= \left[\left(\sqrt{160^2 + 140^2} + \sqrt{320^2 + 938^2}\right)^2 - 413^2\right]^{1/2} = \unit[1130]{MeV}\\
+        m_{V_2}c^2 &= \left[4\cdot(220^2 + 140^2)^2 - 168^2\right]^{1/2} = \unit[493]{MeV}
      \end{align*}
    #+END_SRC
 
@@ -878,6 +878,7 @@ est de 2.2 \mu{}s, ce temps est "boosté" par le facteur de Lorentz soit \tau =
    le $K^0$ se désintègre après un vol de 0.8 cm. Quelle est la durée de vie de ces deux particules,
    en faisant une hypothèse non relativiste, que l'on justifiera\nbsp?
 #+END_QUESTION
+
 2) [@2] $d_{\Lambda^0} = \unit[3.2]{cm}$ et $d_{K^0} = \unit[0.8]{cm}$
    #+BEGIN_SRC latex
      \begin{align*}
@@ -885,6 +886,7 @@ est de 2.2 \mu{}s, ce temps est "boosté" par le facteur de Lorentz soit \tau =
        T_{K^0} &= \sqrt{m_{K^0}^2c^4 + p_{K^0}^2c^2} - m_{K^0}c^2 = \unit[28]{MeV} \ll m_{K^0}c^2
      \end{align*}
    #+END_SRC
+
    #+BEGIN_SRC latex
      \begin{align*}
        \tau_{\Lambda^0} = \frac{d_{\Lambda^0}}{v}
@@ -909,6 +911,7 @@ est de 2.2 \mu{}s, ce temps est "boosté" par le facteur de Lorentz soit \tau =
 #+BEGIN_QUESTION
 3) [@3] Quelle est l'interaction responsable de leur désintégration ?
 #+END_QUESTION
+
 3) [@3] \tau est un temps caractéristique d'une désintégration par interaction
    faible : \tau > 10^{-13} s (/cf./ page 30)
 
@@ -918,6 +921,7 @@ est de 2.2 \mu{}s, ce temps est "boosté" par le facteur de Lorentz soit \tau =
    exclusivement par paires $p + \pi^- \rightarrow K^0 + \Lambda^0$. Que
    pouvez-vous conjecturer d'après ces faits expérimentaux ?
 #+END_QUESTION
+
 4) [@4] Le fait que ces particules $K^0$ et $\Lambda^0$ soient toujours produites par
    paire implique la conservation d'une quantité jusqu'alors inconnue
    \rightarrow introduction de *l'étrangeté* $S$ comme nouveau nombre quantique.
@@ -943,6 +947,7 @@ est de 2.2 \mu{}s, ce temps est "boosté" par le facteur de Lorentz soit \tau =
    observée à la question 4). Ce fait expérimental est-il en accord avec votre
    conjecture ?
 #+END_QUESTION
+
 5) [@5] $p + n \rightarrow p + \Lambda^0$ et $n + n \rightarrow \Lambda^0 +
    \Lambda^0$. Ces deux réactions ne conservent pas l'étrangeté $S$. Elles ne
    peuvent donc se produire par interaction forte. La très faible section
@@ -958,6 +963,7 @@ est de 2.2 \mu{}s, ce temps est "boosté" par le facteur de Lorentz soit \tau =
    atmosphériques. Cette profusion de nouvelles particules a initié le modèle
    des quarks (/cf./ TD4) mais aussi la découverte de la violation de la parité.
 #+END_QUESTION
+
 6) [@6] $\Lambda^0 \rightarrow \pi^+ + \pi^-$ : le nombre baryonique n'est pas
    conservé or toutes interactions conservent ce nombre (y compris l'interaction
    faible)
@@ -994,6 +1000,7 @@ annexe./
    élémentaires, donner des exemples de leur utilisation et distinguer entre
    bosons et fermions.
 #+END_QUESTION
+
 1) [@1] Les particules élémentaires sont les quarks (/cf./ ci-dessous) et les
    leptons (du grec /leptos/ = léger) dont le spin demi-entier font de ces
    particules des fermions. À la différence des leptons, les quarks
@@ -1102,6 +1109,7 @@ having shortly later told around this little story in Cambridge."
    8) $K^+ + p  \rightarrow \Sigma^+ + n  + \pi^-$
 
 #+END_QUESTION
+
 2) [@2] Toutes les interactions conservent la charge électrique, le nombre
    baryonique, le nombre leptonique et le moment cinétique total.
 
@@ -1135,6 +1143,7 @@ having shortly later told around this little story in Cambridge."
    [[file:./figures/muon_decay_feynman.pdf]]
 
 #+LATEX: \clearpage
+
 ** Résonances
 #+BEGIN_QUESTION
 Le baryon $\Sigma^+$ et le méson $K^+$ ont pour isospins respectifs
@@ -1145,6 +1154,7 @@ On supposera $c=b=t=0$ pour tous les hadrons de cet exercice.
 1) À l'aide de la formule de Gell-Mann et Nishijima, retrouver la valeur de
    l'étrangeté de chacun d'eux
 #+END_QUESTION
+
 1) [@1] Formule de Gell-Mann & Nishijima $Q/e = T_3 + Y/2$ avec $Y = B$ + saveur
    = hypercharge. Dans cet exercice, $c=b=t=0$ donc $Y = B$ + étrangeté $S$
 
@@ -1153,10 +1163,12 @@ On supposera $c=b=t=0$ pour tous les hadrons de cet exercice.
 
    $Y(K^+) = 2\cdot\left(\frac{Q}{e} - T_3\right) = 1$ d'où $S(K^+) = +1$
 
+
 #+BEGIN_QUESTION
 2) [@2] Quel ordre de grandeur attend-on pour le temps caractéristique de la
    réaction $\pi^+ \, + \, p \, \rightarrow \, K^+ \, + \, \Sigma^+$?
 #+END_QUESTION
+
 2) [@2] Détermination du type d'interaction $\pi^+ + p\rightarrow K^+ +
    \Sigma^+$
 
@@ -1168,6 +1180,7 @@ On supposera $c=b=t=0$ pour tous les hadrons de cet exercice.
    | $\vv{T}$ | $\vv{1}$ | + | $\vv{1/2}$ | =           | $\vv{1/2}$ | + |   $\vv{1}$ | \cmark |
    | $S$      |        0 | + |          0 | =           |          1 | + |         -1 | \cmark |
    |----------+----------+---+------------+-------------+------------+---+------------+--------|
+
 
    Conservation de la parité et du moment cinétique total :
 
@@ -1192,6 +1205,7 @@ On supposera $c=b=t=0$ pour tous les hadrons de cet exercice.
    $m_{\Sigma}c^2$ = 1190 MeV
    #+END_CENTER
 #+END_QUESTION
+
 3) [@3] Calcul de l'énergie seuil des pions :
    #+BEGIN_SRC latex
      \begin{align*}
@@ -1206,6 +1220,8 @@ On supposera $c=b=t=0$ pour tous les hadrons de cet exercice.
    \pi incidents est voisine de 1.5 GeV/c. Quelle est la masse de cette
    résonance ?
 #+END_QUESTION
+
+
 4) [@4] $\pi^+ + p \rightarrow R \rightarrow K^+ + \Sigma^+$
 
    Calcul de l'invariant relativiste $I$
@@ -1249,6 +1265,7 @@ On supposera $c=b=t=0$ pour tous les hadrons de cet exercice.
    d'entrée est $\vv{l} = \vv{3}$. Quelles sont les caractéristiques $I^{\pi}$
    possibles pour cette résonance\nbsp?
 #+END_QUESTION
+
 6) [@6] $\vv{L}_i = \vv{3}$
 
    La réaction $\pi^+ + p \rightarrow K^+ + \Sigma^+$ se fait par interaction
@@ -1263,6 +1280,7 @@ On supposera $c=b=t=0$ pour tous les hadrons de cet exercice.
      \end{align*}
    #+END_SRC
    d'où $I_R^\pi = 5/2^+$ ou $7/2^+$
+
 
    #+BEGIN_REMARK
    Le moment cinétique total de la résonance $R$ de même que la parité de cette
@@ -1295,6 +1313,7 @@ On supposera $c=b=t=0$ pour tous les hadrons de cet exercice.
 7) [@7] Conservation de $\vv{T}$ et $T_3$ dans la désintégration de
    $R\rightarrow K^++\Sigma^+$
 
+
    #+BEGIN_SRC latex
      \begin{align*}
        T_3(R) &= T_3(K^+) + T_3(\Sigma^+) = 3/2\\
@@ -1307,18 +1326,15 @@ On supposera $c=b=t=0$ pour tous les hadrons de cet exercice.
 #+BEGIN_QUESTION
 8) [@8] Pour respecter les notations usuelles, quel nom doit-on lui donner ?
 #+END_QUESTION
-8) [@8] La conservation du nombre baryonique, de la charge électrique et de
-   l'étrangeté font que $R$ est un baryon de charge $Q/e=+2$ et d'étrangeté
-   nulle. En se reférant au tableau page 30, on note que cette résonance
-   présente les mêmes propriétés que la baryon $\Delta^{++}$ à ceci près que sa
-   masse 1933 MeV et sa durée de vie sont respectivement plus élevée et plus
-   courte[fn:4]. *La résonance $\bm{R}$ est donc un état excité de
-   $\bm{\Delta^{++}}$.*
+8) [@8] La conservation du nombre baryonique, de la charge électrique et de l'étrangeté font que $R$
+   est un baryon de charge $Q/e=+2$ et d'étrangeté nulle. En se reférant au tableau page 30, on note
+   que cette résonance présente les mêmes propriétés que la baryon $\Delta^{++}$ à ceci près que sa
+   masse 1933 MeV et sa durée de vie sont respectivement plus élevée et plus courte[fn:4]. *La
+   résonance $\bm{R}$ est donc un état excité de $\bm{\Delta^{++}}$.*
 
 #+BEGIN_QUESTION
-9) [@9] Soit la réaction $\pi^-+p\rightarrow K^++\Sigma^-$, induite par des
-   $\pi^-$ de 1,5 GeV/c sur des protons. Montrer que cette réaction est possible
-   par interaction forte.
+9) [@9] Soit la réaction $\pi^-+p\rightarrow K^++\Sigma^-$, induite par des $\pi^-$ de 1,5 GeV/c sur
+   des protons. Montrer que cette réaction est possible par interaction forte.
 #+END_QUESTION
 9) [@9] $\pi^- + p \rightarrow K^+ + \Sigma^-$
 
@@ -1331,32 +1347,31 @@ On supposera $c=b=t=0$ pour tous les hadrons de cet exercice.
    | $s$      |        0 | + | 0          | =           | 1          | + |         -1 | \cmark |
    |----------+----------+---+------------+-------------+------------+---+------------+------------|
 
-*Remarques :* les baryons $\Delta^{++}$ et $\Delta^-$ sont respectivement
-constitués de 3 quarks $u$ et 3 quarks $d$. Or le moment cinétique total de ces
-particules 3/2 impliquent que le spin des 3 quarks soient alignés "vers le
-haut". Le principe de Pauli exclut une telle configuration pour des fermions. En
-ajoutant le nombre quantique de couleur, la chromodynamique quantique permet un
-tel état tout comme pour le baryon \Omega^{-} postulé par Gell-Mann et découvert à
-Brookhaven en 1964.
+*Remarques :* les baryons $\Delta^{++}$ et $\Delta^-$ sont respectivement constitués de 3 quarks $u$
+et 3 quarks $d$. Or le moment cinétique total de ces particules 3/2 impliquent que le spin des 3
+quarks soient alignés "vers le haut". Le principe de Pauli exclut une telle configuration pour des
+fermions. En ajoutant le nombre quantique de couleur, la chromodynamique quantique permet un tel
+état tout comme pour le baryon \Omega^{-} postulé par Gell-Mann et découvert à Brookhaven en 1964.
+
 ** La parité et sa violation
 #+BEGIN_QUESTION
-1) [@1] Rappeler la définition de la parité. Quelles sont ses propriétés ? Que
-   signifie formellement et intuitivement sa conservation ?
+1) [@1] Rappeler la définition de la parité. Quelles sont ses propriétés ? Que signifie formellement
+   et intuitivement sa conservation ?
 #+END_QUESTION
-1) L'opérateur parité transforme une fonction $\psi(\vv{r})$ en
-   $\psi(-\vv{r})$ : $\hat{\mathcal{P}}\,\psi(\vv{r}) = \psi(-\vv{r})$. Les
-   valeurs propres \pi sont telles que $\hat{\mathcal{P}}\,\psi(\vv{r}) =
-   \pi\,\psi(\vv{r})$ or $\hat{\mathcal{P}}^2\,\psi(\vv{r}) =
-   \hat{\mathcal{P}}\,\psi(-\vv{r}) = \psi(\vv{r})$. $\hat{\mathcal{P}}$ est
-   donc unitaire et les valeurs propres sont \pi = \pm1 (à une phase
-   près). L'invariance sous $\hat{\mathcal{P}}$ /i.e./ conservation de la parité
-   implique qu'il n'y a pas de différence entre "gauche ou droite" (même image
-   dans un miroir).
+
+1) L'opérateur parité transforme une fonction $\psi(\vv{r})$ en $\psi(-\vv{r})$ :
+   $\hat{\mathcal{P}}\,\psi(\vv{r}) = \psi(-\vv{r})$. Les valeurs propres \pi sont telles que
+   $\hat{\mathcal{P}}\,\psi(\vv{r}) = \pi\,\psi(\vv{r})$ or $\hat{\mathcal{P}}^2\,\psi(\vv{r}) =
+   \hat{\mathcal{P}}\,\psi(-\vv{r}) = \psi(\vv{r})$. $\hat{\mathcal{P}}$ est donc unitaire et les
+   valeurs propres sont \pi = \pm1 (à une phase près). L'invariance sous $\hat{\mathcal{P}}$ /i.e./
+   conservation de la parité implique qu'il n'y a pas de différence entre "gauche ou droite" (même
+   image dans un miroir).
 
 #+BEGIN_QUESTION
-2) [@2] On considère la réaction $A^+\rightarrow\pi^++\pi^++\pi^-$. Quelle est
-   la parité dans l'état final ? On donne $I(A)=0$ et $I^\pi(\pi)=0^-$.
+2) [@2] On considère la réaction $A^+\rightarrow\pi^++\pi^++\pi^-$. Quelle est la parité dans l'état
+   final ? On donne $I(A)=0$ et $I^\pi(\pi)=0^-$.
 #+END_QUESTION
+
 2) [@2] Conservation du moment cinétique total $\vv{I}$
    #+BEGIN_SRC latex
      \begin{align*}
@@ -1364,45 +1379,49 @@ Brookhaven en 1964.
        \vv{L}_f
      \end{align*}
    #+END_SRC
-   où $\vv{L}_f$ est le moment angulaire relatif des particules en voie de
-   sortie. La conservation de la parité \pi se traduit par l'équation suivante
+
+   où $\vv{L}_f$ est le moment angulaire relatif des particules en voie de sortie. La parité dans
+   l'état final $\pi_f$ s'écrit
    #+BEGIN_SRC latex
      \begin{align*}
-       \pi(A^+) = \pi(\pi^+)\,\pi(\pi^+)\,\pi(\pi^-)\,(-1)^{L_f}
+       \pi_f = \pi(\pi^+)\,\pi(\pi^+)\,\pi(\pi^-)\,(-1)^{L_f}
      \end{align*}
    #+END_SRC
 
    Du fait que $I(A^+) = I(\pi^\pm) = 0$, on déduit que $\vv{L_f} = \vv{0}$ soit
-   la parité dans l'état final $A^+$
+   la parité dans l'état final
    #+BEGIN_SRC latex
      \begin{align*}
-       \pi(A^+) = (-1)\,(-1)\,(-1)\,(-1)^0 = -1
+       \pi_f = (-1)\,(-1)\,(-1)\,(-1)^0 = -1
      \end{align*}
    #+END_SRC
 
+
 #+BEGIN_QUESTION
-3) [@3] On considère la réaction $\theta^+\rightarrow\pi^++\pi^0$. Quelle est la
-   parité dans l'état final ? On donne $I(\theta)=0$ et $I^\pi(\pi)=0^-$.
+3) [@3] On considère la réaction $\theta^+\rightarrow\pi^++\pi^0$. Quelle est la parité dans l'état
+   final ? On donne $I(\theta)=0$ et $I^\pi(\pi)=0^-$.
 #+END_QUESTION
-3) [@3] Le moment angulaire relatif $L_f$ est donc nul.
+3) [@3] Le moment angulaire relatif $L_f$ est toujours nul.
    #+BEGIN_SRC latex
      \begin{align*}
-       \pi(\theta^+) = \pi(\pi^+)\,\pi(\pi^0)\,(-1)^0 = +1
+       \pi_f = \pi(\pi^+)\,\pi(\pi^0)\,(-1)^0 = +1
      \end{align*}
      #+END_SRC
 
 #+BEGIN_QUESTION
-4) [@4] On sait par ailleurs que $\theta^+$ et $A^+$ ont mêmes masses et durées
-   de vie. Qu'est ce que cela vous suggère-t-il ? Ce problème était connu à
-   l'époque sous le patronyme de "puzzle \theta/\tau".
+4) [@4] On sait par ailleurs que $\theta^+$ et $A^+$ ont mêmes masses et durées de vie. Qu'est ce
+   que cela vous suggère-t-il ? Ce problème était connu à l'époque sous le patronyme de "puzzle
+   \theta/\tau".
 #+END_QUESTION
-4) [@4] $A^+$ et $\theta^+$ ont la même masse, mêmes durées de vie et même
-   charge électrique. Elles sont donc la même particule mais avec *une parité
-   différente*. Les mésons se désintégrant par interaction faible, ce problème
-   aussi connu sous le nom de "puzzle \theta/\tau" (\tau\equiv A^{+}) trouva sa
-   solution dans le fait que l'interaction faible ne conserve pas la parité. Ces
-   deux particules sont donc une seule et même particule appelée à présent
-   $K^+$.
+
+
+4) [@4] Si la parité est conservée dans les deux réactions ci-dessus, on déduit alors que la parité
+   de $A^+$ est -1 tandis que la parité de $\theta^+$ est +1. Or si $A^+$ et $\theta^+$ ont la même
+   masse, les mêmes durées de vie et la même charge électrique, elles sont donc la même particule
+   mais avec *une parité différente*. Les mésons se désintégrant par interaction faible, ce problème
+   aussi connu sous le nom de "puzzle \theta/\tau" (\tau\equiv A^{+}) trouva sa solution dans le
+   fait que *l'interaction faible ne conserve pas la parité*. Ces deux particules sont donc une seule
+   et même particule appelée à présent $K^+$.
 
 ** Footnotes
 
@@ -1411,83 +1430,81 @@ Brookhaven en 1964.
 * COMMENT TD5 : Modèle Standard et au-delà : l'interaction faible
 ** Masse et largeur du $Z^0$ -- Nombre de familles de neutrinos
 #+BEGIN_QUESTION
-La figure ci-dessous représente la distribution de masse invariante du boson
-d'interaction faible $Z^0$ pour sa désintégration en $e^+e^-$, obtenue par
-le détecteur ALEPH auprès du collisionneur $e^+e^-$ LEP du CERN.
+La figure ci-dessous représente la distribution de masse invariante du boson d'interaction faible
+$Z^0$ pour sa désintégration en $e^+e^-$, obtenue par le détecteur ALEPH auprès du collisionneur
+$e^+e^-$ LEP du CERN.
 
 #+BEGIN_CENTER
 #+ATTR_LATEX: :width 0.7\textwidth
 [[./figures/aleph_ee.pdf]]
 #+END_CENTER
 
-1) D'après cette figure, correspondant aux événements issus des désintégrations
-   $Z^0 \rightarrow e^+e^-$, estimer la masse du $Z^0$, ainsi que la largeur
-   associée.
+1) D'après cette figure, correspondant aux événements issus des désintégrations $Z^0 \rightarrow
+   e^+e^-$, estimer la masse du $Z^0$, ainsi que la largeur associée.
 #+END_QUESTION
-Le LEP (pour /Large Electron Positron collider/) était un accélérateur de
-particules circulaire de 27 km de circonférence, passant sous le site du CERN
-entre la France et la Suisse. En fonction de 1989 à 2000, le LEP demeure le plus
-puissant collisionneur de leptons jamais construit
+
+Le LEP (pour /Large Electron Positron collider/) était un accélérateur de particules circulaire de 27
+km de circonférence, passant sous le site du CERN entre la France et la Suisse. En fonction de 1989
+à 2000, le LEP demeure le plus puissant collisionneur de leptons jamais construit
 ($E_{\text{max}}=\unit[200]{GeV}$).
 
-La production de $Z^0$ intervient par la collision de $e^+e^-$. Ce boson se
-désintègre /via/ différents canaux dont la désintégration $Z^0\to e^+e^-$. La
-figure présente la section efficace en fonction de l'énergie des $e^+e^-$
-incidents.
+La production de $Z^0$ intervient par la collision de $e^+e^-$. Ce boson se désintègre /via/
+différents canaux dont la désintégration $Z^0\to e^+e^-$. La figure présente la section efficace en
+fonction de l'énergie des $e^+e^-$ incidents.
 
-1) [@1] Les faisceaux d'électrons-positrons sont accélérés à la même énergie
-   mais avec des impulsions opposées. Par conservation de l'impulsion, le $Z^0$
-   ainsi produit est au repos et les deux leptons produits par désintégration
-   sont donc émis dos-à-dos. La masse du $Z^0$ correspond donc à la position en
-   énergie du maximum de production /i.e./ à la résonance soit une masse de
-   $M_{Z^0}c^2=\unit[91.2]{GeV}$ (la mesure figurant dans le PDG donne 91.1876
-   \pm 0.0021 GeV). La largeur à mi-hauteur mesurée est
-   $\Gamma(Z^0)=2\times(91.2-90)=\unit[2.4]{GeV}$ (contre 2.4952 \pm 0.0023 GeV
-   dans le PDG).
+1) [@1] Les faisceaux d'électrons-positrons sont accélérés à la même énergie mais avec des
+   impulsions opposées. Par conservation de l'impulsion, le $Z^0$ ainsi produit est au repos et les
+   deux leptons produits par désintégration sont donc émis dos-à-dos. La masse du $Z^0$ correspond
+   donc à la position en énergie du maximum de production /i.e./ à la résonance soit une masse de
+   $M_{Z^0}c^2=\unit[91.2]{GeV}$ (la mesure figurant dans le PDG donne 91.1876 \pm 0.0021 GeV). La
+   largeur à mi-hauteur mesurée est $\Gamma(Z^0)=2\times(91.2-90)=\unit[2.4]{GeV}$ (contre 2.4952
+   \pm 0.0023 GeV dans le PDG).
 
 #+BEGIN_QUESTION
-2) [@2] Le calcul en théorie électrofaible de la largeur partielle du $Z^0$ pour
-   sa désintégration en $e^+e^-$, est $\Gamma(Z^0 \rightarrow e^+ e^-)$ ~ 84
-   MeV. Pourquoi ne retrouve-t-on pas la largeur précédente ?
+2) [@2] Le calcul en théorie électrofaible de la largeur partielle du $Z^0$ pour sa désintégration
+   en $e^+e^-$, est $\Gamma(Z^0 \rightarrow e^+ e^-)$ ~ 84 MeV. Pourquoi ne retrouve-t-on pas la
+   largeur précédente ?
 #+END_QUESTION
-2) [@2] $\Gamma(Z^0)\gg\Gamma(Z^0\to e^+e^-)$. La durée de vie du boson $Z^0$
-   est une propriété intrinsèque à cette particule : elle ne dépetnd donc pas du
-   mode de désintégration. À titre d'exemple, la mesure du taux de
-   désintégration de $Z^0\to\mu^+\mu^-$ donnerait un résultat expérimental
-   identique. À partir de la distribution en masse invariante, la largeur de la
-   résonance est donc la convolution de l'ensemble des modes de désintégration
-   du $Z^0$ (à laquelle s'ajoute les effets expérimentaux tels que la résolution
-   en énergie du calorimètre électromagnétique). On ne peut donc
-   expérimentalement isoler les différents modes de désintégrations du $Z^0$.
+
+
+2) [@2] $\Gamma(Z^0)\gg\Gamma(Z^0\to e^+e^-)$. La durée de vie du boson $Z^0$ est une propriété
+   intrinsèque à cette particule : elle ne dépend donc pas du mode de désintégration. À titre
+   d'exemple, la mesure du taux de désintégration de $Z^0\to\mu^+\mu^-$ donnerait un résultat
+   expérimental identique. À partir de la distribution en masse invariante, la largeur de la
+   résonance est donc la convolution de l'ensemble des modes de désintégration du $Z^0$ (à laquelle
+   s'ajoute les effets expérimentaux tels que la résolution en énergie du calorimètre
+   électromagnétique). On ne peut donc expérimentalement isoler les différents modes de
+   désintégrations du $Z^0$.
 
 #+BEGIN_QUESTION
-3) [@3] Dessiner les diagrammes de Feynman correspondant à la collision $e^+e^-$
-   suivie d'une désintégration en $\nu \bar{\nu}$, $l^-l^+$ ou $q\bar{q}$ (où
-   $\nu$ ($\bar{\nu}$) représente un (anti)neutrino, $l^-$ ($l^+$) un
-   (anti)lepton chargé et $q$ ($\bar{q}$) un (anti)quark).
+3) [@3] Dessiner les diagrammes de Feynman correspondant à la collision $e^+e^-$ suivie d'une
+   désintégration en $\nu \bar{\nu}$, $l^-l^+$ ou $q\bar{q}$ (où $\nu$ ($\bar{\nu}$) représente un
+   (anti)neutrino, $l^-$ ($l^+$) un (anti)lepton chargé et $q$ ($\bar{q}$) un (anti)quark).
 #+END_QUESTION
+
+
 3) [@3] Diagrammes de Feynman
 
    #+ATTR_LATEX: :align C{0.25\textwidth}C{0.25\textwidth}C{0.25\textwidth}
    | [[./figures/Z0_qqbar_diagram.pdf]] | [[./figures/Z0_llbar_diagram.pdf]] | [[./figures/Z0_nunubar_diagram.pdf]] |
 
+
 #+BEGIN_QUESTION
-4) [@4] Lorsque plusieurs modes de désintégration existent, on associe à chacun
-   d'eux une largeur de désintégration partielle, dont la somme fournit la
-   largeur totale. Les modes principaux de désintégration du boson $Z^0$
-   correspondent à la création d'une paire fermion-antifermion, décomposés de la
-   façon suivante :
+4) [@4] Lorsque plusieurs modes de désintégration existent, on associe à chacun d'eux une largeur de
+   désintégration partielle, dont la somme fournit la largeur totale. Les modes principaux de
+   désintégration du boson $Z^0$ correspondent à la création d'une paire fermion-antifermion,
+   décomposés de la façon suivante :
    #+BEGIN_SRC latex
      \begin{align*}
        \Gamma_\text{tot.}(Z^0)=N_\nu\Gamma(Z^0\rightarrow\nu\bar{\nu})+N_\ell\Gamma(Z^0 \rightarrow \ell^- \ell^+)+\Gamma_\text{tot.} (Z^0\rightarrow q \bar{q})=\unit[2495]{MeV}
      \end{align*}
    #+END_SRC
-   Les 3 largeurs partielles de leptons chargés sont égales, et la largeur
-   partielle de désintégration en toutes les paires possibles quark-antiquark
-   vaut $\Gamma_\text{tot.}(Z^0 \rightarrow q\bar{q})$ = 1741 MeV.
+   Les 3 largeurs partielles de leptons chargés sont égales, et la largeur partielle de
+   désintégration en toutes les paires possibles quark-antiquark vaut $\Gamma_\text{tot.}(Z^0
+   \rightarrow q\bar{q})$ = 1741 MeV.
 
-   La contribution d'une paire neutrino-antineutrino, de masse très inférieure à
-   celle du $Z^0$, se calcule en théorie électrofaible par la formule suivante :
+   La contribution d'une paire neutrino-antineutrino, de masse très inférieure à celle du $Z^0$, se
+   calcule en théorie électrofaible par la formule suivante :
    #+BEGIN_SRC latex
      \begin{align*}
        \Gamma(Z^0\rightarrow\nu\bar{\nu}) = \frac{\alpha_{e.m.} \ M_Z c^2}{24\sin^2\theta_W\cos^2\theta_W}
@@ -1495,24 +1512,23 @@ incidents.
    #+END_SRC
 
    On prend comme valeur du couplage électromagnétique $\alpha_\text{em} =
-   \frac{e^2}{4\pi\epsilon_0\hbar c} = \frac{1}{128}$ à une échelle de $Q^2$
-   ~100 GeV^{2} (la différence entre cette valeur et celle du couplage effectif
-   $\alpha_\text{em} = 1/137$ à $Q^2$ = 0 provient de corrections
-   quantiques). Le paramètre $\theta_W$ est l'angle de mélange électrofaible. La
-   valeur de $\sin^2\theta_W$ dépend du schéma de renormalisation électrofaible
-   choisi : une valeur est donnée par la relation $\sin^2\theta_W = 1 -
-   (M_Wc^2/M_Zc^2)^2 = e^2/g^2$, où $e$ est la constante de couplage
-   électromagnétique et $g$ celle du groupe de symétrie SU(2)$_L$. On utilise
-   ici $\sin^2\theta_W\sim 0.23$.
+   \frac{e^2}{4\pi\epsilon_0\hbar c} = \frac{1}{128}$ à une échelle de $Q^2$ ~100 GeV^{2} (la
+   différence entre cette valeur et celle du couplage effectif $\alpha_\text{em} = 1/137$ à $Q^2$ =
+   0 provient de corrections quantiques). Le paramètre $\theta_W$ est l'angle de mélange
+   électrofaible. La valeur de $\sin^2\theta_W$ dépend du schéma de renormalisation électrofaible
+   choisi : une valeur est donnée par la relation $\sin^2\theta_W = 1 - (M_Wc^2/M_Zc^2)^2 =
+   e^2/g^2$, où $e$ est la constante de couplage électromagnétique et $g$ celle du groupe de
+   symétrie SU(2)$_L$. On utilise ici $\sin^2\theta_W\sim 0.23$.
 
    Calculer la valeur du nombre de neutrinos légers $N_{\nu}$ existants.
 
-   /Remarque/ : Le résultat obtenu par les expériences LEP, $N_{\nu}$ = 3, se
-   traduit par une limite inférieure sur la masse d'un quatrième neutrino ayant
-   un couplage standard avec le $Z^0$. Cette limite est $M_{\nu_L} c^2 > M_Z /2$
-   45 GeV !
+   /Remarque/ : Le résultat obtenu par les expériences LEP, $N_{\nu}$ = 3, se traduit par une limite
+   inférieure sur la masse d'un quatrième neutrino ayant un couplage standard avec le $Z^0$. Cette
+   limite est $M_{\nu_L} c^2 > M_Z /2$ 45 GeV !
 #+END_QUESTION
+
 4) [@4] Calcul du nombre de neutrinos
+
    #+BEGIN_SRC latex
      \begin{align*}
        \Gamma_\text{tot.}(Z^0)=N_\nu\Gamma(Z^0\to\nu\bar{\nu})+N_\ell\Gamma(Z^0\to \ell^-\ell^+)+\Gamma_\text{tot.}(Z^0\to q\bar{q})=\unit[2495]{MeV}
@@ -1535,6 +1551,8 @@ incidents.
        &=2.99\text{ soit 3 familles de neutrinos}
      \end{align*}
    #+END_SRC
+
+
 ** Neutrinos : production, détection, masse
 *** Chaîne $pp$ : $4p\to\alpha+2\nu$
 #+BEGIN_QUESTION
@@ -1552,6 +1570,8 @@ incidents.
 2) Sachant que 3% de l'énergie solaire est emportée par les neutrinos, quelle
    est leur énergie moyenne ?
 #+END_QUESTION
+
+
 1) Chaque réaction produit deux neutrinos et libère $Q=\unit[26.72]{MeV}$. Le
    nombre de neutrinos produit par le Soleil est
    #+BEGIN_SRC latex
@@ -1560,6 +1580,7 @@ incidents.
        &=\unit[1.78\,10^{38}]{s}^{-1}
      \end{align*}
    #+END_SRC
+
    Le flux de neutrinos sur Terre est alors
    #+BEGIN_SRC latex
      \begin{align*}
@@ -1567,13 +1588,15 @@ incidents.
        &=6.33\,10^{14}\,\text{m$^{-2}$.s$^{-1}$}
      \end{align*}
    #+END_SRC
+
 2) 3% de l'énergie libérée par chaque réaction $Q=\unit[26.72]{MeV}$ est
    emportée par les deux neutrinos d'où
    #+BEGIN_SRC latex
      \begin{align*}
        \langle E_\nu\rangle=\frac{3\%\,Q}{2}=\unit[0.4]{MeV}
-     \end{align*}
+     \end{align*}                    
    #+END_SRC
+
 *** Limite sur la masse des neutrinos
 #+BEGIN_QUESTION
 La Supernova 1987A est située à une distance $D$ = 1.7 10^{5} années-lumière de
@@ -1587,6 +1610,7 @@ détectés par la réaction $\nu_e + n \rightarrow p + e^-$.
    distance $D$, de sa masse $m_{\nu}c^2$ (supposée petite mais non nulle) et de
    son énergie totale $E$.
 #+END_QUESTION
+
 1) Le temps d'arrivée d'un neutrino correspond à $t=\frac{D}{v}=\frac{D}{\beta
    c}$. Or
    #+BEGIN_SRC latex
@@ -1612,6 +1636,8 @@ détectés par la réaction $\nu_e + n \rightarrow p + e^-$.
      \end{align*}
    #+END_SRC
 #+END_QUESTION
+
+
 2) [@2] Les neutrinos les plus énergétiques arriveront les premiers soit
    #+BEGIN_SRC latex
      \begin{align*}
@@ -1622,6 +1648,7 @@ détectés par la réaction $\nu_e + n \rightarrow p + e^-$.
        &\simeq\frac{D}{c}\times\frac{m_\nu^2 c^4}{2}\left(\frac{1}{E_1^2}-\frac{1}{E_2^2}\right)
      \end{align*}
    #+END_SRC
+
 
 #+BEGIN_QUESTION
 3) [@3] En déduire une limite supérieure sur la masse du neutrino électronique.
@@ -1728,22 +1755,21 @@ $\theta$ l'angle de m\'elange de ces deux \'etats.
 
 ** Les mésons neutres $K^0$ et $\bar{K}^0$
 #+BEGIN_QUESTION
-Le $K^0$ et le $\bar{K^0}$ sont des mésons étranges, produits par interaction
-forte et se désintègrant par interaction faible. Le $\bar{K^0}$, antiparticule
-du $K^0$, a la même masse que lui.
+Le $K^0$ et le $\bar{K^0}$ sont des mésons étranges, produits par interaction forte et se
+désintègrant par interaction faible. Le $\bar{K^0}$, antiparticule du $K^0$, a la même masse que
+lui.
 
-Le $K^0$, comme le $\bar{K^0}$, se désintègre soit en deux pions, soit en
-trois pions, avec des constantes radioactives différentes :
+Le $K^0$, comme le $\bar{K^0}$, se désintègre soit en deux pions, soit en trois pions, avec des
+constantes radioactives différentes :
 #+BEGIN_SRC latex
   \begin{align*}
     \lambda_{2\pi} = \unit[1.12\,10^{10}]{s^{-1}} \quad \text{et} \quad \lambda_{3\pi} = \unit[1.93\,10^7]{s^{-1}}
   \end{align*}
 #+END_SRC
 
-Les états $K^0$ et $\bar{K^0}$ ne sont pas états propres de $\hat{\mathcal{C}}
-\hat{\mathcal{P}}$ (avec $\hat{\mathcal{P}}$ opération de parité ou symétrie
-droite-gauche et $\hat{\mathcal{C}}$ opération de conjugaison de charge ou
-symétrie particule-antiparticule).
+Les états $K^0$ et $\bar{K^0}$ ne sont pas états propres de $\hat{\mathcal{C}} \hat{\mathcal{P}}$
+(avec $\hat{\mathcal{P}}$ opération de parité ou symétrie droite-gauche et $\hat{\mathcal{C}}$
+opération de conjugaison de charge ou symétrie particule-antiparticule).
 
 On est amené à définir les particules fictives $\ket{K^0_1}$ et $\ket{K^0_2}$
 #+BEGIN_SRC latex
@@ -1751,8 +1777,8 @@ On est amené à définir les particules fictives $\ket{K^0_1}$ et $\ket{K^0_2}$
     \ket{K^0_1} = \frac{1}{\sqrt{2}} \ket{K^0} - \frac{1}{\sqrt{2}} \ket{\bar{K^0}} \quad\text{et}\quad \ket{K^0_2} = \frac{1}{\sqrt{2}} \ket{K^0} + \frac{1}{\sqrt{2}} \ket{\bar{K^0}}
   \end{align*}
 #+END_SRC
-qui sont états propres de $\hat{\mathcal{C}}\hat{\mathcal{P}}$ avec les valeurs
-propres respectives +1 et -1.
+qui sont états propres de $\hat{\mathcal{C}}\hat{\mathcal{P}}$ avec les valeurs propres respectives
++1 et -1.
 
 On a de la même manière
 #+BEGIN_SRC latex
@@ -1760,12 +1786,11 @@ On a de la même manière
     \ket{K^0} = \frac{1}{\sqrt{2}} \ket{K^0_1} + \frac{1}{\sqrt{2}} \ket{K^0_2} \quad\text{et}\quad \ket{\bar{K^0}} = -\frac{1}{\sqrt{2}} \ket{K^0_1} + \frac{1}{\sqrt{2}} \ket{K^0_2}
   \end{align*}
 #+END_SRC
-$\ket{K^0}$ et $\ket{\bar{K^0}}$ d'une part, $\ket{K^0_1}$ et $\ket{K^0_2}$
-d'autre part, formant deux bases orthonormées.
+$\ket{K^0}$ et $\ket{\bar{K^0}}$ d'une part, $\ket{K^0_1}$ et $\ket{K^0_2}$ d'autre part, formant
+deux bases orthonormées.
 
-1) On peut montrer que les états finaux hadroniques (à 2 ou 3 pions) de la
-   désintégration d'un $K^0$ ($\bar{K^0}$) sont des états propres de l'opération
-   $\hat{\mathcal{C}}\hat{\mathcal{P}}$, avec :
+1) On peut montrer que les états finaux hadroniques (à 2 ou 3 pions) de la désintégration d'un $K^0$
+   ($\bar{K^0}$) sont des états propres de l'opération $\hat{\mathcal{C}}\hat{\mathcal{P}}$, avec :
    #+BEGIN_SRC latex
      \begin{align*}
        \hat{\mathcal{C}} \hat{\mathcal{P}} \ket{2\pi} = + \ket{2\pi} \quad\text{et}\quad \hat{\mathcal{C}} \hat{\mathcal{P}} \ket{3\pi} = - \ket{3\pi}
@@ -1773,69 +1798,65 @@ d'autre part, formant deux bases orthonormées.
    #+END_SRC
    En déduire le mode de désintégration de $K^0_1$ (resp.  $K^0_2$) et sa vie moyenne $\tau_1$ (resp. $\tau_2$).
 #+END_QUESTION
+
 1) Les états "fictifs" $\ket{K^0_1}$ et $\ket{K^0_2}$ sont des états propres de
-   $\hat{\mathcal{C}}\hat{\mathcal{P}}$ de valeurs propres respectives +1 et
-   -1. Les états finaux hadroniques à 2 et 3 pions sont également états propres
-   de l'opérateur $\hat{\mathcal{C}}\hat{\mathcal{P}}$ et ont des valeurs
-   propres identiques à celle des états $\ket{K^0_1}$ et $\ket{K^0_2}$. Les
-   états physique $\ket{K^0}$ et $\ket{\bar{K}^0}$ étant un mélange des états
-   propres $\ket{K^0_1}$ et $\ket{K^0_2}$ et se désintégrant aussi bien en deux
-   et trois pions, on déduit, par association des valeurs propres, que l'état
-   $\ket{K^0_1}\equiv\ket{2\pi}$ et $\ket{K^0_2}\equiv\ket{3\pi}$. La durée de
-   vie moyenne de ces deux états est ainsi
+   $\hat{\mathcal{C}}\hat{\mathcal{P}}$ de valeurs propres respectives +1 et -1. Les états finaux
+   hadroniques à 2 et 3 pions sont également états propres de l'opérateur
+   $\hat{\mathcal{C}}\hat{\mathcal{P}}$ et ont des valeurs propres identiques à celle des états
+   $\ket{K^0_1}$ et $\ket{K^0_2}$. Les états physique $\ket{K^0}$ et $\ket{\bar{K}^0}$ étant un
+   mélange des états propres $\ket{K^0_1}$ et $\ket{K^0_2}$ et se désintégrant aussi bien en deux et
+   trois pions, on déduit, par association des valeurs propres, que l'état
+   $\ket{K^0_1}\equiv\ket{2\pi}$ et $\ket{K^0_2}\equiv\ket{3\pi}$. La durée de vie moyenne de ces
+   deux états est ainsi
    #+BEGIN_SRC latex
      \begin{align*}
        \tau_1&=\frac{1}{\lambda_{2\pi}}=\unit[8.9\,10^{-11}]{s}\\
        \tau_2&=\frac{1}{\lambda_{3\pi}}=\unit[5.2\,10^{-8}]{s}
      \end{align*}
    #+END_SRC
-   On note que ces deux durées de vie sont compatibles avec celles issues de
-   processus par intéraction faible.
+   On note que ces deux durées de vie sont compatibles avec celles issues de processus par
+   intéraction faible.
 
 #+BEGIN_QUESTION
-2) [@2] Les particules "physiques" $K^0$ et $\bar{K^0}$ sont considérées comme
-   des combinaisons linéaires des particules "fictives" $K^0_1$ et $K^0_2$. La
-   désintégration des $K^0$ et $\bar{K^0}$ peut alors se décomposer en deux
-   problèmes indépendants : la désintégration du $K^0_1$ et la désintégration du
-   $K^0_2$.
+2) [@2] Les particules "physiques" $K^0$ et $\bar{K^0}$ sont considérées comme des combinaisons
+   linéaires des particules "fictives" $K^0_1$ et $K^0_2$. La désintégration des $K^0$ et
+   $\bar{K^0}$ peut alors se décomposer en deux problèmes indépendants : la désintégration du
+   $K^0_1$ et la désintégration du $K^0_2$.
 
-   Soit un faisceau de particules de vitesse $v = \beta c$, de vie moyenne
-   $\tau$ et d'intensité $I_0$. On se place dans le référentiel du laboratoire.
+   Soit un faisceau de particules de vitesse $v = \beta c$, de vie moyenne $\tau$ et d'intensité
+   $I_0$. On se place dans le référentiel du laboratoire.
 
-   1) Après un parcours de longueur $L$, montrer que l'intensité du faisceau est
-      réduite à $I = I_0 e^{-L/\ell}$, où $\ell = \gamma \beta c \tau$.
+   1) Après un parcours de longueur $L$, montrer que l'intensité du faisceau est réduite à $I = I_0
+      e^{-L/\ell}$, où $\ell = \gamma \beta c \tau$.
 
-   2) On produit un faisceau de $K^0$ d'impulsion $p$ = 10 GeV/c. On suppose que
-      les $K^0_1$ et $K^0_2$ ont même masse et même impulsion que les $K^0$
-      du faisceau initial.
-      1) Quel est, après un parcours de longueur $L$ = 10 m, le rapport $\rho =
-         I_1 / I_2$ de l'intensité des $K^0_1$ à celle des $K^0_2$ dans le
-         faisceau ?
+   2) On produit un faisceau de $K^0$ d'impulsion $p$ = 10 GeV/c. On suppose que les $K^0_1$ et
+      $K^0_2$ ont même masse et même impulsion que les $K^0$ du faisceau initial.
+      1) Quel est, après un parcours de longueur $L$ = 10 m, le rapport $\rho = I_1 / I_2$ de
+         l'intensité des $K^0_1$ à celle des $K^0_2$ dans le faisceau ?
 
-      2) Indiquer quel est alors, dans le faisceau, le rapport du nombre de
-         particules "physiques" $K^0$ à celui des particules "physiques"
-         $\bar{K^0}$.
+      2) Indiquer quel est alors, dans le faisceau, le rapport du nombre de particules "physiques"
+         $K^0$ à celui des particules "physiques" $\bar{K^0}$.
 #+END_QUESTION
-2) [@2] Soit un faisceau de particules de vitesse $v=\beta c$, de vie moyenne
-   $\tau$ et d'intensité $I_0$
-   1) Dans le référentiel du faisceau /i.e./ du centre de masse, l'intensité est
-      égale $I=I_0\exp(-t^*/\tau)$. Dans le référentiel du laboratoire, cette
-      intensité devient $I=I_0\exp(-t/\gamma\tau)$. Par ailleurs, le temps
-      nécessaire pour parcourir la distance $L$ est
-      $t=\frac{L}{v}=\frac{L}{\beta c}$. On déduit que l'intensité du faisceau
-      après avoir parcouru une distance $L$ s'écrit
+
+2) [@2] Soit un faisceau de particules de vitesse $v=\beta c$, de vie moyenne $\tau$ et d'intensité
+   $I_0$
+   1) Dans le référentiel du faisceau /i.e./ du centre de masse, l'intensité est égale
+      $I=I_0\exp(-t^*/\tau)$. Dans le référentiel du laboratoire, cette intensité devient
+      $I=I_0\exp(-t/\gamma\tau)$. Par ailleurs, le temps nécessaire pour parcourir la distance $L$
+      est $t=\frac{L}{v}=\frac{L}{\beta c}$. On déduit que l'intensité du faisceau après avoir
+      parcouru une distance $L$ s'écrit
       #+BEGIN_SRC latex
         \begin{align*}
           I=I_0\exp\left(-\frac{L}{\gamma\tau\beta c}\right)=I_0\exp\left(-\frac{L}{\ell}\right)
         \end{align*}
       #+END_SRC
-   2) Faisceau de $K^0$ à $p=\unit[10]{GeV/c}$. Initialement, le faisceau est
-      donc constitué pour moitié de "particules" $K_1^0$, l'autre moitié étant
-      les "particules" $K_2^0$. On suppose par ailleurs que la masse et
-      l'impulsion de ces particules sont identiques
+
+   2) Faisceau de $K^0$ à $p=\unit[10]{GeV/c}$. Initialement, le faisceau est donc constitué pour
+      moitié de "particules" $K_1^0$, l'autre moitié étant les "particules" $K_2^0$. On suppose par
+      ailleurs que la masse et l'impulsion de ces particules sont identiques
       ($\beta_1=\beta_2=\beta_{K^0}$).
-      1) Après un parcours de longueur $L=\unit[10]{m}$, l'intensité respective
-         de chaque composante, $K^0_1$ et $K^0_2$, du faisceau est
+      1) Après un parcours de longueur $L=\unit[10]{m}$, l'intensité respective de chaque
+         composante, $K^0_1$ et $K^0_2$, du faisceau est
          #+BEGIN_SRC latex
            \begin{align*}
              I_{1,2}&=I_{01,02}\exp\left(-\frac{L}{\gamma\tau_{1,2}\beta c}\right)\\
@@ -1845,31 +1866,31 @@ d'autre part, formant deux bases orthonormées.
              &\simeq\exp\left[-\frac{L}{\gamma\beta c}\frac{1}{\tau_1}\right]
            \end{align*}
          #+END_SRC
+
          Par ailleurs,
          #+BEGIN_SRC latex
            \begin{align*}
-             p_K^2c^2&=E^2-m_K^2c^4=(\gamma-1)m_K^2c^4\\
+             p_K^2c^2&=E^2-m_K^2c^4=(\gamma^2-1)m_K^2c^4\\
              &\text{or }\gamma=\frac{1}{\surd 1-\beta^2}\to(\gamma\beta)^2=\gamma^2-1\\
              \gamma\beta&=\frac{p_Kc}{m_Kc^2}=\frac{10}{0.4977}=20.1
            \end{align*}
          #+END_SRC
-         Le rapport \rho entre les intensités de chacun des états $\ket{K^0_1}$
-         et $\ket{K^0_2}$ est égal à
+         Le rapport \rho entre les intensités de chacun des états $\ket{K^0_1}$ et $\ket{K^0_2}$ est
+         égal à
          #+BEGIN_SRC latex
            \begin{align*}
              \rho=\frac{I_1}{I_2}=7.37\,10^{-9}\ll1
            \end{align*}
          #+END_SRC
 
-      2) Ainsi, au bout de 10 mètres et en raison de la désintégration des
-         $K^0_1$ et des $K^0_2$, il ne reste dans le faisceau que des particules
-         $K^0_2$. Or, ces dernières sont le fruit d'un mélange des états $K^0$
-         et $\bar{K}^0$ à savoir
-         $\ket{K^0_2}=\frac{1}{\surd2}\left(\ket{K^0}+\ket{\bar{K}^0}\right)$. Le
-         faisceau est ainsi constitué à part égale de mésons $K^0$ et de
-         mésons $\bar{K}^0$ : les mésons $K^0$ se sont donc "transformés" en
-         leur antiparticule $\bar{K}^0$. Cette transformation est le phénomène
+      2) Ainsi, au bout de 10 mètres et en raison de la désintégration des $K^0_1$ et des $K^0_2$,
+         il ne reste dans le faisceau que des particules $K^0_2$. Or, ces dernières sont le fruit
+         d'un mélange des états $K^0$ et $\bar{K}^0$ à savoir
+         $\ket{K^0_2}=\frac{1}{\surd2}\left(\ket{K^0}+\ket{\bar{K}^0}\right)$. Le faisceau est ainsi
+         constitué à part égale de mésons $K^0$ et de mésons $\bar{K}^0$ : les mésons $K^0$ se sont
+         donc "transformés" en leur antiparticule $\bar{K}^0$. Cette transformation est le phénomène
          d'oscillation $K^0\leftrightarrow\bar{K}^0$.
+
 ** Footnotes
 
 [fn:11] W. David Arnett & Jonathan L. Roser [[http://journals.aps.org/prl/abstract/10.1103/PhysRevLett.58.1906][Physical Review Letter 58]], David
@@ -1881,12 +1902,13 @@ N. Spergel & John N. Bahcall [[http://www.sciencedirect.com/science/article/pii/
 1) [@1] D'après le tableau caractéristique des quarks, établir le même tableau
    pour les antiquarks.
 #+END_QUESTION
+
 1) [@1] Opérateur conjugaison particule -- antiparticule $\hat{C}$ :
    $q\overset{\hat{C}}{\rightarrow}\bar{q}$
 
-   - $\vv{T},\vv{I},mc^2\overset{\hat{C}}{\rightarrow}\vv{T},\vv{I},mc^2$
+   - $\vv{T},\vv{I},mc^2,\tau\overset{\hat{C}}{\rightarrow}\vv{T},\vv{I},mc^2,\tau$
    - $Q/e,B,T_3,S,c,b,t\overset{\hat{C}}{\rightarrow}-Q/e,-B,-T_3,-S,-c,-b,-t$
-   - Parite \pi : fermions $\pi\overset{\hat{C}}{\rightarrow}-\pi$, bosons
+   - Parité \pi : fermions $\pi\overset{\hat{C}}{\rightarrow}-\pi$, bosons
      $\pi\overset{\hat{C}}{\rightarrow}\pi$
 
    |-----------+-----+-------+------+-----+---------+-----+-----+-----+-----+-------|
@@ -1900,17 +1922,19 @@ N. Spergel & John N. Bahcall [[http://www.sciencedirect.com/science/article/pii/
    |-----------+-----+-------+------+-----+---------+-----+-----+-----+-----+-------|
 
 #+BEGIN_QUESTION
-2) [@2] Dans le cas où le moment orbital relatif associé au mouvement des quarks
-   est nul, quelle est la parité d'un méson ? Quelles sont alors les valeurs
-   possibles du moment cinétique $\vv{I}$ et de l'isospin $\vv{T}$ ?
+2) [@2] Dans le cas où le moment orbital relatif associé au mouvement des quarks est nul, quelle est
+   la parité d'un méson ? Quelles sont alors les valeurs possibles du moment cinétique $\vv{I}$ et
+   de l'isospin $\vv{T}$ ?
 #+END_QUESTION
+
 2) [@2] $\vv{L_i} = \vv{0}$: méson \equiv 1 quark + 1 antiquark
 
    #+BEGIN_SRC latex
      \begin{align*}
-       \pi(q\bar{q}) = (+1)\cdot(-1)\cdot(-1)^{L_i} = -1
+       \pi(q_1\bar{q_2}) = (+1)\cdot(-1)\cdot(-1)^{L_i} = -1
      \end{align*}
    #+END_SRC
+
    #+BEGIN_SRC latex
      \begin{align*}
        \vv{I}(q\bar{q}) = \vv{I}_q + \vv{I}_{\bar{q}} + \vv{L}_i &= \vv{S}_q +
@@ -1920,29 +1944,28 @@ N. Spergel & John N. Bahcall [[http://www.sciencedirect.com/science/article/pii/
      \end{align*}
    #+END_SRC
 
-   Pour un méson avec $\vv{L}_i = \vv{L}(q\bar{q}) = \vv{0}$ \rightarrow $I^\pi
-   = 0^-$ ou $1^-$
+   Pour un méson avec $\vv{L}_i = \vv{L}(q\bar{q}) = \vv{0}$ \rightarrow $I^\pi = 0^-$ ou $1^-$
 
    L'isospin $\vv{T}(q\bar{q}) = \vv{T}(q) + \vv{T}(\bar{q})$
 
-   - mésons $u\bar{d}$ ou $\bar{u}d$ \rightarrow $\vv{T} = \vv{0}$ ou $\vv{1}$ or
-     $T_3 = \pm1$ donc $\vv{T} = \vv{1}$
+   - mésons $u\bar{d}$ ou $\bar{u}d$ \rightarrow $\vv{T} = \vv{0}$ ou $\vv{1}$ or $T_3 = \pm1$ donc
+     $\vv{T} = \vv{1}$
    - mésons contenant $u,d,\bar{u},\bar{d}$ $\vv{T} = \vv{1}/2$
    - mésons ne contenant ni $u,d,\bar{u},\bar{d}$ $\vv{T} = \vv{0}$
 
 #+BEGIN_QUESTION
 3) [@3]
-   1) Avec les quarks $u, d, s$, et leurs antiquarks, combien de mésons peut-on
-      constituer dans un état de moment cinétique donné ? Représenter ces mésons
-      sur un diagramme où la troisième composante de l'isospin $T_3$ est portée
-      en abscisse, et l'étrangeté $S$ en ordonnée. Indiquer sur le diagramme
-      la composition en quarks et en antiquarks de chacun de ces mésons.
+   1) Avec les quarks $u, d, s$, et leurs antiquarks, combien de mésons peut-on constituer dans un
+      état de moment cinétique donné ? Représenter ces mésons sur un diagramme où la troisième
+      composante de l'isospin $T_3$ est portée en abscisse, et l'étrangeté $S$ en ordonnée. Indiquer
+      sur le diagramme la composition en quarks et en antiquarks de chacun de ces mésons.
 
-   2) On considère le diagramme des mésons de moment orbital relatif nul et de
-      moment cinétique $\vv{I} = \vv{0}$. Regrouper ces mésons en multiplets
-      d'isospin, et indiquer sur le diagramme où se trouvent les pions, ainsi
-      que les mésons étranges $K^+$, $K^-$, $K^0$ et $\bar{K^0}$.
+   2) On considère le diagramme des mésons de moment orbital relatif nul et de moment cinétique
+      $\vv{I} = \vv{0}$. Regrouper ces mésons en multiplets d'isospin, et indiquer sur le diagramme
+      où se trouvent les pions, ainsi que les mésons étranges $K^+$, $K^-$, $K^0$ et $\bar{K^0}$.
 #+END_QUESTION
+
+
 3) [@3] $(u,d,s)\times(\bar{u},\bar{d},\bar{s}) = 3\times3 = 9$ mésons.
    L'étrangeté $S=-1,0,1$, la 3^{ème} composante de l'isospin $T_3$ \in
    [-1,-1/2,0,1/2,+1]
@@ -1960,6 +1983,7 @@ N. Spergel & John N. Bahcall [[http://www.sciencedirect.com/science/article/pii/
    | $s\bar{s}$ |   0 |     0 |     0 |
    |------------+-----+-------+-------|
 
+
    #+CAPTION: *Combinaison de quark $u,d,s$ pour former des mésons de moment cinétique $I^\pi=0^-$*
    #+ATTR_LATEX: :width \linewidth
    [[file:figures/meson_uds.pdf]]
@@ -1975,41 +1999,37 @@ N. Spergel & John N. Bahcall [[http://www.sciencedirect.com/science/article/pii/
 ** Supermultiplets de baryons
 
 #+BEGIN_QUESTION
-1) La figure suivante présente le diagramme $S$ en fonction de $T_3$ pour le
-   décuplet de baryons $I^{\pi} = 3/2^+$.
+1) La figure suivante présente le diagramme $S$ en fonction de $T_3$ pour le décuplet de baryons
+   $I^{\pi} = 3/2^+$.
 
    #+BEGIN_CENTER
    #+ATTR_LATEX: :width 0.7\linewidth
    [[file:figures/decuplet.pdf]]
    #+END_CENTER
 
-   La masse des baryons d'une même famille est donnée par la formule de
-   Gell-Mann et Okubo :
+   La masse des baryons d'une même famille est donnée par la formule de Gell-Mann et Okubo :
    #+BEGIN_SRC latex
      \begin{align}
        M(Y,T)c^2 = M_0c^2 + a\,Y + b\,\left[T(T+1) - \frac{Y^2}{4}\right]
      \end{align}
    #+END_SRC
-   où $M_0c^2$, $a$ et $b$ sont des constantes (en MeV); $T$ est le nombre
-   quantique d'isospin du baryon considéré, $Y$ est son hypercharge définie ici
-   par $Y = B+S$, avec $B$ le nombre baryonique et $S$ celui d'étrangeté, les
-   autres saveurs étant nulles.
+   où $M_0c^2$, $a$ et $b$ sont des constantes (en MeV); $T$ est le nombre quantique d'isospin du
+   baryon considéré, $Y$ est son hypercharge définie ici par $Y = B+S$, avec $B$ le nombre
+   baryonique et $S$ celui d'étrangeté, les autres saveurs étant nulles.
 
-   1) Lorsque la formule (1) a été établie, les baryons $\Delta$, $\Sigma$ et
-      $\Xi$ étaient connus parmi les baryons $I^\pi$ = 3/2$^+$, mais pas le
-      $\Omega$. Quelle masse pouvait-on alors prédire pour cette particule
-      $\Omega$ ? On utilisera pour cela la figure ci-dessous présentant deux
-      familles de baryons composés des quarks $u,d,s$ (leur masse est portée en
-      ordonnée).
+   1) Lorsque la formule (1) a été établie, les baryons $\Delta$, $\Sigma$ et $\Xi$ étaient connus
+      parmi les baryons $I^\pi$ = 3/2$^+$, mais pas le $\Omega$. Quelle masse pouvait-on alors
+      prédire pour cette particule $\Omega$ ? On utilisera pour cela la figure ci-dessous présentant
+      deux familles de baryons composés des quarks $u,d,s$ (leur masse est portée en ordonnée).
       #+BEGIN_CENTER
       #+ATTR_LATEX: :width 0.9\linewidth
       [[file:figures/bar1.pdf]]
       #+END_CENTER
 
-   2) Justifier les nombres quantiques du $\Omega$ et discuter les symétries de
-      sa fonction d'onde, sachant que le moment orbital relatif des 3 quarks est
-      $\vv{L} = \vv{0}$.
+   2) Justifier les nombres quantiques du $\Omega$ et discuter les symétries de sa fonction d'onde,
+      sachant que le moment orbital relatif des 3 quarks est $\vv{L} = \vv{0}$.
 #+END_QUESTION
+
 1)
    1) [@1] Pour $I^\pi=3/2^+$, nous avons ainsi
       - $S=0$ et $\vv{T}=\vv{3}/2$ : quadruplet \Delta^{-}, \Delta^{0}, \Delta^{+}
@@ -2078,6 +2098,7 @@ N. Spergel & John N. Bahcall [[http://www.sciencedirect.com/science/article/pii/
         \end{align*}
       #+END_SRC
 
+
       Les 3 quarks $s$ sont donc tous dans le même état de spin +1/2 ce qui par
       définition est impossible en raison du principe d'exclusion de Pauli
       \rightarrow introduction de la couleur $RVB$ comme nouveau nombre
@@ -2093,6 +2114,7 @@ N. Spergel & John N. Bahcall [[http://www.sciencedirect.com/science/article/pii/
    $s=c=b=t=0$, donner sa composition en quarks. Calculer la masse du proton à
    partir des masses des quarks qui le constituent. Qu'en concluez-vous ?
 #+END_QUESTION
+
 2) [@2] proton \equiv $uud$ soit une masse $m_p c^2 = 2\,m_u c^2 + m_d c^2 \leq
    2\times\unit[3]{MeV} + \unit[7]{MeV} = \unit[13]{MeV} \ll
    \unit[938]{MeV}$. 99% de la masse du proton est due à la mer de partons
@@ -2105,6 +2127,7 @@ N. Spergel & John N. Bahcall [[http://www.sciencedirect.com/science/article/pii/
    déduire pourquoi la vie moyenne du $\Delta^0$ est environ 10^{-23} s alors
    que celle du $\Lambda^0$ vaut 2.6 10^{-10} s.
 #+END_QUESTION
+
 3) [@3] $\Delta^0\rightarrow p + \pi^-$ et $\Lambda^0\rightarrow p + \pi^-$
 
    #+ATTR_LATEX: :align C{0.4\linewidth}C{0.4\linewidth}
@@ -2114,6 +2137,7 @@ N. Spergel & John N. Bahcall [[http://www.sciencedirect.com/science/article/pii/
    | $\rightarrow\tau\sim$ 10^{-23} à 10^{-20} s | $\rightarrow\tau\gtrsim$ 10^{-13} s       |
 
 ** Les mésons $D$
+
 #+BEGIN_QUESTION
 Soit le méson $D^0$, ayant pour caractéristiques : $mc^2$ = 1865 MeV, $I^{\pi} = 0^-$, $\vv{T} =
 \vv{1/2}$, $T_3 = -1/2$, $Q/e = 0$, et saveur "charmée" $c = 1$.
@@ -2121,6 +2145,7 @@ Soit le méson $D^0$, ayant pour caractéristiques : $mc^2$ = 1865 MeV, $I^{\pi}
 1) [@1] Quelle est la valeur de son hypercharge et quelles sont les caractéristiques de son
    antiparticule $\bar{D}^0$ ?
 #+END_QUESTION
+
 
 1) [@1] L'hypercharge $Y$ est égale à la somme du nombre baryonique $B$ et de la saveur $S$. Le
    méson $D^0$ a, par définition, un nombre baryonique nul, sa saveur étant uniquement $c=1$ d'où
@@ -2135,6 +2160,8 @@ Soit le méson $D^0$, ayant pour caractéristiques : $mc^2$ = 1865 MeV, $I^{\pi}
 2) [@2] Combien d'éléments comprend le multiplet d'isospin dont fait partie $D^0$ ? Quelles sont les
    caractéristiques de ces éléments autres que $D^0$ ?
 #+END_QUESTION
+
+
 2) [@2] Multiplet d'isospin de $D^0$
 
    $\vv{T} = \vv{1}/2$, on a donc un doublet d'isospin $T_3=-1/2,+1/2$ de même saveur. En plus du
@@ -2146,6 +2173,7 @@ Soit le méson $D^0$, ayant pour caractéristiques : $mc^2$ = 1865 MeV, $I^{\pi}
 3) [@3] Donner la composition en quarks de $D^0$ et $\bar{D}^0$, et des éléments trouvés question 2,
    ainsi que de leurs antiparticules.
 #+END_QUESTION
+
 3) [@3] Le méson $D^0$ est forcément constitué d'un quark charme et d'un antiquark sans saveur et
    d'isospin non nul /i.e./ $\bar{u}$ ou $\bar{d}$. Le fait qu'il est une charge nulle implique
    nécessairement la présence d'un antiquark $\bar{u}$. Le doublon d'isospin de $D^0$ qu'est le
@@ -2160,10 +2188,12 @@ Soit le méson $D^0$, ayant pour caractéristiques : $mc^2$ = 1865 MeV, $I^{\pi}
    | $D^-$       | $\bar{c}d$ |
    |-------------+------------|
 
+
 #+BEGIN_QUESTION
 4) [@4] Soit $\vv{L}$ le moment orbital relatif du système de quarks composant le $D^0$ et $\vv{I}$
    son moment cinétique total. Préciser les valeurs de $\vv{L}$ et de $\vv{S}$.
 #+END_QUESTION
+
 4) [@4] $\vv{I} = \vv{L} + \vv{S}$ soit $\vv{L} = \vv{I} + \vv{S} = \vv{0} +
    \vv{S}_{c} + \vv{S}_{\bar{u}} = \vv{0} + \vv{1}/2 + \vv{1}/2 = \vv{0}$ ou
    $\vv{1}$. En tenant compte de la parité \pi, on obtient
@@ -2176,12 +2206,14 @@ Soit le méson $D^0$, ayant pour caractéristiques : $mc^2$ = 1865 MeV, $I^{\pi}
    d'où $L$ pair. Les valeurs de $\vv{L}$ et de $\vv{S}$ satisfaisant aux conservations du moment
    cinétique total et de la parité sont donc $\vv{L}=\vv{0}$ et $\vv{S}=\vv{0}$.
 
+
 #+BEGIN_QUESTION
 5) [@5] On observe la désintégration $D^0 \rightarrow K^- + \pi^+$. En utilisant seulement le moment
    cinétique total et la parité, dire quelle est l'interaction responsable de cette
    désintégration. Trouver d'autres arguments à l'appui de cette réponse. On donne pour les kaons et
    les pions : I$^{\pi}$ = 0$^-$.
 #+END_QUESTION
+
 5) [@5] $D^0\rightarrow K^-+\pi^+$. Le fait de n'avoir à tester que la (non)conservation du moment
    cinétique total et de la parité semble indiquer que la réaction se fait par interaction faible.
    #+BEGIN_SRC latex
@@ -2207,6 +2239,7 @@ Soit le méson $D^0$, ayant pour caractéristiques : $mc^2$ = 1865 MeV, $I^{\pi}
    \rightarrow D^0 + \bar{D}^0$ par interaction électromagnétique. Quelle est l'énergie cinétique
    minimale de chacun des faisceaux $T_s$ nécessaire pour que la réaction (1) soit possible ?
 #+END_QUESTION
+
 6) [@6] $e^++e^-\rightarrow D^0+\bar{D}^0$
 
    Collision de deux faisceaux d'impulsion opposés \rightarrow référentiel du centre de masse dans
@@ -2221,6 +2254,7 @@ Soit le méson $D^0$, ayant pour caractéristiques : $mc^2$ = 1865 MeV, $I^{\pi}
 7) [@7] On utilise des faisceaux d'énergie $T_0$ = 2.014 GeV. Calculer les impulsions du $D^0$ et du
    $\bar{D}^0$.
 #+END_QUESTION
+
 7) [@7] $T_0=\unit[2014]{MeV}$
 
    Toujours dans le référentiel du centre de masse, la conservation de l'impulsion implique que
@@ -2244,6 +2278,7 @@ Soit le méson $D^0$, ayant pour caractéristiques : $mc^2$ = 1865 MeV, $I^{\pi}
    [[file:figures/bar2.pdf]]
    #+END_CENTER
 #+END_QUESTION
+
 8) [@8] Le second pic correspond à la production du couple $D^0/\bar{D}^0$.
 
 #+BEGIN_QUESTION
@@ -2256,6 +2291,8 @@ Soit le méson $D^0$, ayant pour caractéristiques : $mc^2$ = 1865 MeV, $I^{\pi}
    #+END_SRC
    Calculer la masse de cette particule $X$ et donner la valeur de son hypercharge.
 #+END_QUESTION
+
+
 9) [@9] $e^++e^-\rightarrow D^0 + X$
 
    L'impulsion du $D^0$ est à présent, de 560 MeV. La conservation de l'impulsion suppose la même
@@ -2277,6 +2314,8 @@ Soit le méson $D^0$, ayant pour caractéristiques : $mc^2$ = 1865 MeV, $I^{\pi}
     $T_{3}$ = 1/2. Quelle est sa composition en quarks ?  Préciser les valeurs possibles du moment
     orbital relatif $\vv{L}$ et du spin $\vv{S}$.
 #+END_QUESTION
+
+
 10) [@10] L'interaction électromagnétique conserve la saveur (seul l'isospin n'est pas conservé). La
     particule $X$ est donc nécessairement de saveur opposée au méson $D^0$. Par ailleurs, la
     conservation du nombre baryonique et du nombre leptonique implique que cette particule est un
@@ -2294,9 +2333,11 @@ Soit le méson $D^0$, ayant pour caractéristiques : $mc^2$ = 1865 MeV, $I^{\pi}
         \vv{1} &= \vv{S}_u + \vv{S}_{\bar{c}}+\vv{L}_{u\bar{c}}
       \end{align*}
     #+END_SRC
+
     Soit $\vv{S}_X=\vv{S}_u + \vv{S}_{\bar{c}}=\vv{0}$ et $\vv{L}=\vv{1}$, soit
     $\vv{S}_X=\vv{1}$ et $\vv{L}=\vv{0},\vv{1},\vv{2}$.
-    La conservation de la parité $\pi$ impose que
+
+    La décomposition de la parité $\pi$ impose que
     #+BEGIN_SRC latex
       \begin{align*}
         \pi(X) &= \pi(u)\cdot\pi(\bar{c})\cdot(-1)^{L}\\ -1 &= (+1)\times(-1)\times(-1)^L
@@ -2304,6 +2345,7 @@ Soit le méson $D^0$, ayant pour caractéristiques : $mc^2$ = 1865 MeV, $I^{\pi}
     #+END_SRC
     duquel on déduit que $L$ doit être pair. La valeur du spin de $X$ est donc 1 et le moment
     orbital relatif est soit 0 ou 2.
+
 
 #+BEGIN_QUESTION
 11) [@11] On observe la désintégration $X \rightarrow \bar{D}^0 + \pi^0$. Montrer qu'elle est
@@ -2344,67 +2386,12 @@ $\vv{T}=\vv{0}$ et $\vv{S}=\vv{3}/2$, la somme n'est donc pas impaire. C'est
 l'introduction de la couleur qui permet de rendre cette fonction d'onde globale
 antisymétrique.
 * COMMENT TD7 : Isospin -- des quarks aux noyaux
-** Introduction
-
-L'isospin $\vv{T}$ rend compte de l'indépendance de charge de l'intéraction
-forte. Ainsi, le neutron et le proton qui appartiennent au doublet d'isospin
-$\vv{T}=\vv{1}/2$ sont, du point de vue de l'intéraction forte, des particules
-identiques ($T_3(p)=1/2$ et \(T_3(n)=-1/2\)).
-
-L'espace d'isospin est analogue à l'espace des spins notamment vis-à-vis des
-opérations et des calculs qui s'y attachent.
-
-Pour une valeur d'isospin $\vv{T}$, la troisième composante $T_3$ prend pour
-valeur
-#+BEGIN_SRC latex
-  \begin{align*}
-    -T\leq T_3\leq T
-  \end{align*}
-#+END_SRC
-
-soit $2T+1$ valeurs.
-
-Pour un noyau c'est-à-dire pour une système à plusieurs nucléons, l'isospin est
-égal à
-#+BEGIN_SRC latex
-  \begin{align*}
-    \vv{T}=\Sigma\,\vv{t}_i
-  \end{align*}
-#+END_SRC
-
-où $t_i$ est lui-même égal à $\vv{1}/2$. La 3^{ème} composante $T_3$ est égale à
-#+BEGIN_SRC latex
-  \begin{align*}
-    T_3=\Sigma\,t_{3i}=Z\times t_3(p) + N\times t_3(n)
-  \end{align*}
-#+END_SRC
-soit
-#+BEGIN_SRC latex
-  \begin{align*}
-    T_3=\frac{Z}{2} - \frac{N}{2}=\frac{Z-N}{2}
-  \end{align*}
-#+END_SRC
-
-L'isospin varie ainsi suivant les états d'énergie selon
-#+BEGIN_SRC latex
-  \begin{align*}
-    \frac{|Z-N|}{2}\leq T\leq\frac{Z+N}{2}
-  \end{align*}
-#+END_SRC
-soit
-#+BEGIN_SRC latex
-  \begin{align*}
-    |T_3|\leq T\leq\frac{A}{2}
-  \end{align*}
-#+END_SRC
-où, de façon empirique, il est établi que l'état fondamental correspond à
-$T=|T_3|$, $T$ augmentant pour les états excités.
-
 ** Couplages nucléon-nucléon et nucléon-pion
 #+BEGIN_QUESTION
 1) Quelles sont les valeurs possibles $\vv{T}$ et $T_3$ pour l'isospin d'un
    système résultant du couplage de deux nucléons ?
 #+END_QUESTION
+
 1) Système de deux nucléons :
 
    $\vv{T}=\Sigma\,\vv{t}_i$ et $T_3=\Sigma\,t_{3i}$ or selon Gell-Mann &
@@ -2441,6 +2428,7 @@ $T=|T_3|$, $T$ augmentant pour les états excités.
    #+END_SRC
 #+END_QUESTION
 
+
 2) [@2] Fonction d'onde d'isospin
    #+BEGIN_SRC latex
      \begin{align*}
@@ -2462,6 +2450,7 @@ $T=|T_3|$, $T$ augmentant pour les états excités.
    Dans le cas d'un système de deux nucléons $t_{1,2}=1/2$ et donc la fonction
    d'onde d'isospin est antisymétrique si $T-1$ est impair et symétrique si
    $T-1$ est pair[fn:6].
+
 
 #+BEGIN_QUESTION
 3) [@3] Donner, à un facteur de phase près, les fonctions d'onde d'un système de
@@ -2493,6 +2482,7 @@ $T=|T_3|$, $T$ augmentant pour les états excités.
 5) [@5] Quelles sont les valeurs possibles de $\vv{T}$ et $T_3$ pour un système
    pion-nucléon ?
 #+END_QUESTION
+
 5) [@5] Système pion-nucléon
 
    L'isospin d'un pion est $\vv{t}(\pi)=\vv{1}$, celui d'un nucléon
@@ -2584,6 +2574,7 @@ que le moment orbital relatif du deutérium et du $\pi^-$ est nul.
    parité du $\pi^-$.
 #+END_QUESTION
 
+
 1) Moment cinétique total du système $\pi^-d$
 
    #+BEGIN_SRC latex
@@ -2603,11 +2594,12 @@ que le moment orbital relatif du deutérium et du $\pi^-$ est nul.
      \end{align*}
    #+END_SRC
 
+
    Intéraction forte \rightarrow conservation de la parité
 
    #+BEGIN_SRC latex
      \begin{align*}
-       \pi(\pi d) = \pi(\pi) = \pi(nn)
+       \pi(\pi d) = \pi(\pi) = \pi(nn) = \pi(n)\cdot\pi(n)\cdot(-1)^{L_{nn}}
      \end{align*}
    #+END_SRC
 
@@ -2616,6 +2608,7 @@ que le moment orbital relatif du deutérium et du $\pi^-$ est nul.
    dans l'échange des deux nucléons, déterminer complètement le couple $(l,s)$
    du système des deux neutrons. En déduire la parité intrinsèque du $\pi^-$.
 #+END_QUESTION
+
 2) [@2] Le moment cinétique total s'écrit
 
    #+BEGIN_SRC latex
@@ -2775,7 +2768,7 @@ On considère les réactions de production par interaction forte de mésons pi :
      \begin{align*}
        (p_pc)^2 &= 1000(1000+2\times940) = \unit[2.88\,10^6]{MeV}^2 \text{ soit } p_pc = \unit[1697]{MeV}\\
        (p_\pi c)^2 &= 600(600+2\times140) = \unit[5.28\,10^5]{MeV}^2 \text{ soit } p_\pi c = \unit[726.6]{MeV}\\
-       (p_dc)^2 &= (1000-600-140)(260+4\times140) = \unit[1.045\,10^6]{MeV}^2 \text{ soit } p_dc = \unit[1022]{MeV}
+       (p_dc)^2 &= (1000-600-140)(260+4\times940) = \unit[1.045\,10^6]{MeV}^2 \text{ soit } p_dc = \unit[1022]{MeV}
      \end{align*}
      \begin{align*}
        \cos\theta&=\frac{2.88+0.528-1.045}{2\times\sqrt{2.88}\sqrt{0.528}}\\
@@ -2789,6 +2782,7 @@ On considère les réactions de production par interaction forte de mésons pi :
    $\ket{p+n}$ et $\ket{d+\pi^0}$. Les coefficients de Clebsh-Gordan sont donnés en annexe et on
    donne l'isospin du deuton : $T=0$.
 #+END_QUESTION
+
 3) [@3] États d'isospin
 
    |----------+------------+------------+----------+----------+----------|
@@ -2828,6 +2822,8 @@ On considère les réactions de production par interaction forte de mésons pi :
 4) [@4] Les deux réactions étant réalisées dans les mêmes conditions cinématiques, montrer qu'il
    existe entre leurs sections efficaces une relation simple que l'on précisera.
 #+END_QUESTION
+
+
 4) [@4] Intéraction forte \rightarrow conservation de l'isospin $\vv{T}$. Si ces 2 réactions sont
    réalisées dans les mêmes conditions cinématiques, on peut comparer leurs sections efficaces
    $\sigma_1$ et $\sigma_2$ en utilisant la formule
@@ -2844,10 +2840,11 @@ On considère les réactions de production par interaction forte de mésons pi :
    #+BEGIN_SRC latex
      \begin{align*}
        \sigma_1&\propto\left|\bra{d\pi^+}V_\text{IF}\ket{pp}\right|^2\propto\left|\bra{11}V_\text{IF}\ket{11}\right|^2\propto \left|M(1)\right|^2\\
-       \sigma_2&\propto\tfrac{1}{2}\left|\bra{d\pi^0}V_\text{IF}\ket{pn}\right|^2\\
+       \sigma_2&\propto\left|\bra{d\pi^0}V_\text{IF}\ket{pn}\right|^2\\
        &\propto\tfrac{1}{2}\left|\bra{10}V_\text{IF}\ket{00}+\bra{10}V_\text{IF}\ket{10}\right|^2
      \end{align*}
    #+END_SRC
+
    or $\bra{10}V_\text{IF}\ket{00}$ est nul car $T_f\neq T_i$ et $\bra{10}V_\text{IF}\ket{10}$ est
    une fonction dépendant uniquement de $T=1$. On obtient ainsi que
    #+BEGIN_SRC latex
@@ -2905,14 +2902,14 @@ symétrique. Toutefois et comme nous le verrons dans l'exercice sur la parité
 intrinsèque du pion, la fonction d'onde globale de ces états demeure
 antisymétrique en raison du principe de Pauli généralisé qui impose que deux
 fermions soient dans des états quantiques différents.
-* COMMENT TD8 : Structure nucléaire
+* TD8 : Structure nucléaire
 ** Introduction
 #+BEGIN_CENTER
 Noyau :\nbsp^{A}_{Z}X \rightarrow Z protons  + N neutrons = A nucléons (nombre de masse)
 #+END_CENTER
 
-- Noyau ayant le "même" nombre de protons Z sont appelés des *isotopes* tandis que
-  ceux présentant le même nombre de nucléons A sont des *isobares*
+- Noyau ayant le "même" nombre de protons Z sont appelés des *isotopes* tandis que ceux présentant le
+  même nombre de nucléons A sont des *isobares*
 
 - Noyau \equiv objet quantique
   - une fonction d'onde décrit les propriétés du noyau
@@ -2928,25 +2925,21 @@ Certains noyaux sont stables, d'autres radioactifs se désintégrant spontanéme
   \end{align*}
 #+END_SRC
 
-Pour étudier le noyau, on forme des réactions nucléaires qui obéissent à des
-lois de conservation (charge, nombre de nucléons, parité...). On bombarde une
-cible avec \neq projectiles (\gamma, e^{-}, n, p, ions lourds), à \neq
-énergies. Ces réactions sont possibles avec \neq probabilités (section
-efficace). On peut étudier chaque réaction dont les états finaux peuvent
-différer et déterminer la variation de la section efficace en fonction de
-l'énergie incident (fonction d'excitation) ou en fonction de l'angle de sortie
-(distribution angulaire).
+Pour étudier le noyau, on forme des réactions nucléaires qui obéissent à des lois de conservation
+(charge, nombre de nucléons, parité...). On bombarde une cible avec \neq projectiles (\gamma, e^{-},
+n, p, ions lourds), à \neq énergies. Ces réactions sont possibles avec \neq probabilités (section
+efficace). On peut étudier chaque réaction dont les états finaux peuvent différer et déterminer la
+variation de la section efficace en fonction de l'énergie incident (fonction d'excitation) ou en
+fonction de l'angle de sortie (distribution angulaire).
 
-*Rayon des noyaux :* En 1909, Hans Geiger et Ernest Marsden sous la direction
-d'Ernest Rutherford, mettent en évidence le noyau atomique en étudiant la
-diffusion de particules \alpha sur des atomes d'or (Au). Antérieurement à cette
-expérience, la matière était conçue sous la forme d'atome contenant deux parties
-de charge électrique opposée. L'expérience de Rutherford montra
-qu'en réalité le noyau chargé positivement est de taille très petite devant le
-nuage électronique qui l'entoure, chargé négativement.
+*Rayon des noyaux :* En 1909, Hans Geiger et Ernest Marsden sous la direction d'Ernest Rutherford,
+mettent en évidence le noyau atomique en étudiant la diffusion de particules \alpha sur des atomes
+d'or (Au). Antérieurement à cette expérience, la matière était conçue sous la forme d'atome
+contenant deux parties de charge électrique opposée. L'expérience de Rutherford montra qu'en réalité
+le noyau chargé positivement est de taille très petite devant le nuage électronique qui l'entoure,
+chargé négativement.
 
-En supposant que le noyau soit une sphère uniformément chargée en volume et
-contenant A nucléons
+En supposant que le noyau soit une sphère uniformément chargée en volume et contenant $A$ nucléons
 
 #+BEGIN_SRC latex
   \begin{align*}
@@ -2954,17 +2947,15 @@ contenant A nucléons
   \end{align*}
 #+END_SRC
 
-On déduit que le rayon d'un noyau est proportionnel à son nombre de nucléons $R
-= r_{0} \times A^{1/3}$. Expérimentalement, $r_{0}$ est compris entre 1.2 et 1.5
-fermi où 1 fm = 10^{-15} m = 10^{-13} cm. La valeur la plus probable est $r_{0}$ =
-1.25 fm.
+On déduit que le rayon d'un noyau est proportionnel à son nombre de nucléons $R = r_{0} \times
+A^{1/3}$. Expérimentalement, $r_{0}$ est compris entre 1.2 et 1.5 fermi où 1 fm = 10^{-15} m =
+10^{-13} cm. La valeur la plus probable est $r_{0}$ = 1.25 fm.
 
 ** Ordres de grandeurs
 #+BEGIN_QUESTION
-Calculer le volume (en cm^{3}) et la masse volumique (en g/cm^{3}) d'un noyau
-de\nbsp^{12}_{6}C, qui est le noyau utilisé pour définir l'unité de masse
-atomique. Comparer à la masse volumique des matériaux courants comme le bois ou
-le fer.
+Calculer le volume (en cm^{3}) et la masse volumique (en g/cm^{3}) d'un noyau de\nbsp^{12}_{6}C, qui
+est le noyau utilisé pour définir l'unité de masse atomique. Comparer à la masse volumique des
+matériaux courants comme le bois ou le fer.
 #+END_QUESTION
 
 - Volume du noyau de\nbsp^{12}_{6}C : approx. sphérique
@@ -2977,9 +2968,8 @@ le fer.
     \end{align*}
   #+END_SRC
 
-- Masse volumique
-  \nbsp^{12}_{6}C \rightarrow noyau particulier à partir duquel est défini
-  l'unité de masse atomique
+- Masse volumique \nbsp^{12}_{6}C \rightarrow noyau particulier à partir duquel est défini l'unité
+  de masse atomique
 
   #+BEGIN_SRC latex
     \begin{align*}
@@ -3005,27 +2995,25 @@ On en déduit que la masse volumique est égale à
   \end{align*}
 #+END_SRC
 
-À titre de comparaison, le bois a une densité moyenne de 0.6 -- 1 g/cm^{3}, le
-fer environ 10 g/cm^{3}, la Terre de 6 g/cm^{3} et l'Uranium de 19 g/cm^{3}.
+À titre de comparaison, le bois a une densité moyenne de 0.6 -- 1 g/cm^{3}, le fer environ 10
+g/cm^{3}, la Terre de 6 g/cm^{3} et l'Uranium de 19 g/cm^{3}.
 
 *Remarques :* la densité au sein d'une étoile à neutrons est voisine de 10^{11} g/cm^{3}
 
-** Modèle des couches
-** Introduction
-Dans l'approximation du champ moyen, l'hamiltonien d'un système à $N$ nucléons
-prend la forme suivante
+** Modèle en couche
+*** Introduction
+Dans l'approximation du champ moyen, l'hamiltonien d'un système à $N$ nucléons prend la forme
+suivante
 #+BEGIN_SRC latex
   \begin{equation*}
     \hat{H}_\text{CM}=\hat{H}_\text{OH} - D\hat{\ell}^2 - a\vv{\ell}.\vv{s}
   \end{equation*}
 #+END_SRC
-où $\hat{H}_{\text{OH}}$ est l'hamiltonien de l'oscillateur
-harmonique. $D\hat{\ell}^2$ traduit les effets de bord observés
-expérimentalement à savoir que les nucléons à la surface du noyau soit ceux
-ayant un plus grand moment orbital $\ell$ sont moins liés. Le potentiel moyen
-nucléaire est ainsi plus diffus sur les bords comme l'illustre la figure
-[[fig::ws_potential]]. Le terme $a\vv{\ell}.\vv{s}$ est relatif au couplage
-spin-orbite.
+où $\hat{H}_{\text{OH}}$ est l'hamiltonien de l'oscillateur harmonique. $D\hat{\ell}^2$ traduit les
+effets de bord observés expérimentalement à savoir que les nucléons à la surface du noyau soit ceux
+ayant un plus grand moment orbital $\ell$ sont moins liés. Le potentiel moyen nucléaire est ainsi
+plus diffus sur les bords comme l'illustre la figure [[fig::ws_potential]]. Le terme $a\vv{\ell}.\vv{s}$
+est relatif au couplage spin-orbite.
 
 #+BEGIN_CENTER
 #+NAME: fig::ws_potential
@@ -3034,14 +3022,12 @@ spin-orbite.
 [[file:figures/woods_saxon_potential.pdf]]
 #+END_CENTER
 
-On adopte, par ailleurs, les notations héritées de la spectroscopie
-atomique/moléculaire (/cf./ Table [[tab::quantum_number]]) où $n$ correspond au
-nombre quantique radial /i.e./ au nombre de n\oe uds de la fonction d'onde,
-$\ell$ est le nombre quantique associé au moment cinétique orbital et $j$ celui
-associé au moment cinétique total $J$ [fn:7] soit $\vv{j}=\vv{\ell}+\vv{s}$. Les
-nucléons étant des fermions $s=\pm1/2$, le moment cinétique total devient
-$\vv{j}=\vv{\ell}+\vv{1}/2$. La parité orbitale de l'état est égale à
-$\pi=(-1)^\ell$ soit la parité intrinsèque.
+On adopte, par ailleurs, les notations héritées de la spectroscopie atomique/moléculaire (/cf./ Table
+[[tab::quantum_number]]) où $n$ correspond au nombre quantique radial /i.e./ au nombre de n\oe uds de la
+fonction d'onde, $\ell$ est le nombre quantique associé au moment cinétique orbital et $j$ celui
+associé au moment cinétique total $J$ [fn:7] soit $\vv{j}=\vv{\ell}+\vv{s}$. Les nucléons étant des
+fermions $s=\pm1/2$, le moment cinétique total devient $\vv{j}=\vv{\ell}+\vv{1}/2$. La parité
+orbitale de l'état est égale à $\pi=(-1)^\ell$ soit la parité intrinsèque.
 
 #+NAME: tab::quantum_number
 |--------+-----+-----+-----+-----+-----+-----|
@@ -3051,44 +3037,39 @@ $\pi=(-1)^\ell$ soit la parité intrinsèque.
 |--------+-----+-----+-----+-----+-----+-----|
 #+CAPTION: *Notation spectroscopique pour le modèle en couches*
 
-Le principe de Pauli impose un nombre $2j+1$ de particules identiques par couche
-$j$. Par ailleurs, si on couple deux nucléons identiques dans une même couche
-(cas des noyaux pair-pair, par exemple), *seules les valeurs paires de $I$
-(moment cinétique total) sont possibles* (/cf./ Chapitre 4, page 14 du
-cours). On en déduit les règles d'appariement à savoir que deux nucléons
-identiques sur une même couche vont s'apparier de telle sorte que le moment
-cinétique soit $I^\pi=0^+$ [fn:8]. On distingue également les règles suivantes
-pour les différents types de noyau :
+Le principe de Pauli impose un nombre $2j+1$ de particules identiques par couche $j$. Par ailleurs,
+si on couple deux nucléons identiques dans une même couche (cas des noyaux pair-pair, par exemple),
+*seules les valeurs paires de $I$ (moment cinétique total) sont possibles* (/cf./ Chapitre 4, page 14 du
+cours). On en déduit les règles d'appariement à savoir que deux nucléons identiques sur une même
+couche vont s'apparier de telle sorte que le moment cinétique soit $I^\pi=0^+$ [fn:8]. On distingue
+également les règles suivantes pour les différents types de noyau :
 
-- noyau pair-pair :: ces noyaux ne contiennent que des nucléons appariés dont le
-     niveau fondamental correspond à $I^\pi=0^+$. Les niveaux excités sont alors
-     $2^+,4^+$,..., les valeurs impaires de $I$ étant interdites
-- noyau pair-impair :: ces noyaux ont un nucléon célibataire sur une couche
-     $(j,\ell)$, les autres nucléons appariés ont un moment cinétique total
-     nul. Le nucléon célibataire gouverne donc la valeur de $I^\pi$ : $I=j,
-     \pi=(-1)^\ell$
-- noyau impair-impair :: les nucléons célibataires, 1 proton et 1 neutron, se
-     couplent de telle sorte que la valeur de $j$ est comprise entre
-     $|j_1-j_2|\leq j\leq j_1+j_2$. La parité $\pi$ est égale à
-     $(-1)^{\ell_1+\ell_2}$. Toutes les valeurs de $j$ sont possibles
+- noyau pair-pair :: ces noyaux ne contiennent que des nucléons appariés dont le niveau fondamental
+     correspond à $I^\pi=0^+$. Les niveaux excités sont alors $2^+,4^+$,..., les valeurs impaires de
+     $I$ étant interdites
+- noyau pair-impair :: ces noyaux ont un nucléon célibataire sur une couche $(j,\ell)$, les autres
+     nucléons appariés ont un moment cinétique total nul. Le nucléon célibataire gouverne donc la
+     valeur de $I^\pi$ : $I=j, \pi=(-1)^\ell$
+- noyau impair-impair :: les nucléons célibataires, 1 proton et 1 neutron, se couplent de telle
+     sorte que la valeur de $j$ est comprise entre $|j_1-j_2|\leq j\leq j_1+j_2$. La parité $\pi$
+     est égale à $(-1)^{\ell_1+\ell_2}$. Toutes les valeurs de $j$ sont possibles
 
 #+BEGIN_QUESTION
 /On trouvera en annexe la séquence des couches donnée par le modèle./
-1) [@1] Dans le cadre du modèle des couches, quel moment cinétique I et quelle
-   parité \pi peut-on attribuer à l'état fondamental et au 1^{er} état excité
-   des noyaux suivants?
+1) [@1] Dans le cadre du modèle en couche, quel moment cinétique I et quelle parité \pi peut-on
+   attribuer à l'état fondamental et au 1^{er} état excité des noyaux suivants?
 
    #+BEGIN_CENTER
    \nbsp^{41}_{21}Sc,\nbsp^{57}_{28}Ni,\nbsp^{58}_{27}Co,\nbsp^{50}_{22}Ti
    #+END_CENTER
 #+END_QUESTION
+
 1) [@1] Moment cinétique $I$ et parité $\pi$ :
 
    - *\nbsp^{41}_{21}Sc*
      - noyau impair-pair : 21 protons, 20 neutrons
      - noyau fermé en neutrons (20 : nombre magique)
-     - 1 proton célibataire en $1f\tfrac{7}{2}$ qui gouverne la valeur de
-       $I^\pi$
+     - 1 proton célibataire en $1f\tfrac{7}{2}$ qui gouverne la valeur de $I^\pi$
      - Niveau fondamental : $(n\ell j)=(1f\tfrac{7}{2})$ :
        $I^\pi=\tfrac{7}{2}^{(-1)^3}=\tfrac{7}{2}^-$
      - 1^{er} niveau excité : proton en $2p\tfrac{3}{2}$ soit
@@ -3103,8 +3084,7 @@ pour les différents types de noyau :
      - noyau pair-impair : 28 protons, 29 neutrons
      - noyau fermé en protons (28 : nombre magique)
      - 1 neutron célibataire en $2p\tfrac{3}{2}$
-     - Niveau fondamental : $2p\tfrac{3}{2}$ :
-       $I^\pi=\tfrac{3}{2}^{(-1)^1}=\tfrac{3}{2}^-$
+     - Niveau fondamental : $2p\tfrac{3}{2}$ : $I^\pi=\tfrac{3}{2}^{(-1)^1}=\tfrac{3}{2}^-$
      - 1^{er} niveau excité : neutron en $1f\tfrac{5}{2}$ soit
        $I^\pi=\tfrac{5}{2}^{(-1)^3}=\tfrac{5}{2}^-$
 
@@ -3122,12 +3102,11 @@ pour les différents types de noyau :
      [[./figures/cobalt58.pdf]]
      #+END_CENTER
 
-     - 1 proton célibataire en $1f\tfrac{7}{2}$ et 1 neutron célibataire en
-       $2p\tfrac{3}{2}$
+     - 1 proton célibataire en $1f\tfrac{7}{2}$ et 1 neutron célibataire en $2p\tfrac{3}{2}$
      - $|j_1-j_2|\leq j\leq j_1+j_2$ \rightarrow $I=2,3,4,5$
      - $\pi=(-1)^{\ell_1+\ell_2}=(-1)^{3+1}=+1$
-     - le modèle ne donne pas l'ordre des états : le niveau fondamental est
-       parmi ces 4 états de même que le 1^{er} niveau excité.
+     - le modèle ne donne pas l'ordre des états : le niveau fondamental est parmi ces 4 états de
+       même que le 1^{er} niveau excité.
 
      #+BEGIN_CENTER
      #+CAPTION: *Mesure expérimentale des niveaux en énergie du\nbsp^{58}_{27}Co*.
@@ -3135,6 +3114,7 @@ pour les différents types de noyau :
      #+ATTR_LATEX: :width 0.3\linewidth
      [[./figures/cobalt58_energy.pdf]]
      #+END_CENTER
+
 
    - *\nbsp^{50}_{22}Ti*
      - noyau pair-pair : 22 protons, 28 neutrons
@@ -3158,21 +3138,20 @@ pour les différents types de noyau :
      [[./figures/titane50_energy.pdf]]
      #+END_CENTER
 
+
 #+BEGIN_QUESTION
-2) [@2] On donne les premiers niveaux des noyaux\nbsp^{39}_{19}K
-   et\nbsp^{39}_{20}Ca, avec pour chacun d'eux $I^\pi$ et l'énergie d'excitation
-   $E$ (en MeV). Interpréter ces moments cinétiques et parités dans le cadre du
-   modèle des couches. Que reflète la grande similitude entre les deux spectres
-   ?
+2) [@2] On donne les premiers niveaux des noyaux\nbsp^{39}_{19}K et\nbsp^{39}_{20}Ca, avec pour
+   chacun d'eux $I^\pi$ et l'énergie d'excitation $E$ (en MeV). Interpréter ces moments cinétiques
+   et parités dans le cadre du modèle en couche. Que reflète la grande similitude entre les deux
+   spectres ?
    #+BEGIN_CENTER
    #+ATTR_LATEX: :width 0.9\linewidth
    [[./figures/mod1_2.pdf]]
    #+END_CENTER
 #+END_QUESTION
-2) [@2]\nbsp^{39}_{19}K_{20} et\nbsp^{39}_{20}Ca_{19} \rightarrow noyaux
-   miroirs. Dans le cadre du modèle en couche, ces deux noyaux sont identiques
-   ($p$ et $n$ sont "interchangeables" en raison de l'indépendance de charge de
-   l'interaction forte).
+2) [@2]\nbsp^{39}_{19}K_{20} et\nbsp^{39}_{20}Ca_{19} \rightarrow noyaux miroirs. Dans le cadre du
+   modèle en couche, ces deux noyaux sont identiques ($p$ et $n$ sont "interchangeables" en raison
+   de l'indépendance de charge de l'interaction forte).
 
    - *\nbsp^{39}_{19}K*
      - noyau impair-pair : 19 protons, 20 neutrons
@@ -3189,19 +3168,18 @@ pour les différents types de noyau :
      [[./figures/potassium39.pdf]]
      #+END_CENTER
 
-   - *\nbsp^{39}_{20}Ca* : même raisonnement que pour\nbsp^{39}_{19}K mais en
-     utilisant les neutrons (couche fermée en proton) \rightarrow même séquence
-     d'état et mêmes valeurs de $I^\pi$.
+   - *\nbsp^{39}_{20}Ca* : même raisonnement que pour\nbsp^{39}_{19}K mais en utilisant les neutrons
+     (couche fermée en proton) \rightarrow même séquence d'état et mêmes valeurs de $I^\pi$.
 
-   Étant donné l'indépendance de charge de l'interaction forte, les noyaux
-   miroirs, dont les états appartiennent aux mêmes multiplets d'isospin, ont les
-   mêmes séquences de niveaux et les mêmes écarts en énergie $\Delta E$ entre
-   ces niveaux aux effets coulombiens près.
+   Étant donné l'indépendance de charge de l'interaction forte, les noyaux miroirs, dont les états
+   appartiennent aux mêmes multiplets d'isospin, ont les mêmes séquences de niveaux et les mêmes
+   écarts en énergie $\Delta E$ entre ces niveaux aux effets coulombiens près.
 
 #+BEGIN_QUESTION
 3) [@3] L'état fondamental du noyau\nbsp^{75}_{33}As est un état $I^{\pi} =
    \frac{3}{2}^-$. Expliquer ce résultat, non conforme au modèle en couches.
 #+END_QUESTION
+
 3) [@3] Noyau\nbsp^{75}_{33}As : 33 protons, 42 neutrons
 
    #+BEGIN_CENTER
@@ -3210,36 +3188,35 @@ pour les différents types de noyau :
    #+END_CENTER
 
    1 proton célibataire en $1f\tfrac{5}{2}$ \rightarrow niveau fondamental
-   $I^\pi=\tfrac{5}{2}^-$. Expérimentalement, le niveau fondamental est
-   $I^\pi=\tfrac{3}{2}^-$ \rightarrow\nbsp^{75}As est un noyau impair pour
-   lequel l'ordre de remplissage des couches diffère de celui attendu
+   $I^\pi=\tfrac{5}{2}^-$. Expérimentalement, le niveau fondamental est $I^\pi=\tfrac{3}{2}^-$
+   \rightarrow\nbsp^{75}As est un noyau impair pour lequel l'ordre de remplissage des couches
+   diffère de celui attendu
+
 
    #+BEGIN_CENTER
    #+ATTR_LATEX: :width 0.3\textwidth
    [[./figures/arsenic75_1.pdf]]
    #+END_CENTER
 
-   Cette configuration, 1 proton célibataire en $2p\tfrac{3}{2}$, est "préférée"
-   par le noyau car l'énergie d'appariement croît avec le $j$ de la couche (ici
-   $\tfrac{5}{2}$ contre \(\tfrac{3}{2}\)) ce qui rend le noyau plus stable. De
-   plus, les couches sont proches en énergie et un noyau déformé peut "mélanger"
-   les différentes couches.
+   Cette configuration, 1 proton célibataire en $2p\tfrac{3}{2}$, est "préférée" par le noyau car
+   l'énergie d'appariement croît avec le $j$ de la couche (ici $\tfrac{5}{2}$ contre
+   \(\tfrac{3}{2}\)) ce qui rend le noyau plus stable. De plus, les couches sont proches en énergie
+   et un noyau déformé peut "mélanger" les différentes couches.
 
 #+BEGIN_QUESTION
 4) [@4]
-   1) [@1] On donne ci-dessous le spectre des 8 premiers niveaux du
-      noyau\nbsp^{90}_{40}Zr.
+   1) [@1] On donne ci-dessous le spectre des 8 premiers niveaux du noyau\nbsp^{90}_{40}Zr.
       #+BEGIN_CENTER
       #+ATTR_LATEX: :width 0.4\linewidth
       [[./figures/Zr.pdf]]
       #+END_CENTER
-      Chercher à expliquer ce spectre en supposant que le noyau
-      de\nbsp^{90}_{40}Zr est composé d'un coeur inerte de\nbsp^{88}_{38}Sr et
-      de deux protons.
+      Chercher à expliquer ce spectre en supposant que le noyau de\nbsp^{90}_{40}Zr est composé d'un
+      coeur inerte de\nbsp^{88}_{38}Sr et de deux protons.
 #+END_QUESTION
+
 4) [@4]
-   1) \nbsp^{90}_{40}Zr =\nbsp^{88}_{38}Sr + 2$p$ : noyau pair-pair fermé en
-      neutrons (50 : nombre magique)
+   1) \nbsp^{90}_{40}Zr =\nbsp^{88}_{38}Sr + 2$p$ : noyau pair-pair fermé en neutrons (50 : nombre
+      magique)
 
       #+BEGIN_CENTER
       #+ATTR_LATEX: :width 0.3\textwidth
@@ -3248,18 +3225,16 @@ pour les différents types de noyau :
 
       - 2 protons appariés en $2p\tfrac{1}{2}$ d'où $I^\pi=0^+$.
       - 2 protons en $1g\tfrac{9}{2}$ \rightarrow couplage
-        $I^\pi=0^+,1^+,2^+,3^+,4^+,5^+,6^+,7^+,8^+,9^+$ mais seules les valeurs
-        paires sont conservées (principe de Pauli) d'où
-        $I^\pi=0^+,2^+,4^+,6^+,8^+$ avec un ordre parmi les niveaux en énergie
-        respecté.
-      - brisure de paire : 1 proton en $2p\tfrac{1}{2}$ et 1 proton en
-        $1g\tfrac{9}{2}$ : $I^\pi=4^-,5^-$, ordre non donné par le modèle en couche
+        $I^\pi=0^+,1^+,2^+,3^+,4^+,5^+,6^+,7^+,8^+,9^+$ mais seules les valeurs paires sont
+        conservées (principe de Pauli) d'où $I^\pi=0^+,2^+,4^+,6^+,8^+$ avec un ordre parmi les
+        niveaux en énergie respecté.
+      - brisure de paire : 1 proton en $2p\tfrac{1}{2}$ et 1 proton en $1g\tfrac{9}{2}$ :
+        $I^\pi=4^-,5^-$, ordre non donné par le modèle en couche
 
-      Le modèle explique correctement le spectre en énergie. On remarque par
-      ailleurs, l'écart en énergie important entre le niveau fondamental et le
-      premier niveau excité (\(E=\unit[1.75]{MeV}\)) : c'est une caractéristique
-      des noyaux pair-pair qui sont très stables et donc difficilement
-      "excitable".
+      Le modèle explique correctement le spectre en énergie. On remarque par ailleurs, l'écart en
+      énergie important entre le niveau fondamental et le premier niveau excité
+      (\(E=\unit[1.75]{MeV}\)) : c'est une caractéristique des noyaux pair-pair qui sont très
+      stables et donc difficilement "excitable".
 
 #+BEGIN_QUESTION
 4) [@4]
@@ -3269,42 +3244,39 @@ pour les différents types de noyau :
       [[./figures/NbZr.pdf]]
       #+END_CENTER
       1) Expliquer ce spectre.
-      2) Que peut-on dire de la grande différence entre les densités de niveau
-         des deux noyaux\nbsp^{90}_{40}Zr et\nbsp^{90}_{41}Nb et entre les
-         intéractions résiduelles proton-proton et proton-neutron ?
+      2) Que peut-on dire de la grande différence entre les densités de niveau des deux
+         noyaux\nbsp^{90}_{40}Zr et\nbsp^{90}_{41}Nb et entre les intéractions résiduelles
+         proton-proton et proton-neutron ?
 #+END_QUESTION
+
 4) [@4]
    2) [@2]
-      1) \nbsp^{90}_{41}Nb : le noyau de Niobium est un noyau impair-impair : 41
-         protons, 49 neutrons
+      1) \nbsp^{90}_{41}Nb : le noyau de Niobium est un noyau impair-impair : 41 protons, 49
+         neutrons
 
          #+BEGIN_CENTER
          #+ATTR_LATEX: :width 0.6\textwidth
          [[./figures/niobium90.pdf]]
          #+END_CENTER
 
-         - 1 proton célibataire en $1g\tfrac{9}{2}$ et 1 neutron célibataire en
-            $1g\tfrac{9}{2}$ \rightarrow couplage
-            $I^\pi=0^+,1^+,2^+,3^+,4^+,5^+,6^+,7^+,8^+,9^+$ où les 10 valeurs sont
-            toutes possibles
+         - 1 proton célibataire en $1g\tfrac{9}{2}$ et 1 neutron célibataire en $1g\tfrac{9}{2}$
+           \rightarrow couplage $I^\pi=0^+,1^+,2^+,3^+,4^+,5^+,6^+,7^+,8^+,9^+$ où les 10 valeurs
+           sont toutes possibles
          - pour un noyau impair-impair, l'ordre n'est pas donné par le modèle
-         - Brisure de la paire $2p\tfrac{1}{2}$ dont l'un des constituants (proton
-           ou neutron) "monte" en $1g\tfrac{9}{2}$. Cette brisure est d'autant plus
-           favorisée que la montée d'un neutron ferme la couche de nombre
-           magique 50. Dans ce cas, on obtient un proton ou un neutron célibataire
-           en $2p\tfrac{1}{2}$ et un neutron ou un proton célibataire en
+         - Brisure de la paire $2p\tfrac{1}{2}$ dont l'un des constituants (proton ou neutron)
+           "monte" en $1g\tfrac{9}{2}$. Cette brisure est d'autant plus favorisée que la montée d'un
+           neutron ferme la couche de nombre magique 50. Dans ce cas, on obtient un proton ou un
+           neutron célibataire en $2p\tfrac{1}{2}$ et un neutron ou un proton célibataire en
            $1g\tfrac{9}{2}$ : $I^\pi=4^-,5^-$
       2)
-         - le nombre de niveaux observé est moins élevé pour le noyau
-           pair-pair\nbsp^{90}_{40}Zr que pour le noyaux
-           impair-impair\nbsp^{90}_{41}Nb du fait du principe de Pauli qui
-           interdit certaines valeurs de $I$ pour les noyaux pair-pair.
-         - la levée de dégénérescence due à l'interaction résiduelle
-           c'est-à-dire au traitement des interactions entre nucléons
-           $\hat{H}=\hat{H}_{\text{CM}}+\hat{V}_{\text{res.}}$ : l'interaction
-           résiduelle entre $p-p$ est plus importante qu'entre $p-n$ expliquant
-           l'écart d'énergie $\Delta E$ entre les niveaux excités : 3.6 MeV
-           pour\nbsp^{90}_{40}Zr et 0.85 MeV pour\nbsp^{90}_{41}Nb
+         - le nombre de niveaux observé est moins élevé pour le noyau pair-pair\nbsp^{90}_{40}Zr que
+           pour le noyaux impair-impair\nbsp^{90}_{41}Nb du fait du principe de Pauli qui interdit
+           certaines valeurs de $I$ pour les noyaux pair-pair.
+         - la levée de dégénérescence due à l'interaction résiduelle c'est-à-dire au traitement des
+           interactions entre nucléons $\hat{H}=\hat{H}_{\text{CM}}+\hat{V}_{\text{res.}}$ :
+           l'interaction résiduelle entre $p-p$ est plus importante qu'entre $p-n$ expliquant
+           l'écart d'énergie $\Delta E$ entre les niveaux excités : 3.6 MeV pour\nbsp^{90}_{40}Zr et
+           0.85 MeV pour\nbsp^{90}_{41}Nb
 
 ** Réactions nucléaires et états analogues isobariques
 *Étude des isobares\nbsp^{21}_{9}F,\nbsp^{21}_{10}Ne et\nbsp^{21}_{11}Na*
@@ -3312,13 +3284,14 @@ pour les différents types de noyau :
 On considère les trois isobares\nbsp^{21}_{9}F,\nbsp^{21}_{10}Ne et\nbsp^{21}_{11}Na.
 
 1)
-   1) Donner les moment cinétique et parité I$^{\pi}$, ainsi que les
-      configurations de l'état fondamental et du premier état excité prévus par
-      le modèle des couches, pour le noyau\nbsp^{21}_{9}F.
+   1) Donner les moment cinétique et parité I$^{\pi}$, ainsi que les configurations de l'état
+      fondamental et du premier état excité prévus par le modèle en couche, pour le
+      noyau\nbsp^{21}_{9}F.
 
    2) On donne $I^{\pi} = \frac{3}{2}^+$ pour l'état fondamental des noyaux\nbsp^{21}_{10}Ne
-      et\nbsp^{21}_{11}Na. Commenter ce résultat non conforme au modèle des couches.
+      et\nbsp^{21}_{11}Na. Commenter ce résultat non conforme au modèle en couche.
 #+END_QUESTION
+
 1)
    1) Moment cinétique $I^\pi$ du\nbsp^{21}_{9}F
       #+BEGIN_CENTER
@@ -3327,8 +3300,9 @@ On considère les trois isobares\nbsp^{21}_{9}F,\nbsp^{21}_{10}Ne et\nbsp^{21}_{
       [[./figures/fluor21.pdf]]
       #+END_CENTER
 
-      État fondamental $(1d\tfrac{5}{2})^1$ soit $I^\pi=\tfrac{5}{2}^+$, 1^{er}
-      niveau excité $(2s\tfrac{1}{2})^1$ soit $I^\pi=\tfrac{1}{2}^+$.
+      État fondamental $(1d\tfrac{5}{2})^1$ soit $I^\pi=\tfrac{5}{2}^+$, 1^{er} niveau excité
+      $(2s\tfrac{1}{2})^1$ soit $I^\pi=\tfrac{1}{2}^+$.
+
    2) Noyaux miroirs\nbsp^{21}_{10}Ne et\nbsp^{21}_{11}Na : même séquence de
       $I^\pi$
       #+BEGIN_CENTER
@@ -3336,31 +3310,77 @@ On considère les trois isobares\nbsp^{21}_{9}F,\nbsp^{21}_{10}Ne et\nbsp^{21}_{
       #+ATTR_LATEX: :width 0.7\linewidth
       [[./figures/neon21.pdf]]
       #+END_CENTER
-      Selon le modèle en couche, le niveau fondamental devrait être
-      $I^\pi=\tfrac{5}{2}^+$. Le fait que le niveau fondamental soit finalement
-      $I^\pi=\tfrac{3}{2}^+$ semble indiquer que le neutron seul dans le cas
-      du\nbsp^{21}_{10}Ne (respectivement le proton seul dans le cas
-      du\nbsp^{21}_{11}Na) est monté sur la couche $1d\tfrac{3}{2}$. Une telle
-      situation est envisageable dès lors que le noyau est déformé et dans la
-      mesure où les niveaux en énergie des couches
-      $1d\tfrac{5}{2},2s\tfrac{1}{2}$ et $1d\tfrac{3}{2}$ sont relativement
-      proches.
+      Selon le modèle en couche, le niveau fondamental devrait être $I^\pi=\tfrac{5}{2}^+$. Le fait
+      que le niveau fondamental soit finalement $I^\pi=\tfrac{3}{2}^+$ semble indiquer que le
+      neutron seul dans le cas du\nbsp^{21}_{10}Ne (respectivement le proton seul dans le cas
+      du\nbsp^{21}_{11}Na) est monté sur la couche $1d\tfrac{3}{2}$. Une telle situation est
+      envisageable dès lors que le noyau est déformé et dans la mesure où les niveaux en énergie des
+      couches $1d\tfrac{5}{2},2s\tfrac{1}{2}$ et $1d\tfrac{3}{2}$ sont relativement proches.
 
 #+BEGIN_QUESTION
 2) [@2]
-   1) Quelle est la valeur de la troisième composante de l'isospin $T_3$ pour
-      ces trois noyaux ? En déduire la valeur de l'isospin $T$ de leur état
-      fondamental.
+   1) Quelle est la valeur de la troisième composante de l'isospin $T_3$ pour ces trois noyaux ? En
+      déduire la valeur de l'isospin $T$ de leur état fondamental.
 
-   2) Dans le cadre de l'indépendance de charge de l'interaction forte, discuter
-      ce résultat en termes de multiplets d'isospin. Quel(s) autre(s) noyau(x)
-      isobarique(s) appartienne(nt) à ce(s) multiplet(s) ? Peut-on prévoir le
-      spin et la parité de l'état fondamental et du premier état excité de ce(s)
-      noyau(x)\nbsp?
+   2) Dans le cadre de l'indépendance de charge de l'interaction forte, discuter ce résultat en
+      termes de multiplets d'isospin. Quel(s) autre(s) noyau(x) isobarique(s) appartienne(nt) à
+      ce(s) multiplet(s) ? Peut-on prévoir le spin et la parité de l'état fondamental et du premier
+      état excité de ce(s) noyau(x)\nbsp?
 #+END_QUESTION
-2) [@2]
-   1) Pour un système constitué de $Z$ protons et $N$ neutrons, la troisième
-      composante de l'isospin $T_3$ est égale à
+2) [@2] L'isospin $\vv{T}$ rend compte de l'indépendance de charge de l'intéraction forte. Ainsi, le
+   neutron et le proton qui appartiennent au doublet d'isospin $\vv{T}=\vv{1}/2$ sont, du point de
+   vue de l'intéraction forte, des particules identiques ($T_3(p)=1/2$ et \(T_3(n)=-1/2\)).
+    
+   L'espace d'isospin est analogue à l'espace des spins notamment vis-à-vis des opérations et des
+   calculs qui s'y attachent.
+    
+   Pour une valeur d'isospin $\vv{T}$, la troisième composante $T_3$ prend pour valeur
+   #+BEGIN_SRC latex
+     \begin{align*}
+       -T\leq T_3\leq T
+     \end{align*}
+   #+END_SRC
+    
+   soit $2T+1$ valeurs.
+    
+   Pour un noyau c'est-à-dire pour une système à plusieurs nucléons, l'isospin est
+   égal à
+   #+BEGIN_SRC latex
+     \begin{align*}
+       \vv{T}=\Sigma\,\vv{t}_i
+     \end{align*}
+   #+END_SRC
+    
+   où $t_i$ est lui-même égal à $\vv{1}/2$. La 3^{ème} composante $T_3$ est égale à
+   #+BEGIN_SRC latex
+     \begin{align*}
+       T_3=\Sigma\,t_{3i}=Z\times t_3(p) + N\times t_3(n)
+     \end{align*}
+   #+END_SRC
+   soit
+   #+BEGIN_SRC latex
+     \begin{align*}
+       T_3=\frac{Z}{2} - \frac{N}{2}=\frac{Z-N}{2}
+     \end{align*}
+   #+END_SRC
+    
+   L'isospin varie ainsi suivant les états d'énergie selon
+   #+BEGIN_SRC latex
+     \begin{align*}
+       \frac{|Z-N|}{2}\leq T\leq\frac{Z+N}{2}
+     \end{align*}
+   #+END_SRC
+   soit
+   #+BEGIN_SRC latex
+     \begin{align*}
+       |T_3|\leq T\leq\frac{A}{2}
+     \end{align*}
+   #+END_SRC
+   où, de façon empirique, il est établi que l'état fondamental correspond à $T=|T_3|$, $T$
+   augmentant pour les états excités.
+
+   1) Pour un système constitué de $Z$ protons et $N$ neutrons, la troisième composante de l'isospin
+      $T_3$ est égale à
       #+BEGIN_SRC latex
         \begin{align*}
           T_3=\Upsigma t_{3i}
@@ -3372,18 +3392,18 @@ On considère les trois isobares\nbsp^{21}_{9}F,\nbsp^{21}_{10}Ne et\nbsp^{21}_{
           T_3=Z\times\frac{1}{2}-N\times\frac{1}{2}=\frac{Z-N}{2}
         \end{align*}
       #+END_SRC
-      La troisième composante de l'isospin d'un noyau est donc fixée. En
-      revanche l'isospin $\vv{T}=\Upsigma\vv{t}_i$ varie entre la valeur du
-      niveau fondamental $T_{\text{fonda.}}=|T_3|=\left|\frac{Z-N}{2}\right|$ et
-      la valeur $\frac{Z+N}{2}=\frac{A}{2}$. On déduit les valeurs suivantes
-      d'isospin pour les 3 isobares
+      La troisième composante de l'isospin d'un noyau est donc fixée. En revanche l'isospin
+      $\vv{T}=\Upsigma\vv{t}_i$ varie entre la valeur du niveau fondamental
+      $T_{\text{fonda.}}=|T_3|=\left|\frac{Z-N}{2}\right|$ et la valeur
+      $\frac{Z+N}{2}=\frac{A}{2}$. On déduit les valeurs suivantes d'isospin pour les 3 isobares
 
       |--------------------------+--------------------------------+--------------------------------+--------------------------------|
-      |                          | \nbsp^{21}_{9}F^{12}           | \nbsp^{21}_{10}Ne^{11}         | \nbsp^{21}_{11}F^{9}           |
+      |                          | \nbsp^{21}_{9}F^{12}           | \nbsp^{21}_{10}Ne^{11}         | \nbsp^{21}_{11}Na^{10}         |
       | $T_3$                    | -3/2                           | -1/2                           | +1/2                           |
       | $\vv{T}$                 | $\vv{3}/2\rightarrow\vv{21}/2$ | $\vv{1}/2\rightarrow\vv{21}/2$ | $\vv{1}/2\rightarrow\vv{21}/2$ |
       | $\vv{T}_{\text{fonda.}}$ | $\vv{3}/2$                     | $\vv{1}/2$                     | $\vv{1}/2$                     |
       |--------------------------+--------------------------------+--------------------------------+--------------------------------|
+
    2)
       - 1 doublet d'isospin $\vv{T}=\vv{1}/2$ correspondant au niveau fondamental des 2 noyaux
         de\nbsp^{21}Ne et\nbsp^{21}Na
@@ -3394,21 +3414,20 @@ On considère les trois isobares\nbsp^{21}_{9}F,\nbsp^{21}_{10}Ne et\nbsp^{21}_{
         $I^\pi=\tfrac{1}{2}^+$
 
 #+BEGIN_QUESTION
-3) [@3] On peut comparer les masses des états nucléaires (fondamental ou état
-   excité) ayant les mêmes caractéristiques ($A$, $I$, $\pi$ et $T$), en
-   utilisant la formule suivante\nbsp:
+3) [@3] On peut comparer les masses des états nucléaires (fondamental ou état excité) ayant les
+   mêmes caractéristiques ($A$, $I$, $\pi$ et $T$), en utilisant la formule suivante\nbsp:
    #+BEGIN_SRC latex
        \begin{align*}
        M_\text{at}c^2(A, I, \pi, T, T_3) = a(A,I,\pi,T) + b(A,I,\pi,T)\, T_3 + c(A,I,\pi,T)\, T_3^2
      \end{align*}
    #+END_SRC
 
-   On a identifié dans les noyaux de\nbsp^{21}Ne et\nbsp^{21}Na un état excité
-   $I^{\pi} = \frac{5}{2}^+$, d'isospin $\vv{T} = \vv{3/2}$, aux énergies
-   d'excitation respectives 8.86 MeV et 8.97 MeV.
+   On a identifié dans les noyaux de\nbsp^{21}Ne et\nbsp^{21}Na un état excité $I^{\pi} =
+   \frac{5}{2}^+$, d'isospin $\vv{T} = \vv{3/2}$, aux énergies d'excitation respectives 8.86 MeV et
+   8.97 MeV.
 
-   Quel est l'excès de masse du noyau manquant dans le multiplet d'isospin
-   discuté à la question 2) ?
+   Quel est l'excès de masse du noyau manquant dans le multiplet d'isospin discuté à la question 2)
+   ?
 
    On donne les excès de masse suivants, en MeV :
 
@@ -3433,21 +3452,22 @@ On considère les trois isobares\nbsp^{21}_{9}F,\nbsp^{21}_{10}Ne et\nbsp^{21}_{
    $\vv{T}=\vv{3}/2$ et respectivement $T_3$ = -3/2, -1/2, +1/2, +3/2, on
    calcule $\Delta M_{\text{at.}}c^2=a^\prime+bT_3+cT_3$ où $a^\prime=a-931.5A$
 
-   | \ding{192} | $\Delta M_{\text{at.}}c^2(21,5/2^+,3/2,-3/2)$ | = | $a^\prime-\tfrac{3}{2}b+\tfrac{9}{4}c$ | = | $\unit[-0.047]{MeV}$                          |
+   | \ding{192} | $\Delta M_{\text{at.}}c^2(21,5/2^+,3/2,-3/2)$ | = | $a^\prime-\tfrac{3}{2}b+\tfrac{9}{4}c$ | = | $\unit[-0.05]{MeV}$                           |
    | \ding{193} | $\Delta M_{\text{at.}}c^2(21,5/2^+,3/2,-1/2)$ | = | $a^\prime-\tfrac{1}{2}b+\tfrac{c}{4}$  | = | $\unit[(-5.733+8.86)]{MeV}$                   |
    | \ding{194} | $\Delta M_{\text{at.}}c^2(21,5/2^+,3/2,+1/2)$ | = | $a^\prime+\tfrac{1}{2}b+\tfrac{c}{4}$  | = | $\unit[(-2.186+8.97)]{MeV}$                   |
    | \ding{195} | $\Delta M_{\text{at.}}c^2(21,5/2^+,3/2,+3/2)$ | = | $a^\prime+\tfrac{3}{2}b+\tfrac{9}{4}c$ | = | $\Delta M_\text{at.}c^2(^{21}_{12}\text{Mg})$ |
 
-   | \ding{195} $-$ \ding{192} | $3b=\Delta M_{\text{at.}}c^2(^{21}_{12}\text{Mg})+0.047$ |
+   | \ding{195} $-$ \ding{192} | $3b=\Delta M_{\text{at.}}c^2(^{21}_{12}\text{Mg})+0.05$  |
    | \ding{194} $-$ \ding{193} | $b=-2.186+8.97+5.733-8.86=\unit[3.657]{MeV}$             |
 
    soit un excès de masse $\Delta M_{\text{at.}}c^2(^{21}_{12}\text{Mg})$
    #+BEGIN_SRC latex
      \begin{align*}
-       \Delta M_\text{at.}c^2(^{21}_{12}\text{Mg}) &= 3\times3.657-0.047\\
+       \Delta M_\text{at.}c^2(^{21}_{12}\text{Mg}) &= 3\times3.657-0.05\\
        &=\unit[10.924]{MeV}
      \end{align*}
    #+END_SRC
+#+BEGIN_COMMENT
 
    #+BEGIN_REMARK
    *Remarque sur l'excès de masse et sa signification :* L'excès de masse d'un
@@ -3564,6 +3584,8 @@ $T(\text{fonda.})=|T_3|=\tfrac{Z-N}{2}$.
    #+ATTR_LATEX: :width 0.9\linewidth
    [[./figures/calcium_potassium_energy.pdf]]
    #+END_CENTER
+
+#+END_COMMENT
 
 ** Footnotes
 

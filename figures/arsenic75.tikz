@@ -30,10 +30,14 @@
       \draw[green,fill=green] (9.23875,8.4137) circle (0.0762cm);
       \draw[green,fill=green] (9.43875,8.4137) circle (0.0762cm);
 
+      \begin{scope}[xshift=15pt]
+      \draw[green,fill=green] (6.23875,7.14375) circle (0.0762cm);
+      \draw[green,fill=green] (6.43875,7.14375) circle (0.0762cm);
       \draw[green,fill=green] (7.23875,7.14375) circle (0.0762cm);
       \draw[green,fill=green] (7.43875,7.14375) circle (0.0762cm);
       \draw[green,fill=green] (8.23875,7.14375) circle (0.0762cm);
       \draw[green,fill=green] (8.43875,7.14375) circle (0.0762cm);
+      \end{scope}
 
       \draw[green,fill=green] (7.73875,5.84375) circle (0.0762cm);
       \draw[green,fill=green] (7.93875,5.84375) circle (0.0762cm);

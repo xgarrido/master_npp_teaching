@@ -26,7 +26,7 @@
   \end{scope}
 
   \path (17.0975,8.41375) node[text=black,anchor=base west] {\large{}$2p\tfrac{3}{2}$};
-  \path (17.0975,7.185) node[text=black,anchor=base west] {\large{}$2f\tfrac{5}{2}$};
+  \path (17.0975,7.185) node[text=black,anchor=base west] {\large{}$1f\tfrac{5}{2}$};
   \path (17.0975,10.00125) node[text=black,anchor=base west] {\large{}$1f\tfrac{7}{2}$};
 
   \path (3.65125,10.00125) node[text=black,anchor=base west] {\large{}28};
