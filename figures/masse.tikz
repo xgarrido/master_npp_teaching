@@ -1,0 +1,18 @@
+\begin{tikzpicture}[y=-1cm]
+  \sf
+  \definecolor{red}{RGB}{221,42,43}
+  \definecolor{green}{RGB}{105,182,40}
+  \definecolor{blue}{RGB}{0,51,153}
+  \definecolor{orange}{RGB}{192,128,64}
+
+  \path (0, 0) node[] {$\begin{aligned}
+      Q&=m_1c^2+m_2c^2-m_3c^2-m_4c^2&\text{où}\;m = \text{masse nucléaire}\\
+      Q&=m_1c^2+Z_1m_ec^2+m_2c^2+Z_2m_ec^2-m_3c^2-Z_3m_ec^2-m_4c^2-Z_4m_ec^2&\text{car}\;Z_1+Z_2=Z_3+Z_4\\
+      Q&=\underbrace{m_1c^2+Z_1m_ec^2}_{M_\text{at}^1c^2}+m_2c^2+Z_2m_ec^2-m_3c^2-Z_3m_ec^2-m_4c^2-Z_4m_ec^2&(B_e^{1,2,3,4}\sim0)\\
+      Q&=M_\text{at}^1c^2+M_\text{at}^2c^2-M_\text{at}^3c^2-M_\text{at}^4c^2\\
+      Q&=M_\text{at}^1c^2-931.5A_1+M_\text{at}^2c^2-931.5A_2-M_\text{at}^3c^2+931.5A_3-M_\text{at}^4c^2+931.5A_4&\text{car}\;A_1+A_2=A_3+A_4\\
+      Q&=\underbrace{M_\text{at}^1c^2-931.5A_1}_{\Delta M_\text{at}^1c^2}+M_\text{at}^2c^2-931.5A_2-M_\text{at}^3c^2-931.5A_4-M_\text{at}^4c^2-931.5A_4\\
+      Q&=\Delta M_\text{at}^1c^2+\Delta M_\text{at}^2c^2-\Delta M_\text{at}^3c^2-\Delta M_\text{at}^4c^2\\
+    \end{aligned}$};
+
+\end{tikzpicture}

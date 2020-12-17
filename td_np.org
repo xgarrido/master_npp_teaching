@@ -3594,13 +3594,13 @@ $T(\text{fonda.})=|T_3|=\tfrac{Z-N}{2}$.
 [fn:8] la parité est égale à $(-1)^{\ell_1+\ell_2}$ où $\ell_1=\ell_2=\ell$ et
 donc $\pi=(-1)^{2\ell}=+1$
 
-* COMMENT TD9 : Masses et désintégrations nucléaires
+* TD9 : Masses et désintégrations nucléaires
 ** Définitions
 #+BEGIN_QUESTION
-Définir les termes : masse nucléaire, masse atomique, excès de masse atomique,
-énergie de liaison des nucléons dans le noyau, énergie de liaison moyenne par
-nucléon. Exprimer le $Q$ de la réaction $1+2 \rightarrow 3+4$ (où 1, 2, 3 et 4
-sont des noyaux) en fonction respectivement des quatre premiers termes.
+Définir les termes : masse nucléaire, masse atomique, excès de masse atomique, énergie de liaison
+des nucléons dans le noyau, énergie de liaison moyenne par nucléon. Exprimer le $Q$ de la réaction
+$1+2 \rightarrow 3+4$ (où 1, 2, 3 et 4 sont des noyaux) en fonction respectivement des quatre
+premiers termes.
 #+END_QUESTION
 - masse nucléaire :: la masse nucléaire correspond à la masse du noyau /i.e./
      #+BEGIN_SRC latex
@@ -3609,9 +3609,8 @@ sont des noyaux) en fonction respectivement des quatre premiers termes.
        \end{align*}
      #+END_SRC
      où $B_N$ est égal à l'énergie de liaison des nucléons au sein du noyau.
-- masse atomique :: cette masse est associée à la masse de l'atome soit à la
-                    masse nucléaire à laquelle s'ajoute celle du cortège
-                    électronique
+- masse atomique :: cette masse est associée à la masse de l'atome soit à la masse nucléaire à
+                    laquelle s'ajoute celle du cortège électronique
                     #+BEGIN_SRC latex
                       \begin{align*}
                         M_\text{at.}\left(^\text{A}_\text{Z}\text{X}\right)c^2=m\left(^\text{A}_\text{Z}\text{X}\right)c^2+Zm_ec^2-B_e
@@ -3672,6 +3671,7 @@ sont des noyaux) en fonction respectivement des quatre premiers termes.
      L'énergie de liaison moyenne par nucléon correspond à la valeur
      $\frac{B_N}{A}$ qui est égale à 8 MeV/nucléon au delà de $A$ > 20.
 
+
 *Réaction 1 + 2 \to 3 + 4 où 1,2,3,4 sont des noyaux*
 
 La chaleur de réaction $Q$ s'écrit
@@ -3683,6 +3683,7 @@ La chaleur de réaction $Q$ s'écrit
     &=-\left(B^1_N+B^2_N\right)+\left(B^3_N+B^4_N\right)
   \end{align*}
 #+END_SRC
+
 ** Décroissance radioactive du sodium 22
 #+BEGIN_QUESTION
 Le sodium 22 (^{22}_{11}Na), *qui sera étudié au cours des travaux pratiques*, est souvent employé
@@ -3692,6 +3693,7 @@ désintègre presqu'à 100% vers le premier état excité du néon\nbsp{}22, sit
 
 1) Ecrire les réactions de désintégration du\nbsp^{22}_{11}Na.
 #+END_QUESTION
+
 #+BEGIN_CENTER
 #+ATTR_LATEX: :width 0.55\linewidth
 [[./figures/sodium22_decay.pdf]]
@@ -3705,9 +3707,11 @@ désintègre presqu'à 100% vers le premier état excité du néon\nbsp{}22, sit
      \end{align*}
    #+END_SRC
 
+
 #+BEGIN_QUESTION
 2) [@2] Quelle est la période partielle de capture électronique du\nbsp^{22}Na ?
 #+END_QUESTION
+
 2) [@2] Décroissance radioactive $N(t)=N_0\,e^{-\lambda t}$ où $\lambda$
    correspond à la probabilité de décroissance et est égale à $\frac{\ln 2}{T}$,
    $T$ étant la période. Ainsi,
@@ -3726,6 +3730,7 @@ désintègre presqu'à 100% vers le premier état excité du néon\nbsp{}22, sit
 3) [@3] Les excès de masse atomique de\nbsp^{22}Na et\nbsp^{22}Ne sont respectivement -5183 keV et
    -8025 keV. Calculer le $Q$ de la capture électronique.
 #+END_QUESTION
+
 3) [@3] Capture électronique :
    $^{22}_{11}\text{Na}+e^-\to^{22}_{10}\text{Ne}^*+\nu_e$
 
@@ -3745,8 +3750,8 @@ désintègre presqu'à 100% vers le premier état excité du néon\nbsp{}22, sit
 4) [@4] Désintégration $\beta^+$ :
    $^{22}_{11}\text{Na}\to^{22}_{10}\text{Ne}^*+e^++\nu_e$
 
-   L'énergie cinétique maximale que puisse emporter le positron correspond au
-   $Q_{\beta^+}$ de la réaction soit
+   L'énergie cinétique maximale que peut emporter le positron correspond au $Q_{\beta^+}$ de la
+   réaction soit
    #+BEGIN_SRC latex
      \begin{align*}
        T_\text{max}(e^+)&=Q_{\beta^+}=Q_\text{CE}-2m_ec^2\\
@@ -3760,6 +3765,7 @@ désintègre presqu'à 100% vers le premier état excité du néon\nbsp{}22, sit
    du neutron et du proton sont respectivement -9528 keV, 8071 keV et 7289 keV, estimer l'énergie
    seuil de cette réaction.
 #+END_QUESTION
+
 5) [@5] $^{23}\text{Na}+p\to^{22}\text{Na}+p+n$
 
    #+BEGIN_SRC latex
@@ -3801,22 +3807,24 @@ désintègre presqu'à 100% vers le premier état excité du néon\nbsp{}22, sit
    5) Combien de photons de 1.27 MeV devrait recevoir en une minute un détecteur de 5 cm^{2} situé à
       1 m de la source ?
 #+END_QUESTION
+
 6) [@6]
    1) Le nombre de noyaux de\nbsp^{22}Na produit est
       #+BEGIN_SRC latex
         \begin{align*}
-          n\left(^{22}\text{Na}\right)&=\phi_p\times\rho_e\times\sigma_\text{tot.}\times\frac{\mathcal{N}}{A_\text{cible}}\\
+          n_i\left(^{22}\text{Na}\right)&=\phi_p\times\rho_e\times\sigma_\text{tot.}\times\frac{\mathcal{N}}{A_\text{cible}}\\
           &=\frac{I}{Ze}\times\rho_e\sigma_\text{tot.}\times\frac{\mathcal{N}}{A\left(^{23}\text{Na}\right)+A\left(^{35}\text{Cl}\right)}\\
           &=\frac{10^{-5}}{1.6\,10^{-19}}\times2\,10^{-3}\times40\,10^{-3}\times10^{-24}\times\frac{6.02\,10^{23}}{58}\\
           &=\unit[5.19\,10^7]{/s}
         \end{align*}
       #+END_SRC
+
    3) La variation du nombre de noyaux de\nbsp^{22}Na est égal au nombre de noyaux créés par
       irradiation auquel vient se soustraire le nombre de noyaux s'étant désintégrés soit
       #+BEGIN_SRC latex
         \begin{align*}
-          dn\left(^{22}\text{Na}\right)&=n_idt-\lambda ndt\\
-          \frac{dn}{dt}+\lambda n&=n_i=\text{constante}
+          \d n\left(^{22}\text{Na}\right)&=n_i\d t-\lambda n\d t\\
+          \frac{\d n}{\d t}+\lambda n&=n_i=\text{constante}
         \end{align*}
       #+END_SRC
       La solution de cette équation est de la forme $n(t)=K_1e^{-\lambda t}+K_0$ où
@@ -3826,6 +3834,7 @@ désintègre presqu'à 100% vers le premier état excité du néon\nbsp{}22, sit
           K_0&=\frac{n_i}{\lambda}
         \end{align*}
       #+END_SRC
+
       De plus, $n(t=0)=0$ impliquant $K_1=-\frac{n_i}{\lambda}$ d'où
       #+BEGIN_SRC latex
         \begin{align*}
@@ -3875,6 +3884,8 @@ désintègre presqu'à 100% vers le premier état excité du néon\nbsp{}22, sit
           \mathcal{A}_{\gamma_{0.511}}=2\times90\%\times\mathcal{A}_{\gamma_{1.27}}=\unit[2846]{Bq}
         \end{align*}
       #+END_SRC
+
+#+BEGIN_COMMENT
    6) Étant donné l'activité $\mathcal{A}_{\gamma_{1.27}}=1581$ désintégrations
       par seconde dans tout l'espace soit 4\pi stéradian, le nombre de photons
       détectés à 1 m de la cible devient
@@ -3886,7 +3897,9 @@ désintègre presqu'à 100% vers le premier état excité du néon\nbsp{}22, sit
         \end{align*}
       #+END_SRC
 
-** Tomographie par émission de positrons
+#+END_COMMENT
+
+** COMMENT Tomographie par émission de positrons
 #+ATTR_HTML: :width 300
 #+ATTR_LATEX: :width 0.35\textwidth
 #+CAPTION: *Vue axiale du cerveau par tomographie à émission de positrons*
@@ -3982,7 +3995,7 @@ l'irradiation ($t=0$), il n'y a aucun noyau radioactif dans l'échantillon.
      demi-vie des isotopes radioactifs qui nécessitent donc la présence d’un
      cyclotron à proximité du centre d’examen.
 
-** Formule de Bethe et Weizsäcker
+** COMMENT Formule de Bethe et Weizsäcker
 #+BEGIN_QUESTION
 1)
    1) Expliquer les différents termes intervenant dans la formule semi-empirique donnant la masse
@@ -4047,7 +4060,7 @@ l'irradiation ($t=0$), il n'y a aucun noyau radioactif dans l'échantillon.
      indicateur afin de déterminer si un noyau est loin, en terme de protons, de
      l'élément stable pour une masse donnée /i.e./ pour $A$ fixé.
 
-** Parabole de masse et désintégrations radioactives
+** COMMENT Parabole de masse et désintégrations radioactives
 #+BEGIN_QUESTION
 On s'intéresse aux isobares de nombre de masse $A$ = 58 dont on donne ci-dessous les excès de masse
 atomique $\Delta M_\text{at}c^2$, en MeV :
@@ -4213,7 +4226,7 @@ atomique $\Delta M_\text{at}c^2$, en MeV :
        \end{align*}
      #+END_SRC
 
-** Étoiles à neutrons
+** COMMENT Étoiles à neutrons
 #+BEGIN_QUESTION
 On peut montrer que l'énergie potentielle d'attraction gravitationnelle d'une masse sphérique $M$ de
 densité uniforme et de rayon $R$ est donnée par $E_G=-\frac{3 GM^2}{5R}$.

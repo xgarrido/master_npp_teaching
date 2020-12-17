@@ -1,0 +1,17 @@
+\begin{tikzpicture}[y=-1cm]
+  \sf
+  \definecolor{red}{RGB}{221,42,43}
+  \definecolor{green}{RGB}{105,182,40}
+  \definecolor{blue}{RGB}{0,51,153}
+  \definecolor{orange}{RGB}{192,128,64}
+
+  \path (0, 0) node[] {$\begin{aligned}
+      ^A_ZX^N &\to\; ^A_{Z+1}Y^{N-1} + e^- + \bar{\nu}_e& (\beta^-)\\
+      n &\to p + e^- + \bar{\nu}_e \\
+      \color{blue}\nu_e+e^++n&\color{blue}\gets p &\color{blue}(\beta^+)\\
+      \color{blue}\nu_e+e^++^A_{Z-1}Y^{N+1} &\color{blue}\gets\; ^A_{Z}X^{N}\\
+      \color{green}\nu_e+n& \color{green}\gets p + e^-& \color{green}(CE)\\
+       \color{green}\nu_e+^A_{Z-1}Y^{N+1} &\color{green}\gets\; ^A_{Z}X^{N} + e^-\\
+    \end{aligned}$};
+
+\end{tikzpicture}
