@@ -3,10 +3,11 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
-<meta  name="viewport" content="width=device-width, initial-scale=1" />
-<title>TD5 : Isospin &#x2013; des quarks aux noyaux</title>
-<meta  name="generator" content="Org-mode" />
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>TD5 : Modèle Standard et au-delà : l'interaction faible</title>
+<meta name="generator" content="Org mode" />
+<meta name="author" content="Xavier Garrido" />
 <link rel="stylesheet" href="css/styles.css" />
                <link rel="stylesheet" href="css/org-pygments.css" />
                <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" />
@@ -15,7 +16,7 @@
 @licstart  The following is the entire license notice for the
 JavaScript code in this tag.
 
-Copyright (C) 2012-2013 Free Software Foundation, Inc.
+Copyright (C) 2012-2018 Free Software Foundation, Inc.
 
 The JavaScript code in this tag is free software: you can
 redistribute it and/or modify it under the terms of the GNU
@@ -83,6 +84,7 @@ for the JavaScript code in this tag.
           extensions: ["cancel.js"],
           Macros: {
               vv: ["{\\vec{#1}}",1],
+              d: "{\\text{d}}",
               Upsigma: "{\\Sigma}",
               Updelta: "{\\Delta}",
               varoiint: "{\\iint}",
@@ -134,611 +136,107 @@ for the JavaScript code in this tag.
 <a href="index.html"><i class="fa fa-home"></i></a><br/>  
 </div>
 <div id="content">
-<h1 class="title">TD5 : Isospin &#x2013; des quarks aux noyaux</h1>
+<h1 class="title">TD5 : Modèle Standard et au-delà : l'interaction faible</h1>
 <div style="display:none;">
 <div id="text-table-of-contents">
 <ul class="org-ul">
-<li><a href="././td_np_0.html">TD1 : Cinématique &amp; Accélérateurs</a></li>
-<li><a href="././td_np_1.html">TD2 : Nombres quantiques &amp; Symétries</a></li>
-<li><a href="././td_np_2.html">TD3 : Réactions de production et de désintégration de particules</a></li>
-<li><a href="././td_np_3.html">TD4 : Modèle des quarks &#x2013; Les hadrons</a></li>
-<li><a href="././td_np_4.html">TD5 : Isospin &#x2013; des quarks aux noyaux</a></li>
-<li><a href="././td_np_5.html">TD6 : Structure nucléaire</a></li>
-<li><a href="././td_np_6.html">TD7 : Réactions nucléaires</a></li>
-<li><a href="././td_np_7.html">TD8 : Masses et désintégrations nucléaires</a></li>
-<li><a href="././td_np_8.html">TD9 : Modèle Standard et au-delà : l'interaction faible</a></li>
+<li><a href="././td_np_0.html">TD1 : Cinématique</a></li>
+<li><a href="././td_np_1.html">TD2 : Accélérateurs &amp; section efficace</a></li>
+<li><a href="././td_np_2.html">TD3 : Nombres quantiques &amp; Symétries</a></li>
+<li><a href="././td_np_3.html">TD4 : Réactions de production et de désintégration de particules</a></li>
+<li><a href="././td_np_4.html">TD5 : Modèle Standard et au-delà : l'interaction faible</a></li>
+<li><a href="././td_np_5.html">TD6 : Modèle des quarks &#x2013; Les hadrons</a></li>
+<li><a href="././td_np_6.html">TD7 : Isospin &#x2013; des quarks aux noyaux</a></li>
+<li><a href="././td_np_7.html">TD8 : Structure nucléaire</a></li>
+<li><a href="././td_np_8.html">TD9 : Masses et désintégrations nucléaires</a></li>
 <li><a href="././td_np_9.html">Annexes</a></li>
 <li><a href="././td_np_10.html">Aide-mémoire de Noyaux &amp; Particules</a></li>
 </ul>
 </div>
 </div>
 
-<div id="outline-container-orgheadline1" class="outline-2">
-<h2 id="orgheadline1"><span class="section-number-2">1</span> Introduction</h2>
+<div id="outline-container-orgb29c765" class="outline-2">
+<h2 id="orgb29c765"><span class="section-number-2">1</span> Masse et largeur du \(Z^0\) &#x2013; Nombre de familles de neutrinos</h2>
 <div class="outline-text-2" id="text-1">
-<p>
-L'isospin \(\vv{T}\) rend compte de l'indépendance de charge de l'intéraction
-forte. Ainsi, le neutron et le proton qui appartiennent au doublet d'isospin
-\(\vv{T}=\vv{1}/2\) sont, du point de vue de l'intéraction forte, des particules
-identiques (\(T_3(p)=1/2\) et \(T_3(n)=-1/2\)).
-</p>
-
-<p>
-L'espace d'isospin est analogue à l'espace des spins notamment vis-à-vis des
-opérations et des calculs qui s'y attachent.
-</p>
-
-<p>
-Pour une valeur d'isospin \(\vv{T}\), la troisième composante \(T_3\) prend pour
-valeur
-</p>
-\begin{align*}
-  -T\leq T_3\leq T
-\end{align*}
-
-<p>
-soit \(2T+1\) valeurs.
-</p>
-
-<p>
-Pour un noyau c'est-à-dire pour une système à plusieurs nucléons, l'isospin est
-égal à
-</p>
-\begin{align*}
-  \vv{T}=\Sigma\,\vv{t}_i
-\end{align*}
-
-<p>
-où \(t_i\) est lui-même égal à \(\vv{1}/2\). La 3<sup>ème</sup> composante \(T_3\) est égale à
-</p>
-\begin{align*}
-  T_3=\Sigma\,t_{3i}=Z\times t_3(p) + N\times t_3(n)
-\end{align*}
-
-<p>
-soit
-</p>
-\begin{align*}
-  T_3=\frac{Z}{2} - \frac{N}{2}=\frac{Z-N}{2}
-\end{align*}
-
-<p>
-L'isospin varie ainsi suivant les états d'énergie selon
-</p>
-\begin{align*}
-  \frac{|Z-N|}{2}\leq T\leq\frac{Z+N}{2}
-\end{align*}
-
-<p>
-soit
-</p>
-\begin{align*}
-  |T_3|\leq T\leq\frac{A}{2}
-\end{align*}
-
-<p>
-où, de façon empirique, il est établi que l'état fondamental correspond à
-\(T=|T_3|\), \(T\) augmentant pour les états excités.
-</p>
-</div>
-</div>
-
-<div id="outline-container-orgheadline2" class="outline-2">
-<h2 id="orgheadline2"><span class="section-number-2">2</span> Couplages nucléon-nucléon et nucléon-pion</h2>
-<div class="outline-text-2" id="text-2">
-<div class="QUESTION">
-<ol class="org-ol">
-<li>Quelles sont les valeurs possibles \(\vv{T}\) et \(T_3\) pour l'isospin d'un
-système résultant du couplage de deux nucléons ?</li>
-</ol>
-
-</div>
-<ol class="org-ol">
-<li><p>
-Système de deux nucléons :
-</p>
-
-<p>
-\(\vv{T}=\Sigma\,\vv{t}_i\) et \(T_3=\Sigma\,t_{3i}\) or selon Gell-Mann &amp;
-Nishijima \(t_3=Q/e - Y/2\). Les neutrons et protons étant des baryons,
-l'hypercharge \(Y\) est égale à 1 et donc \(t_3(n) = -1/2\) et \(t_3(p) =
-   +1/2\). Ces deux baryons appartiennent ainsi au doublet d'isospin
-\(\vv{T}=\vv{1}/2\).
-</p>
-
-<p>
-L'isospin d'un système de deux nucléons est donc égal à
-</p>
-\begin{align*}
-  \vv{T} = \frac{\vv{1}}{2} + \frac{\vv{1}}{2} = \vv{0}\text{ ou }\vv{1}
-\end{align*}
-
-<p>
-On déduit ainsi l'existence
-</p>
-
-<ul class="org-ul">
-<li>d'un singulet d'isospin \(\vv{T}=\vv{0}\), \(T_3=0\) soit l'état
-\(\ket{TT_3}=\ket{0\,0}\),</li>
-<li>d'un triplet d'isospin \(\vv{T}=\vv{1}\), \(T_3=-1,0,+1\) définissant les
-états \(\ket{1\,-1}\), \(\ket{1\,0}\), \(\ket{1\,1}\).</li>
-</ul></li>
-</ol>
-
-<div class="QUESTION">
-<ol class="org-ol">
-<li value="2"><p>
-Quelles sont les propriétés de symétrie des fonctions d'onde d'isospin
-en fonction de \(\vv{T}\) et de \(T_3\), dans l'échange des deux nucléons ?
-</p>
-
-<p>
-On rappelle que les coefficients de Clebsch-Gordan vérifient les relations
-suivantes :
-</p>
-\begin{align*}
-  \rangle t_2 \, t_1 \, t_{32} \, t_{31} | T \, T_3\langle = \rangle t_1 \, t_2
-  \, -t_{31} \, - t_{32} |T \, -T_3\langle = (-1)^{(T-t_1-t_2)} \langle t_1 \, t_2 \,
-  t_{31} \, t_{32} | T\, T_3\rangle
-\end{align*}</li>
-</ol>
-
-</div>
-<ol class="org-ol">
-<li value="2"><p>
-Fonction d'onde d'isospin
-</p>
-\begin{align*}
-  \ket{TT_3}=\sum_{t_{31}}\sum_{t_{32}}\,\psh{t_1t_2t_{31}t_{32}}{TT_3}\ket{t_1t_2t_{31}t_{32}}
-\end{align*}
-
-<p>
-où le terme \(\psh{t_1t_2t_{31}t_{32}}{TT_3}\) correspond au coefficient de
-Clebsch-Gordan. Dans l'échange des deux particules 1,2, ce coefficient
-devient
-</p>
-\begin{align*}
-  \psh{t_2t_1t_{32}t_{31}}{TT_3}=(-1)^{T-t_1-t_2}\,\psh{t_1t_2t_{31}t_{32}}{TT_3}
-\end{align*}
-
-<p>
-Si \(T-t_1-t_2\) est impair la fonction d'onde est antisymétrique et si
-\(T-t_1-t_2\) est pair, la fonction d'onde d'isospin est symétrique.
-</p>
-
-<p>
-Dans le cas d'un système de deux nucléons \(t_{1,2}=1/2\) et donc la fonction
-d'onde d'isospin est antisymétrique si \(T-1\) est impair et symétrique si
-\(T-1\) est pair<sup><a id="fnr.1" class="footref" href="#fn.1">1</a></sup>.
- <div class="footdef"><sup><a id="fn.1" class="footnum" href="#fnr.1">1</a></sup> <div class="footpara"><p class="footpara"> la fonction d'onde d'isospin des couples \(\ket{nn}\) et \(\ket{pp}\) est symétrique. Toutefois et comme nous le verrons dans l'exercice sur la parité intrinsèque du pion, la fonction d'onde globale de ces états demeure antisymétrique en raison du principe de Pauli généralisé qui impose que deux fermions soient dans des états quantiques différents. </p></div><br/></div>
-</p>
-</ol>
-
-<div class="QUESTION">
-<ol class="org-ol">
-<li value="3">Donner, à un facteur de phase près, les fonctions d'onde d'un système de
-deux nucléons pour les différentes valeurs possibles de \(\vv{T}\) et \(T_3\).</li>
-</ol>
-
-</div>
-<ol class="org-ol">
-<li value="3">État singulet, \(T=0\), \(T_3=0\) est antisymétrique soit
-\(\ket{0\,0}=\frac{1}{\sqrt{2}}\left(\ket{pn}-\ket{np}\right)\). L'état triplet
-\(T=1\), \(T_3=-1,0,1\) est quant à lui symétrique. On obtient ainsi
-
-<ul class="org-ul">
-<li>\(\ket{1\,1}=\ket{pp}\) car \(T_3=t_{31}+t_{32}\)</li>
-<li>\(\ket{1\,0}=\frac{1}{\sqrt{2}}\left(\ket{pn}+\ket{np}\right)\)</li>
-<li>\(\ket{1\,-1}=\ket{nn}\)</li>
-</ul></li>
-</ol>
-
-<div class="QUESTION">
-<ol class="org-ol">
-<li value="4">Les particules \(\pi^-\), \(\pi^0\) et \(\pi^+\) (appelées pions ou mésons
-\(\pi\)) ont des masses très voisines. Comme pour les nucléons, on leur
-attribue un isospin \(T\). Déterminer les valeurs \(\vv{T}\) et \(T_3\). On
-utilisera la formule de Gell-Mann et Nishijima.</li>
-</ol>
-
-</div>
-<ol class="org-ol">
-<li value="4"><p>
-Pions : \(\pi^{-},\pi^{0},\pi^{+}\)
-</p>
-
-<p>
-Les pions étant des mésons sans saveur, l'hypercharge est ainsi nulle. On
-déduit ainsi de la formule de Gell-Mann &amp; Nishijima, les valeurs de \(T_3\) qui
-sont alors égales à la charge électrique de ces particules. \(T_3\) étant par
-ailleurs compris entre \(-T\) et \(+T\), ces 3 mésons appartiennent ainsi au
-triplet d'isospin \(\vv{T}=\vv{1}\).
-</p></li>
-</ol>
-
-<div class="QUESTION">
-<ol class="org-ol">
-<li value="5">Quelles sont les valeurs possibles de \(\vv{T}\) et \(T_3\) pour un système
-pion-nucléon ?</li>
-</ol>
-
-</div>
-<ol class="org-ol">
-<li value="5"><p>
-Système pion-nucléon
-</p>
-
-<p>
-L'isospin d'un pion est \(\vv{t}(\pi)=\vv{1}\), celui d'un nucléon
-\(\vv{t}(N=n,p)=\vv{1}/2\). Par composition des isospins, un système pion-nucléon
-peut prendre pour valeur d'isospin \(\vv{T}(\pi N)\)
-</p>
-
-\begin{align*}
-  |t(\pi) - t(N)| &\leq T(\pi N)\leq t(\pi) + t(N)\\
-  \frac{\vv{1}}{2}&\leq \vv{T}(\pi N)\leq\frac{\vv{3}}{2}
-\end{align*}
-
-<p>
-On déduit ainsi l'existence
-</p>
-
-<ul class="org-ul">
-<li>d'un doublet d'isospin \(\vv{T}=\vv{1}/2\) avec \(T_3=\pm1/2\)</li>
-<li>d'un quadruplet d'isospin \(\vv{T}=\vv{3}/2\) avec \(T_3=\pm1/2, \pm3/2\)</li>
-</ul></li>
-</ol>
-
-<div class="QUESTION">
-<ol class="org-ol">
-<li value="6">Donner les fonctions d'onde des systèmes physiques \(\ket{\pi^+p}\) et
-\(\ket{\pi^+n}\) comme superposition des états \(\ket{TT_3}\).</li>
-</ol>
-
-<p>
-Les valeurs des coefficients de Clebsch-Gordan sont données en annexe.
-</p>
-
-</div>
-
-<ol class="org-ol">
-<li value="6">Systèmes physiques \(\ket{\pi^+p}\), \(\ket{\pi^+n}\)&#x2026;
-
-<ul class="org-ul">
-<li><p>
-\(\ket{\pi^+p}\) : \(t_3(\pi^+)=+1\) et \(t_3(p)=1/2\) d'où
-\(T_3(\pi^+p)=t_3(\pi^+)+t_3(p)=3/2\). La valeur de \(T_3(\pi^+p)\) implique
-nécessairement que \(\vv{T}\) soit égal à \(\vv{3}/2\).
-</p>
-
-\begin{align*}
-  \ket{\pi^+p}=\ket{TT_3}=\ket{\tfrac{3}{2}\tfrac{3}{2}}
-\end{align*}</li>
-
-<li><p>
-\(\ket{\pi^+n}\) : \(t_3(\pi^+)=+1\) et \(t_3(n)=-1/2\) d'où
-\(T_3(\pi^+n)=t_3(\pi^+)+t_3(n)=1/2\). Il existe donc deux valeurs de
-\(\vv{T}\) possibles à savoir \(\vv{T}=\vv{1}/2\) et
-\(\vv{T}=\vv{3}/2\). \(\ket{\pi^+n}\) est donc la superposition de deux états
-d'isospin (ce système physique n'est donc pas état propre d'isospin)
-</p>
-
-\begin{align*}
-  \ket{\pi^+n}=\ket{TT_3}=\alpha\ket{\tfrac{1}{2}\tfrac{1}{2}}+\beta\ket{\tfrac{3}{2}\tfrac{1}{2}}
-\end{align*}
-
-<p>
-où
-</p>
-\begin{align*}
-  \alpha=\psh{1\tfrac{1}{2}1-\tfrac{1}{2}}{\tfrac{1}{2}\tfrac{1}{2}}=\sqrt{\tfrac{2}{3}}
-\end{align*}
-
-<p>
-et
-</p>
-\begin{align*}
-  \beta=\psh{1\tfrac{1}{2}1-\tfrac{1}{2}}{\tfrac{3}{2}\tfrac{1}{2}}=\sqrt{\tfrac{1}{3}}
-\end{align*}
-
-<p>
-donc
-</p>
-\begin{align*}
-  \ket{\pi^+n}=\ket{TT_3}=\sqrt{\tfrac{2}{3}}\ket{\tfrac{1}{2}\tfrac{1}{2}}+\sqrt{\tfrac{1}{3}}\ket{\tfrac{3}{2}\tfrac{1}{2}}
-\end{align*}</li>
-</ul></li>
-</ol>
-</div>
-</div>
-
-<div id="outline-container-orgheadline3" class="outline-2">
-<h2 id="orgheadline3"><span class="section-number-2">3</span> Parité intrinsèque du \(\pi^{-}\)</h2>
-<div class="outline-text-2" id="text-3">
 <div class="QUESTION">
 <p>
-Quand des pions négatifs de très basse énergie sont ralentis dans du deutérium,
-ils peuvent, par interaction coulombienne, occuper des états liés du deuton et
-constituer des atomes \(\pi^-\) mésiques. Ils peuvent atteindre, en émettant des
-rayons X, l'état fondamental 1s puis être finalement capturés par le deuton
-dans cet état, sous l'effet des interactions nucléaires, via la réaction :
-</p>
-\begin{align*}
-  \pi^- + d \rightarrow n + n
-\end{align*}
-
-<p>
-La parité intrinsèque du méson \(\pi^-\) a été déterminée par l'observation de
-cette réaction, où \(d\) est le deutérium, état lié proton-neutron de spin-parité
-\(I^{\pi} = 1^+\). Le \(\pi^-\) de spin 0 étant capturé à l'arrêt, on peut montrer
-que le moment orbital relatif du deutérium et du \(\pi^-\) est nul.
+La figure ci-dessous représente la distribution de masse invariante du boson d'interaction faible
+\(Z^0\) pour sa désintégration en \(e^+e^-\), obtenue par le détecteur ALEPH auprès du collisionneur
+\(e^+e^-\) LEP du CERN.
 </p>
 
-<ol class="org-ol">
-<li>La voie d'entrée. Quel est le moment cinétique total du système \(\pi^- d\)
-initial ? Exprimer sa parité en fonction de la parité intrinsèque du
-\(\pi^-\). La réaction étant due à une interaction forte, montrer que la
-détermination de la parité du système neutron-neutron est une mesure de la
-parité du \(\pi^-\).</li>
-</ol>
-
-</div>
-
-<ol class="org-ol">
-<li><p>
-Moment cinétique total du système \(\pi^-d\)
-</p>
-
-\begin{align*}
-  \vv{I}_\text{entrée} = \vv{I}(\pi d) &= \vv{I}(\pi^-)+\vv{I}(d)+\vv{L}(\pi d)\\
-  &=\vv{S}(\pi^-)+\vv{L}(\pi^-)+\vv{I}(d)+\vv{L}(\pi d)\\
-  &=\vv{0}+\vv{0}+\vv{1}+\vv{0}
-\end{align*}
-
-<p>
-Parité du \(\pi^-\)
-</p>
-
-\begin{align*}
-  \pi(\text{entrée}) = \pi(\pi d) &= \pi(\pi)\cdot\pi(d)\cdot(-1)^{L_{\pi d}}\\
-  &=\pi(\pi)\cdot+1\cdot+1
-\end{align*}
-
-<p>
-Intéraction forte &rarr; conservation de la parité
-</p>
-
-\begin{align*}
-  \pi(\pi d) = \pi(\pi) = \pi(nn)
-\end{align*}</li>
-</ol>
-
-<div class="QUESTION">
-<ol class="org-ol">
-<li value="2">La voie de sortie. Compte-tenu de l'antisymétrie de la fonction d'onde
-dans l'échange des deux nucléons, déterminer complètement le couple \((l,s)\)
-du système des deux neutrons. En déduire la parité intrinsèque du \(\pi^-\).</li>
-</ol>
-
-</div>
-<ol class="org-ol">
-<li value="2"><p>
-Le moment cinétique total s'écrit
-</p>
-
-\begin{align*}
-  \vv{I}_\text{sortie} = \vv{I}(nn) &= \vv{I}(n)+\vv{I}(n)+\vv{L}(nn)\\
-  &=\vv{S}(n)+\vv{S}(n)+\vv{L}(nn)\\
-  &=\vv{S}(nn)+\vv{L}(nn)
-\end{align*}
-
-<p>
-Les neutrons étant des fermions, leur spin est demi-entier. Les valeurs de
-\(\vv{S}(nn)\) sont donc soit \(\vv{0}\) soit \(\vv{1}\). Par ailleurs, la
-conservation du moment cinétique total impose
-</p>
-\begin{align*}
-  \vv{I}(nn)=\vv{I}(\pi d)=\vv{1}
-\end{align*}
-
-<p>
-On obtient ainsi les couples de valeurs \((L,S)\)
-</p>
-
-<ul class="org-ul">
-<li>\(\vv{S}(nn)=\vv{0}\) et \(\vv{L}(nn)=\vv{1}\),</li>
-<li>\(\vv{S}(nn)=\vv{1}\) et \(\vv{L}(nn)=\vv{0},\vv{1},\vv{2}\).</li>
-</ul>
-<p>
-Le système final de deux neutrons <i>i.e.</i> de deux fermions doit satisfaire au
-principe de Pauli <b>généralisé</b> à savoir que la somme \(L+S+T\) doit être
-impaire afin que la fonction d'onde globale demeure antisymétrique.
-</p>
-
-<p>
-Calcul de \(T\) : \(t_3(n) = -\frac{1}{2}\) et \(T_3(nn)=\Sigma\,t_3 =
-   2\,t_3(n)=-1\)
-</p>
-
-\begin{align*}
-  |T_3(nn)|\leq T(nn)\leq\frac{A}{2}
-\end{align*}
-
-<p>
-soit \(\vv{T}(nn)=\vv{1}\).
-</p>
-
-<p>
-La condition \(L+S+T\) impaire devient \(L+S\) pair étant donné que \(T=1\). Aussi,
-seul le couple \((L,S)=(1,1)\) est possible. On déduit ainsi la parité du
-\(\pi^-\)
-</p>
-
-\begin{align*}
-  \pi(nn)=\pi(\pi^-)&=\pi(n)\cdot\pi(n)\cdot(-1)^{L_{nn}}\\
-  &=\pi(n)^2\cdot(-1)^{L_{nn}}\\
-  &=+1\cdot(-1)^1=-1
-\end{align*}</li>
-</ol>
-</div>
-</div>
-
-<div id="outline-container-orgheadline4" class="outline-2">
-<h2 id="orgheadline4"><span class="section-number-2">4</span> Sections efficaces de production de pions</h2>
-<div class="outline-text-2" id="text-4">
-<div class="QUESTION">
-<p>
-On considère les réactions de production par interaction forte de mésons pi :
-</p>
-\begin{align*}
-  p + p &\rightarrow d + \pi^+\\
-  p + n &\rightarrow d + \pi^0
-\end{align*}
-
-<ol class="org-ol">
-<li><p>
-On réalise ces réactions en faisant interagir un proton d'énergie cinétique
-\(T\) sur un nucléon supposé au repos dans le référentiel du
-laboratoire. Calculer l'énergie seuil de ces réactions. On prend comme masses
-au repos :
-</p>
-\begin{align*}
-  m_p c^2 = m_n c^2 \sim \unit[940]{MeV} \quad\text{et}\quad m_{\pi^+}c^2 = m_{\pi^0}c^2 \sim\unit[140]{MeV}
-\end{align*}
-
-<p>
-et on néglige l'énergie de liaison du deuton.
-</p></li>
-</ol>
-
-</div>
-
-<ol class="org-ol">
-<li><p>
-Calcul de l'énergie cinétique minimale
-</p>
-
-<div class="center">
+<div class="org-center">
 
 <div class="figure">
-<p><img src="./figures/pn_dpi_production.png" alt="pn_dpi_production.png" />
+<p><img src="./figures/aleph_ee.png" alt="aleph_ee.png" />
 </p>
 </div>
 </div>
 
-<p>
-Dans le référentiel du laboratoire, l'énergie cinétique minimale \(T_S\) nécessaire à
-la production de particules s'écrit
-</p>
-\begin{align*}
-  T_S^\text{lab.} = \frac{|Q|}{2}\cdot\frac{\Upsigma
-    m_\text{initiale,finale}c^2}{m_\text{cible}c^2}
-\end{align*}
+<ol class="org-ol">
+<li>D'après cette figure, correspondant aux événements issus des désintégrations \(Z^0 \rightarrow
+   e^+e^-\), estimer la masse du \(Z^0\), ainsi que la largeur associée.</li>
+</ol>
+
+</div>
 
 <p>
-où \(Q\) est la chaleur de réaction et est égale à
+Le LEP (pour <i>Large Electron Positron collider</i>) était un accélérateur de particules circulaire de 27
+km de circonférence, passant sous le site du CERN entre la France et la Suisse. En fonction de 1989
+à 2000, le LEP demeure le plus puissant collisionneur de leptons jamais construit
+(\(E_{\text{max}}=\unit[200]{GeV}\)).
 </p>
-\begin{align*}
-  Q = \Upsigma m_\text{initiale}c^2 - \Upsigma m_\text{finale}c^2
-\end{align*}
 
 <p>
-En négligeant l'énergie de liaison \(B_d\) du noyau de deutérium, la masse
-\(m_d\) est égale à deux fois la masse du proton (\(m_{n}\simeq
-   m_{p}\sim\unit[940]{MeV}\). La chaleur de réaction est ainsi égale
+La production de \(Z^0\) intervient par la collision de \(e^+e^-\). Ce boson se désintègre <i>via</i>
+différents canaux dont la désintégration \(Z^0\to e^+e^-\). La figure présente la section efficace en
+fonction de l'énergie des \(e^+e^-\) incidents.
 </p>
-\begin{align*}
-  Q = 2m_pc^2 - 2m_pc^2 - m_\pi c^2 = -m_\pi c^2
-\end{align*}
 
-<p>
-On déduit l'énergie cinétique seuil
-</p>
-\begin{align*}
-  T_S&=\frac{m_\pi c^2}{m_nc^2}\times\frac{4m_pc^2+m_\pi c^2}{2}\\
-  &=\frac{140}{940}\times\frac{4\times940+140}{2} = \unit[290.4]{MeV}
-\end{align*}</li>
+<ol class="org-ol">
+<li value="1">Les faisceaux d'électrons-positrons sont accélérés à la même énergie mais avec des
+impulsions opposées. Par conservation de l'impulsion, le \(Z^0\) ainsi produit est au repos et les
+deux leptons produits par désintégration sont donc émis dos-à-dos. La masse du \(Z^0\) correspond
+donc à la position en énergie du maximum de production <i>i.e.</i> à la résonance soit une masse de
+\(M_{Z^0}c^2=\unit[91.2]{GeV}\) (la mesure figurant dans le PDG donne 91.1876 &plusmn; 0.0021 GeV). La
+largeur à mi-hauteur mesurée est \(\Gamma(Z^0)=2\times(91.2-90)=\unit[2.4]{GeV}\) (contre 2.4952
+&plusmn; 0.0023 GeV dans le PDG).</li>
 </ol>
 
 <div class="QUESTION">
 <ol class="org-ol">
-<li value="2">Si on réalise ces expériences avec des protons d'énergie cinétique 1
-GeV, à quel angle détecte-t-on des pions de 600 MeV d'énergie cinétique ?</li>
+<li value="2">Le calcul en théorie électrofaible de la largeur partielle du \(Z^0\) pour sa désintégration
+en \(e^+e^-\), est \(\Gamma(Z^0 \rightarrow e^+ e^-)\) ~ 84 MeV. Pourquoi ne retrouve-t-on pas la
+largeur précédente ?</li>
 </ol>
 
 </div>
+
+
 <ol class="org-ol">
-<li value="2"><p>
-\(T_p=\unit[1]{GeV}>\unit[290]{MeV}\) et \(T_\pi=\unit[600]{MeV}\)
-</p>
-
-<p>
-La conservation de l'impulsion implique que \(\vv{p}_p=\vv{p}_\pi+\vv{p}_d\)
-soit \(\vv{p}_d=\vv{p}_p-\vv{p}_\pi\) et donc
-\(p_d^2=p_p^2+p_\pi^2-2p_pp_\pi\cos\theta\). L'angle &theta; s'exprime ainsi
-</p>
-\begin{align*}
-  \cos\theta=\frac{p_p^2+p_\pi^2-p_d^2}{2p_pp_\pi}
-\end{align*}
-
-<p>
-L'impulsion s'exprime en fonction de l'énergie cinétique \(T\) suivant
-</p>
-
-\begin{align*}
-  (pc)^2&=E^2 - m^2c^4\\
-  &=(T+mc^2)^2 - m^2c^4\\
-  &=T(T+2mc^2)
-\end{align*}
-
-<p>
-On déduit ainsi les valeurs d'impulsion du proton et du pion et <i>via</i> la
-conservation de l'énergie totale, on a
-</p>
-\begin{align*}
-  E_p + m_nc^2 = E_\pi+E_d
-\end{align*}
-
-<p>
-soit
-</p>
-\begin{align*}
-  T_p + 2m_pc^2 = T_\pi+m_\pi c^2+T_d+2m_pc^2
-\end{align*}
-
-<p>
-et donc
-</p>
-\begin{align*}
-  T_d = T_p - T_\pi - m_\pi c^2
-\end{align*}
-
-<p>
-<b>AN :</b>
-</p>
-\begin{align*}
-  (p_pc)^2 &= 1000(1000+2\times940) = \unit[2.88\,10^6]{MeV}^2 \text{ soit } p_pc = \unit[1697]{MeV}\\
-  (p_\pi c)^2 &= 600(600+2\times140) = \unit[5.28\,10^5]{MeV}^2 \text{ soit } p_\pi c = \unit[726.6]{MeV}\\
-  (p_dc)^2 &= (1000-600-140)(260+4\times140) = \unit[1.045\,10^6]{MeV}^2 \text{ soit } p_dc = \unit[1022]{MeV}
-\end{align*}
-\begin{align*}
-  \cos\theta&=\frac{2.88+0.528-1.045}{2\times\sqrt{2.88}\sqrt{0.528}}\\
-  &=0.958\\
-  \theta&=16.7^\circ
-\end{align*}</li>
+<li value="2">\(\Gamma(Z^0)\gg\Gamma(Z^0\to e^+e^-)\). La durée de vie du boson \(Z^0\) est une propriété
+intrinsèque à cette particule : elle ne dépend donc pas du mode de désintégration. À titre
+d'exemple, la mesure du taux de désintégration de \(Z^0\to\mu^+\mu^-\) donnerait un résultat
+expérimental identique. À partir de la distribution en masse invariante, la largeur de la
+résonance est donc la convolution de l'ensemble des modes de désintégration du \(Z^0\) (à laquelle
+s'ajoute les effets expérimentaux tels que la résolution en énergie du calorimètre
+électromagnétique). On ne peut donc expérimentalement isoler les différents modes de
+désintégrations du \(Z^0\).</li>
 </ol>
 
 <div class="QUESTION">
 <ol class="org-ol">
-<li value="3">Préciser l'état d'isospin de chacun des quatre systèmes : \(\ket{p+p}\),
-\(\ket{d+\pi^+}\), \(\ket{p+n}\) et \(\ket{d+\pi^0}\). Les coefficients de
-Clebsh-Gordan sont donnés en annexe et on donne l'isospin du deuton : \(T=0\).</li>
+<li value="3">Dessiner les diagrammes de Feynman correspondant à la collision \(e^+e^-\) suivie d'une
+désintégration en \(\nu \bar{\nu}\), \(l^-l^+\) ou \(q\bar{q}\) (où \(\nu\) (\(\bar{\nu}\)) représente un
+(anti)neutrino, \(l^-\) (\(l^+\)) un (anti)lepton chargé et \(q\) (\(\bar{q}\)) un (anti)quark).</li>
 </ol>
 
 </div>
+
+
 <ol class="org-ol">
 <li value="3"><p>
-États d'isospin
+Diagrammes de Feynman
 </p>
 
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="void">
@@ -750,180 +248,436 @@ Clebsh-Gordan sont donnés en annexe et on donne l'isospin du deuton : \(T=0\).<
 <col  class="org-left" />
 
 <col  class="org-left" />
-
-<col  class="org-left" />
-
-<col  class="org-left" />
-
-<col  class="org-left" />
 </colgroup>
 <tbody>
 <tr>
-<td class="org-left">&#xa0;</td>
-<td class="org-left">\(p\)</td>
-<td class="org-left">\(n\)</td>
-<td class="org-left">\(d\)</td>
-<td class="org-left">\(\pi^+\)</td>
-<td class="org-left">\(\pi^0\)</td>
-</tr>
-
-<tr>
-<td class="org-left">\(T_3\)</td>
-<td class="org-left">1/2</td>
-<td class="org-left">-1/2</td>
-<td class="org-left">0</td>
-<td class="org-left">1</td>
-<td class="org-left">0</td>
-</tr>
-
-<tr>
-<td class="org-left">\(\vv{T}\)</td>
-<td class="org-left">\(\vv{1}/2\)</td>
-<td class="org-left">\(\vv{1}/2\)</td>
-<td class="org-left">\(\vv{0}\)</td>
-<td class="org-left">\(\vv{1}\)</td>
-<td class="org-left">\(\vv{1}\)</td>
+<td class="org-left"><img src="./figures/Z0_qqbar_diagram.png" alt="Z0_qqbar_diagram.png" /></td>
+<td class="org-left"><img src="./figures/Z0_llbar_diagram.png" alt="Z0_llbar_diagram.png" /></td>
+<td class="org-left"><img src="./figures/Z0_nunubar_diagram.png" alt="Z0_nunubar_diagram.png" /></td>
 </tr>
 </tbody>
-</table>
-
-<p>
-Remarque: \(T_3(d)=t_3(n)+t_3(p) = 0\) et \(\vv{T}(d)=\vv{0}\) ou \(\vv{1}\). On
-considère que \(T(d) = T_\text{fond.}(d) = |T_3| = 0\).
-</p>
-
-<ul class="org-ul">
-<li>\(\ket{p+p}\) : \(T_3 = t_3(p) + t_3(p) = 1\) et \(\vv{T} = \vv{0}\) ou \(\vv{1}\)
-     mais seul \(\vv{T}=\vv{1}\) est possible du fait que \(T_3=1\)</li>
-
-<li>\(\ket{d+\pi^+}\) : \(T_3=+1\) et \(\vv{T}=\vv{1}\)</li>
-
-<li>\(\ket{p+n}\) : \(T_3=0\) et \(\vv{T}= \vv{0}\) ou \(\vv{1}\)</li>
-
-<li>\(\ket{d+\pi^0}\) : \(T_3=0\) et \(\vv{T}=\vv{1}\)</li>
-</ul>
-<p>
-Les coefficients de Clebsch-Gordan fournissent les valeurs de
-\(\psh{t_1t_2t_{31}t_{32}}{TT_3}\). On obtient ainsi
-</p>
-
-<ul class="org-ul">
-<li>\(\ket{p+p} = \ket{pp} =
-     \ket{\tfrac{1}{2}\tfrac{1}{2}\tfrac{1}{2}\tfrac{1}{2}}=\ket{11}\)</li>
-
-<li>\(\ket{d+\pi^+} = \ket{d\pi^+} = \ket{0101}=\ket{11}\)</li>
-
-<li>\(\ket{p+n} = \ket{pn} =
-     \ket{\tfrac{1}{2}\tfrac{1}{2}\tfrac{1}{2}\tfrac{-1}{2}}=\alpha\ket{10}+\beta\ket{00}\)
-     avec \(\alpha=\psh{\tfrac{1}{2}\tfrac{1}{2}\tfrac{1}{2}\tfrac{-1}{2}}{10} = \tfrac{1}{\sqrt{2}}\)
-     et \(\beta=\psh{\tfrac{1}{2}\tfrac{1}{2}\tfrac{1}{2}\tfrac{-1}{2}}{00} = \tfrac{1}{\sqrt{2}}\)</li>
-
-<li>\(\ket{d+\pi^0} = \ket{d\pi^0} = \ket{0100}=\ket{10}\)</li>
-</ul></li>
+</table></li>
 </ol>
+
 
 <div class="QUESTION">
-<ol class="org-ol">
-<li value="4">Les deux réactions étant réalisées dans les mêmes conditions
-cinématiques, montrer qu'il existe entre leurs sections efficaces une
-relation simple que l'on précisera.</li>
-</ol>
-
-</div>
 <ol class="org-ol">
 <li value="4"><p>
-Intéraction forte &rarr; conservation de l'isospin \(\vv{T}\). Si ces
-2 réactions sont réalisées dans les mêmes conditions cinématiques, on peut
-comparer leurs sections efficaces \(\sigma_1\) et \(\sigma_2\) en utilisant la
-formule
+Lorsque plusieurs modes de désintégration existent, on associe à chacun d'eux une largeur de
+désintégration partielle, dont la somme fournit la largeur totale. Les modes principaux de
+désintégration du boson \(Z^0\) correspondent à la création d'une paire fermion-antifermion,
+décomposés de la façon suivante :
 </p>
-
 \begin{align*}
-  \sigma&\propto\left|\bra{f(T_f)}V_\text{IF}\ket{i(T_i)}\right|^2\\
-  &\propto\left|M(T)\right|^2\text{ si } T_f=T_i=T\\
-  &=0\text{ si } T_f\neq T_i
+  \Gamma_\text{tot.}(Z^0)=N_\nu\Gamma(Z^0\rightarrow\nu\bar{\nu})+N_\ell\Gamma(Z^0 \rightarrow \ell^- \ell^+)+\Gamma_\text{tot.} (Z^0\rightarrow q \bar{q})=\unit[2495]{MeV}
 \end{align*}
 
 <p>
-Soit
+Les 3 largeurs partielles de leptons chargés sont égales, et la largeur partielle de
+désintégration en toutes les paires possibles quark-antiquark vaut \(\Gamma_\text{tot.}(Z^0
+   \rightarrow q\bar{q})\) = 1741 MeV.
+</p>
+
+<p>
+La contribution d'une paire neutrino-antineutrino, de masse très inférieure à celle du \(Z^0\), se
+calcule en théorie électrofaible par la formule suivante :
 </p>
 \begin{align*}
-  \sigma_1&\propto\left|\bra{d\pi^+}V_\text{IF}\ket{pp}\right|^2\propto\left|\bra{11}V_\text{IF}\ket{11}\right|^2\propto \left|M(1)\right|^2\\
-  \sigma_2&\propto\tfrac{1}{2}\left|\bra{d\pi^0}V_\text{IF}\ket{pn}\right|^2\\
-  &\propto\tfrac{1}{2}\left|\bra{10}V_\text{IF}\ket{00}+\bra{10}V_\text{IF}\ket{10}\right|^2
+  \Gamma(Z^0\rightarrow\nu\bar{\nu}) = \frac{\alpha_{e.m.} \ M_Z c^2}{24\sin^2\theta_W\cos^2\theta_W}
 \end{align*}
 
 <p>
-or \(\bra{10}V_\text{IF}\ket{00}\) est nul car \(T_f\neq T_i\) et
-\(\bra{10}V_\text{IF}\ket{10}\) est une fonction dépendant uniquement de
-\(T=1\). On obtient ainsi que
+On prend comme valeur du couplage électromagnétique \(\alpha_\text{em} =
+   \frac{e^2}{4\pi\epsilon_0\hbar c} = \frac{1}{128}\) à une échelle de \(Q^2\) ~100 GeV<sup>2</sup> (la
+différence entre cette valeur et celle du couplage effectif \(\alpha_\text{em} = 1/137\) à \(Q^2\) =
+0 provient de corrections quantiques). Le paramètre \(\theta_W\) est l'angle de mélange
+électrofaible. La valeur de \(\sin^2\theta_W\) dépend du schéma de renormalisation électrofaible
+choisi : une valeur est donnée par la relation \(\sin^2\theta_W = 1 - (M_Wc^2/M_Zc^2)^2 =
+   e^2/g^2\), où \(e\) est la constante de couplage électromagnétique et \(g\) celle du groupe de
+symétrie SU(2)\(_L\). On utilise ici \(\sin^2\theta_W\sim 0.23\).
 </p>
-\begin{align*}
-  \frac{\sigma_1}{\sigma_2}=\frac{\sigma(pp\rightarrow d\pi^+)}{\sigma(pn\rightarrow d\pi^0)}=2
-\end{align*}
 
 <p>
-Ce résultat théorique a été vérifié et confirmé expérimentalement .
+Calculer la valeur du nombre de neutrinos légers \(N_{\nu}\) existants.
+</p>
+
+<p>
+<i>Remarque</i> : Le résultat obtenu par les expériences LEP, \(N_{\nu}\) = 3, se traduit par une limite
+inférieure sur la masse d'un quatrième neutrino ayant un couplage standard avec le \(Z^0\). Cette
+limite est \(M_{\nu_L} c^2 > M_Z /2\) 45 GeV !
 </p></li>
+</ol>
+
+</div>
+
+<ol class="org-ol">
+<li value="4"><p>
+Calcul du nombre de neutrinos
+</p>
+
+\begin{align*}
+  \Gamma_\text{tot.}(Z^0)=N_\nu\Gamma(Z^0\to\nu\bar{\nu})+N_\ell\Gamma(Z^0\to \ell^-\ell^+)+\Gamma_\text{tot.}(Z^0\to q\bar{q})=\unit[2495]{MeV}
+\end{align*}
+
+<p>
+avec \(\Gamma_\text{tot.}(Z^0\to q\bar{q})=\unit[1741]{MeV}\), \(\Gamma(Z^0\to
+   \ell^-\ell^+)=\Gamma(Z^0\to e^-e^+)=\unit[84]{MeV}\) et
+</p>
+\begin{align*}
+  \Gamma(Z^0\to\nu\bar{\nu})=\frac{\alpha_\text{em}\,M_{Z^0}c^2}{24\sin^2\theta_W\cos^2\theta_W}
+\end{align*}
+
+<p>
+Ainsi, le nombre de neutrinos \(N_\nu\) s'écrit
+</p>
+\begin{align*}
+  N_\nu&=\frac{\Gamma_\text{tot.}(Z^0)-N_\ell\Gamma(Z^0\to \ell^-\ell^+)-\Gamma_\text{tot.}(Z^0\to q\bar{q})}{\Gamma(Z^0\to\nu\bar{\nu})}\\
+  &=\frac{\Gamma_\text{tot.}(Z^0)-N_\ell\Gamma(Z^0\to \ell^-\ell^+)-\Gamma_\text{tot.}(Z^0\to q\bar{q})}{\alpha_\text{em}\,M_{Z^0}c^2}\times24\sin^2\theta_W\cos^2\theta_W\\
+  &=\frac{2495-3\times84-1741}{91.2\,10^3}\times128\times24\times0.23\times(1-0.23)\\
+  &=2.99\text{ soit 3 familles de neutrinos}
+\end{align*}</li>
 </ol>
 </div>
 </div>
 
-<div id="outline-container-orgheadline5" class="outline-2">
-<h2 id="orgheadline5"><span class="section-number-2">5</span> Couplages de trois nucléons</h2>
-<div class="outline-text-2" id="text-5">
+
+<div id="outline-container-org486e899" class="outline-2">
+<h2 id="org486e899"><span class="section-number-2">2</span> Neutrinos : production, détection, masse</h2>
+<div class="outline-text-2" id="text-2">
+</div>
+<div id="outline-container-orgb8f3878" class="outline-3">
+<h3 id="orgb8f3878"><span class="section-number-3">2.1</span> Chaîne \(pp\) : \(4p\to\alpha+2\nu\)</h3>
+<div class="outline-text-3" id="text-2-1">
 <div class="QUESTION">
 <p>
-On considère les noyaux comportant 3 nucléons.
+Dans la chaîne de conversion solaire dite "\(pp\)", les différentes réactions
+aboutissant à la transformation de l'hydrogène en hélium émettent deux
+neutrinos pour chaque conversion de quatre protons en une particule &alpha;,
+avec \(Q\) = 26.72 MeV d'énergie libérée.
 </p>
 
 <ol class="org-ol">
-<li>Quelles valeurs de l'isospin \(\vv{T}\) peut-on obtenir pour ce
-système ? Donner les multiplets d'isospin auxquels on s'attend.</li>
+<li>Si on suppose que la chaîne "\(pp\)" est la seule responsable de la production
+d'énergie solaire, estimer le flux de neutrinos solaires (en m<sup>-2</sup>.s<sup>-1</sup>)
+provenant de la chaîne "\(pp\)" et arrivant sur la Terre, sachant que la
+puissance rayonnée par le Soleil vaut \(P_{\odot}\) = 3.83 10<sup>26</sup> J.s<sup>-1</sup> et
+que la distance Terre-Soleil vaut \(R\) = 1.5&nbsp;10<sup>8</sup> km.</li>
+
+<li>Sachant que 3% de l'énergie solaire est emportée par les neutrinos, quelle
+est leur énergie moyenne ?</li>
 </ol>
 
 </div>
+
+
 <ol class="org-ol">
 <li><p>
-Système de trois nucléons : \(\vv{t}(n) = \vv{1}/2\) et
-\(\vv{t}(p)=\vv{1}/2\). L'isospin de 3 nucléons \(\vv{T}(3N) = \Upsigma
-   \vv{t}_i\) soit
+Chaque réaction produit deux neutrinos et libère \(Q=\unit[26.72]{MeV}\). Le
+nombre de neutrinos produit par le Soleil est
 </p>
-
 \begin{align*}
-  \vv{T}(3N) &= \tfrac{\vv{1}}{2} + \tfrac{\vv{1}}{2} + \tfrac{\vv{1}}{2}\\
-  &= \tfrac{\vv{1}}{2}\text{ ou }\tfrac{\vv{3}}{2}
+  N_\nu&=2\times\frac{P_\odot}{Q}=2\times\frac{3.83\,10^{26}}{26.76\,10^6\times1.6\,10^{-19}}\\
+  &=\unit[1.78\,10^{38}]{s}^{-1}
 \end{align*}
 
 <p>
-On obtient donc un double d'isospin \(T_3(3N)=\pm\tfrac{1}{2}\) et un
-quadruplet d'isospin où \(T_3(3N)=\pm\tfrac{1}{2}, \pm\tfrac{3}{2}\)
+Le flux de neutrinos sur Terre est alors
+</p>
+\begin{align*}
+  F_\nu&=\frac{N_\nu}{4\pi\,R^2}=\frac{1.78\,10^{38}}{4\pi\,(1.5\,10^{11})^2}\\
+  &=6.33\,10^{14}\,\text{m$^{-2}$.s$^{-1}$}
+\end{align*}</li>
+
+<li><p>
+3% de l'énergie libérée par chaque réaction \(Q=\unit[26.72]{MeV}\) est
+emportée par les deux neutrinos d'où
+</p>
+\begin{align*}
+  \langle E_\nu\rangle=\frac{3\%\,Q}{2}=\unit[0.4]{MeV}
+\end{align*}</li>
+</ol>
+</div>
+</div>
+
+<div id="outline-container-org96c37c8" class="outline-3">
+<h3 id="org96c37c8"><span class="section-number-3">2.2</span> Limite sur la masse des neutrinos</h3>
+<div class="outline-text-3" id="text-2-2">
+<div class="QUESTION">
+<p>
+La Supernova 1987A est située à une distance \(D\) = 1.7 10<sup>5</sup> années-lumière de
+la Terre. L'interaction de 10 neutrinos électroniques issus de cette source a
+été observée dans un détecteur contenant 1000 tonnes d'eau, pendant un
+intervalle de temps \(\Delta t\) = 10&nbsp;s. L'énergie moyenne des neutrinos était de
+10 MeV, et s'étendait de \(E_1\) = 5 MeV à \(E_2\) = 20 MeV. Les neutrinos ont été
+détectés par la réaction \(\nu_e + n \rightarrow p + e^-\).
+</p>
+
+<ol class="org-ol">
+<li>Exprimer le temps d'arrivée d'un neutrino électronique en fonction de la
+distance \(D\), de sa masse \(m_{\nu}c^2\) (supposée petite mais non nulle) et de
+son énergie totale \(E\).</li>
+</ol>
+
+</div>
+
+<ol class="org-ol">
+<li><p>
+Le temps d'arrivée d'un neutrino correspond à \(t=\frac{D}{v}=\frac{D}{\beta
+   c}\). Or
+</p>
+\begin{align*}
+  \gamma&=\frac{E}{m_\nu c^2}=\frac{1}{\surd 1-\beta^2}\\
+  1-\beta^2&=\frac{(m_\nu c^2)^2}{E^2}\\
+  \beta&=\sqrt{1-\frac{(m_\nu c^2)^2}{E^2}}
+\end{align*}
+
+<p>
+Le temps d'arrivé est ainsi
+</p>
+\begin{align*}
+  t=\frac{D}{c\surd1-\frac{(m_\nu c^2)^2}{E^2}}
+\end{align*}</li>
+</ol>
+
+<div class="QUESTION">
+<ol class="org-ol">
+<li value="2"><p>
+On suppose que les neutrinos sont tous émis au même instant. Montrer que
+leur arrivée s'étale sur la durée :
+</p>
+\begin{align*}
+  \Delta t = \frac{D}{c} \frac{m_{\nu}^2c^4}{2} \left\{ \frac{1}{E_1^2} - \frac{1}{E_2^2}\right\}
+\end{align*}</li>
+</ol>
+
+</div>
+
+
+<ol class="org-ol">
+<li value="2"><p>
+Les neutrinos les plus énergétiques arriveront les premiers soit
+</p>
+\begin{align*}
+  \Updelta t&=t_1-t_2\\
+  &=\frac{D}{c}\left(\frac{1}{\surd1-\frac{m_\nu^2c^4}{E_1^2}}-\frac{1}{\surd1-\frac{m_\nu^2c^4}{E_2^2}}\right)\\
+  &\text{or }m_\nu c^2\ll E_{1,2}\\
+  &\simeq\frac{D}{c}\left(\cancel{1}+\frac{1}{2}\times\frac{m_\nu^2c^4}{E_1^2}-\cancel{1}-\frac{1}{2}\times\frac{m_\nu^2c^4}{E_2^2}\right)\\
+  &\simeq\frac{D}{c}\times\frac{m_\nu^2 c^4}{2}\left(\frac{1}{E_1^2}-\frac{1}{E_2^2}\right)
+\end{align*}</li>
+</ol>
+
+
+<div class="QUESTION">
+<ol class="org-ol">
+<li value="3">En déduire une limite supérieure sur la masse du neutrino électronique.</li>
+</ol>
+
+</div>
+<ol class="org-ol">
+<li value="3"><p>
+Du fait que \(\Updelta t\leq\unit[10]{s}\), on déduit que la masse des
+neutrinos \(m_\nu\) est nécessairement inférieure à
+</p>
+\begin{align*}
+  \Updelta t\leq\unit[10]{s}\Longleftrightarrow&m_\nu c^2\leq\sqrt{\frac{\Updelta t\times2c}{D}\times\frac{1}{1/E_1^2-1/E_2^2}}\\
+  &m_\nu c^2\leq\sqrt{\frac{2\Updelta tc}{D}\times\frac{E_1^2E_2^2}{E_2^2-E_1^2}}\\
+  &m_\nu c^2\leq E_1E_2\sqrt{\frac{2\Updelta tc}{D}\frac{1}{E_2^2-E_1^2}}\\
+  &m_\nu c^2\leq 5\times20\sqrt{\frac{20\times\cancel{c}}{1.7\,10^5\times\cancel{c}\times3600\times24\times365}\times\frac{1}{20^2-5^2}}\\
+  &m_\nu c^2\leq 5\times20\sqrt{\frac{20}{1.7\times3.15}\times\frac{1}{400-25}}\times\unit[10^{-6}]{MeV}\\
+  &m_\nu c^2\leq\unit[10]{eV}
+\end{align*}
+
+<p>
+Le résultat final fut \(m_{\nu_e}c^2\leq\unit[7]{eV}\) <sup><a id="fnr.1" class="footref" href="#fn.1">1</a></sup>, valeur qui,
+grâce aux expériences de mesure directe de la masse du neutrino électronique
+<i>via</i> l'étude du <i>end-point</i> du spectre de désintégration &beta; du tritium,
+Mainz et Troitztk, atteint aujourd'hui \(m_{\nu_e}\leq\unit[2.2]{eV}\). La
+future expérience Katrin devait gagner encore un ordre de grandeur sur la
+sensibilité : \(m_{\nu_e}\leq\unit[0.2]{eV}\).
+ <div class="footdef"><sup><a id="fn.1" class="footnum" href="#fnr.1">1</a></sup> <div class="footpara"><p class="footpara"> W. David Arnett &amp; Jonathan L. Roser <a href="http://journals.aps.org/prl/abstract/10.1103/PhysRevLett.58.1906">Physical Review Letter 58</a>, David N. Spergel &amp; John N. Bahcall <a href="http://www.sciencedirect.com/science/article/pii/0370269388907903">Physical Letters B</a> </p></div><br/></div>
+</p>
+</ol>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgf1b3e41" class="outline-2">
+<h2 id="orgf1b3e41"><span class="section-number-2">3</span> Les mésons neutres \(K^0\) et \(\bar{K}^0\)</h2>
+<div class="outline-text-2" id="text-3">
+<div class="QUESTION">
+<p>
+Le \(K^0\) et le \(\bar{K^0}\) sont des mésons étranges, produits par interaction forte et se
+désintègrant par interaction faible. Le \(\bar{K^0}\), antiparticule du \(K^0\), a la même masse que
+lui.
+</p>
+
+<p>
+Le \(K^0\), comme le \(\bar{K^0}\), se désintègre soit en deux pions, soit en trois pions, avec des
+constantes radioactives différentes :
+</p>
+\begin{align*}
+  \lambda_{2\pi} = \unit[1.12\,10^{10}]{s^{-1}} \quad \text{et} \quad \lambda_{3\pi} = \unit[1.93\,10^7]{s^{-1}}
+\end{align*}
+
+<p>
+Les états \(K^0\) et \(\bar{K^0}\) ne sont pas états propres de \(\hat{\mathcal{C}} \hat{\mathcal{P}}\)
+(avec \(\hat{\mathcal{P}}\) opération de parité ou symétrie droite-gauche et \(\hat{\mathcal{C}}\)
+opération de conjugaison de charge ou symétrie particule-antiparticule).
+</p>
+
+<p>
+On est amené à définir les particules fictives \(\ket{K^0_1}\) et \(\ket{K^0_2}\)
+</p>
+\begin{align*}
+  \ket{K^0_1} = \frac{1}{\sqrt{2}} \ket{K^0} - \frac{1}{\sqrt{2}} \ket{\bar{K^0}} \quad\text{et}\quad \ket{K^0_2} = \frac{1}{\sqrt{2}} \ket{K^0} + \frac{1}{\sqrt{2}} \ket{\bar{K^0}}
+\end{align*}
+
+<p>
+qui sont états propres de \(\hat{\mathcal{C}}\hat{\mathcal{P}}\) avec les valeurs propres respectives
++1 et -1.
+</p>
+
+<p>
+On a de la même manière
+</p>
+\begin{align*}
+  \ket{K^0} = \frac{1}{\sqrt{2}} \ket{K^0_1} + \frac{1}{\sqrt{2}} \ket{K^0_2} \quad\text{et}\quad \ket{\bar{K^0}} = -\frac{1}{\sqrt{2}} \ket{K^0_1} + \frac{1}{\sqrt{2}} \ket{K^0_2}
+\end{align*}
+
+<p>
+\(\ket{K^0}\) et \(\ket{\bar{K^0}}\) d'une part, \(\ket{K^0_1}\) et \(\ket{K^0_2}\) d'autre part, formant
+deux bases orthonormées.
+</p>
+
+<ol class="org-ol">
+<li><p>
+On peut montrer que les états finaux hadroniques (à 2 ou 3 pions) de la désintégration d'un \(K^0\)
+(\(\bar{K^0}\)) sont des états propres de l'opération \(\hat{\mathcal{C}}\hat{\mathcal{P}}\), avec :
+</p>
+\begin{align*}
+  \hat{\mathcal{C}} \hat{\mathcal{P}} \ket{2\pi} = + \ket{2\pi} \quad\text{et}\quad \hat{\mathcal{C}} \hat{\mathcal{P}} \ket{3\pi} = - \ket{3\pi}
+\end{align*}
+
+<p>
+En déduire le mode de désintégration de \(K^0_1\) (resp.  \(K^0_2\)) et sa vie moyenne \(\tau_1\) (resp. \(\tau_2\)).
+</p></li>
+</ol>
+
+</div>
+
+<ol class="org-ol">
+<li><p>
+Les états "fictifs" \(\ket{K^0_1}\) et \(\ket{K^0_2}\) sont des états propres de
+\(\hat{\mathcal{C}}\hat{\mathcal{P}}\) de valeurs propres respectives +1 et -1. Les états finaux
+hadroniques à 2 et 3 pions sont également états propres de l'opérateur
+\(\hat{\mathcal{C}}\hat{\mathcal{P}}\) et ont des valeurs propres identiques à celle des états
+\(\ket{K^0_1}\) et \(\ket{K^0_2}\). Les états physique \(\ket{K^0}\) et \(\ket{\bar{K}^0}\) étant un
+mélange des états propres \(\ket{K^0_1}\) et \(\ket{K^0_2}\) et se désintégrant aussi bien en deux et
+trois pions, on déduit, par association des valeurs propres, que l'état
+\(\ket{K^0_1}\equiv\ket{2\pi}\) et \(\ket{K^0_2}\equiv\ket{3\pi}\). La durée de vie moyenne de ces
+deux états est ainsi
+</p>
+\begin{align*}
+  \tau_1&=\frac{1}{\lambda_{2\pi}}=\unit[8.9\,10^{-11}]{s}\\
+  \tau_2&=\frac{1}{\lambda_{3\pi}}=\unit[5.2\,10^{-8}]{s}
+\end{align*}
+
+<p>
+On note que ces deux durées de vie sont compatibles avec celles issues de processus par
+intéraction faible.
 </p></li>
 </ol>
 
 <div class="QUESTION">
 <ol class="org-ol">
-<li value="2">Sachant que le tri-neutron et le tri-proton ne sont pas des états stables
-(on dit qu'ils sont non liés), donner la valeur de l'isospin de l'état
-fondamental des noyaux&nbsp;<sup>3</sup><sub>1</sub>H et&nbsp;<sup>3</sup><sub>2</sub>He.</li>
+<li value="2"><p>
+Les particules "physiques" \(K^0\) et \(\bar{K^0}\) sont considérées comme des combinaisons
+linéaires des particules "fictives" \(K^0_1\) et \(K^0_2\). La désintégration des \(K^0\) et
+\(\bar{K^0}\) peut alors se décomposer en deux problèmes indépendants : la désintégration du
+\(K^0_1\) et la désintégration du \(K^0_2\).
+</p>
+
+<p>
+Soit un faisceau de particules de vitesse \(v = \beta c\), de vie moyenne \(\tau\) et d'intensité
+\(I_0\). On se place dans le référentiel du laboratoire.
+</p>
+
+<ol class="org-ol">
+<li>Après un parcours de longueur \(L\), montrer que l'intensité du faisceau est réduite à \(I = I_0
+      e^{-L/\ell}\), où \(\ell = \gamma \beta c \tau\).</li>
+
+<li>On produit un faisceau de \(K^0\) d'impulsion \(p\) = 10 GeV/c. On suppose que les \(K^0_1\) et
+\(K^0_2\) ont même masse et même impulsion que les \(K^0\) du faisceau initial.
+<ol class="org-ol">
+<li>Quel est, après un parcours de longueur \(L\) = 10 m, le rapport \(\rho = I_1 / I_2\) de
+l'intensité des \(K^0_1\) à celle des \(K^0_2\) dans le faisceau ?</li>
+
+<li>Indiquer quel est alors, dans le faisceau, le rapport du nombre de particules "physiques"
+\(K^0\) à celui des particules "physiques" \(\bar{K^0}\).</li>
+</ol></li>
+</ol></li>
 </ol>
 
 </div>
-<ol class="org-ol">
-<li value="2">Les états \(\ket{ppp}\) et \(\ket{nnn}\) qui ont respectivement pour valeur
-de \(T_3\), 3/2 et -3/2 appartiennent tous les deux au quadruplet d'isospin
-\(\vv{T}=\vv{3}/2\). Or, les forces nucléaires ne dependent que de l'isospin et
-sont donc indépendantes de charge (et donc de \(T_3\)). Étant donné que les
-états d'un même multiplet ont tous des propriétés communes vis-à-vis de
-l'intéraction forte, si les états \(\vv{T}=\vv{3}/2\), \(T_3=\pm3/2\) n'existent
-pas alors les états \(\vv{T}=\vv{3}/2\), \(T_3=\pm1/2\) n'existent pas non
-plus. Les états de&nbsp;<sup>3</sup><sub>1</sub>H et&nbsp;<sup>3</sup><sub>2</sub>H sont donc ceux appartenant
-au doublet d'isospin \(\vv{T}=\vv{1}/2\) avec
 
-<ul class="org-ul">
-<li>&nbsp;<sup>3</sup><sub>1</sub>H &equiv; \(\ket{pnn}\) avec \(T_3(pnn)=\tfrac{-1}{2}\)</li>
-<li>&nbsp;<sup>3</sup><sub>2</sub>H &equiv; \(\ket{ppn}\) avec \(T_3(pnn)=\tfrac{+1}{2}\)</li>
-</ul></li>
+<ol class="org-ol">
+<li value="2">Soit un faisceau de particules de vitesse \(v=\beta c\), de vie moyenne \(\tau\) et d'intensité
+\(I_0\)
+<ol class="org-ol">
+<li><p>
+Dans le référentiel du faisceau <i>i.e.</i> du centre de masse, l'intensité est égale
+\(I=I_0\exp(-t^*/\tau)\). Dans le référentiel du laboratoire, cette intensité devient
+\(I=I_0\exp(-t/\gamma\tau)\). Par ailleurs, le temps nécessaire pour parcourir la distance \(L\)
+est \(t=\frac{L}{v}=\frac{L}{\beta c}\). On déduit que l'intensité du faisceau après avoir
+parcouru une distance \(L\) s'écrit
+</p>
+\begin{align*}
+  I=I_0\exp\left(-\frac{L}{\gamma\tau\beta c}\right)=I_0\exp\left(-\frac{L}{\ell}\right)
+\end{align*}</li>
+
+<li>Faisceau de \(K^0\) à \(p=\unit[10]{GeV/c}\). Initialement, le faisceau est donc constitué pour
+moitié de "particules" \(K_1^0\), l'autre moitié étant les "particules" \(K_2^0\). On suppose par
+ailleurs que la masse et l'impulsion de ces particules sont identiques
+(\(\beta_1=\beta_2=\beta_{K^0}\)).
+<ol class="org-ol">
+<li><p>
+Après un parcours de longueur \(L=\unit[10]{m}\), l'intensité respective de chaque
+composante, \(K^0_1\) et \(K^0_2\), du faisceau est
+</p>
+\begin{align*}
+  I_{1,2}&=I_{01,02}\exp\left(-\frac{L}{\gamma\tau_{1,2}\beta c}\right)\\
+  &\text{avec }I_{01}=I_{02}=\frac{I_0}{2}\\
+  \text{d'où }\rho=\frac{I_1}{I_2}&=\exp\left[-\frac{L}{\gamma\beta c}\left(\frac{1}{\tau_1}-\frac{1}{\tau_2}\right)\right]\\
+  \rho&=\exp\left[-\frac{L}{\gamma\beta c}\frac{\tau_2-\tau_1}{\tau_1\tau_2}\right]\\
+  &\simeq\exp\left[-\frac{L}{\gamma\beta c}\frac{1}{\tau_1}\right]
+\end{align*}
+
+<p>
+Par ailleurs,
+</p>
+\begin{align*}
+  p_K^2c^2&=E^2-m_K^2c^4=(\gamma^2-1)m_K^2c^4\\
+  &\text{or }\gamma=\frac{1}{\surd 1-\beta^2}\to(\gamma\beta)^2=\gamma^2-1\\
+  \gamma\beta&=\frac{p_Kc}{m_Kc^2}=\frac{10}{0.4977}=20.1
+\end{align*}
+
+<p>
+Le rapport &rho; entre les intensités de chacun des états \(\ket{K^0_1}\) et \(\ket{K^0_2}\) est
+égal à
+</p>
+\begin{align*}
+  \rho=\frac{I_1}{I_2}=7.37\,10^{-9}\ll1
+\end{align*}</li>
+
+<li>Ainsi, au bout de 10 mètres et en raison de la désintégration des \(K^0_1\) et des \(K^0_2\),
+il ne reste dans le faisceau que des particules \(K^0_2\). Or, ces dernières sont le fruit
+d'un mélange des états \(K^0\) et \(\bar{K}^0\) à savoir
+\(\ket{K^0_2}=\frac{1}{\surd2}\left(\ket{K^0}+\ket{\bar{K}^0}\right)\). Le faisceau est ainsi
+constitué à part égale de mésons \(K^0\) et de mésons \(\bar{K}^0\) : les mésons \(K^0\) se sont
+donc "transformés" en leur antiparticule \(\bar{K}^0\). Cette transformation est le phénomène
+d'oscillation \(K^0\leftrightarrow\bar{K}^0\).</li>
+</ol></li>
+</ol></li>
 </ol>
 </div>
 </div>
@@ -936,7 +690,7 @@ au doublet d'isospin \(\vv{T}=\vv{1}/2\) avec
 </div>
 </div></div>
 <div id="postamble" class="status">
-File under <i class="fa fa-github-alt"></i> version control - commit <a href="https://github.com/xgarrido/master_npp_teaching/commit/15edcc3f2b8dcf1e42ba4cd5ec2942d8a7d0a234">15edcc3</a> - 2016-06-28
+File under <i class="fa fa-github-alt"></i> version control - commit <a href="https://github.com/xgarrido/master_npp_teaching/commit/f535f50b5fcd671574e3f14e69aaa10cb02d480d">f535f50</a> - 2020-12-21
 </div>
 </body>
 </html>

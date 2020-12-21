@@ -3,10 +3,11 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
-<meta  name="viewport" content="width=device-width, initial-scale=1" />
-<title>TD6 : Structure nucléaire</title>
-<meta  name="generator" content="Org-mode" />
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>TD6 : Modèle des quarks &#x2013; Les hadrons</title>
+<meta name="generator" content="Org mode" />
+<meta name="author" content="Xavier Garrido" />
 <link rel="stylesheet" href="css/styles.css" />
                <link rel="stylesheet" href="css/org-pygments.css" />
                <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" />
@@ -15,7 +16,7 @@
 @licstart  The following is the entire license notice for the
 JavaScript code in this tag.
 
-Copyright (C) 2012-2013 Free Software Foundation, Inc.
+Copyright (C) 2012-2018 Free Software Foundation, Inc.
 
 The JavaScript code in this tag is free software: you can
 redistribute it and/or modify it under the terms of the GNU
@@ -83,6 +84,7 @@ for the JavaScript code in this tag.
           extensions: ["cancel.js"],
           Macros: {
               vv: ["{\\vec{#1}}",1],
+              d: "{\\text{d}}",
               Upsigma: "{\\Sigma}",
               Updelta: "{\\Delta}",
               varoiint: "{\\iint}",
@@ -134,617 +136,48 @@ for the JavaScript code in this tag.
 <a href="index.html"><i class="fa fa-home"></i></a><br/>  
 </div>
 <div id="content">
-<h1 class="title">TD6 : Structure nucléaire</h1>
+<h1 class="title">TD6 : Modèle des quarks &#x2013; Les hadrons</h1>
 <div style="display:none;">
 <div id="text-table-of-contents">
 <ul class="org-ul">
-<li><a href="././td_np_0.html">TD1 : Cinématique &amp; Accélérateurs</a></li>
-<li><a href="././td_np_1.html">TD2 : Nombres quantiques &amp; Symétries</a></li>
-<li><a href="././td_np_2.html">TD3 : Réactions de production et de désintégration de particules</a></li>
-<li><a href="././td_np_3.html">TD4 : Modèle des quarks &#x2013; Les hadrons</a></li>
-<li><a href="././td_np_4.html">TD5 : Isospin &#x2013; des quarks aux noyaux</a></li>
-<li><a href="././td_np_5.html">TD6 : Structure nucléaire</a></li>
-<li><a href="././td_np_6.html">TD7 : Réactions nucléaires</a></li>
-<li><a href="././td_np_7.html">TD8 : Masses et désintégrations nucléaires</a></li>
-<li><a href="././td_np_8.html">TD9 : Modèle Standard et au-delà : l'interaction faible</a></li>
+<li><a href="././td_np_0.html">TD1 : Cinématique</a></li>
+<li><a href="././td_np_1.html">TD2 : Accélérateurs &amp; section efficace</a></li>
+<li><a href="././td_np_2.html">TD3 : Nombres quantiques &amp; Symétries</a></li>
+<li><a href="././td_np_3.html">TD4 : Réactions de production et de désintégration de particules</a></li>
+<li><a href="././td_np_4.html">TD5 : Modèle Standard et au-delà : l'interaction faible</a></li>
+<li><a href="././td_np_5.html">TD6 : Modèle des quarks &#x2013; Les hadrons</a></li>
+<li><a href="././td_np_6.html">TD7 : Isospin &#x2013; des quarks aux noyaux</a></li>
+<li><a href="././td_np_7.html">TD8 : Structure nucléaire</a></li>
+<li><a href="././td_np_8.html">TD9 : Masses et désintégrations nucléaires</a></li>
 <li><a href="././td_np_9.html">Annexes</a></li>
 <li><a href="././td_np_10.html">Aide-mémoire de Noyaux &amp; Particules</a></li>
 </ul>
 </div>
 </div>
 
-<div id="outline-container-orgheadline1" class="outline-2">
-<h2 id="orgheadline1"><span class="section-number-2">1</span> Introduction</h2>
+<div id="outline-container-orge9c385a" class="outline-2">
+<h2 id="orge9c385a"><span class="section-number-2">1</span> Les mésons constitués des quarks \(u,d,s\) et de leurs antiquarks</h2>
 <div class="outline-text-2" id="text-1">
-<p>
-Dans l'approximation du champ moyen, l'hamiltonien d'un système à \(N\) nucléons
-prend la forme suivante
-</p>
-\begin{equation*}
-  \hat{H}_\text{CM}=\hat{H}_\text{OH} - D\hat{\ell}^2 - a\vv{\ell}.\vv{s}
-\end{equation*}
-
-<p>
-où \(\hat{H}_{\text{OH}}\) est l'hamiltonien de l'oscillateur
-harmonique. \(D\hat{\ell}^2\) traduit les effets de bord observés
-expérimentalement à savoir que les nucléons à la surface du noyau soit ceux
-ayant un plus grand moment orbital \(\ell\) sont moins liés. Le potentiel moyen
-nucléaire est ainsi plus diffus sur les bords comme l'illustre la figure
-<a href="#orgparagraph1">1</a>. Le terme \(a\vv{\ell}.\vv{s}\) est relatif au couplage
-spin-orbite.
-</p>
-
-<div class="center">
-
-<div id="orgparagraph1" class="figure">
-<p><img src="figures/woods_saxon_potential.png" alt="woods_saxon_potential.png" />
-</p>
-<p><span class="figure-number">Figure 1:</span> <b>Comparaison des potentiels de l'oscillateur harmonique</b> <b>et de la paramétrisation phénoménologique de Woods-Saxon.</b></p>
-</div>
-</div>
-
-<p>
-On adopte, par ailleurs, les notations héritées de la spectroscopie
-atomique/moléculaire (<i>cf.</i> Table <a href="#orgtable1">1</a>) où \(n\) correspond au
-nombre quantique radial <i>i.e.</i> au nombre de n\oe uds de la fonction d'onde,
-\(\ell\) est le nombre quantique associé au moment cinétique orbital et \(j\) celui
-associé au moment cinétique total \(J\) <sup><a id="fnr.1" class="footref" href="#fn.1">1</a></sup> soit \(\vv{j}=\vv{\ell}+\vv{s}\). Les
-nucléons étant des fermions \(s=\pm1/2\), le moment cinétique total devient
-\(\vv{j}=\vv{\ell}+\vv{1}/2\). La parité orbitale de l'état est égale à
-\(\pi=(-1)^\ell\) soit la parité intrinsèque.
- <div class="footdef"><sup><a id="fn.1" class="footnum" href="#fnr.1">1</a></sup> <div class="footpara"><p class="footpara"> le moment cinétique sera indifferemment noté \(J\) ou \(I\) </p></div><br/></div>
-</p>
-
-<table id="orgtable1" border="2" cellspacing="0" cellpadding="6" rules="groups" frame="void">
-<caption class="t-above"><span class="table-number">Table 1:</span> <b>Notation spectroscopique pour le modèle en couches</b></caption>
-
-<colgroup>
-<col  class="org-left" />
-
-<col  class="org-right" />
-
-<col  class="org-right" />
-
-<col  class="org-right" />
-
-<col  class="org-left" />
-
-<col  class="org-left" />
-
-<col  class="org-left" />
-</colgroup>
-<tbody>
-<tr>
-<td class="org-left">\(n\)</td>
-<td class="org-right">1</td>
-<td class="org-right">2</td>
-<td class="org-right">3</td>
-<td class="org-left">&#x2026;</td>
-<td class="org-left">&#xa0;</td>
-<td class="org-left">&#xa0;</td>
-</tr>
-
-<tr>
-<td class="org-left">\(\ell\)</td>
-<td class="org-right">0</td>
-<td class="org-right">1</td>
-<td class="org-right">2</td>
-<td class="org-left">3</td>
-<td class="org-left">4</td>
-<td class="org-left">5</td>
-</tr>
-
-<tr>
-<td class="org-left">&#xa0;</td>
-<td class="org-right">\(s\)</td>
-<td class="org-right">\(p\)</td>
-<td class="org-right">\(d\)</td>
-<td class="org-left">\(f\)</td>
-<td class="org-left">\(g\)</td>
-<td class="org-left">\(h\)</td>
-</tr>
-</tbody>
-</table>
-
-<p>
-Le principe de Pauli impose un nombre \(2j+1\) de particules identiques par couche
-\(j\). Par ailleurs, si on couple deux nucléons identiques dans une même couche
-(cas des noyaux pair-pair, par exemple), <b>seules les valeurs paires de \(I\)
-(moment cinétique total) sont possibles</b> (<i>cf.</i> Chapitre 4, page 14 du
-cours). On en déduit les règles d'appariement à savoir que deux nucléons
-identiques sur une même couche vont s'apparier de telle sorte que le moment
-cinétique soit \(I^\pi=0^+\) <sup><a id="fnr.2" class="footref" href="#fn.2">2</a></sup>. On distingue également les règles suivantes
-pour les différents types de noyau :
- <div class="footdef"><sup><a id="fn.2" class="footnum" href="#fnr.2">2</a></sup> <div class="footpara"><p class="footpara"> la parité est égale à \((-1)^{\ell_1+\ell_2}\) où \(\ell_1=\ell_2=\ell\) et donc \(\pi=(-1)^{2\ell}=+1\) </p></div><br/></div>
-</p>
-
-<dl class="org-dl">
-<dt>noyau pair-pair</dt><dd>ces noyaux ne contiennent que des nucléons appariés dont le
-niveau fondamental correspond à \(I^\pi=0^+\). Les niveaux excités sont alors
-\(2^+,4^+\),&#x2026;, les valeurs impaires de \(I\) étant interdites</dd>
-<dt>noyau pair-impair</dt><dd>ces noyaux ont un nucléon célibataire sur une couche
-\((j,\ell)\), les autres nucléons appariés ont un moment cinétique total
-nul. Le nucléon célibataire gouverne donc la valeur de \(I^\pi\) : \(I=j,
-     \pi=(-1)^\ell\)</dd>
-<dt>noyau impair-impair</dt><dd>les nucléons célibataires, 1 proton et 1 neutron, se
-couplent de telle sorte que la valeur de \(j\) est comprise entre
-\(|j_1-j_2|\leq j\leq j_1+j_2\). La parité \(\pi\) est égale à
-\((-1)^{\ell_1+\ell_2}\). Toutes les valeurs de \(j\) sont possibles</dd>
-</dl>
-</div>
-</div>
-
-<div id="outline-container-orgheadline2" class="outline-2">
-<h2 id="orgheadline2"><span class="section-number-2">2</span> Modèle des couches</h2>
-<div class="outline-text-2" id="text-2">
 <div class="QUESTION">
-<p>
-<i>On trouvera en annexe la séquence des couches donnée par le modèle.</i>
-</p>
+<ol class="org-ol">
+<li value="1">D'après le tableau caractéristique des quarks, établir le même tableau
+pour les antiquarks.</li>
+</ol>
+
+</div>
+
 <ol class="org-ol">
 <li value="1"><p>
-Dans le cadre du modèle des couches, quel moment cinétique I et quelle
-parité &pi; peut-on attribuer à l'état fondamental et au 1<sup>er</sup> état excité
-des noyaux suivants?
+Opérateur conjugaison particule &#x2013; antiparticule \(\hat{C}\) :
+\(q\overset{\hat{C}}{\rightarrow}\bar{q}\)
 </p>
-
-<div class="center">
-<p>
-&nbsp;<sup>41</sup><sub>21</sub>Sc,&nbsp;<sup>57</sup><sub>28</sub>Ni,&nbsp;<sup>58</sup><sub>27</sub>Co,&nbsp;<sup>50</sup><sub>22</sub>Ti
-</p>
-</div></li>
-</ol>
-
-</div>
-<ol class="org-ol">
-<li value="1">Moment cinétique \(I\) et parité \(\pi\) :
 
 <ul class="org-ul">
-<li><p>
-<b>&nbsp;<sup>41</sup><sub>21</sub>Sc</b>
-</p>
-<ul class="org-ul">
-<li>noyau impair-pair : 21 protons, 20 neutrons</li>
-<li>noyau fermé en neutrons (20 : nombre magique)</li>
-<li>1 proton célibataire en \(1f\tfrac{7}{2}\) qui gouverne la valeur de
-\(I^\pi\)</li>
-<li>Niveau fondamental : \((n\ell j)=(1f\tfrac{7}{2})\) :
-\(I^\pi=\tfrac{7}{2}^{(-1)^3}=\tfrac{7}{2}^-\)</li>
-<li>1<sup>er</sup> niveau excité : proton en \(2p\tfrac{3}{2}\) soit
-\(I^\pi=\tfrac{3}{2}^{(-1)^1}=\tfrac{3}{2}^-\)</li>
+<li>\(\vv{T},\vv{I},mc^2,\tau\overset{\hat{C}}{\rightarrow}\vv{T},\vv{I},mc^2,\tau\)</li>
+<li>\(Q/e,B,T_3,S,c,b,t\overset{\hat{C}}{\rightarrow}-Q/e,-B,-T_3,-S,-c,-b,-t\)</li>
+<li>Parité &pi; : fermions \(\pi\overset{\hat{C}}{\rightarrow}-\pi\), bosons
+\(\pi\overset{\hat{C}}{\rightarrow}\pi\)</li>
 </ul>
-<div class="center">
-
-<div class="figure">
-<p><img src="./figures/scandium41.png" alt="scandium41.png" />
-</p>
-</div>
-</div></li>
-
-<li><p>
-<b>&nbsp;<sup>57</sup><sub>28</sub>Ni</b>
-</p>
-<ul class="org-ul">
-<li>noyau pair-impair : 28 protons, 29 neutrons</li>
-<li>noyau fermé en protons (28 : nombre magique)</li>
-<li>1 neutron célibataire en \(2p\tfrac{3}{2}\)</li>
-<li>Niveau fondamental : \(2p\tfrac{3}{2}\) :
-\(I^\pi=\tfrac{3}{2}^{(-1)^1}=\tfrac{3}{2}^-\)</li>
-<li>1<sup>er</sup> niveau excité : neutron en \(1f\tfrac{5}{2}\) soit
-\(I^\pi=\tfrac{5}{2}^{(-1)^3}=\tfrac{5}{2}^-\)</li>
-</ul>
-<div class="center">
-
-<div class="figure">
-<p><img src="./figures/nickel57.png" alt="nickel57.png" />
-</p>
-</div>
-</div></li>
-
-<li><p>
-<b>&nbsp;<sup>58</sup><sub>27</sub>Co</b>
-</p>
-<ul class="org-ul">
-<li>noyau impair-impair : 27 protons, 31 neutrons &rarr; couplage des
-nucléons célibataires</li>
-</ul>
-<div class="center">
-
-<div class="figure">
-<p><img src="./figures/cobalt58.png" alt="cobalt58.png" />
-</p>
-</div>
-</div>
-
-<ul class="org-ul">
-<li>1 proton célibataire en \(1f\tfrac{7}{2}\) et 1 neutron célibataire en
-\(2p\tfrac{3}{2}\)</li>
-<li>\(|j_1-j_2|\leq j\leq j_1+j_2\) &rarr; \(I=2,3,4,5\)</li>
-<li>\(\pi=(-1)^{\ell_1+\ell_2}=(-1)^{3+1}=+1\)</li>
-<li>le modèle ne donne pas l'ordre des états : le niveau fondamental est
-parmi ces 4 états de même que le 1<sup>er</sup> niveau excité.</li>
-</ul>
-<div class="center">
-
-<div class="figure">
-<p><img src="./figures/cobalt58_energy.png" alt="cobalt58_energy.png" />
-</p>
-<p><span class="figure-number">Figure 5:</span> <b>Mesure expérimentale des niveaux en énergie du&nbsp;<sup>58</sup><sub>27</sub>Co</b>. Les états sont dans le désordre mais très proches en énergie (effet de l'interaction résiduelle proton-neutron)</p>
-</div>
-</div></li>
-
-<li><p>
-<b>&nbsp;<sup>50</sup><sub>22</sub>Ti</b>
-</p>
-<ul class="org-ul">
-<li>noyau pair-pair : 22 protons, 28 neutrons</li>
-<li>noyau fermé en neutrons (28 : nombre magique)</li>
-<li>2 protons sur la couche \(1f\tfrac{7}{2}\) &rarr; couplage des protons</li>
-</ul>
-<div class="center">
-
-<div class="figure">
-<p><img src="./figures/titane50.png" alt="titane50.png" />
-</p>
-</div>
-</div>
-<ul class="org-ul">
-<li>\(|j_1-j_2|\leq j\leq j_1+j_2\) &rarr; \(I=0,1,2,3,4,5,6,7\) <b>mais
-seules les valeurs paires sont autorisées (principe de Pauli)</b></li>
-<li>\(\pi=(-1)^{\ell_1+\ell_2}=(-1)^{3+3}=+1\)</li>
-<li>Niveau fondamental : \(I^\pi=0^+\)</li>
-<li>1<sup>er</sup> niveau excité = \(I^\pi=2^+\)</li>
-</ul>
-<div class="center">
-
-<div class="figure">
-<p><img src="./figures/titane50_energy.png" alt="titane50_energy.png" />
-</p>
-<p><span class="figure-number">Figure 7:</span> <b>Mesure expérimentale des niveaux en énergie du&nbsp;<sup>50</sup><sub>22</sub>Ti</b>. Les états d'énergie sont dans l'ordre (noyau pair-pair) mais très espacés en raison de l'interaction proton-proton &rarr; noyau pair-pair très stable</p>
-</div>
-</div></li>
-</ul></li>
-</ol>
-
-<div class="QUESTION">
-<ol class="org-ol">
-<li value="2"><p>
-On donne les premiers niveaux des noyaux&nbsp;<sup>39</sup><sub>19</sub>K
-et&nbsp;<sup>39</sup><sub>20</sub>Ca, avec pour chacun d'eux \(I^\pi\) et l'énergie d'excitation
-\(E\) (en MeV). Interpréter ces moments cinétiques et parités dans le cadre du
-modèle des couches. Que reflète la grande similitude entre les deux spectres
-?
-</p>
-<div class="center">
-
-<div class="figure">
-<p><img src="./figures/mod1_2.png" alt="mod1_2.png" />
-</p>
-</div>
-</div></li>
-</ol>
-
-</div>
-<ol class="org-ol">
-<li value="2"><p>
-&nbsp;<sup>39</sup><sub>19</sub>K<sub>20</sub> et&nbsp;<sup>39</sup><sub>20</sub>Ca<sub>19</sub> &rarr; noyaux
-miroirs. Dans le cadre du modèle en couche, ces deux noyaux sont identiques
-(\(p\) et \(n\) sont "interchangeables" en raison de l'indépendance de charge de
-l'interaction forte).
-</p>
-
-<ul class="org-ul">
-<li><p>
-<b>&nbsp;<sup>39</sup><sub>19</sub>K</b>
-</p>
-<ul class="org-ul">
-<li>noyau impair-pair : 19 protons, 20 neutrons</li>
-<li>noyau fermé en neutrons (20 : nombre magique)</li>
-<li>1 proton célibataire en \(1d\tfrac{3}{2}\)</li>
-<li>Niveau fondamental : \(I=\tfrac{3}{2}^{(-1)^2}=\tfrac{3}{2}^+\) en accord
-avec l'expérience</li>
-</ul>
-<div class="center">
-
-<div class="figure">
-<p><img src="./figures/potassium39.png" alt="potassium39.png" />
-</p>
-<p><span class="figure-number">Figure 9:</span> <b>Niveaux excités du &nbsp;<sup>39</sup><sub>19</sub>K</b>. Le 1<sup>er</sup> niveau excité résulte de la brisure de paire en \(2s\tfrac{1}{2}\) pour fermer la couche "magique" \(N=20\). Les niveaux excités suivants sont issus du "déplacement" du proton célibataire \(2s\tfrac{1}{2}\rightarrow1f\tfrac{7}{2}\rightarrow2p\tfrac{3}{2}\).</p>
-</div>
-</div></li>
-
-<li><b>&nbsp;<sup>39</sup><sub>20</sub>Ca</b> : même raisonnement que pour&nbsp;<sup>39</sup><sub>19</sub>K mais en
-utilisant les neutrons (couche fermée en proton) &rarr; même séquence
-d'état et mêmes valeurs de \(I^\pi\).</li>
-</ul>
-<p>
-Étant donné l'indépendance de charge de l'interaction forte, les noyaux
-miroirs, dont les états appartiennent aux mêmes multiplets d'isospin, ont les
-mêmes séquences de niveaux et les mêmes écarts en énergie \(\Delta E\) entre
-ces niveaux aux effets coulombiens près.
-</p></li>
-</ol>
-
-<div class="QUESTION">
-<ol class="org-ol">
-<li value="3">L'état fondamental du noyau&nbsp;<sup>75</sup><sub>33</sub>As est un état \(I^{\pi} =
-   \frac{3}{2}^-\). Expliquer ce résultat, non conforme au modèle en couches.</li>
-</ol>
-
-</div>
-<ol class="org-ol">
-<li value="3"><p>
-Noyau&nbsp;<sup>75</sup><sub>33</sub>As : 33 protons, 42 neutrons
-</p>
-
-<div class="center">
-
-<div class="figure">
-<p><img src="./figures/arsenic75.png" alt="arsenic75.png" />
-</p>
-</div>
-</div>
-
-<p>
-1 proton célibataire en \(1f\tfrac{5}{2}\) &rarr; niveau fondamental
-\(I^\pi=\tfrac{5}{2}^-\). Expérimentalement, le niveau fondamental est
-\(I^\pi=\tfrac{3}{2}^-\) &rarr;&nbsp;<sup>75</sup>As est un noyau impair pour
-lequel l'ordre de remplissage des couches diffère de celui attendu
-</p>
-
-<div class="center">
-
-<div class="figure">
-<p><img src="./figures/arsenic75_1.png" alt="arsenic75_1.png" />
-</p>
-</div>
-</div>
-
-<p>
-Cette configuration, 1 proton célibataire en \(2p\tfrac{3}{2}\), est "préférée"
-par le noyau car l'énergie d'appariement croît avec le \(j\) de la couche (ici
-\(\tfrac{5}{2}\) contre \(\tfrac{3}{2}\)) ce qui rend le noyau plus stable. De
-plus, les couches sont proches en énergie et un noyau déformé peut "mélanger"
-les différentes couches.
-</p></li>
-</ol>
-
-<div class="QUESTION">
-<ol class="org-ol">
-<li value="4"><ol class="org-ol">
-<li value="1"><p>
-On donne ci-dessous le spectre des 8 premiers niveaux du
-noyau&nbsp;<sup>90</sup><sub>40</sub>Zr.
-</p>
-<div class="center">
-
-<div class="figure">
-<p><img src="./figures/Zr.png" alt="Zr.png" />
-</p>
-</div>
-</div>
-<p>
-Chercher à expliquer ce spectre en supposant que le noyau
-de&nbsp;<sup>90</sup><sub>40</sub>Zr est composé d'un coeur inerte de&nbsp;<sup>88</sup><sub>38</sub>Sr et
-de deux protons.
-</p></li>
-</ol></li>
-</ol>
-
-</div>
-<ol class="org-ol">
-<li value="4"><ol class="org-ol">
-<li><p>
-&nbsp;<sup>90</sup><sub>40</sub>Zr =&nbsp;<sup>88</sup><sub>38</sub>Sr + 2\(p\) : noyau pair-pair fermé en
-neutrons (50 : nombre magique)
-</p>
-
-<div class="center">
-
-<div class="figure">
-<p><img src="./figures/zirconium90.png" alt="zirconium90.png" />
-</p>
-</div>
-</div>
-
-<ul class="org-ul">
-<li>2 protons appariés en \(2p\tfrac{1}{2}\) d'où \(I^\pi=0^+\).</li>
-<li>2 protons en \(1g\tfrac{9}{2}\) &rarr; couplage
-\(I^\pi=0^+,1^+,2^+,3^+,4^+,5^+,6^+,7^+,8^+,9^+\) mais seules les valeurs
-paires sont conservées (principe de Pauli) d'où
-\(I^\pi=0^+,2^+,4^+,6^+,8^+\) avec un ordre parmi les niveaux en énergie
-respecté.</li>
-<li>brisure de paire : 1 proton en \(2p\tfrac{1}{2}\) et 1 proton en
-\(1g\tfrac{9}{2}\) : \(I^\pi=4^-,5^-\), ordre non donné par le modèle en couche</li>
-</ul>
-<p>
-Le modèle explique correctement le spectre en énergie. On remarque par
-ailleurs, l'écart en énergie important entre le niveau fondamental et le
-premier niveau excité (\(E=\unit[1.75]{MeV}\)) : c'est une caractéristique
-des noyaux pair-pair qui sont très stables et donc difficilement
-"excitable".
-</p></li>
-</ol></li>
-</ol>
-
-<div class="QUESTION">
-<ol class="org-ol">
-<li value="4"><ol class="org-ol">
-<li value="2"><p>
-On considère les 12 premiers niveaux du noyau&nbsp;<sup>90</sup><sub>41</sub>Nb.
-</p>
-<div class="center">
-
-<div class="figure">
-<p><img src="./figures/NbZr.png" alt="NbZr.png" />
-</p>
-</div>
-</div>
-<ol class="org-ol">
-<li>Expliquer ce spectre.</li>
-<li>Que peut-on dire de la grande différence entre les densités de niveau
-des deux noyaux&nbsp;<sup>90</sup><sub>40</sub>Zr et&nbsp;<sup>90</sup><sub>41</sub>Nb et entre les
-intéractions résiduelles proton-proton et proton-neutron ?</li>
-</ol></li>
-</ol></li>
-</ol>
-
-</div>
-<ol class="org-ol">
-<li value="4"><ol class="org-ol">
-<li value="2"><ol class="org-ol">
-<li><p>
-&nbsp;<sup>90</sup><sub>41</sub>Nb : le noyau de Niobium est un noyau impair-impair : 41
-protons, 49 neutrons
-</p>
-
-<div class="center">
-
-<div class="figure">
-<p><img src="./figures/niobium90.png" alt="niobium90.png" />
-</p>
-</div>
-</div>
-
-<ul class="org-ul">
-<li>1 proton célibataire en \(1g\tfrac{9}{2}\) et 1 neutron célibataire en
-\(1g\tfrac{9}{2}\) &rarr; couplage
-\(I^\pi=0^+,1^+,2^+,3^+,4^+,5^+,6^+,7^+,8^+,9^+\) où les 10 valeurs sont
-toutes possibles</li>
-<li>pour un noyau impair-impair, l'ordre n'est pas donné par le modèle</li>
-<li>Brisure de la paire \(2p\tfrac{1}{2}\) dont l'un des constituants (proton
-ou neutron) "monte" en \(1g\tfrac{9}{2}\). Cette brisure est d'autant plus
-favorisée que la montée d'un neutron ferme la couche de nombre
-magique 50. Dans ce cas, on obtient un proton ou un neutron célibataire
-en \(2p\tfrac{1}{2}\) et un neutron ou un proton célibataire en
-\(1g\tfrac{9}{2}\) : \(I^\pi=4^-,5^-\)</li>
-</ul></li>
-<li><ul class="org-ul">
-<li>le nombre de niveaux observé est moins élevé pour le noyau
-pair-pair&nbsp;<sup>90</sup><sub>40</sub>Zr que pour le noyaux
-impair-impair&nbsp;<sup>90</sup><sub>41</sub>Nb du fait du principe de Pauli qui
-interdit certaines valeurs de \(I\) pour les noyaux pair-pair.</li>
-<li>la levée de dégénérescence due à l'interaction résiduelle
-c'est-à-dire au traitement des interactions entre nucléons
-\(\hat{H}=\hat{H}_{\text{CM}}+\hat{V}_{\text{res.}}\) : l'interaction
-résiduelle entre \(p-p\) est plus importante qu'entre \(p-n\) expliquant
-l'écart d'énergie \(\Delta E\) entre les niveaux excités : 3.6 MeV
-pour&nbsp;<sup>90</sup><sub>40</sub>Zr et 0.85 MeV pour&nbsp;<sup>90</sup><sub>41</sub>Nb</li>
-</ul></li>
-</ol></li>
-</ol></li>
-</ol>
-</div>
-</div>
-
-<div id="outline-container-orgheadline3" class="outline-2">
-<h2 id="orgheadline3"><span class="section-number-2">3</span> Réactions nucléaires et états analogues isobariques</h2>
-<div class="outline-text-2" id="text-3">
-<p>
-<b>Étude des isobares&nbsp;<sup>21</sup><sub>9</sub>F,&nbsp;<sup>21</sup><sub>10</sub>Ne et&nbsp;<sup>21</sup><sub>11</sub>Na</b>
-</p>
-<div class="QUESTION">
-<p>
-On considère les trois isobares&nbsp;<sup>21</sup><sub>9</sub>F,&nbsp;<sup>21</sup><sub>10</sub>Ne et&nbsp;<sup>21</sup><sub>11</sub>Na.
-</p>
-
-<ol class="org-ol">
-<li><ol class="org-ol">
-<li>Donner les moment cinétique et parité I\(^{\pi}\), ainsi que les
-configurations de l'état fondamental et du premier état excité prévus par
-le modèle des couches, pour le noyau&nbsp;<sup>21</sup><sub>9F</sub>.</li>
-
-<li>On donne \(I^{\pi} = \frac{3}{2}^+\) pour l'état fondamental des noyaux
-$<sup>21</sup><sub>10</sub>$Ne et $<sup>21</sup><sub>11</sub>$Na. Commenter ce résultat non conforme au
-modèle des couches.</li>
-</ol></li>
-</ol>
-
-</div>
-<ol class="org-ol">
-<li><ol class="org-ol">
-<li><p>
-Moment cinétique \(I^\pi\) du&nbsp;<sup>21</sup><sub>9</sub>F
-</p>
-<div class="center">
-
-<div class="figure">
-<p><img src="./figures/fluor21.png" alt="fluor21.png" />
-</p>
-<p><span class="figure-number">Figure 16:</span> <b>États excités du&nbsp;<sup>21</sup><sub>9</sub>F</b></p>
-</div>
-</div>
-
-<p>
-État fondamental \((1d\tfrac{5}{2})^1\) soit \(I^\pi=\tfrac{5}{2}^+\), 1<sup>er</sup>
-niveau excité \((2s\tfrac{1}{2})^1\) soit \(I^\pi=\tfrac{1}{2}^+\).
-</p></li>
-<li><p>
-Noyaux miroirs&nbsp;<sup>21</sup><sub>10</sub>Ne et&nbsp;<sup>21</sup><sub>11</sub>Na : même séquence de
-\(I^\pi\)
-</p>
-<div class="center">
-
-<div class="figure">
-<p><img src="./figures/neon21.png" alt="neon21.png" />
-</p>
-<p><span class="figure-number">Figure 17:</span> <b>Structure en couche du&nbsp;<sup>21</sup><sub>10</sub>Ne</b></p>
-</div>
-</div>
-<p>
-Selon le modèle en couche, le niveau fondamental devrait être
-\(I^\pi=\tfrac{5}{2}^+\). Le fait que le niveau fondamental soit finalement
-\(I^\pi=\tfrac{3}{2}^+\) semble indiquer que le neutron seul dans le cas
-du&nbsp;<sup>21</sup><sub>10</sub>Ne (respectivement le proton seul dans le cas
-du&nbsp;<sup>21</sup><sub>11</sub>Na) est monté sur la couche \(1d\tfrac{3}{2}\). Une telle
-situation est envisageable dès lors que le noyau est déformé et dans la
-mesure où les niveaux en énergie des couches
-\(1d\tfrac{5}{2},2s\tfrac{1}{2}\) et \(1d\tfrac{3}{2}\) sont relativement
-proches.
-</p></li>
-</ol></li>
-</ol>
-
-<div class="QUESTION">
-<ol class="org-ol">
-<li value="2"><ol class="org-ol">
-<li>Quelle est la valeur de la troisième composante de l'isospin \(T_3\) pour
-ces trois noyaux ? En déduire la valeur de l'isospin \(T\) de leur état
-fondamental.</li>
-
-<li>Dans le cadre de l'indépendance de charge de l'interaction forte, discuter
-ce résultat en termes de multiplets d'isospin. Quel(s) autre(s) noyau(x)
-isobarique(s) appartienne(nt) à ce(s) multiplet(s) ? Peut-on prévoir le
-spin et la parité de l'état fondamental et du premier état excité de ce(s)
-noyau(x) ?</li>
-</ol></li>
-</ol>
-
-</div>
-<ol class="org-ol">
-<li value="2"><ol class="org-ol">
-<li><p>
-Pour un système constitué de \(Z\) protons et \(N\) neutrons, la troisième
-composante de l'isospin \(T_3\) est égale à
-</p>
-\begin{align*}
-  T_3=\Upsigma t_{3i}
-\end{align*}
-
-<p>
-Or \(t_3(p)=+\tfrac{1}{2}\) et \(t_3(n)=-\tfrac{1}{2}\) soit
-</p>
-\begin{align*}
-  T_3=Z\times\frac{1}{2}-N\times\frac{1}{2}=\frac{Z-N}{2}
-\end{align*}
-
-<p>
-La troisième composante de l'isospin d'un noyau est donc fixée. En
-revanche l'isospin \(\vv{T}=\Upsigma\vv{t}_i\) varie entre la valeur du
-niveau fondamental \(T_{\text{fonda.}}=|T_3|=\left|\frac{Z-N}{2}\right|\) et
-la valeur \(\frac{Z+N}{2}=\frac{A}{2}\). On déduit les valeurs suivantes
-d'isospin pour les 3 isobares
-</p>
 
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="void">
 
@@ -757,778 +190,961 @@ d'isospin pour les 3 isobares
 <col  class="org-left" />
 
 <col  class="org-left" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
 </colgroup>
 <tbody>
 <tr>
 <td class="org-left">&#xa0;</td>
-<td class="org-left">&nbsp;<sup>21</sup><sub>9</sub>F<sup>12</sup></td>
-<td class="org-left">&nbsp;<sup>21</sup><sub>10</sub>Ne<sup>11</sup></td>
-<td class="org-left">&nbsp;<sup>21</sup><sub>11</sub>F<sup>9</sup></td>
+<td class="org-left">\(I\)</td>
+<td class="org-left">\(Q/e\)</td>
+<td class="org-left">B</td>
+<td class="org-right">T</td>
+<td class="org-right">\(T_{3}\)</td>
+<td class="org-right">\(S\)</td>
+<td class="org-right">\(c\)</td>
+<td class="org-right">\(b\)</td>
+<td class="org-right">\(t\)</td>
+<td class="org-right">\(\pi\)</td>
 </tr>
 
 <tr>
-<td class="org-left">\(T_3\)</td>
-<td class="org-left">-3/2</td>
-<td class="org-left">-1/2</td>
-<td class="org-left">+1/2</td>
+<td class="org-left">\(\bar{u}\)</td>
+<td class="org-left">1/2</td>
+<td class="org-left">-2/3</td>
+<td class="org-left">-1/3</td>
+<td class="org-right">1/2</td>
+<td class="org-right">-1/2</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">-1</td>
 </tr>
 
 <tr>
-<td class="org-left">\(\vv{T}\)</td>
-<td class="org-left">\(\vv{3}/2\rightarrow\vv{21}/2\)</td>
-<td class="org-left">\(\vv{1}/2\rightarrow\vv{21}/2\)</td>
-<td class="org-left">\(\vv{1}/2\rightarrow\vv{21}/2\)</td>
+<td class="org-left">\(\bar{d}\)</td>
+<td class="org-left">1/2</td>
+<td class="org-left">1/3</td>
+<td class="org-left">-1/3</td>
+<td class="org-right">1/2</td>
+<td class="org-right">1/2</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">-1</td>
 </tr>
 
 <tr>
-<td class="org-left">\(\vv{T}_{\text{fonda.}}\)</td>
-<td class="org-left">\(\vv{3}/2\)</td>
-<td class="org-left">\(\vv{1}/2\)</td>
-<td class="org-left">\(\vv{1}/2\)</td>
+<td class="org-left">\(\bar{c}\)</td>
+<td class="org-left">1/2</td>
+<td class="org-left">-2/3</td>
+<td class="org-left">-1/3</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">-1</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">-1</td>
+</tr>
+
+<tr>
+<td class="org-left">\(\bar{s}\)</td>
+<td class="org-left">1/2</td>
+<td class="org-left">1/3</td>
+<td class="org-left">-1/3</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">+1</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">-1</td>
+</tr>
+
+<tr>
+<td class="org-left">\(\bar{t}\)</td>
+<td class="org-left">1/2</td>
+<td class="org-left">-2/3</td>
+<td class="org-left">-1/3</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">-1</td>
+<td class="org-right">-1</td>
+</tr>
+
+<tr>
+<td class="org-left">\(\bar{b}\)</td>
+<td class="org-left">1/2</td>
+<td class="org-left">1/3</td>
+<td class="org-left">-1/3</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">+1</td>
+<td class="org-right">0</td>
+<td class="org-right">-1</td>
 </tr>
 </tbody>
 </table></li>
-<li><ul class="org-ul">
-<li>1 doublet d'isospin \(\vv{T}=\vv{1}/2\) correspondant aux 2 noyaux
-de&nbsp;<sup>21</sup>Ne et&nbsp;<sup>21</sup>F</li>
-<li>1 quadruplet d'isospin \(\vv{T}=\vv{3}/2\) comprenant les états des 4
-noyaux&nbsp;<sup>21</sup>F,&nbsp;<sup>21</sup>Ne,&nbsp;<sup>21</sup>F et&nbsp;<sup>21</sup>Mg (noyau miroir
-de&nbsp;<sup>21</sup>F). Le noyau&nbsp;<sup>21</sup>Mg a la même séquence d'états
-que&nbsp;<sup>21</sup>F soit \(I^\pi(\text{fonda.})=\tfrac{5}{2}^+\) et 1<sup>er</sup> état
-excité \(I^\pi=\tfrac{1}{2}^+\)</li>
+</ol>
+
+<div class="QUESTION">
+<ol class="org-ol">
+<li value="2">Dans le cas où le moment orbital relatif associé au mouvement des quarks est nul, quelle est
+la parité d'un méson ? Quelles sont alors les valeurs possibles du moment cinétique \(\vv{I}\) et
+de l'isospin \(\vv{T}\) ?</li>
+</ol>
+
+</div>
+
+<ol class="org-ol">
+<li value="2"><p>
+\(\vv{L_i} = \vv{0}\): méson &equiv; 1 quark + 1 antiquark
+</p>
+
+\begin{align*}
+  \pi(q_1\bar{q_2}) = (+1)\cdot(-1)\cdot(-1)^{L_i} = -1
+\end{align*}
+
+\begin{align*}
+  \vv{I}(q\bar{q}) = \vv{I}_q + \vv{I}_{\bar{q}} + \vv{L}_i &= \vv{S}_q +
+  \vv{S}_{\bar{q}} + \vv{L}_i \\
+  &= \vv{1}/2 + \vv{1}/2 + \vv{0}\\
+  &=\vv{0}\text{ ou }\vv{1}
+\end{align*}
+
+<p>
+Pour un méson avec \(\vv{L}_i = \vv{L}(q\bar{q}) = \vv{0}\) &rarr; \(I^\pi = 0^-\) ou \(1^-\)
+</p>
+
+<p>
+L'isospin \(\vv{T}(q\bar{q}) = \vv{T}(q) + \vv{T}(\bar{q})\)
+</p>
+
+<ul class="org-ul">
+<li>mésons \(u\bar{d}\) ou \(\bar{u}d\) &rarr; \(\vv{T} = \vv{0}\) ou \(\vv{1}\) or \(T_3 = \pm1\) donc
+\(\vv{T} = \vv{1}\)</li>
+<li>mésons contenant \(u,d,\bar{u},\bar{d}\) \(\vv{T} = \vv{1}/2\)</li>
+<li>mésons ne contenant ni \(u,d,\bar{u},\bar{d}\) \(\vv{T} = \vv{0}\)</li>
 </ul></li>
+</ol>
+
+<div class="QUESTION">
+<ol class="org-ol">
+<li value="3"><ol class="org-ol">
+<li>Avec les quarks \(u, d, s\), et leurs antiquarks, combien de mésons peut-on constituer dans un
+état de moment cinétique donné ? Représenter ces mésons sur un diagramme où la troisième
+composante de l'isospin \(T_3\) est portée en abscisse, et l'étrangeté \(S\) en ordonnée. Indiquer
+sur le diagramme la composition en quarks et en antiquarks de chacun de ces mésons.</li>
+
+<li>On considère le diagramme des mésons de moment orbital relatif nul et de moment cinétique
+\(\vv{I} = \vv{0}\). Regrouper ces mésons en multiplets d'isospin, et indiquer sur le diagramme
+où se trouvent les pions, ainsi que les mésons étranges \(K^+\), \(K^-\), \(K^0\) et \(\bar{K^0}\).</li>
 </ol></li>
 </ol>
 
-<div class="QUESTION">
+</div>
+
+
 <ol class="org-ol">
 <li value="3"><p>
-On peut comparer les masses des états nucléaires (fondamental ou état
-excité) ayant les mêmes caractéristiques (\(A\), \(I\), \(\pi\) et \(T\)), en
-utilisant la formule suivante&nbsp;:
+\((u,d,s)\times(\bar{u},\bar{d},\bar{s}) = 3\times3 = 9\) mésons.
+L'étrangeté \(S=-1,0,1\), la 3<sup>ème</sup> composante de l'isospin \(T_3\) &isin;
+[-1,-1/2,0,1/2,+1]
+</p>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="void">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+</colgroup>
+<tbody>
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-right">\(S\)</td>
+<td class="org-right">\(T_3\)</td>
+<td class="org-right">\(Q/e\)</td>
+</tr>
+
+<tr>
+<td class="org-left">\(u\bar{u}\)</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+</tr>
+
+<tr>
+<td class="org-left">\(u\bar{d}\)</td>
+<td class="org-right">0</td>
+<td class="org-right">1</td>
+<td class="org-right">+1</td>
+</tr>
+
+<tr>
+<td class="org-left">\(u\bar{s}\)</td>
+<td class="org-right">+1</td>
+<td class="org-right">1/2</td>
+<td class="org-right">+1</td>
+</tr>
+
+<tr>
+<td class="org-left">\(d\bar{u}\)</td>
+<td class="org-right">0</td>
+<td class="org-right">-1</td>
+<td class="org-right">-1</td>
+</tr>
+
+<tr>
+<td class="org-left">\(d\bar{d}\)</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+</tr>
+
+<tr>
+<td class="org-left">\(d\bar{s}\)</td>
+<td class="org-right">+1</td>
+<td class="org-right">-1/2</td>
+<td class="org-right">0</td>
+</tr>
+
+<tr>
+<td class="org-left">\(s\bar{u}\)</td>
+<td class="org-right">-1</td>
+<td class="org-right">-1/2</td>
+<td class="org-right">-1</td>
+</tr>
+
+<tr>
+<td class="org-left">\(s\bar{d}\)</td>
+<td class="org-right">-1</td>
+<td class="org-right">1/2</td>
+<td class="org-right">0</td>
+</tr>
+
+<tr>
+<td class="org-left">\(s\bar{s}\)</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+</tr>
+</tbody>
+</table></li>
+</ol>
+
+
+
+<div class="figure">
+<p><img src="figures/meson_uds.png" alt="meson_uds.png" />
+</p>
+<p><span class="figure-number">Figure 1: </span><b>Combinaison de quark \(u,d,s\) pour former des mésons de moment cinétique \(I^\pi=0^-\)</b></p>
+</div>
+
+<ul class="org-ul">
+<li>1 triplet d'isospin
+\(\pi^+(u\bar{d}),\pi^-(\bar{u}d),\pi^0\left(\frac{1}{\sqrt{2}}(u\bar{u}-d\bar{d})\right)\)</li>
+<li>2 doublets d'isospin \(K^+(u\bar{s})\), \(K^0(d\bar{s})\) et \(K^-(\bar{u}s)\),
+\(\bar{K}^0(\bar{d}s)\)</li>
+<li>2 singulets d'isospin
+\(\eta\left(\frac{1}{\sqrt{6}}(u\bar{u}+d\bar{d}-2s\bar{s})\right)\) et
+\(\eta\prime\left(\frac{1}{\sqrt{3}}(u\bar{u}+d\bar{d}+s\bar{s})\right)\)</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org90969cb" class="outline-2">
+<h2 id="org90969cb"><span class="section-number-2">2</span> Supermultiplets de baryons</h2>
+<div class="outline-text-2" id="text-2">
+<div class="QUESTION">
+<ol class="org-ol">
+<li><p>
+La figure suivante présente le diagramme \(S\) en fonction de \(T_3\) pour le décuplet de baryons
+\(I^{\pi} = 3/2^+\).
+</p>
+
+<div class="org-center">
+
+<div class="figure">
+<p><img src="figures/decuplet.png" alt="decuplet.png" />
+</p>
+</div>
+</div>
+
+<p>
+La masse des baryons d'une même famille est donnée par la formule de Gell-Mann et Okubo :
+</p>
+\begin{align}
+  M(Y,T)c^2 = M_0c^2 + a\,Y + b\,\left[T(T+1) - \frac{Y^2}{4}\right]
+\end{align}
+
+<p>
+où \(M_0c^2\), \(a\) et \(b\) sont des constantes (en MeV); \(T\) est le nombre quantique d'isospin du
+baryon considéré, \(Y\) est son hypercharge définie ici par \(Y = B+S\), avec \(B\) le nombre
+baryonique et \(S\) celui d'étrangeté, les autres saveurs étant nulles.
+</p>
+
+<ol class="org-ol">
+<li><p>
+Lorsque la formule (1) a été établie, les baryons \(\Delta\), \(\Sigma\) et \(\Xi\) étaient connus
+parmi les baryons \(I^\pi\) = 3/2\(^+\), mais pas le \(\Omega\). Quelle masse pouvait-on alors
+prédire pour cette particule \(\Omega\) ? On utilisera pour cela la figure ci-dessous présentant
+deux familles de baryons composés des quarks \(u,d,s\) (leur masse est portée en ordonnée).
+</p>
+<div class="org-center">
+
+<div class="figure">
+<p><img src="figures/bar1.png" alt="bar1.png" />
+</p>
+</div>
+</div></li>
+
+<li>Justifier les nombres quantiques du \(\Omega\) et discuter les symétries de sa fonction d'onde,
+sachant que le moment orbital relatif des 3 quarks est \(\vv{L} = \vv{0}\).</li>
+</ol></li>
+</ol>
+
+</div>
+
+<ol class="org-ol">
+<li><ol class="org-ol">
+<li value="1"><p>
+Pour \(I^\pi=3/2^+\), nous avons ainsi
+</p>
+<ul class="org-ul">
+<li><p>
+\(S=0\) et \(\vv{T}=\vv{3}/2\) : quadruplet &Delta;<sup>-</sup>, &Delta;<sup>0</sup>, &Delta;<sup>+</sup>
+et &Delta;<sup>++</sup>
 </p>
 \begin{align*}
-  M_\text{at}c^2(A, I, \pi, T, T_3) = a(A,I,\pi,T) + b(A,I,\pi,T)\, T_3 + c(A,I,\pi,T)\, T_3^2
+  m_\Delta c^2 &= M_0c^2 + a + b\,\left[\frac{3}{2}\times\frac{5}{2} - \frac{1}{4}\right]\\
+  &= M_0c^2 + a + b\times\frac{7}{2} = \unit[1236]{MeV}
+\end{align*}</li>
+
+<li><p>
+\(S=-1\) et \(\vv{T}=\vv{1}\) : triplet &Sigma;<sup>-*</sup>, &Sigma;<sup>0*</sup> et &Sigma;<sup>+*</sup>
+(niveaux excités du baryon &Sigma;)
+</p>
+\begin{align*}
+  m_\Sigma c^2 &= M_0c^2 + b\,\left[1\times2 - \frac{0}{4}\right]\\
+  &= M_0c^2 + 2b = \unit[1385]{MeV}
+\end{align*}</li>
+
+<li><p>
+\(S=-2\) et \(\vv{T}=\vv{1}/2\) : doublet &Xi;<sup>-*</sup> et &Xi;<sup>0*</sup>
+(niveaux excités du baryon &Xi;)
+</p>
+\begin{align*}
+  m_\Xi c^2 &= M_0c^2 - a + b\,\left[\frac{1}{2}\times\frac{3}{2} - \frac{1}{4}\right]\\
+  &= M_0c^2 - a + \frac{b}{2} = \unit[1530]{MeV}
+\end{align*}</li>
+
+<li><p>
+\(S=-3\) et \(\vv{T}=\vv{0}\) : singulet &Omega;<sup>-</sup>
+</p>
+\begin{align*}
+  m_\Omega c^2 &= M_0c^2 - 2a - b
+\end{align*}</li>
+</ul>
+
+<p>
+d'où
+</p>
+\begin{align*}
+  m_\Sigma c^2 - m_\Delta c^2 &= - a + 2b - \frac{7}{2}\,b = 1385 - 1236 = \unit[149]{MeV}\\
+  &= - a - \frac{3}{2}\,b = \unit[149]{MeV}\\
+  m_\Xi c^2 - m_\Sigma c^2 &= - a + \frac{b}{2} - 2b = 1530 - 1385 = \unit[145]{MeV}\\
+  &= - a - \frac{3}{2}\,b = \unit[145]{MeV}\\
+  m_\Omega c^2 - m_\Xi c^2 &= - 2a - b + a - \frac{b}{2} = \langle145; 149\rangle\unit[]{MeV}\\
+  &= - a - \frac{3}{2}\,b = \langle\unit[147]{MeV}\rangle
+\end{align*}
+
+\begin{align*}
+  m_\Omega c^2 = m_\Xi c^2 + \unit[147]{MeV} = \unit[1677]{MeV}
 \end{align*}
 
 <p>
-On a identifié dans les noyaux de&nbsp;<sup>21</sup>Ne et&nbsp;<sup>21</sup>Na un état excité
-\(I^{\pi} = \frac{5}{2}^+\), d'isospin \(\vv{T} = \vv{3/2}\), aux énergies
-d'excitation respectives 8.86 MeV et 8.97 MeV.
-</p>
+soit un écart de 0.3% par rapport à la valeur mesurée expérimentalement.
+</p></li>
 
-<p>
-Quel est l'excès de masse du noyau manquant dans le multiplet d'isospin
-discuté à la question 2) ?
-</p>
-
-<p>
-On donne les excès de masse suivants, en MeV :
-</p>
-
-<div class="center">
-<p>
-\(\Delta Mc^2\)(<sup>21</sup>F) = -0.05 ; \(\Delta Mc^2\)(<sup>21</sup>Ne) = -5.73 ;
-\(\Delta Mc^2\)(<sup>21</sup>Na) = -2.186
-</p>
-</div></li>
-</ol>
-
-</div>
-<ol class="org-ol">
-<li value="3"><p>
-Calcul des excès de masse
-</p>
-<div class="center">
-
-<div class="figure">
-<p><img src="./figures/fluor_neon_sodium_magnesium_energy.png" alt="fluor_neon_sodium_magnesium_energy.png" />
-</p>
-</div>
-</div>
-
-<p>
-L'excès de masse d'un noyau \(\Delta M_{\text{at.}}c^2\) est égal à
-\(M_{\text{at.}}c^2 - 931.5A\) où \(\Delta M_{\text{at.}}c^2\) et
-\(M_{\text{at.}}c^2\) sont exprimés en MeV. Pour les états analogues
-isobariques \(I^\pi=\tfrac{5}{2}^+\)
-de&nbsp;<sup>21</sup><sub>9</sub>F(fonda.),&nbsp;<sup>21</sup><sub>10</sub>Ne<sup>*</sup>(8.86
-MeV),&nbsp;<sup>21</sup><sub>11</sub>Na<sup>*</sup>(8.97 MeV) et&nbsp;<sup>21</sup><sub>12</sub>Mg(fonda.) ayant
-\(\vv{T}=\vv{3}/2\) et respectivement \(T_3\) = -3/2, -1/2, +1/2, +3/2, on
-calcule \(\Delta M_{\text{at.}}c^2=a^\prime+bT_3+cT_3\) où \(a^\prime=a-931.5A\)
-</p>
-
-<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="void">
-
-
-<colgroup>
-<col  class="org-left" />
-
-<col  class="org-left" />
-
-<col  class="org-left" />
-
-<col  class="org-left" />
-
-<col  class="org-left" />
-
-<col  class="org-left" />
-</colgroup>
-<tbody>
-<tr>
-<td class="org-left">\(\unicode{x2460}\)</td>
-<td class="org-left">\(\Delta M_{\text{at.}}c^2(21,5/2^+,3/2,-3/2)\)</td>
-<td class="org-left">=</td>
-<td class="org-left">\(a^\prime-\tfrac{3}{2}b+\tfrac{9}{4}c\)</td>
-<td class="org-left">=</td>
-<td class="org-left">\(\unit[-0.047]{MeV}\)</td>
-</tr>
-
-<tr>
-<td class="org-left">\(\unicode{x2461}\)</td>
-<td class="org-left">\(\Delta M_{\text{at.}}c^2(21,5/2^+,3/2,-1/2)\)</td>
-<td class="org-left">=</td>
-<td class="org-left">\(a^\prime-\tfrac{1}{2}b+\tfrac{c}{4}\)</td>
-<td class="org-left">=</td>
-<td class="org-left">\(\unit[(-5.733+8.86)]{MeV}\)</td>
-</tr>
-
-<tr>
-<td class="org-left">\(\unicode{x2462}\)</td>
-<td class="org-left">\(\Delta M_{\text{at.}}c^2(21,5/2^+,3/2,+1/2)\)</td>
-<td class="org-left">=</td>
-<td class="org-left">\(a^\prime+\tfrac{1}{2}b+\tfrac{c}{4}\)</td>
-<td class="org-left">=</td>
-<td class="org-left">\(\unit[(-2.186+8.97)]{MeV}\)</td>
-</tr>
-
-<tr>
-<td class="org-left">\(\unicode{x2463}\)</td>
-<td class="org-left">\(\Delta M_{\text{at.}}c^2(21,5/2^+,3/2,+3/2)\)</td>
-<td class="org-left">=</td>
-<td class="org-left">\(a^\prime+\tfrac{3}{2}b+\tfrac{9}{4}c\)</td>
-<td class="org-left">=</td>
-<td class="org-left">\(\Delta M_\text{at.}c^2(^{21}_{12}\text{Mg})\)</td>
-</tr>
-</tbody>
-</table>
-
-<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="void">
-
-
-<colgroup>
-<col  class="org-left" />
-
-<col  class="org-left" />
-</colgroup>
-<tbody>
-<tr>
-<td class="org-left">\(\unicode{x2463}\) \(-\) \(\unicode{x2460}\)</td>
-<td class="org-left">\(3b=\Delta M_{\text{at.}}c^2(^{21}_{12}\text{Mg})+0.047\)</td>
-</tr>
-
-<tr>
-<td class="org-left">\(\unicode{x2462}\) \(-\) \(\unicode{x2461}\)</td>
-<td class="org-left">\(b=-2.186+8.97+5.733-8.86=\unit[3.657]{MeV}\)</td>
-</tr>
-</tbody>
-</table>
-
-<p>
-soit un excès de masse \(\Delta M_{\text{at.}}c^2(^{21}_{12}\text{Mg})\)
+<li><p>
+Par ailleurs, le baryon &Omega;<sup>-</sup> est composé de 3 quarks
+\(s\). L'isospin \(\vv{T} = \vv{0}\) et \(T_3=0\), l'étrangeté est \(S=-3\), le
+nombre baryonique \(B\) est égal à 1 tandis que le moment cinétique total
+\(I=\frac{3}{2}\). Étant donné que \(\vv{L}=\vv{0}\) on a
 </p>
 \begin{align*}
-  \Delta M_\text{at.}c^2(^{21}_{12}\text{Mg}) &= 3\times3.657-0.047\\
-  &=\unit[10.924]{MeV}
+  \vv{I} = \vv{L} + \vv{S} = \vv{S}(s_1) +
+  \vv{S}(s_2) + \vv{S}(s_3)
 \end{align*}
 
-<div class="REMARK">
 <p>
-<b>Remarque sur l'excès de masse et sa signification :</b> L'excès de masse d'un
-nucléide est la différence entre sa masse effective et son nombre de masse
-\(A\) exprimé en unités de masse atomique. C'est l'une des quantités couramment
-utilisée en physique nucléaire et figure dans de nombreuses tables de masses
-nucléaires. La masse d'un noyau atomique est relativement bien estimée à
-partir de son nombre de masse, ce qui indique que la majeure partie de la
-masse d'un noyau est déduite de ces constituants protons et neutrons. Ainsi,
-l'excès de masse est une expression de l'énergie de liaison nucléaire par
-rapport à l'énergie de liaison d'un noyau de Carbone 12 (qui définit l'unité
-de masse atomique). <b>Si l'excès de masse est négatif, le noyau a plus
-d'énergie comparement au&nbsp;<sup>12</sup>C, et inversement</b>. Si un noyau dispose
-d'un grand excès de masse par rapport à une espèce nucléaire proche, il peut
-alors se transformer par radioactivité (pour la radioactivité &beta;<sup>-</sup>, la
-condition à la réalisation de cette désintégration
-\(^{A}_{Z}X\rightarrow\,^{A}_{Z+1}Y+e^-+\bar{\nu}_e\) est \(\Delta
-   M_{\text{at.}}(A,Z)c^2 >\Delta M_{\text{at.}}(A,Z+1)c^2\)), libérant de
-l'énergie.
+soit
 </p>
-
-</div></li>
+\begin{align*}
+  \vv{I}=\frac{\vv{3}}{2} =
+  \frac{\vv{1}}{2} + \frac{\vv{1}}{2} + \frac{\vv{1}}{2}
+\end{align*}</li>
+</ol></li>
 </ol>
 
+
 <p>
-<b>Étude des niveaux d'énergie du&nbsp;<sup>41</sup><sub>20</sub>Ca</b>
+Les 3 quarks \(s\) sont donc tous dans le même état de spin +1/2 ce qui par
+définition est impossible en raison du principe d'exclusion de Pauli
+&rarr; introduction de la couleur \(RVB\) comme nouveau nombre
+quantique et justifiant l'existence des baryons &Omega;<sup>-</sup>, &Delta;<sup>-</sup> et
+&Delta;<sup>++</sup>. Chaque quarks \(s\) existe en 3 couleurs \(R,V,B\) d'où
+\(\Omega^{-} = (s_R,s_V,s_B)\).
 </p>
+
+<p>
+La fonction d'onde globale est antisymétrique dès lors que le nombre
+quantique de couleur est introduit<sup><a id="fnr.1" class="footref" href="#fn.1">1</a></sup>.
+ <div class="footdef"><sup><a id="fn.1" class="footnum" href="#fnr.1">1</a></sup> <div class="footpara"><p class="footpara"> le principe d'exclusion de Pauli généralisé implique que \(L+S+T\) soit impaire pour que la fonction d'onde soit antisymétrique. \(\vv{L}=\vv{0}\), \(\vv{T}=\vv{0}\) et \(\vv{S}=\vv{3}/2\), la somme n'est donc pas impaire. C'est l'introduction de la couleur qui permet de rendre cette fonction d'onde globale antisymétrique. </p></div><br/></div>
+</p>
+
+<div class="QUESTION">
+<ol class="org-ol">
+<li value="2">Le proton ayant pour nombres quantiques \(Q/e=1\), \(T_3\) = 1/2 et
+\(s=c=b=t=0\), donner sa composition en quarks. Calculer la masse du proton à
+partir des masses des quarks qui le constituent. Qu'en concluez-vous ?</li>
+</ol>
+
+</div>
+
+<ol class="org-ol">
+<li value="2">proton &equiv; \(uud\) soit une masse \(m_p c^2 = 2\,m_u c^2 + m_d c^2 \leq
+   2\times\unit[3]{MeV} + \unit[7]{MeV} = \unit[13]{MeV} \ll
+   \unit[938]{MeV}\). 99% de la masse du proton est due à la mer de partons
+&equiv; quarks et gluons et seulement 1% de la masse est portée par les quarks
+de valence \(uud\).</li>
+</ol>
+
+<div class="QUESTION">
+<ol class="org-ol">
+<li value="3">Le \(\Delta^0\) et le \(\Lambda^0\) se désintègrent tous deux en un proton
+et un méson \(\pi^-\). Décrire ces deux réactions en termes de quarks. En
+déduire pourquoi la vie moyenne du \(\Delta^0\) est environ 10<sup>-23</sup> s alors
+que celle du \(\Lambda^0\) vaut 2.6 10<sup>-10</sup> s.</li>
+</ol>
+
+</div>
+
+<ol class="org-ol">
+<li value="3"><p>
+\(\Delta^0\rightarrow p + \pi^-\) et \(\Lambda^0\rightarrow p + \pi^-\)
+</p>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="void">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<tbody>
+<tr>
+<td class="org-left"><img src="./figures/delta0_diagram.png" alt="delta0_diagram.png" /></td>
+<td class="org-left"><img src="./figures/lambda0_diagram.png" alt="lambda0_diagram.png" /></td>
+</tr>
+
+<tr>
+<td class="org-left"><b>Diagramme connecté</b></td>
+<td class="org-left"><b>Diagramme déconnecté</b></td>
+</tr>
+
+<tr>
+<td class="org-left">Intéraction forte</td>
+<td class="org-left">Interaction faible (saveur non conservée)</td>
+</tr>
+
+<tr>
+<td class="org-left">\(\rightarrow\tau\sim\) 10<sup>-23</sup> à 10<sup>-20</sup> s</td>
+<td class="org-left">\(\rightarrow\tau\gtrsim\) 10<sup>-13</sup> s</td>
+</tr>
+</tbody>
+</table></li>
+</ol>
+</div>
+</div>
+
+<div id="outline-container-orga3ea6ee" class="outline-2">
+<h2 id="orga3ea6ee"><span class="section-number-2">3</span> Les mésons \(D\)</h2>
+<div class="outline-text-2" id="text-3">
 <div class="QUESTION">
 <p>
-On veut étudier les niveaux (fondamental et excités) du noyau&nbsp;<sup>41</sup>Ca. On
-effectue pour cela les réactions de diffusions inélastiques \((p,p')\) et
-\((\alpha,\alpha')\), et les réactions de transfert&nbsp;<sup>40</sup>Ca$(d,p)$&nbsp;<sup>41</sup>Ca
-et&nbsp;<sup>42</sup>Ca(<sup>3</sup><sub>2He</sub>,\(\alpha\))<sup>41</sup>Ca, en utilisant respectivement des faisceaux
-de protons, alphas, deutons et&nbsp;<sup>3He</sup> de haute énergie.
+Soit le méson \(D^0\), ayant pour caractéristiques : \(mc^2\) = 1865 MeV, \(I^{\pi} = 0^-\), \(\vv{T} =
+\vv{1/2}\), \(T_3 = -1/2\), \(Q/e = 0\), et saveur "charmée" \(c = 1\).
 </p>
 
 <ol class="org-ol">
-<li><p>
-On donne ci-dessous, à gauche, le schéma des premiers niveaux du&nbsp;<sup>41</sup>Ca.
+<li value="1">Quelle est la valeur de son hypercharge et quelles sont les caractéristiques de son
+antiparticule \(\bar{D}^0\) ?</li>
+</ol>
+
+</div>
+
+
+<ol class="org-ol">
+<li value="1"><p>
+L'hypercharge \(Y\) est égale à la somme du nombre baryonique \(B\) et de la saveur \(S\). Le
+méson \(D^0\) a, par définition, un nombre baryonique nul, sa saveur étant uniquement \(c=1\) d'où
+\(Y=1\). En utilisant, la formule de Gell-Mann &amp; Nishijima \(Q/E = T_3 + Y/2 = -1/2 + 1/2 = 0\), on
+obtient donc bien une charge nulle.
 </p>
-<div class="center">
+
+<p>
+L'antiparticule \(\bar{D}^0\) possède les mêmes propriétés que \(D^0\) exception faite de la 3<sup>ème</sup>
+composante de l'isospin \(T_3\) égale à +1/2 et à la saveur \(c=-1\). Les mésons étant des bosons, la
+parité reste la même soit \(I^\pi=0^-\).
+</p></li>
+</ol>
+
+<div class="QUESTION">
+<ol class="org-ol">
+<li value="2">Combien d'éléments comprend le multiplet d'isospin dont fait partie \(D^0\) ? Quelles sont les
+caractéristiques de ces éléments autres que \(D^0\) ?</li>
+</ol>
+
+</div>
+
+
+<ol class="org-ol">
+<li value="2"><p>
+Multiplet d'isospin de \(D^0\)
+</p>
+
+<p>
+\(\vv{T} = \vv{1}/2\), on a donc un doublet d'isospin \(T_3=-1/2,+1/2\) de même saveur. En plus du
+méson \(D^0\), le second membre du doublet a \(T_3=+1/2\) soit une charge \(Q/e=+1/2+1/2=+1\). Il
+s'agit du méson \(D^+\). On en déduit que l'antiparticule du \(D^+\) est donc le méson \(D^-\) ayant
+les mêmes propriétés que le \(D^+\) à la charge (et donc \(T_3\)) près.
+</p></li>
+</ol>
+
+<div class="QUESTION">
+<ol class="org-ol">
+<li value="3">Donner la composition en quarks de \(D^0\) et \(\bar{D}^0\), et des éléments trouvés question 2,
+ainsi que de leurs antiparticules.</li>
+</ol>
+
+</div>
+
+<ol class="org-ol">
+<li value="3"><p>
+Le méson \(D^0\) est forcément constitué d'un quark charme et d'un antiquark sans saveur et
+d'isospin non nul <i>i.e.</i> \(\bar{u}\) ou \(\bar{d}\). Le fait qu'il est une charge nulle implique
+nécessairement la présence d'un antiquark \(\bar{u}\). Le doublon d'isospin de \(D^0\) qu'est le
+méson \(D^+\) est donc constitué d'un quark \(c\) (même saveur) et d'un antiquark \(\bar{d}\) (d'où sa
+charge électrique \(+e\)). De même, les antiparticules \(\bar{D}^0\) et \(D^-\) sont constituées d'un
+antiquark \(c\) et respectivement d'un quark \(u\) et \(d\).
+</p>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="void">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<tbody>
+<tr>
+<td class="org-left">\(D^0\)</td>
+<td class="org-left">\(c\bar{u}\)</td>
+</tr>
+
+<tr>
+<td class="org-left">\(D^+\)</td>
+<td class="org-left">\(c\bar{d}\)</td>
+</tr>
+
+<tr>
+<td class="org-left">\(\bar{D}^0\)</td>
+<td class="org-left">\(\bar{c}u\)</td>
+</tr>
+
+<tr>
+<td class="org-left">\(D^-\)</td>
+<td class="org-left">\(\bar{c}d\)</td>
+</tr>
+</tbody>
+</table></li>
+</ol>
+
+
+<div class="QUESTION">
+<ol class="org-ol">
+<li value="4">Soit \(\vv{L}\) le moment orbital relatif du système de quarks composant le \(D^0\) et \(\vv{I}\)
+son moment cinétique total. Préciser les valeurs de \(\vv{L}\) et de \(\vv{S}\).</li>
+</ol>
+
+</div>
+
+<ol class="org-ol">
+<li value="4"><p>
+\(\vv{I} = \vv{L} + \vv{S}\) soit \(\vv{L} = \vv{I} + \vv{S} = \vv{0} +
+   \vv{S}_{c} + \vv{S}_{\bar{u}} = \vv{0} + \vv{1}/2 + \vv{1}/2 = \vv{0}\) ou
+\(\vv{1}\). En tenant compte de la parité &pi;, on obtient
+</p>
+\begin{align*}
+  \pi(D^0) &= \pi(c)\cdot\pi(\bar{u})\cdot(-1)^L\\
+  -1 &= +1\cdot-1\cdot(-1)^L
+\end{align*}
+
+<p>
+d'où \(L\) pair. Les valeurs de \(\vv{L}\) et de \(\vv{S}\) satisfaisant aux conservations du moment
+cinétique total et de la parité sont donc \(\vv{L}=\vv{0}\) et \(\vv{S}=\vv{0}\).
+</p></li>
+</ol>
+
+
+<div class="QUESTION">
+<ol class="org-ol">
+<li value="5">On observe la désintégration \(D^0 \rightarrow K^- + \pi^+\). En utilisant seulement le moment
+cinétique total et la parité, dire quelle est l'interaction responsable de cette
+désintégration. Trouver d'autres arguments à l'appui de cette réponse. On donne pour les kaons et
+les pions : I\(^{\pi}\) = 0\(^-\).</li>
+</ol>
+
+</div>
+
+<ol class="org-ol">
+<li value="5"><p>
+\(D^0\rightarrow K^-+\pi^+\). Le fait de n'avoir à tester que la (non)conservation du moment
+cinétique total et de la parité semble indiquer que la réaction se fait par interaction faible.
+</p>
+\begin{align*}
+  \vv{I}_{D^0} &= \vv{I}_{K^-} + \vv{I}_{\pi^+} + \vv{L}_{K\pi}\\
+  \vv{0} &= \vv{0} + \vv{0} + \vv{L}_{K\pi}
+\end{align*}
+
+<p>
+Dans ces conditions, la parité \(\pi\) n'est pas conservée
+</p>
+\begin{align*}
+  \pi(D^0) &\neq \pi(K^-)\cdot\pi(\pi^+)\cdot(-1)^{L_{K\pi}}\\
+  -1 &\neq -1\times-1\times(-1)^0
+\end{align*}
+
+<p>
+La non-conservation de la parité indique que cette désintégration se fait par interaction
+faible. Le fait que la saveur "charme" est absente des kaons et des pions et inversement que la
+saveur "étrangeté" soit absente du méson \(D^0\) impliquent la non-conservation de la saveur
+corroborant le résultat précédent.
+</p></li>
+</ol>
+
+<div class="QUESTION">
+<ol class="org-ol">
+<li value="6">Dans un anneau de collision (\(e^+ e^-\)), on veut produire la réaction (1) : \(e^+ + e^-
+   \rightarrow D^0 + \bar{D}^0\) par interaction électromagnétique. Quelle est l'énergie cinétique
+minimale de chacun des faisceaux \(T_s\) nécessaire pour que la réaction (1) soit possible ?</li>
+</ol>
+
+</div>
+
+<ol class="org-ol">
+<li value="6"><p>
+\(e^++e^-\rightarrow D^0+\bar{D}^0\)
+</p>
+
+<p>
+Collision de deux faisceaux d'impulsion opposés &rarr; référentiel du centre de masse dans
+lequel l'énergie cinétique minimale est égale à la moitié de la chaleur de réaction \(|Q|\).
+</p>
+\begin{align*}
+  T_S = \frac{|Q|}{2} = \frac{2\,m_{D^0}c^2 - 2\,m_ec^2}{2} = \unit[1865]{MeV}
+\end{align*}</li>
+</ol>
+
+<div class="QUESTION">
+<ol class="org-ol">
+<li value="7">On utilise des faisceaux d'énergie \(T_0\) = 2.014 GeV. Calculer les impulsions du \(D^0\) et du
+\(\bar{D}^0\).</li>
+</ol>
+
+</div>
+
+<ol class="org-ol">
+<li value="7"><p>
+\(T_0=\unit[2014]{MeV}\)
+</p>
+
+<p>
+Toujours dans le référentiel du centre de masse, la conservation de l'impulsion implique que
+\(\vv{p}_{D^0}=-\vv{p}_{\bar{D}^0}\). Les masses de ces deux particules étant identiques, l'énergie
+totale \(E\) est donc la même pour \(D^0\) et \(\bar{D}^0\). Pour les mêmes raisons, l'énergie totale
+est la même pour le faisceau d'électrons que pour celui de positron si bien que la conservation
+de l'énergie totale implique \(E_{e^\pm}=E_{D^0/\bar{D}^0}\).
+</p>
+\begin{align*}
+  E_{D^0/\bar{D}^0} &= T_0 + m_ec^2\\
+  \sqrt{p_{D^0/\bar{D}^0}^2c^2+m_{D^0/\bar{D}^0}^2c^4} &\simeq T_0\\
+  p_{D^0/\bar{D}^0}c&=\sqrt{T_0^2 - m_{D^0/\bar{D}^0}^2c^4}\\
+  p_{D^0/\bar{D}^0}c&=\sqrt{2014^2 - 1865^2} = \unit[760.2]{MeV}
+\end{align*}</li>
+</ol>
+
+<div class="QUESTION">
+<ol class="org-ol">
+<li value="8"><p>
+On mesure le spectre en impulsion des \(D^0\) produits.
+</p>
+<div class="org-center">
 
 <div class="figure">
-<p><img src="./figures/mod4_2.png" alt="mod4_2.png" />
+<p><img src="figures/bar2.png" alt="bar2.png" />
 </p>
 </div>
+</div></li>
+</ol>
+
 </div>
 
-<p>
-Lesquels de ces niveaux peut-on exciter dans chacune des réactions
-d'interaction forte étudiées ici ? Justifier votre réponse.
-</p></li>
+<ol class="org-ol">
+<li value="8">Le second pic correspond à la production du couple \(D^0/\bar{D}^0\).</li>
+</ol>
 
-<li><p>
-On donne sur le même schéma à droite les premiers niveaux du&nbsp;<sup>41</sup><sub>19</sub>K.
+<div class="QUESTION">
+<ol class="org-ol">
+<li value="9"><p>
+L'autre pic correspond à la création d'une autre particule, \(X\), par interaction
+électromagnétique, via la réaction (2) suivante :
 </p>
+\begin{align*}
+  e^+ + e^- \rightarrow D^0 + X
+\end{align*}
 
 <p>
-Quels moment cinétique et parité \(I^{\pi}\) peut-on attribuer aux niveaux à
-5.85 MeV, 6.85 MeV et 7.1 MeV d'énergie d'excitation du
-noyau&nbsp;<sup>41</sup><sub>20</sub>Ca ?
+Calculer la masse de cette particule \(X\) et donner la valeur de son hypercharge.
 </p></li>
 </ol>
 
 </div>
 
-<p>
-Pour étudier les niveaux en énergie d'un noyau donné&nbsp;<sup>A</sup><sub>Z</sub>X (états
-d'excitation), on peut réaliser des collisions inélastiques \((p,p')\),
-\((\alpha,\alpha^\prime)\) ou des réactions de transfert durant lesquelles un
-neutron/proton est transféré soit au noyau étudié soit au projectile. On déduit
-de ces collisions la distribution angulaire de chaque pic d'excitation, le
-moment angulaire \(\ell\), la largeur de chaque pic est reliée à la durée de vie
-du niveau&#x2026; Dans le cas du noyau de&nbsp;<sup>41</sup><sub>20</sub>Ca<sup>21</sup>, on utilise 4 types
-d'interaction
-</p>
-
-<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="void">
-
-
-<colgroup>
-<col  class="org-left" />
-
-<col  class="org-left" />
-
-<col  class="org-left" />
-
-<col  class="org-left" />
-
-<col  class="org-left" />
-
-<col  class="org-left" />
-
-<col  class="org-left" />
-
-<col  class="org-left" />
-</colgroup>
-<tbody>
-<tr>
-<td class="org-left">\(\unicode{x2460}\)</td>
-<td class="org-left">\(p\)</td>
-<td class="org-left">+</td>
-<td class="org-left">&nbsp;<sup>41</sup><sub>20</sub>Ca<sup>21</sup></td>
-<td class="org-left">&rarr;</td>
-<td class="org-left">\(p^\prime\)</td>
-<td class="org-left">+</td>
-<td class="org-left">&nbsp;<sup>41</sup><sub>20</sub>Ca<sup>21*</sup></td>
-</tr>
-
-<tr>
-<td class="org-left">\(\unicode{x2461}\)</td>
-<td class="org-left">\(\alpha\)</td>
-<td class="org-left">+</td>
-<td class="org-left">&nbsp;<sup>41</sup><sub>20</sub>Ca<sup>21</sup></td>
-<td class="org-left">&rarr;</td>
-<td class="org-left">\(\alpha^\prime\)</td>
-<td class="org-left">+</td>
-<td class="org-left">&nbsp;<sup>41</sup><sub>20</sub>Ca<sup>21*</sup></td>
-</tr>
-
-<tr>
-<td class="org-left">\(\unicode{x2462}\)</td>
-<td class="org-left">\(d\)</td>
-<td class="org-left">+</td>
-<td class="org-left">&nbsp;<sup>40</sup><sub>20</sub>Ca<sup>20</sup></td>
-<td class="org-left">&rarr;</td>
-<td class="org-left">\(p\)</td>
-<td class="org-left">+</td>
-<td class="org-left">&nbsp;<sup>41</sup><sub>20</sub>Ca<sup>21*</sup></td>
-</tr>
-
-<tr>
-<td class="org-left">\(\unicode{x2463}\)</td>
-<td class="org-left">&nbsp;<sup>3</sup><sub>2</sub>He<sup>1</sup></td>
-<td class="org-left">+</td>
-<td class="org-left">&nbsp;<sup>42</sup><sub>20</sub>Ca<sup>22</sup></td>
-<td class="org-left">&rarr;</td>
-<td class="org-left">\(\alpha\)</td>
-<td class="org-left">+</td>
-<td class="org-left">&nbsp;<sup>41</sup><sub>20</sub>Ca<sup>21*</sup></td>
-</tr>
-</tbody>
-</table>
-
-<p>
-où&nbsp;<sup>41</sup><sub>20</sub>Ca<sup>21*</sup> est un état excité du Calcium 41. On considèrera, en
-revanche, que les autres réactants sont à l'état fondamental
-\(T(\text{fonda.})=|T_3|=\tfrac{Z-N}{2}\).
-</p>
 
 <ol class="org-ol">
-<li><p>
-Les 4 précédentes réactions se font toutes par interaction forte : il faut
-donc s'assurer que l'isospin est conservé en plus des quantités telles que
-l'impulsion, énergie, parité,&#x2026; Les valeurs d'isospin des différents noyaux
-et particules sont rapportées dans le tableau ci-dessous
-</p>
-
-<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="void">
-
-
-<colgroup>
-<col  class="org-left" />
-
-<col  class="org-left" />
-
-<col  class="org-left" />
-
-<col  class="org-left" />
-
-<col  class="org-left" />
-
-<col  class="org-left" />
-
-<col  class="org-left" />
-
-<col  class="org-left" />
-</colgroup>
-<tbody>
-<tr>
-<td class="org-left">&#xa0;</td>
-<td class="org-left">\(p\)</td>
-<td class="org-left">\(d\)</td>
-<td class="org-left">&nbsp;<sup>3</sup><sub>2</sub>He</td>
-<td class="org-left">\(\alpha\)</td>
-<td class="org-left">&nbsp;<sup>40</sup><sub>20</sub>Ca</td>
-<td class="org-left">&nbsp;<sup>42</sup><sub>20</sub>Ca</td>
-<td class="org-left">&nbsp;<sup>41</sup><sub>20</sub>Ca(fonda. ou excité)</td>
-</tr>
-
-<tr>
-<td class="org-left">\(T_3\)</td>
-<td class="org-left">\(\tfrac{1}{2}\)</td>
-<td class="org-left">0</td>
-<td class="org-left">\(\tfrac{1}{2}\)</td>
-<td class="org-left">0</td>
-<td class="org-left">0</td>
-<td class="org-left">-1</td>
-<td class="org-left">-\(\tfrac{1}{2}\)</td>
-</tr>
-
-<tr>
-<td class="org-left">\(\vv{T}\)</td>
-<td class="org-left">\(\tfrac{\vv{1}}{2}\)</td>
-<td class="org-left">\(\vv{0}\)</td>
-<td class="org-left">\(\tfrac{\vv{1}}{2}\)</td>
-<td class="org-left">\(\vv{0}\)</td>
-<td class="org-left">\(\vv{0}\)</td>
-<td class="org-left">\(\vv{1}\)</td>
-<td class="org-left">\(\tfrac{\vv{1}}{2}\),\(\tfrac{\vv{3}}{2}\),&#x2026;</td>
-</tr>
-</tbody>
-</table>
-
-<p>
-<span class="underline">Réaction \(\unicode{x2460}\)</span>
-</p>
-<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="void">
-
-
-<colgroup>
-<col  class="org-left" />
-
-<col  class="org-left" />
-
-<col  class="org-left" />
-
-<col  class="org-left" />
-
-<col  class="org-left" />
-
-<col  class="org-left" />
-
-<col  class="org-left" />
-
-<col  class="org-left" />
-
-<col  class="org-left" />
-
-<col  class="org-left" />
-</colgroup>
-<tbody>
-<tr>
-<td class="org-left">&#xa0;</td>
-<td class="org-left">\(p\)</td>
-<td class="org-left">+</td>
-<td class="org-left">&nbsp;<sup>41</sup><sub>20</sub>Ca<sup>21</sup></td>
-<td class="org-left">&rarr;</td>
-<td class="org-left">\(p^\prime\)</td>
-<td class="org-left">+</td>
-<td class="org-left">&nbsp;<sup>41</sup><sub>20</sub>Ca<sup>21*</sup></td>
-<td class="org-left">&#xa0;</td>
-<td class="org-left">&#xa0;</td>
-</tr>
-
-<tr>
-<td class="org-left">\(T_3\)</td>
-<td class="org-left">\(\tfrac{1}{2}\)</td>
-<td class="org-left">+</td>
-<td class="org-left">-\(\tfrac{1}{2}\)</td>
-<td class="org-left">=</td>
-<td class="org-left">\(\tfrac{1}{2}\)</td>
-<td class="org-left">+</td>
-<td class="org-left">-\(\tfrac{1}{2}\)</td>
-<td class="org-left">&#xa0;</td>
-<td class="org-left">&#xa0;</td>
-</tr>
-
-<tr>
-<td class="org-left">\(\vv{T}\)</td>
-<td class="org-left">\(\tfrac{\vv{1}}{2}\)</td>
-<td class="org-left">+</td>
-<td class="org-left">\(\tfrac{\vv{1}}{2}\)</td>
-<td class="org-left">=</td>
-<td class="org-left">\(\tfrac{\vv{1}}{2}\)</td>
-<td class="org-left">+</td>
-<td class="org-left">\(\tfrac{\vv{1}}{2}\)</td>
-<td class="org-left">\(=\vv{0}\) ou \(\vv{1}\)</td>
-<td class="org-left">\(\unicode{x2713}\)</td>
-</tr>
-
-<tr>
-<td class="org-left">&#xa0;</td>
-<td class="org-left">&#xa0;</td>
-<td class="org-left">&#xa0;</td>
-<td class="org-left">&#xa0;</td>
-<td class="org-left">&#xa0;</td>
-<td class="org-left">&#xa0;</td>
-<td class="org-left">&#xa0;</td>
-<td class="org-left">\(\tfrac{\vv{3}}{2}\)</td>
-<td class="org-left">\(=\vv{1}\) ou \(\cancel{\vv{2}}\)</td>
-<td class="org-left">\(\unicode{x2713}\)</td>
-</tr>
-
-<tr>
-<td class="org-left">&#xa0;</td>
-<td class="org-left">&#xa0;</td>
-<td class="org-left">&#xa0;</td>
-<td class="org-left">&#xa0;</td>
-<td class="org-left">&#xa0;</td>
-<td class="org-left">&#xa0;</td>
-<td class="org-left">&#xa0;</td>
-<td class="org-left">\(\tfrac{\vv{5}}{2}\)</td>
-<td class="org-left">\(=\cancel{\vv{2}}\) ou \(\cancel{\vv{3}}\)</td>
-<td class="org-left">\(\unicode{x2717}\)</td>
-</tr>
-</tbody>
-</table>
-<p>
-Cette réaction permet d'exciter et d'observer les états
-\(\vv{T}=\tfrac{\vv{1}}{2},\tfrac{\vv{3}}{2}\) du&nbsp;<sup>41</sup>Ca.
+<li value="9"><p>
+\(e^++e^-\rightarrow D^0 + X\)
 </p>
 
 <p>
-<span class="underline">Réaction \(\unicode{x2461}\)</span>
+L'impulsion du \(D^0\) est à présent, de 560 MeV. La conservation de l'impulsion suppose la même
+impulsion pour la particule \(X\). Par ailleurs, la conservation de l'énergie totale s'écrit
+\(2\,E_{e^\pm} = E_{D^0} + E_X\). Soit
 </p>
-<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="void">
+\begin{align*}
+  E_X &= 2\,E_{e^\pm} - E_{D^0}\\
+  &= 2\,\left(T_0 + m_ec^2\right) - \sqrt{p_{D^0}^2c^2+m_{D^0}^2c^4}\\
+  \sqrt{p_{X}^2c^2+m_{X}^2c^4} &= 2\,\left(T_0 + m_ec^2\right) - \sqrt{p_{D^0}^2c^2+m_{D^0}^2c^4}\\
+  m_{X}^2c^4 &\simeq \left[2T_0 - \sqrt{p_{D^0}^2c^2+m_{D^0}^2c^4}\right]^2 - p_X^2c^2\\
+  m_{X}^2c^4 &\simeq \left[2\times2014 - \sqrt{560^2+1865^2}\right]^2 - 560^2\\
+  m_Xc^2 &= \unit[2004]{MeV}
+\end{align*}</li>
+</ol>
 
+<div class="QUESTION">
+<ol class="org-ol">
+<li value="10">On attribue à la particule \(X\) les caractéristiques : \(I^{\pi}\) = 1<sup>-</sup>, \(T\) = 1/2,
+\(T_{3}\) = 1/2. Quelle est sa composition en quarks ?  Préciser les valeurs possibles du moment
+orbital relatif \(\vv{L}\) et du spin \(\vv{S}\).</li>
+</ol>
 
-<colgroup>
-<col  class="org-left" />
-
-<col  class="org-left" />
-
-<col  class="org-left" />
-
-<col  class="org-left" />
-
-<col  class="org-left" />
-
-<col  class="org-left" />
-
-<col  class="org-left" />
-
-<col  class="org-left" />
-
-<col  class="org-left" />
-
-<col  class="org-left" />
-</colgroup>
-<tbody>
-<tr>
-<td class="org-left">&#xa0;</td>
-<td class="org-left">\(\alpha\)</td>
-<td class="org-left">+</td>
-<td class="org-left">&nbsp;<sup>41</sup><sub>20</sub>Ca<sup>21</sup></td>
-<td class="org-left">&rarr;</td>
-<td class="org-left">\(\alpha^\prime\)</td>
-<td class="org-left">+</td>
-<td class="org-left">&nbsp;<sup>41</sup><sub>20</sub>Ca<sup>21*</sup></td>
-<td class="org-left">&#xa0;</td>
-<td class="org-left">&#xa0;</td>
-</tr>
-
-<tr>
-<td class="org-left">\(T_3\)</td>
-<td class="org-left">0</td>
-<td class="org-left">+</td>
-<td class="org-left">-\(\tfrac{1}{2}\)</td>
-<td class="org-left">=</td>
-<td class="org-left">0</td>
-<td class="org-left">+</td>
-<td class="org-left">-\(\tfrac{1}{2}\)</td>
-<td class="org-left">&#xa0;</td>
-<td class="org-left">&#xa0;</td>
-</tr>
-
-<tr>
-<td class="org-left">\(\vv{T}\)</td>
-<td class="org-left">\(\vv{0}\)</td>
-<td class="org-left">+</td>
-<td class="org-left">\(\tfrac{\vv{1}}{2}\)</td>
-<td class="org-left">=</td>
-<td class="org-left">\(\vv{0}\)</td>
-<td class="org-left">+</td>
-<td class="org-left">\(\tfrac{\vv{1}}{2}\)</td>
-<td class="org-left">\(=\tfrac{\vv{1}}{2}\)</td>
-<td class="org-left">\(\unicode{x2713}\)</td>
-</tr>
-
-<tr>
-<td class="org-left">&#xa0;</td>
-<td class="org-left">&#xa0;</td>
-<td class="org-left">&#xa0;</td>
-<td class="org-left">&#xa0;</td>
-<td class="org-left">&#xa0;</td>
-<td class="org-left">&#xa0;</td>
-<td class="org-left">&#xa0;</td>
-<td class="org-left">\(\tfrac{\vv{3}}{2}\)</td>
-<td class="org-left">\(=\cancel{\tfrac{\vv{3}}{2}}\)</td>
-<td class="org-left">\(\unicode{x2717}\)</td>
-</tr>
-</tbody>
-</table>
-<p>
-Cette réaction ne permet d'exciter que l'état \(\vv{T}=\tfrac{\vv{1}}{2}\)
-du&nbsp;<sup>41</sup>Ca.
-</p>
-
-<p>
-<span class="underline">Réaction \(\unicode{x2462}\)</span>
-</p>
-<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="void">
-
-
-<colgroup>
-<col  class="org-left" />
-
-<col  class="org-left" />
-
-<col  class="org-left" />
-
-<col  class="org-left" />
-
-<col  class="org-left" />
-
-<col  class="org-left" />
-
-<col  class="org-left" />
-
-<col  class="org-left" />
-
-<col  class="org-left" />
-
-<col  class="org-left" />
-</colgroup>
-<tbody>
-<tr>
-<td class="org-left">&#xa0;</td>
-<td class="org-left">\(d\)</td>
-<td class="org-left">+</td>
-<td class="org-left">&nbsp;<sup>40</sup><sub>20</sub>Ca<sup>20</sup></td>
-<td class="org-left">&rarr;</td>
-<td class="org-left">\(p\)</td>
-<td class="org-left">+</td>
-<td class="org-left">&nbsp;<sup>41</sup><sub>20</sub>Ca<sup>21*</sup></td>
-<td class="org-left">&#xa0;</td>
-<td class="org-left">&#xa0;</td>
-</tr>
-
-<tr>
-<td class="org-left">\(T_3\)</td>
-<td class="org-left">0</td>
-<td class="org-left">+</td>
-<td class="org-left">0</td>
-<td class="org-left">=</td>
-<td class="org-left">\(\tfrac{1}{2}\)</td>
-<td class="org-left">+</td>
-<td class="org-left">-\(\tfrac{1}{2}\)</td>
-<td class="org-left">&#xa0;</td>
-<td class="org-left">&#xa0;</td>
-</tr>
-
-<tr>
-<td class="org-left">\(\vv{T}\)</td>
-<td class="org-left">\(\vv{0}\)</td>
-<td class="org-left">+</td>
-<td class="org-left">\(\vv{0}\)</td>
-<td class="org-left">=</td>
-<td class="org-left">\(\tfrac{\vv{1}}{2}\)</td>
-<td class="org-left">+</td>
-<td class="org-left">\(\tfrac{\vv{1}}{2}\)</td>
-<td class="org-left">\(=\vv{0}\) ou \(\cancel{\vv{1}}\)</td>
-<td class="org-left">\(\unicode{x2713}\)</td>
-</tr>
-
-<tr>
-<td class="org-left">&#xa0;</td>
-<td class="org-left">&#xa0;</td>
-<td class="org-left">&#xa0;</td>
-<td class="org-left">&#xa0;</td>
-<td class="org-left">&#xa0;</td>
-<td class="org-left">&#xa0;</td>
-<td class="org-left">&#xa0;</td>
-<td class="org-left">\(\tfrac{\vv{3}}{2}\)</td>
-<td class="org-left">\(=\cancel{\vv{1}}\) ou \(\cancel{\vv{2}}\)</td>
-<td class="org-left">\(\unicode{x2717}\)</td>
-</tr>
-</tbody>
-</table>
-<p>
-Cette réaction ne permet d'exciter que l'état \(\vv{T}=\tfrac{\vv{1}}{2}\)
-du&nbsp;<sup>41</sup>Ca.
-</p>
-
-<p>
-<span class="underline">Réaction \(\unicode{x2463}\)</span>
-</p>
-<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="void">
-
-
-<colgroup>
-<col  class="org-left" />
-
-<col  class="org-left" />
-
-<col  class="org-left" />
-
-<col  class="org-left" />
-
-<col  class="org-left" />
-
-<col  class="org-left" />
-
-<col  class="org-left" />
-
-<col  class="org-left" />
-
-<col  class="org-left" />
-
-<col  class="org-left" />
-</colgroup>
-<tbody>
-<tr>
-<td class="org-left">&#xa0;</td>
-<td class="org-left">&nbsp;<sup>3</sup><sub>2</sub>He</td>
-<td class="org-left">+</td>
-<td class="org-left">&nbsp;<sup>42</sup><sub>20</sub>Ca<sup>22</sup></td>
-<td class="org-left">&rarr;</td>
-<td class="org-left">\(\alpha\)</td>
-<td class="org-left">+</td>
-<td class="org-left">&nbsp;<sup>41</sup><sub>20</sub>Ca<sup>21*</sup></td>
-<td class="org-left">&#xa0;</td>
-<td class="org-left">&#xa0;</td>
-</tr>
-
-<tr>
-<td class="org-left">\(T_3\)</td>
-<td class="org-left">\(\tfrac{1}{2}\)</td>
-<td class="org-left">+</td>
-<td class="org-left">-1</td>
-<td class="org-left">=</td>
-<td class="org-left">0</td>
-<td class="org-left">+</td>
-<td class="org-left">-\(\tfrac{1}{2}\)</td>
-<td class="org-left">&#xa0;</td>
-<td class="org-left">&#xa0;</td>
-</tr>
-
-<tr>
-<td class="org-left">\(\vv{T}\)</td>
-<td class="org-left">\(\tfrac{\vv{1}}{2}\)</td>
-<td class="org-left">+</td>
-<td class="org-left">\(\vv{1}\)</td>
-<td class="org-left">=</td>
-<td class="org-left">\(\vv{0}\)</td>
-<td class="org-left">+</td>
-<td class="org-left">\(\tfrac{\vv{1}}{2}\)</td>
-<td class="org-left">\(=\tfrac{\vv{1}}{2}\)</td>
-<td class="org-left">\(\unicode{x2713}\)</td>
-</tr>
-
-<tr>
-<td class="org-left">&#xa0;</td>
-<td class="org-left">&#xa0;</td>
-<td class="org-left">&#xa0;</td>
-<td class="org-left">&#xa0;</td>
-<td class="org-left">&#xa0;</td>
-<td class="org-left">&#xa0;</td>
-<td class="org-left">&#xa0;</td>
-<td class="org-left">\(\tfrac{\vv{3}}{2}\)</td>
-<td class="org-left">\(=\tfrac{\vv{3}}{2}\)</td>
-<td class="org-left">\(\unicode{x2713}\)</td>
-</tr>
-</tbody>
-</table>
-<p>
-Cette réaction permet d'exciter et d'observer les états
-\(\vv{T}=\tfrac{\vv{1}}{2},\tfrac{\vv{3}}{2}\) du&nbsp;<sup>41</sup>Ca.
-</p></li>
-<li><p>
-La troisième composante \(T_3\) du noyau&nbsp;<sup>41</sup><sub>19</sub>K est égale à
-\(\tfrac{Z-N}{2}=-\tfrac{3}{2}\) soit un niveau fondamental
-\(\vv{T}=\tfrac{\vv{3}}{2}\). De même, le noyau&nbsp;<sup>41</sup><sub>20</sub>Ca<sup>*</sup> a
-\(T_3=-\tfrac{1}{2}\), \(\vv{T}=\tfrac{\vv{3}}{2}\) pour les niveaux en énergie
-5.85, 6.85 et 7.1 MeV. Ces deux noyaux appartiennent donc au même multiplet
-d'isospin \(\vv{T}=\tfrac{\vv{3}}{2}\), quadruplet qui est complété par les
-noyaux miroirs de ces deux noyaux. Les valeurs de \(I^\pi\) seront donc les
-mêmes avec des écarts en énergie identiques aux effets coulombiens près.
-</p>
-<div class="center">
-
-<div class="figure">
-<p><img src="./figures/calcium_potassium_energy.png" alt="calcium_potassium_energy.png" />
-</p>
 </div>
-</div></li>
+
+
+<ol class="org-ol">
+<li value="10"><p>
+L'interaction électromagnétique conserve la saveur (seul l'isospin n'est pas conservé). La
+particule \(X\) est donc nécessairement de saveur opposée au méson \(D^0\). Par ailleurs, la
+conservation du nombre baryonique et du nombre leptonique implique que cette particule est un
+méson. Enfin, on déduit de la conservation de la charge électrique que cette particule est
+neutre. La particule \(X\) est donc constituée d'un antiquark \(c\) et soit d'un quark \(u\) soit d'un
+quark \(d\). La conservation de la charge électrique qui, dans ce cas présent, est équivalente à
+la conservation de la troisième composante de l'isospin \(T_3\) (relation de Gell-Mann &amp;
+Nishijima), implique que le second quark est un quark \(u\). La particule \(X\) est ainsi identique
+en composition à l'antiméson \(\bar{D}^0\).
+</p>
+
+<p>
+Conservation du moment cinétique total \(\vv{I}\)
+</p>
+\begin{align*}
+  \vv{I}_X &= \vv{I}_u + \vv{I}_{\bar{c}}+\vv{L}_{u\bar{c}}\\
+  \vv{1} &= \vv{S}_u + \vv{S}_{\bar{c}}+\vv{L}_{u\bar{c}}
+\end{align*}
+
+<p>
+Soit \(\vv{S}_X=\vv{S}_u + \vv{S}_{\bar{c}}=\vv{0}\) et \(\vv{L}=\vv{1}\), soit
+\(\vv{S}_X=\vv{1}\) et \(\vv{L}=\vv{0},\vv{1},\vv{2}\).
+</p>
+
+<p>
+La décomposition de la parité \(\pi\) impose que
+</p>
+\begin{align*}
+  \pi(X) &= \pi(u)\cdot\pi(\bar{c})\cdot(-1)^{L}\\ -1 &= (+1)\times(-1)\times(-1)^L
+\end{align*}
+
+<p>
+duquel on déduit que \(L\) doit être pair. La valeur du spin de \(X\) est donc 1 et le moment
+orbital relatif est soit 0 ou 2.
+</p></li>
+</ol>
+
+
+<div class="QUESTION">
+<ol class="org-ol">
+<li value="11">On observe la désintégration \(X \rightarrow \bar{D}^0 + \pi^0\). Montrer qu'elle est
+possible par interaction forte. Préciser les moments orbitaux relatifs possibles dans l'état
+final.</li>
+</ol>
+
+</div>
+
+<ol class="org-ol">
+<li value="11"><p>
+\(X\rightarrow\bar{D}^0+\pi^0\)
+</p>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="void">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-right" />
+
+<col  class="org-left" />
+
+<col  class="org-right" />
+
+<col  class="org-left" />
+
+<col  class="org-right" />
+
+<col  class="org-left" />
+</colgroup>
+<tbody>
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-right">\(X\)</td>
+<td class="org-left">&rarr;</td>
+<td class="org-right">\(\bar{D}^0\)</td>
+<td class="org-left">+</td>
+<td class="org-right">\(\pi^0\)</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">\(B\)</td>
+<td class="org-right">0</td>
+<td class="org-left">=</td>
+<td class="org-right">0</td>
+<td class="org-left">+</td>
+<td class="org-right">0</td>
+<td class="org-left">\(\unicode{x2713}\)</td>
+</tr>
+
+<tr>
+<td class="org-left">\(c\)</td>
+<td class="org-right">-1</td>
+<td class="org-left">=</td>
+<td class="org-right">-1</td>
+<td class="org-left">+</td>
+<td class="org-right">0</td>
+<td class="org-left">\(\unicode{x2713}\)</td>
+</tr>
+
+<tr>
+<td class="org-left">\(s,b,t\)</td>
+<td class="org-right">0</td>
+<td class="org-left">=</td>
+<td class="org-right">0</td>
+<td class="org-left">+</td>
+<td class="org-right">0</td>
+<td class="org-left">\(\unicode{x2713}\)</td>
+</tr>
+
+<tr>
+<td class="org-left">\(Q/e\)</td>
+<td class="org-right">0</td>
+<td class="org-left">=</td>
+<td class="org-right">0</td>
+<td class="org-left">+</td>
+<td class="org-right">0</td>
+<td class="org-left">\(\unicode{x2713}\)</td>
+</tr>
+
+<tr>
+<td class="org-left">\(T_3\)</td>
+<td class="org-right">1/2</td>
+<td class="org-left">=</td>
+<td class="org-right">1/2</td>
+<td class="org-left">+</td>
+<td class="org-right">0</td>
+<td class="org-left">\(\unicode{x2713}\)</td>
+</tr>
+
+<tr>
+<td class="org-left">\(\vv{T}\)</td>
+<td class="org-right">\(\vv{1}/2\)</td>
+<td class="org-left">=</td>
+<td class="org-right">\(\vv{1}/2\)</td>
+<td class="org-left">+</td>
+<td class="org-right">\(\vv{1}\)</td>
+<td class="org-left">\(\unicode{x2713}\)</td>
+</tr>
+</tbody>
+</table>
+
+<p>
+Le moment cinétique total est conservé dans la mesure où \(I^\pi(\pi^0)=0^-\) ce qui implique que
+le moment orbital relatif de \(\pi^0\) par rapport à \(\bar{D}^0\) est égal à \(\vv{1}\). Dans ces
+conditions, la parité est également conservée. Enfin, la désintégration est possible et
+spontanée puisque la chaleur de réaction \(Q\) est égale à 2005 - (1865+135) = 5 MeV &gt; 0.
+</p></li>
+</ol>
+
+<div class="QUESTION">
+<ol class="org-ol">
+<li value="12">Comment interpréter cette particule \(X\) par rapport à \(\bar{D}^0\) ?</li>
+</ol>
+
+</div>
+<ol class="org-ol">
+<li value="12">La particule \(X\) est constituée des mêmes particules, à savoir le couple \(u\bar{c}\), que
+l'antiméson \(\bar{D}^0\). Elle possède néanmoins un moment cinétique total plus grand de même
+qu'une masse plus élevée que \(\bar{D}^0\) ce qui semble indiquer que cette particule est un état
+excité de \(\bar{D}^0\).</li>
 </ol>
 </div>
 </div>
@@ -1538,11 +1154,10 @@ mêmes avec des écarts en énergie identiques aux effets coulombiens près.
 
 
 
-
 </div>
 </div></div>
 <div id="postamble" class="status">
-File under <i class="fa fa-github-alt"></i> version control - commit <a href="https://github.com/xgarrido/master_npp_teaching/commit/15edcc3f2b8dcf1e42ba4cd5ec2942d8a7d0a234">15edcc3</a> - 2016-06-28
+File under <i class="fa fa-github-alt"></i> version control - commit <a href="https://github.com/xgarrido/master_npp_teaching/commit/f535f50b5fcd671574e3f14e69aaa10cb02d480d">f535f50</a> - 2020-12-21
 </div>
 </body>
 </html>

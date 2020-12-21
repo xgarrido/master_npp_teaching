@@ -3,10 +3,11 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
-<meta  name="viewport" content="width=device-width, initial-scale=1" />
-<title>TD2 : Nombres quantiques &amp; Symétries</title>
-<meta  name="generator" content="Org-mode" />
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>TD2 : Accélérateurs &amp; section efficace</title>
+<meta name="generator" content="Org mode" />
+<meta name="author" content="Xavier Garrido" />
 <link rel="stylesheet" href="css/styles.css" />
                <link rel="stylesheet" href="css/org-pygments.css" />
                <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" />
@@ -15,7 +16,7 @@
 @licstart  The following is the entire license notice for the
 JavaScript code in this tag.
 
-Copyright (C) 2012-2013 Free Software Foundation, Inc.
+Copyright (C) 2012-2018 Free Software Foundation, Inc.
 
 The JavaScript code in this tag is free software: you can
 redistribute it and/or modify it under the terms of the GNU
@@ -83,6 +84,7 @@ for the JavaScript code in this tag.
           extensions: ["cancel.js"],
           Macros: {
               vv: ["{\\vec{#1}}",1],
+              d: "{\\text{d}}",
               Upsigma: "{\\Sigma}",
               Updelta: "{\\Delta}",
               varoiint: "{\\iint}",
@@ -134,456 +136,844 @@ for the JavaScript code in this tag.
 <a href="index.html"><i class="fa fa-home"></i></a><br/>  
 </div>
 <div id="content">
-<h1 class="title">TD2 : Nombres quantiques &amp; Symétries</h1>
+<h1 class="title">TD2 : Accélérateurs &amp; section efficace</h1>
 <div style="display:none;">
 <div id="text-table-of-contents">
 <ul class="org-ul">
-<li><a href="././td_np_0.html">TD1 : Cinématique &amp; Accélérateurs</a></li>
-<li><a href="././td_np_1.html">TD2 : Nombres quantiques &amp; Symétries</a></li>
-<li><a href="././td_np_2.html">TD3 : Réactions de production et de désintégration de particules</a></li>
-<li><a href="././td_np_3.html">TD4 : Modèle des quarks &#x2013; Les hadrons</a></li>
-<li><a href="././td_np_4.html">TD5 : Isospin &#x2013; des quarks aux noyaux</a></li>
-<li><a href="././td_np_5.html">TD6 : Structure nucléaire</a></li>
-<li><a href="././td_np_6.html">TD7 : Réactions nucléaires</a></li>
-<li><a href="././td_np_7.html">TD8 : Masses et désintégrations nucléaires</a></li>
-<li><a href="././td_np_8.html">TD9 : Modèle Standard et au-delà : l'interaction faible</a></li>
+<li><a href="././td_np_0.html">TD1 : Cinématique</a></li>
+<li><a href="././td_np_1.html">TD2 : Accélérateurs &amp; section efficace</a></li>
+<li><a href="././td_np_2.html">TD3 : Nombres quantiques &amp; Symétries</a></li>
+<li><a href="././td_np_3.html">TD4 : Réactions de production et de désintégration de particules</a></li>
+<li><a href="././td_np_4.html">TD5 : Modèle Standard et au-delà : l'interaction faible</a></li>
+<li><a href="././td_np_5.html">TD6 : Modèle des quarks &#x2013; Les hadrons</a></li>
+<li><a href="././td_np_6.html">TD7 : Isospin &#x2013; des quarks aux noyaux</a></li>
+<li><a href="././td_np_7.html">TD8 : Structure nucléaire</a></li>
+<li><a href="././td_np_8.html">TD9 : Masses et désintégrations nucléaires</a></li>
 <li><a href="././td_np_9.html">Annexes</a></li>
 <li><a href="././td_np_10.html">Aide-mémoire de Noyaux &amp; Particules</a></li>
 </ul>
 </div>
 </div>
 
-<div id="outline-container-orgheadline1" class="outline-2">
-<h2 id="orgheadline1"><span class="section-number-2">1</span> Énergie maximum des rayons cosmiques</h2>
+<div id="outline-container-orgba15cbf" class="outline-2">
+<h2 id="orgba15cbf"><span class="section-number-2">1</span> Accélérateurs</h2>
 <div class="outline-text-2" id="text-1">
-
-<div class="figure">
-<p><img src="./figures/spectrum.png" alt="spectrum.png" width="500" />
-</p>
-<p><span class="figure-number">Figure 1:</span> <b>Spectre en énergie des rayons cosmiques</b></p>
+</div>
+<div id="outline-container-org8633722" class="outline-3">
+<h3 id="org8633722"><span class="section-number-3">1.1</span> Introduction</h3>
+<div class="outline-text-3" id="text-1-1">
+<dl class="org-dl">
+<dt>cyclotron</dt><dd>Le cyclotron est un type d’accélérateur de particules circulaire inventé par Ernest
+Orlando Lawrence et Milton S. Livingston de l'université de Californie à Berkeley au
+début des années 1930. Dans un cyclotron, les particules placées dans un champ
+magnétique suivent une trajectoire en forme de spirale et sont accélérées par un
+champ électrique alternatif à des énergies de quelques MeV à une trentaine de MeV.</dd>
+<dt>synchrocyclotron</dt><dd>Le cyclotron perd de son efficacité quand on cherche à accélérer des protons
+au-delà de 10 à 20 MeV, en raison de la variation relativiste de la masse qui perturbe le
+fonctionnement quand elle atteint une grandeur de 1 ou 2 %. Un synchrocyclotron est un
+cyclotron dont la fréquence du champ électrique est changée (progressivement diminuée) pour
+compenser le gain de masse des particules accélérées pendant que leur vitesse commence à
+approcher la vitesse de la lumière. Le synchrocyclotron permet d'atteindre des énergies de
+l'ordre de centaines de MeV. Le premier synchrocyclotron a été construit à l’Université de
+Californie (Berkeley) en 1946.</dd>
+<dt>synchrotron</dt><dd>La caractéristique du synchrotron est que l'intensité du champ magnétique de
+l'anneau est adaptée de façon synchrone à l'énergie du faisceau de particules, afin
+de les maintenir sur une trajectoire fixe. Il peut en outre y avoir un second
+anneau, avec des particules tournant en sens inverse, afin de réaliser des
+collisions entre particules avec une énergie utilisable très élevée. Ce sont des
+collisionneurs.</dd>
+</dl>
+</div>
 </div>
 
+<div id="outline-container-org1984c9e" class="outline-3">
+<h3 id="org1984c9e"><span class="section-number-3">1.2</span> Exercice</h3>
+<div class="outline-text-3" id="text-1-2">
 <div class="QUESTION">
-<ol class="org-ol">
-<li><p>
-On considère un proton émis par une source astrophysique (Soleil, noyaux
-actifs de galaxie,&#x2026;) et interagissant avec le rayonnement fossile à 2.7 K
-(on admettra que \(E_\gamma = 3kT_\gamma\) pour les photons, avec \(k\) =
-1,38.10<sup>-23</sup> J/K) :
-</p>
-\begin{align*}
-  p + \gamma &\rightarrow p + \pi^0 \quad {\rm et}\\
-  p + \gamma &\rightarrow n + \pi^+
-\end{align*}
-
 <p>
-Quelle est l'énergie seuil de ces réactions (on supposera le proton
-ultra-relativiste) ?
-</p></li>
-
-<li>Que pouvez-vous en déduire sur l'énergie des protons dans le milieu
-intergalactique ?</li>
+Un proton de masse au repos \(m\), de vitesse \(\vv{v}\), se déplaçant dans un champ d'induction
+\(\vv{B}\) normal à \(\vv{v}\), parcourt une trajectoire circulaire de rayon \(R\) dans un cyclotron.
+</p>
+<ol class="org-ol">
+<li>Établir la relation liant \(R\) à \(m, q, v\) et \(B\) dans le cas relativiste.</li>
 </ol>
 
 </div>
 
 <p>
-Calcul de l'invariant relativiste :
-</p>
-\begin{align*}
-  I(\text{sortie}) &= (m_{p}c^{2} + m_{\pi}c^{2})^{2}\\
-  I(\text{entrée}) &= (E_{p} + E_{\gamma})^{2} - (\vv{p}_{p} + \vv{p}_{\gamma})^{2}c^{2}
-\end{align*}
-
-<p>
-Proton ultra-relativiste \(E_{p}\sim T_{p} = p_{p}c\)
-</p>
-\begin{align*}
-  I(\text{entrée}) &= E_{p}^{2} + E_{\gamma}^{2} + 2E_{p}E_{\gamma} - E_{\gamma}^{2} - E_{p}^{2} - 2E_{\gamma}E_{p}\cos\theta\\
-  &= 2E_{p}E_{\gamma}(1 - \cos\theta)
-\end{align*}
-
-<p>
-d'où l'énergie seuil
-</p>
-\begin{align*}
-  E_{p} \sim T_{p} =
-  \frac{\left(\Upsigma\,m_\text{finale}c^{2}\right)^{2}}{2E_{\gamma}(1-\cos\theta)}
-\end{align*}
-
-<p>
-Cas limites:
-</p>
-<ul class="org-ul">
-<li>\(\theta\rightarrow0; T_{p}\rightarrow\infty\)</li>
-<li>\(\theta = 180^\circ; T_{p} = \frac{\left(\Upsigma\,m_\text{finale}c^{2}\right)^{2}}{4E_{\gamma}}\)</li>
-</ul>
-
-<p>
-AN: \(m_{\pi^{0}}c^{2}\) = 135 MeV et \(m_{\pi^{+}}c^{2}\) = 139.6 MeV
-</p>
-\begin{align*}
-  T_{p}(\pi^{0}/\pi^{+}) &= \frac{(135/139.6 + 938.3)^{2}\cdot1.6\,10^{-13}}{4\cdot3\cdot1.38\,10^{-23}\cdot2.7} = \unit[4.1\,10^{20}]{eV}\\
-\end{align*}
-
-
-<div id="orgparagraph1" class="figure">
-<p><img src="./figures/proton_attenuation_result.png" alt="proton_attenuation_result.png" width="500" />
-</p>
-<p><span class="figure-number">Figure 2:</span> <b>Énergie moyenne des protons en fonction de leur distance à la source</b></p>
-</div>
-
-<p>
-<b>Discussion :</b> Les pertes énergétiques résultantes de la photoproduction de
-pions sont de l’ordre de 15% par interaction ; le libre parcours moyen &lambda;
-est typiquement le mégaparsec<sup><a id="fnr.1" class="footref" href="#fn.1">1</a></sup>. Ainsi, l’énergie moyenne d’un proton
-diminue de façon significative au cours de sa propagation dans l’Univers comme
-le montre la Figure <a href="#orgparagraph1">2</a>. Un proton avec une énergie initiale
-de 10<sup>22</sup> eV voit son énergie réduite à 10<sup>20</sup> eV après avoir parcouru 100
-Mpc. Une diminution nette du flux appelée coupure GZK est alors attendue au
-seuil de la réaction de photoproduction de pions <i>i.e.</i> 10<sup>19.6</sup> eV<sup><a id="fnr.2" class="footref" href="#fn.2">2</a></sup>. La
-position exacte de cette coupure GZK peut varier sensiblement suivant que les
-sources considérées sont ou non uniformément réparties dans l’Univers. En
-particulier, la forme du spectre au delà du seuil GZK permet, en théorie,
-d’évaluer la répartition des sources et de mettre en exergue une éventuelle
-surabondance locale.
- <div class="footdef"><sup><a id="fn.1" class="footnum" href="#fnr.1">1</a></sup> <div class="footpara"><p class="footpara"> 1 pc = 1 parsec = 3.26 années lumières = 30.856 10<sup>12</sup> km. </p></div><br/>
- <sup><a id="fn.2" class="footnum" href="#fnr.2">2</a></sup> <div class="footpara"><p class="footpara"> dans l’hypothèse où les RCUHEs sont des noyaux, la photodésintégration par interaction avec les photons du CMB et le fond infrarouge, devient importante dans la région 5 10<sup>19</sup> &#x2013; 2 10<sup>20</sup> eV. La longueur de perte d’énergie, i.e. le rapport entre le libre parcours moyen et l’inélasticité de la réaction, est typiquement de 100 Mpc pour un noyau de fer de 100 EeV. Le rayonnement gamma est quant à lui fortement attenué en raison, principalement, des interactions avec le fond radio \(\gamma + \gamma_{radio} \rightarrow e^{+} + e^{-}\). </p></div><br/></div>
+Proton de masse \(m = \unit[938.27]{MeV/c}^{2}\) se déplaçant à la vitesse \(\vv{v}\) dans un champ
+d'induction \(\vv{B}\) normal à \(\vv{v}\).
 </p>
 
+<div class="org-center">
 
 <div class="figure">
-<p><img src="./figures/hillas_diagram.png" alt="hillas_diagram.png" width="500" />
+<p><img src="figures/cyclotron1.png" alt="cyclotron1.png" />
 </p>
-<p><span class="figure-number">Figure 3:</span> <b>Diagramme de Hillas de différents objets compacts.</b> Les axes correspondent respectivement au logarithme décimal du champ magnétique et à la taille caractéristique de l'objet.</p>
-</div>
-
-
-<div class="figure">
-<p><img src="./figures/auger_spectrum.png" alt="auger_spectrum.png" width="500" />
-</p>
-<p><span class="figure-number">Figure 4:</span> <b>Spectre du rayonnement cosmique mesuré par l'Observatoire Pierre Auger (données 2008)</b></p>
 </div>
 </div>
-</div>
-
-<div id="outline-container-orgheadline2" class="outline-2">
-<h2 id="orgheadline2"><span class="section-number-2">2</span> Étrangeté dans les rayons cosmiques</h2>
-<div class="outline-text-2" id="text-2">
-<div class="QUESTION">
-<p>
-À l'arrivée dans l'atmosphère, les protons réagissent avec les neutrons des
-noyaux, pour engendrer la cascade de réactions :
-</p>
-\begin{align*}
-  p + n_\text{atm} &\rightarrow p + p + \pi^- \\
-  \pi^-+ p_\text{atm} &\rightarrow V_1 + V_2 \\
-  V_1 &\rightarrow p + \pi^-  \\
-  V_2 &\rightarrow \pi^+ + \pi^-  \\
-  \pi^- &\rightarrow \mu^- + \bar{\nu_\mu}  \\
-  \mu^- &\rightarrow e^- + \bar{\nu_e} +  \nu_\mu
-\end{align*}
-
-<p>
-V\(_1\) et V\(_2\) sont des "V-particles", observées par Rochester &amp; Butler
-en 1947. Ces particules neutres n'étaient détectées qu'au travers de leur
-produits de désintégration, ce qui formait un "V" de traces dans le détecteur
-(chambre à brouillard).
-</p>
-
-</div>
-
-<div class="center">
-
-<div class="figure">
-<p><img src="figures/v_particles.jpg" alt="v_particles.jpg" />
-</p>
-<p><span class="figure-number">Figure 5:</span> <b>Photographies de deux événements faisant apparaître la désintégration de deux particules \(\bm{V}\)</b> (référence <a href="http://www.nature.com/physics/looking-back/rochester/index.html">Rochester G. D. &amp; Butler C. C. 1947</a>)</p>
-</div>
-</div>
-
-<div class="QUESTION">
-<ol class="org-ol">
-<li value="1">V\(_1\) se désintègre en émettant un pion et un proton d'impulsions
-respectives \(p_{\pi}c\) = 160 MeV et \(p_{p}c\) = 320 MeV et faisant un angle
-&theta;<sub>1</sub> = 65°. Dans le cas de V\(_2\) deux pions chargés d'impulsions
-\(p_{\pi}c\) = 220 MeV sont émis avec un angle &theta;<sub>2</sub> = 135°. Quelle est la
-masse de la particule mère dans ces deux cas ? Les "V-particles"
-correspondent-elles à des particules connues à l'époque ? La plus massive
-sera notée &Lambda;<sup>0</sup> et la plus légère \(K^0\) dans la suite.</li>
-</ol>
-
-</div>
-
-<p>
-Cascade de réactions : \(p\rightarrow\pi\rightarrow\mu\rightarrow e\)
-Le muon est ainsi détecté pour la première fois car si sa durée de vie propre
-est de 2.2 &mu;s, ce temps est "boosté" par le facteur de Lorentz soit &tau; =
-&gamma;&tau;<sub>0</sub> = quelques ms.
-</p>
 
 <ol class="org-ol">
 <li><p>
-Les particules \(V\)
+PFD: \(\Upsigma\vv{F} = m\vv{a} = \frac{d\vv{p}}{dt}\)
 </p>
-
-<div class="center">
-<p>
-\(V_{1}\rightarrow p + \pi^- \quad V_{2}\rightarrow \pi^+ + \pi^-\)
-</p>
-</div>
 
 <p>
-Conservation de l'énergie et de l'impulsion
+Régime relativiste \(\vv{p} = \gamma{}m\vv{v}\) et donc \(\text{d}\vv{p}/\text{d}t =
+   \gamma{}m\text{d}\vv{v}/\text{d}t\). Or \(\vv{v}=R\dot\theta\vv{u}_\theta\) (\(\dot\theta < 0\)) soit
+\(\text{d}\vv{v}/\text{d}t = -R(\text{d}\theta/\text{d}t)^{2}\vv{u}_{r} = -v^{2}/R\vv{u}_{r}\).
 </p>
-\begin{equation*}
-  \begin{bmatrix}
-    E_{V_1}\\\vv{p_{V_1}}
-  \end{bmatrix}
-  =
-  \begin{bmatrix}
-    E_\pi\\\vv{p_\pi}
-  \end{bmatrix}
-  +
-  \begin{bmatrix}
-    E_p\\\vv{p_p}
-  \end{bmatrix}
-\end{equation*}
-
 \begin{align*}
-  E_{V_1} &= E_\pi + E_p \Leftrightarrow p_{V}^2c^2 + m_{V}^2c^4 = \left[\sqrt{p_\pi^2c^2 + m_\pi^2c^4} + \sqrt{p_p^2c^2 + m_p^2c^4}\right]^2\\
-  \vv{p}_{V} &= \vv{p}_\pi + \vv{p}_p \Leftrightarrow p_{V}^2c^2 = p_\pi^2c^2 + p_p^2c^2 + 2p_\pi p_p c^2\cos\theta
+  \Upsigma\vv{F} &= q\vv{v}\times\vv{B} = -qvB\vv{u}_r\\
+  qvB &= \frac{\gamma{}mv^{2}}{R}\\
+  R &= \frac{\gamma{}mv}{qB} = \frac{p}{qB}\\
 \end{align*}
 
 <p>
-<b>AN :</b>
-</p>
-\begin{align*}
-   p_{V_1}c &= \sqrt{160^2 + 320^2 + 2\cdot160\cdot320\cos 65} = \unit[413]{MeV}\\
-   p_{V_2}c &= \sqrt{220^2 + 220^2 + 2\cdot220^2\cos 135} = \unit[168]{MeV}\\
-   m_{V_1}c^2 &= \left[\sqrt{160^2 + 140^2} + \sqrt{320^2 + 938^2} - 413^2\right]^{1/2} = \unit[1130]{MeV}\\
-   m_{V_2}c^2 &= \left[4\cdot(220^2 + 140^2) - 168^2\right]^{1/2} = \unit[493]{MeV}
-\end{align*}
-
-<p>
-<b>Discussion :</b> À l'époque, seuls le proton, neutron, électron, pion et muon
-sont connus &rarr; \(V_1 = \Lambda^0\) et \(V_2 = K^0\)
+À chaque tour, \(v\nearrow\) avec \(\vv{B}=\text{constante}\) donc \(R\nearrow\)
 </p></li>
 </ol>
 
 <div class="QUESTION">
 <ol class="org-ol">
-<li value="2">Le &Lambda;<sup>0</sup> parcourt une distance de 3.2 cm dans le détecteur avant
-de se désintègrer et le \(K^0\) se désintègre après un vol de 0.8 cm. Quelle
-est la durée de vie de ces deux particules, en faisant une hypothèse non
-relativiste, que l'on justifiera ?</li>
+<li value="2">Montrer que le temps \(t_0\) mis par le proton pour parcourir une trajectoire circulaire dans
+le cyclotron est indépendant de \(v\) pour de petites valeurs de \(v\) (cas non relativiste).</li>
 </ol>
 
 </div>
+
 <ol class="org-ol">
 <li value="2"><p>
-\(d_{\Lambda^0} = \unit[3.2]{cm}\) et \(d_{K^0} = \unit[0.8]{cm}\)
+Calcul de \(t_{0}\)
 </p>
 \begin{align*}
-  T_{\Lambda^0} &= \sqrt{m_{\Lambda^0}^2c^4 + p_{\Lambda^0}^2c^2} - m_{\Lambda^0}c^2 = \unit[73]{MeV} \ll m_{\Lambda^0}c^2\\
-  T_{K^0} &= \sqrt{m_{K^0}^2c^4 + p_{K^0}^2c^2} - m_{K^0}c^2 = \unit[28]{MeV} \ll m_{K^0}c^2
-\end{align*}
-
-\begin{align*}
-  \tau_{\Lambda^0} = \frac{d_{\Lambda^0}}{v}
+  t &= \frac{2\pi R}{v} = \frac{2\pi}{qB}\cdot\gamma{}m
 \end{align*}
 
 <p>
-or \(p=mv\) d'où
+Pour \(v\ll c\), \(\gamma\sim 1\) et donc
 </p>
 \begin{align*}
-  \tau_{\Lambda^0} = \frac{d_{\Lambda^0}\cdot m_{\Lambda^0}}{p} =
-  \frac{d_{\Lambda^0}}{c}\cdot \frac{m_{\Lambda^0}c^2}{pc}
-\end{align*}
-
-<p>
-<b>AN :</b>
-</p>
-\begin{align*}
-  \tau_{\Lambda^0} &= \frac{\unit[0.032]{m}}{\unit[3\,10^8]{m/s}}\cdot\frac{\unit[1130]{MeV}}{\unit[413]{MeV}} = \unit[2.9\,10^{-10}]{s}\\
-  \tau_{K^0} &= \frac{\unit[0.008]{m}}{\unit[3\,10^8]{m/s}}\cdot\frac{\unit[493]{MeV}}{\unit[168]{MeV}} = \unit[7.8\,10^{-11}]{s}
+ t_{0} = \frac{2\pi m}{qB}
 \end{align*}</li>
 </ol>
 
 <div class="QUESTION">
 <ol class="org-ol">
-<li value="3">Quelle est l'interaction responsable de leur désintégration ?</li>
+<li value="3">Calculer dans ce cas l'impulsion et l'énergie cinétique (en MeV), ainsi que le temps de
+parcours \(t_0\) d'une trajectoire circulaire pour \(B\) = 1.5 Tesla et \(R\) = 0.5 m.</li>
 </ol>
 
 </div>
-<ol class="org-ol">
-<li value="3">&tau; est un temps caractéristique d'une désintégration par interaction
-faible : &tau; &gt; 10<sup>-13</sup> s (<i>cf.</i> page 30)</li>
-</ol>
 
-<div class="QUESTION">
 <ol class="org-ol">
-<li value="4">En 1952-1953 on observe, avec l'accélérateur du Brookhaven National
-Laboratory (BNL), que la production de ces "V-particles" se fait
-exclusivement par paires \(p + \pi^- \rightarrow K^0 + \Lambda^0\). Que
-pouvez-vous conjecturer d'après ces faits expérimentaux ?</li>
-</ol>
-
-</div>
-<ol class="org-ol">
-<li value="4">Le fait que ces particules \(K^0\) et \(\Lambda^0\) soient toujours produites par
-paire implique la conservation d'une quantité jusqu'alors inconnue
-&rarr; introduction de <b>l'étrangeté</b> \(S\) comme nouveau nombre quantique.
-Cette quantité est ainsi conservée lors de la production des particules \(V\)
-par <b>interaction forte</b> mais non-conservée lors de leurs désintégrations (par
-interaction faible) : \(S_{K^0}\) = +1, \(S_{\Lambda^0}\) = -1 et \(S\) est nulle
-pour toutes les particules connues jusqu'à présent. Il découlera de ces
-résultats expérimentaux le modèle des quarks introduit par Murray Gell-Mann
-(déjà à l'origine de l'étrangeté pour expliquer les résultats du
-Cosmotron<sup><a id="fnr.3" class="footref" href="#fn.3">3</a></sup> de BNL) au début des années 60, modèle pour lequel il
-obtiendra le prix nobel de Physique en 1969.</li>
-</ol>
-
-<div class="QUESTION">
-<ol class="org-ol">
-<li value="5"><p>
-Au BNL, les réactions
- <div class="footdef"><sup><a id="fn.3" class="footnum" href="#fnr.3">3</a></sup> <div class="footpara"><p class="footpara"> le Cosmotron du laboratoire national de Brookhaven fut le premier synchrotron a accéléré des protons au delà du GeV (1952 &#x2013; 1966) contribuant à la découverte de l'ensemble des mésons chargés de même qu'à la mise en évidence de particules lourdes instables telles que les particules \(V\). </p></div><br/></div>
+<li value="3"><p>
+\(B = 1.5\) T et \(R = 0.5\) m.
 </p>
+
 \begin{align*}
-  p+n&\rightarrow p+\Lambda^0\quad\text{et}\\
-  n+n&\rightarrow \Lambda^0+\Lambda^0
+  p  &= qBR\\
+  \left.pc\right|_\text{Joules} &= qBRc\\
+  \left.pc\right|_\text{eV} &= BRc = 0.5\cdot1.5\cdot3\,10^{8} = \unit[225]{MeV}
+\end{align*}
+
+\begin{align*}
+  T = \frac{1}{2}mv^2 = \frac{p^{2}}{2m} = \frac{p^{2}c^{2}}{2mc^{2}} =
+  \frac{225^{2}}{2\cdot938.3} = \unit[27]{MeV}
+\end{align*}
+
+\begin{align*}
+  t_{0} = \frac{2\pi\,m}{qB} = \frac{2\pi\,mc^{2}}{qBc^{2}} = \unit[44]{ns}
+\end{align*}</li>
+</ol>
+
+<div class="QUESTION">
+<ol class="org-ol">
+<li value="4">À partir de quelle valeur de l'énergie cinétique du proton (que l'on suppose de nouveau
+relativiste), le temps \(t\) mis par celui-ci pour parcourir une trajectoire circulaire dans le
+champ d'induction \(B\) diffère-t-il de plus de 5% du temps \(t_0\) calculé précédemment ? En déduire
+les limites d'un cyclotron.</li>
+</ol>
+
+</div>
+
+<ol class="org-ol">
+<li value="4">\(t_{0} = \frac{2\pi\,m}{qB}\) et \(t = \gamma\frac{2\pi\,m}{qB}=\gamma t_0\)</li>
+</ol>
+
+
+\begin{align*}
+  \frac{t-t_{0}}{t_{0}}&\ge5\%\\
+  \frac{t_\text{lim.}}{t_{0}} &= \gamma_\text{lim.} = 1.05\\
+  T_\text{lim.} = (\gamma_\text{lim.} - 1)mc^{2} &= 5\%\cdot\unit[938.3]{MeV} = \unit[47]{MeV}
 \end{align*}
 
 <p>
-ne sont pas observées. Ceci fournit une limite supérieure sur leur taux
-d'apparition qui est au moins 5 ordres de grandeur inférieur à la réaction
-observée à la question 4). Ce fait expérimental est-il en accord avec votre
-conjecture ?
-</p></li>
+Dans un cyclotron, dès lors que l'énergie par nucléon devient supérieure à ~50 MeV, des problèmes
+relativistes apparaissent <i>i.e.</i> la particule n'est plus accélérée en phase avec le champ
+électrique accélérateur &rarr; <b>synchrocyclotron ou synchrotron</b>
+</p>
+
+<dl class="org-dl">
+<dt>synchrocyclotron</dt><dd>on fait varier la fréquence \(f= \frac{v}{2\pi R}\) d'accélération pour
+compenser la variation de \(v\)</dd>
+<dt>synchrotron</dt><dd>on fait varier le champ magnétique \(B\) pour maintenir la particule sur la même
+trajectoire <i>i.e.</i> le même rayon \(R\)</dd>
+</dl>
+
+
+<div class="QUESTION">
+<ol class="org-ol">
+<li value="5">Dans un synchrotron, le rayon de courbure de la trajectoire des protons est maintenu
+constant au cours de l'accélération, tandis que l'induction \(\vv{B}\), toujours normale à la
+direction de la vitesse, a alors une valeur variable. Sachant qu'en fin d'accélération, les
+protons ont une énergie cinétique \(T\) = 7 TeV pour \(B\) = 5.4 Tesla, calculer le rayon de courbure
+de la trajectoire.</li>
 </ol>
 
 </div>
+
+
 <ol class="org-ol">
-<li value="5">\(p + n \rightarrow p + \Lambda^0\) et \(n + n \rightarrow \Lambda^0 +
-   \Lambda^0\). Ces deux réactions ne conservent pas l'étrangeté \(S\). Elles ne
-peuvent donc se produire par interaction forte. La très faible section
-efficace par rapport à la réaction \(p + p \rightarrow K^0 + \Lambda^0\)
-confirme cette hypothèse : &sigma;<sub>forte</sub> &Gt; &sigma;<sub>faible</sub></li>
+<li value="5"><p>
+\(T\) = 7 TeV et \(B\) = 5.4 T avec \(R = \frac{\gamma mv}{qB} = \frac{pc}{qBc}\). Or
+</p>
+\begin{align*}
+  (pc)^{2} &= E^{2} - m^{2}c^{4}\\
+  &= T^{2} + m^{2}c^{4} + 2Tmc^{2} - m^{2}c^{4}\\
+  &= T\cdot(T + 2mc^{2}) \sim T^{2}
+\end{align*}
+
+<p>
+d'où
+</p>
+\begin{align*}
+  R = \frac{T}{qBc} =
+  \frac{7\,10^{12}\cdot1.6\,10^{19}}{1.6\,10^{19}\cdot5.4\cdot3\,10^{8}} =
+  \unit[4.3]{km}
+\end{align*}
+
+<p>
+soit une circonférence de 26 km.
+</p></li>
 </ol>
 
 <div class="QUESTION">
 <ol class="org-ol">
 <li value="6"><p>
-Pouvez-vous expliquer pourquoi la réaction
-\(\Lambda^0\rightarrow\pi^++\pi^-\) n'est jamais observée ?
+On considère la collision de 2 protons d'énergie cinétique 7 TeV dans des anneaux.
+</p>
+\begin{align*}
+  p + p \rightarrow p + p + N^+ + N^-
+\end{align*}
+
+<p>
+où \(N^+\) et \(N^-\) sont des antiparticules (même masse mais charges électriques opposées). Quelle
+est la masse maximale des particules \(N\) qui pourraient être ainsi créées dans la collision ?
+</p></li>
+</ol>
+
+</div>
+
+<ol class="org-ol">
+<li value="6"><p>
+\(T_{S} = |Q|/2\) avec \(Q = \Upsigma\,m_\text{initiale}c^{2} -
+   \Upsigma\,m_\text{finale}c^{2}\) et
+</p>
+
+\begin{align*}
+  \Upsigma\,m_\text{initiale}c^{2} &= 2\,m_{p}c^{2}\\
+  \Upsigma\,m_\text{finale}c^{2} &= 2\,m_{p}c^{2} + 2\,m_{N}c^{2}
+\end{align*}
+\begin{align*}
+  T_{S} = \frac{2m_{N}c^{2}}{2} = m_{N}c^{2} = \unit[7]{TeV}
+\end{align*}</li>
+</ol>
+
+<div class="QUESTION">
+<ol class="org-ol">
+<li value="7"><p>
+On veut étudier la même réaction
+</p>
+\begin{align*}
+  p + p \rightarrow p + p + N^+ + N^-
+\end{align*}
+
+<p>
+en bombardant une cible d'hydrogène au repos par un faisceau de protons. Déterminer l'énergie
+seuil \(T_S\) pour que la réaction ait lieu, en supposant que les particules \(N\) ont la masse
+déterminée à la question précédente.
+</p></li>
+</ol>
+
+</div>
+
+<ol class="org-ol">
+<li value="7"><p>
+Réaction sur cible fixe
+</p>
+\begin{align*}
+  T_{S} &= \frac{|Q|}{2}\cdot\frac{\Upsigma\,m_{if}c^{2}}{m_{p}c^{2}}\\
+  &= \frac{2m_{N}c^{2}}{2}\cdot\frac{4m_{p}c^{2}+2m_{N}c^{2}}{m_{p}c^{2}}\\
+  &\simeq\frac{2\,(m_{N}c^{2})^{2}}{m_{p}c^{2}}\\
+  &\simeq\unit[100\,10^{15}]{eV} = \unit[100]{PeV}
+\end{align*}</li>
+</ol>
+
+<div class="QUESTION">
+<ol class="org-ol">
+<li value="8">Quel serait alors, dans un champ magnétique \(B\) = 5.4 Tesla, le rayon de courbure de la
+trajectoire d'un proton qui aurait l'énergie cinétique \(T_S\) ?</li>
+</ol>
+
+</div>
+
+<ol class="org-ol">
+<li value="8"><p>
+Rayon de courbure
+</p>
+\begin{align*}
+  R = \frac{pc}{qBc} \simeq \frac{\left.T_{S}\right|_\text{eV}}{Bc} =
+  \frac{100\,\text{PeV}}{5.4\cdot3\,10^{8}} = \unit[60\, 000]{km}
+\end{align*}</li>
+</ol>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org7a88329" class="outline-2">
+<h2 id="org7a88329"><span class="section-number-2">2</span> Accélérateur, section efficace et luminosité</h2>
+<div class="outline-text-2" id="text-2">
+</div>
+<div id="outline-container-orgba95928" class="outline-3">
+<h3 id="orgba95928"><span class="section-number-3">2.1</span> Introduction</h3>
+<div class="outline-text-3" id="text-2-1">
+<p>
+<img src="./figures/solid_angle.png" alt="solid_angle.png" /> Les mesures de section efficace sont des mesures typiques de physique des
+particules. Elles traduisent la probabilité de passage d'un état initial de la matière \(\psi_i\) à un
+état final \(\psi_f\).
 </p>
 
 <p>
-Deux autres familles de particules "étranges" (&Sigma; et &Xi;) ont été
-rapidement découvertes par la suite à la fois au BNL et dans les gerbes
-atmosphériques. Cette profusion de nouvelles particules a initié le modèle
-des quarks (<i>cf.</i> TD4) mais aussi la découverte de la violation de la parité.
+Un détecteur couvrant un angle solide \(\d\Omega\) et situé à un angle \(\theta\) par rapport à l'axe du
+faisceau détectera ainsi \(\d n\) particules par unité de temps
+</p>
+\begin{align*}
+  \d n=\underbrace{\text{flux incident}}_{\substack{\text{nbr. particules incidentes}\\\text{/unité de temps}}}\times\underbrace{\text{ nbr. de noyaux cible}}_{\substack{\text{nbr. centre diffuseurs}\\\text{/unité de volume}}}\times\text{ épaisseur cible}\times\frac{\d\sigma}{\d\Omega}\d\Omega_\text{détection}
+\end{align*}
+
+<p>
+où \(\d\Omega_\text{détection}\) = surface de détection/(distance cible-détecteur)<sup>2</sup> = \(\sin\theta
+\d\theta\d\phi\) avec \(\theta\in[0,\pi]\) et \(\phi\in[0,2\pi]\). Le terme
+\(\left.\frac{\d\sigma}{\d\Omega}\right|_\theta\) est <b>la section efficace différentielle</b> à l'angle
+\(\theta\) et s'exprime en barn par stéradian où 1 barn<sup><a id="fnr.1" class="footref" href="#fn.1">1</a></sup> = 10<sup>-24</sup> cm<sup>2</sup> = 10<sup>-28</sup> m<sup>2</sup>=100
+fm<sup>2</sup>. De la section efficace différentielle, on déduit la section efficace totale \(\sigma\) en
+intégrant sur l'angle solide total \(\d\Omega\) : \(\sigma=\int\frac{\d\sigma}{\d\Omega}\d\Omega\) et
+correspond à la probabilité qu'une particule incidente ait intéragi avec les particules
+constitutives de la cible.
+ <div class="footdef"><sup><a id="fn.1" class="footnum" href="#fnr.1">1</a></sup> <div class="footpara"><p class="footpara"> l'étymologie du mot <i>barn</i> est un peu loufoque : les physiciens américains l'ont adopté lors des recherches sur la bombe atomique pendant la Seconde Guerre mondiale. Le nom de cette nouvelle unité serait issu d'une blague "<i>as big as a barn</i>" (aussi grande qu'une grange) car les sections efficaces de l'uranium 238 étaient très importantes dans le domaine épithermique (forêt de résonance) comparées aux sections efficaces typiques des réactions nucléaires. Initialement les physiciens américains utilisaient ce terme argot de barns dans le but de masquer le sujet de leurs recherches. Cependant après la Seconde Guerre mondiale, le barn est devenu une unité standard de la physique des particules. </p></div><br/></div>
+</p>
+
+\begin{align*}
+  \d n&=\phi\times N\times e\times\frac{\d\sigma}{\d\Omega}\d\Omega\text{ ou }n=\phi\times N\times e\times\sigma\\
+  \text{avec }&N=\frac{\text{nbr. centre diffuseurs}}{\text{unité de volume}}=\rho\times\frac{\mathcal{N}}{M_\text{at.}}\simeq\rho\times\frac{\mathcal{N}}{A}\\
+  \text{où }&\rho = \text{masse volumique ou densité volumique (g/cm$^{3}$)}\\
+  &\mathcal{N} = \text{nombre d'Avogadro}=\unit[6.02\,10^{23}]{mol}^{-1}\\
+  &A = \text{nombre de nucléons} = \text{masse molaire (g/mol)}
+\end{align*}
+
+<p>
+<b>Remarques :</b>
+</p>
+
+<ul class="org-ul">
+<li>l'épaisseur de la cible est souvent donnée en terme de densité surfacique exprimée en g/cm<sup>2</sup> et
+correspond donc au produit de la densité volumique par l'épaisseur physique de la cible.</li>
+
+<li><p>
+le flux \(\phi\) incident est parfois donné en terme d'intensité du faisceau (exprimé en
+Ampères). Le nombre de particules incidentes par unité de temps devient
+</p>
+\begin{align*}
+  \phi=\frac{I}{Ze}\text{ où $e$ correspond à la charge élémentaire}
+\end{align*}</li>
+</ul>
+
+<div class="QUESTION">
+<ol class="org-ol">
+<li><p>
+On veut étudier la diffusion élastique des deutons&nbsp;<sup>2</sup><sub>1</sub>H, d'énergie incidente 30 MeV, sur
+une cible de&nbsp;<sup>63</sup><sub>29</sub>Cu.
+</p>
+
+<p>
+Le faisceau de deutons, de section droite circulaire de 2 cm de diamètre, contient 6 10<sup>10</sup>
+particules s<sup>-1</sup> cm<sup>-2</sup>, et est mesuré dans une cage de Faraday. La cible de&nbsp;<sup>63</sup>Cu a une
+épaisseur de 2 mg/cm<sup>2</sup>. Un détecteur rectangulaire (4 cm &times; 2 cm) est situé à 1 m de la
+cible à l'angle &theta; = 30°.
+</p>
+
+<p>
+Calculer le nombre de deutons détectés par seconde par ce détecteur rectangulaire, sachant qu'à
+l'angle de diffusion &theta; = 30° et à 30 MeV, la section efficace différentielle est de 0.1
+barn/stéradian.
+</p></li>
+</ol>
+
+</div>
+
+<ol class="org-ol">
+<li><p>
+&nbsp;<sup>2</sup><sub>1</sub>H+&nbsp;<sup>63</sup><sub>29</sub>Cu&rarr;&nbsp;<sup>2</sup><sub>1</sub>H+&nbsp;<sup>63</sup><sub>29</sub>Cu
+</p>
+\begin{align*}
+  dn=\phi Ne\frac{\d\sigma}{\d\Omega}d\Omega=\phi\frac{\mathcal{N}\rho_e}{A_\text{cible}}\frac{\d\sigma}{\d\Omega}\d\Omega
+\end{align*}
+
+<p>
+où \(\phi=\phi'\pi R^2\) et \(\phi'=6\,10^{10}\,\text{s}^{-1}\text{.cm}^{-2}\). Le
+nombre de deutons détectés est
+</p>
+
+\begin{align*}
+  \left.dn\right|_{30^\circ}&=\phi\frac{\mathcal{N}\rho_e}{A_\text{cible}}\left.\frac{\d\sigma}{\d\Omega}\right|_{\theta=30^\circ}\frac{S_\text{détecteur}}{d^2_\text{cible-détecteur}}\\
+  &=6\,10^{10}\times\pi\times1^2\times\frac{6.02\,10^{23}\times2\,10^{-3}}{63}\times0.1\,10^{-24}\times\frac{4\times2}{100^2}\\
+  &=\unit[287]{deutons/s}
+\end{align*}</li>
+</ol>
+
+<div class="QUESTION">
+<ol class="org-ol">
+<li value="2"><p>
+On veut étudier la réaction
+</p>
+\begin{align*}
+  ^9_4\text{Be} + ^3_1\text{H} \rightarrow ^3_2\text{He} + ^9_3\text{Li}
+\end{align*}
+
+<p>
+Pour cela, on bombarde une cible de&nbsp;<sup>9</sup>Be de 100 &mu;g/cm<sup>2</sup> avec un faisceau de tritium
+(<sup>3</sup><sub>1</sub>H) de 25 MeV.
+</p>
+<ol class="org-ol">
+<li>Quelle est la section efficace totale de la réaction, sachant que l'intensité du faisceau
+incident est \(I\) = 500 nA et que le nombre de noyaux détectés par seconde est \(n\) = 2000 ?</li>
+
+<li>On détecte dans cette réaction les particules d'<sup>3</sup><sub>2</sub>He. Donner le schéma de principe d'une
+telle expérience. Quelle est l'allure du spectre en énergie des noyaux d'<sup>3</sup><sub>2</sub>He détectés ?</li>
+</ol></li>
+</ol>
+
+</div>
+
+<ol class="org-ol">
+<li value="2">&nbsp;<sup>3</sup><sub>1</sub>H+&nbsp;<sup>9</sup><sub>4</sub>Be&rarr;&nbsp;<sup>3</sup><sub>2</sub>He+&nbsp;<sup>9</sup><sub>3</sub>Li
+
+<ol class="org-ol">
+<li><p>
+Le flux incident \(\phi\) s'exprime en fonction de l'intensité \(I\) du faisceau
+</p>
+\begin{align*}
+  \phi=\frac{I}{Ze}
+\end{align*}
+
+<p>
+Par ailleurs, le nombre de noyaux détectés \(n=\unit[2000]{/s}\) soit
+</p>
+\begin{align*}
+  n&=\phi\times N\times e\times\sigma=2000\\
+  &=\frac{I}{Ze}\times\frac{\mathcal{N}\rho_e}{A_\text{cible}}\times\sigma\\
+  \sigma&=\frac{n\times A_\text{cible}\times Ze}{I\times\mathcal{N}\times\rho_e}\\
+  \sigma&=\unit[9.6\,10^{-29}]{cm}^2=\unit[9.6\,10^{-5}]{barn}=\unit[96]{microbarn}
+\end{align*}</li>
+
+<li><p>
+Principe expérimental
+</p>
+<div class="org-center">
+
+<div class="figure">
+<p><img src="./figures/HBe_HeLi_production.png" alt="HBe_HeLi_production.png" />
+</p>
+</div>
+</div>
+
+<p>
+L'énergie totale est fixé par l'énergie cinétique du faisceau incident (+ les énergies de
+masse de la cible et du faisceau) : la distribution en énergie des noyaux de&nbsp;<sup>3</sup><sub>2</sub>He
+présente des raies correspondant aux niveaux en énergie de&nbsp;<sup>3</sup><sub>2</sub>He (ou&nbsp;<sup>9</sup><sub>3</sub>Li)
+→ <b>énergies quantifiées</b>
+</p></li>
+</ol></li>
+</ol>
+
+<div class="QUESTION">
+<ol class="org-ol">
+<li value="3">Dans les faisceaux d'un anneau de collisions \(e^+e^-\), les électrons (positrons) sont
+regroupés en paquets qui se croisent à chaque tour. Le collisionneur LEP-I auquel on s'intéresse
+ici était un synchrotron de circonférence 27 km, dont le rayon de courbure valait \(R\) ~ 4.5 km et
+dans lequel circulaient, en sens inverses, 4 paquets de \(N_1\) positrons et 4 paquets de \(N_2\)
+électrons.
+
+<ol class="org-ol">
+<li><p>
+On caractérise une région d'intersection des faisceaux par sa luminosité \(\mathcal{L}\), telle
+que le nombre d'interactions par unité de temps soit égal au produit \(\mathcal{L}\sigma\) de la
+luminosité par la section efficace.
+</p>
+
+<p>
+En déduire la dimension et l'unité de \(\mathcal{L}\).
+</p>
+
+<p>
+On peut montrer que la luminosité s'exprime en fonction des intensités \(I_1\) et \(I_2\) des
+courants électriques des faisceaux, du rayon \(R\) de l'anneau et de la surface \(S\) de
+recouvrement des paquets par la relation :
+</p>
+\begin{align*}
+  \mathcal{L} = \frac{2\pi R}{c} \frac{I_1 I_2}{e^2 S}
+\end{align*}
+
+<p>
+où \(e\) est la charge électrique élémentaire.
+</p>
+
+<p>
+Calculer la luminosité \(\mathcal{L}\), en cm<sup>-2</sup>.s<sup>-1</sup>, pour \(I_1\) = \(I_2\) = 3 mA et \(S\) =
+0.5 mm<sup>2</sup>.
+</p></li>
+<li><p>
+Pour déterminer la luminosité effectivement obtenue auprès du collisionneur, on observe en
+général une réaction de référence dont la section efficace est bien connue. Il s'agit ici de
+la diffusion dite "Bhabha" \(e^+ e^- \rightarrow e^+ e^-\) dont la section efficace
+différentielle, à l'approximation des petits angles que l'on utilisera pour le calcul, est :
+</p>
+\begin{align*}
+  \frac{\d\sigma}{\d\Omega} = \frac{16 \alpha^2(\hbar c)^2}{E^2 \theta^4}
+\end{align*}
+
+<p>
+où &alpha; est la constante de structure fine, \(E\) l'énergie totale et &theta; l'angle de
+diffusion.
+</p>
+
+<p>
+Le détecteur qui compte les électrons diffusés a la forme d'une couronne, centrée sur l'axe du
+faisceau. Il couvre tous les angles azimutaux &phi; et les angles polaires &theta; compris entre
+3 et 8 degrés.
+</p>
+
+<ol class="org-ol">
+<li>Déterminer la section efficace de diffusion, à l'énergie \(E\) = 90 GeV.</li>
+
+<li>Si on observe 950 interactions dans ce détecteur en une heure de prise de données, que vaut
+la luminosité associée ?</li>
+</ol></li>
+</ol></li>
+</ol>
+
+</div>
+
+<ol class="org-ol">
+<li value="3"><ol class="org-ol">
+<li><p>
+La luminosité \(\mathcal{L}\) s'exprime comme le rapport du nombre de particules détectés par
+unité de temps sur la section efficace
+</p>
+\begin{align*}
+  \mathcal{L}=\frac{n}{\sigma}
+\end{align*}
+
+<p>
+Ainsi, une réaction/interaction de section efficace \(\sigma\) sera d'autant "mieux" observée
+que la luminosité sera grande et donc que le nombre de particules résultantes de cette
+réaction/interaction sera conséquente. L'unité de luminosité est donc
+</p>
+\begin{align*}
+  \left[\mathcal{L}\right]=\frac{\left[n\right]}{\left[\sigma\right]}=T^{-1}.L^{-2}
+\end{align*}
+
+<p>
+La luminosité dépend de l'intensité de chacun des faisceau entrant en
+collision
+</p>
+\begin{align*}
+  \mathcal{L}&=\frac{2\pi R}{c}\times\frac{I_1\,I_2}{e^2S}\\
+  &=\frac{2\pi\times4.5\,10^3}{3\,10^8}\times\frac{9\,10^{-6}}{(1.6\,10^{-19})^2\times0.5\,10^{-6}}\\
+  &=6.63\,10^{34}\,\text{m}^{-2}\text{.s}^{-1}=6.63\,10^{30}\,\text{cm}^{-2}\text{.s}^{-1}
+\end{align*}</li>
+
+<li><p>
+Diffusion <a href="http://en.wikipedia.org/wiki/Homi_J._Bhabha">Bhabha</a> \(e^+e^-\to e^+e^-\)
+</p>
+<div class="org-center">
+
+<div class="figure">
+<p><img src="./figures/bhabha_diagram.png" alt="bhabha_diagram.png" />
+</p>
+</div>
+</div>
+
+\begin{align*}
+  \frac{d\sigma}{d\Omega}=\frac{16\alpha^2(\hbar c)^2}{E^2\theta^4}
+\end{align*}
+
+<p>
+avec \(E=\unit[90]{GeV}\) et \(\alpha=\frac{e^2}{4\pi\epsilon_0\hbar c}\) où
+\(\hbar c=\unit[197.3]{MeV.fm}\)
+</p>
+<ol class="org-ol">
+<li><p>
+La section efficace \(\sigma\) est égale à
+</p>
+\begin{align*}
+  \sigma&=\int\frac{\d\sigma}{\d\Omega}\d\Omega\\
+  &=\int_0^{2\pi}\int_{\theta_1}^{\theta_2}\sin\theta \d\theta \d\phi\frac{\d\sigma}{\d\Omega}\\
+  &=2\pi\frac{16\,\alpha^2(\hbar c)^2}{E^2}\int_{\theta_1}^{\theta_2}\frac{\sin\theta}{\theta^4}\d\theta
+\end{align*}
+
+<p>
+Dans la mesure où \(\theta\ll1\), \(\sin\theta\sim\theta\) soit
+</p>
+\begin{align*}
+  \sigma=2\pi\frac{16\,\alpha^2(\hbar c)^2}{E^2}\int_{\theta_1}^{\theta_2}\frac{\d\theta}{\theta^3}
+\end{align*}
+
+<p>
+avec \(\theta_1=3^\circ=\unit[0.0524]{rad}\) et \(\theta_2=8^\circ=\unit[0.1396]{rad}\).
+</p>
+\begin{align*}
+  \sigma&=\frac{32\pi\,\alpha^2(\hbar c)^2}{2E^2}\times\underbrace{\left[\frac{1}{\theta_1^2}-\frac{1}{\theta_2^2}\right]}_{=312.9}\\
+  &=\frac{32\pi\times e^4\times\cancel{(\hbar c)^2}}{2\times(4\pi\epsilon_0\cancel{\hbar c})^2\times E^2}\times312.9\\
+  &=\frac{e^2}{\pi\epsilon_0^2\left.E\right|_\text{eV}^2}\times312.9=\unit[4\,10^{-36}]{m}^2=\unit[4\,10^{-8}]{barn}=\unit[40]{nanobarn}
+\end{align*}</li>
+
+<li><p>
+Le nombre d'interaction par seconde est
+\(n=\frac{950}{3600}=\unit[0.2639]{s}^{-1}\). La luminosité est égale à
+</p>
+\begin{align*}
+  \mathcal{L}=\frac{n}{\sigma}=\frac{0.2639}{4\,10^{-36}}=6.553\,10^{34}\,\text{m}^{-2}\text{.s}^{-1}
+\end{align*}
+
+<div class="REMARK">
+<p>
+La luminosité instantanée du LHC est voisine de 10<sup>34</sup> cm<sup>-2</sup>.s<sup>-1</sup> soit 10<sup>-2</sup>
+pb<sup>-1</sup>.s<sup>-1</sup>. À titre de comparaison, le collisionneur \(p\bar{p}\) du Tevratron avait une
+luminosité de 3.2 10<sup>32</sup> cm<sup>-2</sup>.s<sup>-1</sup> ce qui intégré sur son temps d'acquisition de 2001
+à 2008 a fourni une luminosité intégrée de 5000 pb<sup>-1</sup>. En un peu moins d'une semaine de
+prise de données, le LHC a atteint la même luminosité intégrée que le Tevatron.
+</p>
+
+</div></li>
+</ol></li>
+</ol></li>
+</ol>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgc003b5b" class="outline-2">
+<h2 id="orgc003b5b"><span class="section-number-2">3</span> Section efficace et neutrons thermiques</h2>
+<div class="outline-text-2" id="text-3">
+<div class="QUESTION">
+<ol class="org-ol">
+<li><p>
+On appelle neutrons thermiques des neutrons lents en équilibre thermodynamique avec le milieu
+dans lequel ils se trouvent.
+</p>
+
+<p>
+On irradie une cible de&nbsp;<sup>10</sup><sub>5</sub>B avec un faisceau de neutrons thermiques d'énergie
+cinétique \(T\) = 2.5 10<sup>-2</sup> eV, produits par un réacteur, afin de créer des noyaux de&nbsp;<sup>7</sup>Li
+par la réaction :
+</p>
+\begin{align}
+  n_\text{th} + ^{10}_{5}\text{B} \rightarrow \alpha + ^7_3\text{Li}
+\end{align}
+
+<p>
+On détecte les particules &alpha; émises au cours de cette réaction. Quelle est leur énergie
+cinétique \(T_{\alpha}\) ?  On donne les masses nucléaires suivantes, en MeV :
+</p>
+<div class="org-center">
+<p>
+\(m_{\alpha}c^2\) = 3727.398, \(m_{^7\text{Li}}c^2\) = 6533.877, \(m_{^8\text{Li}}c^2\) = 7471.417,
+\(m_{^{10}\text{B}}c^2\) = 9324.495, \(m_{^{11}\text{B}}c^2\) = 10252.615
+</p>
+</div></li>
+</ol>
+
+</div>
+<ol class="org-ol">
+<li><p>
+\(n_\text{th.}+^{10}_{5}\text{B}\rightarrow\alpha+^{7}_{3}\text{Li}\)
+</p>
+
+<p>
+Calcul de la chaleur de réaction \(Q\)
+</p>
+\begin{align*}
+  Q&=m_nc^2+m_{^{10}_{5}\text{B}}c^2-m_\alpha c^2-m_{^{7}_{3}\text{Li}}c^2\\
+  &=939.6 + 9324.495 - 3727.398 - 6533.877=\unit[2.82]{MeV}>0
+\end{align*}
+
+<p>
+La réaction est donc exoénergétique ou spontanée et ne requiert pas nécessairement d'énergie
+cinétique pour les neutrons \(T_{n_\text{th.}}\ll1\sim0\). On considèrera la réaction se faisant au
+repos \(T_{n_\text{th.}}=T_{^{10}_{5}\text{B}}\sim0\). La conservation de l'impulsion implique donc
+que \(\vv{p}_\alpha=-\vv{p}_{^{7}_{3}\text{Li}}\) soit
+</p>
+\begin{align*}
+  p_\alpha^2 c^2&=p_{^{7}_{3}\text{Li}}^2c^2\\
+  T_\alpha^2+2T_\alpha\,m_\alpha c^2&=T_{^{7}_{3}\text{Li}}^2+2T_{^{7}_{3}\text{Li}}\,m_{^{7}_{3}\text{Li}}c^2
+\end{align*}
+
+<p>
+La conservation de l'énergie implique quant à elle
+</p>
+\begin{align*}
+  E_n+E_{^{10}_{5}\text{B}}&=E_\alpha+E_{^{7}_{3}\text{Li}}\\
+  m_nc^2+m_{^{10}_{5}\text{B}}c^2&=m_\alpha c^2+m_{^{7}_{3}\text{Li}}c^2+T_\alpha+T_{^{7}_{3}\text{Li}}\\
+  Q&=T_\alpha+T_{^{7}_{3}\text{Li}}
+\end{align*}
+
+<p>
+soit
+</p>
+\begin{align*}
+  T_\alpha^2+2T_\alpha\,m_\alpha c^2&=\left(Q-T_\alpha\right)^2+2\left(Q-T_\alpha\right)\,m_{^{7}_{3}\text{Li}}c^2\\
+  T_\alpha\times\left(2m_\alpha c^2+2m_{^{7}_{3}\text{Li}}+2Q\right)&=Q^2+2Qm_{^{7}_{3}\text{Li}}c^2\\
+  T_\alpha&=\frac{Q^2+2Qm_{^{7}_{3}\text{Li}}c^2}{2\left(m_n c^2+m_{^{10}_{5}\text{B}}c^2\right)}\\
+  &=\unit[1.8]{MeV}
+\end{align*}</li>
+</ol>
+
+<div class="QUESTION">
+<ol class="org-ol">
+<li value="2"><p>
+On veut maintenant étudier la réaction :
+</p>
+\begin{align}
+  n + ^{11}_{5}\text{B} \rightarrow \alpha + ^8_{3}\text{Li}
+\end{align}
+
+<p>
+Dire, en justifiant votre réponse, si cette réaction est possible avec des neutrons
+thermiques. Donner alors ses conditions d'étude.
 </p></li>
 </ol>
 
 </div>
 <ol class="org-ol">
-<li value="6">\(\Lambda^0 \rightarrow \pi^+ + \pi^-\) : le nombre baryonique n'est pas
-conservé or toutes intéractions conservent ce nombre (y compris l'interaction
-faible)</li>
-</ol>
-</div>
-</div>
-
-<div id="outline-container-orgheadline3" class="outline-2">
-<h2 id="orgheadline3"><span class="section-number-2">3</span> La parité et sa violation</h2>
-<div class="outline-text-2" id="text-3">
-<div class="QUESTION">
-<ol class="org-ol">
-<li value="1">Rappeler la définition de la parité. Quelles sont ses propriétés ? Que
-signifie formellement et intuitivement sa conservation ?</li>
-</ol>
-
-</div>
-<ol class="org-ol">
-<li>L'opérateur parité transforme une fonction \(\psi(\vv{r})\) en
-\(\psi(-\vv{r})\) : \(\hat{\mathcal{P}}\,\psi(\vv{r}) = \psi(-\vv{r})\). Les
-valeurs propres &pi; sont telles que \(\hat{\mathcal{P}}\,\psi(\vv{r}) =
-   \pi\,\psi(\vv{r})\) or \(\hat{\mathcal{P}}^2\,\psi(\vv{r}) =
-   \hat{\mathcal{P}}\,\psi(-\vv{r}) = \psi(\vv{r})\). \(\hat{\mathcal{P}}\) est
-donc unitaire et les valeurs propres sont &pi; = &plusmn;1 (à une phase
-près). L'invariance sous \(\hat{\mathcal{P}}\) <i>i.e.</i> conservation de la parité
-implique qu'il n'y a pas de différence entre "gauche ou droite" (même image
-dans un miroir).</li>
-</ol>
-
-<div class="QUESTION">
-<ol class="org-ol">
-<li value="2">On considère la réaction \(A^+\rightarrow\pi^++\pi^++\pi^-\). Quelle est
-la parité dans l'état final ? On donne \(I(A)=0\) et \(I^\pi(\pi)=0^-\).</li>
-</ol>
-
-</div>
-<ol class="org-ol">
 <li value="2"><p>
-Conservation du moment cinétique total \(\vv{I}\)
+\(n+^{11}_{5}\text{B}\rightarrow\alpha+^{8}_{3}\text{Li}\)
+</p>
+
+<p>
+Calcul de la chaleur de réaction \(Q\)
 </p>
 \begin{align*}
-  \vv{I}(A^+) + \vv{L}_i = \vv{I}(\pi^+) + \vv{I}(\pi^+) + \vv{I}(\pi^-) +
-  \vv{L}_f
+  Q&=m_nc^2+m_{^{11}_{5}\text{B}}c^2-m_\alpha c^2-m_{^{8}_{3}\text{Li}}c^2\\
+  &=939.6 + 10252.615 - 3727.398 - 7471.417=\unit[-6.6]{MeV}<0
 \end{align*}
 
 <p>
-où \(\vv{L}_i\) et \(\vv{L}_f\) sont les moments angulaires relatifs des
-particules en voie d'entrée et de sortie. La conservation de la parité &pi; se
-traduit par l'équation suivante
+<i>i.e.</i> une réaction endoénergétique qui, pour se réaliser, implique que les neutrons aient une
+énergie cinétique minimale \(T_S\) de
 </p>
 \begin{align*}
-  \pi(A^+)\,(-1)^{L_i} = \pi(\pi^+)\,\pi(\pi^+)\,\pi(\pi^-)\,(-1)^{L_f}
-\end{align*}
-
-<p>
-Du fait que \(I(A^+) = I(\pi^\pm) = 0\), on déduit que \(\vv{L_f} - \vv{L_i} =
-   \vv{0}\) soit la parité dans l'état final \(A^+\)
-</p>
-\begin{align*}
-  \pi(A^+) = (-1)\,(-1)\,(-1)\,(-1)^0 = -1
+  T_S&=\frac{|Q|\times\Sigma m_{if}c^2}{2m_{^{11}_{5}\text{B}}c^2}\\
+  &=\unit[7.21]{MeV}\gg\unit[2.5\,10^{-2}]{eV}
 \end{align*}</li>
 </ol>
 
 <div class="QUESTION">
 <ol class="org-ol">
-<li value="3">On considère la réaction \(\theta^+\rightarrow\pi^++\pi^0\). Quelle est la
-parité dans l'état final ? On donne \(I(\theta)=0\) et \(I^\pi(\pi)=0^-\).</li>
+<li value="3">On envoie le faisceau de neutrons thermiques sur une cible de Bore naturel de surface 10
+cm<sup>2</sup>, d'épaisseur 1 &mu;m, de densité &rho; = 2.34 g/cm<sup>3</sup> et de composition isotopique 19.8%
+de&nbsp;<sup>10</sup>B et 80.2% de&nbsp;<sup>11</sup>B. La section efficace totale de la réaction (1) vaut &sigma; =
+3840 b. On sait de plus que la section efficace différentielle est isotrope dans le système du
+centre de masse pour des neutrons lents. Le détecteur de particules &alpha;, de surface utile 5
+cm<sup>2</sup> et situé à 1 m de la cible, enregistre 473 particules &alpha; à la minute. Quel est le flux
+de neutrons thermiques, en cm<sup>-2</sup>s<sup>-1</sup> ?</li>
 </ol>
 
 </div>
 <ol class="org-ol">
 <li value="3"><p>
-Le moment angulaire relatif \(L_i - L_f\) est donc nul.
+Le nombre de particules &alpha; détectées se déduit de l'expression suivante
 </p>
 \begin{align*}
-  \pi(\theta^+) = \pi(\pi^+)\,\pi(\pi^0)\,(-1)^0 = +1
-\end{align*}</li>
+  dn_\alpha=\phi_{n_\text{th.}}\times\frac{\mathcal{N}\times\rho_e}{A_\text{cible}}\times\frac{\d\sigma}{\d\Omega}\d\Omega
+\end{align*}
+
+<p>
+Le flux incident de neutrons thermiques est donc
+</p>
+\begin{align*}
+  \phi_{n_\text{th.}}=\frac{\d n_\alpha\,A_\text{cible}}{\mathcal{N}\times\rho_e\times\frac{\d\sigma}{\d\Omega}\d\Omega}
+\end{align*}
+
+<p>
+Bore naturel → 19.8%&nbsp;<sup>10</sup>B+80.2%&nbsp;<sup>11</sup>B. Le nombre de nucléons moyen
+de la cible est donc
+</p>
+\begin{align*}
+  A_\text{cible}=0.198\times10+0.802\times11=10.802
+\end{align*}
+
+<p>
+Par ailleurs, l'épaisseur de cible \(\rho_e=\unit[2.34\,10^{-4}]{g/cm}^2\) est seulement constituée
+de 19.8% de&nbsp;<sup>10</sup>B nécessaire à la réaction. On introduit donc une épaisseur "effective"
+de&nbsp;<sup>10</sup>B correspondant à 19.8%\(\cdot\rho_e\). Finalement la section efficace différentielle
+\(\frac{\d\sigma}{\d\Omega}\) est isotrope soit \(\frac{\d\sigma}{\d\Omega}=\frac{\sigma}{4\pi}\). On
+déduit ainsi le flux par seconde \(\phi_{n_\text{th.}}\)
+</p>
+\begin{align*}
+  \phi_{n_\text{th.}}&=\frac{\frac{473}{60}\times10.802}{6.02\,10^{23}\times0.198\times2.34\,10^{-4}\times\frac{3840\,10^{-24}}{4\pi}\times\frac{5}{100^2}}\\
+  &=\unit[2\,10^7]{s}^{-1}
+\end{align*}
+
+<p>
+La surface de la cible étant de 10 cm<sup>2</sup>, le flux par seconde et par unité
+de surface est donc \(F=\frac{\phi}{S_\text{cible}}=2\,10^6\,\text{cm}^{-2}\text{.s}^{-1}\).
+</p></li>
 </ol>
 
 <div class="QUESTION">
 <ol class="org-ol">
-<li value="4">On sait par ailleurs que \(\theta^+\) et \(A^+\) ont mêmes masses et durées
-de vie. Qu'est ce que cela vous suggère-t-il ? Ce problème était connu à
-l'époque sous le patronyme de "puzzle &theta;/&tau;".</li>
+<li value="4">On irradie maintenant une cible isotopiquement séparée de&nbsp;<sup>11</sup>B avec des neutrons de 13
+MeV, pour lesquels la section efficace différentielle de la réaction&nbsp;(2) est
+\(\frac{\d\sigma}{\d\Omega}\) = 3.8 mb/sr à 20°. On détecte les particules &alpha; avec le même
+détecteur que précédemment, placé à 20°.
+<ol class="org-ol">
+<li>Quelles mesures supplémentaires faut-il faire afin de déterminer la section efficace totale de
+la réaction ?</li>
+<li>En supposant que ces mesures montrent une dépendance angulaire de la forme \(\d\sigma/\d\Omega =
+      K/\sin\theta\), calculer la section efficace totale.</li>
+</ol></li>
 </ol>
 
 </div>
 <ol class="org-ol">
-<li value="4">\(A^+\) et \(\theta^+\) ont la même masse, mêmes durées de vie et même
-charge électrique. Elles sont donc la même particule mais avec <b>une parité
-différente</b>. Les mésons se désintégrant par interaction faible, ce problème
-aussi connu sous le nom de "puzzle &theta;/&tau;" (&tau;&equiv; A<sup>+</sup>) trouva sa
-solution dans le fait que l'interaction faible ne conserve pas la parité. Ces
-deux particules sont donc une seule et même particule appelée à présent
-\(K^+\).</li>
+<li value="4">\(T_n=\unit[13]{MeV}>T_S=\unit[7.21]{MeV}\) et
+\(\left.\frac{\d\sigma}{\d\Omega}\right|_{20^\circ}=\unit[3.8]{mb/sr}\)
+<ol class="org-ol">
+<li>Pour calculer la section efficace totale \(\sigma\), il s'agit d'intégrer la section efficace
+différentielle sur 4&pi; stéradian : il faut donc connaitre la dépendance angulaire
+\((\theta,\phi)\) de \(\frac{\d\sigma}{\d\Omega}\).</li>
+<li><p>
+\(\frac{\d\sigma}{\d\Omega}=\frac{K}{\sin\theta}\) avec
+\(K=\left.\frac{\d\sigma}{\d\Omega}\right|_{20^\circ}\sin\,20^\circ=\unit[1.3]{mb/sr}\). La
+section efficace totale devient
+</p>
+\begin{align*}
+  \sigma&=\int\frac{\d\sigma}{\d\Omega}\d\Omega=\int_0^{2\pi}\d\phi\int_0^\pi\frac{K}{\sin\theta}\sin\theta \d\theta\\
+  &=2\pi^2\,K=\unit[25.65]{mb}
+\end{align*}</li>
+</ol></li>
 </ol>
 </div>
 </div>
@@ -593,12 +983,10 @@ deux particules sont donc une seule et même particule appelée à présent
 
 
 
-
-
 </div>
 </div></div>
 <div id="postamble" class="status">
-File under <i class="fa fa-github-alt"></i> version control - commit <a href="https://github.com/xgarrido/master_npp_teaching/commit/15edcc3f2b8dcf1e42ba4cd5ec2942d8a7d0a234">15edcc3</a> - 2016-06-28
+File under <i class="fa fa-github-alt"></i> version control - commit <a href="https://github.com/xgarrido/master_npp_teaching/commit/f535f50b5fcd671574e3f14e69aaa10cb02d480d">f535f50</a> - 2020-12-21
 </div>
 </body>
 </html>

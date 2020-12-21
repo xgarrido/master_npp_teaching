@@ -3,10 +3,11 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
-<meta  name="viewport" content="width=device-width, initial-scale=1" />
-<title>TD1 : Cinématique &amp; Accélérateurs</title>
-<meta  name="generator" content="Org-mode" />
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>TD1 : Cinématique</title>
+<meta name="generator" content="Org mode" />
+<meta name="author" content="Xavier Garrido" />
 <link rel="stylesheet" href="css/styles.css" />
                <link rel="stylesheet" href="css/org-pygments.css" />
                <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" />
@@ -15,7 +16,7 @@
 @licstart  The following is the entire license notice for the
 JavaScript code in this tag.
 
-Copyright (C) 2012-2013 Free Software Foundation, Inc.
+Copyright (C) 2012-2018 Free Software Foundation, Inc.
 
 The JavaScript code in this tag is free software: you can
 redistribute it and/or modify it under the terms of the GNU
@@ -83,6 +84,7 @@ for the JavaScript code in this tag.
           extensions: ["cancel.js"],
           Macros: {
               vv: ["{\\vec{#1}}",1],
+              d: "{\\text{d}}",
               Upsigma: "{\\Sigma}",
               Updelta: "{\\Delta}",
               varoiint: "{\\iint}",
@@ -134,168 +136,32 @@ for the JavaScript code in this tag.
 <a href="index.html"><i class="fa fa-home"></i></a><br/>  
 </div>
 <div id="content">
-<h1 class="title">TD1 : Cinématique &amp; Accélérateurs</h1>
+<h1 class="title">TD1 : Cinématique</h1>
 <div style="display:none;">
 <div id="text-table-of-contents">
 <ul class="org-ul">
-<li><a href="././td_np_0.html">TD1 : Cinématique &amp; Accélérateurs</a></li>
-<li><a href="././td_np_1.html">TD2 : Nombres quantiques &amp; Symétries</a></li>
-<li><a href="././td_np_2.html">TD3 : Réactions de production et de désintégration de particules</a></li>
-<li><a href="././td_np_3.html">TD4 : Modèle des quarks &#x2013; Les hadrons</a></li>
-<li><a href="././td_np_4.html">TD5 : Isospin &#x2013; des quarks aux noyaux</a></li>
-<li><a href="././td_np_5.html">TD6 : Structure nucléaire</a></li>
-<li><a href="././td_np_6.html">TD7 : Réactions nucléaires</a></li>
-<li><a href="././td_np_7.html">TD8 : Masses et désintégrations nucléaires</a></li>
-<li><a href="././td_np_8.html">TD9 : Modèle Standard et au-delà : l'interaction faible</a></li>
+<li><a href="././td_np_0.html">TD1 : Cinématique</a></li>
+<li><a href="././td_np_1.html">TD2 : Accélérateurs &amp; section efficace</a></li>
+<li><a href="././td_np_2.html">TD3 : Nombres quantiques &amp; Symétries</a></li>
+<li><a href="././td_np_3.html">TD4 : Réactions de production et de désintégration de particules</a></li>
+<li><a href="././td_np_4.html">TD5 : Modèle Standard et au-delà : l'interaction faible</a></li>
+<li><a href="././td_np_5.html">TD6 : Modèle des quarks &#x2013; Les hadrons</a></li>
+<li><a href="././td_np_6.html">TD7 : Isospin &#x2013; des quarks aux noyaux</a></li>
+<li><a href="././td_np_7.html">TD8 : Structure nucléaire</a></li>
+<li><a href="././td_np_8.html">TD9 : Masses et désintégrations nucléaires</a></li>
 <li><a href="././td_np_9.html">Annexes</a></li>
 <li><a href="././td_np_10.html">Aide-mémoire de Noyaux &amp; Particules</a></li>
 </ul>
 </div>
 </div>
 
-<div id="outline-container-orgheadline1" class="outline-2">
-<h2 id="orgheadline1"><span class="section-number-2">1</span> Introduction</h2>
-<div class="outline-text-2" id="text-1">
-<div class="center">
-<p>
-Noyau :&nbsp;<sup>A</sup><sub>Z</sub>X &rarr; Z protons  + N neutrons = A nucléons (nombre de masse)
-</p>
-</div>
-
-<ul class="org-ul">
-<li>Noyau ayant le "même" nombre de protons Z sont appelés des <b>isotopes</b> tandis que
-ceux présentant le même nombre de nucléons A sont des <b>isobares</b></li>
-
-<li>Noyau &equiv; objet quantique
-<ul class="org-ul">
-<li>une fonction d'onde décrit les propriétés du noyau</li>
-<li>les nombres quantiques associés : spin, parité, isospin</li>
-<li>il possède un état fondamental et des états excités</li>
-<li>chaque état possède un moment électronique et un moment magnétique</li>
-</ul></li>
-</ul>
-
-<p>
-Certains noyaux sont stables, d'autres radioactifs se désintégrant spontanément
-</p>
-
-\begin{align*}
-  ^{14}_{6}\text{C} \rightarrow\,^{14}_{7}\text{N} + e^{-} + \bar{\nu}_{e}
-\end{align*}
-
-<p>
-Pour étudier le noyau, on forme des réactions nucléaires qui obéissent à des
-lois de conservation (charge, nombre de nucléons, parité&#x2026;). On bombarde une
-cible avec &ne; projectiles (&gamma;, e<sup>-</sup>, n, p, ions lourds), à &ne;
-énergies. Ces réactions sont possibles avec &ne; probabilités (section
-efficace). On peut étudier chaque réaction dont les états finaux peuvent
-différer et déterminer la variation de la section efficace en fonction de
-l'énergie incident (fonction d'excitation) ou en fonction de l'angle de sortie
-(distribution angulaire).
-</p>
-
-<p>
-<b>Rayon des noyaux :</b> En 1909, Hans Geiger et Ernest Marsden sous la direction
-d'Ernest Rutherford, mettent en évidence le noyau atomique en étudiant la
-diffusion de particules &alpha; sur des atomes d'or (Au). Antérieurement à cette
-expérience, la matière était conçue sous la forme d'atome contenant deux parties
-chargées électriquement de façons opposées. L'expérience de Rutherford montra
-qu'en réalité le noyau chargé positivement est de taille très petite devant le
-nuage électronique qui l'entoure, chargé négativement.
-</p>
-
-<p>
-En supposant que le noyau soit une sphère uniformément chargée en volume et
-contenant A nucléons
-</p>
-
-\begin{align*}
-  V = \frac{4}{3}\pi\,R^{3} \propto A
-\end{align*}
-
-<p>
-On déduit que le rayon d'un noyau est proportionnel à son nombre de nucléons \(R
-= r_{0} \times A^{1/3}\). Expérimentalement, \(r_{0}\) est compris entre 1.2 et 1.5
-fermi où 1 fm = 10<sup>-15</sup> m = 10<sup>-13</sup> cm. La valeur la plus probable est \(r_{0}\) =
-1.25 fm.
-</p>
-</div>
-</div>
-
-<div id="outline-container-orgheadline2" class="outline-2">
-<h2 id="orgheadline2"><span class="section-number-2">2</span> Ordres de grandeurs</h2>
-<div class="outline-text-2" id="text-2">
 <div class="QUESTION">
 <p>
-Calculer le volume (en cm<sup>3</sup>) et la masse volumique (en g/cm<sup>3</sup>) d'un noyau
-de&nbsp;<sup>12</sup><sub>6</sub>C, qui est le noyau utilisé pour définir l'unité de masse
-atomique. Comparer à la masse volumique des matériaux courants comme le bois ou
-le fer.
+On veut étudier la désintégration en deux photons d'une particule \(a\), d'énergie de masse au repos
+\(mc^2\), animée d'une vitesse \(\beta=v/c\) par rapport au référentiel du laboratoire \(\mathcal{R}\),
+comme indiqué sur la figure ci-dessous.
 </p>
-
-</div>
-
-<ul class="org-ul">
-<li><p>
-Volume du noyau de&nbsp;<sup>12</sup><sub>6</sub>C : approx. sphérique
-</p>
-
-\begin{align*}
-  V = \frac{4}{3}\pi\,R^{3} &= \frac{4}{3}\pi\,(r_{0}\,A^{1/3})^3 \\
-  V(^{12}_{6}\text{C})&= \frac{4}{3}\pi\,(1.25\times12^{1/3})^3 \\
-  &\simeq \unit[100]{fm}^3 = \unit[10^{-37}]{cm}^3
-\end{align*}</li>
-
-<li><p>
-Masse volumique
-&nbsp;<sup>12</sup><sub>6</sub>C &rarr; noyau particulier à partir duquel est défini
-l'unité de masse atomique
-</p>
-
-\begin{align*}
-  \unit[1]{u.m.a} = \frac{\text{masse}(^{12}_{6}\text{C})}{12} = \unit[931.5]{MeV/c}^{2}
-\end{align*}</li>
-</ul>
-
-<p>
-d'où
-</p>
-
-\begin{align*}
-  m(^{12}_{6}\text{C})c^2 &= 12\times\unit[931.5]{MeV} = 12\times931.5\times10^6\times\unit[1.6\,10^{-19}]{J} \\
-  m(^{12}_{6}\text{C})    &= \frac{12\times931.5\times1.6\,10^{-19}}{(3\,10^8)^2} = \unit[2\,10^{-26}]{kg} = \unit[2\,10^{-23}]{g}\\
-\end{align*}
-
-<p>
-On en déduite que la masse volumique est égale à
-</p>
-
-\begin{align*}
-  \rho(^{12}_{6}\text{C}) = \frac{m(^{12}_{6}\text{C})}{V(^{12}_{6}\text{C})} =
-  \frac{2\,10^{-23}}{10^{-37}} = \unit[2\,10^{14}]{g/cm}^3
-\end{align*}
-
-<p>
-À titre de comparaison, le bois a une densité moyenne de 0.6 &#x2013; 1 g/cm<sup>3</sup>, le
-fer environ 10 g/cm<sup>3</sup>, la Terre de 6 g/cm<sup>3</sup> et l'Uranium de 19 g/cm<sup>3</sup>.
-</p>
-
-<p>
-<b>Remarques :</b> la densité au sein d'une étoile à neutrons est voisine de 10<sup>11</sup> g/cm<sup>3</sup>
-</p>
-</div>
-</div>
-
-<div id="outline-container-orgheadline3" class="outline-2">
-<h2 id="orgheadline3"><span class="section-number-2">3</span> Cinématique</h2>
-<div class="outline-text-2" id="text-3">
-<div class="QUESTION">
-<p>
-On veut étudier la désintégration en deux photons d'une particule \(a\), d'énergie
-de masse au repos \(mc^2\), animée d'une vitesse \(\beta=v/c\) par rapport au
-référentiel du laboratoire \(\mathcal{R}\), comme indiqué sur la figure ci-dessous.
-</p>
-<div class="center">
+<div class="org-center">
 
 <div class="figure">
 <p><img src="figures/2gamma.png" alt="2gamma.png" />
@@ -303,18 +169,17 @@ référentiel du laboratoire \(\mathcal{R}\), comme indiqué sur la figure ci-de
 </div>
 </div>
 <ol class="org-ol">
-<li>Exprimer les énergies totales \(E_1\) et \(E_2\) des deux photons dans le
-référentiel \(R\), en fonction de l'angle d'émission commun \(\theta^*\) des
-photons dans le référentiel du centre de masse \(\mathcal{R}'\). En déduire les
-bornes \(E_\text{min}\) et \(E_\text{max}\) de ces énergies.</li>
+<li>Exprimer les énergies totales \(E_1\) et \(E_2\) des deux photons dans le référentiel \(\mathcal{R}\),
+en fonction de l'angle d'émission commun \(\theta^*\) des photons dans le référentiel du centre de
+masse \(\mathcal{R}'\). En déduire les bornes \(E_\text{min}\) et \(E_\text{max}\) de ces énergies.</li>
 </ol>
 
 </div>
 
 <ol class="org-ol">
 <li><p>
-dans \(\mathcal{R}'\) <i>i.e.</i> le référentiel du centre de masse où \(a\) est
-au repos et \(\Upsigma\vv{p}^{*} = \vv{0}\) :
+dans \(\mathcal{R}'\) <i>i.e.</i> le référentiel du centre de masse où \(a\) est au repos et
+\(\Upsigma\vv{p}^{*} = \vv{0}\) :
 </p>
 
 <p>
@@ -340,11 +205,10 @@ or \(E_{1}^{*} = p_{1}^{*}c\) et \(E_{2}^{*} = p_{2}^{*}c\) d'où \(E_{1}^{*} =
 </p>
 
 <p>
-Pour déterminer les valeurs d'énergie et d'impulsion dans le référentiel du
-laboratoire \(\mathcal{R}\), on applique la transformation de Lorentz le long
-de l'axe \(z\) au quadrivecteur énergie-impulsion
+Pour déterminer les valeurs d'énergie et d'impulsion dans le référentiel du laboratoire
+\(\mathcal{R}\), on applique la transformation de Lorentz le long de l'axe \(z\) au quadrivecteur
+énergie-impulsion
 </p>
-
 \begin{equation*}
   \begin{bmatrix}
     E\\p_xc\\p_yc\\p_zc
@@ -384,8 +248,8 @@ soit
 \end{align*}
 
 <p>
-L'énergie minimum \(E_\text{min}\) et maximum \(E_\text{max}\) sont les mêmes
-pour \(E_{1}\) et \(E_{2}\) avec \(\cos\theta^{*}\in[-1;1]\) <i>i.e.</i>
+L'énergie minimum \(E_\text{min}\) et maximum \(E_\text{max}\) sont les mêmes pour \(E_{1}\) et \(E_{2}\)
+avec \(\cos\theta^{*}\in[-1;1]\) <i>i.e.</i>
 </p>
 \begin{align*}
   E_\text{min} &= \frac{\gamma mc^2}{2}(1 - \beta) = \frac{mc^2}{2}\sqrt{\frac{1-\beta}{1+\beta}}\\
@@ -394,33 +258,36 @@ pour \(E_{1}\) et \(E_{2}\) avec \(\cos\theta^{*}\in[-1;1]\) <i>i.e.</i>
 
 <p>
 où \(\gamma=1/\sqrt{1-\beta^{2}}\).
-</p>
-<div class="center">
+</p></li>
+</ol>
+
+
+<div class="org-center">
 
 <div class="figure">
 <p><img src="figures/minimal_energy_kinematics.png" alt="minimal_energy_kinematics.png" />
 </p>
 </div>
-</div></li>
-</ol>
+</div>
 
 <div class="QUESTION">
 <ol class="org-ol">
-<li value="2">On s'intéresse à l'angle d'ouverture de la paire de photons, &omega;,
-dans le référentiel du laboratoire \(\mathcal{R}\) (voir figure). Déterminer
-l'expression de \(\cos\omega\) en fonction de \(\cos\theta^*\).</li>
+<li value="2">On s'intéresse à l'angle d'ouverture de la paire de photons, &omega;, dans le référentiel du
+laboratoire \(\mathcal{R}\) (voir figure). Déterminer l'expression de \(\cos\omega\) en fonction de
+\(\cos\theta^*\).</li>
 </ol>
 
 </div>
+
+
 <ol class="org-ol">
 <li value="2"><p>
 Angle d'ouverture &omega; en fonction de &theta;<sup>*</sup>
 </p>
 
 <p>
-Invariant relativiste \(I = (\Upsigma_{i}E_{i})^{2} -
-  (\Upsigma_{i}\vv{p_{i}}^{*})^{2}\,c^{2}\) constant quelque soit le référentiel
-&rarr; \(I_\text{cdm} = I_\text{lab.}\)
+Invariant relativiste \(I = (\Upsigma_{i}E_{i})^{2} - (\Upsigma_{i}\vv{p_{i}}^{*})^{2}\,c^{2}\)
+ constant quelque soit le référentiel &rarr; \(I_\text{cdm} = I_\text{lab.}\)
 </p>
 
 \begin{align*}
@@ -434,78 +301,69 @@ or \(E_{1} = p_{1}c\) et \(E_{2} = p_{2}c\) d'où
 \begin{align*}
   \frac{(mc^2)^2}{2} &= E_1E_2 - p_1p_2c^2\,\cos\omega\\
   \frac{(mc^2)^2}{2} &= E_1E_2\cdot(1 - \cos\omega)
-\end{align*}
+\end{align*}</li>
+</ol>
+
 
 <p>
-En remplaçant \(E_{1,2}\) par leurs expressions déduites de la question 1), on a
-\(E_{1}E_{2} = \left(\frac{\gamma mc^2}{2}\right)^2\cdot\left(1 -
-  \beta^2\cos^2\theta^*\right)\), soit finalement
+En remplaçant \(E_{1,2}\) par leurs expressions déduites de la question 1), on a \(E_{1}E_{2} =
+   \left(\frac{\gamma mc^2}{2}\right)^2\cdot\left(1 - \beta^2\cos^2\theta^*\right)\), soit finalement
 </p>
 \begin{align*}
   1 - \cos\omega = \frac{2}{\gamma^2\,(1 - \beta^2\cos^2\theta^*)}
 \end{align*}
 
-<div class="center">
+<div class="org-center">
 
-<div id="orgparagraph1" class="figure">
+<div id="org40918d9" class="figure">
 <p><img src="figures/two_photons_kinematics.png" alt="two_photons_kinematics.png" />
 </p>
-<p><span class="figure-number">Figure 3:</span> <b>Variation de l'angle d'émission &omega; entre les deux photons émis</b> <b>en fonction de la vitesse &beta; de la particule désintégrée.</b></p>
+<p><span class="figure-number">Figure 3: </span><b>Variation de l'angle d'émission &omega; entre les deux photons émis</b> <b>en fonction de la vitesse &beta; de la particule désintégrée.</b></p>
 </div>
 </div>
 
 <p>
-La figure <a href="#orgparagraph1">3</a> indique que plus la particule aura une vitesse
- grande et voisine de \(c\), plus l'émission des deux photons se fera vers
- l'avant \(\omega\to0\).
-</p></li>
-</ol>
-</div>
-</div>
+La figure <a href="#org40918d9">3</a> indique que plus la particule aura une vitesse grande et voisine de
+ \(c\), plus l'émission des deux photons se fera vers l'avant \(\omega\to0\).
+</p>
 
-<div id="outline-container-orgheadline4" class="outline-2">
-<h2 id="orgheadline4"><span class="section-number-2">4</span> Énergie seuil</h2>
-<div class="outline-text-2" id="text-4">
+<div id="outline-container-orgee4e2e3" class="outline-2">
+<h2 id="orgee4e2e3"><span class="section-number-2">1</span> Énergie seuil</h2>
+<div class="outline-text-2" id="text-1">
 <div class="QUESTION">
 <p>
-Soit une réaction entre deux particules \(a\) et \(b\), de masses respectives
-\(m_ac^2\) et \(m_bc^2\) :
+Soit une réaction entre deux particules \(a\) et \(b\), de masses respectives \(m_ac^2\) et \(m_bc^2\) :
 </p>
 \begin{align*}
 a + b \rightarrow c + d + e + f
 \end{align*}
 
 <p>
-Les particules produites lors de cette réaction \(c\), \(d\), \(e\) et \(f\) ont pour
-masses respectives \(m_cc^2\), \(m_dc^2\), \(m_ec^2\) et \(m_fc^2\).
+Les particules produites lors de cette réaction \(c\), \(d\), \(e\) et \(f\) ont pour masses respectives
+\(m_cc^2\), \(m_dc^2\), \(m_ec^2\) et \(m_fc^2\).
 </p>
 
 <ol class="org-ol">
-<li value="1">On suppose que la réaction a lieu dans le référentiel du centre de masse
-des particules \(a\) et \(b\) et on se place dans le cas particulier où
-\(m_ac^2=m_bc^2\). Donner l'expression de l'énergie cinétique minimum, encore
-appelée énergie seuil dans le référentiel du centre de masse, que doit
-posséder chacune des deux particules \(a\) et \(b\) pour que la réaction puisse
-avoir lieu ?</li>
+<li value="1">On suppose que la réaction a lieu dans le référentiel du centre de masse des particules \(a\)
+et \(b\) et on se place dans le cas particulier où \(m_ac^2=m_bc^2\). Donner l'expression de
+l'énergie cinétique minimum, encore appelée énergie seuil dans le référentiel du centre de masse,
+que doit posséder chacune des deux particules \(a\) et \(b\) pour que la réaction puisse avoir lieu ?</li>
 </ol>
 
 </div>
 
 <p>
-Par définition, l'énergie seuil est l'énergie <b>juste nécessaire</b> à la création
-des particules en voie de sortie sans que ces dernières n'aient d'impulsion
-<i>i.e.</i> d'énergie cinétique.
+Par définition, l'énergie seuil est l'énergie <b>juste nécessaire</b> à la création des particules en voie
+de sortie sans que ces dernières n'aient d'impulsion <i>i.e.</i> d'énergie cinétique.
 </p>
 
 <ol class="org-ol">
 <li><p>
-Dans le référentiel du centre de masse, on applique la conservation de
-l'énergie totale sachant que les particules produites sont au repos <i>i.e.</i>
-\(\vv{p_c}^* = \vv{p_d}^* = \vv{p_e}^* = \vv{p_f}^* = \vv{0}\). Par ailleurs,
-\(\vv{p_a}^* = -\vv{p_b}^*\) donc \(T_{a} = T_{b} = T_{S}\) et étant donné que
-\(m_{a} = m_{b}\), l'énergie totale de la particule a est égale à celle de la
-particule \(b\). En appliquant le principe de conservation de l'énergie totale,
-on obtient
+Dans le référentiel du centre de masse, on applique la conservation de l'énergie totale sachant
+que les particules produites sont au repos <i>i.e.</i> \(\vv{p_c}^* = \vv{p_d}^* = \vv{p_e}^* =
+   \vv{p_f}^* = \vv{0}\). Par ailleurs, \(\vv{p_a}^* = -\vv{p_b}^*\) donc \(T_{a} = T_{b} = T_{S}\) et
+étant donné que \(m_{a} = m_{b}\), l'énergie totale de la particule \(a\) est égale à celle de la
+particule \(b\). En appliquant le principe de conservation de l'énergie totale, on obtient
 </p>
 \begin{align*}
   E_a^* + E_b^* &= m_cc^2 + m_dc^2 + m_ec^2 + m_fc^2 = \Upsigma m_\text{finale}c^2\\
@@ -520,37 +378,36 @@ soit
 \end{align*}
 
 <p>
-En définissant \(Q\) comme la chaleur de réaction <i>i.e.</i> l'énergie disponible
-dans la réaction où \(Q = \Upsigma m_\text{initiale}c^{2} - \Upsigma
-   m_\text{finale}c^{2}\) et \(T_{S} = |Q|/2\), on distingue 3 situations :
+En définissant \(Q\) comme la chaleur de réaction <i>i.e.</i> l'énergie disponible dans la réaction où \(Q
+   = \Upsigma m_\text{initiale}c^{2} - \Upsigma m_\text{finale}c^{2}\) et \(T_{S} = |Q|/2\), on
+distingue 2 situations :
 </p>
 
 <dl class="org-dl">
-<dt>Q &gt; 0</dt><dd>la réaction est éxoénergétique c'est-à-dire spontanée. Dans ce cas,
-il n'y a pas d'énergie seuil, la réaction se faisant d'elle même,</dd>
-<dt>Q &lt; 0</dt><dd>la réaction est dite endoénergétique et n'est envisageable qu'à la
-condition de fournir de l'énergie (cinétique) en voie d'entrée.</dd>
+<dt>Q &gt; 0</dt><dd>la réaction est éxoénergétique c'est-à-dire spontanée. Dans ce cas, il n'y a pas
+d'énergie seuil, la réaction se faisant d'elle même,</dd>
+<dt>Q &lt; 0</dt><dd>la réaction est dite endoénergétique et n'est envisageable qu'à la condition de
+fournir de l'énergie (cinétique) en voie d'entrée.</dd>
 </dl></li>
 </ol>
 
+
 <div class="QUESTION">
 <ol class="org-ol">
-<li value="2">On suppose à présent que la réaction a lieu dans le référentiel du
-laboratoire, c'est-à-dire qu'on envoie une particule \(a\), d'énergie cinétique
-\(T_a\), sur une particule \(b\) au repos. Quelle est l'expression de la valeur
-minimale \(T_a\), encore appelée \(T_S\) ou énergie seuil dans le référentiel du
-laboratoire, pour que la réaction ait lieu ?</li>
+<li value="2">On suppose à présent que la réaction a lieu dans le référentiel du laboratoire, c'est-à-dire
+qu'on envoie une particule \(a\), d'énergie cinétique \(T_a\), sur une particule \(b\) au repos. Quelle
+est l'expression de la valeur minimale \(T_a\), encore appelée \(T_S\) ou énergie seuil dans le
+référentiel du laboratoire, pour que la réaction ait lieu ?</li>
 </ol>
 
 </div>
 
 <ol class="org-ol">
 <li value="2"><p>
-Réaction dans le référentiel du laboratoire : soit un faisceau de particule
-\(a\) envoyé sur une cible fixe constituée de particule \(b \rightarrow \vv{p_b}
-   = \vv{0}\). L'énergie seuil est la valeur minimale de \(T_{a}\) suffisant à la
-création des particules \(c, d, e, f\) au repos. L'invariant relativiste \(I\)
-est égal à
+Réaction dans le référentiel du laboratoire : soit un faisceau de particule \(a\) envoyé sur
+une cible fixe constituée de particule \(b \rightarrow \vv{p_b} = \vv{0}\). L'énergie seuil est la
+valeur minimale de \(T_{a}\) suffisant à la création des particules \(c, d, e, f\) au
+repos. L'invariant relativiste \(I\) est égal à
 </p>
 \begin{align*}
   I_\text{lab.} = \left(\Upsigma m_\text{finale}c^2\right)^2 &= \left(\Upsigma E\right)^2 - \left(\Upsigma pc\right)^2\\
@@ -559,8 +416,8 @@ est égal à
 \end{align*}
 
 <p>
-or \(E^{2} = p^{2}c^{2} + m^{2}c^{4} = (T + mc^{2})^{2} \rightarrow (pc)^{2} =
-   T^{2} + 2Tmc^{2}\). On déduit ainsi l'expression de \(I_\text{lab.}\)
+or \(E^{2} = p^{2}c^{2} + m^{2}c^{4} = (T + mc^{2})^{2} \rightarrow (pc)^{2} = T^{2} +
+   2Tmc^{2}\). On déduit ainsi l'expression de \(I_\text{lab.}\)
 </p>
 \begin{align*}
   I_\text{lab.} = \left(\Upsigma m_\text{finale}c^2\right)^2 &= T_S^2 + 2T_S\Upsigma m_\text{initiale}c^2 + \left(\Upsigma m_\text{initiale}c^2\right)^2 - T_S^2 - 2T_Sm_ac^2\\
@@ -578,6 +435,7 @@ Finalement,
  2T_Sm_bc^2 &= |Q|\cdot\left(\Upsigma m_\text{finale}c^2 + \Upsigma m_\text{initiale}c^2\right)
 \end{align*}
 
+
 <p>
 L'énergie cinétique minimum du faisceau incident est ainsi
 </p>
@@ -588,294 +446,9 @@ L'énergie cinétique minimum du faisceau incident est ainsi
 \end{align*}
 </div>
 </div>
-
-<div id="outline-container-orgheadline7" class="outline-2">
-<h2 id="orgheadline7"><span class="section-number-2">5</span> Accélérateurs</h2>
-<div class="outline-text-2" id="text-5">
-</div><div id="outline-container-orgheadline5" class="outline-3">
-<h3 id="orgheadline5"><span class="section-number-3">5.1</span> Introduction</h3>
-<div class="outline-text-3" id="text-5-1">
-<dl class="org-dl">
-<dt>cyclotron</dt><dd>Le cyclotron est un type d’accélérateur de particules circulaire
-inventé par Ernest Orlando Lawrence et Milton S. Livingston de l'université
-de Californie à Berkeley au début des années 1930. Dans un cyclotron, les
-particules placées dans un champ magnétique suivent une trajectoire en
-forme de spirale et sont accélérées par un champ électrique alternatif à
-des énergies de quelques MeV à une trentaine de MeV.</dd>
-<dt>synchrocyclotron</dt><dd>Le cyclotron perd de son efficacité quand on cherche à
-accélérer des protons au-delà de 10 à 20 MeV, en raison de la variation
-relativiste de la masse qui perturbe le fonctionnement quand elle atteint
-une grandeur de 1 ou 2 %. Un synchrocyclotron est un cyclotron dont la
-fréquence du champ électrique est changée (progressivement diminuée) pour
-compenser le gain de masse des particules accélérées pendant que leur
-vitesse commence à approcher la vitesse de la lumière. Le synchrocyclotron
-permet d'atteindre des énergies de l'ordre de centaines de MeV. Le premier
-synchrocyclotron a été construit à l’Université de Californie (Berkeley)
-en 1946.</dd>
-<dt>synchrotron</dt><dd>La caractéristique du synchrotron est que l'intensité du champ
-magnétique de l'anneau est adaptée de façon synchrone à l'énergie du
-faisceau de particules, afin de les maintenir sur une trajectoire fixe. Il
-peut en outre y avoir un second anneau, avec des particules tournant en
-sens inverse, afin de réaliser des collisions entre particules avec une
-énergie utilisable très élevée. Ce sont des collisionneurs.</dd>
-</dl>
-</div>
-</div>
-<div id="outline-container-orgheadline6" class="outline-3">
-<h3 id="orgheadline6"><span class="section-number-3">5.2</span> Exercice</h3>
-<div class="outline-text-3" id="text-5-2">
-<div class="QUESTION">
-<p>
-Un proton de masse au repos \(m\), de vitesse \(\vv{v}\), se déplaçant dans un champ
-d'induction \(\vv{B}\) normal à \(\vv{v}\), parcourt une trajectoire circulaire de
-rayon \(R\) dans un cyclotron.
-</p>
-<ol class="org-ol">
-<li>Établir la relation liant \(R\) à \(m, q, v\) et \(B\) dans la cas relativiste.</li>
-</ol>
-
-</div>
-
-<p>
-Proton de masse \(m = \unit[938.27]{MeV/c}^{2}\) se déplaçant à la vitesse
-\(\vv{v}\) dans un champ d'induction \(\vv{B}\) normal à \(\vv{v}\).
-</p>
-
-<ol class="org-ol">
-<li><p>
-PDF: \(\Upsigma\vv{F} = m\vv{a} = \frac{d\vv{p}}{dt}\)
-</p>
-
-<p>
-Régime relativiste \(m = \gamma{}m_{0} \rightarrow \vv{p} =
-   \gamma{}m_{0}\vv{v}\) et donc \(\text{d}\vv{p}/\text{d}t =
-   \gamma{}m_{0}\text{d}\vv{v}/\text{d}t\). Or \(\text{d}\vv{v}/\text{d}t =
-   R(\text{d}\theta/\text{d}t)^{2}\vv{u}_{r} = v^{2}/R\vv{u}_{r}\). Soit
-</p>
-\begin{align*}
-  \Upsigma\vv{F} &= q\vv{v}\times\vv{B} = qvB\vv{u}_r\\
-  qvB &= \frac{\gamma{}m_{0}v^{2}}{R}\\
-  R &= \frac{\gamma{}mv}{qB} = \frac{p}{qB}\\
-\end{align*}
-
-<p>
-À chaque tour, \(v\nearrow\) avec \(\vv{B}=\text{constante}\) donc \(R\nearrow\)
-</p></li>
-</ol>
-
-<div class="QUESTION">
-<ol class="org-ol">
-<li value="2">Montrer que le temps \(t_0\) mis par le proton pour parcourir une
-trajectoire circulaire dans le cyclotron est indépendant de \(v\) pour de
-petites valeurs de \(v\) (cas non relativiste).</li>
-</ol>
-
-</div>
-<ol class="org-ol">
-<li value="2"><p>
-Calcul de \(t_{0}\)
-</p>
-\begin{align*}
-  \frac{\text{d}\theta}{\text{d}t} &= \omega = \frac{v}{R} = \frac{qbR}{\gamma{}mR} =
-  \frac{qB}{\gamma{}m}\\
-  t_{0} &= \frac{2\pi}{\omega} = \frac{2\pi}{qB}\cdot\gamma{}m
-\end{align*}
-
-<p>
-Pour \(v\ll c\), \(\gamma\sim 1\) et donc
-</p>
-\begin{align*}
- t_{0} = \frac{2\pi m}{qB}
-\end{align*}</li>
-</ol>
-
-<div class="QUESTION">
-<ol class="org-ol">
-<li value="3">Calculer dans ce cas l'impulsion et l'énergie cinétique (en MeV), ainsi
-que le temps de parcours \(t_0\) d'une trajectoire circulaire pour \(B\) = 1.5
-Tesla et \(R\) = 0.5 m.</li>
-</ol>
-
-</div>
-<ol class="org-ol">
-<li value="3"><p>
-\(B = 1.5\) T et \(R = 0.5\) m.
-</p>
-
-\begin{align*}
-  p  &= qBR\\
-  pc &= qRBc\\
-  pc &= 0.5\cdot1.5\cdot3\,10^{8} = \unit[225]{MeV}
-\end{align*}
-
-\begin{align*}
-  T = \frac{p^{2}}{2m} = \frac{p^{2}c^{2}}{2mc^{2}} =
-  \frac{225^{2}}{2\cdot938.3} = \unit[27]{MeV}
-\end{align*}
-
-\begin{align*}
-  t_{0} = \frac{2\pi\,m}{qB} = \frac{2\pi\,mc^{2}}{qBc^{2}} = \unit[44]{ns}
-\end{align*}</li>
-</ol>
-
-<div class="QUESTION">
-<ol class="org-ol">
-<li value="4">À partir de quelle valeur de l'énergie cinétique du proton (que l'on
-suppose de nouveau relativiste), le temps \(t\) mis par celui-ci pour parcourir
-une trajectoire circulaire dans le champ d'induction \(B\) diffère-t-il de plus
-de 5% du temps \(t_0\) calculé précédemment ? En déduire les limites d'un
-cyclotron.</li>
-</ol>
-
-</div>
-<ol class="org-ol">
-<li value="4"><p>
-\(t = \frac{2\pi\gamma\,m}{qB}\) et \(t_{0} = \frac{2\pi\,m}{qB}\)
-</p>
-
-\begin{align*}
-  \frac{t-t_{0}}{t_{0}}&\ge5\%\\
-  \frac{t_{lim.}}{t_{0}} &= \gamma = 1.05\\
-  T = (\gamma - 1)mc^{2} &= 5\%\cdot\unit[938.3]{MeV} = \unit[47]{MeV}
-\end{align*}
-
-<p>
-Dans un cyclotron, dès lors que l'énergie par nucléon devient supérieure à
-~50 MeV, des problèmes relativistes apparaissent <i>i.e.</i> la particule n'est
-plus accélérée en phase avec le champ électrique accélérateur &rarr;
-<b>synchrocyclotron ou synchrotron</b>
-</p></li>
-</ol>
-
-<div class="QUESTION">
-<ol class="org-ol">
-<li value="5">Dans un synchrotron, le rayon de courbure de la trajectoire des protons
-est maintenu constant au cours de l'accélération, tandis que l'induction
-\(\vv{B}\), toujours normale à la direction de la vitesse, a alors une valeur
-variable. Sachant qu'en fin d'accélération, les protons ont une énergie
-cinétique \(T\) = 7 TeV pour \(B\) = 5.4 Tesla, calculer le rayon de courbure de
-la trajectoire.</li>
-</ol>
-
-</div>
-<ol class="org-ol">
-<li value="5"><p>
-La fréquence de rotation \(f = \frac{v}{2\pi R} = \frac{qB}{2\pi m}\)
-</p>
-<dl class="org-dl">
-<dt>synchrocyclotron</dt><dd>on fait varier la fréquence \(f\) d'accélération pour
-compenser la variation de \(v\)</dd>
-<dt>synchrotron</dt><dd>on fait varier le champ magnétique \(B\) pour maintenir la
-particule sur la même trajectoire <i>i.e.</i> le même rayon \(R\)</dd>
-</dl>
-<p>
-\(T\) = 7 TeV et \(B\) = 5.4 T avec \(R = \frac{\gamma mv}{qB} = \frac{pc}{qBc}\). Or
-</p>
-\begin{align*}
-  (pc)^{2} &= E^{2} - m^{2}c^{4}\\
-  &= T^{2} + m^{2}c^{4} + 2Tmc^{2} - m^{2}c^{4}\\
-  &= T\cdot(T + 2mc^{2}) \sim T^{2}
-\end{align*}
-
-<p>
-d'où
-</p>
-\begin{align*}
-  R = \frac{T}{qBc} =
-  \frac{7\,10^{12}\cdot1.6\,10^{19}}{1.6\,10^{19}\cdot5.4\cdot3\,10^{8}} =
-  \unit[4.3]{km}
-\end{align*}
-
-<p>
-soit une circonférence de 26 km.
-</p></li>
-</ol>
-
-<div class="QUESTION">
-<ol class="org-ol">
-<li value="6"><p>
-On considère la collision de 2 protons d'énergie cinétique 7 TeV dans
-des anneaux.
-</p>
-\begin{align*}
-  p + p \rightarrow p + p + N^+ + N^-
-\end{align*}
-
-<p>
-où \(N^+\) et \(N^-\) sont des antiparticules (même masse mais charges
-électriques opposées). Quelle est la masse maximale des particules \(N\) qui
-pourraient être ainsi créées dans la collision ?
-</p></li>
-</ol>
-
-</div>
-<ol class="org-ol">
-<li value="6"><p>
-\(T_{S} = |Q|/2\) avec \(Q = \Upsigma\,m_\text{initiale}c^{2} -
-   \Upsigma\,m_\text{finale}c^{2}\) et
-</p>
-
-\begin{align*}
-  \Upsigma\,m_\text{initiale}c^{2} &= 2\,m_{p}c^{2}\\
-  \Upsigma\,m_\text{finale}c^{2} &= 2\,m_{p}c^{2} + 2\,m_{N}c^{2}
-\end{align*}
-\begin{align*}
-  T_{S} = \frac{2m_{N}c^{2}}{2} = m_{N}c^{2} = \unit[7]{TeV}
-\end{align*}</li>
-</ol>
-
-<div class="QUESTION">
-<ol class="org-ol">
-<li value="7"><p>
-On veut étudier la même réaction
-</p>
-\begin{align*}
-  p + p \rightarrow p + p + N^+ + N^-
-\end{align*}
-
-<p>
-en bombardant une cible d'hydrogène au repos par un faisceau de
-protons. Déterminer l'énergie seuil \(T_S\) pour que la réaction ait lieu, en
-supposant que les particules \(N\) ont la masse déterminée à la question
-précédente.
-</p></li>
-</ol>
-
-</div>
-<ol class="org-ol">
-<li value="7"><p>
-Réaction sur cible fixe
-</p>
-\begin{align*}
-  T_{S} &= \frac{|Q|}{2}\cdot\frac{\Upsigma\,m_{if}c^{2}}{m_{p}c^{2}}\\
-  &= \frac{2m_{N}c^{2}}{2}\cdot\frac{4m_{p}c^{2}+2m_{N}c^{2}}{m_{p}c^{2}}\\
-  &\simeq\frac{2\,(m_{N}c^{2})^{2}}{m_{p}c^{2}}\\
-  &\simeq\unit[100\,10^{6}]{GeV} = \unit[100]{PeV}
-\end{align*}</li>
-</ol>
-
-<div class="QUESTION">
-<ol class="org-ol">
-<li value="8">Quel serait alors, dans un champ magnétique \(B\) = 5.4 Tesla, le rayon de
-courbure de la trajectoire d'un proton qui aurait l'énergie cinétique \(T_S\) ?</li>
-</ol>
-
-</div>
-<ol class="org-ol">
-<li value="8"><p>
-Rayon de courbure
-</p>
-\begin{align*}
-  R = \frac{pc}{qBc} \simeq \frac{T_{S}(\text{eV})}{Bc} =
-  \frac{100\,\text{PeV}}{5.4\cdot3\,10^{8}} = \unit[60\, 000]{km}
-\end{align*}</li>
-</ol>
-</div>
-</div>
-</div>
 </div>
 <div id="postamble" class="status">
-File under <i class="fa fa-github-alt"></i> version control - commit <a href="https://github.com/xgarrido/master_npp_teaching/commit/15edcc3f2b8dcf1e42ba4cd5ec2942d8a7d0a234">15edcc3</a> - 2016-06-28
+File under <i class="fa fa-github-alt"></i> version control - commit <a href="https://github.com/xgarrido/master_npp_teaching/commit/f535f50b5fcd671574e3f14e69aaa10cb02d480d">f535f50</a> - 2020-12-21
 </div>
 </body>
 </html>

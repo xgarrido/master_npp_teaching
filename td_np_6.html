@@ -3,10 +3,11 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
-<meta  name="viewport" content="width=device-width, initial-scale=1" />
-<title>TD7 : Réactions nucléaires</title>
-<meta  name="generator" content="Org-mode" />
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>TD7 : Isospin &#x2013; des quarks aux noyaux</title>
+<meta name="generator" content="Org mode" />
+<meta name="author" content="Xavier Garrido" />
 <link rel="stylesheet" href="css/styles.css" />
                <link rel="stylesheet" href="css/org-pygments.css" />
                <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" />
@@ -15,7 +16,7 @@
 @licstart  The following is the entire license notice for the
 JavaScript code in this tag.
 
-Copyright (C) 2012-2013 Free Software Foundation, Inc.
+Copyright (C) 2012-2018 Free Software Foundation, Inc.
 
 The JavaScript code in this tag is free software: you can
 redistribute it and/or modify it under the terms of the GNU
@@ -83,6 +84,7 @@ for the JavaScript code in this tag.
           extensions: ["cancel.js"],
           Macros: {
               vv: ["{\\vec{#1}}",1],
+              d: "{\\text{d}}",
               Upsigma: "{\\Sigma}",
               Updelta: "{\\Delta}",
               varoiint: "{\\iint}",
@@ -134,753 +136,548 @@ for the JavaScript code in this tag.
 <a href="index.html"><i class="fa fa-home"></i></a><br/>  
 </div>
 <div id="content">
-<h1 class="title">TD7 : Réactions nucléaires</h1>
+<h1 class="title">TD7 : Isospin &#x2013; des quarks aux noyaux</h1>
 <div style="display:none;">
 <div id="text-table-of-contents">
 <ul class="org-ul">
-<li><a href="././td_np_0.html">TD1 : Cinématique &amp; Accélérateurs</a></li>
-<li><a href="././td_np_1.html">TD2 : Nombres quantiques &amp; Symétries</a></li>
-<li><a href="././td_np_2.html">TD3 : Réactions de production et de désintégration de particules</a></li>
-<li><a href="././td_np_3.html">TD4 : Modèle des quarks &#x2013; Les hadrons</a></li>
-<li><a href="././td_np_4.html">TD5 : Isospin &#x2013; des quarks aux noyaux</a></li>
-<li><a href="././td_np_5.html">TD6 : Structure nucléaire</a></li>
-<li><a href="././td_np_6.html">TD7 : Réactions nucléaires</a></li>
-<li><a href="././td_np_7.html">TD8 : Masses et désintégrations nucléaires</a></li>
-<li><a href="././td_np_8.html">TD9 : Modèle Standard et au-delà : l'interaction faible</a></li>
+<li><a href="././td_np_0.html">TD1 : Cinématique</a></li>
+<li><a href="././td_np_1.html">TD2 : Accélérateurs &amp; section efficace</a></li>
+<li><a href="././td_np_2.html">TD3 : Nombres quantiques &amp; Symétries</a></li>
+<li><a href="././td_np_3.html">TD4 : Réactions de production et de désintégration de particules</a></li>
+<li><a href="././td_np_4.html">TD5 : Modèle Standard et au-delà : l'interaction faible</a></li>
+<li><a href="././td_np_5.html">TD6 : Modèle des quarks &#x2013; Les hadrons</a></li>
+<li><a href="././td_np_6.html">TD7 : Isospin &#x2013; des quarks aux noyaux</a></li>
+<li><a href="././td_np_7.html">TD8 : Structure nucléaire</a></li>
+<li><a href="././td_np_8.html">TD9 : Masses et désintégrations nucléaires</a></li>
 <li><a href="././td_np_9.html">Annexes</a></li>
 <li><a href="././td_np_10.html">Aide-mémoire de Noyaux &amp; Particules</a></li>
 </ul>
 </div>
 </div>
 
-<div id="outline-container-orgheadline1" class="outline-2">
-<h2 id="orgheadline1"><span class="section-number-2">1</span> Introduction</h2>
+<div id="outline-container-org7c384c6" class="outline-2">
+<h2 id="org7c384c6"><span class="section-number-2">1</span> Couplages nucléon-nucléon et nucléon-pion</h2>
 <div class="outline-text-2" id="text-1">
-<p>
-<img src="./figures/solid_angle.png" alt="solid_angle.png" />
-Les mesures de section efficace sont des mesures typiques de physique des
-particules. Elles traduisent la probabilité de passage d'un état initial de la
-matière \(\psi_i\) à un état final \(\psi_f\).
-</p>
-
-<p>
-Un détecteur couvrant un angle solide \(d\Omega\) et situé à un angle \(\theta\) par
-rapport à l'axe du faisceau détectera ainsi \(dn\) particules par unité de temps
-</p>
-\begin{align*}
-  dn=\underbrace{\text{flux incident}}_{\substack{\text{nbr. particules incidentes}\\\text{/unité de temps}}}\times\underbrace{\text{ nbr. de noyaux cible}}_{\substack{\text{nbr. centre diffuseurs}\\\text{/unité de volume}}}\times\text{ épaisseur cible}\times\frac{d\sigma}{d\Omega}d\Omega
-\end{align*}
-
-<p>
-où \(d\Omega\) = surface de détection/(distance cible-détecteur)<sup>2</sup> = \(\sin\theta
-d\theta d\phi\) avec \(\theta\in[0,\pi]\) et \(\phi\in[0,2\pi]\). Le terme
-\(\left.\frac{d\sigma}{d\Omega}\right|_\theta\) est <b>la section efficace
-différentielle</b> à l'angle \(\theta\) et s'exprime en barn par stéradian où 1 barn<sup><a id="fnr.1" class="footref" href="#fn.1">1</a></sup>
-= 10<sup>-24</sup> cm<sup>2</sup> = 10<sup>-28</sup> m<sup>2</sup>=100 fm<sup>2</sup>. De la section efficace
-différentielle, on déduit la section efficace totale \(\sigma\) en intégrant sur
-l'angle solide total \(d\Omega\) : \(\sigma=\int\frac{d\sigma}{d\Omega}d\Omega\) et
-correspond à la probabilité qu'une particule incidente ait intéragi avec les
-particules constitutives de la cible.
- <div class="footdef"><sup><a id="fn.1" class="footnum" href="#fnr.1">1</a></sup> <div class="footpara"><p class="footpara"> l'étymologie du mot <i>barn</i> est un peu loufoque : les physiciens américains l'ont adoptée lors des recherches sur la bombe atomique pendant la Seconde Guerre mondiale. Le nom de cette nouvelle unité serait issue d'une blague "<i>as big as a barn</i>" (aussi grande qu'une grange) car les sections efficaces de l'uranium 238 étaient très importantes dans le domaine épithermique (forêt de résonance) comparées aux sections efficaces typiques des réactions nucléaires. Initialement les physiciens américains utilisaient ce terme argot de barns dans le but de masquer le sujet de leurs recherches. Cependant après la Seconde Guerre mondiale, le barn est devenu une unité standard de la physique des particules. </p></div><br/></div>
-</p>
-
-\begin{align*}
-  dn&=\phi\times N\times e\times\frac{d\sigma}{d\Omega}d\Omega\text{ ou }n=\phi\times N\times e\times\sigma\\
-  \text{avec }&N=\frac{\text{nbr. centre diffuseurs}}{\text{unité de volume}}=\rho\times\frac{\mathcal{N}}{M_\text{at.}}\simeq\rho\times\frac{\mathcal{N}}{A}\\
-  \text{où }&\rho = \text{masse volumique ou densité volumique (g/cm$^{3}$)}\\
-  &\mathcal{N} = \text{nombre d'Avogadro}=\unit[6.02\,10^{23}]{mol}^{-1}\\
-  &A = \text{nombre de nucléons} = \text{masse molaire (g/mol)}
-\end{align*}
-
-<p>
-<b>Remarques :</b>
-</p>
-
-<ul class="org-ul">
-<li>l'épaisseur de la cible est souvent donnée en terme de densité surfacique
-exprimée en g/cm<sup>2</sup> et correspond donc au produit de la densité volumique par
-l'épaisseur physique de la cible.</li>
-
-<li><p>
-le flux \(\phi\) incident est parfois donné en terme d'intensité du faisceau
-(exprimé en Ampères). Le nombre de particules incidentes par unité de temps
-devient
-</p>
-\begin{align*}
-  \phi=\frac{I}{Ze}\text{ où $e$ correspond à la charge élémentaire}
-\end{align*}</li>
-</ul>
-</div>
-</div>
-
-<div id="outline-container-orgheadline2" class="outline-2">
-<h2 id="orgheadline2"><span class="section-number-2">2</span> Accélérateur, section efficace et luminosité</h2>
-<div class="outline-text-2" id="text-2">
 <div class="QUESTION">
 <ol class="org-ol">
-<li><p>
-On veut étudier la diffusion élastique des deutons&nbsp;<sup>2</sup><sub>1H</sub>, d'énergie
-incidente 30 MeV, sur une cible de&nbsp;<sup>63</sup><sub>29</sub>Cu.
-</p>
-
-<p>
-Le faisceau de deutons, de section droite circulaire de 2 cm de diamètre,
-contient 6 10<sup>10</sup> particules s<sup>-1</sup> cm<sup>-2</sup>, et est mesuré dans une cage de
-Faraday. La cible de&nbsp;<sup>63</sup>Cu a une épaisseur de 2 mg/cm<sup>2</sup>. Un détecteur
-rectangulaire (4 cm &times; 2 cm) est situé à 1 m de la cible à l'angle &theta;
-= 30°.
-</p>
-
-<p>
-Calculer le nombre de deutons détectés par seconde par ce détecteur
-rectangulaire, sachant qu'à l'angle de diffusion &theta; = 30° et à 30 MeV, la
-section efficace différentielle est de 0.1 barn/stéradian.
-</p></li>
+<li>Quelles sont les valeurs possibles \(\vv{T}\) et \(T_3\) pour l'isospin d'un
+système résultant du couplage de deux nucléons ?</li>
 </ol>
 
 </div>
+
 <ol class="org-ol">
 <li><p>
-&nbsp;<sup>2</sup><sub>1</sub>H+&nbsp;<sup>63</sup><sub>29</sub>Cu&rarr;&nbsp;<sup>2</sup><sub>1</sub>H+&nbsp;<sup>63</sup><sub>29</sub>Cu
+Système de deux nucléons :
+</p>
+
+<p>
+\(\vv{T}=\Sigma\,\vv{t}_i\) et \(T_3=\Sigma\,t_{3i}\) or selon Gell-Mann &amp;
+Nishijima \(t_3=Q/e - Y/2\). Les neutrons et protons étant des baryons,
+l'hypercharge \(Y\) est égale à 1 et donc \(t_3(n) = -1/2\) et \(t_3(p) =
+   +1/2\). Ces deux baryons appartiennent ainsi au doublet d'isospin
+\(\vv{T}=\vv{1}/2\).
+</p>
+
+<p>
+L'isospin d'un système de deux nucléons est donc égal à
 </p>
 \begin{align*}
-  dn=\phi Ne\frac{d\sigma}{d\Omega}d\Omega=\phi\frac{\mathcal{N}\rho_e}{A_\text{cible}}\frac{d\sigma}{d\Omega}d\Omega
+  \vv{T} = \frac{\vv{1}}{2} + \frac{\vv{1}}{2} = \vv{0}\text{ ou }\vv{1}
 \end{align*}
 
 <p>
-où \(\phi=\phi'\pi R^2\) et \(\phi'=6\,10^{10}\,\text{s}^{-1}\text{.cm}^{-2}\). Le
-nombre de deutons détectés est
+On déduit ainsi l'existence
 </p>
-\begin{align*}
-  \left.dn\right|_{30^\circ}&=\phi\frac{\mathcal{N}\rho_e}{A_\text{cible}}\left.\frac{d\sigma}{d\Omega}\right|_{\theta=30^\circ}\frac{S_\text{détecteur}}{d^2_\text{cible-détecteur}}\\
-  &=6\,10^{10}\times\pi\times1^2\times\frac{6.02\,10^{23}\times2\,10^{-3}}{63}\times0.1\,10^{-24}\times\frac{4\times2}{100^2}\\
-  &=\unit[287]{deutons/s}
-\end{align*}</li>
+
+<ul class="org-ul">
+<li>d'un singulet d'isospin \(\vv{T}=\vv{0}\), \(T_3=0\) soit l'état
+\(\ket{TT_3}=\ket{0\,0}\),</li>
+<li>d'un triplet d'isospin \(\vv{T}=\vv{1}\), \(T_3=-1,0,+1\) définissant les
+états \(\ket{1\,-1}\), \(\ket{1\,0}\), \(\ket{1\,1}\).</li>
+</ul></li>
 </ol>
 
 <div class="QUESTION">
 <ol class="org-ol">
 <li value="2"><p>
-On veut étudier la réaction
+Quelles sont les propriétés de symétrie des fonctions d'onde d'isospin
+en fonction de \(\vv{T}\) et de \(T_3\), dans l'échange des deux nucléons ?
+</p>
+
+<p>
+On rappelle que les coefficients de Clebsch-Gordan vérifient les relations
+suivantes :
 </p>
 \begin{align*}
-  ^9_4\text{Be} + ^3_1\text{H} \rightarrow ^3_2\text{He} + ^9_3\text{Li}
+  \psh{t_2t_1t_{32}t_{31}}{TT_3} &= \psh{t_1t_2-t_{31}-t_{32}}{T-T_3}\\
+  & = (-1)^{(T-t_1-t_2)} \psh{t_1t_2t_{31}t_{32}}{TT_3}
+\end{align*}</li>
+</ol>
+
+</div>
+
+
+<ol class="org-ol">
+<li value="2"><p>
+Fonction d'onde d'isospin
+</p>
+\begin{align*}
+  \ket{TT_3}=\sum_{t_{31}}\sum_{t_{32}}\,\psh{t_1t_2t_{31}t_{32}}{TT_3}\ket{t_1t_2t_{31}t_{32}}
 \end{align*}
 
 <p>
-Pour cela, on bombarde une cible de&nbsp;<sup>9</sup>Be de 100 &mu;g/cm<sup>2</sup> avec un
-faisceau de tritium (<sup>3</sup><sub>1</sub>H) de 25 MeV.
+où le terme \(\psh{t_1t_2t_{31}t_{32}}{TT_3}\) correspond au coefficient de
+Clebsch-Gordan. Dans l'échange des deux particules 1,2, ce coefficient
+devient
 </p>
-<ol class="org-ol">
-<li>Quelle est la section efficace totale de la réaction, sachant que
-l'intensité du faisceau incident est \(I\) = 500 nA et que le nombre de
-noyaux détectés par seconde est \(n\) = 2000 ?</li>
+\begin{align*}
+  \psh{t_2t_1t_{32}t_{31}}{TT_3}=(-1)^{T-t_1-t_2}\,\psh{t_1t_2t_{31}t_{32}}{TT_3}
+\end{align*}
 
-<li>On détecte dans cette réaction les particules d'<sup>3</sup><sub>2</sub>He. Donner le
-schéma de principe d'une telle expérience. Quelle est l'allure du spectre
-en énergie des noyaux d'<sup>3</sup><sub>2</sub>He détectés ?</li>
-</ol></li>
+<p>
+Si \(T-t_1-t_2\) est impair la fonction d'onde est antisymétrique et si
+\(T-t_1-t_2\) est pair, la fonction d'onde d'isospin est symétrique.
+</p>
+
+<p>
+Dans le cas d'un système de deux nucléons \(t_{1,2}=1/2\) et donc la fonction
+d'onde d'isospin est antisymétrique si \(T-1\) est impair et symétrique si
+\(T-1\) est pair<sup><a id="fnr.1" class="footref" href="#fn.1">1</a></sup>.
+ <div class="footdef"><sup><a id="fn.1" class="footnum" href="#fnr.1">1</a></sup> <div class="footpara"><p class="footpara"> la fonction d'onde d'isospin des couples \(\ket{nn}\) et \(\ket{pp}\) est symétrique. Toutefois et comme nous le verrons dans l'exercice sur la parité intrinsèque du pion, la fonction d'onde globale de ces états demeure antisymétrique en raison du principe de Pauli généralisé qui impose que deux fermions soient dans des états quantiques différents. </p></div><br/></div>
+</p>
+</ol>
+
+
+<div class="QUESTION">
+<ol class="org-ol">
+<li value="3">Donner, à un facteur de phase près, les fonctions d'onde d'un système de
+deux nucléons pour les différentes valeurs possibles de \(\vv{T}\) et \(T_3\).</li>
 </ol>
 
 </div>
 <ol class="org-ol">
-<li value="2">&nbsp;<sup>3</sup><sub>1</sub>H+&nbsp;<sup>9</sup><sub>4</sub>Be&rarr;&nbsp;<sup>3</sup><sub>2</sub>He+&nbsp;<sup>9</sup><sub>3</sub>Li
+<li value="3">État singulet, \(T=0\), \(T_3=0\) est antisymétrique soit
+\(\ket{0\,0}=\frac{1}{\sqrt{2}}\left(\ket{pn}-\ket{np}\right)\). L'état triplet
+\(T=1\), \(T_3=-1,0,1\) est quant à lui symétrique. On obtient ainsi
 
-<ol class="org-ol">
-<li><p>
-Le flux incident \(\phi\) s'exprime en fonction de l'intensité \(I\) du faisceau
-</p>
-\begin{align*}
-  \phi=\frac{I}{Ze}
-\end{align*}
-
-<p>
-Par ailleurs, le nombre de noyaux détectés \(n=2000\) soit
-</p>
-\begin{align*}
-  n&=\phi\times N\times e\times\sigma=2000\\
-  &=\frac{I}{Ze}\times\frac{\mathcal{N}\rho_e}{A_\text{cible}}\times\sigma\\
-  \sigma&=\frac{n\times A_\text{cible}\times Ze}{I\times\mathcal{N}\times\rho_e}\\
-  \sigma&=\unit[9.6\,10^{-29}]{cm}^2=\unit[9.6\,10^{-5}]{barn}=\unit[96]{microbarn}
-\end{align*}</li>
-
-<li><p>
-Principe expérimental
-</p>
-<div class="center">
-
-<div class="figure">
-<p><img src="./figures/HBe_HeLi_production.png" alt="HBe_HeLi_production.png" />
-</p>
-</div>
-</div>
-
-<p>
-L'énergie totale est fixé par l'énergie cinétique du faisceau incident (+
-les énergies de masse de la cible et du faisceau) : la distribution en
-énergie des noyaux de&nbsp;<sup>3</sup><sub>2</sub>He présente des raies correspondant aux
-niveaux en énergie de&nbsp;<sup>3</sup><sub>2</sub>He (ou&nbsp;<sup>9</sup><sub>3</sub>Li) → <b>énergies quantifiées</b>
-</p></li>
-</ol></li>
+<ul class="org-ul">
+<li>\(\ket{1\,1}=\ket{pp}\) car \(T_3=t_{31}+t_{32}\)</li>
+<li>\(\ket{1\,0}=\frac{1}{\sqrt{2}}\left(\ket{pn}+\ket{np}\right)\)</li>
+<li>\(\ket{1\,-1}=\ket{nn}\)</li>
+</ul></li>
 </ol>
 
 <div class="QUESTION">
 <ol class="org-ol">
-<li value="3">Dans les faisceaux d'un anneau de collisions \(e^+e^-\), les électrons
-(positrons) sont regroupés en paquets qui se croisent à chaque tour. Le
-collisionneur LEP-I auquel on s'intéresse ici était un synchrotron de
-circonférence 27 km, dont le rayon de courbure valait \(R\) ~ 4.5 km et dans
-lequel circulaient, en sens inverses, 4 paquets de \(N_1\) positrons et 4
-paquets de \(N_2\) électrons.
+<li value="4">Les particules \(\pi^-\), \(\pi^0\) et \(\pi^+\) (appelées pions ou mésons
+\(\pi\)) ont des masses très voisines. Comme pour les nucléons, on leur
+attribue un isospin \(T\). Déterminer les valeurs \(\vv{T}\) et \(T_3\). On
+utilisera la formule de Gell-Mann et Nishijima.</li>
+</ol>
 
+</div>
 <ol class="org-ol">
-<li><p>
-On caractérise une région d'intersection des faisceaux par sa luminosité
-\(\mathcal{L}\), telle que le nombre d'interactions par unité de temps soit
-égal au produit \(\mathcal{L}\sigma\) de la luminosité par la section
-efficace.
+<li value="4"><p>
+Pions : \(\pi^{-},\pi^{0},\pi^{+}\)
 </p>
 
 <p>
-En déduire la dimension et l'unité de \(\mathcal{L}\).
-</p>
-
-<p>
-On peut montrer que la luminosité s'exprime en fonction des intensités
-\(I_1\) et \(I_2\) des courants électriques des faisceaux, du rayon \(R\) de
-l'anneau et de la surface \(S\) de recouvrement des paquets par la
-relation :
-</p>
-\begin{align*}
-  \mathcal{L} = \frac{2\pi R}{c} \frac{I_1 I_2}{e^2 S}
-\end{align*}
-
-<p>
-où \(e\) est la charge électrique élémentaire.
-</p>
-
-<p>
-Calculer la luminosité \(\mathcal{L}\), en cm<sup>-2</sup>.s<sup>-1</sup>, pour \(I_1\) =
-\(I_2\) = 3 mA et \(S\) = 0.5 mm<sup>2</sup>.
+Les pions étant des mésons sans saveur, l'hypercharge est ainsi nulle. On
+déduit ainsi de la formule de Gell-Mann &amp; Nishijima, les valeurs de \(T_3\) qui
+sont alors égales à la charge électrique de ces particules. \(T_3\) étant par
+ailleurs compris entre \(-T\) et \(+T\), ces 3 mésons appartiennent ainsi au
+triplet d'isospin \(\vv{T}=\vv{1}\).
 </p></li>
-<li><p>
-Pour déterminer la luminosité effectivement obtenue auprès du
-collisionneur, on observe en général une réaction de référence dont la
-section efficace est bien connue. Il s'agit ici de la diffusion dite
-"Bhabha" \(e^+ e^- \rightarrow e^+ e^-\) dont la section efficace
-différentielle, à l'approximation des petits angles que l'on utilisera
-pour le calcul, est :
-</p>
-\begin{align*}
-  \frac{d\sigma}{d\Omega} = \frac{16 \alpha^2 c)^2}{E^2 \theta^4}
-\end{align*}
+</ol>
 
-<p>
-où &alpha; est la constante de structure fine, \(E\) l'énergie totale et
-&theta; l'angle de diffusion.
-</p>
-
-<p>
-Le détecteur qui compte les électrons diffusés a la forme d'une couronne,
-centrée sur l'axe du faisceau. Il couvre tous les angles azimutaux &phi; et
-les angles polaires &theta; compris entre 3 et 8 degrés.
-</p>
-
+<div class="QUESTION">
 <ol class="org-ol">
-<li>Déterminer la section efficace de diffusion, à l'énergie \(E\) = 90 GeV.</li>
-
-<li>Si on observe 950 interactions dans ce détecteur en une heure de prise
-de données, que vaut la luminosité associée ?</li>
-</ol></li>
-</ol></li>
+<li value="5">Quelles sont les valeurs possibles de \(\vv{T}\) et \(T_3\) pour un système
+pion-nucléon ?</li>
 </ol>
 
 </div>
+
 <ol class="org-ol">
-<li value="3"><ol class="org-ol">
+<li value="5"><p>
+Système pion-nucléon
+</p>
+
+<p>
+L'isospin d'un pion est \(\vv{t}(\pi)=\vv{1}\), celui d'un nucléon
+\(\vv{t}(N=n,p)=\vv{1}/2\). Par composition des isospins, un système pion-nucléon
+peut prendre pour valeur d'isospin \(\vv{T}(\pi N)\)
+</p>
+
+\begin{align*}
+  |t(\pi) - t(N)| &\leq T(\pi N)\leq t(\pi) + t(N)\\
+  \frac{\vv{1}}{2}&\leq \vv{T}(\pi N)\leq\frac{\vv{3}}{2}
+\end{align*}
+
+<p>
+On déduit ainsi l'existence
+</p>
+
+<ul class="org-ul">
+<li>d'un doublet d'isospin \(\vv{T}=\vv{1}/2\) avec \(T_3=\pm1/2\)</li>
+<li>d'un quadruplet d'isospin \(\vv{T}=\vv{3}/2\) avec \(T_3=\pm1/2, \pm3/2\)</li>
+</ul></li>
+</ol>
+
+<div class="QUESTION">
+<ol class="org-ol">
+<li value="6">Donner les fonctions d'onde des systèmes physiques \(\ket{\pi^+p}\) et
+\(\ket{\pi^+n}\) comme superposition des états \(\ket{TT_3}\).</li>
+</ol>
+
+<p>
+Les valeurs des coefficients de Clebsch-Gordan sont données en annexe.
+</p>
+
+</div>
+
+<ol class="org-ol">
+<li value="6">Systèmes physiques \(\ket{\pi^+p}\), \(\ket{\pi^+n}\)&#x2026;
+
+<ul class="org-ul">
 <li><p>
-La luminosité \(\mathcal{L}\) s'exprime comme le rapport du nombre de
-particules détectés par unité de temps sur la section efficace
+\(\ket{\pi^+p}\) : \(t_3(\pi^+)=+1\) et \(t_3(p)=1/2\) d'où
+\(T_3(\pi^+p)=t_3(\pi^+)+t_3(p)=3/2\). La valeur de \(T_3(\pi^+p)\) implique
+nécessairement que \(\vv{T}\) soit égal à \(\vv{3}/2\).
 </p>
-\begin{align*}
-  \mathcal{L}=\frac{n}{\sigma}
-\end{align*}
 
-<p>
-Ainsi, une réaction/interaction de section efficace \(\sigma\) sera d'autant
-"mieux" observée que la luminosité sera grande et donc que le nombre de
-particules résultantes de cette réaction/interaction sera
-conséquente. L'unité de luminosité est donc
-</p>
 \begin{align*}
-  \left[\mathcal{L}\right]=\frac{\left[n\right]}{\left[\sigma\right]}=T^{-1}.L^{-2}
-\end{align*}
-
-<p>
-La luminosité dépend de l'intensité de chacun des faisceau entrant en
-collision
-</p>
-\begin{align*}
-  \mathcal{L}&=\frac{2\pi R}{c}\times\frac{I_1\,I_2}{e^2S}\\
-  &=\frac{2\pi\times4.5\,10^3}{3\,10^8}\times\frac{9\,10^{-6}}{(1.6\,10^{-19})^2\times0.5\,10^{-6}}\\
-  &=6.63\,10^{34}\,\text{m}^2\text{.s}^{-1}=6.63\,10^{30}\,\text{cm}^2\text{.s}^{-1}
+  \ket{\pi^+p}=\ket{TT_3}=\ket{\tfrac{3}{2}\tfrac{3}{2}}
 \end{align*}</li>
 
 <li><p>
-Diffusion <a href="http://en.wikipedia.org/wiki/Homi_J._Bhabha">Bhabha</a> \(e^+e^-\to e^+e^-\)
+\(\ket{\pi^+n}\) : \(t_3(\pi^+)=+1\) et \(t_3(n)=-1/2\) d'où
+\(T_3(\pi^+n)=t_3(\pi^+)+t_3(n)=1/2\). Il existe donc deux valeurs de
+\(\vv{T}\) possibles à savoir \(\vv{T}=\vv{1}/2\) et
+\(\vv{T}=\vv{3}/2\). \(\ket{\pi^+n}\) est donc la superposition de deux états
+d'isospin (ce système physique n'est donc pas état propre d'isospin)
 </p>
-<div class="center">
-
-<div class="figure">
-<p><img src="./figures/bhabha_diagram.png" alt="bhabha_diagram.png" />
-</p>
-</div>
-</div>
 
 \begin{align*}
-  \frac{d\sigma}{d\Omega}=\frac{16\alpha^2(\hbar c)^2}{E^2\theta^4}
+  \ket{\pi^+n}=\ket{TT_3}=\alpha\ket{\tfrac{1}{2}\tfrac{1}{2}}+\beta\ket{\tfrac{3}{2}\tfrac{1}{2}}
 \end{align*}
 
 <p>
-avec \(E=\unit[90]{GeV}\) et \(\alpha=\frac{e^2}{4\pi\epsilon_0\hbar c}\) où
-\(\hbar c=\unit[197.3]{MeV.fm}\)
-</p>
-<ol class="org-ol">
-<li><p>
-La section efficace totale \(\sigma\) est égale à
+où
 </p>
 \begin{align*}
-  \sigma&=\int\frac{d\sigma}{d\Omega}d\Omega\\
-  &=\int_0^{2\pi}\int_{\theta_1}^{\theta_2}\sin\theta d\theta d\phi\frac{d\sigma}{d\Omega}\\
-  &=2\pi\frac{16\,\alpha^2(\hbar c)^2}{E^2}\int_{\theta_1}^{\theta_2}\frac{\sin\theta}{\theta^4}d\theta
+  \alpha=\psh{1\tfrac{1}{2}1-\tfrac{1}{2}}{\tfrac{1}{2}\tfrac{1}{2}}=\sqrt{\tfrac{2}{3}}
 \end{align*}
 
 <p>
-Dans la mesure où \(\theta\ll1\), \(\sin\theta\sim\theta\) soit
+et
 </p>
 \begin{align*}
-  \sigma=2\pi\frac{16\,\alpha^2(\hbar c)^2}{E^2}\int_{\theta_1}^{\theta_2}\frac{d\theta}{\theta^3}
+  \beta=\psh{1\tfrac{1}{2}1-\tfrac{1}{2}}{\tfrac{3}{2}\tfrac{1}{2}}=\sqrt{\tfrac{1}{3}}
 \end{align*}
 
 <p>
-avec \(\theta_1=3^\circ=\unit[0.0524]{rad}\) et \(\theta_2=8^\circ=\unit[0.1396]{rad}\).
+donc
 </p>
 \begin{align*}
-  \sigma&=\frac{32\pi\,\alpha^2(\hbar c)^2}{2E^2}\times\underbrace{\left[\frac{1}{\theta_1^2}-\frac{1}{\theta_2^2}\right]}_{=312.9}\\
-  &=\frac{32\pi\times e^4\times\cancel{(\hbar c)^2}}{2\times(4\pi\epsilon_0\cancel{\hbar c})^2\times E^2}\times312.9\\
-  &=\frac{e^2}{\pi\epsilon_0^2\left.E\right|_\text{eV}^2}\times312.9=\unit[4\,10^{-36}]{m}^2=\unit[4\,10^{-8}]{barn}=\unit[40]{nanobarn}
+  \ket{\pi^+n}=\ket{TT_3}=\sqrt{\tfrac{2}{3}}\ket{\tfrac{1}{2}\tfrac{1}{2}}+\sqrt{\tfrac{1}{3}}\ket{\tfrac{3}{2}\tfrac{1}{2}}
 \end{align*}</li>
-
-<li><p>
-Le nombre d'interaction par seconde est
-\(n=\frac{950}{3600}=\unit[0.2639]{s}^{-1}\). La luminosité est égale à
-</p>
-\begin{align*}
-  \mathcal{L}=\frac{n}{\sigma}=\frac{0.2639}{4\,10^{-36}}=6.553\,10^{34}\,\text{m}^{-2}\text{.s}^{-1}
-\end{align*}
-
-<div class="REMARK">
-<p>
-La luminosité instantanée du LHC est voisine de 10<sup>34</sup> cm<sup>-2</sup>.s<sup>-1</sup>
-soit 10<sup>-2</sup> pb<sup>-1</sup>.s<sup>-1</sup>. À titre de comparaison, le collisionneur
-\(p\bar{p}\) du Tevratron avait une luminosité de 3.2 10<sup>32</sup>
-cm<sup>-2</sup>.s<sup>-1</sup> ce qui intégré sur son temps d'acquisition de 2001 à
-2008 a fourni une luminosité intégrée de 5000 pb<sup>-1</sup>. En un peu moins
-d'une semaine de prise de données, le LHC a atteint la même luminosité
-intégrée que le Tevatron.
-</p>
-
-</div></li>
-</ol></li>
-</ol></li>
+</ul></li>
 </ol>
 </div>
 </div>
 
-<div id="outline-container-orgheadline3" class="outline-2">
-<h2 id="orgheadline3"><span class="section-number-2">3</span> Section efficace et neutrons thermiques</h2>
+<div id="outline-container-orgac226c0" class="outline-2">
+<h2 id="orgac226c0"><span class="section-number-2">2</span> Parité intrinsèque du \(\pi^{-}\)</h2>
+<div class="outline-text-2" id="text-2">
+<div class="QUESTION">
+<p>
+Quand des pions négatifs de très basse énergie sont ralentis dans du deutérium,
+ils peuvent, par interaction coulombienne, occuper des états liés du deuton et
+constituer des atomes \(\pi^-\) mésiques. Ils peuvent atteindre, en émettant des
+rayons X, l'état fondamental 1s puis être finalement capturés par le deuton
+dans cet état, sous l'effet des interactions nucléaires, via la réaction :
+</p>
+\begin{align*}
+  \pi^- + d \rightarrow n + n
+\end{align*}
+
+<p>
+La parité intrinsèque du méson \(\pi^-\) a été déterminée par l'observation de
+cette réaction, où \(d\) est le deutérium, état lié proton-neutron de spin-parité
+\(I^{\pi} = 1^+\). Le \(\pi^-\) de spin 0 étant capturé à l'arrêt, on peut montrer
+que le moment orbital relatif du deutérium et du \(\pi^-\) est nul.
+</p>
+
+<ol class="org-ol">
+<li>La voie d'entrée. Quel est le moment cinétique total du système \(\pi^- d\)
+initial ? Exprimer sa parité en fonction de la parité intrinsèque du
+\(\pi^-\). La réaction étant due à une interaction forte, montrer que la
+détermination de la parité du système neutron-neutron est une mesure de la
+parité du \(\pi^-\).</li>
+</ol>
+
+</div>
+
+
+<ol class="org-ol">
+<li><p>
+Moment cinétique total du système \(\pi^-d\)
+</p>
+
+\begin{align*}
+  \vv{I}_\text{entrée} = \vv{I}(\pi d) &= \vv{I}(\pi^-)+\vv{I}(d)+\vv{L}(\pi d)\\
+  &=\vv{S}(\pi^-)+\vv{L}(\pi^-)+\vv{I}(d)+\vv{L}(\pi d)\\
+  &=\vv{0}+\vv{0}+\vv{1}+\vv{0}
+\end{align*}
+
+<p>
+Parité du \(\pi^-\)
+</p>
+
+\begin{align*}
+  \pi(\text{entrée}) = \pi(\pi d) &= \pi(\pi)\cdot\pi(d)\cdot(-1)^{L_{\pi d}}\\
+  &=\pi(\pi)\cdot+1\cdot+1
+\end{align*}</li>
+</ol>
+
+
+<p>
+Intéraction forte &rarr; conservation de la parité
+</p>
+
+\begin{align*}
+  \pi(\pi d) = \pi(\pi) = \pi(nn) = \pi(n)\cdot\pi(n)\cdot(-1)^{L_{nn}}
+\end{align*}
+
+<div class="QUESTION">
+<ol class="org-ol">
+<li value="2">La voie de sortie. Compte-tenu de l'antisymétrie de la fonction d'onde
+dans l'échange des deux nucléons, déterminer complètement le couple \((l,s)\)
+du système des deux neutrons. En déduire la parité intrinsèque du \(\pi^-\).</li>
+</ol>
+
+</div>
+
+<ol class="org-ol">
+<li value="2"><p>
+Le moment cinétique total s'écrit
+</p>
+
+\begin{align*}
+  \vv{I}_\text{sortie} = \vv{I}(nn) &= \vv{I}(n)+\vv{I}(n)+\vv{L}(nn)\\
+  &=\vv{S}(n)+\vv{S}(n)+\vv{L}(nn)\\
+  &=\vv{S}(nn)+\vv{L}(nn)
+\end{align*}
+
+<p>
+Les neutrons étant des fermions, leur spin est demi-entier. Les valeurs de
+\(\vv{S}(nn)\) sont donc soit \(\vv{0}\) soit \(\vv{1}\). Par ailleurs, la
+conservation du moment cinétique total impose
+</p>
+\begin{align*}
+  \vv{I}(nn)=\vv{I}(\pi d)=\vv{1}
+\end{align*}
+
+<p>
+On obtient ainsi les couples de valeurs \((L,S)\)
+</p>
+
+<ul class="org-ul">
+<li>\(\vv{S}(nn)=\vv{0}\) et \(\vv{L}(nn)=\vv{1}\),</li>
+<li>\(\vv{S}(nn)=\vv{1}\) et \(\vv{L}(nn)=\vv{0},\vv{1},\vv{2}\).</li>
+</ul>
+
+<p>
+Le système final de deux neutrons <i>i.e.</i> de deux fermions doit satisfaire au
+principe de Pauli <b>généralisé</b> à savoir que la somme \(L+S+T\) doit être
+impaire afin que la fonction d'onde globale demeure antisymétrique.
+</p>
+
+<p>
+Calcul de \(T\) : \(t_3(n) = -\frac{1}{2}\) et \(T_3(nn)=\Sigma\,t_3 =
+   2\,t_3(n)=-1\)
+</p>
+
+\begin{align*}
+  |T_3(nn)|\leq T(nn)\leq\frac{A}{2}
+\end{align*}
+
+<p>
+soit \(\vv{T}(nn)=\vv{1}\).
+</p>
+
+<p>
+La condition \(L+S+T\) impaire devient \(L+S\) pair étant donné que \(T=1\). Aussi,
+seul le couple \((L,S)=(1,1)\) est possible. On déduit ainsi la parité du
+\(\pi^-\)
+</p>
+
+\begin{align*}
+  \pi(nn)=\pi(\pi^-)&=\pi(n)\cdot\pi(n)\cdot(-1)^{L_{nn}}\\
+  &=\pi(n)^2\cdot(-1)^{L_{nn}}\\
+  &=+1\cdot(-1)^1=-1
+\end{align*}</li>
+</ol>
+</div>
+</div>
+
+<div id="outline-container-org0069ccc" class="outline-2">
+<h2 id="org0069ccc"><span class="section-number-2">3</span> Sections efficaces de production de pions</h2>
 <div class="outline-text-2" id="text-3">
 <div class="QUESTION">
+<p>
+On considère les réactions de production par interaction forte de mésons pi :
+</p>
+\begin{align*}
+  p + p &\rightarrow d + \pi^+\\
+  p + n &\rightarrow d + \pi^0
+\end{align*}
+
 <ol class="org-ol">
-<li><p>
-On appelle neutrons thermiques des neutrons lents en équilibre
-thermodynamique avec le milieu dans lequel ils se trouvent.
+<li value="1"><p>
+On réalise ces réactions en faisant interagir un proton d'énergie cinétique \(T\) sur un
+nucléon supposé au repos dans le référentiel du laboratoire. Calculer l'énergie seuil de ces
+réactions. On prend comme masses au repos :
 </p>
+\begin{align*}
+  m_p c^2 = m_n c^2 \sim \unit[940]{MeV} \quad\text{et}\quad m_{\pi^+}c^2 = m_{\pi^0}c^2 \sim\unit[140]{MeV}
+\end{align*}
 
 <p>
-On irradie une cible de&nbsp;<sup>10</sup><sub>5</sub>B avec un faisceau de neutrons
-thermiques d'énergie cinétique \(T\) = 2.5 10<sup>-2</sup> eV, produits par un
-réacteur, afin de créer des noyaux de&nbsp;<sup>7</sup>Li par la réaction :
+et on néglige l'énergie de liaison du deuton.
+</p></li>
+</ol>
+
+</div>
+
+<ol class="org-ol">
+<li value="1"><p>
+Calcul de l'énergie cinétique minimale
 </p>
-\begin{align}
-  n_\text{th} + ^{10}_{5}\text{B} \rightarrow \alpha + ^7_3\text{Li}
-\end{align}
+
+<div class="org-center">
+
+<div class="figure">
+<p><img src="./figures/pn_dpi_production.png" alt="pn_dpi_production.png" />
+</p>
+</div>
+</div>
 
 <p>
-On détecte les particules &alpha; émises au cours de cette réaction. Quelle
-est leur énergie cinétique \(T_{\alpha}\) ?  On donne les masses nucléaires
-suivantes, en MeV :
+Dans le référentiel du laboratoire, l'énergie cinétique minimale \(T_S\) nécessaire à la production
+de particules s'écrit
 </p>
-<div class="center">
+\begin{align*}
+  T_S^\text{lab.} = \frac{|Q|}{2}\cdot\frac{\Upsigma
+    m_\text{initiale,finale}c^2}{m_\text{cible}c^2}
+\end{align*}
+
 <p>
-\(m_{\alpha}c^2\) = 3727.398, \(m_{^7\text{Li}}c^2\) = 6533.877, \(m_{^8\text{Li}}c^2\) =
-7471.417, \(m_{^{10}\text{B}}c^2\) = 9324.495, \(m_{^{11}\text{B}}c^2\) = 10252.615
+où \(Q\) est la chaleur de réaction et est égale à
 </p>
-</div></li>
+\begin{align*}
+  Q = \Upsigma m_\text{initiale}c^2 - \Upsigma m_\text{finale}c^2
+\end{align*}
+
+<p>
+En négligeant l'énergie de liaison \(B_d\) du noyau de deutérium, la masse \(m_d\) est égale à deux
+fois la masse du proton (\(m_{n}c^2\simeq m_{p}c^2\sim\unit[940]{MeV}\)). La chaleur de réaction
+est ainsi égale
+</p>
+\begin{align*}
+  Q = 2m_pc^2 - 2m_pc^2 - m_\pi c^2 = -m_\pi c^2
+\end{align*}
+
+<p>
+On déduit l'énergie cinétique seuil
+</p>
+\begin{align*}
+  T_S&=\frac{m_\pi c^2}{m_nc^2}\times\frac{4m_pc^2+m_\pi c^2}{2}\\
+  &=\frac{140}{940}\times\frac{4\times940+140}{2} = \unit[290.4]{MeV}
+\end{align*}</li>
+</ol>
+
+<div class="QUESTION">
+<ol class="org-ol">
+<li value="2">Si on réalise ces expériences avec des protons d'énergie cinétique 1 GeV, à quel angle
+détecte-t-on des pions de 600 MeV d'énergie cinétique ?</li>
 </ol>
 
 </div>
 <ol class="org-ol">
-<li><p>
-\(n_\text{th.}+^{10}_{5}\text{B}\rightarrow\alpha+^{7}_{3}\text{Li}\)
+<li value="2"><p>
+\(T_p=\unit[1]{GeV}>\unit[290]{MeV}\) et \(T_\pi=\unit[600]{MeV}\)
 </p>
 
 <p>
-Calcul de la chaleur de réaction \(Q\)
+La conservation de l'impulsion implique que \(\vv{p}_p=\vv{p}_\pi+\vv{p}_d\) soit
+\(\vv{p}_d=\vv{p}_p-\vv{p}_\pi\) et donc \(p_d^2=p_p^2+p_\pi^2-2p_pp_\pi\cos\theta\). L'angle &theta;
+s'exprime ainsi
 </p>
 \begin{align*}
-  Q&=m_nc^2+m_{^{10}_{5}\text{B}}c^2-m_\alpha c^2-m_{^{7}_{3}\text{Li}}c^2\\
-  &=939.6 + 9324.495 - 3727.398 - 6533.877=\unit[2.82]{MeV}>0
+  \cos\theta=\frac{p_p^2+p_\pi^2-p_d^2}{2p_pp_\pi}
 \end{align*}
 
 <p>
-La réaction est donc exoénergétique ou spontanée et ne requiert pas
-nécessairement d'énergie cinétique pour les neutrons
-\(T_{n_\text{th.}}\ll1\sim0\). On considèrera la réaction se faisant au repos
-\(T_{n_\text{th.}}=T_{^{10}_{5}\text{B}}\sim0\). La conservation de l'impulsion
-implique donc que \(\vv{p}_\alpha=-\vv{p}_{^{7}_{3}\text{Li}}\) soit
+L'impulsion s'exprime en fonction de l'énergie cinétique \(T\) suivant
 </p>
 \begin{align*}
-  p_\alpha c&=p_{^{7}_{3}\text{Li}}c\\
-  T_\alpha^2+2T_\alpha\,m_\alpha c^2&=T_{^{7}_{3}\text{Li}}^2+2T_{^{7}_{3}\text{Li}}\,m_{^{7}_{3}\text{Li}}c^2
+  (pc)^2&=E^2 - m^2c^4\\
+  &=(T+mc^2)^2 - m^2c^4\\
+  &=T(T+2mc^2)
 \end{align*}
 
 <p>
-La conservation de l'énergie implique quant à elle
+On déduit ainsi les valeurs d'impulsion du proton et du pion et <i>via</i> la conservation de l'énergie
+totale, on a
 </p>
 \begin{align*}
-  E_n+E_{^{10}_{5}\text{B}}&=E_\alpha+E_{^{7}_{3}\text{Li}}\\
-  m_nc^2+m_{^{10}_{5}\text{B}}c^2&=m_\alpha c^2+m_{^{7}_{3}\text{Li}}c^2+T_\alpha+T_{^{7}_{3}\text{Li}}\\
-  Q&=T_\alpha+T_{^{7}_{3}\text{Li}}
+  E_p + m_nc^2 = E_\pi+E_d
 \end{align*}
 
 <p>
 soit
 </p>
 \begin{align*}
-  T_\alpha^2+2T_\alpha\,m_\alpha c^2&=\left(Q-T_\alpha\right)^2+2\left(Q-T_\alpha\right)\,m_{^{7}_{3}\text{Li}}c^2\\
-  T_\alpha\times\left(2m_\alpha c^2+2m_{^{7}_{3}\text{Li}}+2Q\right)&=Q^2+2Qm_{^{7}_{3}\text{Li}}c^2\\
-  T_\alpha&=\frac{Q^2+2Qm_{^{7}_{3}\text{Li}}c^2}{2\left(m_n c^2+m_{^{10}_{5}\text{B}}c^2\right)}\\
-  &=\unit[1.8]{MeV}
-\end{align*}</li>
-</ol>
-
-<div class="QUESTION">
-<ol class="org-ol">
-<li value="2"><p>
-On veut maintenant étudier la réaction~:
-</p>
-\begin{align}
-  n + ^{11}_{5}\text{B} \rightarrow \alpha + ^8_{3}\text{Li}
-\end{align}
-
-<p>
-Dire, en justifiant votre réponse, si cette réaction est possible avec des
-neutrons thermiques. Donner alors ses conditions d'étude.
-</p></li>
-</ol>
-
-</div>
-<ol class="org-ol">
-<li value="2"><p>
-\(n+^{11}_{5}\text{B}\rightarrow\alpha+^{8}_{3}\text{Li}\)
-</p>
-
-<p>
-Calcul de la chaleur de réaction \(Q\)
-</p>
-\begin{align*}
-  Q&=m_nc^2+m_{^{11}_{5}\text{B}}c^2-m_\alpha c^2-m_{^{8}_{3}\text{Li}}c^2\\
-  &=939.6 + 10252.615 - 3727.398 - 7471.417=\unit[-6.6]{MeV}<0
+  T_p + 2m_pc^2 = T_\pi+m_\pi c^2+T_d+2m_pc^2
 \end{align*}
 
 <p>
-<i>i.e.</i> une réaction endoénergétique qui, pour se réaliser, implique que les
-neutrons aient une énergie cinétique minimale \(T_S\) de
+et donc
 </p>
 \begin{align*}
-  T_S&=\frac{|Q|\times\Sigma m_{if}c^2}{2m_{^{11}_{5}\text{B}}c^2}\\
-  &=\unit[7.21]{MeV}\gg\unit[2.5\,10^{-2}]{eV}
+  T_d = T_p - T_\pi - m_\pi c^2
+\end{align*}
+
+<p>
+<b>AN :</b>
+</p>
+\begin{align*}
+  (p_pc)^2 &= 1000(1000+2\times940) = \unit[2.88\,10^6]{MeV}^2 \text{ soit } p_pc = \unit[1697]{MeV}\\
+  (p_\pi c)^2 &= 600(600+2\times140) = \unit[5.28\,10^5]{MeV}^2 \text{ soit } p_\pi c = \unit[726.6]{MeV}\\
+  (p_dc)^2 &= (1000-600-140)(260+4\times940) = \unit[1.045\,10^6]{MeV}^2 \text{ soit } p_dc = \unit[1022]{MeV}
+\end{align*}
+\begin{align*}
+  \cos\theta&=\frac{2.88+0.528-1.045}{2\times\sqrt{2.88}\sqrt{0.528}}\\
+  &=0.958\\
+  \theta&=16.7^\circ
 \end{align*}</li>
 </ol>
 
 <div class="QUESTION">
 <ol class="org-ol">
-<li value="3">On envoie le faisceau de neutrons thermiques sur une cible de Bore
-naturel de surface 10 cm<sup>2</sup>, d'épaisseur 1 &mu;m, de densité &rho; = 2.34
-g/cm<sup>3</sup> et de composition isotopique 19.8% de&nbsp;<sup>10</sup>B et 80.2%
-de&nbsp;<sup>11</sup>B. La section efficace totale de la réaction (1) vaut &sigma; =
-3840 b. On sait de plus que la section efficace différentielle est isotrope
-dans le système du centre de masse pour des neutrons lents. Le détecteur de
-particules &alpha;, de surface utile 5 cm<sup>2</sup> et situé à 1 m de la cible,
-enregistre 473 particules &alpha; à la minute. Quel est le flux de neutrons
-thermiques, en cm<sup>-2</sup>s<sup>-1</sup> ?</li>
+<li value="3">Préciser l'état d'isospin de chacun des quatre systèmes : \(\ket{p+p}\), \(\ket{d+\pi^+}\),
+\(\ket{p+n}\) et \(\ket{d+\pi^0}\). Les coefficients de Clebsh-Gordan sont donnés en annexe et on
+donne l'isospin du deuton : \(T=0\).</li>
 </ol>
 
 </div>
+
 <ol class="org-ol">
 <li value="3"><p>
-Le nombre de particules &alpha; détectées se déduit de l'expression suivante
-</p>
-\begin{align*}
-  dn_\alpha=\phi_{n_\text{th.}}\times\frac{\mathcal{N}\times\rho_e}{A_\text{cible}}\times\frac{d\sigma}{d\Omega}d\Omega
-\end{align*}
-
-<p>
-Le flux incident de neutrons thermiques est donc
-</p>
-\begin{align*}
-  \phi_{n_\text{th.}}=\frac{dn_\alpha\,A_\text{cible}}{\mathcal{N}\times\rho_e\times\frac{d\sigma}{d\Omega}d\Omega}
-\end{align*}
-
-<p>
-Bore naturel → 19.8%&nbsp;<sup>10</sup>B+80.2%&nbsp;<sup>11</sup>B. Le nombre de nucléons moyen
-de la cible est donc
-</p>
-\begin{align*}
-  A_\text{cible}=0.198\times10+0.802\times11=10.802
-\end{align*}
-
-<p>
-Par ailleurs, l'épaisseur de cible \(\rho_e=\unit[2.34\,10^{-4}]{g/cm}^2\) est
-seulement constituée de 19.8% de&nbsp;<sup>10</sup>B nécessaire à la réaction. On
-introduit donc une épaisseur "effective" de&nbsp;<sup>10</sup>B correspondant à
-19.8%\(\cdot\rho_e\). Finalement la section efficace différentielle
-\(\frac{d\sigma}{d\Omega}\) est isotrope soit
-\(\frac{d\sigma}{d\Omega}=\frac{\sigma}{4\pi}\). On déduit ainsi le flux par
-seconde \(\phi_{n_\text{th.}}\)
-</p>
-\begin{align*}
-  \phi_{n_\text{th.}}&=\frac{\frac{473}{60}\times10.802}{6.02\,10^{23}\times0.198\times2.34\,10^{-4}\times\frac{3840\,10^{-24}}{4\pi}\times\frac{5}{100^2}}\\
-  &=\unit[2\,10^7]{s}^{-1}
-\end{align*}
-
-<p>
-La surface de la cible étant de 10 cm<sup>2</sup>, le flux par seconde et par unité
-de surface est donc \(F=\frac{\phi}{S_\text{cible}}=2\,10^6\,\text{cm}^{-2}\text{.s}^{-1}\).
-</p></li>
-</ol>
-
-<div class="QUESTION">
-<ol class="org-ol">
-<li value="4">On irradie maintenant une cible isotopiquement séparée de&nbsp;<sup>11</sup>B
-avec des neutrons de 13 MeV, pour lesquels la section efficace différentielle
-de la réaction&nbsp;(2) est \(\frac{d\sigma}{d\Omega}\) = 3.8 mb/sr à 20°. On
-détecte les particules &alpha; avec le même détecteur que précédemment,
-placé à 20°.
-<ol class="org-ol">
-<li>Quelles mesures supplémentaires faut-il faire afin de déterminer la
-section efficace totale de la réaction ?</li>
-<li>En supposant que ces mesures montrent une dépendance angulaire de la
-forme \(d\sigma/d\Omega = K/\sin\theta\), calculer la section efficace
-totale.</li>
-</ol></li>
-</ol>
-
-</div>
-<ol class="org-ol">
-<li value="4">\(T_n=\unit[13]{MeV}>T_S=\unit[7.21]{MeV}\) et
-\(\left.\frac{d\sigma}{d\Omega}\right|_{20^\circ}=\unit[3.8]{mb/sr}\)
-<ol class="org-ol">
-<li>Pour calculer la section efficace totale \(\sigma\), il s'agit d'intégrer la
-section efficace différentielle sur 4&pi; stéradian : il faut donc
-connaitre la dépendance angulaire \((\theta,\phi)\) de
-\(\frac{d\sigma}{d\Omega}\).</li>
-<li><p>
-\(\frac{d\sigma}{d\Omega}=\frac{K}{\sin\theta}\) avec
-\(K=\left.\frac{d\sigma}{d\Omega}\right|_{20^\circ}\sin\,20^\circ=\unit[1.3]{mb/sr}\). La
-section efficace totale devient
-</p>
-\begin{align*}
-  \sigma&=\int\frac{d\sigma}{d\Omega}d\Omega=\int_0^{2\pi}d\phi\int_0^\pi\frac{K}{\sin\theta}\sin\theta d\theta\\
-  &=2\pi^2\,K=\unit[25.65]{mb}
-\end{align*}</li>
-</ol></li>
-</ol>
-</div>
-</div>
-
-<div id="outline-container-orgheadline4" class="outline-2">
-<h2 id="orgheadline4"><span class="section-number-2">4</span> Section efficace et rayon d'interaction</h2>
-<div class="outline-text-2" id="text-4">
-<div class="QUESTION">
-<p>
-On donne les masses nucléaires suivantes, en MeV :
-</p>
-
-<div class="center">
-<p>
-\(m_nc^2\) = 939.6; \(m_{^{9}\text{Li}}c^2\) = 8406.9
-</p>
-
-<p>
-\(m_{^{10}\text{Li}}c^2\) = 9347.3; \(m_{^{11}\text{Li}}c^2\) = 10285.9
-</p>
-</div>
-<ol class="org-ol">
-<li>On cherche à estimer le rayon du noyau de&nbsp;<sup>11</sup>Li. Pour cela, on effectue
-tout d'abord des mesures de section efficace totale d'interaction.
-
-<ol class="org-ol">
-<li>On bombarde une cible de&nbsp;<sup>9</sup>Be de 50 mg/cm<sup>2</sup> d'épaisseur avec un
-faisceau de&nbsp;<sup>11</sup>Li, dont le flux incident vaut 10<sup>4</sup>
-particules/s. En 10 minutes, on détecte dans tout l'espace 10<sup>5</sup>
-réactions. Calculer la section efficace de la réaction&nbsp;<sup>11</sup>Li
-+&nbsp;<sup>9</sup>Be.</li>
-
-<li><p>
-Il a été montré que le rayon d'interaction nucléaire pouvait être estimé
-de façon très simple par la mesure de la section efficace totale dans les
-collisions d'ions lourds de haute énergie. Dans ce modèle simple, le rayon
-d'interaction est défini par :
-</p>
-\begin{align*}
-  \sigma_\text{tot} = \pi(R_\text{proj.}+ R_\text{cible})^2
-\end{align*}
-
-<p>
-sachant que \(R_\text{proj.}\) et \(R_\text{cible}\) sont respectivement les
-rayons d'interaction du projectile et de la cible.
-</p>
-
-<p>
-En supposant que le rayon d'interaction du&nbsp;<sup>9</sup>Be peut être approximé
-par \(R\)(<sup>9</sup>Be)=\(r_0A^{1/3}\), déduire de ce modèle le rayon d'interaction
-du&nbsp;<sup>11</sup>Li et comparer le résultat à la valeur
-\(R\)(<sup>11</sup>Li)=\(r_0A^{1/3}\) donnée par le modèle de la goutte liquide.
-</p></li>
-
-<li>On refait la même expérience avec un faisceau de&nbsp;<sup>9</sup>Li de même
-intensité et on mesure 20000 réactions en 10 minutes. Déduire le rayon
-d'interaction du&nbsp;<sup>9</sup>Li.</li>
-</ol></li>
-</ol>
-
-</div>
-<ol class="org-ol">
-<li>&nbsp;<sup>11</sup>Li&rarr;&nbsp;<sup>9</sup>Be
-<ol class="org-ol">
-<li><p>
-Le nombre de réactions \(n\) par unité de temps s'écrit
-</p>
-\begin{align*}
-  n&=\phi\times\rho_e\times\frac{\mathcal{N}}{A_\text{cible}}\times\sigma
-\end{align*}
-
-<p>
-d'où
-</p>
-\begin{align*}
-  \sigma&=\frac{N}{\phi}\times\frac{A_\text{cible}}{\mathcal{N}\rho_e}\\
-  &=\frac{10^5/600\times9}{10^4\times6\,10^{23}\times50\,10^{-3}}\\
-  \sigma(^{11}\text{Li}+^{9}\text{Be})&\simeq\unit[5\,10^{-24}]{cm}^2=\unit[5]{barn}
-\end{align*}</li>
-
-<li><p>
-Soit le rayon du&nbsp;<sup>9</sup>Be
-</p>
-\begin{align*}
-  R(^{9}\text{Be})=r_0\times A^{1/3}=\unit[1.25]{fm}\times9^{1/3}=\unit[2.6]{fm}
-\end{align*}
-
-<p>
-La section efficace devient
-</p>
-\begin{align*}
-  \sigma(^{11}\text{Li}+^{9}\text{Be})&=\pi\left(R(^{11}\text{Li})+R(^{9}\text{Be})\right)^2=\unit[5]{barn}=\unit[500]{fm}^2\\
-  R(^{11}\text{Li})&=\sqrt{\frac{\sigma}{\pi}}-R(^{9}\text{Be})\\
-  &=\sqrt{\frac{\unit[500]{fm}^2}{\pi}}-\unit[2.6]{fm}\\
-  &=\unit[10]{fm}\gg1.25\times11^{1/3}=\unit[2.78]{fm}
-\end{align*}</li>
-
-<li><p>
-\(\sigma(^{9}\text{Li}+^{9}\text{Be})=\sigma(^{11}\text{Li}+^{9}\text{Be})/5\)
-      d'où
-</p>
-\begin{align*}
-  R(^{9}\text{Li})&=\sqrt{\frac{\unit[100]{fm}^2}{\pi}}-\unit[2.6]{fm}\\
-  &=\unit[3.04]{fm}\gtrsim\unit[2.6]{fm}
-\end{align*}</li>
-</ol></li>
-</ol>
-
-<div class="QUESTION">
-<ol class="org-ol">
-<li value="2"><p>
-On bombarde maintenant la cible de&nbsp;<sup>9</sup>Be avec le faisceau
-de&nbsp;<sup>11</sup>Li précédent, pour réaliser des réactions de cassure
-du&nbsp;<sup>11</sup>Li :
-</p>
-\begin{align}
-  ^{11}\text{Li} + ^9\text{Be} &\rightarrow ^{9}\text{Li} + n + n + ^9\text{Be}\\
-  ^{11}\text{Li} + ^9\text{Be} &\rightarrow ^{10}\text{Li} + n + ^9\text{Be}
-\end{align}
-
-<ol class="org-ol">
-<li><p>
-En utilisant les masses nucléaires données précédemment, montrer que
-</p>
-\begin{align*}
-  ^{10}\text{Li} \rightarrow ^9\text{Li} + n
-\end{align*}
-
-<p>
-est une réaction spontanée. En déduire la vie moyenne du&nbsp;<sup>10</sup>Li.
-</p></li>
-
-<li>Le&nbsp;<sup>11</sup>Li est-il lié par interaction forte ?</li>
-
-<li>Expliquer pourquoi on observe la réaction (1) mais pas la réaction
-(2). Que peut-on en conclure pour le&nbsp;<sup>10</sup>Li ?</li>
-</ol></li>
-</ol>
-
-</div>
-<ol class="org-ol">
-<li value="2"><ol class="org-ol">
-<li><p>
-\(^{10}\text{Li}\to^{9}\text{Li}+n\)
-</p>
-
-<p>
-La chaleur de réaction \(Q\) est égale à
-</p>
-\begin{align*}
-  Q&=m_{^{10}\text{Li}}c^2-m_{^{9}\text{Li}}c^2-m_{n}c^2\\
-  &=9347.3-8406.9-939.6=\unit[800]{keV}
-\end{align*}
-
-<p>
-justifiant une réaction spontanée. Le Lithium 10 se désintègre ainsi
-presque instantanément en Lithium 9.
-</p></li>
-<li><p>
-Si on considère la réaction de cassure du&nbsp;<sup>11</sup>Li en&nbsp;<sup>10</sup>Li +
-neutron, la chaleur de réaction est
-</p>
-\begin{align*}
-  Q&=m_{^{11}\text{Li}}c^2-m_{^{10}\text{Li}}c^2-m_{n}c^2\\
-  &=10285.9-9347.3-939.6=\unit[-1]{MeV}
-\end{align*}
-
-<p>
-Le noyau de&nbsp;<sup>11</sup>Li est donc stable et lié par intéraction forte. On
-peut modéliser ce noyau comme un c\oe ur de&nbsp;<sup>9</sup>Li "entouré" de 2
-neutrons. Ce système à trois corps est un noyau borroméen en référence aux
-armoiries de la famille italienne Borromée. En effet, de la même manière
-que casser un des anneaux libère les deux autres, rompre une
-liaison&nbsp;<sup>9</sup>Li &#x2013; neutron, brise instantanément la
-seconde :&nbsp;<sup>11</sup>Li&rarr;&nbsp;<sup>9</sup>Li.
+États d'isospin
 </p>
 
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="void">
@@ -890,108 +687,182 @@ seconde :&nbsp;<sup>11</sup>Li&rarr;&nbsp;<sup>9</sup>Li.
 <col  class="org-left" />
 
 <col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
 </colgroup>
 <tbody>
 <tr>
-<td class="org-left"><img src="./figures/borromean_rings.png" alt="borromean_rings.png" /></td>
-<td class="org-left"><img src="./figures/borromean_nucleus.png" alt="borromean_nucleus.png" /></td>
-</tr>
-</tbody>
-</table></li>
-
-<li>La seconde réaction n'est pas observable/mesurable du fait que&nbsp;<sup>10</sup>Li
-devient instantanément un noyau&nbsp;<sup>9</sup>Li. Seule la première réaction est
-observable et donc seul le rayon du&nbsp;<sup>11</sup>Li est mesurable.</li>
-</ol></li>
-</ol>
-
-<div class="QUESTION">
-<ol class="org-ol">
-<li value="3">Les rayons d'interaction (\(R_\text{proj.}\)) pour d'autres isotopes de
-Lithium :&nbsp;<sup>6</sup>Li,&nbsp;<sup>7</sup>Li,&nbsp;<sup>8</sup>Li, sont respectivement 2.14, 2.25
-et 2.38 fm. Porter sur un graphique \(R=f(A)\) les rayons d'interaction de tous
-les isotopes de Li entre \(A=6\) et \(A=11\). Comparer avec les prédictions
-données par le modèle de la goutte liquide. Discuter ce résultat.</li>
-</ol>
-
-</div>
-<ol class="org-ol">
-<li value="3"><p>
-Comparaison \(R_\text{int.}\) et modèle de la goutte liquide \(R_\text{gl}\)
-</p>
-
-<table id="orgtable1" border="2" cellspacing="0" cellpadding="6" rules="groups" frame="void">
-
-
-<colgroup>
-<col  class="org-right" />
-
-<col  class="org-right" />
-
-<col  class="org-right" />
-
-<col  class="org-right" />
-</colgroup>
-<thead>
-<tr>
-<th scope="col" class="org-right">\(A\)</th>
-<th scope="col" class="org-right">\(R_\text{gl}\) [fm]</th>
-<th scope="col" class="org-right">\(R_\text{int.}\) [fm]</th>
-<th scope="col" class="org-right">[%]</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="org-right">6</td>
-<td class="org-right">2.27</td>
-<td class="org-right">2.14</td>
-<td class="org-right">5.7</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">\(p\)</td>
+<td class="org-left">\(n\)</td>
+<td class="org-left">\(d\)</td>
+<td class="org-left">\(\pi^+\)</td>
+<td class="org-left">\(\pi^0\)</td>
 </tr>
 
 <tr>
-<td class="org-right">7</td>
-<td class="org-right">2.39</td>
-<td class="org-right">2.25</td>
-<td class="org-right">5.9</td>
+<td class="org-left">\(T_3\)</td>
+<td class="org-left">1/2</td>
+<td class="org-left">-1/2</td>
+<td class="org-left">0</td>
+<td class="org-left">1</td>
+<td class="org-left">0</td>
 </tr>
 
 <tr>
-<td class="org-right">8</td>
-<td class="org-right">2.5</td>
-<td class="org-right">2.38</td>
-<td class="org-right">4.8</td>
-</tr>
-
-<tr>
-<td class="org-right">9</td>
-<td class="org-right">2.6</td>
-<td class="org-right">3.04</td>
-<td class="org-right">-16.9</td>
-</tr>
-
-<tr>
-<td class="org-right">10</td>
-<td class="org-right">2.69</td>
-<td class="org-right">\(-\)</td>
-<td class="org-right">\(-\)</td>
-</tr>
-
-<tr>
-<td class="org-right">11</td>
-<td class="org-right">2.78</td>
-<td class="org-right">10</td>
-<td class="org-right">-259.7</td>
+<td class="org-left">\(\vv{T}\)</td>
+<td class="org-left">\(\vv{1}/2\)</td>
+<td class="org-left">\(\vv{1}/2\)</td>
+<td class="org-left">\(\vv{0}\)</td>
+<td class="org-left">\(\vv{1}\)</td>
+<td class="org-left">\(\vv{1}\)</td>
 </tr>
 </tbody>
 </table>
 
-<div class="center">
-
-<div class="figure">
-<p><img src="./figures/interaction_radius.png" alt="interaction_radius.png" />
+<p>
+Remarque: \(T_3(d)=t_3(n)+t_3(p) = 0\) et \(\vv{T}(d)=\vv{0}\) ou \(\vv{1}\). On considère que \(T(d) =
+   T_\text{fond.}(d) = |T_3| = 0\).
 </p>
+
+<ul class="org-ul">
+<li>\(\ket{p+p}\) : \(T_3 = t_3(p) + t_3(p) = 1\) et \(\vv{T} = \vv{0}\) ou \(\vv{1}\) mais seul
+\(\vv{T}=\vv{1}\) est possible du fait que \(T_3=1\)</li>
+
+<li>\(\ket{d+\pi^+}\) : \(T_3=+1\) et \(\vv{T}=\vv{1}\)</li>
+
+<li>\(\ket{p+n}\) : \(T_3=0\) et \(\vv{T}= \vv{0}\) ou \(\vv{1}\)</li>
+
+<li>\(\ket{d+\pi^0}\) : \(T_3=0\) et \(\vv{T}=\vv{1}\)</li>
+</ul>
+
+<p>
+Les coefficients de Clebsch-Gordan fournissent les valeurs de
+\(\psh{t_1t_2t_{31}t_{32}}{TT_3}\). On obtient ainsi
+</p>
+
+<ul class="org-ul">
+<li>\(\ket{p+p} = \ket{pp} =
+     \ket{\tfrac{1}{2}\tfrac{1}{2}\tfrac{1}{2}\tfrac{1}{2}}=\ket{11}\)</li>
+
+<li>\(\ket{d+\pi^+} = \ket{d\pi^+} = \ket{0101}=\ket{11}\)</li>
+
+<li>\(\ket{p+n} = \ket{pn} =
+     \ket{\tfrac{1}{2}\tfrac{1}{2}\tfrac{1}{2}\tfrac{-1}{2}}=\alpha\ket{10}+\beta\ket{00}\) avec
+\(\alpha=\psh{\tfrac{1}{2}\tfrac{1}{2}\tfrac{1}{2}\tfrac{-1}{2}}{10} = \tfrac{1}{\sqrt{2}}\) et
+\(\beta=\psh{\tfrac{1}{2}\tfrac{1}{2}\tfrac{1}{2}\tfrac{-1}{2}}{00} = \tfrac{1}{\sqrt{2}}\)</li>
+
+<li>\(\ket{d+\pi^0} = \ket{d\pi^0} = \ket{0100}=\ket{10}\)</li>
+</ul></li>
+</ol>
+
+<div class="QUESTION">
+<ol class="org-ol">
+<li value="4">Les deux réactions étant réalisées dans les mêmes conditions cinématiques, montrer qu'il
+existe entre leurs sections efficaces une relation simple que l'on précisera.</li>
+</ol>
+
 </div>
-</div></li>
+
+
+<ol class="org-ol">
+<li value="4"><p>
+Intéraction forte &rarr; conservation de l'isospin \(\vv{T}\). Si ces 2 réactions sont
+réalisées dans les mêmes conditions cinématiques, on peut comparer leurs sections efficaces
+\(\sigma_1\) et \(\sigma_2\) en utilisant la formule
+</p>
+
+\begin{align*}
+  \sigma&\propto\left|\bra{f(T_f)}V_\text{IF}\ket{i(T_i)}\right|^2\\
+  &\propto\left|M(T)\right|^2\text{ si } T_f=T_i=T\\
+  &=0\text{ si } T_f\neq T_i
+\end{align*}
+
+<p>
+Soit
+</p>
+\begin{align*}
+  \sigma_1&\propto\left|\bra{d\pi^+}V_\text{IF}\ket{pp}\right|^2\propto\left|\bra{11}V_\text{IF}\ket{11}\right|^2\propto \left|M(1)\right|^2\\
+  \sigma_2&\propto\left|\bra{d\pi^0}V_\text{IF}\ket{pn}\right|^2\\
+  &\propto\tfrac{1}{2}\left|\bra{10}V_\text{IF}\ket{00}+\bra{10}V_\text{IF}\ket{10}\right|^2
+\end{align*}
+
+<p>
+or \(\bra{10}V_\text{IF}\ket{00}\) est nul car \(T_f\neq T_i\) et \(\bra{10}V_\text{IF}\ket{10}\) est
+une fonction dépendant uniquement de \(T=1\). On obtient ainsi que
+</p>
+\begin{align*}
+  \frac{\sigma_1}{\sigma_2}=\frac{\sigma(pp\rightarrow d\pi^+)}{\sigma(pn\rightarrow d\pi^0)}=2
+\end{align*}
+
+<p>
+Ce résultat théorique a été vérifié et confirmé expérimentalement .
+</p></li>
+</ol>
+</div>
+</div>
+
+<div id="outline-container-org4cfd1fb" class="outline-2">
+<h2 id="org4cfd1fb"><span class="section-number-2">4</span> Couplages de trois nucléons</h2>
+<div class="outline-text-2" id="text-4">
+<div class="QUESTION">
+<p>
+On considère les noyaux comportant 3 nucléons.
+</p>
+
+<ol class="org-ol">
+<li>Quelles valeurs de l'isospin \(\vv{T}\) peut-on obtenir pour ce
+système ? Donner les multiplets d'isospin auxquels on s'attend.</li>
+</ol>
+
+</div>
+<ol class="org-ol">
+<li><p>
+Système de trois nucléons : \(\vv{t}(n) = \vv{1}/2\) et
+\(\vv{t}(p)=\vv{1}/2\). L'isospin de 3 nucléons \(\vv{T}(3N) = \Upsigma
+   \vv{t}_i\) soit
+</p>
+
+\begin{align*}
+  \vv{T}(3N) &= \tfrac{\vv{1}}{2} + \tfrac{\vv{1}}{2} + \tfrac{\vv{1}}{2}\\
+  &= \tfrac{\vv{1}}{2}\text{ ou }\tfrac{\vv{3}}{2}
+\end{align*}
+
+<p>
+On obtient donc un double d'isospin \(T_3(3N)=\pm\tfrac{1}{2}\) et un
+quadruplet d'isospin où \(T_3(3N)=\pm\tfrac{1}{2}, \pm\tfrac{3}{2}\)
+</p></li>
+</ol>
+
+<div class="QUESTION">
+<ol class="org-ol">
+<li value="2">Sachant que le tri-neutron et le tri-proton ne sont pas des états stables
+(on dit qu'ils sont non liés), donner la valeur de l'isospin de l'état
+fondamental des noyaux&nbsp;<sup>3</sup><sub>1</sub>H et&nbsp;<sup>3</sup><sub>2</sub>He.</li>
+</ol>
+
+</div>
+<ol class="org-ol">
+<li value="2">Les états \(\ket{ppp}\) et \(\ket{nnn}\) qui ont respectivement pour valeur
+de \(T_3\), 3/2 et -3/2 appartiennent tous les deux au quadruplet d'isospin
+\(\vv{T}=\vv{3}/2\). Or, les forces nucléaires ne dependent que de l'isospin et
+sont donc indépendantes de charge (et donc de \(T_3\)). Étant donné que les
+états d'un même multiplet ont tous des propriétés communes vis-à-vis de
+l'intéraction forte, si les états \(\vv{T}=\vv{3}/2\), \(T_3=\pm3/2\) n'existent
+pas alors les états \(\vv{T}=\vv{3}/2\), \(T_3=\pm1/2\) n'existent pas non
+plus. Les états de&nbsp;<sup>3</sup><sub>1</sub>H et&nbsp;<sup>3</sup><sub>2</sub>H sont donc ceux appartenant
+au doublet d'isospin \(\vv{T}=\vv{1}/2\) avec
+
+<ul class="org-ul">
+<li>&nbsp;<sup>3</sup><sub>1</sub>H &equiv; \(\ket{pnn}\) avec \(T_3(pnn)=\tfrac{-1}{2}\)</li>
+<li>&nbsp;<sup>3</sup><sub>2</sub>H &equiv; \(\ket{ppn}\) avec \(T_3(pnn)=\tfrac{+1}{2}\)</li>
+</ul></li>
 </ol>
 </div>
 </div>
@@ -1004,7 +875,7 @@ Comparaison \(R_\text{int.}\) et modèle de la goutte liquide \(R_\text{gl}\)
 </div>
 </div></div>
 <div id="postamble" class="status">
-File under <i class="fa fa-github-alt"></i> version control - commit <a href="https://github.com/xgarrido/master_npp_teaching/commit/15edcc3f2b8dcf1e42ba4cd5ec2942d8a7d0a234">15edcc3</a> - 2016-06-28
+File under <i class="fa fa-github-alt"></i> version control - commit <a href="https://github.com/xgarrido/master_npp_teaching/commit/f535f50b5fcd671574e3f14e69aaa10cb02d480d">f535f50</a> - 2020-12-21
 </div>
 </body>
 </html>

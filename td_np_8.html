@@ -3,10 +3,11 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
-<meta  name="viewport" content="width=device-width, initial-scale=1" />
-<title>TD9 : Modèle Standard et au-delà : l'interaction faible</title>
-<meta  name="generator" content="Org-mode" />
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>TD9 : Masses et désintégrations nucléaires</title>
+<meta name="generator" content="Org mode" />
+<meta name="author" content="Xavier Garrido" />
 <link rel="stylesheet" href="css/styles.css" />
                <link rel="stylesheet" href="css/org-pygments.css" />
                <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" />
@@ -15,7 +16,7 @@
 @licstart  The following is the entire license notice for the
 JavaScript code in this tag.
 
-Copyright (C) 2012-2013 Free Software Foundation, Inc.
+Copyright (C) 2012-2018 Free Software Foundation, Inc.
 
 The JavaScript code in this tag is free software: you can
 redistribute it and/or modify it under the terms of the GNU
@@ -83,6 +84,7 @@ for the JavaScript code in this tag.
           extensions: ["cancel.js"],
           Macros: {
               vv: ["{\\vec{#1}}",1],
+              d: "{\\text{d}}",
               Upsigma: "{\\Sigma}",
               Updelta: "{\\Delta}",
               varoiint: "{\\iint}",
@@ -134,552 +136,923 @@ for the JavaScript code in this tag.
 <a href="index.html"><i class="fa fa-home"></i></a><br/>  
 </div>
 <div id="content">
-<h1 class="title">TD9 : Modèle Standard et au-delà : l'interaction faible</h1>
+<h1 class="title">TD9 : Masses et désintégrations nucléaires</h1>
 <div style="display:none;">
 <div id="text-table-of-contents">
 <ul class="org-ul">
-<li><a href="././td_np_0.html">TD1 : Cinématique &amp; Accélérateurs</a></li>
-<li><a href="././td_np_1.html">TD2 : Nombres quantiques &amp; Symétries</a></li>
-<li><a href="././td_np_2.html">TD3 : Réactions de production et de désintégration de particules</a></li>
-<li><a href="././td_np_3.html">TD4 : Modèle des quarks &#x2013; Les hadrons</a></li>
-<li><a href="././td_np_4.html">TD5 : Isospin &#x2013; des quarks aux noyaux</a></li>
-<li><a href="././td_np_5.html">TD6 : Structure nucléaire</a></li>
-<li><a href="././td_np_6.html">TD7 : Réactions nucléaires</a></li>
-<li><a href="././td_np_7.html">TD8 : Masses et désintégrations nucléaires</a></li>
-<li><a href="././td_np_8.html">TD9 : Modèle Standard et au-delà : l'interaction faible</a></li>
+<li><a href="././td_np_0.html">TD1 : Cinématique</a></li>
+<li><a href="././td_np_1.html">TD2 : Accélérateurs &amp; section efficace</a></li>
+<li><a href="././td_np_2.html">TD3 : Nombres quantiques &amp; Symétries</a></li>
+<li><a href="././td_np_3.html">TD4 : Réactions de production et de désintégration de particules</a></li>
+<li><a href="././td_np_4.html">TD5 : Modèle Standard et au-delà : l'interaction faible</a></li>
+<li><a href="././td_np_5.html">TD6 : Modèle des quarks &#x2013; Les hadrons</a></li>
+<li><a href="././td_np_6.html">TD7 : Isospin &#x2013; des quarks aux noyaux</a></li>
+<li><a href="././td_np_7.html">TD8 : Structure nucléaire</a></li>
+<li><a href="././td_np_8.html">TD9 : Masses et désintégrations nucléaires</a></li>
 <li><a href="././td_np_9.html">Annexes</a></li>
 <li><a href="././td_np_10.html">Aide-mémoire de Noyaux &amp; Particules</a></li>
 </ul>
 </div>
 </div>
 
-<div id="outline-container-orgheadline1" class="outline-2">
-<h2 id="orgheadline1"><span class="section-number-2">1</span> Masse et largeur du \(Z^0\) &#x2013; Nombre de familles de neutrinos</h2>
+<div id="outline-container-org50ef601" class="outline-2">
+<h2 id="org50ef601"><span class="section-number-2">1</span> Définitions</h2>
 <div class="outline-text-2" id="text-1">
 <div class="QUESTION">
 <p>
-La figure ci-dessous représente la distribution de masse invariante du boson
-d'interaction faible \(Z^0\) pour sa désintégration en \(e^+e^-\), obtenue par
-le détecteur ALEPH auprès du collisionneur \(e^+e^-\) LEP du CERN.
+Définir les termes : masse nucléaire, masse atomique, excès de masse atomique, énergie de liaison
+des nucléons dans le noyau, énergie de liaison moyenne par nucléon. Exprimer le \(Q\) de la réaction
+\(1+2 \rightarrow 3+4\) (où 1, 2, 3 et 4 sont des noyaux) en fonction respectivement des quatre
+premiers termes.
 </p>
 
-<div class="center">
+</div>
+<dl class="org-dl">
+<dt>masse nucléaire</dt><dd><p>
+la masse nucléaire correspond à la masse du noyau <i>i.e.</i>
+</p>
+\begin{align*}
+  m\left(^\text{A}_\text{Z}\text{X}\right)c^2=Zm_pc^2+(A-Z)m_nc^2-B_N
+\end{align*}
+
+<p>
+où \(B_N\) est égal à l'énergie de liaison des nucléons au sein du noyau.
+</p></dd>
+<dt>masse atomique</dt><dd><p>
+cette masse est associée à la masse de l'atome soit à la masse nucléaire à
+laquelle s'ajoute celle du cortège électronique
+</p>
+\begin{align*}
+  M_\text{at.}\left(^\text{A}_\text{Z}\text{X}\right)c^2=m\left(^\text{A}_\text{Z}\text{X}\right)c^2+Zm_ec^2-B_e
+\end{align*}
+
+<p>
+où \(B_e\) correspond à l'énergie de liaison des
+électrons. Cette quantité est particulièrement faible (&sim;
+3 keV/\(e^-\)) au regard des masses mises en jeu en physique
+nucléaire. On aura donc tendance à la négliger si bien que
+</p>
+\begin{align*}
+  M_\text{at.}\left(^\text{A}_\text{Z}\text{X}\right)c^2\simeq Z\left(m_pc^2+m_ec^2\right)+\left(A-Z\right)m_nc^2-B_N
+\end{align*}</dd>
+
+<dt>excès de masse atomique</dt><dd><p>
+écart entre la masse atomique et la masse molaire
+\(A\). Le carbone 12 sert toujours de référence à savoir
+</p>
+\begin{align*}
+  \Delta M\left(^{12}_{6}\text{C}\right)&=0\\
+  \Delta M\left(^\text{A}_\text{Z}\text{X}\right)&=M_\text{at.}\left(^\text{A}_\text{Z}\text{X}\right) - A\text{ en u.m.a}\\
+  \Delta M\left(^\text{A}_\text{Z}\text{X}\right)c^2&=M_\text{at.}\left(^\text{A}_\text{Z}\text{X}\right)c^2 - 931.5A\text{ en MeV}\\
+\end{align*}
+
+<p>
+C'est généralement les valeurs \(\Delta
+     M\left(^\text{A}_\text{Z}\text{X}\right)c^2\) qui sont tabulées.
+</p></dd>
+<dt>énergie de liaison des nucléons</dt><dd><p>
+la valeur de \(B_N\) est approximée par la
+formule de Bethe et Weizsäcker
+</p>
+\begin{align*}
+  B_N=\underbrace{a_VA - a_SA^{2/3}}_{\text{modèle de la goutte liquide}}-\underbrace{a_{C}\frac{Z^2}{A^{1/3}}}_{\text{Coulomb}}-\underbrace{a_{A}\frac{\left(N-Z\right)^2}{A}}_{\text{asymétrie}}+\underbrace{\delta(A,Z)}_{\text{appariement}}
+\end{align*}
+
+<p>
+Cette formule découle de l'analogie entre un fluide et un noyau à savoir que l'énergie de
+liaison d'une goutte liquide est d'autant plus grande que son volume est important (terme
+\(a_VA\) où \(V\propto A\)). Toutefois, les nucléons en surface contribuent moins puisqu'ils ont
+moins de voisins. La goutte cherche donc à minimiser sa surface d'où sa forme sphérique (terme
+\(a_SA^{2/3}\)). Par ailleurs, il faut tenir compte de l'interaction coulombienne : la
+répulsion entre protons du noyau entraîne une diminution de l'énergie de liaison. De plus,
+l'énergie potentielle du noyau sera d'autant plus grande que les niveaux de Fermi des neutrons
+et protons seront proches (terme symétrique \(a_{A}\tfrac{\left(N-Z\right)^2}{A}\)). Ce terme
+d'asymétrie traduit le fait que les nucléons étant des fermions, avoir un excédent de proton ou
+de neutron a tendance à augmenter l'énergie et donc diminuer la liaison du noyau en raison du
+remplissage des niveaux de Fermi. Ainsi, un noyau cherche à égaliser le nombre de proton et de
+neutrons tout du moins pour les noyaux légers. Enfin, l'appariement \(\delta(A,Z)\) joue un rôle
+important dans l'énergie de liaison : les noyaux ayant un nombre pair de protons/neutrons
+seront plus liés.
+</p>
+\begin{align*}
+  \delta(A,Z)=\left\{
+  \begin{array}{cl}
+    +\frac{12}{\surd A}&\text{ pour les noyaux pair-pair}\\
+    0&\text{ pour les noyaux impair-pair}\\
+    -\frac{12}{\surd A}&\text{ pour les noyaux impair-impair}
+  \end{array}
+  \right.
+\end{align*}
+
+<p>
+L'énergie de liaison moyenne par nucléon correspond à la valeur
+\(\frac{B_N}{A}\) qui est égale à 8 MeV/nucléon au delà de \(A\) &gt; 20.
+</p></dd>
+</dl>
+
+
+<p>
+<b>Réaction 1 + 2 &rarr; 3 + 4 où 1,2,3,4 sont des noyaux</b>
+</p>
+
+<p>
+La chaleur de réaction \(Q\) s'écrit
+</p>
+\begin{align*}
+  Q&=m_1c^2+m_2c^2-m_3c^2-m_4c^2\\
+  &=M^1_\text{at.}c^2+M^2_\text{at.}c^2-M^3_\text{at.}c^2-M^4_\text{at.}c^2\quad\text{(Z conservé)}\\
+  &=\Delta M_1c^2+\Delta M_2c^2-\Delta M_3c^2-\Delta M_4c^2\quad\text{(A conservé)}\\
+  &=-\left(B^1_N+B^2_N\right)+\left(B^3_N+B^4_N\right)
+\end{align*}
+</div>
+</div>
+
+<div id="outline-container-orgcfcb6c4" class="outline-2">
+<h2 id="orgcfcb6c4"><span class="section-number-2">2</span> Décroissance radioactive du sodium 22</h2>
+<div class="outline-text-2" id="text-2">
+<div class="QUESTION">
+<p>
+Le sodium 22 (<sup>22</sup><sub>11</sub>Na), <b>qui sera étudié au cours des travaux pratiques</b>, est souvent employé
+comme source de positrons car sa période, \(T\)~2.6 ans, est relativement longue. Ce noyau se
+désintègre presqu'à 100% vers le premier état excité du néon&nbsp;22, situé à 1.27 MeV, soit par
+émission &beta;<sup>+</sup> avec un rappport d'embranchement de 90%, soit par capture électronique.
+</p>
+
+<ol class="org-ol">
+<li>Ecrire les réactions de désintégration du&nbsp;<sup>22</sup><sub>11</sub>Na.</li>
+</ol>
+
+</div>
+
+<div class="org-center">
 
 <div class="figure">
-<p><img src="./figures/aleph_ee.png" alt="aleph_ee.png" />
+<p><img src="./figures/sodium22_decay.png" alt="sodium22_decay.png" />
 </p>
 </div>
 </div>
 
 <ol class="org-ol">
-<li>D'après cette figure, correspondant aux événements issus des désintégrations
-\(Z^0 \rightarrow e^+e^-\), estimer la masse du \(Z^0\), ainsi que la largeur
-associée.</li>
+<li><p>
+Les réactions de désintégration sont
+</p>
+\begin{align*}
+  ^{22}\text{Na}\to ^{22}\text{Ne}^*+e^++\nu_e&\quad\beta^+\text{(90\%)}\\
+  ^{22}\text{Na}+e^-\to ^{22}\text{Ne}^*+\nu_e&\quad\text{CE (10\%)}
+\end{align*}</li>
+</ol>
+
+
+<div class="QUESTION">
+<ol class="org-ol">
+<li value="2">Quelle est la période partielle de capture électronique du&nbsp;<sup>22</sup>Na ?</li>
 </ol>
 
 </div>
-<p>
-Le LEP (pour <i>Large Electron Positron collider</i>) était un accélérateur de
-particules circulaire de 27 km de circonférence, passant sous le site du CERN
-entre la France et la Suisse. En fonction de 1989 à 2000, le LEP demeure le plus
-puissant collisionneur de leptons jamais construit
-(\(E_{\text{max}}=\unit[200]{GeV}\)).
-</p>
-
-<p>
-La production de \(Z^0\) intervient par la collision de \(e^+e^-\). Ce boson se
-désintègre <i>via</i> différents canaux dont la désintégration \(Z^0\to e^+e^-\). La
-figure présente la section efficace en fonction de l'énergie des \(e^+e^-\)
-incidents.
-</p>
 
 <ol class="org-ol">
-<li value="1">Les faisceaux d'électrons-positrons sont accélérés à la même énergie
-mais avec des impulsions opposées. Par conservation de l'impulsion, le \(Z^0\)
-ainsi produit est au repos et les deux leptons produits par désintégration
-sont donc émis dos-à-dos. La masse du \(Z^0\) correspond donc à la position en
-énergie du maximum de production <i>i.e.</i> à la résonance soit une masse de
-\(M_{Z^0}c^2=\unit[91.2]{GeV}\) (la mesure figurant dans le PDG donne 91.1876
-&plusmn; 0.0021 GeV). La largeur à mi-hauteur mesurée est
-\(\Gamma(Z^0)=2\times(91.2-90)=\unit[2.4]{GeV}\) (contre 2.4952 &plusmn; 0.0023 GeV
-dans le PDG).</li>
+<li value="2"><p>
+Décroissance radioactive \(N(t)=N_0\,e^{-\lambda t}\) où \(\lambda\)
+correspond à la probabilité de décroissance et est égale à \(\frac{\ln 2}{T}\),
+\(T\) étant la période. Ainsi,
+\(\lambda_\text{tot.}=\lambda_{\beta^+}+\lambda_\text{CE}=\frac{\ln 2}{T}\)
+avec \(\frac{\lambda_{\beta^+}}{\lambda_\text{tot.}}=90\%\) et
+\(\frac{\lambda_\text{CE}}{\lambda_\text{tot.}}=10\%\). On déduit que la
+période partielle de capture électronique est
+</p>
+\begin{align*}
+  T_\text{CE}&=\frac{\ln 2}{\lambda_\text{CE}}=\frac{\ln 2}{0.1\,\lambda_{tot.}}\\
+  &=\frac{T}{0.1}=10T=\unit[26]{ans}
+\end{align*}</li>
 </ol>
 
 <div class="QUESTION">
 <ol class="org-ol">
-<li value="2">Le calcul en théorie électrofaible de la largeur partielle du \(Z^0\) pour
-sa désintégration en \(e^+e^-\), est \(\Gamma(Z^0 \rightarrow e^+ e^-)\) ~ 84
-MeV. Pourquoi ne retrouve-t-on pas la largeur précédente ?</li>
+<li value="3">Les excès de masse atomique de&nbsp;<sup>22</sup>Na et&nbsp;<sup>22</sup>Ne sont respectivement -5183 keV et
+-8025 keV. Calculer le \(Q\) de la capture électronique.</li>
 </ol>
 
 </div>
-<ol class="org-ol">
-<li value="2">\(\Gamma(Z^0)\gg\Gamma(Z^0\to e^+e^-)\). La durée de vie du boson \(Z^0\)
-est une propriété intrinsèque à cette particule : elle ne dépetnd donc pas du
-mode de désintégration. À titre d'exemple, la mesure du taux de
-désintégration de \(Z^0\to\mu^+\mu^-\) donnerait un résultat expérimental
-identique. À partir de la distribution en masse invariante, la largeur de la
-résonance est donc la convolution de l'ensemble des modes de désintégration
-du \(Z^0\) (à laquelle s'ajoute les effets expérimentaux tels que la résolution
-en énergie du calorimètre électromagnétique). On ne peut donc
-expérimentalement isolé les différents modes de désintégrations du \(Z^0\).</li>
-</ol>
 
-<div class="QUESTION">
-<ol class="org-ol">
-<li value="3">Dessiner les diagrammes de Feynman correspondant à la collision \(e^+e^-\)
-suivie d'une désintégration en \(\nu \bar{\nu}\), \(l^-l^+\) ou \(q\bar{q}\) (où
-\(\nu\) (\(\bar{\nu}\)) représente un (anti)neutrino, \(l^-\) (\(l^+\)) un
-(anti)lepton chargé et \(q\) (\(\bar{q}\)) un (anti)quark).</li>
-</ol>
-
-</div>
 <ol class="org-ol">
 <li value="3"><p>
-Diagrammes de Feynman
+Capture électronique :
+\(^{22}_{11}\text{Na}+e^-\to^{22}_{10}\text{Ne}^*+\nu_e\)
 </p>
 
-<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="void">
-
-
-<colgroup>
-<col  class="org-left" />
-
-<col  class="org-left" />
-
-<col  class="org-left" />
-</colgroup>
-<tbody>
-<tr>
-<td class="org-left"><img src="./figures/Z0_qqbar_diagram.png" alt="Z0_qqbar_diagram.png" /></td>
-<td class="org-left"><img src="./figures/Z0_llbar_diagram.png" alt="Z0_llbar_diagram.png" /></td>
-<td class="org-left"><img src="./figures/Z0_nunubar_diagram.png" alt="Z0_nunubar_diagram.png" /></td>
-</tr>
-</tbody>
-</table></li>
+<p>
+La charge étant conservée tout comme le nombre de nucléons, la chaleur de réaction de la capture
+électronique se déduit des excès de masse
+</p>
+\begin{align*}
+  Q_\text{CE}&=\Delta M_\text{at.}\left(^{22}\text{Na}\right)c^2-\Delta M_\text{at.}\left(^{22}\text{Ne}^*\right)c^2\\
+  &=\Delta M_\text{at.}\left(^{22}\text{Na}\right)c^2-\Delta M_\text{at.}\left(^{22}\text{Ne}\right)c^2-E^*(^{22}\text{Ne})\\
+  &=-5183+8025-1270=\unit[1572]{keV}
+\end{align*}</li>
 </ol>
 
 <div class="QUESTION">
 <ol class="org-ol">
-<li value="4"><p>
-Lorsque plusieurs modes de désintégration existent, on associe à chacun
-d'eux une largeur de désintégration partielle, dont la somme fournit la
-largeur totale. Les modes principaux de désintégration du boson \(Z^0\)
-correspondent à la création d'une paire fermion-antifermion, décomposés de la
-façon suivante :
-</p>
-\begin{align*}
-  \Gamma_\text{tot.}(Z^0)=N_\nu\Gamma(Z^0\rightarrow\nu\bar{\nu})+N_\ell\Gamma(Z^0 \rightarrow \ell^- \ell^+)+\Gamma_\text{tot.} (Z^0\rightarrow q \bar{q})=\unit[2495]{MeV}
-\end{align*}
-
-<p>
-Les 3 largeurs partielles de leptons chargés sont égales, et la largeur
-partielle de désintégration en toutes les paires possibles quark-antiquark
-vaut \(\Gamma_\text{tot.}(Z^0 \rightarrow q\bar{q})\) = 1741 MeV.
-</p>
-
-<p>
-La contribution d'une paire neutrino-antineutrino, de masse très inférieure à
-celle du \(Z^0\), se calcule en théorie électrofaible par la formule suivante :
-</p>
-\begin{align*}
-  \Gamma(Z^0\rightarrow\nu\bar{\nu}) = \frac{\alpha_{e.m.} \ M_Z c^2}{24\sin^2\theta_W\cos^2\theta_W}
-\end{align*}
-
-<p>
-On prend comme valeur du couplage électromagnétique \(\alpha_\text{em} =
-   \frac{e^2}{4\pi\epsilon_0\hbar c} = \frac{1}{128}\) à une échelle de \(Q^2\)
-~100 GeV<sup>2</sup> (la différence entre cette valeur et celle du couplage effectif
-\(\alpha_\text{em} = 1/137\) à \(Q^2\) = 0 provient de corrections
-quantiques). Le paramètre \(\theta_W\) est l'angle de mélange électrofaible. La
-valeur de \(\sin^2\theta_W\) dépend du schéma de renormalisation électrofaible
-choisi : une valeur est donnée par la relation \(\sin^2\theta_W = 1 -
-   (M_Wc^2/M_Zc^2)^2 = e^2/g^2\), où \(e\) est la constante de couplage
-électromagnétique et \(g\) celle du groupe de symétrie SU(2)\(_L\). On utilise
-ici \(\sin^2\theta_W\sim 0.23\).
-</p>
-
-<p>
-Calculer la valeur du nombre de neutrinos légers \(N_{\nu}\) existants.
-</p>
-
-<p>
-<i>Remarque</i> : Le résultat obtenu par les expériences LEP, \(N_{\nu}\) = 3, se
-traduit par une limite inférieure sur la masse d'un quatrième neutrino ayant
-un couplage standard avec le \(Z^0\). Cette limite est \(M_{\nu_L} c^2 > M_Z /2\)
-45 GeV !
-</p></li>
+<li value="4">Estimer l'énergie cinétique maximale des positrons émis lors de la transition&nbsp;\(\beta^+\).</li>
 </ol>
 
 </div>
 <ol class="org-ol">
 <li value="4"><p>
-Calcul du nombre de neutrinos
+Désintégration \(\beta^+\) :
+\(^{22}_{11}\text{Na}\to^{22}_{10}\text{Ne}^*+e^++\nu_e\)
 </p>
-\begin{align*}
-  \Gamma_\text{tot.}(Z^0)=N_\nu\Gamma(Z^0\to\nu\bar{\nu})+N_\ell\Gamma(Z^0\to \ell^-\ell^+)+\Gamma_\text{tot.}(Z^0\to q\bar{q})=\unit[2495]{MeV}
-\end{align*}
 
 <p>
-avec \(\Gamma_\text{tot.}(Z^0\to q\bar{q})=\unit[1741]{MeV}\), \(\Gamma(Z^0\to
-   \ell^-\ell^+)=\Gamma(Z^0\to e^-e^+)=\unit[84]{MeV}\) et
+L'énergie cinétique maximale que peut emporter le positron correspond au \(Q_{\beta^+}\) de la
+réaction soit
 </p>
 \begin{align*}
-  \Gamma(Z^0\to\nu\bar{\nu})=\frac{\alpha_\text{em}\,M_{Z^0}c^2}{24\sin^2\theta_W\cos^2\theta_W}
-\end{align*}
-
-<p>
-Ainsi, le nombre de neutrinos \(N_\nu\) s'écrit
-</p>
-\begin{align*}
-  N_\nu&=\frac{\Gamma_\text{tot.}(Z^0)-N_\ell\Gamma(Z^0\to \ell^-\ell^+)-\Gamma_\text{tot.}(Z^0\to q\bar{q})}{\Gamma(Z^0\to\nu\bar{\nu})}\\
-  &=\frac{\Gamma_\text{tot.}(Z^0)-N_\ell\Gamma(Z^0\to \ell^-\ell^+)-\Gamma_\text{tot.}(Z^0\to q\bar{q})}{\alpha_\text{em}\,M_{Z^0}c^2}\times24\sin^2\theta_W\cos^2\theta_W\\
-  &=\frac{2495-3\times84-1741}{91.2\,10^3}\times128\times24\times0.23\times(1-0.23)\\
-  &=2.99\text{ soit 3 familles de neutrinos}
+  T_\text{max}(e^+)&=Q_{\beta^+}=Q_\text{CE}-2m_ec^2\\
+  &=1572-1022=\unit[550]{keV}
 \end{align*}</li>
 </ol>
-</div>
-</div>
 
-<div id="outline-container-orgheadline4" class="outline-2">
-<h2 id="orgheadline4"><span class="section-number-2">2</span> Neutrinos : production, détection, masse</h2>
-<div class="outline-text-2" id="text-2">
-</div><div id="outline-container-orgheadline2" class="outline-3">
-<h3 id="orgheadline2"><span class="section-number-3">2.1</span> Chaîne \(pp\) : \(4p\to\alpha+2\nu\)</h3>
-<div class="outline-text-3" id="text-2-1">
 <div class="QUESTION">
-<p>
-Dans la chaîne de conversion solaire dite "\(pp\)", les différentes réactions
-aboutissant à la transformation de l'hydrogène en hélium émettent deux
-neutrinos pour chaque conversion de quatre protons en une particule &alpha;,
-avec \(Q\) = 26.72 MeV d'énergie libérée.
-</p>
-
 <ol class="org-ol">
-<li>Si on suppose que la chaîne "\(pp\)" est la seule responsable de la production
-d'énergie solaire, estimer le flux de neutrinos solaires (en m<sup>-2</sup>.s<sup>-1</sup>)
-provenant de la chaîne "\(pp\)" et arrivant sur la Terre, sachant que la
-puissance rayonnée par le Soleil vaut \(P_{\odot}\) = 3.83 10<sup>26</sup> J.s<sup>-1</sup> et
-que la distance Terre-Soleil vaut \(R\) = 1.5&nbsp;10<sup>8</sup> km.</li>
-
-<li>Sachant que 3% de l'énergie solaire est emportée par les neutrinos, quelle
-est leur énergie moyenne ?</li>
+<li value="5">Une façon de produire le&nbsp;<sup>22</sup>Na consiste à exploiter la
+réaction&nbsp;<sup>23</sup>Na(\(p,pn\))&nbsp;<sup>22</sup>Na. Sachant que l'excès de masse atomique de&nbsp;<sup>23</sup>Na,
+du neutron et du proton sont respectivement -9528 keV, 8071 keV et 7289 keV, estimer l'énergie
+seuil de cette réaction.</li>
 </ol>
 
 </div>
+
 <ol class="org-ol">
+<li value="5"><p>
+\(^{23}\text{Na}+p\to^{22}\text{Na}+p+n\)
+</p>
+
+\begin{align*}
+  Q&=\Delta M_\text{at.}\left(^{23}\text{Na}\right)c^2+\cancel{\Delta M_\text{at.}(p)c^2}-\Delta M_\text{at.}\left(^{22}\text{Na}\right)-\cancel{\Delta M_\text{at.}(p)c^2}-\Delta M_\text{at.}(n)c^2\\
+  &=-9528+5183-8071=\unit[-12.416]{MeV}<0
+\end{align*}
+
+<p>
+L'énergie cinétique seuil nécessaire à la réalisation de cette réaction est
+</p>
+\begin{align*}
+  T_S&=\frac{|Q|}{2}\times\frac{\sum m_{i,f}c^2}{m_\text{cible}c^2}\\
+  &\simeq\frac{|Q|}{2}\times\frac{\sum A}{A_\text{cible}}\\
+  &\simeq\frac{12.416}{2}\times\frac{23\times2+2}{23}=\unit[12.96]{MeV}
+\end{align*}</li>
+</ol>
+
+<div class="QUESTION">
+<ol class="org-ol">
+<li value="6">Pour obtenir ainsi une source de&nbsp;<sup>22</sup>Na, on irradie une cible de sel (NaCl) avec un
+faisceau de protons de 155 MeV, d'intensité \(I\) = 10 &mu;A. À cette énergie, la section efficace
+de la réaction citée est de 40 mb. La cible a une épaisseur de 2 mg/cm<sup>2</sup> et on assimile le
+chlore naturel au&nbsp;<sup>35</sup>Cl.
+
+<ol class="org-ol">
+<li>Calculer le nombre de noyaux de&nbsp;<sup>22</sup><sub>11</sub>Na produits par seconde.</li>
+
+<li>Établir l'expression du nombre \(N(t)\) de noyaux radioactifs obtenus si l'on irradie une cible
+avec un faisceau d'intensité constante entre les instants 0 et \(t_0\). Que devient \(N(t)\)
+lorsque l'on stoppe l'irradiation ?  Tracer l'allure de la courbe représentant \(N(t)\). Montrer
+que pendant l'irradiation \(N(t)\) tend vers une valeur limite \(N_{\infty}\) et donner son
+expression.</li>
+
+<li>Calculer l'activité de la source de&nbsp;<sup>22</sup>Na en photons de 1.27 MeV, quelques jours après
+une irradiation d'une heure. Exprimer le résultat en Becquerel, puis en Curie.</li>
+
+<li>Dans le spectre en énergie des photons émis par le&nbsp;<sup>22</sup>Na, on observe une raie à 511
+keV. Quelle est l'origine de cette raie ? Déduire l'activité de la source en photons de 511
+keV.</li>
+
+<li>Combien de photons de 1.27 MeV devrait recevoir en une minute un détecteur de 5 cm<sup>2</sup> situé à
+1 m de la source ?</li>
+</ol></li>
+</ol>
+
+</div>
+
+<ol class="org-ol">
+<li value="6"><ol class="org-ol">
 <li><p>
-Chaque réaction produit deux neutrinos et libère \(Q=\unit[26.72]{MeV}\). Le
-nombre de neutrinos produit par le Soleil est
+Le nombre de noyaux de&nbsp;<sup>22</sup>Na produit est
 </p>
 \begin{align*}
-  N_\nu&=2\times\frac{P_\odot}{Q}=2\times\frac{3.83\,10^{26}}{26.76\,10^6\times1.6\,10^{-19}}\\
-  &=\unit[1.78\,10^{38}]{s}^{-1}
-\end{align*}
-
-<p>
-Le flux de neutrinos sur Terre est alors
-</p>
-\begin{align*}
-  F_\nu&=\frac{N_\nu}{4\pi\,R^2}=\frac{1.78\,10^{38}}{4\pi\,(1.5\,10^{11})^2}\\
-  &=6.33\,10^{14}\,\text{m$^{-2}$.s$^{-1}$}
+  n_i\left(^{22}\text{Na}\right)&=\phi_p\times\rho_e\times\sigma_\text{tot.}\times\frac{\mathcal{N}}{A_\text{cible}}\\
+  &=\frac{I}{Ze}\times\rho_e\sigma_\text{tot.}\times\frac{\mathcal{N}}{A\left(^{23}\text{Na}\right)+A\left(^{35}\text{Cl}\right)}\\
+  &=\frac{10^{-5}}{1.6\,10^{-19}}\times2\,10^{-3}\times40\,10^{-3}\times10^{-24}\times\frac{6.02\,10^{23}}{58}\\
+  &=\unit[5.19\,10^7]{/s}
 \end{align*}</li>
 
 <li><p>
-3% de l'énergie libérée par chaque réaction \(Q=\unit[26.72]{MeV}\) est
-emportée par les deux neutrinos d'où
+La variation du nombre de noyaux de&nbsp;<sup>22</sup>Na est égal au nombre de noyaux créés par
+irradiation auquel vient se soustraire le nombre de noyaux s'étant désintégrés soit
 </p>
 \begin{align*}
-  \langle E_\nu\rangle=\frac{3\%\,Q}{2}=\unit[0.4]{MeV}
-\end{align*}</li>
-</ol>
-</div>
-</div>
+  \d n\left(^{22}\text{Na}\right)&=n_i\d t-\lambda n\d t\\
+  \frac{\d n}{\d t}+\lambda n&=n_i=\text{constante}
+\end{align*}
 
-<div id="outline-container-orgheadline3" class="outline-3">
-<h3 id="orgheadline3"><span class="section-number-3">2.2</span> Limite sur la masse des neutrinos</h3>
-<div class="outline-text-3" id="text-2-2">
-<div class="QUESTION">
 <p>
-La Supernova 1987A est située à une distance \(D\) = 1.7 10<sup>5</sup> années-lumière de
-la Terre. L'interaction de 10 neutrinos électroniques issus de cette source a
-été observée dans un détecteur contenant 1000 tonnes d'eau, pendant un
-intervalle de temps \(\Delta t\) = 10&nbsp;s. L'énergie moyenne des neutrinos était de
-10 MeV, et s'étendait de \(E_1\) = 5 MeV à \(E_2\) = 20 MeV. Les neutrinos ont été
-détectés par la réaction \(\nu_e + n \rightarrow p + e^-\).
+La solution de cette équation est de la forme \(n(t)=K_1e^{-\lambda t}+K_0\) où
 </p>
+\begin{align*}
+  \cancel{-\lambda K_1e^{-\lambda t}}+\cancel{\lambda K_1e^{-\lambda t}}+\lambda K_0&=n_i\\
+  K_0&=\frac{n_i}{\lambda}
+\end{align*}
 
-<ol class="org-ol">
-<li>Exprimer le temps d'arrivée d'un neutrino électronique en fonction de la
-distance \(D\), de sa masse \(m_{\nu}c^2\) (supposée petite mais non nulle) et de
-son énergie totale \(E\).</li>
-</ol>
+<p>
+De plus, \(n(t=0)=0\) impliquant \(K_1=-\frac{n_i}{\lambda}\) d'où
+</p>
+\begin{align*}
+  n(t)=\frac{n_i}{\lambda}\left(1-e^{-\lambda t}\right)
+\end{align*}
 
+<p>
+Pour une durée d'irradiation \(t\to\infty\), le nombre de noyau crée tend asymptotiquement vers
+\(n_\infty\to\frac{n_i}{\lambda}\)
+</p>
+<div class="org-center">
+
+<div class="figure">
+<p><img src="./figures/sodium22_rate.png" alt="sodium22_rate.png" />
+</p>
 </div>
-<ol class="org-ol">
+</div></li>
+
 <li><p>
-Le temps d'arrivée d'un neutrino correspond à \(t=\frac{D}{v}=\frac{D}{\beta
-   c}\). Or
+\(t_0=\unit[1]{h}\ll T=\unit[2.6]{ans}\) d'où \(\lambda t=\ln 2\frac{t}{T}\ll1\). Le temps
+d'irradiation étant significativement plus court que la durée de vie du sodium, on peut
+approximer le nombre de noyau produit par
 </p>
 \begin{align*}
-  \gamma&=\frac{E}{m_\nu c^2}=\frac{1}{\surd 1-\beta^2}\\
-  1-\beta^2&=\frac{(m_\nu c^2)^2}{E^2}\\
-  \beta&=\sqrt{1-\frac{(m_\nu c^2)^2}{E^2}}
+  n(t)\simeq\frac{n_i}{\lambda}\left(1-1+\lambda t\right)=n_i\times t
 \end{align*}
 
 <p>
-Le temps d'arrivé est ainsi
+ce qui traduit que le nombre d'irradiation est très largement supérieur au nombre de
+désintégrations. Ainsi, pour une heure d'irradiation, le nombre de noyau produit sera
 </p>
 \begin{align*}
-  t=\frac{D}{c\surd1-\frac{(m_\nu c^2)^2}{E^2}}
-\end{align*}</li>
-</ol>
-
-<div class="QUESTION">
-<ol class="org-ol">
-<li value="2"><p>
-On suppose que les neutrinos sont tous émis au même instant. Montrer que
-leur arrivée s'étale sur la durée :
-</p>
-\begin{align*}
-  \Delta t = \frac{D}{c} \frac{m_{\nu}^2c^4}{2} \left\{ \frac{1}{E_1^2} - \frac{1}{E_2^2}\right\}
-\end{align*}</li>
-</ol>
-
-</div>
-<ol class="org-ol">
-<li value="2"><p>
-Les neutrinos les plus énergétiques arriveront les premiers soit
-</p>
-\begin{align*}
-  \Updelta t&=t_1-t_2\\
-  &=\frac{D}{c}\left(\frac{1}{\surd1-\frac{m_\nu^2c^4}{E_1^2}}-\frac{1}{\surd1-\frac{m_\nu^2c^4}{E_2^2}}\right)\\
-  &\text{or }m_\nu c^2\ll E_{1,2}\\
-  &\simeq\frac{D}{c}\left(\cancel{1}+\frac{1}{2}\times\frac{m_\nu^2c^4}{E_1^2}-\cancel{1}-\frac{1}{2}\times\frac{m_\nu^2c^4}{E_2^2}\right)\\
-  &\simeq\frac{D}{c}\times\frac{m_\nu^2 c^4}{2}\left(\frac{1}{E_1^2}-\frac{1}{E_2^2}\right)
-\end{align*}</li>
-</ol>
-
-<div class="QUESTION">
-<ol class="org-ol">
-<li value="3">En déduire une limite supérieure sur la masse du neutrino électronique.</li>
-</ol>
-
-</div>
-<ol class="org-ol">
-<li value="3"><p>
-Du fait que \(\Updelta t\leq\unit[10]{s}\), on déduit que la masse des
-neutrinos \(m_\nu\) est nécessairement inférieure à
-</p>
-\begin{align*}
-  \Updelta t\leq\unit[10]{s}\Longleftrightarrow&m_\nu c^2\leq\sqrt{\frac{\Updelta t\times2c}{D}\times\frac{1}{1/E_1^2-1/E_2^2}}\\
-  &m_\nu c^2\leq\sqrt{\frac{2\Updelta tc}{D}\times\frac{E_1^2E_2^2}{E_2^2-E_1^2}}\\
-  &m_\nu c^2\leq E_1E_2\sqrt{\frac{2\Updelta tc}{D}\frac{1}{E_2^2-E_1^2}}\\
-  &m_\nu c^2\leq 5\times20\sqrt{\frac{20\times\cancel{c}}{1.7\,10^5\times\cancel{c}\times3600\times24\times365}\times\frac{1}{20^2-5^2}}\\
-  &m_\nu c^2\leq 5\times20\sqrt{\frac{20}{1.7\times3.15}\times\frac{1}{400-25}}\times\unit[10^{-6}]{MeV}\\
-  &m_\nu c^2\leq\unit[10]{eV}
+  n(\unit[1]{h})=5.19\,10^7\times3600=1.87\,10^{11}
 \end{align*}
 
 <p>
-Le résultat final fut \(m_{\nu_e}c^2\leq\unit[7]{eV}\) <sup><a id="fnr.1" class="footref" href="#fn.1">1</a></sup>, valeur qui,
-grâce aux expériences de mesure directe de la masse du neutrino électronique
-<i>via</i> l'étude du <i>end-point</i> du spectre de désintégration &beta; du tritium,
-Mainz et Troitztk, atteint aujourd'hui \(m_{\nu_e}\leq\unit[2.2]{eV}\). La
-future expérience Katrin devait gagner encore un ordre de grandeur sur la
-sensibilité : \(m_{\nu_e}\leq\unit[0.2]{eV}\).
- <div class="footdef"><sup><a id="fn.1" class="footnum" href="#fnr.1">1</a></sup> <div class="footpara"><p class="footpara"> W. David Arnett &amp; Jonathan L. Roser <a href="http://journals.aps.org/prl/abstract/10.1103/PhysRevLett.58.1906">Physical Review Letter 58</a>, David N. Spergel &amp; John N. Bahcall <a href="http://www.sciencedirect.com/science/article/pii/0370269388907903">Physical Letters B</a> </p></div><br/></div>
+Sachant que 100% des désintégrations tombent sur le premier niveau excité du néon 22 et génère
+ainsi un photon &gamma; de 1.27 MeV, on peut déduire l'activité en photon &gamma;
 </p>
+\begin{align*}
+  \mathcal{A}(t)&=\lambda n(t)=\frac{\ln 2}{T}\times n(\unit[1]{h})\\
+  &=\frac{\ln 2}{2.6\times365\times24\times3600}\times1.87\,10^{11}\\
+  &=\unit[1581]{Bq}=\unit[42.7]{nCi}\text{ où 1 Ci = 3.7 10$^{10}$ Bq}
+\end{align*}</li>
+
+<li><p>
+La raie à 511 keV correspond aux photons issus de l'annihilation \(e^++e^-\to2\gamma\). En
+effet, dans 90% des cas, la désintégration se fait par désintégration \(\beta^+\) où le positron
+émis, une fois son énergie cinétique dissipée, s'annihilie avec les électrons de la
+matière. Par conservation de l'impulsion, les deux photons sont émis dos-à-dos, chacun
+emportant une énergie cinétique de 511 keV soit la masse de l'électron/positron. Du fait que
+ces deux photons sont émis dans 90% des désintégrations, l'activité en photons de 511 keV est
+égale à
+</p>
+\begin{align*}
+  \mathcal{A}_{\gamma_{0.511}}=2\times90\%\times\mathcal{A}_{\gamma_{1.27}}=\unit[2846]{Bq}
+\end{align*}</li>
+</ol></li>
 </ol>
 </div>
 </div>
-</div>
 
-<div id="outline-container-orgheadline5" class="outline-2">
-<h2 id="orgheadline5"><span class="section-number-2">3</span> Les mésons neutres \(K^0\) et \(\bar{K}^0\)</h2>
+<div id="outline-container-orgdce3107" class="outline-2">
+<h2 id="orgdce3107"><span class="section-number-2">3</span> Tomographie par émission de positrons</h2>
 <div class="outline-text-2" id="text-3">
+
+<div class="figure">
+<p><img src="./figures/pet_cerveau.jpg" alt="pet_cerveau.jpg" width="300" />
+</p>
+<p><span class="figure-number">Figure 3: </span><b>Vue axiale du cerveau par tomographie à émission de positrons</b></p>
+</div>
+
 <div class="QUESTION">
 <p>
-Le \(K^0\) et le \(\bar{K^0}\) sont des mésons étranges, produits par interaction
-forte et se désintègrant par interaction faible. Le \(\bar{K^0}\), antiparticule
-du \(K^0\), a la même masse que lui.
+La tomographie par émission de positrons (TEP) est une technique d'imagerie
+isotopique utilisant des molécules biologiques marquées par des isotopes
+radioactifs émetteurs \(\beta^+\) à demi-vie très brève, tel que le&nbsp;<sup>11</sup>C,
+qui permettent une visualisation des organes en fonctionnement, par mesure des
+deux photons de 511 keV émis simultanément à 180 degrés l'un de l'autre lors de
+l'annihilation \(e^+e^-\). Les courtes périodes des radioisotopes utilisés pour la
+TEP (de 2 mn pour le&nbsp;<sup>15</sup>O à 110 mn pour le&nbsp;<sup>18</sup>F) imposent la
+présence simultanée d'un laboratoire de radiochimie et d'une caméra TEP sur le
+lieu de l'accélérateur produisant les radioéléments.
 </p>
 
 <p>
-Le \(K^0\), comme le \(\bar{K^0}\), se désintègre soit en deux pions, soit en
-trois pions, avec des constantes radioactives différentes :
+L'isotope radioactif&nbsp;<sup>11</sup>C, de période radioactive \(T_{1/2}\) = 20.36 min, est
+formé par la réaction nucléaire
 </p>
 \begin{align*}
-  \lambda_{2\pi} = \unit[1.12\,10^{10}]{s^{-1}} \quad \text{et} \quad \lambda_{3\pi} = \unit[1.93\,10^7]{s^{-1}}
+  p + ^{14}_{7}\text{N}\rightarrow ^{11}_{6}\text{C}+\alpha
 \end{align*}
 
 <p>
-Les états \(K^0\) et \(\bar{K^0}\) ne sont pas états propres de \(\hat{\mathcal{C}}
-\hat{\mathcal{P}}\) (avec \(\hat{\mathcal{P}}\) opération de parité ou symétrie
-droite-gauche et \(\hat{\mathcal{C}}\) opération de conjugaison de charge ou
-symétrie particule-antiparticule).
-</p>
-
-<p>
-On est amené à définir les particules fictives \(\ket{K^0_1}\) et \(\ket{K^0_2}\)
-</p>
-\begin{align*}
-  \ket{K^0_1} = \frac{1}{\sqrt{2}} \ket{K^0} - \frac{1}{\sqrt{2}} \ket{\bar{K^0}} \quad\text{et}\quad \ket{K^0_2} = \frac{1}{\sqrt{2}} \ket{K^0} + \frac{1}{\sqrt{2}} \ket{\bar{K^0}}
-\end{align*}
-
-<p>
-qui sont états propres de \(\hat{\mathcal{C}}\hat{\mathcal{P}}\) avec les valeurs
-propres respectives +1 et -1.
-</p>
-
-<p>
-On a de la même manière
-</p>
-\begin{align*}
-  \ket{K^0} = \frac{1}{\sqrt{2}} \ket{K^0_1} + \frac{1}{\sqrt{2}} \ket{K^0_2} \quad\text{et}\quad \ket{\bar{K^0}} = -\frac{1}{\sqrt{2}} \ket{K^0_1} + \frac{1}{\sqrt{2}} \ket{K^0_2}
-\end{align*}
-
-<p>
-\(\ket{K^0}\) et \(\ket{\bar{K^0}}\) d'une part, \(\ket{K^0_1}\) et \(\ket{K^0_2}\)
-d'autre part, formant deux bases orthonormées.
+en irradiant une cible d'azote de nombre de masse A = 14, d'épaisseur 10
+mg/cm<sup>2</sup> avec un faisceau de protons contenant 4 10<sup>12</sup> particules/seconde. La
+section efficace totale de cette réaction est &sigma; = 200 mb. Au début de
+l'irradiation (\(t=0\)), il n'y a aucun noyau radioactif dans l'échantillon.
 </p>
 
 <ol class="org-ol">
+<li>Calculer le nombre de noyaux radioactifs obtenus au bout de 3h d'irradiation.</li>
+</ol>
+
+</div>
+
+<ol class="org-ol">
 <li><p>
-On peut montrer que les états finaux hadroniques (à 2 ou 3 pions) de la
-désintégration d'un \(K^0\) (\(\bar{K^0}\)) sont des états propres de l'opération
-\(\hat{\mathcal{C}}\hat{\mathcal{P}}\), avec :
+La variation du nombre de noyaux de carbone 11, \(\frac{dn}{dt}\), est égale à
+au nombre de noyaux créés par irradiation soustrait du nombre de noyaux se
+désintégrant soit \(\frac{dn}{dt}=n_i-\lambda n\). La résolution de cette
+équation différentielle donne une variation temporelle du nombre de noyaux
+\(n(t)\) égale à
 </p>
 \begin{align*}
-  \hat{\mathcal{C}} \hat{\mathcal{P}} \ket{2\pi} = + \ket{2\pi} \quad\text{et}\quad \hat{\mathcal{C}} \hat{\mathcal{P}} \ket{3\pi} = - \ket{3\pi}
+  n(t)&=\frac{n_i}{\lambda}\left(1-e^{-\lambda t}\right)\\
+  &\text{où }n_i=\phi_p\times\rho_e\times\frac{\mathcal{N}}{A_\text{cible}}\times\sigma_\text{tot.}
 \end{align*}
 
 <p>
-En déduire le mode de désintégration de \(K^0_1\) (resp.  \(K^0_2\)) et sa vie moyenne \(\tau_1\) (resp. \(\tau_2\)).
-</p></li>
+Ainsi, le nombre de noyaux radioactifs de carbone 11 obtenus au bout de 3
+heures d'irradiation est
+</p>
+\begin{align*}
+  n(t=\unit[3]{h})=&\frac{4\,10^{12}\times10\,10^{-3}\times6.02\,10^{23}\times200\,10^{-27}}{14}=\unit[3.44\,10^8]{noyaux/s}\\
+  &\times\frac{20.36\times60}{\ln 2}\times\left(1-e^{-\frac{\ln 2\times3\times60}{20.36}}\right)\\
+  =&\,\unit[6.05\,10^{11}]{noyaux}
+\end{align*}</li>
+</ol>
+
+<div class="QUESTION">
+<ol class="org-ol">
+<li value="2">On stoppe alors l'irradiation. Calculer l'activité qu'aura alors
+l'échantillon au bout de 30 min, temps nécessaire pour introduire
+le&nbsp;<sup>11</sup>C dans des molécules complexes qui sont alors injectées au
+patient.</li>
 </ol>
 
 </div>
 <ol class="org-ol">
-<li><p>
-Les états "fictifs" \(\ket{K^0_1}\) et \(\ket{K^0_2}\) sont des états propres de
-\(\hat{\mathcal{C}}\hat{\mathcal{P}}\) de valeurs propres respectives +1 et
--1. Les états finaux hadroniques à 2 et 3 pions sont également états propres
-de l'opérateur \(\hat{\mathcal{C}}\hat{\mathcal{P}}\) et ont des valeurs
-propres identiques à celle des états \(\ket{K^0_1}\) et \(\ket{K^0_2}\). Les
-états physique \(\ket{K^0}\) et \(\ket{\bar{K}^0}\) étant un mélange des états
-propres \(\ket{K^0_1}\) et \(\ket{K^0_2}\) et se désintégrant aussi bien en deux
-et trois pions, on déduit, par association des valeurs propres, que l'état
-\(\ket{K^0_1}\equiv\ket{2\pi}\) et \(\ket{K^0_2}\equiv\ket{3\pi}\). La durée de
-vie moyenne de ces deux états est ainsi
+<li value="2"><p>
+À \(t=t_0=\unit[3]{h}\), l'irradiation est stoppée, les noyaux de carbone
+ne faisant que se déintégrer. L'activité en radioéléments devient
 </p>
 \begin{align*}
-  \tau_1&=\frac{1}{\lambda_{2\pi}}=\unit[8.9\,10^{-11}]{s}\\
-  \tau_2&=\frac{1}{\lambda_{3\pi}}=\unit[5.2\,10^{-8}]{s}
+  \mathcal{A}(t'=t-t_0=\unit[30]{min})&=\lambda\times n(t'=\unit[30]{min})\\
+  &=\frac{\ln 2}{T}\times n(t_0)\,e^{-\lambda t'}\\
+  &=\frac{\ln 2}{20.36\times60}\times6.05\,10^{11}\,e^{-\ln 2\times30/20.36}\\
+  &=\unit[1.24\,10^8]{Bq}=\unit[124]{MBq}\\
+  &=\unit[3.3]{mCi}\text{ où }\unit[1]{Ci}=\unit[3.7\,10^{10}]{Bq}
+\end{align*}</li>
+</ol>
+
+<div class="QUESTION">
+<ol class="org-ol">
+<li value="3">Quelle sera l'activité résiduelle 24h après la fin de l'irradiation ?
+Commenter les deux résultats.</li>
+</ol>
+
+</div>
+<ol class="org-ol">
+<li value="3"><p>
+Après 24 heures, l'activité de la "source" sera
+</p>
+\begin{align*}
+  \mathcal{A}(\unit[24]{h})&=\frac{\ln 2}{20.36\times60}\times6.05\,10^{11}\,e^{-\ln2\times24\times60/20.36}\\
+  &=\unit[1.75\,10^{-13}]{Bq}
+\end{align*}
+
+<ul class="org-ul">
+<li>30 minutes après irradiation, l'activité de la source injectée, de l'ordre
+de quelques centaines de MBq, est suffisante pour réaliser une TEP
+autrement dit pour observer les photons &gamma; à 511 keV. Cette activité
+qui varie entre 150 et 400 MBq pour un adulte correspond à une dose
+équivalente à 10 mSv<sup><a id="fnr.1" class="footref" href="#fn.1">1</a></sup></li>
+<li>la période très courte du carbone 11 fait que l'activité de la source
+décroît rapidement, le radioélement étant à l'état de trace au bout de 24
+h. En réalité, la radioactivité disparaît encore plus rapidement car les
+radioéléments non fixés sont naturellement éliminés avec les urines. La
+principale contrainte d'utilisation de la TEP est en fait lié à la courte
+demi-vie des isotopes radioactifs qui nécessitent donc la présence d’un
+cyclotron à proximité du centre d’examen.</li>
+</ul></li>
+</ol>
+</div>
+</div>
+
+<div id="outline-container-orgd03cd23" class="outline-2">
+<h2 id="orgd03cd23"><span class="section-number-2">4</span> Formule de Bethe et Weizsäcker</h2>
+<div class="outline-text-2" id="text-4">
+<div class="QUESTION">
+<ol class="org-ol">
+<li><ol class="org-ol">
+<li><p>
+Expliquer les différents termes intervenant dans la formule semi-empirique donnant la masse
+atomique :
+ <div class="footdef"><sup><a id="fn.1" class="footnum" href="#fnr.1">1</a></sup> <div class="footpara"><p class="footpara"> cette dose est équivalente à celle d'un scanner thoraco-abdominal. En France, la limite d'exposition pour le public est fixée à 1 mSv par an <b>hors</b> exposition médicale. À titre de comparaison, une radiographie des poumons correspond à 0.1 mSv tout comme un voyage long courrier Paris-New York aller-retour. Les effets d'une cigarette sont eux évalués à 0.01 mSv par cigarette : la plupart des fumeurs dépassent très vite le seuil légal d'exposition de la population générale. </p></div><br/></div>
+</p>
+\begin{align*}
+  M_\text{at}(Z,A)c^2 &= Z(m_pc^2 + m_ec^2)+(A-Z)m_nc^2-a_v A\\
+  &+a_s A^{2/3}+a_c\frac{Z^2}{A^{1/3}}+a_A\frac{(A - 2Z)^2}{A}-\delta(Z,A)
 \end{align*}
 
 <p>
-On note que ces deux durées de vie sont compatibles avec celles issues de
-processus par intéraction faible.
+avec \(\delta(Z,A) = +\frac{12\text{ MeV}}{\sqrt{A}}\) pour \(Z\) et \(N\) pairs, \(-\frac{12\text{
+      MeV}}{\sqrt{A}}\) pour \(Z\) et \(N\) impairs, et 0 pour \(A\) impair.
 </p></li>
+
+<li>En déduire que l'excès de masse atomique \(\Delta M_\text{at}c^2\) pour des noyaux isobariques
+s'écrit comme un polynome du second degré en \(Z\). Combien y a-t-il de paraboles possibles ?</li>
+</ol></li>
+</ol>
+
+</div>
+<ol class="org-ol">
+<li value="1"><ol class="org-ol">
+<li><p>
+À partir de la question <a href="#org50ef601">1</a>, la masse atomique est égale à
+</p>
+\begin{align*}
+  M_\text{at.}(A,Z)c^2=&Z(m_pc^2+m_ec^2)+(A-Z)m_nc^2-B_N\\
+  =&Z(m_pc^2+m_ec^2)+(A-Z)m_nc^2\\
+  &-a_VA+a_SA^{2/3}+a_C\frac{Z^2}{A^{1/3}}+a_A\frac{(A-2Z)^2}{A}-\delta(Z,A)
+\end{align*}
+
+<p>
+L'origine des différents termes de l'énergie de liaison \(B_N\) est expliquée à la
+question&nbsp;<a href="#org50ef601">1</a>.
+</p></li>
+<li><i>cf.</i> ci-dessous.</li>
+</ol></li>
 </ol>
 
 <div class="QUESTION">
 <ol class="org-ol">
 <li value="2"><p>
-Les particules "physiques" \(K^0\) et \(\bar{K^0}\) sont considérées comme
-des combinaisons linéaires des particules "fictives" \(K^0_1\) et \(K^0_2\). La
-désintégration des \(K^0\) et \(\bar{K^0}\) peut alors se décomposer en deux
-problèmes indépendants : la désintégration du \(K^0_1\) et la désintégration du
-\(K^0_2\).
+En utilisant la formule de Bethe et Weizsäcker (BW), prévoir quel est l'élément le plus
+stable des familles des isobares de nombre de masse \(A\) = 21 et 95. On donne les valeurs
+suivantes des coefficients de la formule de BW : \(a_v\) = 15.56 MeV, \(a_c\) = 0.697 MeV, \(a_s\) =
+17.23 MeV et \(a_A\) = 23.285 MeV.
 </p>
 
 <p>
-Soit un faisceau de particules de vitesse \(v = \beta c\), de vie moyenne
-\(\tau\) et d'intensité \(I_0\). On se place dans le référentiel du laboratoire.
-</p>
-
-<ol class="org-ol">
-<li>Après un parcours de longueur \(L\), montrer que l'intensité du faisceau est
-réduite à \(I = I_0 e^{-L/\ell}\), où \(\ell = \gamma \beta c \tau\).</li>
-
-<li>On produit un faisceau de \(K^0\) d'impulsion \(p\) = 10 GeV/c. On suppose que
-les \(K^0_1\) et \(K^0_2\) ont même masse et même impulsion que les \(K^0\)
-du faisceau initial.
-<ol class="org-ol">
-<li>Quel est, après un parcours de longueur \(L\) = 10 m, le rapport \(\rho =
-         I_1 / I_2\) de l'intensité des \(K^0_1\) à celle des \(K^0_2\) dans le
-faisceau ?</li>
-
-<li>Indiquer quel est alors, dans le faisceau, le rapport du nombre de
-particules "physiques" \(K^0\) à celui des particules "physiques"
-\(\bar{K^0}\).</li>
-</ol></li>
-</ol></li>
+Expérimentalement, les noyaux suivants sont &beta;-stables : \(^{21}_{10}\)Ne et
+\(^{95}_{42}\)Mo. Discuter ce résultat.
+</p></li>
 </ol>
 
 </div>
 <ol class="org-ol">
-<li value="2">Soit un faisceau de particules de vitesse \(v=\beta c\), de vie moyenne
-\(\tau\) et d'intensité \(I_0\)
-<ol class="org-ol">
-<li><p>
-Dans le référentiel du faisceau <i>i.e.</i> du centre de masse, l'intensité est
-égale \(I=I_0\exp(-t^*/\tau)\). Dans le référentiel du laboratoire, cette
-intensité devient \(I=I_0\exp(-t/\gamma\tau)\). Par ailleurs, le temps
-nécessaire pour parcourir la distance \(L\) est
-\(t=\frac{L}{v}=\frac{L}{\beta c}\). On déduit que l'intensité du faisceau
-après avoir parcouru une distance \(L\) s'écrit
+<li value="2"><p>
+Le nombre de nucléons ou nombre de masse \(A\) est impair pour les
+isobares \(A=21\) et \(A=95\). Aussi, le terme d'appariement \(\delta(Z,A)\) est
+donc nul. L'élément le plus stable dans une famille d'isobares est celui avec
+l'énergie de liaison \(B_N\) maximale. Or, \(B_N\) est maximum pour \(Z=Z_0\) tel
+que \(\left.\frac{\partial B_N}{\partial Z}\right|_{Z_0}=0\) d'où
 </p>
 \begin{align*}
-  I=I_0\exp\left(-\frac{L}{\gamma\tau\beta c}\right)=I_0\exp\left(-\frac{L}{\ell}\right)
-\end{align*}</li>
-
-<li>Faisceau de \(K^0\) à \(p=\unit[10]{GeV/c}\). Initialement, le faisceau est
-donc constitué pour moitié de "particules" \(K_1^0\), l'autre moitié étant
-les "particules" \(K_2^0\). On suppose par ailleurs que la masse et
-l'impulsion de ces particules sont identiques
-(\(\beta_1=\beta_2=\beta_{K^0}\)).
-<ol class="org-ol">
-<li><p>
-Après un parcours de longueur \(L=\unit[10]{m}\), l'intensité respective
-de chaque composante, \(K^0_1\) et \(K^0_2\), du faisceau est
-</p>
-\begin{align*}
-  I_{1,2}&=I_{01,02}\exp\left(-\frac{L}{\gamma\tau_{1,2}\beta c}\right)\\
-  &\text{avec }I_{01}=I_{02}=\frac{I_0}{2}\\
-  \text{d'où }\rho=\frac{I_1}{I_2}&=\exp\left[-\frac{L}{\gamma\beta c}\left(\frac{1}{\tau_1}-\frac{1}{\tau_2}\right)\right]\\
-  \rho&=\exp\left[-\frac{L}{\gamma\beta c}\frac{\tau_2-\tau_1}{\tau_1\tau_2}\right]\\
-  &\simeq\exp\left[-\frac{L}{\gamma\beta c}\frac{1}{\tau_1}\right]
+  \left.\frac{\partial B_N}{\partial Z}\right|_{Z=Z_0}=-\frac{2a_CZ_0}{A^{1/3}}+4a_A\frac{A-2Z_0}{A}&=0\\
+  -a_CZ_0A^{2/3}+2a_AA-4a_AZ_0&=0\\
+  Z_0&=\frac{2a_AA}{a_CA^{2/3}+4a_A}
 \end{align*}
 
 <p>
-Par ailleurs,
+<b>Application numérique :</b>
+</p>
+
+<p>
+\(A=21\) \(Z_0=9.93\sim10\) correspond au noyau &beta;-stable de néon 22
+</p>
+
+<p>
+\(A=95\) \(Z_0=41.1\sim41\) ne correspond pas au noyau &beta;-stable de molybdène
+95
+</p>
+
+<ul class="org-ul">
+<li>la formule de Bethe et Weizsäcker est globalement correcte pour les noyaux
+légers,</li>
+<li>pour les noyaux plus lourds, l'écart est généralement de &plusmn;1 protons,</li>
+<li>de manière générale, la formule de Bethe et Weizsäcker est un bon
+indicateur afin de déterminer si un noyau est loin, en terme de protons, de
+l'élément stable pour une masse donnée <i>i.e.</i> pour \(A\) fixé.</li>
+</ul></li>
+</ol>
+</div>
+</div>
+
+<div id="outline-container-org9e7c2e6" class="outline-2">
+<h2 id="org9e7c2e6"><span class="section-number-2">5</span> Parabole de masse et désintégrations radioactives</h2>
+<div class="outline-text-2" id="text-5">
+<div class="QUESTION">
+<p>
+On s'intéresse aux isobares de nombre de masse \(A\) = 58 dont on donne ci-dessous les excès de masse
+atomique \(\Delta M_\text{at}c^2\), en MeV :
 </p>
 \begin{align*}
-  p_K^2c^2&=E^2-m_K^2c^4=(\gamma-1)m_K^2c^4\\
-  &\text{or }\gamma=\frac{1}{\surd 1-\beta^2}\to(\gamma\beta)^2=\gamma^2-1\\
-  \gamma\beta&=\frac{p_Kc}{m_Kc^2}=\frac{10}{0.4977}=20.1
+  \begin{array}{rrrrrrr}
+    ^{58}_{24}\text{Cr}&^{58}_{25}\text{Mn}&^{58}_{26}\text{Fe}&^{58}_{27}\text{Co}&^{58}_{28}\text{Ni}&^{58}_{29}\text{Cu}&^{58}_{30}\text{Zn}\\
+    -52.050&-55.830&-62.152&-59.844&-60.225&-51.662&-42.210
+  \end{array}
+\end{align*}
+
+<ol class="org-ol">
+<li>Rappeler les différents types de désintégrations isobariques et les conditions énergétiques
+associées.</li>
+</ol>
+
+</div>
+<ol class="org-ol">
+<li>Désintégrations isobariques (&beta;<sup>-</sup>, &beta;<sup>+</sup>, CE)
+
+<dl class="org-dl">
+<dt>désintégration &beta;<sup>-</sup></dt><dd><p>
+\(^A_Z\text{X}\to\,^A_{Z+1}\text{Y}+e^-+\bar{\nu}_e\)
+</p>
+\begin{align*}
+  Q>0 \Longleftrightarrow\,& m(A,Z)c^2>m(A,Z+1)c^2+m_ec^2\\
+  &M_\text{at.}(A,Z)c^2-Zm_ec^2>M_\text{at.}(A,Z+1)c^2-(Z+1)m_ec^2+m_ec^2\\
+  &M_\text{at.}(A,Z)c^2>M_\text{at.}(A,Z+1)c^2\\
+  &\Delta M_\text{at.}(A,Z)c^2>\Delta M_\text{at.}(A,Z+1)c^2
 \end{align*}
 
 <p>
-Le rapport &rho; entre les intensités de chacun des états \(\ket{K^0_1}\)
-et \(\ket{K^0_2}\) est égal à
+La désintégration &beta;<sup>-</sup> faisant intervenir 3 corps dont 2 particules
+légères, le spectre en énergie cinétique de l'électron est continu entre
+0 et \(Q_{\beta^-}=\Delta M_\text{at.}(A,Z)c^2-\Delta
+        M_\text{at.}(A,Z+1)c^2\).
+</p></dd>
+
+<dt>désintégration &beta;<sup>+</sup></dt><dd><p>
+\(^A_Z\text{X}\to\,^A_{Z-1}\text{Y}+e^++\nu_e\)
 </p>
 \begin{align*}
-  \rho=\frac{I_1}{I_2}=7.37\,10^{-9}\ll1
+  Q>0 \Longleftrightarrow\,& m(A,Z)c^2>m(A,Z-1)c^2+m_ec^2\\
+  &M_\text{at.}(A,Z)c^2-Zm_ec^2>M_\text{at.}(A,Z-1)c^2-(Z-1)m_ec^2+m_ec^2\\
+  &M_\text{at.}(A,Z)c^2>M_\text{at.}(A,Z-1)c^2+2m_ec^2\\
+  &\Delta M_\text{at.}(A,Z)c^2>\Delta M_\text{at.}(A,Z-1)c^2+2m_ec^2
+\end{align*}
+
+<p>
+De même que pour la désintégration &beta;<sup>-</sup>, le spectre en énergie du
+positron est continu depuis 0 jusqu'à \(Q_{\beta^+}=\Delta
+        M_\text{at.}(A,Z)c^2-\Delta M_\text{at.}(A,Z-1)c^2-2m_ec^2\)
+</p></dd>
+
+<dt>capture électronique</dt><dd><p>
+\(^A_Z\text{X}+e^-\to\,^A_{Z-1}\text{Y}+\nu_e\)
+</p>
+\begin{align*}
+  Q>0 \Longleftrightarrow\,& m(A,Z)c^2+m_ec^2>m(A,Z-1)c^2\\
+  &M_\text{at.}(A,Z)c^2-Zm_ec^2+m_ec^2>M_\text{at.}(A,Z-1)c^2-(Z-1)m_ec^2\\
+  &M_\text{at.}(A,Z)c^2>M_\text{at.}(A,Z-1)c^2\\
+  &\Delta M_\text{at.}(A,Z)c^2>\Delta M_\text{at.}(A,Z+1)c^2\\
+  &Q_\text{CE} = Q_{\beta^+}+2m_ec^2
+\end{align*}
+
+<p>
+La capture électronique est privilégiée d'un point de vue énergétique
+par rapport à la désintégration &beta;<sup>+</sup>. Dès lors que la
+désintégration &beta;<sup>+</sup> est autorisée, cette désintégration entre en
+concurrence avec la capture électronique. Pour les noyaux lourds, seule
+la capture électronique est généralement autorisée.
+</p>
+
+<p>
+La capture électronique correspond à la capture d'un électron du cortège
+électronique de l'atome : cet électron appartient aux couches les plus
+internes et donc les plus proches du noyau. En fonction de la couche
+\(K,L,M\) de laquelle est capturé l'électron, une réorganisation du
+cortège électronique intervient ayant pour conséquence l'émission de
+rayons X de désexcitation.
+</p></dd>
+</dl></li>
+</ol>
+
+<div class="QUESTION">
+<ol class="org-ol">
+<li value="2">Estimer graphiquement l'énergie d'appariement \(\delta(A)\) en MeV.</li>
+</ol>
+
+</div>
+<ol class="org-ol">
+<li value="2"><p>
+Le diagramme \(M_\text{at.}c^2=f(Z)\) ou \(\Delta M_\text{at.}c^2=f(Z)\) pour une famille
+d'isobares donnée est le suivant
+</p>
+
+<div class="org-center">
+
+<div id="orgf1756f2" class="figure">
+<p><img src="./figures/parabole_mass.png" alt="parabole_mass.png" />
+</p>
+<p><span class="figure-number">Figure 4: </span><b>Paraboles de masse pour les noyaux de la famille \(A=58\)</b></p>
+</div>
+</div>
+
+<p>
+L'expression de \(M_\text{at.}c^2\) ou \(\Delta M_\text{at.}c^2\) en fonction de
+\(Z\) prend la forme d'une parabole car
+</p>
+\begin{align*}
+  \Delta M_\text{at.}(Z,A)c^2=&M_\text{at.}(Z,A)c^2 - 931.5A\\
+  =&Z\left(m_pc^2+m_ec^2\right)+\left(A-Z\right)m_nc^2-B_N-931.5A\\
+  =&Z\left(m_pc^2+m_ec^2\right)+\left(A-Z\right)m_nc^2\\
+  &-a_VA+a_SA^{2/3}+a_C\frac{Z^2}{A^{1/3}}+a_A\frac{\left(A-2Z\right)^2}{A}-\delta(Z,A)-931.5A\\
+  =&A\left(m_nc^2-a_V+a_A-931.5\right)+a_SA^{2/3}-\delta(Z,A)\\
+  &+Z\left(m_pc^2+m_ec^2-m_nc^2-4a_A\right)+Z^2\left(\frac{a_C}{A^{1/3}}+\frac{4a_A}{A}\right)\\
+  =&\alpha+\beta Z+\gamma Z^2
+\end{align*}
+
+<p>
+Ainsi, pour un nombre de masse donné \(A\), la variation de la masse atomique
+ou de l'excès de masse atomique en fonction de la charge \(Z\) est décrit par
+une seule parabole dans le cas où \(A\) est impair et donc \(\delta(Z,A) = 0\) et
+translatée de &plusmn; \(\delta(Z,A)\) lorsque \(A\) est pair. En établissant les
+paraboles pour les isobares \(A=58\), on peut déduire de l'écart entre ces deux
+paraboles la valeur de \(2\delta\). On obtient une valeur voisine de 2.8 MeV
+soit \(\delta=\unit[1.4]{MeV}\), relativement proche de la valeur issue de B&amp;W
+\(\frac{\unit[12]{MeV}}{\surd A}=\unit[1.58]{MeV}\).
+</p></li>
+</ol>
+
+<div class="QUESTION">
+<ol class="org-ol">
+<li value="3">Quelles sont les désintégrations isobariques possibles pour les noyaux
+\(A\)&nbsp;=&nbsp;58 donnés et l'énergie maximale des électrons (ou des
+positrons) émis dans ces désintégrations ? Préciser le (ou les) noyau(x)
+stable(s) vis à vis de ces désintégrations.</li>
+</ol>
+
+</div>
+<ol class="org-ol">
+<li value="3"><p>
+D'après la figure <a href="#orgf1756f2">4</a>, les désintégrations &beta;<sup>-</sup> sont Cr&rarr; Mn, Mn&rarr; Fe et
+Co&rarr; Ni. Les désintégrations &beta;<sup>+</sup> ou CE sont Zn&rarr; Cu, Cu&rarr; Ni et Co&rarr; Fe. Les deux
+noyaux stables de cette famille sont donc le fer 58 et le nickel 58.
+</p>
+
+<p>
+L'énergie cinétique maximum des électrons/positrons émis respectivement par désintégration
+&beta;<sup>-</sup> et &beta;<sup>+</sup> sont les suivantes
+</p>
+
+<ul class="org-ul">
+<li><p>
+\(^{58}_{24}\text{Cr}\to ^{58}_{25}\text{Mn}+e^-+\bar{\nu}_e\)
+</p>
+\begin{align*}
+  Q_{\beta^-}& = \Delta M(^{58}_{24}\text{Cr})c^2-\Delta M(^{58}_{25}\text{Mn})c^2\\
+  &=\unit[3.78]{MeV}=T_\text{max}(e^-)
 \end{align*}</li>
 
-<li>Ainsi, au bout de 10 mètres et en raison de la désintégration des
-\(K^0_1\) et des \(K^0_2\), il ne reste dans le faisceau que des particules
-\(K^0_2\). Or, ces dernières sont le fruit d'un mélange des états \(K^0\)
-et \(\bar{K}^0\) à savoir
-\(\ket{K^0_2}=\frac{1}{\surd2}\left(\ket{K^0}+\ket{\bar{K}^0}\right)\). Le
-faisceau est ainsi constitué à part égale de mésons \(K^0\) et de
-mésons \(\bar{K}^0\) : les mésons \(K^0\) se sont donc "transformés" en
-leur antiparticule \(\bar{K}^0\). Cette transformation est le phénomène
-d'oscillation \(K^0\leftrightarrow\bar{K}^0\).</li>
-</ol></li>
-</ol></li>
+<li><p>
+\(^{58}_{25}\text{Mn}\to ^{58}_{26}\text{Fe}+e^-+\bar{\nu}_e\)
+</p>
+\begin{align*}
+  Q_{\beta^-}& = \Delta M(^{58}_{25}\text{Mn})c^2-\Delta M(^{58}_{26}\text{Fe})c^2\\
+  &=\unit[6.32]{MeV}=T_\text{max}(e^-)
+\end{align*}</li>
+
+<li><p>
+\(^{58}_{27}\text{Co}\to ^{58}_{28}\text{Ni}+e^-+\bar{\nu}_e\)
+</p>
+\begin{align*}
+  Q_{\beta^-}& = \Delta M(^{58}_{27}\text{Co})c^2-\Delta M(^{58}_{28}\text{Ni})c^2\\
+  &=\unit[0.38]{MeV}=T_\text{max}(e^-)
+\end{align*}</li>
+
+<li><p>
+\(^{58}_{30}\text{Zn}+e^-\to ^{58}_{29}\text{Cu}+\nu_e\)
+</p>
+\begin{align*}
+  Q_\text{CE}& = \Delta M(^{58}_{30}\text{Zn})c^2-\Delta M(^{58}_{29}\text{Cu})c^2\\
+  &=\unit[9.45]{MeV}\\
+  Q_{\beta^+}&=Q_\text{CE} - 2m_ec^2=\unit[8.48]{MeV}=T_\text{max}(e^+)
+\end{align*}</li>
+
+<li><p>
+\(^{58}_{29}\text{Cu}+e^-\to ^{58}_{28}\text{Ni}+\nu_e\)
+</p>
+\begin{align*}
+  Q_\text{CE}& = \Delta M(^{58}_{29}\text{Cu})c^2-\Delta M(^{58}_{28}\text{Ni})c^2\\
+  &=\unit[8.56]{MeV}\\
+  Q_{\beta^+}&=Q_\text{CE} - 2m_ec^2=\unit[7.54]{MeV}=T_\text{max}(e^+)
+\end{align*}</li>
+
+<li><p>
+\(^{58}_{27}\text{Co}+e^-\to ^{58}_{26}\text{Fe}+\nu_e\)
+</p>
+\begin{align*}
+  Q_\text{CE}& = \Delta M(^{58}_{27}\text{Co})c^2-\Delta M(^{58}_{26}\text{Fe})c^2\\
+  &=\unit[2.31]{MeV}\\
+  Q_{\beta^+}&=Q_\text{CE} - 2m_ec^2=\unit[1.29]{MeV}=T_\text{max}(e^+)
+\end{align*}</li>
+</ul></li>
+</ol>
+</div>
+</div>
+
+<div id="outline-container-org48a6776" class="outline-2">
+<h2 id="org48a6776"><span class="section-number-2">6</span> Étoiles à neutrons</h2>
+<div class="outline-text-2" id="text-6">
+<div class="QUESTION">
+<p>
+On peut montrer que l'énergie potentielle d'attraction gravitationnelle d'une masse sphérique \(M\) de
+densité uniforme et de rayon \(R\) est donnée par \(E_G=-\frac{3 GM^2}{5R}\).
+</p>
+
+<ol class="org-ol">
+<li>Déterminer la formule donnant l'énergie de liaison d'une étoile à neutrons
+(\(Z = 0\)) à partir de l'énergie de liaison des nucléons dans le noyau
+donnée par la formule de BW (on négligera l'énergie d'appariement &delta;),
+en lui ajoutant un terme d'énergie potentielle de type \(E_G\) (attention,
+ce terme correspond à une contribution positive à l'énergie de liaison).</li>
+
+<li>En déduire l'ordre de grandeur du rayon minimal d'une étoile à neutrons
+ayant la densité nucléaire et n'ayant aucun autre constituant que des
+neutrons (on supposera que ce nombre \(N\) de neutrons est grand, et on
+utilisera \(G/c^4\) = 1.3239 10<sup>-39</sup> GeV<sup>-1</sup>.fm). Calculer sa
+masse. Comparer au rayon et à la masse du Soleil.</li>
+</ol>
+
+</div>
+<ol class="org-ol">
+<li><p>
+Pour une étoile à neutrons, l'énergie de liaison devient (\(Z=0\))
+</p>
+\begin{align*}
+  B_N&=a_VA-a_SA^{2/3}-\cancel{a_C\frac{Z^2}{A^{1/3}}}-a_A\frac{(Z-N)^2}{A}+\underbrace{\delta(Z,A)}_{\ll1}\\
+  &\text{ avec }A=Z+N=N\quad B_N=a_VN-a_SN^{2/3}-a_A\frac{N^{\cancel{2}}}{\cancel{N}}\\
+  B_N&=\left(a_V-a_A\right)N-a_SN^{2/3}<0
+\end{align*}
+
+<p>
+En tenant compte de l'énergie potentielle gravitationnelle, l'énergie de
+liaison d'une étoile à neutrons devient
+</p>
+\begin{align*}
+  B_*&=B_N-E_G=\left(a_V-a_A\right)N-a_SN^{2/3}+\frac{3GM^2}{5R}
+\end{align*}</li>
+
+<li><p>
+En considérant l'étoile uniquement constituée de neutrons, sa masse
+s'écrit \(M=N\times m_n\). Par ailleurs, le rayon de cette étoile est égal
+à \(r_0\times N^{1/3}\) d'où
+</p>
+\begin{align*}
+  B_*&=\left(a_V-a_A\right)N-a_SN^{2/3}+\frac{3Gm_n^2\,N^2}{5r_0\,N^{1/3}}
+\end{align*}
+
+<p>
+Dans la mesure où le nombre de nucléons est grand, on pourra négliger le
+terme relatif aux effets de surface \(a_SN^{2/3}\) devant ceux proportionnel
+à \(N\) et l'énergie gravitationnelle. Ainsi, l'énergie de liaison se réduit
+à
+</p>
+\begin{align*}
+  B_*&=\underbrace{\left(a_V-a_A\right)N}_{<0}+\underbrace{\frac{3Gm_n^2\,N^{5/3}}{5r_0}}_{>0}
+\end{align*}
+
+<p>
+Le premier terme négatif traduit le fait qu'un "noyau/étoile" uniquement
+constitué de neutrons n'est pas un système physiquement stable. Toutefois,
+le caractère instable de ce système est contrebalancé par l'effondrement
+gravitationnel qui est d'autant plus fort que le nombre de neutrons <i>i.e.</i>
+la masse est grande. Ainsi, au-delà d'une valeur critique \(N=N_0\) telle
+que \(B_*=0\), l'énergie gravitationnelle devient supérieure à l'instabilité
+inhérente à la composition en neutrons du "noyau/étoile". La valeur
+critique \(N_0\) se traduit également en terme de rayon minimal pour qu'une
+étoile à neutrons subsiste \(R_\text{min}=r_0\times N_0^{1/3}\). La valeur
+critique du nombre de neutrons est
+</p>
+\begin{align*}
+  B_*&=\left(a_V-a_A\right)N_0+\frac{3Gm_n^2\,N_0^{5/3}}{5r_0}=0\\
+  N_0^{-2/3}&=-\frac{3Gm_n^2}{5r_0\left(a_V-a_A\right)}\\
+  N_0^{2/3}&=\frac{5r_0\left(a_A-a_V\right)}{3Gm_n^2}\\
+  &\text{où }m_n=\unit[0.939]{GeV/c}^2\to Gm_n^2=1.3239\,10^{-39}\times(0.939)^2\\
+  N_0^{2/3}&=\frac{5\times1.25\times\left(23.285-15.56\right)\,10^{-3}}{3\times1.3239\,10^{-39}\times(0.939)^2}\\
+  &=1.377\,10^{37}\to N_0=5.11\,10^{55}
+\end{align*}
+
+<p>
+Le rayon minimal d'une étoile à neutron est donc<sup><a id="fnr.2" class="footref" href="#fn.2">2</a></sup>
+ <div class="footdef"><sup><a id="fn.2" class="footnum" href="#fnr.2">2</a></sup> <div class="footpara"><p class="footpara"> si l'on calcule la masse minimale de cet objet à partir de \(M_*=N_0\times m_n\), on trouve une masse \(M_*=0.04M_\odot\) où \(M_\odot\) est égal à 2 10<sup>30</sup> kg soit sensiblement plus faible que la masse typique d'une étoile à neutron \(M_*=1.4M_\odot\) (masse de Chandrasekhar). En réalite, le rayon d'une étoile à neutron varie de 10 à 20 km (\(R_\odot=695\,800\) km) ce qui se traduit en terme de masse par une gamme entre 0.4 et 5 masses solaires. </p></div><br/></div>
+</p>
+\begin{align*}
+  R_\text{min}&=r_0\times N_0^{1/3}=1.25\,10^{-15}\times\left(5.11\,10^{55}\right)^{1/3}\\
+  &=\unit[4.64]{km}
+\end{align*}</li>
 </ol>
 </div>
 </div>
@@ -689,10 +1062,11 @@ d'oscillation \(K^0\leftrightarrow\bar{K}^0\).</li>
 
 
 
+
 </div>
 </div></div>
 <div id="postamble" class="status">
-File under <i class="fa fa-github-alt"></i> version control - commit <a href="https://github.com/xgarrido/master_npp_teaching/commit/15edcc3f2b8dcf1e42ba4cd5ec2942d8a7d0a234">15edcc3</a> - 2016-06-28
+File under <i class="fa fa-github-alt"></i> version control - commit <a href="https://github.com/xgarrido/master_npp_teaching/commit/f535f50b5fcd671574e3f14e69aaa10cb02d480d">f535f50</a> - 2020-12-21
 </div>
 </body>
 </html>

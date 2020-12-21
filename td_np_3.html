@@ -3,10 +3,11 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
-<meta  name="viewport" content="width=device-width, initial-scale=1" />
-<title>TD4 : Modèle des quarks &#x2013; Les hadrons</title>
-<meta  name="generator" content="Org-mode" />
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>TD4 : Réactions de production et de désintégration de particules</title>
+<meta name="generator" content="Org mode" />
+<meta name="author" content="Xavier Garrido" />
 <link rel="stylesheet" href="css/styles.css" />
                <link rel="stylesheet" href="css/org-pygments.css" />
                <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" />
@@ -15,7 +16,7 @@
 @licstart  The following is the entire license notice for the
 JavaScript code in this tag.
 
-Copyright (C) 2012-2013 Free Software Foundation, Inc.
+Copyright (C) 2012-2018 Free Software Foundation, Inc.
 
 The JavaScript code in this tag is free software: you can
 redistribute it and/or modify it under the terms of the GNU
@@ -83,6 +84,7 @@ for the JavaScript code in this tag.
           extensions: ["cancel.js"],
           Macros: {
               vv: ["{\\vec{#1}}",1],
+              d: "{\\text{d}}",
               Upsigma: "{\\Sigma}",
               Updelta: "{\\Delta}",
               varoiint: "{\\iint}",
@@ -134,642 +136,305 @@ for the JavaScript code in this tag.
 <a href="index.html"><i class="fa fa-home"></i></a><br/>  
 </div>
 <div id="content">
-<h1 class="title">TD4 : Modèle des quarks &#x2013; Les hadrons</h1>
+<h1 class="title">TD4 : Réactions de production et de désintégration de particules</h1>
 <div style="display:none;">
 <div id="text-table-of-contents">
 <ul class="org-ul">
-<li><a href="././td_np_0.html">TD1 : Cinématique &amp; Accélérateurs</a></li>
-<li><a href="././td_np_1.html">TD2 : Nombres quantiques &amp; Symétries</a></li>
-<li><a href="././td_np_2.html">TD3 : Réactions de production et de désintégration de particules</a></li>
-<li><a href="././td_np_3.html">TD4 : Modèle des quarks &#x2013; Les hadrons</a></li>
-<li><a href="././td_np_4.html">TD5 : Isospin &#x2013; des quarks aux noyaux</a></li>
-<li><a href="././td_np_5.html">TD6 : Structure nucléaire</a></li>
-<li><a href="././td_np_6.html">TD7 : Réactions nucléaires</a></li>
-<li><a href="././td_np_7.html">TD8 : Masses et désintégrations nucléaires</a></li>
-<li><a href="././td_np_8.html">TD9 : Modèle Standard et au-delà : l'interaction faible</a></li>
+<li><a href="././td_np_0.html">TD1 : Cinématique</a></li>
+<li><a href="././td_np_1.html">TD2 : Accélérateurs &amp; section efficace</a></li>
+<li><a href="././td_np_2.html">TD3 : Nombres quantiques &amp; Symétries</a></li>
+<li><a href="././td_np_3.html">TD4 : Réactions de production et de désintégration de particules</a></li>
+<li><a href="././td_np_4.html">TD5 : Modèle Standard et au-delà : l'interaction faible</a></li>
+<li><a href="././td_np_5.html">TD6 : Modèle des quarks &#x2013; Les hadrons</a></li>
+<li><a href="././td_np_6.html">TD7 : Isospin &#x2013; des quarks aux noyaux</a></li>
+<li><a href="././td_np_7.html">TD8 : Structure nucléaire</a></li>
+<li><a href="././td_np_8.html">TD9 : Masses et désintégrations nucléaires</a></li>
 <li><a href="././td_np_9.html">Annexes</a></li>
 <li><a href="././td_np_10.html">Aide-mémoire de Noyaux &amp; Particules</a></li>
 </ul>
 </div>
 </div>
 
-<div id="outline-container-orgheadline1" class="outline-2">
-<h2 id="orgheadline1"><span class="section-number-2">1</span> Les mésons constitués des quarks \(u,d,s\) et de leurs antiquarks</h2>
+
+
+<div class="figure">
+<p><img src="./figures/standard_model.png" alt="standard_model.png" />
+</p>
+<p><span class="figure-number">Figure 1: </span><b>Modèle standard de la physique des particules</b></p>
+</div>
+
+<div id="outline-container-org7fcf941" class="outline-2">
+<h2 id="org7fcf941"><span class="section-number-2">1</span> Production et désintégration de particules</h2>
 <div class="outline-text-2" id="text-1">
 <div class="QUESTION">
+<p>
+<i>On utilisera les tables des caractéristiques des leptons et hadrons données en
+annexe.</i>
+</p>
 <ol class="org-ol">
-<li value="1">D'après le tableau caractéristique des quarks, établir le même tableau
-pour les antiquarks.</li>
+<li value="1">Les termes <b>quarks</b>, <b>lepton</b>, <b>hadron</b>, <b>baryon</b>, et <b>méson</b> sont utilisées dans
+la classification des particules. Dire lesquels sont des constituants
+élémentaires, donner des exemples de leur utilisation et distinguer entre
+bosons et fermions.</li>
 </ol>
 
 </div>
+
 <ol class="org-ol">
-<li value="1"><p>
-Opérateur conjugaison particule &#x2013; antiparticule \(\hat{C}\) :
-\(q\overset{\hat{C}}{\rightarrow}\bar{q}\)
+<li value="1">Les particules élémentaires sont les quarks (<i>cf.</i> ci-dessous) et les
+leptons (du grec <i>leptos</i> = léger) dont le spin demi-entier font de ces
+particules des fermions. À la différence des leptons, les quarks
+n'apparaissent pas à l'état libre et sont confinés dans les hadrons (du grec
+<i>hadros</i> = fort). On distingue deux familles de hadrons :
+<dl class="org-dl">
+<dt>les baryons</dt><dd>(du grec <i>baryos</i> = lourd) constitués de 3 quarks \(q_1q_2q_3\),
+de nombre baryonique égal à 1 et de spin 1/2
+entier. Exemple : nucléons</dd>
+<dt>les mésons</dt><dd><p>
+(du grec <i>mesos</i> = milieu) constitués d'une paire de quark &#x2013;
+antiquark, de nombre baryonique nul et de spin
+entier. Exemple : pions
 </p>
 
-<ul class="org-ul">
-<li>\(\vv{T},\vv{I},mc^2\overset{\hat{C}}{\rightarrow}\vv{T},\vv{I},mc^2\)</li>
-<li>\(Q/e,B,T_3,S,c,b,t\overset{\hat{C}}{\rightarrow}-Q/e,-B,-T_3,-S,-c,-b,-t\)</li>
-<li>Parite &pi; : fermions \(\pi\overset{\hat{C}}{\rightarrow}-\pi\), bosons
-\(\pi\overset{\hat{C}}{\rightarrow}\pi\)</li>
-</ul>
-<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="void">
-
-
-<colgroup>
-<col  class="org-left" />
-
-<col  class="org-left" />
-
-<col  class="org-left" />
-
-<col  class="org-left" />
-
-<col  class="org-right" />
-
-<col  class="org-right" />
-
-<col  class="org-right" />
-
-<col  class="org-right" />
-
-<col  class="org-right" />
-
-<col  class="org-right" />
-
-<col  class="org-right" />
-</colgroup>
-<tbody>
-<tr>
-<td class="org-left">&#xa0;</td>
-<td class="org-left">\(I\)</td>
-<td class="org-left">\(Q/e\)</td>
-<td class="org-left">B</td>
-<td class="org-right">T</td>
-<td class="org-right">\(T_{3}\)</td>
-<td class="org-right">\(S\)</td>
-<td class="org-right">\(c\)</td>
-<td class="org-right">\(b\)</td>
-<td class="org-right">\(t\)</td>
-<td class="org-right">\(\pi\)</td>
-</tr>
-
-<tr>
-<td class="org-left">\(\bar{u}\)</td>
-<td class="org-left">1/2</td>
-<td class="org-left">-2/3</td>
-<td class="org-left">-1/3</td>
-<td class="org-right">1/2</td>
-<td class="org-right">-1/2</td>
-<td class="org-right">0</td>
-<td class="org-right">0</td>
-<td class="org-right">0</td>
-<td class="org-right">0</td>
-<td class="org-right">-1</td>
-</tr>
-
-<tr>
-<td class="org-left">\(\bar{d}\)</td>
-<td class="org-left">1/2</td>
-<td class="org-left">1/3</td>
-<td class="org-left">-1/3</td>
-<td class="org-right">1/2</td>
-<td class="org-right">1/2</td>
-<td class="org-right">0</td>
-<td class="org-right">0</td>
-<td class="org-right">0</td>
-<td class="org-right">0</td>
-<td class="org-right">-1</td>
-</tr>
-
-<tr>
-<td class="org-left">\(\bar{c}\)</td>
-<td class="org-left">1/2</td>
-<td class="org-left">-2/3</td>
-<td class="org-left">-1/3</td>
-<td class="org-right">0</td>
-<td class="org-right">0</td>
-<td class="org-right">0</td>
-<td class="org-right">-1</td>
-<td class="org-right">0</td>
-<td class="org-right">0</td>
-<td class="org-right">-1</td>
-</tr>
-
-<tr>
-<td class="org-left">\(\bar{s}\)</td>
-<td class="org-left">1/2</td>
-<td class="org-left">1/3</td>
-<td class="org-left">-1/3</td>
-<td class="org-right">0</td>
-<td class="org-right">0</td>
-<td class="org-right">+1</td>
-<td class="org-right">0</td>
-<td class="org-right">0</td>
-<td class="org-right">0</td>
-<td class="org-right">-1</td>
-</tr>
-
-<tr>
-<td class="org-left">\(\bar{t}\)</td>
-<td class="org-left">1/2</td>
-<td class="org-left">-2/3</td>
-<td class="org-left">-1/3</td>
-<td class="org-right">0</td>
-<td class="org-right">0</td>
-<td class="org-right">0</td>
-<td class="org-right">0</td>
-<td class="org-right">0</td>
-<td class="org-right">-1</td>
-<td class="org-right">-1</td>
-</tr>
-
-<tr>
-<td class="org-left">\(\bar{b}\)</td>
-<td class="org-left">1/2</td>
-<td class="org-left">1/3</td>
-<td class="org-left">-1/3</td>
-<td class="org-right">0</td>
-<td class="org-right">0</td>
-<td class="org-right">0</td>
-<td class="org-right">0</td>
-<td class="org-right">+1</td>
-<td class="org-right">0</td>
-<td class="org-right">-1</td>
-</tr>
-</tbody>
-</table></li>
+<p>
+Les quarks sont sensibles à toutes les interactions tandis que les leptons
+chargés &#x2013; \(e\), &mu;, &tau; &#x2013; sont sensibles à l'interaction EM et faible. Les
+leptons neutres <i>i.e.</i> les neutrinos n'intéragissent que par interaction
+faible.
+</p></dd>
+</dl></li>
 </ol>
+
+<div class="REMARK">
+<p>
+Le nom <i>quark</i> est tiré du roman <i>Finnegans Wake</i> de James Joyce :
+</p>
+<blockquote>
+<p>
+"Three quarks for Muster Mark!
+</p>
+
+<p>
+Sure he has not got much of a bark
+</p>
+
+<p>
+And sure any he has it's all beside the mark."
+</p>
+</blockquote>
+<p>
+Murray Gell-Mann précisa par la suite l'origine du nom <i>quark</i> dans son livre <i>The
+Quark and the Jaguar</i>:
+</p>
+
+<blockquote>
+<p>
+"In 1963, when I assigned the name "quark" to the fundamental constituents of
+the nucleon, I had the sound first, without the spelling, which could have been
+"kwork". Then, in one of my occasional perusals of Finnegans Wake, by James
+Joyce, I came across the word "quark" in the phrase "Three quarks for Muster
+Mark". Since "quark" (meaning, for one thing, the cry of the gull) was clearly
+intended to rhyme with "Mark", as well as "bark" and other such words, I had to
+find an excuse to pronounce it as "kwork". But the book represents the dream of
+a publican named Humphrey Chimpden Earwicker. Words in the text are typically
+drawn from several sources at once, like the "portmanteau" words in "Through the
+Looking-Glass". From time to time, phrases occur in the book that are partially
+determined by calls for drinks at the bar. I argued, therefore, that perhaps one
+of the multiple sources of the cry "Three quarks for Muster Mark" might be
+"Three quarts for Mister Mark", in which case the pronunciation "kwork" would
+not be totally unjustified. In any case, the number three fitted perfectly the
+way quarks occur in nature."
+</p>
+</blockquote>
+
+<p>
+L'origine des noms de saveur est multiple : les quarks <i>up</i> et <i>down</i> sont nommés en
+raison de la valeur d'isospin \(T_3\) respectivement égale à &plusmn;1/2. Le quark
+étrange tient son nom de la découverte des particules étranges dans le
+rayonnement cosmique (<i>cf.</i> TD précédent), l'étrangeté faisant référence à leur
+durée de vie particulièrement longue. Glashow, qui proposa le nom de charme avec
+Bjorken, expliqua ce choix en ces termes
+</p>
+
+<blockquote>
+<p>
+"We called our construct the charmed quark, for we were fascinated and pleased
+by the symmetry it brought to the subnuclear world."
+</p>
+</blockquote>
+
+<p>
+Les noms "bottom" et "top", proposés par Harari, furent logiquement choisis en
+tant que "partenaires" des quarks "up" et "down". Par le passé, ces quarks
+furent également appelés quark "beauty" et "truth": si le terme "truth" n'est
+jamais resté, l'utilisation du terme "beauty" est souvent utilisée en référence
+aux "beauty factories" (Babar, Belle) étudiant les propriétés de ce quark.
+</p>
+
+<p>
+Finalement, le nom de neutrino a été donné par Edoardo Amaldi à la suite du
+postulat d'existence de cette particule par Wolfang Pauli. Ce dernier l'avait
+initialement appelé neutron quelques mois avant que James Chadwick découvre le
+baryon neutron. Toutefois, la référence italienne au petit neutron au travers de
+l'ajout du suffixe <i>ino</i> est plus complexe qu'il n'y parait : en toute rigueur, le
+petit neutron aurait du s'appeller <i>neutronino</i>. L'origine du nom neutrino est
+rapportée par Amaldi
+</p>
+<blockquote>
+<p>
+"The name neutrino, (a funny and grammatically incorrect contraction of "little
+neutron" in Italian: neutronino) entered the international terminology through
+Fermi, who started to use it sometime between the conference in Paris in July
+1932 and the Solvay Conference October 1933 where Pauli used it. The word came
+out in a humorous conversation at the Instituto di Via Panisperna. Fermi, Amaldi
+and and few others were present and Fermi was explaining Pauli's hypothesis
+about his "light neutron". For distinguishing this particle from the Chadwick
+neutron, Amaldi jokingly used this funny name, - says Occhialini, who recalls of
+having shortly later told around this little story in Cambridge."
+</p>
+</blockquote>
+
+</div>
 
 <div class="QUESTION">
 <ol class="org-ol">
-<li value="2">Dans le cas où le moment orbital relatif associé au mouvement des quarks
-est nul, quelle est la parité d'un méson ? Quelles sont alors les valeurs
-possibles du moment cinétique \(\vv{I}\) et de l'isospin \(\vv{T}\) ?</li>
+<li value="2">Parmi les réactions qui suivent, deux ne sont jamais possibles et deux
+autres ne peuvent se produire par interaction forte. Trouver ces quatre
+réactions en justifiant votre réponse (on supposera que les conditions
+énergétiques sont satisfaites pour ces réactions).
+
+<ol class="org-ol">
+<li>\(K^- + p   \rightarrow  \bar{K}^0 + n\)</li>
+
+<li>\(\pi^+ + p  \rightarrow \Sigma^+ + K^+\)</li>
+
+<li>\(\pi^- + p  \rightarrow \Sigma^0 + K^+ + \pi^-\)</li>
+
+<li>\(\pi^- + p  \rightarrow \Sigma^+ + K^-\)</li>
+
+<li>\(\bar{K}^0 + p  \rightarrow K^- + p + \pi^+\)</li>
+
+<li>\(\bar{p} + p  \rightarrow \pi^+ + \pi^+ + \pi^- + \pi^- + \pi^+\)</li>
+
+<li>\(\mu^+ \rightarrow e^+ + \nu_e + \bar{\nu}_{\mu}\)</li>
+
+<li>\(K^+ + p  \rightarrow \Sigma^+ + n  + \pi^-\)</li>
+</ol></li>
 </ol>
 
 </div>
+
 <ol class="org-ol">
 <li value="2"><p>
-\(\vv{L_i} = \vv{0}\): méson &equiv; 1 quark + 1 antiquark
-</p>
-
-\begin{align*}
-  \pi(q\bar{q}) = (+1)\cdot(-1)\cdot(-1)^{L_i} = -1
-\end{align*}
-
-\begin{align*}
-  \vv{I}(q\bar{q}) = \vv{I}_q + \vv{I}_{\bar{q}} + \vv{L}_i &= \vv{S}_q +
-  \vv{S}_{\bar{q}} + \vv{L}_i \\
-  &= \vv{1}/2 + \vv{1}/2 + \vv{0}\\
-  &=\vv{0}\text{ ou }\vv{1}
-\end{align*}
-
-<p>
-Pour un méson avec \(\vv{L}_i = \vv{L}(q\bar{q}) = \vv{0}\) &rarr; \(I^\pi
-   = 0^-\) ou \(1^-\)
+Toutes les interactions conservent la charge électrique, le nombre
+baryonique, le nombre leptonique et le moment cinétique total.
 </p>
 
 <p>
-L'isospin \(\vv{T}(q\bar{q}) = \vv{T}(q) + \vv{T}(\bar{q})\)
+a) \(K^- + p\rightarrow \bar{K}^0 + n\)
 </p>
 
-<ul class="org-ul">
-<li>mésons \(u\bar{d}\) ou \(\bar{u}d\) &rarr; \(\vv{T} = \vv{0}\) ou \(\vv{1}\) or
-\(T_3 = \pm1\) donc \(\vv{T} = \vv{1}\)</li>
-<li>mésons contenant \(u,d,\bar{u},\bar{d}\) \(\vv{T} = \vv{1}/2\)</li>
-<li>mésons ne contenant ni \(u,d,\bar{u},\bar{d}\) \(\vv{T} = \vv{0}\)</li>
-</ul></li>
+<p>
+b) \(\pi^+ + p\rightarrow \Sigma^+ + K^+\)
+</p>
+
+<p>
+c) \(\pi^- + p\rightarrow \Sigma^0 + K^+ + \pi^-\)
+</p>
+
+<p>
+d) \(\pi^- + p\rightarrow \Sigma^+ + K^-\) <b>non conservation de l'étrangeté
+&rarr; interaction faible</b>
+</p>
+
+<p>
+e) \(\bar{K}^0 + p\rightarrow K^- + p + \pi^+\)
+</p>
+
+<p>
+f) \(\bar{p} + p\rightarrow \pi^+ + \pi^+ + \pi^- + \pi^- + \pi^+\) <b>ne
+conserve pas la charge électrique</b>
+</p>
+
+<p>
+g) \(\mu^+ \rightarrow e^+ + \nu_e + \bar{\nu}_\mu\) <b>leptons neutres
+&rarr; interaction faible</b>
+</p>
+
+<p>
+h) \(K^+ + p \rightarrow \Sigma^+ + n + \pi^-\) <b>ne conserve pas la charge
+électrique ni le nombre baryonique</b>
+</p></li>
 </ol>
 
 <div class="QUESTION">
 <ol class="org-ol">
-<li value="3"><ol class="org-ol">
-<li>Avec les quarks \(u, d, s\), et leurs antiquarks, combien de mésons peut-on
-constituer dans un état de moment cinétique donné ? Représenter ces mésons
-sur un diagramme où la troisième composante de l'isospin \(T_3\) est portée
-en abscisse, et l'étrangeté \(S\) en ordonnée. Indiquer sur le diagramme
-la composition en quarks et en antiquarks de chacun de ces mésons.</li>
-
-<li>On considère le diagramme des mésons de moment orbital relatif nul et de
-moment cinétique \(\vv{I} = \vv{0}\). Regrouper ces mésons en multiplets
-d'isospin, et indiquer sur le diagramme où se trouvent les pions, ainsi
-que les mésons étranges \(K^+\), \(K^-\), \(K^0\) et \(\bar{K^0}\).</li>
-</ol></li>
+<li value="3">Dessiner le diagramme de Feynman pour la réaction g)</li>
 </ol>
 
 </div>
 <ol class="org-ol">
 <li value="3"><p>
-\((u,d,s)\times(\bar{u},\bar{d},\bar{s}) = 3\times3 = 9\) mésons.
-L'étrangeté \(S=-1,0,1\), la 3<sup>ème</sup> composante de l'isospin \(T_3\) &isin;
-[-1,-1/2,0,1/2,+1]
+\(\mu^+\rightarrow e^+ + \nu_e + \bar{\nu}_\mu\)
 </p>
 
-<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="void">
 
-
-<colgroup>
-<col  class="org-left" />
-
-<col  class="org-right" />
-
-<col  class="org-right" />
-
-<col  class="org-right" />
-</colgroup>
-<tbody>
-<tr>
-<td class="org-left">&#xa0;</td>
-<td class="org-right">\(S\)</td>
-<td class="org-right">\(T_3\)</td>
-<td class="org-right">\(Q/e\)</td>
-</tr>
-
-<tr>
-<td class="org-left">\(u\bar{u}\)</td>
-<td class="org-right">0</td>
-<td class="org-right">0</td>
-<td class="org-right">0</td>
-</tr>
-
-<tr>
-<td class="org-left">\(u\bar{d}\)</td>
-<td class="org-right">0</td>
-<td class="org-right">1</td>
-<td class="org-right">+1</td>
-</tr>
-
-<tr>
-<td class="org-left">\(u\bar{s}\)</td>
-<td class="org-right">+1</td>
-<td class="org-right">1/2</td>
-<td class="org-right">+1</td>
-</tr>
-
-<tr>
-<td class="org-left">\(d\bar{u}\)</td>
-<td class="org-right">0</td>
-<td class="org-right">-1</td>
-<td class="org-right">-1</td>
-</tr>
-
-<tr>
-<td class="org-left">\(d\bar{d}\)</td>
-<td class="org-right">0</td>
-<td class="org-right">0</td>
-<td class="org-right">0</td>
-</tr>
-
-<tr>
-<td class="org-left">\(d\bar{s}\)</td>
-<td class="org-right">+1</td>
-<td class="org-right">-1/2</td>
-<td class="org-right">0</td>
-</tr>
-
-<tr>
-<td class="org-left">\(s\bar{u}\)</td>
-<td class="org-right">-1</td>
-<td class="org-right">-1/2</td>
-<td class="org-right">-1</td>
-</tr>
-
-<tr>
-<td class="org-left">\(s\bar{d}\)</td>
-<td class="org-right">-1</td>
-<td class="org-right">1/2</td>
-<td class="org-right">0</td>
-</tr>
-
-<tr>
-<td class="org-left">\(s\bar{s}\)</td>
-<td class="org-right">0</td>
-<td class="org-right">0</td>
-<td class="org-right">0</td>
-</tr>
-</tbody>
-</table>
-
-<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="void">
-<caption class="t-above"><span class="table-number">Table 1:</span> <b>Combinaison de quark \(u,d,s\) pour former des mésons de moment cinétique \(I^\pi=0^-\)</b></caption>
-
-<colgroup>
-<col  class="org-left" />
-
-<col  class="org-left" />
-</colgroup>
-<tbody>
-<tr>
-<td class="org-left"><img src="./figures/meson_uds_0.png" alt="meson_uds_0.png" /></td>
-<td class="org-left"><img src="./figures/meson_uds_1.png" alt="meson_uds_1.png" /></td>
-</tr>
-</tbody>
-</table>
-
-<ul class="org-ul">
-<li>1 triplet d'isospin
-\(\pi^+(u\bar{d}),\pi^-(\bar{u}d),\pi^0\left(\frac{1}{\sqrt{2}}(u\bar{u}-d\bar{d})\right)\)</li>
-<li>2 doublets d'isospin \(K^+(u\bar{s})\), \(K^0(d\bar{s})\) et \(K^-(\bar{u}s)\),
-\(\bar{K}^0(\bar{d}s)\)</li>
-<li>2 singulets d'isospin
-\(\eta\left(\frac{1}{\sqrt{6}}(u\bar{u}+d\bar{d}-2s\bar{s})\right)\) et
-\(\eta\prime\left(\frac{1}{\sqrt{3}}(u\bar{u}+d\bar{d}+s\bar{s})\right)\)</li>
-</ul></li>
+<div class="figure">
+<p><img src="./figures/muon_decay_feynman.png" alt="muon_decay_feynman.png" />
+</p>
+<p><span class="figure-number">Figure 2: </span><b>Diagramme de Feynman de la désintégration de l'anti-muon</b></p>
+</div></li>
 </ol>
 </div>
 </div>
 
-<div id="outline-container-orgheadline2" class="outline-2">
-<h2 id="orgheadline2"><span class="section-number-2">2</span> Supermultiplets de baryons</h2>
+<div id="outline-container-orgcae15ba" class="outline-2">
+<h2 id="orgcae15ba"><span class="section-number-2">2</span> Résonances</h2>
 <div class="outline-text-2" id="text-2">
 <div class="QUESTION">
-<ol class="org-ol">
-<li><p>
-La figure suivante présente le diagramme \(S\) en fonction de \(T_3\) pour le
-décuplet de baryons \(I^{\pi} = 3/2^+\).
-</p>
-
-<div class="center">
-
-<div class="figure">
-<p><img src="figures/decuplet.png" alt="decuplet.png" />
-</p>
-</div>
-</div>
-
 <p>
-La masse des baryons d'une même famille est donnée par la formule de
-Gell-Mann et Okubo :
-</p>
-\begin{align}
-  M(Y,T)c^2 = M_0c^2 + a\,Y + b\,\left[T(T+1) - \frac{Y^2}{4}\right]
-\end{align}
-
-<p>
-où \(M_0c^2\), \(a\) et \(b\) sont des constantes (en MeV); \(T\) est le nombre
-quantique d'isospin du baryon considéré, \(Y\) est son hypercharge définie ici
-par \(Y = B+S\), avec \(B\) le nombre baryonique et \(S\) celui d'étrangeté, les
-autres saveurs étant nulles.
+Le baryon \(\Sigma^+\) et le méson \(K^+\) ont pour isospins respectifs
+\(\vv{T}(\Sigma) = \vv{1}\) et \(\vv{T}(K)
+= \vv{1/2}\) (avec \(T_3(\Sigma^+) = 1\) et \(T_3(K^+) = 1/2\)).
+On supposera \(c=b=t=0\) pour tous les hadrons de cet exercice.
 </p>
 
 <ol class="org-ol">
-<li><p>
-Lorsque la formule (1) a été établie, les baryons \(\Delta\), \(\Sigma\) et
-\(\Xi\) étaient connus parmi les baryons \(I^\pi\) = 3/2\(^+\), mais pas le
-\(\Omega\). Quelle masse pouvait-on alors prédire pour cette particule
-\(\Omega\) ? On utilisera pour cela la figure ci-dessous présentant deux
-familles de baryons composés des quarks \(u,d,s\) (leur masse est portée en
-ordonnée).
-</p>
-<div class="center">
-
-<div class="figure">
-<p><img src="figures/bar1.png" alt="bar1.png" />
-</p>
-</div>
-</div></li>
-
-<li>Justifier les nombres quantiques du \(\Omega\) et discuter les symétries de
-sa fonction d'onde, sachant que le moment orbital relatif des 3 quarks est
-\(\vv{L} = \vv{0}\).</li>
-</ol></li>
-</ol>
-
-</div>
-<ol class="org-ol">
-<li><ol class="org-ol">
-<li value="1"><p>
-Pour \(I^\pi=3/2^+\), nous avons ainsi
-</p>
-<ul class="org-ul">
-<li><p>
-\(S=0\) et \(\vv{T}=\vv{3}/2\) : quadruplet &Delta;<sup>-</sup>, &Delta;<sup>0</sup>, &Delta;<sup>+</sup>
-        et &Delta;<sup>++</sup>
-</p>
-\begin{align*}
-  m_\Delta c^2 &= M_0c^2 + a + b\,\left[\frac{3}{2}\times\frac{5}{2} - \frac{1}{4}\right]\\
-  &= M_0c^2 + a + b\times\frac{7}{2} = \unit[1236]{MeV}
-\end{align*}</li>
-
-<li><p>
-\(S=-1\) et \(\vv{T}=\vv{1}\) : triplet &Sigma;<sup>-*</sup>, &Sigma;<sup>0*</sup> et &Sigma;<sup>+*</sup>
-        (niveaux excités du baryon &Sigma;)
-</p>
-\begin{align*}
-  m_\Sigma c^2 &= M_0c^2 + b\,\left[1\times2 - \frac{0}{4}\right]\\
-  &= M_0c^2 + 2b = \unit[1385]{MeV}
-\end{align*}</li>
-
-<li><p>
-\(S=-2\) et \(\vv{T}=\vv{1}/2\) : doublet &Xi;<sup>-*</sup> et &Xi;<sup>0*</sup>
-        (niveaux excités du baryon &Xi;)
-</p>
-\begin{align*}
-  m_\Xi c^2 &= M_0c^2 - a + b\,\left[\frac{1}{2}\times\frac{3}{2} - \frac{1}{4}\right]\\
-  &= M_0c^2 - a + \frac{b}{2} = \unit[1530]{MeV}
-\end{align*}</li>
-
-<li><p>
-\(S=-3\) et \(\vv{T}=\vv{0}\) : singulet &Omega;<sup>-</sup>
-</p>
-\begin{align*}
-  m_\Omega c^2 &= M_0c^2 - 2a - b
-\end{align*}</li>
-</ul>
-<p>
-d'où
-</p>
-\begin{align*}
-  m_\Sigma c^2 - m_\Delta c^2 &= - a + 2b - \frac{7}{2}\,b = 1385 - 1236 = \unit[149]{MeV}\\
-  &= - a - \frac{3}{2}\,b = \unit[149]{MeV}\\
-  m_\Xi c^2 - m_\Sigma c^2 &= - a + \frac{b}{2} - 2b = 1530 - 1385 = \unit[145]{MeV}\\
-  &= - a - \frac{3}{2}\,b = \unit[145]{MeV}\\
-  m_\Omega c^2 - m_\Xi c^2 &= - 2a - b + a - \frac{b}{2} = \langle145; 149\rangle\unit[]{MeV}\\
-  &= - a - \frac{3}{2}\,b = \langle\unit[147]{MeV}\rangle
-\end{align*}
-
-\begin{align*}
-  m_\Omega c^2 = m_\Xi c^2 + \unit[147]{MeV} = \unit[1677]{MeV}
-\end{align*}
-
-<p>
-soit un écart de 0.3% par rapport à la valeur mesurée expérimentalement.
-</p></li>
-
-<li><p>
-Par ailleurs, le baryon &Omega;<sup>-</sup> est composé de 3 quarks
-\(s\). L'isospin \(\vv{T} = \vv{0}\) et \(T_3=0\), l'étrangeté est \(S=-3\), le
-nombre baryonique \(B\) est égal à 1 tandis que le moment cinétique total
-\(I=\frac{3}{2}\). Étant donné que \(\vv{L}=\vv{0}\) on a
-</p>
-\begin{align*}
-  \vv{I} = \vv{L} + \vv{S} = \vv{S}(s_1) +
-  \vv{S}(s_2) + \vv{S}(s_3)
-\end{align*}
-
-<p>
-soit
-</p>
-\begin{align*}
-  \vv{I}=\frac{\vv{3}}{2} =
-  \frac{\vv{1}}{2} + \frac{\vv{1}}{2} + \frac{\vv{1}}{2}
-\end{align*}
-
-<p>
-Les 3 quarks \(s\) sont donc tous dans le même état de spin +1/2 ce qui par
-définition est impossible en raison du principe d'exclusion de Pauli
-&rarr; introduction de la couleur \(RVB\) comme nouveau nombre
-quantique et justifiant l'existence des baryons &Omega;<sup>-</sup>, &Delta;<sup>-</sup> et
-&Delta;<sup>++</sup>. Chaque quarks \(s\) existe en 3 couleurs \(R,V,B\) d'où
-\(\Omega^{-} = (s_R,s_V,s_B)\).
-</p>
-
-<p>
-La fonction d'onde globale est antisymétrique dès lors que le nombre
-quantique de couleur est introduit<sup><a id="fnr.1" class="footref" href="#fn.1">1</a></sup>.
- <div class="footdef"><sup><a id="fn.1" class="footnum" href="#fnr.1">1</a></sup> <div class="footpara"><p class="footpara"> le principe d'exclusion de Pauli généralisé implique que \(L+S+T\) soit impaire pour que la fonction d'onde soit antisymétrique. \(\vv{L}=\vv{0}\), \(\vv{T}=\vv{0}\) et \(\vv{S}=\vv{3}/2\), la somme n'est donc pas impaire. C'est l'introduction de la couleur qui permet de rendre cette fonction d'onde globale antisymétrique. </p></div><br/></div>
-</p>
-</ol></li>
-</ol>
-
-<div class="QUESTION">
-<ol class="org-ol">
-<li value="2">Le proton ayant pour nombres quantiques \(Q/e=1\), $T<sub>3</sub>$=1/2 et
-\(s=c=b=t=0\), donner sa composition en quarks. Calculer la masse du proton à
-partir des masses des quarks qui le constituent. Qu'en concluez-vous ?</li>
-</ol>
-
-</div>
-<ol class="org-ol">
-<li value="2">proton &equiv; \(uud\) soit une masse \(m_p c^2 = 2\,m_u c^2 + m_d c^2 \leq
-   2\times\unit[3]{MeV} + \unit[7]{MeV} = \unit[13]{MeV} \ll
-   \unit[938]{MeV}\). 99% de la masse du proton est due à la mer de partons
-&equiv; quarks et gluons et seulement 1% de la masse est portée par les quarks
-de valence \(uud\).</li>
-</ol>
-
-<div class="QUESTION">
-<ol class="org-ol">
-<li value="3">Le \(\Delta^0\) et le \(\Lambda^0\) se désintègrent tous deux en un proton
-et un méson \(\pi^-\). Décrire ces deux réactions en termes de quarks. En
-déduire pourquoi la vie moyenne du \(\Delta^0\) est environ 10<sup>-23</sup> s alors
-que celle du \(\Lambda^0\) vaut 2.6 10<sup>-10</sup> s.</li>
-</ol>
-
-</div>
-<ol class="org-ol">
-<li value="3"><p>
-\(\Delta^0\rightarrow p + \pi^-\) et \(\Lambda^0\rightarrow p + \pi^-\)
-</p>
-
-<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="void">
-
-
-<colgroup>
-<col  class="org-left" />
-
-<col  class="org-left" />
-</colgroup>
-<tbody>
-<tr>
-<td class="org-left"><img src="./figures/delta0_diagram.png" alt="delta0_diagram.png" /></td>
-<td class="org-left"><img src="./figures/lambda0_diagram.png" alt="lambda0_diagram.png" /></td>
-</tr>
-
-<tr>
-<td class="org-left"><b>Diagramme connecté</b></td>
-<td class="org-left"><b>Diagramme déconnecté</b></td>
-</tr>
-
-<tr>
-<td class="org-left">Intéraction forte</td>
-<td class="org-left">Interaction faible (saveur non conservée)</td>
-</tr>
-
-<tr>
-<td class="org-left">\(\rightarrow\tau\sim\) 10<sup>-23</sup> à 10<sup>-20</sup> s</td>
-<td class="org-left">\(\rightarrow\tau\gtrsim\) 10<sup>-13</sup> s</td>
-</tr>
-</tbody>
-</table></li>
-</ol>
-</div>
-</div>
-
-<div id="outline-container-orgheadline3" class="outline-2">
-<h2 id="orgheadline3"><span class="section-number-2">3</span> Les mésons \(D\)</h2>
-<div class="outline-text-2" id="text-3">
-<div class="QUESTION">
-<p>
-Soit le méson \(D^0\), ayant pour caractéeristiques : \(mc^2\) = 1865 MeV, \(I^{\pi}
-= 0^-\), \(\vv{T} = \vv{1/2}\), \(T_3 = -1/2\), \(Q/e = 0\), et saveur "charmée" \(c =
-1\).
-</p>
-
-<ol class="org-ol">
-<li value="1">Quelle est la valeur de son hypercharge et quelles sont les
-caractéristiques de son antiparticule \(\bar{D}^0\) ?</li>
+<li>À l'aide de la formule de Gell-Mann et Nishijima, retrouver la valeur de
+l'étrangeté de chacun d'eux</li>
 </ol>
 
 </div>
 
 <ol class="org-ol">
 <li value="1"><p>
-L'hypercharge \(Y\) est égale à la somme du nombre baryonique \(B\) et de la
-saveur \(S\). Le méson \(D^0\) a, par définition, un nombre baryonique nul, sa
-saveur étant uniquement \(c=1\) d'où \(Y=1\). En utilisant, la formule de
-Gell-Mann &amp; Nishijima \(Q/E = T_3 + Y/2 = -1/2 + 1/2 = 0\), on obtient donc
-bien une charge nulle.
+Formule de Gell-Mann &amp; Nishijima \(Q/e = T_3 + Y/2\) avec \(Y = B\) + saveur
+= hypercharge. Dans cet exercice, \(c=b=t=0\) donc \(Y = B\) + étrangeté \(S\)
 </p>
 
 <p>
-L'antiparticule \(\bar{D}^0\) possède les mêmes propriétés que \(D^0\) exception
-faite de la 3<sup>ème</sup> composante de l'isospin \(T_3\) égale à +1/2 et à la saveur
-\(c=-1\). Les mésons étant des bosons, la parité reste la même soit
-\(I^\pi=0^-\).
+\(Y(\Sigma^+) = 2\cdot\left(\frac{Q}{e} - T_3\right) = 0\) d'où \(S(\Sigma^+) =
+   -B(\Sigma^+) = -1\)
+</p>
+
+<p>
+\(Y(K^+) = 2\cdot\left(\frac{Q}{e} - T_3\right) = 1\) d'où \(S(K^+) = +1\)
 </p></li>
 </ol>
 
+
 <div class="QUESTION">
 <ol class="org-ol">
-<li value="2">Combien d'éléments comprend le multiplet d'isospin dont fait partie
-\(D^0\) ? Quelles sont les caractéristiques de ces éléments autres que \(D^0\) ?</li>
+<li value="2">Quel ordre de grandeur attend-on pour le temps caractéristique de la
+réaction \(\pi^+ \, + \, p \, \rightarrow \, K^+ \, + \, \Sigma^+\)?</li>
 </ol>
 
 </div>
+
 <ol class="org-ol">
 <li value="2"><p>
-Multiplet d'isospin de \(D^0\)
-</p>
-
-<p>
-\(\vv{T} = \vv{1}/2\), on a donc un doublet d'isospin \(T_3=-1/2,+1/2\) de même
-saveur. En plus du méson \(D^0\), le second membre du doublet a \(T_3=+1/2\) soit
-une charge \(Q/e=+1/2+1/2=+1\). Il s'agit du méson \(D^+\). On en déduit que
-l'antiparticule du \(D^+\) est donc le méson \(D^-\) ayant les mêmes propriétés
-que le \(D^+\) à la charge (et donc \(T_3\)) près.
-</p></li>
-</ol>
-
-<div class="QUESTION">
-<ol class="org-ol">
-<li value="3">Donner la composition en quarks de \(D^0\) et \(\bar{D}^0\), et des éléments
-trouvés question 2, ainsi que de leurs antiparticules.</li>
-</ol>
-
-</div>
-<ol class="org-ol">
-<li value="3"><p>
-Le méson \(D^0\) est forcément constitué d'un quark charme et d'un
-antiquark sans saveur <i>i.e.</i> \(\bar{u}\) ou \(\bar{d}\). Le fait qu'il est une
-charge nulle implique nécessairement la présence d'un antiquark \(u\). Le
-doublon d'isospin de \(D^0\) qu'est le méson \(D^+\) est donc constitué d'un
-quark \(c\) (même saveur) et d'un antiquark \(d\) (d'où sa charge électrique
-\(+e\)). De même, les antiparticules \(\bar{D}^0\) et \(D^-\) sont constituées
-d'un antiquark \(c\) et respectivement d'un quark \(u\) et \(d\).
+Détermination du type d'interaction \(\pi^+ + p\rightarrow K^+ +
+   \Sigma^+\)
 </p>
 
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="void">
@@ -778,268 +443,8 @@ d'un antiquark \(c\) et respectivement d'un quark \(u\) et \(d\).
 <colgroup>
 <col  class="org-left" />
 
-<col  class="org-left" />
-</colgroup>
-<tbody>
-<tr>
-<td class="org-left">\(D^0\)</td>
-<td class="org-left">\(c\bar{u}\)</td>
-</tr>
+<col  class="org-right" />
 
-<tr>
-<td class="org-left">\(D^+\)</td>
-<td class="org-left">\(c\bar{d}\)</td>
-</tr>
-
-<tr>
-<td class="org-left">\(\bar{D}^0\)</td>
-<td class="org-left">\(\bar{c}u\)</td>
-</tr>
-
-<tr>
-<td class="org-left">\(D^-\)</td>
-<td class="org-left">\(\bar{c}d\)</td>
-</tr>
-</tbody>
-</table></li>
-</ol>
-
-<div class="QUESTION">
-<ol class="org-ol">
-<li value="4">Soit \(\vv{L}\) le moment orbital relatif du système de quarks
-composant le \(D^0\) et \(\vv{I}\) son moment cinétique total. Préciser
-les valeurs de \(\vv{L}\) et de \(\vv{S}\).</li>
-</ol>
-
-</div>
-<ol class="org-ol">
-<li value="4"><p>
-\(\vv{I} = \vv{L} + \vv{S}\) soit \(\vv{L} = \vv{I} + \vv{S} = \vv{0} +
-   \vv{S}_{c} + \vv{S}_{\bar{u}} = \vv{0} + \vv{1}/2 + \vv{1}/2 = \vv{0}\) ou
-\(\vv{1}\). En tenant compte de la parité &pi;, on obtient
-</p>
-\begin{align*}
-  \pi(D^0) &= \pi(c)\cdot\pi(\bar{u})\cdot(-1)^L\\
-  -1 &= +1\cdot-1\cdot(-1)^L
-\end{align*}
-
-<p>
-d'où \(L\) pair. Les valeurs de \(\vv{L}\) et de \(\vv{S}\) satisfaisant aux
-conservations du moment cinétique total et de la parité sont donc
-\(\vv{L}=\vv{0}\) et \(\vv{S}=\vv{0}\).
-</p></li>
-</ol>
-
-<div class="QUESTION">
-<ol class="org-ol">
-<li value="5">On observe la désintégration \(D^0 \rightarrow K^- + \pi^+\). En utilisant
-seulement le moment cinétique total et la parité, dire quelle est
-l'interaction responsable de cette désintégration. Trouver d'autres arguments
-àa l'appui de cette réponse. On donne pour les kaons et les pions : I\(^{\pi}\)
-= 0\(^-\).</li>
-</ol>
-
-</div>
-<ol class="org-ol">
-<li value="5"><p>
-\(D^0\rightarrow K^-+\pi^+\). Le fait de n'avoir à tester que la
-(non)conservation du moment cinétique total et de la parité semble indiquer
-que la réaction se fait par interaction faible.
-</p>
-\begin{align*}
-  \vv{I}_{D^0} &= \vv{I}_{K^-} + \vv{I}_{\pi^+} + \vv{L}_{K\pi}\\
-  \vv{0} &= \vv{0} + \vv{0} + \vv{L}_{K\pi}
-\end{align*}
-
-<p>
-Dans ces conditions, la parité \(\pi\) n'est pas conservée
-</p>
-\begin{align*}
-  \pi(D^0) &\neq \pi(K^-)\cdot\pi(\pi^+)\cdot(-1)^{L_{K\pi}}\\
-  -1 &\neq -1\times-1\times(-1)^0
-\end{align*}
-
-<p>
-La non-conservation de la parité indique que cette désintégration se fait par
-interaction faible. Le fait que la saveur "charme" est absente des kaons et
-des pions et inversement que la saveur "étrangeté" soit absente du méson
-\(D^0\) impliquent la non-conservation de la saveur corroborant le résultat
-précédent.
-</p></li>
-</ol>
-
-<div class="QUESTION">
-<ol class="org-ol">
-<li value="6">Dans un anneau de collision (\(e^+ e^-\)), on veut produire la réaction
-(1) : \(e^+ + e^- \rightarrow D^0 + \bar{D}^0\) par interaction
-électromagnétique. Quelle est l'énergie cinétique minimale de chacun des
-faisceaux \(T_s\) nécessaire pour que la réaction (1) soit possible ?</li>
-</ol>
-
-</div>
-<ol class="org-ol">
-<li value="6"><p>
-\(e^++e^-\rightarrow D^0+\bar{D}^0\)
-</p>
-
-<p>
-Collision de deux faisceaux d'impulsion opposés &rarr; référentiel du
-centre de masse dans lequel l'énergie cinétique minimale est égale à la
-moitié de la chaleur de réaction \(|Q|\).
-</p>
-\begin{align*}
-  T_S = \frac{|Q|}{2} = \frac{2\,m_{D^0}c^2 - 2\,m_ec^2}{2} = \unit[1865]{MeV}
-\end{align*}</li>
-</ol>
-
-<div class="QUESTION">
-<ol class="org-ol">
-<li value="7">On utilise des faisceaux d'énergie \(T_0\) = 2.014 GeV. Calculer les
-impulsions du \(D^0\) et du \(\bar{D}^0\).</li>
-</ol>
-
-</div>
-<ol class="org-ol">
-<li value="7"><p>
-\(T_0=\unit[2014]{MeV}\)
-</p>
-
-<p>
-Toujours dans le référentiel du centre de masse, la conservation de
-l'impulsion implique que \(\vv{p}_{D^0}=-\vv{p}_{\bar{D}^0}\). Les masses de
-ces deux particules étant identiques, l'énergie totale \(E\) est donc la même
-pour \(D^0\) et \(\bar{D}^0\). Pour les mêmes raisons, l'énergie totale est la
-même pour le faisceau d'électrons que pour celui de positron si bien que la
-conservation de l'énergie totale implique \(E_{e^\pm}=E_{D^0/\bar{D}^0}\).
-</p>
-\begin{align*}
-  E_{D^0/\bar{D}^0} &= T_0 + m_ec^2\\
-  \sqrt{p_{D^0/\bar{D}^0}^2c^2+m_{D^0/\bar{D}^0}^2c^4} &\simeq T_0\\
-  p_{D^0/\bar{D}^0}c&=\sqrt{T_0^2 - m_{D^0/\bar{D}^0}^2c^4}\\
-  p_{D^0/\bar{D}^0}c&=\sqrt{2014^2 - 1865^2} = \unit[760.2]{MeV}
-\end{align*}</li>
-</ol>
-
-<div class="QUESTION">
-<ol class="org-ol">
-<li value="8"><p>
-On mesure le spectre en impulsion des \(D^0\) produits.
-</p>
-<div class="center">
-
-<div class="figure">
-<p><img src="figures/bar2.png" alt="bar2.png" />
-</p>
-</div>
-</div></li>
-</ol>
-
-</div>
-<ol class="org-ol">
-<li value="8">Le second pic correspond à la production du couple \(D^0/\bar{D}^0\).</li>
-</ol>
-
-<div class="QUESTION">
-<ol class="org-ol">
-<li value="9"><p>
-L'autre pic correspond à la création d'une autre particule, \(X\), par
-interaction électromagnétique, via la réaction (2) suivante :
-</p>
-\begin{align*}
-  e^+ + e^- \rightarrow D^0 + X
-\end{align*}
-
-<p>
-Calculer la masse de cette particule \(X\) et donner la valeur de son hypercharge.
-</p></li>
-</ol>
-
-</div>
-<ol class="org-ol">
-<li value="9"><p>
-\(e^++e^-\rightarrow D^0 + X\)
-</p>
-
-<p>
-L'impulsion du \(D^0\) est à présent, de 560 MeV. La conservation de
-l'impulsion suppose la même impulsion pour la particule \(X\). Par ailleurs, la
-conservation de l'énergie totale s'écrit \(2\,E_{e^\pm} = E_{D^0} + E_X\). Soit
-</p>
-\begin{align*}
-  E_X &= 2\,E_{e^\pm} - E_{D^0}\\
-  &= 2\,\left(T_0 + m_ec^2\right) - \sqrt{p_{D^0}^2c^2+m_{D^0}^2c^4}\\
-  \sqrt{p_{X}^2c^2+m_{X}^2c^4} &= 2\,\left(T_0 + m_ec^2\right) - \sqrt{p_{D^0}^2c^2+m_{D^0}^2c^4}\\
-  m_{X}^2c^4 &\simeq \left[2T_0 - \sqrt{p_{D^0}^2c^2+m_{D^0}^2c^4}\right]^2 - p_X^2c^2\\
-  m_{X}^2c^4 &\simeq \left[2\times2014 - \sqrt{560^2+1865^2}\right]^2 - 560^2\\
-  m_Xc^2 &= \unit[2004]{MeV}
-\end{align*}</li>
-</ol>
-
-<div class="QUESTION">
-<ol class="org-ol">
-<li value="10">On attribue à la particule \(X\) les caractéristiques : \(I^{\pi}\) =
-1^-, T = 1/2, T<sub>3</sub> = 1/2$. Quelle est sa composition en quarks ? Préciser
-les valeurs possibles du moment orbital relatif \(\vv{L}\) et du spin \(\vv{S}\).</li>
-</ol>
-
-</div>
-<ol class="org-ol">
-<li value="10"><p>
-L'interaction électromagnétique conserve la saveur (seul l'isospin
-n'est pas conservé). La particule \(X\) est donc nécessairement de saveur
-opposée au méson \(D^0\). Par ailleurs, la conservation du nombre baryonique
-et du nombre leptonique implique que cette particule est un méson. Enfin, on
-déduit de la conservation de la charge électrique que cette particule est
-neutre. La particule \(X\) est donc constituée d'un antiquark \(c\) et soit d'un
-quark \(u\) soit d'un quark \(d\). La conservation de la charge électrique qui,
-dans ce cas présent, est équivalente à la conservation de la troisième
-composante de l'isospin \(T_3\) (relation de Gell-Mann &amp; Nishijima), implique
-que le second quark est un quark \(u\). La particule \(X\) est ainsi identique
-en composition à l'antiméson \(\bar{D}^0\).
-</p>
-
-<p>
-Conservation du moment cinétique total \(\vv{I}\)
-</p>
-\begin{align*}
-  \vv{I}_X &= \vv{I}_u + \vv{I}_{\bar{c}}+\vv{L}_{u\bar{c}}\\
-  \vv{1} &= \vv{S}_u + \vv{S}_{\bar{c}}+\vv{L}_{u\bar{c}}
-\end{align*}
-
-<p>
-Soit \(\vv{S}_X=\vv{S}_u + \vv{S}_{\bar{c}}=\vv{0}\) et \(\vv{L}=\vv{1}\), soit
-\(\vv{S}_X=\vv{1}\) et \(\vv{L}=\vv{0},\vv{1},\vv{2}\).
-La conservation de la parité \(\pi\) impose que
-</p>
-\begin{align*}
-  \pi(X) &= \pi(u)\cdot\pi(\bar{c})\cdot(-1)^{L}\\
-  -1 &= (+1)\times(-1)\times(-1)^L
-\end{align*}
-
-<p>
-duquel on déduit que \(L\) doit être pair. La valeur du spin de \(X\) est donc 1
-et le moment orbital relatif est soit 0 ou 2.
-</p></li>
-</ol>
-
-<div class="QUESTION">
-<ol class="org-ol">
-<li value="11">On observe la désintégration \(X \rightarrow \bar{D}^0 +
-    \pi^0\). Montrer qu'elle est possible par interaction forte. Préciser les
-moments orbitaux relatifs possibles dans l'état final.</li>
-</ol>
-
-</div>
-
-<ol class="org-ol">
-<li value="11"><p>
-\(X\rightarrow\bar{D}^0+\pi^0\)
-</p>
-
-<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="void">
-
-
-<colgroup>
 <col  class="org-left" />
 
 <col  class="org-right" />
@@ -1057,98 +462,476 @@ moments orbitaux relatifs possibles dans l'état final.</li>
 <tbody>
 <tr>
 <td class="org-left">&#xa0;</td>
-<td class="org-right">\(X\)</td>
-<td class="org-left">&rarr;</td>
-<td class="org-right">\(\bar{D}^0\)</td>
+<td class="org-right">\(\pi^+\)</td>
 <td class="org-left">+</td>
-<td class="org-right">\(\pi^0\)</td>
+<td class="org-right">\(p\)</td>
+<td class="org-left">&rarr;</td>
+<td class="org-right">\(K^+\)</td>
+<td class="org-left">+</td>
+<td class="org-right">\(\Sigma^+\)</td>
 <td class="org-left">&#xa0;</td>
 </tr>
 
 <tr>
 <td class="org-left">\(B\)</td>
 <td class="org-right">0</td>
+<td class="org-left">+</td>
+<td class="org-right">1</td>
 <td class="org-left">=</td>
 <td class="org-right">0</td>
 <td class="org-left">+</td>
-<td class="org-right">0</td>
-<td class="org-left">\(\unicode{x2713}\)</td>
-</tr>
-
-<tr>
-<td class="org-left">\(c\)</td>
-<td class="org-right">-1</td>
-<td class="org-left">=</td>
-<td class="org-right">-1</td>
-<td class="org-left">+</td>
-<td class="org-right">0</td>
-<td class="org-left">\(\unicode{x2713}\)</td>
-</tr>
-
-<tr>
-<td class="org-left">\(s,b,t\)</td>
-<td class="org-right">0</td>
-<td class="org-left">=</td>
-<td class="org-right">0</td>
-<td class="org-left">+</td>
-<td class="org-right">0</td>
+<td class="org-right">1</td>
 <td class="org-left">\(\unicode{x2713}\)</td>
 </tr>
 
 <tr>
 <td class="org-left">\(Q/e\)</td>
-<td class="org-right">0</td>
-<td class="org-left">=</td>
-<td class="org-right">0</td>
+<td class="org-right">1</td>
 <td class="org-left">+</td>
-<td class="org-right">0</td>
+<td class="org-right">1</td>
+<td class="org-left">=</td>
+<td class="org-right">1</td>
+<td class="org-left">+</td>
+<td class="org-right">1</td>
 <td class="org-left">\(\unicode{x2713}\)</td>
 </tr>
 
 <tr>
 <td class="org-left">\(T_3\)</td>
+<td class="org-right">1</td>
+<td class="org-left">+</td>
 <td class="org-right">1/2</td>
 <td class="org-left">=</td>
 <td class="org-right">1/2</td>
 <td class="org-left">+</td>
-<td class="org-right">0</td>
+<td class="org-right">1</td>
 <td class="org-left">\(\unicode{x2713}\)</td>
 </tr>
 
 <tr>
 <td class="org-left">\(\vv{T}\)</td>
-<td class="org-right">\(\vv{1}/2\)</td>
+<td class="org-right">\(\vv{1}\)</td>
+<td class="org-left">+</td>
+<td class="org-right">\(\vv{1/2}\)</td>
 <td class="org-left">=</td>
-<td class="org-right">\(\vv{1}/2\)</td>
+<td class="org-right">\(\vv{1/2}\)</td>
 <td class="org-left">+</td>
 <td class="org-right">\(\vv{1}\)</td>
 <td class="org-left">\(\unicode{x2713}\)</td>
 </tr>
+
+<tr>
+<td class="org-left">\(S\)</td>
+<td class="org-right">0</td>
+<td class="org-left">+</td>
+<td class="org-right">0</td>
+<td class="org-left">=</td>
+<td class="org-right">1</td>
+<td class="org-left">+</td>
+<td class="org-right">-1</td>
+<td class="org-left">\(\unicode{x2713}\)</td>
+</tr>
 </tbody>
-</table>
+</table></li>
+</ol>
+
 
 <p>
-Le moment cinétique total est conservé dans la mesure où \(I^\pi(\pi^0)=0^-\)
-ce qui implique que le moment orbital relatif de \(\pi^0\) par rapport à
-\(\bar{D}^0\) est égal à \(\vv{1}\). Dans ces conditions, la parité est
-également conservée. Enfin, la désintégration est possible et spontanée
-puisque la chaleur de réaction \(Q\) est égale à 2005 - (1865+135) = 5 MeV
-&gt; 0.
+Conservation de la parité et du moment cinétique total :
+</p>
+
+\begin{align*}
+  \vv{I}_\pi + \vv{I}_p + \vv{L}_i &= \vv{I}_K + \vv{I}_\Sigma + \vv{L}_f\\
+  \vv{0} + \vv{1}/2 + \vv{L}_i &= \vv{0} +\vv{1}/2 + \vv{L}_f\\
+  \pi(\pi^+)\times\pi(p)\times(-1)^{L_i} &= \pi(K^+)\times\pi(\Sigma^+)\times(-1)^{L_f}\\
+  (-1)\times(+1)\times(-1)^{L_i}&=(-1)\times(+1)\times(-1)^{L_f}
+\end{align*}
+
+<p>
+Si \(L_i=L_f\) toutes les quantités sont conservées donc <b>interaction
+forte</b>. Le temps caractéristique de la réaction est donc de l'ordre de
+<b>10<sup>-23</sup> à 10<sup>-20</sup> secondes</b>.
+</p>
+
+<div class="QUESTION">
+<ol class="org-ol">
+<li value="3"><p>
+Calculer l'énergie seuil de cette réaction, qui a lieu sur cible fixe,
+en adoptant les valeurs suivantes :
+</p>
+<div class="org-center">
+<p>
+\(m_{\pi}c^2\) = 140 MeV, \(m_p c^2\) = 940 MeV, \(m_K c^2\) = 494 MeV et
+\(m_{\Sigma}c^2\) = 1190 MeV
+</p>
+</div></li>
+</ol>
+
+</div>
+
+<ol class="org-ol">
+<li value="3"><p>
+Calcul de l'énergie seuil des pions :
+</p>
+\begin{align*}
+  T_S &= \frac{|Q|\cdot\Upsigma m_\text{initiale,finale}c^2}{2\cdot m_pc^2}\\
+  &=\frac{604\cdot(140+940+494+1190)}{2\cdot940}\\
+  &=\unit[888]{MeV}
+\end{align*}</li>
+</ol>
+
+<div class="QUESTION">
+<ol class="org-ol">
+<li value="4">La réaction citée présente une résonance lorsque l'impulsion des mésons
+&pi; incidents est voisine de 1.5 GeV/c. Quelle est la masse de cette
+résonance ?</li>
+</ol>
+
+</div>
+
+
+<ol class="org-ol">
+<li value="4"><p>
+\(\pi^+ + p \rightarrow R \rightarrow K^+ + \Sigma^+\)
+</p>
+
+<p>
+Calcul de l'invariant relativiste \(I\)
+</p>
+\begin{align*}
+  I=(E_\pi + E_p)^2 - (\vv{p}_\pi + \vv{p}_p)^2c^2 = (m_Rc^2)^2
+\end{align*}
+
+<p>
+or \(\vv{p}_p = \vv{0}\) et \(E_\pi = \sqrt{p_\pi^2c^2 + m_\pi^2c^4}\),
+\(E_p=m_pc^2\) d'où
+</p>
+\begin{align*}
+  m_R^2c^4 &= \left(\sqrt{1500^2 + 140^2} + 940\right)^2 - 1500^2 =
+  \unit[3.7\,10^6]{MeV}^2\\
+  &= \unit[1933]{MeV}
+\end{align*}</li>
+</ol>
+
+<div class="QUESTION">
+<ol class="org-ol">
+<li value="5">Sa largeur est de l'ordre de 240 MeV. Quelle est sa vie moyenne ?</li>
+</ol>
+
+</div>
+<ol class="org-ol">
+<li value="5"><p>
+Largeur &Gamma; = 240 MeV
+</p>
+
+<div class="org-center">
+
+<div class="figure">
+<p><img src="./figures/breit_wigner.png" alt="breit_wigner.png" />
+</p>
+</div>
+</div>
+
+\begin{align*}
+  \tau =\frac{\hbar}{\Gamma} = \frac{\hbar c}{\Gamma c} =
+  \frac{\unit[197.3]{MeV.fm}}{\unit[240]{MeV}\cdot\unit[3\,10^{23}]{fm/s}} =
+  \unit[2.7\,10^{-24}]{s}
+\end{align*}
+
+<p>
+&rarr; désintégration par <b>interaction forte</b>
 </p></li>
 </ol>
 
 <div class="QUESTION">
 <ol class="org-ol">
-<li value="12">Comment interpréter cette particule \(X\) par rapport à \(\bar{D}^0\) ?</li>
+<li value="6">Cette résonance est créée lorsque le moment orbital relatif dans la voie
+d'entrée est \(\vv{l} = \vv{3}\). Quelles sont les caractéristiques \(I^{\pi}\)
+possibles pour cette résonance&nbsp;?</li>
+</ol>
+
+</div>
+
+<ol class="org-ol">
+<li value="6"><p>
+\(\vv{L}_i = \vv{3}\)
+</p>
+
+<p>
+La réaction \(\pi^+ + p \rightarrow K^+ + \Sigma^+\) se fait par interaction
+forte de même que \(R\rightarrow K^+ + \Sigma^+\). La réaction de production de
+\(\pi^++p\rightarrow R\) se fait donc également par interaction forte
+&rarr; conservation de la parité et du moment cinétique total.
+</p>
+
+\begin{align*}
+  \vv{I}_\pi + \vv{I}_p + \vv{L}_i &= \vv{I}_R\\
+  \pi(\pi^+)\times\pi(p)\times(-1)^{L_i} &= \pi(R)
+\end{align*}
+
+<p>
+d'où \(I_R^\pi = 5/2^+\) ou \(7/2^+\)
+</p></li>
+</ol>
+
+
+<div class="REMARK">
+<p>
+Le moment cinétique total de la résonance \(R\) de même que la parité de cette
+particule ne font pas intervenir de moment angulaire relatif. La résonance
+\(R\) qui est un baryon est donc constituée de 3 quarks orbitant les uns par
+rapport aux autres. Ainsi, le moment cinétique total de \(R\) peut se
+décomposer de la façon suivante
+</p>
+\begin{align*}
+  \vv{I}_R&=\vv{I}_{q_1}+\vv{I}_{q_2}+\vv{I}_{q_3}+\vv{L}_{q_1/q_2/q_3}\\
+  &=\vv{S}_{q_1}+\vv{S}_{q_2}+\vv{S}_{q_3}+\vv{L}_{q_1/q_2/q_3}
+ \end{align*}
+
+<p>
+étant donné que le moment cinétique intrinsèque d'une particule élémentaire
+telle qu'un quark est son unique spin. De la même façon, la parité de la
+résonance \(R\) peut s'écrire
+</p>
+\begin{align*}
+  \pi(R)=\pi(q_1)\times\pi(q_2)\times\pi(q_2)\times\pi(q_3)\times(-1)^{L_{q_1/q_2/q_3}}
+\end{align*}
+
+<p>
+Aussi, dans le cas de la détermination du moment cinétique et de la parité
+d'une particule seule, le moment angulaire relatif des constituants
+élementaires de cette particule n'intervient pas.
+</p>
+
+</div>
+
+<div class="QUESTION">
+<ol class="org-ol">
+<li value="7">Quel est son isospin ?</li>
 </ol>
 
 </div>
 <ol class="org-ol">
-<li value="12">La particule \(X\) est constituée des mêmes particules, à savoir le
-couple \(u\bar{c}\), que l'antiméson \(\bar{D}^0\). Elle possède néanmoins un
-moment cinétique total plus grand de même qu'une masse plus élevée que
-\(\bar{D}^0\) ce qui semble indiquer que cette particule est un état excité de
-\(\bar{D}^0\).</li>
+<li value="7">Conservation de \(\vv{T}\) et \(T_3\) dans la désintégration de
+\(R\rightarrow K^++\Sigma^+\)</li>
+</ol>
+
+
+\begin{align*}
+  T_3(R) &= T_3(K^+) + T_3(\Sigma^+) = 3/2\\
+  \vv{T}(R) &= \vv{T}(K^+) + \vv{T}(\Sigma^+) = \vv{1/2} + \vv{1} =
+  \vv{1/2},\vv{3/2}
+\end{align*}
+
+<p>
+or comme \(T_3(R) = 3/2 \Leftrightarrow \vv{T}(R) = \vv{3/2}\)
+</p>
+
+<div class="QUESTION">
+<ol class="org-ol">
+<li value="8">Pour respecter les notations usuelles, quel nom doit-on lui donner ?</li>
+</ol>
+
+</div>
+<ol class="org-ol">
+<li value="8">La conservation du nombre baryonique, de la charge électrique et de l'étrangeté font que \(R\)
+est un baryon de charge \(Q/e=+2\) et d'étrangeté nulle. En se reférant au tableau page 30, on note
+que cette résonance présente les mêmes propriétés que la baryon \(\Delta^{++}\) à ceci près que sa
+masse 1933 MeV et sa durée de vie sont respectivement plus élevée et plus courte<sup><a id="fnr.1" class="footref" href="#fn.1">1</a></sup>. <b>La
+résonance \(\bm{R}\) est donc un état excité de \(\bm{\Delta^{++}}\).</b></li>
+</ol>
+
+<div class="QUESTION">
+<ol class="org-ol">
+<li value="9">Soit la réaction \(\pi^-+p\rightarrow K^++\Sigma^-\), induite par des \(\pi^-\) de 1,5 GeV/c sur
+des protons. Montrer que cette réaction est possible par interaction forte.</li>
+</ol>
+
+</div>
+<ol class="org-ol">
+<li value="9"><p>
+\(\pi^- + p \rightarrow K^+ + \Sigma^-\)
+ <div class="footdef"><sup><a id="fn.1" class="footnum" href="#fnr.1">1</a></sup> <div class="footpara"><p class="footpara"> le moment cinétique total est également différent 5/2<sup>+</sup> ou 7/2<sup>+</sup> contre 3/2<sup>+</sup> </p></div><br/></div>
+</p>
+
+<p>
+\(Q/e\), \(B\), \(I^\pi\) sont conservés.
+</p>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="void">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-right" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-right" />
+
+<col  class="org-left" />
+</colgroup>
+<tbody>
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-right">\(\pi^-\)</td>
+<td class="org-left">+</td>
+<td class="org-left">p</td>
+<td class="org-left">&rarr;</td>
+<td class="org-left">\(K^+\)</td>
+<td class="org-left">+</td>
+<td class="org-right">\(\Sigma^-\)</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">\(T_3\)</td>
+<td class="org-right">-1</td>
+<td class="org-left">+</td>
+<td class="org-left">1/2</td>
+<td class="org-left">=</td>
+<td class="org-left">1/2</td>
+<td class="org-left">+</td>
+<td class="org-right">-1</td>
+<td class="org-left">\(\unicode{x2713}\)</td>
+</tr>
+
+<tr>
+<td class="org-left">\(\vv{T}\)</td>
+<td class="org-right">\(\vv{1}\)</td>
+<td class="org-left">+</td>
+<td class="org-left">\(\vv{1/2}\)</td>
+<td class="org-left">=</td>
+<td class="org-left">\(\vv{1/2}\)</td>
+<td class="org-left">+</td>
+<td class="org-right">\(\vv{1}\)</td>
+<td class="org-left">\(\unicode{x2713}\)</td>
+</tr>
+
+<tr>
+<td class="org-left">\(s\)</td>
+<td class="org-right">0</td>
+<td class="org-left">+</td>
+<td class="org-left">0</td>
+<td class="org-left">=</td>
+<td class="org-left">1</td>
+<td class="org-left">+</td>
+<td class="org-right">-1</td>
+<td class="org-left">\(\unicode{x2713}\)</td>
+</tr>
+</tbody>
+</table></li>
+</ol>
+
+<p>
+<b>Remarques :</b> les baryons \(\Delta^{++}\) et \(\Delta^-\) sont respectivement constitués de 3 quarks \(u\)
+et 3 quarks \(d\). Or le moment cinétique total de ces particules 3/2 impliquent que le spin des 3
+quarks soient alignés "vers le haut". Le principe de Pauli exclut une telle configuration pour des
+fermions. En ajoutant le nombre quantique de couleur, la chromodynamique quantique permet un tel
+état tout comme pour le baryon &Omega;<sup>-</sup> postulé par Gell-Mann et découvert à Brookhaven en 1964.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org0f5fe41" class="outline-2">
+<h2 id="org0f5fe41"><span class="section-number-2">3</span> La parité et sa violation</h2>
+<div class="outline-text-2" id="text-3">
+<div class="QUESTION">
+<ol class="org-ol">
+<li value="1">Rappeler la définition de la parité. Quelles sont ses propriétés ? Que signifie formellement
+et intuitivement sa conservation ?</li>
+</ol>
+
+</div>
+
+<ol class="org-ol">
+<li>L'opérateur parité transforme une fonction \(\psi(\vv{r})\) en \(\psi(-\vv{r})\) :
+\(\hat{\mathcal{P}}\,\psi(\vv{r}) = \psi(-\vv{r})\). Les valeurs propres &pi; sont telles que
+\(\hat{\mathcal{P}}\,\psi(\vv{r}) = \pi\,\psi(\vv{r})\) or \(\hat{\mathcal{P}}^2\,\psi(\vv{r}) =
+   \hat{\mathcal{P}}\,\psi(-\vv{r}) = \psi(\vv{r})\). \(\hat{\mathcal{P}}\) est donc unitaire et les
+valeurs propres sont &pi; = &plusmn;1 (à une phase près). L'invariance sous \(\hat{\mathcal{P}}\) <i>i.e.</i>
+conservation de la parité implique qu'il n'y a pas de différence entre "gauche ou droite" (même
+image dans un miroir).</li>
+</ol>
+
+<div class="QUESTION">
+<ol class="org-ol">
+<li value="2">On considère la réaction \(A^+\rightarrow\pi^++\pi^++\pi^-\). Quelle est la parité dans l'état
+final ? On donne \(I(A)=0\) et \(I^\pi(\pi)=0^-\).</li>
+</ol>
+
+</div>
+
+<ol class="org-ol">
+<li value="2"><p>
+Conservation du moment cinétique total \(\vv{I}\)
+</p>
+\begin{align*}
+  \vv{I}(A^+) = \vv{I}(\pi^+) + \vv{I}(\pi^+) + \vv{I}(\pi^-) +
+  \vv{L}_f
+\end{align*}
+
+<p>
+où \(\vv{L}_f\) est le moment angulaire relatif des particules en voie de sortie. La parité dans
+l'état final \(\pi_f\) s'écrit
+</p>
+\begin{align*}
+  \pi_f = \pi(\pi^+)\,\pi(\pi^+)\,\pi(\pi^-)\,(-1)^{L_f}
+\end{align*}
+
+<p>
+Du fait que \(I(A^+) = I(\pi^\pm) = 0\), on déduit que \(\vv{L_f} = \vv{0}\) soit
+la parité dans l'état final
+</p>
+\begin{align*}
+  \pi_f = (-1)\,(-1)\,(-1)\,(-1)^0 = -1
+\end{align*}</li>
+</ol>
+
+
+<div class="QUESTION">
+<ol class="org-ol">
+<li value="3">On considère la réaction \(\theta^+\rightarrow\pi^++\pi^0\). Quelle est la parité dans l'état
+final ? On donne \(I(\theta)=0\) et \(I^\pi(\pi)=0^-\).</li>
+</ol>
+
+</div>
+<ol class="org-ol">
+<li value="3"><p>
+Le moment angulaire relatif \(L_f\) est toujours nul.
+</p>
+\begin{align*}
+  \pi_f = \pi(\pi^+)\,\pi(\pi^0)\,(-1)^0 = +1
+\end{align*}</li>
+</ol>
+
+<div class="QUESTION">
+<ol class="org-ol">
+<li value="4">On sait par ailleurs que \(\theta^+\) et \(A^+\) ont mêmes masses et durées de vie. Qu'est ce
+que cela vous suggère-t-il ? Ce problème était connu à l'époque sous le patronyme de "puzzle
+&theta;/&tau;".</li>
+</ol>
+
+</div>
+
+
+<ol class="org-ol">
+<li value="4">Si la parité est conservée dans les deux réactions ci-dessus, on déduit alors que la parité
+de \(A^+\) est -1 tandis que la parité de \(\theta^+\) est +1. Or si \(A^+\) et \(\theta^+\) ont la même
+masse, les mêmes durées de vie et la même charge électrique, elles sont donc la même particule
+mais avec <b>une parité différente</b>. Les mésons se désintégrant par interaction faible, ce problème
+aussi connu sous le nom de "puzzle &theta;/&tau;" (&tau;&equiv; A<sup>+</sup>) trouva sa solution dans le
+fait que <b>l'interaction faible ne conserve pas la parité</b>. Ces deux particules sont donc une seule
+et même particule appelée à présent \(K^+\).</li>
 </ol>
 </div>
 </div>
@@ -1161,7 +944,7 @@ moment cinétique total plus grand de même qu'une masse plus élevée que
 </div>
 </div></div>
 <div id="postamble" class="status">
-File under <i class="fa fa-github-alt"></i> version control - commit <a href="https://github.com/xgarrido/master_npp_teaching/commit/15edcc3f2b8dcf1e42ba4cd5ec2942d8a7d0a234">15edcc3</a> - 2016-06-28
+File under <i class="fa fa-github-alt"></i> version control - commit <a href="https://github.com/xgarrido/master_npp_teaching/commit/f535f50b5fcd671574e3f14e69aaa10cb02d480d">f535f50</a> - 2020-12-21
 </div>
 </body>
 </html>

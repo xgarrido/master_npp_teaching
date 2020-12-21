@@ -3,10 +3,11 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
-<meta  name="viewport" content="width=device-width, initial-scale=1" />
-<title>TD3 : Réactions de production et de désintégration de particules</title>
-<meta  name="generator" content="Org-mode" />
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>TD3 : Nombres quantiques &amp; Symétries</title>
+<meta name="generator" content="Org mode" />
+<meta name="author" content="Xavier Garrido" />
 <link rel="stylesheet" href="css/styles.css" />
                <link rel="stylesheet" href="css/org-pygments.css" />
                <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" />
@@ -15,7 +16,7 @@
 @licstart  The following is the entire license notice for the
 JavaScript code in this tag.
 
-Copyright (C) 2012-2013 Free Software Foundation, Inc.
+Copyright (C) 2012-2018 Free Software Foundation, Inc.
 
 The JavaScript code in this tag is free software: you can
 redistribute it and/or modify it under the terms of the GNU
@@ -83,6 +84,7 @@ for the JavaScript code in this tag.
           extensions: ["cancel.js"],
           Macros: {
               vv: ["{\\vec{#1}}",1],
+              d: "{\\text{d}}",
               Upsigma: "{\\Sigma}",
               Updelta: "{\\Delta}",
               varoiint: "{\\iint}",
@@ -134,704 +136,363 @@ for the JavaScript code in this tag.
 <a href="index.html"><i class="fa fa-home"></i></a><br/>  
 </div>
 <div id="content">
-<h1 class="title">TD3 : Réactions de production et de désintégration de particules</h1>
+<h1 class="title">TD3 : Nombres quantiques &amp; Symétries</h1>
 <div style="display:none;">
 <div id="text-table-of-contents">
 <ul class="org-ul">
-<li><a href="././td_np_0.html">TD1 : Cinématique &amp; Accélérateurs</a></li>
-<li><a href="././td_np_1.html">TD2 : Nombres quantiques &amp; Symétries</a></li>
-<li><a href="././td_np_2.html">TD3 : Réactions de production et de désintégration de particules</a></li>
-<li><a href="././td_np_3.html">TD4 : Modèle des quarks &#x2013; Les hadrons</a></li>
-<li><a href="././td_np_4.html">TD5 : Isospin &#x2013; des quarks aux noyaux</a></li>
-<li><a href="././td_np_5.html">TD6 : Structure nucléaire</a></li>
-<li><a href="././td_np_6.html">TD7 : Réactions nucléaires</a></li>
-<li><a href="././td_np_7.html">TD8 : Masses et désintégrations nucléaires</a></li>
-<li><a href="././td_np_8.html">TD9 : Modèle Standard et au-delà : l'interaction faible</a></li>
+<li><a href="././td_np_0.html">TD1 : Cinématique</a></li>
+<li><a href="././td_np_1.html">TD2 : Accélérateurs &amp; section efficace</a></li>
+<li><a href="././td_np_2.html">TD3 : Nombres quantiques &amp; Symétries</a></li>
+<li><a href="././td_np_3.html">TD4 : Réactions de production et de désintégration de particules</a></li>
+<li><a href="././td_np_4.html">TD5 : Modèle Standard et au-delà : l'interaction faible</a></li>
+<li><a href="././td_np_5.html">TD6 : Modèle des quarks &#x2013; Les hadrons</a></li>
+<li><a href="././td_np_6.html">TD7 : Isospin &#x2013; des quarks aux noyaux</a></li>
+<li><a href="././td_np_7.html">TD8 : Structure nucléaire</a></li>
+<li><a href="././td_np_8.html">TD9 : Masses et désintégrations nucléaires</a></li>
 <li><a href="././td_np_9.html">Annexes</a></li>
 <li><a href="././td_np_10.html">Aide-mémoire de Noyaux &amp; Particules</a></li>
 </ul>
 </div>
 </div>
 
-
-
-<div class="figure">
-<p><img src="./figures/standard_model.png" alt="standard_model.png" />
-</p>
-<p><span class="figure-number">Figure 1:</span> <b>Modèle standard de la physique des particules</b></p>
-</div>
-
-<div id="outline-container-orgheadline1" class="outline-2">
-<h2 id="orgheadline1"><span class="section-number-2">1</span> Production et désintégration de particules</h2>
+<div id="outline-container-orgeed3a51" class="outline-2">
+<h2 id="orgeed3a51"><span class="section-number-2">1</span> Énergie maximum des rayons cosmiques</h2>
 <div class="outline-text-2" id="text-1">
-<div class="QUESTION">
-<p>
-<i>On utilisera les tables des caractéristiques des leptons et hadrons données en
-annexe.</i>
-</p>
-<ol class="org-ol">
-<li value="1">Les termes <b>quarks</b>, <b>lepton</b>, <b>hadron</b>, <b>baryon</b>, et <b>méson</b> sont utilisées dans
-la classification des particules. Dire lesquels sont des constituants
-élémentaires, donner des exemples de leur utilisation et distinguer entre
-bosons et fermions.</li>
-</ol>
 
-</div>
-<ol class="org-ol">
-<li value="1">Les particules élémentaires sont les quarks (<i>cf.</i> ci-dessous) et les
-leptons (du grec <i>leptos</i> = léger) dont le spin demi-entier font de ces
-particules des fermions. À la différence des leptons, les quarks
-n'apparaissent pas à l'état libre et sont confinés dans les hadrons (du grec
-<i>hadros</i> = fort). On distingue deux familles de hadrons :
-<dl class="org-dl">
-<dt>les baryons</dt><dd>(du grec <i>baryos</i> = lourd) constitués de 3 quarks \(q_1q_2q_3\),
-de nombre baryonique égal à 1 et de spin 1/2
-entier. Exemple : nucléons</dd>
-<dt>les mésons</dt><dd><p>
-(du grec <i>mesos</i> = milieu) constitués d'une paire de quark &#x2013;
-antiquark, de nombre baryonique nul et de spin
-entier. Exemple : pions
+<div class="figure">
+<p><img src="./figures/spectrum.png" alt="spectrum.png" width="500" />
 </p>
-
-<p>
-Les quarks sont sensibles à toutes les interactions tandis que les leptons
-chargés &#x2013; \(e\), &mu;, &tau; &#x2013; sont sensibles à l'interaction EM et faible. Les
-leptons neutres <i>i.e.</i> les neutrinos n'intéragissent que par interaction
-faible.
-</p></dd>
-</dl></li>
-</ol>
-
-<div class="REMARK">
-<p>
-Le nom <i>quark</i> est tiré du roman <i>Finnegans Wake</i> de James Joyce :
-</p>
-<blockquote>
-<p>
-"Three quarks for Muster Mark!
-</p>
-
-<p>
-Sure he has not got much of a bark
-</p>
-
-<p>
-And sure any he has it's all beside the mark."
-</p>
-</blockquote>
-<p>
-Murray Gell-Mann précisa par la suite l'origine du nom <i>quark</i> dans son livre <i>The
-Quark and the Jaguar</i>:
-</p>
-
-<blockquote>
-<p>
-"In 1963, when I assigned the name "quark" to the fundamental constituents of
-the nucleon, I had the sound first, without the spelling, which could have been
-"kwork". Then, in one of my occasional perusals of Finnegans Wake, by James
-Joyce, I came across the word "quark" in the phrase "Three quarks for Muster
-Mark". Since "quark" (meaning, for one thing, the cry of the gull) was clearly
-intended to rhyme with "Mark", as well as "bark" and other such words, I had to
-find an excuse to pronounce it as "kwork". But the book represents the dream of
-a publican named Humphrey Chimpden Earwicker. Words in the text are typically
-drawn from several sources at once, like the "portmanteau" words in "Through the
-Looking-Glass". From time to time, phrases occur in the book that are partially
-determined by calls for drinks at the bar. I argued, therefore, that perhaps one
-of the multiple sources of the cry "Three quarks for Muster Mark" might be
-"Three quarts for Mister Mark", in which case the pronunciation "kwork" would
-not be totally unjustified. In any case, the number three fitted perfectly the
-way quarks occur in nature."
-</p>
-</blockquote>
-
-<p>
-L'origine des noms de saveur est multiple : les quarks <i>up</i> et <i>down</i> sont nommés en
-raison de la valeur d'isospin \(T_3\) respectivement égale à &plusmn;1/2. Le quark
-étrange tient son nom de la découverte des particules étranges dans le
-rayonnement cosmique (<i>cf.</i> TD précédent), l'étrangeté faisant référence à leur
-durée de vie particulièrement longue. Glashow, qui proposa le nom de charme avec
-Bjorken, expliqua ce choix en ces termes
-</p>
-
-<blockquote>
-<p>
-"We called our construct the charmed quark, for we were fascinated and pleased
-by the symmetry it brought to the subnuclear world."
-</p>
-</blockquote>
-
-<p>
-Les noms "bottom" et "top", proposés par Harari, furent logiquement choisis en
-tant que "partenaires" des quarks "up" et "down". Par le passé, ces quarks
-furent également appelés quark "beauty" et "truth": si le terme "truth" n'est
-jamais resté, l'utilisation du terme "beauty" est souvent utilisée en référence
-aux "beauty factories" (Babar, Belle) étudiant les propriétés de ce quark.
-</p>
-
-<p>
-Finalement, le nom de neutrino a été donné par Edoardo Amaldi à la suite du
-postulat d'existence de cette particule par Wolfang Pauli. Ce dernier l'avait
-initialement appelé neutron quelques mois avant que James Chadwick découvre le
-baryon neutron. Toutefois, la référence italienne au petit neutron au travers de
-l'ajout du suffixe <i>ino</i> est plus complexe qu'il n'y parait : en toute rigueur, le
-petit neutron aurait du s'appeller <i>neutronino</i>. L'origine du nom neutrino est
-rapportée par Amaldi
-</p>
-<blockquote>
-<p>
-"The name neutrino, (a funny and grammatically incorrect contraction of "little
-neutron" in Italian: neutronino) entered the international terminology through
-Fermi, who started to use it sometime between the conference in Paris in July
-1932 and the Solvay Conference October 1933 where Pauli used it. The word came
-out in a humorous conversation at the Instituto di Via Panisperna. Fermi, Amaldi
-and and few others were present and Fermi was explaining Pauli's hypothesis
-about his "light neutron". For distinguishing this particle from the Chadwick
-neutron, Amaldi jokingly used this funny name, - says Occhialini, who recalls of
-having shortly later told around this little story in Cambridge."
-</p>
-</blockquote>
-
+<p><span class="figure-number">Figure 1: </span><b>Spectre en énergie des rayons cosmiques</b></p>
 </div>
 
 <div class="QUESTION">
 <ol class="org-ol">
-<li value="2">Parmi les réactions qui suivent, deux ne sont jamais possibles et deux
-autres ne peuvent se produire par interaction forte. Trouver ces quatre
-réactions en justifiant votre réponse (on supposera que les conditions
-énergétiques sont satisfaites pour ces réactions).
-
-<ol class="org-ol">
-<li>\(K^- + p   \rightarrow  \bar{K}^0 + n\)</li>
-
-<li>\(\pi^+ + p  \rightarrow \Sigma^+ + K^+\)</li>
-
-<li>\(\pi^- + p  \rightarrow \Sigma^0 + K^+ + \pi^-\)</li>
-
-<li>\(\pi^- + p  \rightarrow \Sigma^+ + K^-\)</li>
-
-<li>\(\bar{K}^0 + p  \rightarrow K^- + p + \pi^+\)</li>
-
-<li>\(\bar{p} + p  \rightarrow \pi^+ + \pi^+ + \pi^- + \pi^- + \pi^+\)</li>
-
-<li>\(\mu^+ \rightarrow e^+ + \nu_e + \bar{\nu}_{\mu}\)</li>
-
-<li>\(K^+ + p  \rightarrow \Sigma^+ + n  + \pi^-\)</li>
-</ol></li>
-</ol>
-
-</div>
-<ol class="org-ol">
-<li value="2"><p>
-Toutes les interactions conservent la charge électrique, le nombre
-baryonique, le nombre leptonique et le moment cinétique total.
+<li><p>
+On considère un proton émis par une source astrophysique (Soleil, noyaux actifs de galaxie,&#x2026;)
+et interagissant avec le rayonnement fossile à 2.7 K (on admettra que \(E_\gamma = 3kT_\gamma\)
+pour les photons, avec \(k\) = 1,38.10<sup>-23</sup> J/K) :
 </p>
+\begin{align*}
+  p + \gamma &\rightarrow p + \pi^0 \quad \text{ et}\\
+  p + \gamma &\rightarrow n + \pi^+
+\end{align*}
 
 <p>
-a) \(K^- + p\rightarrow \bar{K}^0 + n\)
-</p>
-
-<p>
-b) \(\pi^+ + p\rightarrow \Sigma^+ + K^+\)
-</p>
-
-<p>
-c) \(\pi^- + p\rightarrow \Sigma^0 + K^+ + \pi^-\)
-</p>
-
-<p>
-d) \(\pi^- + p\rightarrow \Sigma^+ + K^-\) <b>non conservation de l'étrangeté
-&rarr; interaction faible</b>
-</p>
-
-<p>
-e) \(\bar{K}^0 + p\rightarrow K^- + p + \pi^+\)
-</p>
-
-<p>
-f) \(\bar{p} + p\rightarrow \pi^+ + \pi^+ + \pi^- + \pi^- + \pi^+\) <b>ne
-conserve pas la charge électrique</b>
-</p>
-
-<p>
-g) \(\mu^+ \rightarrow e^+ + \nu_e + \bar{\nu}_\mu\) <b>leptons neutres
-&rarr; interaction faible</b>
-</p>
-
-<p>
-h) \(K^+ + p \rightarrow \Sigma^+ + n + \pi^-\) <b>ne conserve pas la charge
-électrique ni le nombre baryonique</b>
+Quelle est l'énergie seuil de ces réactions (on supposera le proton ultra relativiste)&nbsp;?
 </p></li>
-</ol>
 
-<div class="QUESTION">
-<ol class="org-ol">
-<li value="3">Dessiner le diagramme de Feynman pour la réaction g)</li>
+<li>Que pouvez-vous en déduire sur l'énergie des protons dans le milieu intergalactique ?</li>
 </ol>
 
 </div>
-<ol class="org-ol">
-<li value="3"><p>
-\(\mu^+\rightarrow e^+ + \nu_e + \bar{\nu}_\mu\)
+
+<p>
+Calcul de l'invariant relativiste :
+</p>
+\begin{align*}
+  I(\text{sortie}) &= (m_{p}c^{2} + m_{\pi}c^{2})^{2}\\
+  I(\text{entrée}) &= (E_{p} + E_{\gamma})^{2} - (\vv{p}_{p} + \vv{p}_{\gamma})^{2}c^{2}
+\end{align*}
+
+<p>
+Proton ultra-relativiste \(E_{p}\sim T_{p} = p_{p}c\)
+</p>
+\begin{align*}
+  I(\text{entrée}) &= E_{p}^{2} + E_{\gamma}^{2} + 2E_{p}E_{\gamma} - E_{\gamma}^{2} - E_{p}^{2} - 2E_{\gamma}E_{p}\cos\theta\\
+  &= 2E_{p}E_{\gamma}(1 - \cos\theta)
+\end{align*}
+
+<p>
+d'où l'énergie seuil
+</p>
+\begin{align*}
+  E_{p} \sim T_{p} =
+  \frac{\left(\Upsigma\,m_\text{finale}c^{2}\right)^{2}}{2E_{\gamma}(1-\cos\theta)}
+\end{align*}
+
+<p>
+Cas limites:
+</p>
+<ul class="org-ul">
+<li>\(\theta\rightarrow0; T_{p}\rightarrow\infty\)</li>
+<li>\(\theta = 180^\circ; T_{p} = \frac{\left(\Upsigma\,m_\text{finale}c^{2}\right)^{2}}{4E_{\gamma}}\)</li>
+</ul>
+
+<p>
+AN: \(m_{\pi^{0}}c^{2}\) = 135 MeV et \(m_{\pi^{+}}c^{2}\) = 139.6 MeV
+</p>
+\begin{align*}
+  T_{p}(\pi^{0}/\pi^{+}) &= \frac{(135/139.6 + 938.3)^{2}\cdot1.6\,10^{-13}}{4\cdot3\cdot1.38\,10^{-23}\cdot2.7} = \unit[4.1\,10^{20}]{eV}\\
+\end{align*}
+
+
+<div id="orgbc8c804" class="figure">
+<p><img src="./figures/proton_attenuation_result.png" alt="proton_attenuation_result.png" width="500" />
+</p>
+<p><span class="figure-number">Figure 2: </span><b>Énergie moyenne des protons en fonction de leur distance à la source</b></p>
+</div>
+
+<p>
+<b>Discussion :</b> Les pertes énergétiques résultantes de la photoproduction de pions sont de l’ordre de
+15% par interaction; le libre parcours moyen &lambda; est typiquement le mégaparsec<sup><a id="fnr.1" class="footref" href="#fn.1">1</a></sup>. Ainsi,
+l’énergie moyenne d’un proton diminue de façon significative au cours de sa propagation dans
+l’Univers comme le montre la Figure <a href="#orgbc8c804">2</a>. Un proton avec une énergie initiale de
+10<sup>22</sup> eV voit son énergie réduite à 10<sup>20</sup> eV après avoir parcouru 100 Mpc. Une diminution nette
+du flux appelée coupure GZK est alors attendue au seuil de la réaction de photoproduction de pions
+<i>i.e.</i> 10<sup>19.6</sup> eV<sup><a id="fnr.2" class="footref" href="#fn.2">2</a></sup>. La position exacte de cette coupure GZK peut varier sensiblement suivant
+que les sources considérées sont ou non uniformément réparties dans l’Univers. En particulier, la
+forme du spectre au delà du seuil GZK permet, en théorie, d’évaluer la répartition des sources et de
+mettre en exergue une éventuelle surabondance locale.
+ <div class="footdef"><sup><a id="fn.1" class="footnum" href="#fnr.1">1</a></sup> <div class="footpara"><p class="footpara"> 1 pc = 1 parsec = 3.26 années lumières = 30.856 10<sup>12</sup> km. </p></div><br/>
+ <sup><a id="fn.2" class="footnum" href="#fnr.2">2</a></sup> <div class="footpara"><p class="footpara"> dans l’hypothèse où les RCUHEs sont des noyaux, la photodésintégration par interaction avec les photons du CMB et le fond infrarouge, devient importante dans la région 5 10<sup>19</sup> &#x2013; 2 10<sup>20</sup> eV. La longueur de perte d’énergie, i.e. le rapport entre le libre parcours moyen et l’inélasticité de la réaction, est typiquement de 100 Mpc pour un noyau de fer de 100 EeV. Le rayonnement gamma est quant à lui fortement attenué en raison, principalement, des interactions avec le fond radio \(\gamma + \gamma_{radio} \rightarrow e^{+} + e^{-}\). </p></div><br/></div>
 </p>
 
 
 <div class="figure">
-<p><img src="./figures/muon_decay_feynman.png" alt="muon_decay_feynman.png" />
+<p><img src="./figures/hillas_diagram.png" alt="hillas_diagram.png" width="500" />
 </p>
-<p><span class="figure-number">Figure 2:</span> <b>Diagramme de Feynman de la désintégration de l'anti-muon</b></p>
-</div></li>
-</ol>
+<p><span class="figure-number">Figure 3: </span><b>Diagramme de Hillas de différents objets compacts.</b> Les axes correspondent respectivement au logarithme décimal du champ magnétique et à la taille caractéristique de l'objet.</p>
+</div>
+
+
+<div class="figure">
+<p><img src="./figures/auger_spectrum.png" alt="auger_spectrum.png" width="500" />
+</p>
+<p><span class="figure-number">Figure 4: </span><b>Spectre du rayonnement cosmique mesuré par l'Observatoire Pierre Auger (données 2008)</b></p>
 </div>
 </div>
-<div id="outline-container-orgheadline2" class="outline-2">
-<h2 id="orgheadline2"><span class="section-number-2">2</span> Résonances</h2>
+</div>
+
+<div id="outline-container-org0e81124" class="outline-2">
+<h2 id="org0e81124"><span class="section-number-2">2</span> Étrangeté dans les rayons cosmiques</h2>
 <div class="outline-text-2" id="text-2">
 <div class="QUESTION">
 <p>
-Le baryon \(\Sigma^+\) et le méson \(K^+\) ont pour isospins respectifs
-\(\vv{T}(\Sigma) = \vv{1}\) et \(\vv{T}(K)
-= \vv{1/2}\) (avec \(T_3(\Sigma^+) = 1\) et \(T_3(K^+) = 1/2\)).
-On supposera \(c=b=t=0\) pour tous les hadrons de cet exercice.
+À l'arrivée dans l'atmosphère, les protons réagissent avec les neutrons des
+noyaux, pour engendrer la cascade de réactions :
 </p>
-
-<ol class="org-ol">
-<li>À l'aide de la formule de Gell-Mann et Nishijima, retrouver la valeur de</li>
-</ol>
-<p>
-l'étrangeté de chacun d'eux
-</p>
-
-</div>
-<ol class="org-ol">
-<li value="1"><p>
-Formule de Gell-Mann &amp; Nishijima \(Q/e = T_3 + Y/2\) avec \(Y = B\) + saveur
-= hypercharge. Dans cet exercice, \(c=b=t=0\) donc \(Y = B\) + étrangeté \(S\)
-</p>
-
-<p>
-\(Y(\Sigma^+) = 2\cdot\left(\frac{Q}{e} - T_3\right) = 0\) d'où \(S(\Sigma^+) =
-   -B(\Sigma^+) = -1\)
-</p>
-
-<p>
-\(Y(K^+) = 2\cdot\left(\frac{Q}{e} - T_3\right) = 1\) d'où \(S(\Sigma^+) = +1\)
-</p></li>
-</ol>
-
-<div class="QUESTION">
-<ol class="org-ol">
-<li value="2">Quel ordre de grandeur attend-on pour le temps caractéristique de la
-réaction \(\pi^+ \, + \, p \, \rightarrow \, K^+ \, + \, \Sigma^+\)?</li>
-</ol>
-
-</div>
-<ol class="org-ol">
-<li><p>
-Détermination du type d'interaction \(\pi^+ + p\rightarrow K^+ + \Sigma^+\)
-</p>
-
-<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="void">
-
-
-<colgroup>
-<col  class="org-left" />
-
-<col  class="org-right" />
-
-<col  class="org-left" />
-
-<col  class="org-right" />
-
-<col  class="org-left" />
-
-<col  class="org-right" />
-
-<col  class="org-left" />
-
-<col  class="org-right" />
-
-<col  class="org-left" />
-</colgroup>
-<tbody>
-<tr>
-<td class="org-left">&#xa0;</td>
-<td class="org-right">\(\pi^+\)</td>
-<td class="org-left">+</td>
-<td class="org-right">p</td>
-<td class="org-left">&rarr;</td>
-<td class="org-right">\(K^+\)</td>
-<td class="org-left">+</td>
-<td class="org-right">\(\Sigma^+\)</td>
-<td class="org-left">&#xa0;</td>
-</tr>
-
-<tr>
-<td class="org-left">\(B\)</td>
-<td class="org-right">0</td>
-<td class="org-left">+</td>
-<td class="org-right">1</td>
-<td class="org-left">=</td>
-<td class="org-right">0</td>
-<td class="org-left">+</td>
-<td class="org-right">1</td>
-<td class="org-left">\(\unicode{x2713}\)</td>
-</tr>
-
-<tr>
-<td class="org-left">\(Q/e\)</td>
-<td class="org-right">1</td>
-<td class="org-left">+</td>
-<td class="org-right">1</td>
-<td class="org-left">=</td>
-<td class="org-right">1</td>
-<td class="org-left">+</td>
-<td class="org-right">1</td>
-<td class="org-left">\(\unicode{x2713}\)</td>
-</tr>
-
-<tr>
-<td class="org-left">\(T_3\)</td>
-<td class="org-right">1</td>
-<td class="org-left">+</td>
-<td class="org-right">1/2</td>
-<td class="org-left">=</td>
-<td class="org-right">1/2</td>
-<td class="org-left">+</td>
-<td class="org-right">1</td>
-<td class="org-left">\(\unicode{x2713}\)</td>
-</tr>
-
-<tr>
-<td class="org-left">\(\vv{T}\)</td>
-<td class="org-right">\(\vv{1}\)</td>
-<td class="org-left">+</td>
-<td class="org-right">\(\vv{1/2}\)</td>
-<td class="org-left">=</td>
-<td class="org-right">\(\vv{1/2}\)</td>
-<td class="org-left">+</td>
-<td class="org-right">\(\vv{1}\)</td>
-<td class="org-left">\(\unicode{x2713}\)</td>
-</tr>
-
-<tr>
-<td class="org-left">\(S\)</td>
-<td class="org-right">0</td>
-<td class="org-left">+</td>
-<td class="org-right">0</td>
-<td class="org-left">=</td>
-<td class="org-right">1</td>
-<td class="org-left">+</td>
-<td class="org-right">-1</td>
-<td class="org-left">\(\unicode{x2713}\)</td>
-</tr>
-</tbody>
-</table>
-
-<p>
-Conservation de la parité et du moment cinétique total :
-</p>
-
 \begin{align*}
-  \vv{I}_\pi + \vv{I}_p + \vv{L}_i &= \vv{I}_K + \vv{I}_\Sigma + \vv{L}_f\\
-  \vv{0} + \vv{1}/2 + \vv{L}_i &= \vv{0} +\vv{1}/2 + \vv{L}_f\\
-  \pi(\pi^+)\times\pi(p)\times(-1)^{L_i} &= \pi(K^+)\times\pi(\Sigma^+)\times(-1)^{L_f}\\
-  (-1)\times(+1)\times(-1)^{L_i}&=(-1)\times(+1)\times(-1)^{L_f}
+  p + n_\text{atm} &\rightarrow p + p + \pi^- \\
+  \pi^-+ p_\text{atm} &\rightarrow V_1 + V_2 \\
+  V_1 &\rightarrow p + \pi^-  \\
+  V_2 &\rightarrow \pi^+ + \pi^-  \\
+  \pi^- &\rightarrow \mu^- + \bar{\nu_\mu}  \\
+  \mu^- &\rightarrow e^- + \bar{\nu_e} +  \nu_\mu
 \end{align*}
 
 <p>
-Si \(L_i=L_f\) toutes les quantités sont conservées donc <b>interaction
-forte</b>. Le temps caractéristique de la réaction est donc de l'ordre de
-<b>10<sup>-23</sup> à 10<sup>-20</sup> secondes</b>.
-</p></li>
-</ol>
-
-<div class="QUESTION">
-<ol class="org-ol">
-<li value="3"><p>
-Calculer l'énergie seuil de cette réaction, qui a lieu sur cible fixe,
-en adoptant les valeurs suivantes :
+V<sub>1</sub> et V<sub>2</sub> sont des "V-particles", observées par Rochester &amp; Butler
+en 1947. Ces particules neutres n'étaient détectées qu'au travers de leur
+produits de désintégration, ce qui formait un "V" de traces dans le détecteur
+(chambre à brouillard).
 </p>
-<div class="center">
-<p>
-\(m_{\pi}c^2\) = 140 MeV, \(m_p c^2\) = 940 MeV, \(m_K c^2\) = 494 MeV et
-\(m_{\Sigma}c^2\) = 1190 MeV
-</p>
-</div></li>
-</ol>
 
 </div>
-<ol class="org-ol">
-<li value="3"><p>
-Calcul de l'énergie seuil des pions :
-</p>
-\begin{align*}
-  T_S &= \frac{|Q|\cdot\Upsigma m_\text{initiale,finale}c^2}{2\cdot m_pc^2}\\
-  &=\frac{604\cdot(140+940+494+1190)}{2\cdot940}\\
-  &=\unit[888]{MeV}
-\end{align*}</li>
-</ol>
 
-<div class="QUESTION">
-<ol class="org-ol">
-<li value="4">La réaction citée présente une résonance lorsque l'impulsion des mésons
-&pi; incidents est voisine de 1.5 GeV/c. Quelle est la masse de cette
-résonance ?</li>
-</ol>
-
-</div>
-<ol class="org-ol">
-<li value="4"><p>
-\(\pi^+ + p \rightarrow R \rightarrow K^+ + \Sigma^+\)
-</p>
-
-<p>
-Calcul de l'invariant relativiste \(I\)
-</p>
-\begin{align*}
-  I=(E_\pi + E_p)^2 - (\vv{p}_\pi + \vv{p}_p)^2c^2 = (m_Rc^2)^2
-\end{align*}
-
-<p>
-or \(\vv{p}_p = \vv{0}\) et \(E_\pi = \sqrt{p_\pi^2c^2 + m_\pi^2c^4}\),
-\(E_p=m_pc^2\) d'où
-</p>
-\begin{align*}
-  m_R^2c^4 &= \left(\sqrt{1500^2 + 140^2} + 940\right)^2 - 1500^2 =
-  \unit[3.7\,10^6]{MeV}^2\\
-  &= \unit[1933]{MeV}
-\end{align*}</li>
-</ol>
-
-<div class="QUESTION">
-<ol class="org-ol">
-<li value="5">Sa largeur est de l'ordre de 240 MeV. Quelle est sa vie moyenne ?</li>
-</ol>
-
-</div>
-<ol class="org-ol">
-<li value="5"><p>
-Largeur &Gamma; = 240 MeV
-</p>
-
-<div class="center">
+<div class="org-center">
 
 <div class="figure">
-<p><img src="./figures/breit_wigner.png" alt="breit_wigner.png" />
+<p><img src="figures/v_particles.jpg" alt="v_particles.jpg" />
 </p>
+<p><span class="figure-number">Figure 5: </span><b>Photographies de deux événements faisant apparaître la désintégration de deux particules \(\bm{V}\)</b> (référence <a href="http://www.nature.com/physics/looking-back/rochester/index.html">Rochester G. D. &amp; Butler C. C. 1947</a>)</p>
 </div>
 </div>
 
+<div class="QUESTION">
+<ol class="org-ol">
+<li value="1">V<sub>1</sub> se désintègre en émettant un pion et un proton d'impulsions
+respectives \(p_{\pi}c\) = 160 MeV et \(p_{p}c\) = 320 MeV et faisant un angle
+&theta;<sub>1</sub> = 65°. Dans le cas de V\(_2\) deux pions chargés d'impulsions
+\(p_{\pi}c\) = 220 MeV sont émis avec un angle &theta;<sub>2</sub> = 135°. Quelle est la
+masse de la particule mère dans ces deux cas ? Les "V-particles"
+correspondent-elles à des particules connues à l'époque ? La plus massive
+sera notée &Lambda;<sup>0</sup> et la plus légère \(K^0\) dans la suite.</li>
+</ol>
+
+</div>
+
+<p>
+Cascade de réactions : \(p\rightarrow\pi\rightarrow\mu\rightarrow e\)
+Le muon est ainsi détecté pour la première fois car si sa durée de vie propre
+est de 2.2 &mu;s, ce temps est "boosté" par le facteur de Lorentz soit &tau; =
+&gamma;&tau;<sub>0</sub> = quelques ms.
+</p>
+
+<ol class="org-ol">
+<li><p>
+Les particules \(V\)
+</p>
+
+<div class="org-center">
+<p>
+\(V_{1}\rightarrow p + \pi^- \quad V_{2}\rightarrow \pi^+ + \pi^-\)
+</p>
+</div>
+
+<p>
+Conservation de l'énergie et de l'impulsion
+</p>
+\begin{equation*}
+  \begin{bmatrix}
+    E_{V_1}\\\vv{p_{V_1}}c
+  \end{bmatrix}
+  =
+  \begin{bmatrix}
+    E_\pi\\\vv{p_\pi}c
+  \end{bmatrix}
+  +
+  \begin{bmatrix}
+    E_p\\\vv{p_p}c
+  \end{bmatrix}
+\end{equation*}
+
 \begin{align*}
-  \tau =\frac{\hbar}{\Gamma} = \frac{\hbar c}{\Gamma c} =
-  \frac{\unit[197.3]{MeV.fm}}{\unit[240]{MeV}\cdot\unit[3\,10^{23}]{fm/s}} =
-  \unit[2.7\,10^{-24}]{s}
+  E_{V_1} &= E_\pi + E_p \Leftrightarrow p_{V}^2c^2 + m_{V}^2c^4 = \left[\sqrt{p_\pi^2c^2 + m_\pi^2c^4} + \sqrt{p_p^2c^2 + m_p^2c^4}\right]^2\\
+  \vv{p}_{V} &= \vv{p}_\pi + \vv{p}_p \Leftrightarrow p_{V}^2c^2 = p_\pi^2c^2 + p_p^2c^2 + 2p_\pi p_p c^2\cos\theta
 \end{align*}
 
 <p>
-&rarr; désintégration par <b>interaction forte</b>
+<b>AN :</b>
+</p>
+\begin{align*}
+   p_{V_1}c &= \sqrt{160^2 + 320^2 + 2\cdot160\cdot320\cos 65} = \unit[413]{MeV}\\
+   p_{V_2}c &= \sqrt{220^2 + 220^2 + 2\cdot220^2\cos 135} = \unit[168]{MeV}\\
+   m_{V_1}c^2 &= \left[\left(\sqrt{160^2 + 140^2} + \sqrt{320^2 + 938^2}\right)^2 - 413^2\right]^{1/2} = \unit[1130]{MeV}\\
+   m_{V_2}c^2 &= \left[4\cdot(220^2 + 140^2)^2 - 168^2\right]^{1/2} = \unit[493]{MeV}
+\end{align*}
+
+<p>
+<b>Discussion :</b> À l'époque, seuls le proton, neutron, électron, pion et muon
+sont connus &rarr; \(V_1 = \Lambda^0\) et \(V_2 = K^0\)
 </p></li>
 </ol>
 
 <div class="QUESTION">
 <ol class="org-ol">
-<li value="6">Cette résonance est créée lorsque le moment orbital relatif dans la voie
-d'entrée est \(\vv{l} = \vv{3}\). Quelles sont les caractéristiques \(I^{\pi}\)
-possibles pour cette résonance&nbsp;?</li>
+<li value="2">Le &Lambda;<sup>0</sup> parcourt une distance de 3.2 cm dans le détecteur avant de se désintègrer et
+le \(K^0\) se désintègre après un vol de 0.8 cm. Quelle est la durée de vie de ces deux particules,
+en faisant une hypothèse non relativiste, que l'on justifiera&nbsp;?</li>
 </ol>
 
 </div>
+
+<ol class="org-ol">
+<li value="2"><p>
+\(d_{\Lambda^0} = \unit[3.2]{cm}\) et \(d_{K^0} = \unit[0.8]{cm}\)
+</p>
+\begin{align*}
+  T_{\Lambda^0} &= \sqrt{m_{\Lambda^0}^2c^4 + p_{\Lambda^0}^2c^2} - m_{\Lambda^0}c^2 = \unit[73]{MeV} \ll m_{\Lambda^0}c^2\\
+  T_{K^0} &= \sqrt{m_{K^0}^2c^4 + p_{K^0}^2c^2} - m_{K^0}c^2 = \unit[28]{MeV} \ll m_{K^0}c^2
+\end{align*}
+
+\begin{align*}
+  \tau_{\Lambda^0} = \frac{d_{\Lambda^0}}{v}
+\end{align*}
+
+<p>
+or \(p=mv\) d'où
+</p>
+\begin{align*}
+  \tau_{\Lambda^0} = \frac{d_{\Lambda^0}\cdot m_{\Lambda^0}}{p} =
+  \frac{d_{\Lambda^0}}{c}\cdot \frac{m_{\Lambda^0}c^2}{pc}
+\end{align*}
+
+<p>
+<b>AN :</b>
+</p>
+\begin{align*}
+  \tau_{\Lambda^0} &= \frac{\unit[0.032]{m}}{\unit[3\,10^8]{m/s}}\cdot\frac{\unit[1130]{MeV}}{\unit[413]{MeV}} = \unit[2.9\,10^{-10}]{s}\\
+  \tau_{K^0} &= \frac{\unit[0.008]{m}}{\unit[3\,10^8]{m/s}}\cdot\frac{\unit[493]{MeV}}{\unit[168]{MeV}} = \unit[7.8\,10^{-11}]{s}
+\end{align*}</li>
+</ol>
+
+<div class="QUESTION">
+<ol class="org-ol">
+<li value="3">Quelle est l'interaction responsable de leur désintégration ?</li>
+</ol>
+
+</div>
+
+<ol class="org-ol">
+<li value="3">&tau; est un temps caractéristique d'une désintégration par interaction
+faible : &tau; &gt; 10<sup>-13</sup> s (<i>cf.</i> page 30)</li>
+</ol>
+
+<div class="QUESTION">
+<ol class="org-ol">
+<li value="4">En 1952-1953 on observe, avec l'accélérateur du Brookhaven National
+Laboratory (BNL), que la production de ces "V-particles" se fait
+exclusivement par paires \(p + \pi^- \rightarrow K^0 + \Lambda^0\). Que
+pouvez-vous conjecturer d'après ces faits expérimentaux ?</li>
+</ol>
+
+</div>
+
+<ol class="org-ol">
+<li value="4">Le fait que ces particules \(K^0\) et \(\Lambda^0\) soient toujours produites par
+paire implique la conservation d'une quantité jusqu'alors inconnue
+&rarr; introduction de <b>l'étrangeté</b> \(S\) comme nouveau nombre quantique.
+Cette quantité est ainsi conservée lors de la production des particules \(V\)
+par <b>interaction forte</b> mais non-conservée lors de leurs désintégrations (par
+interaction faible) : \(S_{K^0}\) = +1, \(S_{\Lambda^0}\) = -1 et \(S\) est nulle
+pour toutes les particules connues jusqu'à présent. Il découlera de ces
+résultats expérimentaux le modèle des quarks introduit par Murray Gell-Mann
+(déjà à l'origine de l'étrangeté pour expliquer les résultats du
+Cosmotron<sup><a id="fnr.3" class="footref" href="#fn.3">3</a></sup> de BNL) au début des années 60, modèle pour lequel il
+obtiendra le prix nobel de Physique en 1969.</li>
+</ol>
+
+<div class="QUESTION">
+<ol class="org-ol">
+<li value="5"><p>
+Au BNL, les réactions
+ <div class="footdef"><sup><a id="fn.3" class="footnum" href="#fnr.3">3</a></sup> <div class="footpara"><p class="footpara"> le Cosmotron du laboratoire national de Brookhaven fut le premier synchrotron a accéléré des protons au delà du GeV (1952 &#x2013; 1966) contribuant à la découverte de l'ensemble des mésons chargés de même qu'à la mise en évidence de particules lourdes instables telles que les particules \(V\). </p></div><br/></div>
+</p>
+\begin{align*}
+  p+n&\rightarrow p+\Lambda^0\quad\text{et}\\
+  n+n&\rightarrow \Lambda^0+\Lambda^0
+\end{align*}
+
+<p>
+ne sont pas observées. Ceci fournit une limite supérieure sur leur taux
+d'apparition qui est au moins 5 ordres de grandeur inférieur à la réaction
+observée à la question 4). Ce fait expérimental est-il en accord avec votre
+conjecture ?
+</p></li>
+</ol>
+
+</div>
+
+<ol class="org-ol">
+<li value="5">\(p + n \rightarrow p + \Lambda^0\) et \(n + n \rightarrow \Lambda^0 +
+   \Lambda^0\). Ces deux réactions ne conservent pas l'étrangeté \(S\). Elles ne
+peuvent donc se produire par interaction forte. La très faible section
+efficace par rapport à la réaction \(p + p \rightarrow K^0 + \Lambda^0\)
+confirme cette hypothèse : &sigma;<sub>forte</sub> &Gt; &sigma;<sub>faible</sub></li>
+</ol>
+
+<div class="QUESTION">
 <ol class="org-ol">
 <li value="6"><p>
-\(\vv{L}_i = \vv{3}\)
+Pouvez-vous expliquer pourquoi la réaction
+\(\Lambda^0\rightarrow\pi^++\pi^-\) n'est jamais observée ?
 </p>
 
 <p>
-La réaction \(\pi^+ + p \rightarrow K^+ + \Sigma^+\) se fait par interaction
-forte de même que \(R\rightarrow K^+ + \Sigma^+\). La réaction de production de
-\(\pi^++p\rightarrow R\) se fait donc également par interaction forte
-&rarr; conservation de la parité et du moment cinétique total.
-</p>
-
-\begin{align*}
-  \vv{I}_\pi + \vv{I}_p + \vv{L}_i &= \vv{I}_R\\
-  \pi(\pi^+)\times\pi(p)\times(-1)^{L_i} &= \pi(R)
-\end{align*}
-
-<p>
-d'où \(I_R^\pi = 5/2^+\) ou \(7/2^+\)
-</p>
-
-<div class="REMARK">
-<p>
-Le momenti cinétique total de la résonance \(R\) de même que la parité de cette
-particule ne font pas intervenir de moment angulaire relatif. La résonance
-\(R\) qui est un baryon est donc constituée de 3 quarks orbitant les uns par
-rapport aux autres. Ainsi, le moment cinétique total de \(R\) peut se
-décomposer de la façon suivante
-</p>
-\begin{align*}
-  \vv{I}_R&=\vv{I}_{q_1}+\vv{I}_{q_2}+\vv{I}_{q_3}+\vv{L}_{q_1/q_2/q_3}\\
-  &=\vv{S}_{q_1}+\vv{S}_{q_2}+\vv{S}_{q_3}+\vv{L}_{q_1/q_2/q_3}
- \end{align*}
-
-<p>
-étant donné que le moment cinétique intrinsèque d'une particule élémentaire
-telle qu'un quark est son unique spin. De la même façon, la parité de la
-résonance \(R\) peut s'écrire
-</p>
-\begin{align*}
-  \pi(R)=\pi(q_1)\times\pi(q_2)\times\pi(q_2)\times\pi(q_3)\times(-1)^{L_{q_1/q_2/q_3}}
-\end{align*}
-
-<p>
-Aussi, dans le cas de la détermination du moment cinétique et de la parité
-d'une particule seule, le moment angulaire relatif des constituants
-élementaires de cette particule n'intervient pas.
-</p>
-
-</div></li>
-</ol>
-
-<div class="QUESTION">
-<ol class="org-ol">
-<li value="7">Quel est son isospin ?</li>
-</ol>
-
-</div>
-<ol class="org-ol">
-<li value="7"><p>
-Conservation de \(\vv{T}\) et \(T_3\) dans la désintégration de
-\(R\rightarrow K^++\Sigma^+\)
-</p>
-
-\begin{align*}
-  T_3(R) &= T_3(K^+) + T_3(\Sigma^+) = 3/2\\
-  \vv{T}(R) &= \vv{T}(K^+) + \vv{T}(\Sigma^+) = \vv{1/2} + \vv{1} =
-  \vv{1/2},\vv{3/2}
-\end{align*}
-
-<p>
-or comme \(T_3(R) = 3/2 \Leftrightarrow \vv{T}(R) = \vv{3/2}\)
+Deux autres familles de particules "étranges" (&Sigma; et &Xi;) ont été
+rapidement découvertes par la suite à la fois au BNL et dans les gerbes
+atmosphériques. Cette profusion de nouvelles particules a initié le modèle
+des quarks (<i>cf.</i> TD4) mais aussi la découverte de la violation de la parité.
 </p></li>
 </ol>
 
-<div class="QUESTION">
-<ol class="org-ol">
-<li value="8">Pour respecter les notations usuelles, quel nom doit-on lui donner ?</li>
-</ol>
-
 </div>
+
 <ol class="org-ol">
-<li value="8">La conservation du nombre baryonique, de la charge électrique et de
-l'étrangeté font que \(R\) est un baryon de charge \(Q/e=+2\) et d'étrangeté
-nulle. En se reférant au tableau page 30, on note que cette résonance
-présente les mêmes propriétés que la baryon \(\Delta^{++}\) à ceci près que sa
-masse 1933 MeV et sa durée de vie sont respectivement plus élevée et plus
-courte<sup><a id="fnr.1" class="footref" href="#fn.1">1</a></sup>. <b>La résonance \(\bm{R}\) est donc un état excité de
-\(\bm{\Delta^{++}}\).</b></li>
+<li value="6">\(\Lambda^0 \rightarrow \pi^+ + \pi^-\) : le nombre baryonique n'est pas
+conservé or toutes interactions conservent ce nombre (y compris l'interaction
+faible)</li>
 </ol>
-
-<div class="QUESTION">
-<ol class="org-ol">
-<li value="9">Soit la réaction \(\pi^-+p\rightarrow K^++\Sigma^-\), induite par des
-\(\pi^-\) de 1,5 GeV/c sur des protons. Montrer que cette réaction est possible
-par interaction forte.</li>
-</ol>
-
-</div>
-<ol class="org-ol">
-<li value="9"><p>
-\(\pi^- + p \rightarrow K^+ + \Sigma^-\)
- <div class="footdef"><sup><a id="fn.1" class="footnum" href="#fnr.1">1</a></sup> <div class="footpara"><p class="footpara"> le moment cinétique total est également différent 5/2<sup>+</sup> ou 7/2<sup>+</sup> contre 3/2<sup>+</sup> </p></div><br/></div>
-</p>
-
-<p>
-\(Q/e\), \(B\), \(I^\pi\) sont conservés.
-</p>
-
-<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="void">
-
-
-<colgroup>
-<col  class="org-left" />
-
-<col  class="org-right" />
-
-<col  class="org-left" />
-
-<col  class="org-left" />
-
-<col  class="org-left" />
-
-<col  class="org-left" />
-
-<col  class="org-left" />
-
-<col  class="org-right" />
-
-<col  class="org-left" />
-</colgroup>
-<tbody>
-<tr>
-<td class="org-left">&#xa0;</td>
-<td class="org-right">\(\pi^-\)</td>
-<td class="org-left">+</td>
-<td class="org-left">p</td>
-<td class="org-left">&rarr;</td>
-<td class="org-left">\(K^+\)</td>
-<td class="org-left">+</td>
-<td class="org-right">\(\Sigma^-\)</td>
-<td class="org-left">&#xa0;</td>
-</tr>
-
-<tr>
-<td class="org-left">\(T_3\)</td>
-<td class="org-right">-1</td>
-<td class="org-left">+</td>
-<td class="org-left">1/2</td>
-<td class="org-left">=</td>
-<td class="org-left">1/2</td>
-<td class="org-left">+</td>
-<td class="org-right">-1</td>
-<td class="org-left">\(\unicode{x2713}\)</td>
-</tr>
-
-<tr>
-<td class="org-left">\(\vv{T}\)</td>
-<td class="org-right">\(\vv{1}\)</td>
-<td class="org-left">+</td>
-<td class="org-left">\(\vv{1/2}\)</td>
-<td class="org-left">=</td>
-<td class="org-left">\(\vv{1/2}\)</td>
-<td class="org-left">+</td>
-<td class="org-right">\(\vv{1}\)</td>
-<td class="org-left">\(\unicode{x2713}\)</td>
-</tr>
-
-<tr>
-<td class="org-left">\(s\)</td>
-<td class="org-right">0</td>
-<td class="org-left">+</td>
-<td class="org-left">0</td>
-<td class="org-left">=</td>
-<td class="org-left">1</td>
-<td class="org-left">+</td>
-<td class="org-right">-1</td>
-<td class="org-left">\(\unicode{x2713}\)</td>
-</tr>
-</tbody>
-</table></li>
-</ol>
-
-<p>
-<b>Remarques :</b> les baryons \(\Delta^{++}\) et \(\Delta^-\) sont respectivement
-constitués de 3 quarks \(u\) et 3 quarks \(d\). Or le moment cinétique total de ces
-particules 3/2 impliquent que le spin des 3 quarks soient alignés "vers le
-haut". Le principe de Pauli exclut une telle configuration pour des fermions. En
-ajoutant le nombre quantique de couleur, la chromodynamique quantique permet un
-tel état tout comme pour le baryon &Omega;<sup>-</sup> postulé par Gell-Mann et découvert à
-Brookhaven en 1964.
-</p>
 </div>
 </div>
 <div id="footnotes">
@@ -840,10 +501,12 @@ Brookhaven en 1964.
 
 
 
+
+
 </div>
 </div></div>
 <div id="postamble" class="status">
-File under <i class="fa fa-github-alt"></i> version control - commit <a href="https://github.com/xgarrido/master_npp_teaching/commit/15edcc3f2b8dcf1e42ba4cd5ec2942d8a7d0a234">15edcc3</a> - 2016-06-28
+File under <i class="fa fa-github-alt"></i> version control - commit <a href="https://github.com/xgarrido/master_npp_teaching/commit/f535f50b5fcd671574e3f14e69aaa10cb02d480d">f535f50</a> - 2020-12-21
 </div>
 </body>
 </html>

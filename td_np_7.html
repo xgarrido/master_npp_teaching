@@ -3,10 +3,11 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
-<meta  name="viewport" content="width=device-width, initial-scale=1" />
-<title>TD8 : Masses et désintégrations nucléaires</title>
-<meta  name="generator" content="Org-mode" />
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>TD8 : Structure nucléaire</title>
+<meta name="generator" content="Org mode" />
+<meta name="author" content="Xavier Garrido" />
 <link rel="stylesheet" href="css/styles.css" />
                <link rel="stylesheet" href="css/org-pygments.css" />
                <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" />
@@ -15,7 +16,7 @@
 @licstart  The following is the entire license notice for the
 JavaScript code in this tag.
 
-Copyright (C) 2012-2013 Free Software Foundation, Inc.
+Copyright (C) 2012-2018 Free Software Foundation, Inc.
 
 The JavaScript code in this tag is free software: you can
 redistribute it and/or modify it under the terms of the GNU
@@ -83,6 +84,7 @@ for the JavaScript code in this tag.
           extensions: ["cancel.js"],
           Macros: {
               vv: ["{\\vec{#1}}",1],
+              d: "{\\text{d}}",
               Upsigma: "{\\Sigma}",
               Updelta: "{\\Delta}",
               varoiint: "{\\iint}",
@@ -134,933 +136,989 @@ for the JavaScript code in this tag.
 <a href="index.html"><i class="fa fa-home"></i></a><br/>  
 </div>
 <div id="content">
-<h1 class="title">TD8 : Masses et désintégrations nucléaires</h1>
+<h1 class="title">TD8 : Structure nucléaire</h1>
 <div style="display:none;">
 <div id="text-table-of-contents">
 <ul class="org-ul">
-<li><a href="././td_np_0.html">TD1 : Cinématique &amp; Accélérateurs</a></li>
-<li><a href="././td_np_1.html">TD2 : Nombres quantiques &amp; Symétries</a></li>
-<li><a href="././td_np_2.html">TD3 : Réactions de production et de désintégration de particules</a></li>
-<li><a href="././td_np_3.html">TD4 : Modèle des quarks &#x2013; Les hadrons</a></li>
-<li><a href="././td_np_4.html">TD5 : Isospin &#x2013; des quarks aux noyaux</a></li>
-<li><a href="././td_np_5.html">TD6 : Structure nucléaire</a></li>
-<li><a href="././td_np_6.html">TD7 : Réactions nucléaires</a></li>
-<li><a href="././td_np_7.html">TD8 : Masses et désintégrations nucléaires</a></li>
-<li><a href="././td_np_8.html">TD9 : Modèle Standard et au-delà : l'interaction faible</a></li>
+<li><a href="././td_np_0.html">TD1 : Cinématique</a></li>
+<li><a href="././td_np_1.html">TD2 : Accélérateurs &amp; section efficace</a></li>
+<li><a href="././td_np_2.html">TD3 : Nombres quantiques &amp; Symétries</a></li>
+<li><a href="././td_np_3.html">TD4 : Réactions de production et de désintégration de particules</a></li>
+<li><a href="././td_np_4.html">TD5 : Modèle Standard et au-delà : l'interaction faible</a></li>
+<li><a href="././td_np_5.html">TD6 : Modèle des quarks &#x2013; Les hadrons</a></li>
+<li><a href="././td_np_6.html">TD7 : Isospin &#x2013; des quarks aux noyaux</a></li>
+<li><a href="././td_np_7.html">TD8 : Structure nucléaire</a></li>
+<li><a href="././td_np_8.html">TD9 : Masses et désintégrations nucléaires</a></li>
 <li><a href="././td_np_9.html">Annexes</a></li>
 <li><a href="././td_np_10.html">Aide-mémoire de Noyaux &amp; Particules</a></li>
 </ul>
 </div>
 </div>
 
-<div id="outline-container-orgheadline1" class="outline-2">
-<h2 id="orgheadline1"><span class="section-number-2">1</span> Définitions</h2>
+<div id="outline-container-orgc26cf1f" class="outline-2">
+<h2 id="orgc26cf1f"><span class="section-number-2">1</span> Introduction</h2>
 <div class="outline-text-2" id="text-1">
-<div class="QUESTION">
+<div class="org-center">
 <p>
-Définir les termes : masse nucléaire, masse atomique, excès de masse atomique,
-énergie de liaison des nucléons dans le noyau, énergie de liaison moyenne par
-nucléon. Exprimer le \(Q\) de la réaction \(1+2 \rightarrow 3+4\) (où 1, 2, 3 et 4
-sont des noyaux) en fonction respectivement des quatre premiers termes.
+Noyau :&nbsp;<sup>A</sup><sub>Z</sub>X &rarr; Z protons  + N neutrons = A nucléons (nombre de masse)
 </p>
-
 </div>
-<dl class="org-dl">
-<dt>masse nucléaire</dt><dd><p>
-la masse nucléaire correspond à la masse du noyau <i>i.e.</i>
+
+<ul class="org-ul">
+<li>Noyau ayant le "même" nombre de protons Z sont appelés des <b>isotopes</b> tandis que ceux présentant le
+même nombre de nucléons A sont des <b>isobares</b></li>
+
+<li>Noyau &equiv; objet quantique
+<ul class="org-ul">
+<li>une fonction d'onde décrit les propriétés du noyau</li>
+<li>les nombres quantiques associés : spin, parité, isospin</li>
+<li>il possède un état fondamental et des états excités</li>
+<li>chaque état possède un moment électronique et un moment magnétique</li>
+</ul></li>
+</ul>
+
+<p>
+Certains noyaux sont stables, d'autres radioactifs se désintégrant spontanément
 </p>
+
 \begin{align*}
-  m\left(^\text{A}_\text{Z}\text{X}\right)c^2=Zm_pc^2+(A-Z)m_nc^2-B_N
+  ^{14}_{6}\text{C} \rightarrow\,^{14}_{7}\text{N} + e^{-} + \bar{\nu}_{e}
 \end{align*}
 
 <p>
-où \(B_N\) est égal à l'énergie de liaison des nucléons au sein du noyau.
-</p></dd>
-<dt>masse atomique</dt><dd><p>
-cette masse est associée à la masse de l'atome soit à la
-masse nucléaire à laquelle s'ajoute celle du cortège
-électronique
+Pour étudier le noyau, on forme des réactions nucléaires qui obéissent à des lois de conservation
+(charge, nombre de nucléons, parité&#x2026;). On bombarde une cible avec &ne; projectiles (&gamma;, e<sup>-</sup>,
+n, p, ions lourds), à &ne; énergies. Ces réactions sont possibles avec &ne; probabilités (section
+efficace). On peut étudier chaque réaction dont les états finaux peuvent différer et déterminer la
+variation de la section efficace en fonction de l'énergie incident (fonction d'excitation) ou en
+fonction de l'angle de sortie (distribution angulaire).
 </p>
+
+<p>
+<b>Rayon des noyaux :</b> En 1909, Hans Geiger et Ernest Marsden sous la direction d'Ernest Rutherford,
+mettent en évidence le noyau atomique en étudiant la diffusion de particules &alpha; sur des atomes
+d'or (Au). Antérieurement à cette expérience, la matière était conçue sous la forme d'atome
+contenant deux parties de charge électrique opposée. L'expérience de Rutherford montra qu'en réalité
+le noyau chargé positivement est de taille très petite devant le nuage électronique qui l'entoure,
+chargé négativement.
+</p>
+
+<p>
+En supposant que le noyau soit une sphère uniformément chargée en volume et contenant \(A\) nucléons
+</p>
+
 \begin{align*}
-  M_\text{at.}\left(^\text{A}_\text{Z}\text{X}\right)c^2=m\left(^\text{A}_\text{Z}\text{X}\right)c^2+Zm_ec^2-B_e
+  V = \frac{4}{3}\pi\,R^{3} \propto A
 \end{align*}
 
 <p>
-où \(B_e\) correspond à l'énergie de liaison des
-électrons. Cette quantité est particulièrement faible (&sim;
-3 keV/\(e^-\)) au regard des masses mises en jeu en physique
-nucléaire. On aura donc tendance à la négliger si bien que
+On déduit que le rayon d'un noyau est proportionnel à son nombre de nucléons \(R = r_{0} \times
+A^{1/3}\). Expérimentalement, \(r_{0}\) est compris entre 1.2 et 1.5 fermi où 1 fm = 10<sup>-15</sup> m =
+10<sup>-13</sup> cm. La valeur la plus probable est \(r_{0}\) = 1.25 fm.
 </p>
-\begin{align*}
-  M_\text{at.}\left(^\text{A}_\text{Z}\text{X}\right)c^2\simeq Z\left(m_pc^2+m_ec^2\right)+\left(A-Z\right)m_nc^2-B_N
-\end{align*}</dd>
-
-<dt>excès de masse atomique</dt><dd><p>
-écart entre la masse atomique et la masse molaire
-\(A\). Le carbone 12 sert toujours de référence à savoir
-</p>
-\begin{align*}
-  \Delta M\left(^{12}_{6}\text{C}\right)&=0\\
-  \Delta M\left(^\text{A}_\text{Z}\text{X}\right)&=M_\text{at.}\left(^\text{A}_\text{Z}\text{X}\right) - A\text{ en u.m.a}\\
-  \Delta M\left(^\text{A}_\text{Z}\text{X}\right)c^2&=M_\text{at.}\left(^\text{A}_\text{Z}\text{X}\right)c^2 - 931.5A\text{ en MeV}\\
-\end{align*}
-
-<p>
-C'est généralement les valeurs \(\Delta
-     M\left(^\text{A}_\text{Z}\text{X}\right)c^2\) qui sont tabulées.
-</p></dd>
-<dt>énergie de liaison des nucléons</dt><dd><p>
-la valeur de \(B_N\) est approximée par la
-formule de Bethe et Weizsäcker
-</p>
-\begin{align*}
-  B_N=\underbrace{a_VA - a_SA^{2/3}}_{\text{modèle de la goutte liquide}}-\underbrace{a_{C}\frac{Z^2}{A^{1/3}}}_{\text{Coulomb}}-\underbrace{a_{A}\frac{\left(N-Z\right)^2}{A}}_{\text{asymétrie}}+\underbrace{\delta(A,Z)}_{\text{appariement}}
-\end{align*}
-
-<p>
-Cette formule découle de l'analogie entre un fluide et un noyau à savoir
-que l'énergie de liaison d'une goutte liquide est d'autant plus grande que
-son volume est important (terme \(a_VA\) où \(R\propto A\)). Les nucléons en
-surface contribuent néanmoins moins puisqu'ils ont moins de voisins. La
-goutte cherche donc à minimiser sa surface d'où sa forme sphérique (terme
-\(a_SA^{2/3}\)). Par ailleurs, il faut tenir compte de l'interaction
-coulombienne : la répulsion entre protons du noyau entraîne une diminution
-de l'énergie de liaison. De plus, l'énergie potentielle du noyau sera
-d'autant plus grande que les niveaux de Fermi des neutrons et protons
-seront proches (terme symétrique \(a_{A}\frac{\left(N-Z\right)^2}{A}\)). Ce
-terme d'asymétrie traduit le fait que les nucléons étant des fermions,
-avoir un excédent de proton ou de neutron a tendance à augmenter l'énergie
-et donc diminuer la liaison du noyau en raison du remplissage des niveaux
-de Fermi. Ainsi, un noyau cherche à égaliser le nombre de proton et de
-neutrons tout du moins pour les noyaux légers. Enfin, l'appariement
-\(\delta(A,Z)\) joue un rôle important dans l'énergie de liaison : les noyaux
-ayant un nombre pair de protons/neutrons seront plus liés.
-</p>
-\begin{align*}
-  \delta(A,Z)=\left\{
-  \begin{array}{cl}
-    +\frac{12}{\surd A}&\text{ pour les noyaux pair-pair}\\
-    0&\text{ pour les noyaux impair-pair}\\
-    -\frac{12}{\surd A}&\text{ pour les noyaux impair-impair}
-  \end{array}
-  \right.
-\end{align*}
-
-<p>
-L'énergie de liaison moyenne par nucléon correspond à la valeur
-\(\frac{B_N}{A}\) qui est égale à 8 MeV/nucléon au delà de \(A\) &gt; 20.
-</p></dd>
-</dl>
-
-<p>
-<b>Réaction 1 + 2 &rarr; 3 + 4 où 1,2,3,4 sont des noyaux</b>
-</p>
-
-<p>
-La chaleur de réaction \(Q\) s'écrit
-</p>
-\begin{align*}
-  Q&=m_1c^2+m_2c^2-m_3c^2-m_4c^2\\
-  &=M^1_\text{at.}c^2+M^2_\text{at.}c^2-M^3_\text{at.}c^2-M^4_\text{at.}c^2\quad\text{(Z conservé)}\\
-  &=\Delta M_1c^2+\Delta M_2c^2-\Delta M_3c^2-\Delta M_4c^2\quad\text{(A conservé)}\\
-  &=-\left(B^1_N+B^2_N\right)+\left(B^3_N+B^4_N\right)
-\end{align*}
 </div>
 </div>
 
-<div id="outline-container-orgheadline2" class="outline-2">
-<h2 id="orgheadline2"><span class="section-number-2">2</span> Décroissance radioactive du sodium 22</h2>
+<div id="outline-container-org82de56b" class="outline-2">
+<h2 id="org82de56b"><span class="section-number-2">2</span> Ordres de grandeurs</h2>
 <div class="outline-text-2" id="text-2">
 <div class="QUESTION">
 <p>
-Le sodium 22 (<sup>22</sup><sub>11</sub>Na), <b>qui sera étudié au cours des travaux pratiques</b>, est
-souvent employé comme source de positrons car sa période, $T$~2.6 ans, est
-relativement longue. Ce noyau se désintègre presqu'à 100% vers le premier
-état excité du néon 22, situé à 1.27 MeV, soit par émission &beta;<sup>+</sup> avec un
-rappport d'embranchement de 90%, soit par capture électronique.
+Calculer le volume (en cm<sup>3</sup>) et la masse volumique (en g/cm<sup>3</sup>) d'un noyau de&nbsp;<sup>12</sup><sub>6</sub>C, qui
+est le noyau utilisé pour définir l'unité de masse atomique. Comparer à la masse volumique des
+matériaux courants comme le bois ou le fer.
 </p>
 
+</div>
+
+<ul class="org-ul">
+<li><p>
+Volume du noyau de&nbsp;<sup>12</sup><sub>6</sub>C : approx. sphérique
+</p>
+
+\begin{align*}
+  V = \frac{4}{3}\pi\,R^{3} &= \frac{4}{3}\pi\,(r_{0}\,A^{1/3})^3 \\
+  V(^{12}_{6}\text{C})&= \frac{4}{3}\pi\,(1.25\times12^{1/3})^3 \\
+  &\simeq \unit[100]{fm}^3 = \unit[10^{-37}]{cm}^3
+\end{align*}</li>
+
+<li><p>
+Masse volumique &nbsp;<sup>12</sup><sub>6</sub>C &rarr; noyau particulier à partir duquel est défini l'unité
+de masse atomique
+</p>
+
+\begin{align*}
+  \unit[1]{u.m.a} = \frac{\text{masse}(^{12}_{6}\text{C})}{12} = \unit[931.5]{MeV/c}^{2}
+\end{align*}</li>
+</ul>
+
+<p>
+d'où
+</p>
+
+\begin{align*}
+  m(^{12}_{6}\text{C})c^2 &= 12\times\unit[931.5]{MeV} = 12\times931.5\times10^6\times\unit[1.6\,10^{-19}]{J} \\
+  m(^{12}_{6}\text{C})    &= \frac{12\times931.5\times1.6\,10^{-19}}{(3\,10^8)^2} = \unit[2\,10^{-26}]{kg} = \unit[2\,10^{-23}]{g}\\
+\end{align*}
+
+<p>
+On en déduit que la masse volumique est égale à
+</p>
+
+\begin{align*}
+  \rho(^{12}_{6}\text{C}) = \frac{m(^{12}_{6}\text{C})}{V(^{12}_{6}\text{C})} =
+  \frac{2\,10^{-23}}{10^{-37}} = \unit[2\,10^{14}]{g/cm}^3
+\end{align*}
+
+<p>
+À titre de comparaison, le bois a une densité moyenne de 0.6 &#x2013; 1 g/cm<sup>3</sup>, le fer environ 10
+g/cm<sup>3</sup>, la Terre de 6 g/cm<sup>3</sup> et l'Uranium de 19 g/cm<sup>3</sup>.
+</p>
+
+<p>
+<b>Remarques :</b> la densité au sein d'une étoile à neutrons est voisine de 10<sup>11</sup> g/cm<sup>3</sup>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org3b7f917" class="outline-2">
+<h2 id="org3b7f917"><span class="section-number-2">3</span> Modèle en couche</h2>
+<div class="outline-text-2" id="text-3">
+</div>
+<div id="outline-container-org760ea98" class="outline-3">
+<h3 id="org760ea98"><span class="section-number-3">3.1</span> Introduction</h3>
+<div class="outline-text-3" id="text-3-1">
+<p>
+Dans l'approximation du champ moyen, l'hamiltonien d'un système à \(N\) nucléons prend la forme
+suivante
+</p>
+\begin{equation*}
+  \hat{H}_\text{CM}=\hat{H}_\text{OH} - D\hat{\ell}^2 - a\vv{\ell}.\vv{s}
+\end{equation*}
+
+<p>
+où \(\hat{H}_{\text{OH}}\) est l'hamiltonien de l'oscillateur harmonique. \(D\hat{\ell}^2\) traduit les
+effets de bord observés expérimentalement à savoir que les nucléons à la surface du noyau soit ceux
+ayant un plus grand moment orbital \(\ell\) sont moins liés. Le potentiel moyen nucléaire est ainsi
+plus diffus sur les bords comme l'illustre la figure <a href="#org0cfbf87">1</a>. Le terme \(a\vv{\ell}.\vv{s}\)
+est relatif au couplage spin-orbite.
+</p>
+
+<div class="org-center">
+
+<div id="org0cfbf87" class="figure">
+<p><img src="figures/woods_saxon_potential.png" alt="woods_saxon_potential.png" />
+</p>
+<p><span class="figure-number">Figure 1: </span><b>Comparaison des potentiels de l'oscillateur harmonique</b> <b>et de la paramétrisation phénoménologique de Woods-Saxon.</b></p>
+</div>
+</div>
+
+<p>
+On adopte, par ailleurs, les notations héritées de la spectroscopie atomique/moléculaire (<i>cf.</i> Table
+<a href="#org4c4d783">1</a>) où \(n\) correspond au nombre quantique radial <i>i.e.</i> au nombre de n\oe uds de la
+fonction d'onde, \(\ell\) est le nombre quantique associé au moment cinétique orbital et \(j\) celui
+associé au moment cinétique total \(J\) <sup><a id="fnr.1" class="footref" href="#fn.1">1</a></sup> soit \(\vv{j}=\vv{\ell}+\vv{s}\). Les nucléons étant des
+fermions \(s=\pm1/2\), le moment cinétique total devient \(\vv{j}=\vv{\ell}+\vv{1}/2\). La parité
+orbitale de l'état est égale à \(\pi=(-1)^\ell\) soit la parité intrinsèque.
+ <div class="footdef"><sup><a id="fn.1" class="footnum" href="#fnr.1">1</a></sup> <div class="footpara"><p class="footpara"> le moment cinétique sera indifferemment noté \(J\) ou \(I\) </p></div><br/></div>
+</p>
+
+<table id="org4c4d783" border="2" cellspacing="0" cellpadding="6" rules="groups" frame="void">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<tbody>
+<tr>
+<td class="org-left">\(n\)</td>
+<td class="org-right">1</td>
+<td class="org-right">2</td>
+<td class="org-right">3</td>
+<td class="org-left">&#x2026;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">\(\ell\)</td>
+<td class="org-right">0</td>
+<td class="org-right">1</td>
+<td class="org-right">2</td>
+<td class="org-left">3</td>
+<td class="org-left">4</td>
+<td class="org-left">5</td>
+</tr>
+
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-right">\(s\)</td>
+<td class="org-right">\(p\)</td>
+<td class="org-right">\(d\)</td>
+<td class="org-left">\(f\)</td>
+<td class="org-left">\(g\)</td>
+<td class="org-left">\(h\)</td>
+</tr>
+</tbody>
+</table>
+<p>
+Le principe de Pauli impose un nombre \(2j+1\) de particules identiques par couche \(j\). Par ailleurs,
+si on couple deux nucléons identiques dans une même couche (cas des noyaux pair-pair, par exemple),
+<b>seules les valeurs paires de \(I\) (moment cinétique total) sont possibles</b> (<i>cf.</i> Chapitre 4, page 14 du
+cours). On en déduit les règles d'appariement à savoir que deux nucléons identiques sur une même
+couche vont s'apparier de telle sorte que le moment cinétique soit \(I^\pi=0^+\) <sup><a id="fnr.2" class="footref" href="#fn.2">2</a></sup>. On distingue
+également les règles suivantes pour les différents types de noyau :
+ <div class="footdef"><sup><a id="fn.2" class="footnum" href="#fnr.2">2</a></sup> <div class="footpara"><p class="footpara"> la parité est égale à \((-1)^{\ell_1+\ell_2}\) où \(\ell_1=\ell_2=\ell\) et donc \(\pi=(-1)^{2\ell}=+1\) </p></div><br/></div>
+</p>
+
+<dl class="org-dl">
+<dt>noyau pair-pair</dt><dd>ces noyaux ne contiennent que des nucléons appariés dont le niveau fondamental
+correspond à \(I^\pi=0^+\). Les niveaux excités sont alors \(2^+,4^+\),&#x2026;, les valeurs impaires de
+\(I\) étant interdites</dd>
+<dt>noyau pair-impair</dt><dd>ces noyaux ont un nucléon célibataire sur une couche \((j,\ell)\), les autres
+nucléons appariés ont un moment cinétique total nul. Le nucléon célibataire gouverne donc la
+valeur de \(I^\pi\) : \(I=j, \pi=(-1)^\ell\)</dd>
+<dt>noyau impair-impair</dt><dd>les nucléons célibataires, 1 proton et 1 neutron, se couplent de telle
+sorte que la valeur de \(j\) est comprise entre \(|j_1-j_2|\leq j\leq j_1+j_2\). La parité \(\pi\)
+est égale à \((-1)^{\ell_1+\ell_2}\). Toutes les valeurs de \(j\) sont possibles</dd>
+</dl>
+
+<div class="QUESTION">
+<p>
+<i>On trouvera en annexe la séquence des couches donnée par le modèle.</i>
+</p>
 <ol class="org-ol">
-<li>Ecrire les réactions de désintégration du&nbsp;<sup>22</sup><sub>11</sub>Na.</li>
+<li value="1"><p>
+Dans le cadre du modèle en couche, quel moment cinétique I et quelle parité &pi; peut-on
+attribuer à l'état fondamental et au 1<sup>er</sup> état excité des noyaux suivants?
+</p>
+
+<div class="org-center">
+<p>
+&nbsp;<sup>41</sup><sub>21</sub>Sc,&nbsp;<sup>57</sup><sub>28</sub>Ni,&nbsp;<sup>58</sup><sub>27</sub>Co,&nbsp;<sup>50</sup><sub>22</sub>Ti
+</p>
+</div></li>
 </ol>
 
 </div>
 
-<div class="center">
+<ol class="org-ol">
+<li value="1">Moment cinétique \(I\) et parité \(\pi\) :
+
+<ul class="org-ul">
+<li><p>
+<b>&nbsp;<sup>41</sup><sub>21</sub>Sc</b>
+</p>
+<ul class="org-ul">
+<li>noyau impair-pair : 21 protons, 20 neutrons</li>
+<li>noyau fermé en neutrons (20 : nombre magique)</li>
+<li>1 proton célibataire en \(1f\tfrac{7}{2}\) qui gouverne la valeur de \(I^\pi\)</li>
+<li>Niveau fondamental : \((n\ell j)=(1f\tfrac{7}{2})\) :
+\(I^\pi=\tfrac{7}{2}^{(-1)^3}=\tfrac{7}{2}^-\)</li>
+<li>1<sup>er</sup> niveau excité : proton en \(2p\tfrac{3}{2}\) soit
+\(I^\pi=\tfrac{3}{2}^{(-1)^1}=\tfrac{3}{2}^-\)</li>
+</ul>
+
+<div class="org-center">
 
 <div class="figure">
-<p><img src="./figures/sodium22_decay.png" alt="sodium22_decay.png" />
-</p>
-</div>
-</div>
-<ol class="org-ol">
-<li><p>
-Décroissance radioactive \(N(t)=N_0\,e^{-\lambda t}\) où \(\lambda\) correspond à
-la probabilité de décroissance et est égale à \(\frac{\ln 2}{T}\), \(T\) étant la
-période. Ainsi,
-\(\lambda_\text{tot.}=\lambda_{\beta^+}+\lambda_\text{CE}=\frac{\ln 2}{T}\)
-avec \(\frac{\lambda_{\beta^+}}{\lambda_\text{tot.}}=90\%\) et
-\(\frac{\lambda_\text{CE}}{\lambda_\text{tot.}}=10\%\). On déduite que la
-période la capture électronique est
-</p>
-\begin{align*}
-  T_\text{CE}&=\frac{\ln 2}{\lambda_\text{CE}}=\frac{\ln 2}{0.1\,\lambda_{tot.}}\\
-  &=\frac{T}{0.1}=10T=\unit[26]{ans}
-\end{align*}</li>
-</ol>
-
-<div class="QUESTION">
-<ol class="org-ol">
-<li value="2">Quelle est la période partielle de capture électronique du&nbsp;<sup>22</sup>Na ?</li>
-</ol>
-
-</div>
-<ol class="org-ol">
-<li value="2"><p>
-Capture électronique :
-\(^{22}_{11}\text{Na}+e^-\to^{22}_{10}\text{Ne}^*+\nu_e\)
-</p>
-
-<p>
-La charge étant conservé tout comme le nombre de nucléons, la chaleur de
-réaction de la capture électronique se déduit des excès de masse
-</p>
-\begin{align*}
-  Q_\text{CE}&=\Delta M_\text{at.}\left(^{22}\text{Na}\right)c^2-\Delta M_\text{at.}\left(^{22}\text{Ne}^*\right)c^2\\
-  &=\Delta M_\text{at.}\left(^{22}\text{Na}\right)c^2-\Delta M_\text{at.}\left(^{22}\text{Ne}\right)c^2-E^*(^{22}\text{Ne})\\
-  &=-5183+8025-1270=\unit[1572]{keV}
-\end{align*}</li>
-</ol>
-
-<div class="QUESTION">
-<ol class="org-ol">
-<li value="3">Les excès de masse atomique de&nbsp;<sup>22</sup>Na et&nbsp;<sup>22</sup>Ne sont
-respectivement -5183 keV et -8025 keV. Calculer le \(Q\) de la capture
-électronique.</li>
-</ol>
-
-</div>
-<ol class="org-ol">
-<li value="3"><p>
-Désintégration \(\beta^+\) :
-\(^{22}_{11}\text{Na}\to^{22}_{10}\text{Ne}^*+e^++\nu_e\)
-</p>
-
-<p>
-L'énergie cinétique maximale que puisse emporter le positron correspond au
-\(Q_{\beta^+}\) de la réaction soit
-</p>
-\begin{align*}
-  T_\text{max}(e^+)&=Q_{\beta^+}=Q_\text{CE}-2m_ec^2\\
-  &=1572-1022=\unit[550]{keV}
-\end{align*}</li>
-</ol>
-
-<div class="QUESTION">
-<ol class="org-ol">
-<li value="4">Estimer l'énergie cinétique maximale des positrons émis lors de la
-transition \(\beta^+\).</li>
-</ol>
-
-</div>
-<ol class="org-ol">
-<li value="4"><p>
-\(^{23}\text{Na}+p\to^{22}\text{Na}+p+n\)
-</p>
-\begin{align*}
-  Q&=\Delta M_\text{at.}\left(^{23}\text{Na}\right)c^2+\cancel{\Delta M_\text{at.}(p)c^2}-\Delta M_\text{at.}\left(^{22}\text{Na}\right)-\cancel{\Delta M_\text{at.}(p)c^2}-\Delta M_\text{at.}(n)c^2\\
-  &=-9528+5183-8071=\unit[-12.416]{MeV}<0
-\end{align*}
-
-<p>
-L'énergie cinétique seuil nécessaire à la réalisation de cette réaction est
-</p>
-\begin{align*}
-  T_S&=\frac{|Q|}{2}\times\frac{\sum m_{i,f}c^2}{m_\text{cible}c^2}\\
-  &\simeq\frac{|Q|}{2}\times\frac{\sum A}{A_\text{cible}}\\
-  &\simeq\frac{12.416}{2}\times\frac{23\times2+2}{23}=\unit[12.96]{MeV}
-\end{align*}</li>
-</ol>
-
-<div class="QUESTION">
-<ol class="org-ol">
-<li value="5">Pour obtenir ainsi une source de&nbsp;<sup>22</sup>Na, on irradie une cible de
-sel (NaCl) avec un faisceau de protons de 155 MeV, d'intensité \(I\) = 10
-&mu;A. A cette énergie, la section efficace de la réaction citée est de 40
-mb. La cible a une épaisseur de 2 mg/cm<sup>2</sup> et on assimile le chlore naturel
-au&nbsp;<sup>35</sup>Cl.
-
-<ol class="org-ol">
-<li>Calculer le nombre de noyaux de&nbsp;<sup>22</sup><sub>11</sub>Na produits par seconde.</li>
-
-<li>Établir l'expression du nombre \(N(t)\) de noyaux radioactifs obtenus si
-l'on irradie une cible avec un faisceau d'intensité constante entre les
-instants 0 et \(t_0\). Que devient \(N(t)\) lorsque l'on stoppe l'irradiation
-?  Tracer l'allure de la courbe représentant \(N(t)\). Montrer que pendant
-l'irradiation \(N(t)\) tend vers une valeur limite \(N_{\infty}\) et donner son
-expression.</li>
-
-<li>Calculer l'activité de la source de&nbsp;<sup>22</sup>Na en photons de 1.27 MeV,
-quelques jours après une irradiation d'une heure. Exprimer le résultat
-en Becquerel, puis en Curie.</li>
-
-<li>Dans le spectre en énergie des photons émis par le&nbsp;<sup>22</sup>Na, on observe
-une raie à 511 keV. Quelle est l'origine de cette raie ? Déduire
-l'activité de la source en photons de 511 keV.</li>
-
-<li>Combien de photons de 1.27 MeV devrait recevoir en une minute un détecteur
-de 5 cm<sup>2</sup> situé à 1 m de la source ?</li>
-</ol></li>
-</ol>
-
-</div>
-<ol class="org-ol">
-<li value="5"><ol class="org-ol">
-<li><p>
-Le nombre de noyaux de&nbsp;<sup>22</sup>Na produit est
-</p>
-\begin{align*}
-  n\left(^{22}\text{Na}\right)&=\phi_p\times\rho_e\times\sigma_\text{tot.}\times\frac{\mathcal{N}}{A_\text{cible}}\\
-  &=\frac{I}{Ze}\times\rho_e\sigma_\text{tot.}\times\frac{\mathcal{N}}{A\left(^{23}\text{Na}\right)+A\left(^{35}\text{Cl}\right)}\\
-  &=\frac{10^{-5}}{1.6\,10^{-19}}\times2\,10^{-3}\times40\,10^{-3}\times10^{-24}\times\frac{6.02\,10^{23}}{58}\\
-  &=\unit[5.19\,10^7]{/s}
-\end{align*}</li>
-
-<li><p>
-Les réactions de désintégration sont
-</p>
-\begin{align*}
-  ^{22}\text{Na}\to ^{22}\text{Ne}^*+e^++\nu_e&\quad\beta^+\text{(90\%)}\\
-  ^{22}\text{Na}+e^-\to ^{22}\text{Ne}^*+\nu_e&\quad\text{CE (10\%)}
-\end{align*}</li>
-
-<li><p>
-La variation du nombre de noyau de&nbsp;<sup>22</sup>Na est égal au nombre de noyau
-crée par irradiation auquel vient se soustraire le nombre de noyau s'étant
-désintégré soit
-</p>
-\begin{align*}
-  dn\left(^{22}\text{Na}\right)&=n_idt-\lambda ndt\\
-  \frac{dn}{dt}+\lambda n&=n_i=\text{constante}
-\end{align*}
-
-<p>
-La solution de cette équation est de la forme \(n(t)=K_1e^{-\lambda t}+K_0\)
-où
-</p>
-\begin{align*}
-  \cancel{-\lambda K_1e^{-\lambda t}}+\cancel{\lambda K_1e^{-\lambda t}}+\lambda K_0&=n_i\\
-  K_0&=\frac{n_i}{\lambda}
-\end{align*}
-
-<p>
-De plus, \(n(t=0)=0\) impliquant \(K_1=-\frac{n_i}{\lambda}\) d'où
-</p>
-\begin{align*}
-  n(t)=\frac{n_i}{\lambda}\left(1-e^{-\lambda t}\right)
-\end{align*}
-
-<p>
-Pour une durée d'irradiation \(t\to\infty\), le nombre de noyau crée tend
-asymptotiquement vers \(n_\infty\to\frac{n_i}{\lambda}\)
-</p>
-<div class="center">
-
-<div class="figure">
-<p><img src="./figures/sodium22_rate.png" alt="sodium22_rate.png" />
+<p><img src="./figures/scandium41.png" alt="scandium41.png" />
 </p>
 </div>
 </div></li>
 
 <li><p>
-\(t_0=\unit[1]{h}\ll T=\unit[2.6]{ans}\) d'où \(\lambda t=\ln
-      2\frac{t}{T}\ll1\). Le temps d'irradiation étant significativement plus
-court que la durée de vie du sodium, on peut approximer le nombre de noyau
-produit par
+<b>&nbsp;<sup>57</sup><sub>28</sub>Ni</b>
 </p>
-\begin{align*}
-  n(t)\simeq\frac{n_i}{\lambda}\left(1-1+\lambda t\right)=n_i\times t
-\end{align*}
+<ul class="org-ul">
+<li>noyau pair-impair : 28 protons, 29 neutrons</li>
+<li>noyau fermé en protons (28 : nombre magique)</li>
+<li>1 neutron célibataire en \(2p\tfrac{3}{2}\)</li>
+<li>Niveau fondamental : \(2p\tfrac{3}{2}\) : \(I^\pi=\tfrac{3}{2}^{(-1)^1}=\tfrac{3}{2}^-\)</li>
+<li>1<sup>er</sup> niveau excité : neutron en \(1f\tfrac{5}{2}\) soit
+\(I^\pi=\tfrac{5}{2}^{(-1)^3}=\tfrac{5}{2}^-\)</li>
+</ul>
 
-<p>
-ce qui traduit que le nombre d'irradiation est tès largement supérieur au
-nombre de désintégrations. Ainsi, pour une heure d'irradiation, le nombre
-de noyau produit sera
-</p>
-\begin{align*}
-  n(\unit[1]{h})=5.19\,10^7\times3600=1.87\,10^{11}
-\end{align*}
-
-<p>
-Sachant que 100% des désintégrations tombe sur le premier niveau excité du
-néon 22 et génère ainsi un photon &gamma; de 1.27 MeV, on peut déduire
-l'activité en photon &gamma;
-</p>
-\begin{align*}
-  \mathcal{A}(t)&=\lambda n(t)=\frac{\ln 2}{T}\times n(\unit[1]{h})\\
-  &=\frac{\ln 2}{2.6\times365\times24\times3600}\times1.87\,10^{11}\\
-  &=\unit[1581]{Bq}=\unit[42.7]{nCi}\text{ où 1 Ci = 3.7 10$^{10}$ Bq}
-\end{align*}</li>
-
-<li><p>
-La raie à 511 keV correspond aux photons issus de l'annihilation
-\(e^++e^-\to2\gamma\). En effet, dans 90% des cas, la désintégration se fait
-par désintégration \(\beta^+\) où le positron émis, une fois son énergie
-cinétique dissipée, s'annihilie avec les électrons de la matière. Par
-conservation de l'impulsion, les deux photons sont émis dos-à-dos, chacun
-emportant une énergie cinétique de 511 keV soit la masse de
-l'électron/positron. Du fait que ces deux photons sont émis dans 90% des
-désintégrations, l'activité en photons de 511 keV est égale à
-</p>
-\begin{align*}
-  \mathcal{A}_{\gamma_{0.511}}=2\times90\%\times\mathcal{A}_{\gamma_{1.27}}=\unit[2846]{Bq}
-\end{align*}</li>
-
-<li><p>
-Étant donné l'activité \(\mathcal{A}_{\gamma_{1.27}}=1581\) désintégrations
-par seconde dans tout l'espace soit 4&pi; stéradian, le nombre de photons
-détectés à 1 m de la cible devient
-</p>
-\begin{align*}
-  N_{\gamma_{1.27}}(\text{détectés/min})&=\mathcal{A}_{\gamma_{1.27}}\times60\times\frac{S}{4\pi d^2}\\
-  &=\frac{5}{4\pi100^2}\times1581\times60\\
-  &\sim4\gamma\text{ de 1.27 MeV en 1 minute de mesure}
-\end{align*}</li>
-</ol></li>
-</ol>
-</div>
-</div>
-
-<div id="outline-container-orgheadline3" class="outline-2">
-<h2 id="orgheadline3"><span class="section-number-2">3</span> Tomographie par émission de positrons</h2>
-<div class="outline-text-2" id="text-3">
+<div class="org-center">
 
 <div class="figure">
-<p><img src="./figures/pet_cerveau.jpg" alt="pet_cerveau.jpg" width="300" />
+<p><img src="./figures/nickel57.png" alt="nickel57.png" />
 </p>
-<p><span class="figure-number">Figure 3:</span> <b>Vue axiale du cerveau par tomographie à émission de positrons</b></p>
 </div>
+</div></li>
 
-<div class="QUESTION">
-<p>
-La tomographie par émission de positrons (TEP) est une technique d'imagerie
-isotopique utilisant des molécules biologiques marquées par des isotopes
-radioactifs émetteurs \(\beta^+\) à demi-vie très brève, tel que le&nbsp;<sup>11</sup>C,
-qui permettent une visualisation des organes en fonctionnement, par mesure des
-deux photons de 511 keV émis simultanément à 180 degrés l'un de l'autre lors de
-l'annihilation \(e^+e^-\). Les courtes périodes des radioisotopes utilisés pour la
-TEP (de 2 mn pour le&nbsp;<sup>15</sup>O à 110 mn pour le&nbsp;<sup>18</sup>F) imposent la
-présence simultanée d'un laboratoire de radiochimie et d'une caméra TEP sur le
-lieu de l'accélérateur produisant les radioéléments.
-</p>
-
-<p>
-L'isotope radioactif&nbsp;<sup>11</sup>C, de période radioactive \(T_{1/2}\) = 20.36 min, est
-formé par la réaction nucléaire
-</p>
-\begin{align*}
-  p + ^{14}_{7}\text{N}\rightarrow ^{11}_{6}\text{C}+\alpha
-\end{align*}
-
-<p>
-en irradiant une cible d'azote de nombre de masse A = 14, d'épaisseur 10
-mg/cm<sup>2</sup> avec un faisceau de protons contenant 4 10<sup>12</sup> particules/seconde. La
-section efficace totale de cette réaction est &sigma; = 200 mb. Au début de
-l'irradiation (\(t=0\)), il n'y a aucun noyau radioactif dans l'échantillon.
-</p>
-
-<ol class="org-ol">
-<li>Calculer le nombre de noyaux radioactifs obtenus au bout de 3h d'irradiation.</li>
-</ol>
-
-</div>
-
-<ol class="org-ol">
 <li><p>
-La variation du nombre de noyaux de carbone 11, \(\frac{dn}{dt}\), est égale à
-au nombre de noyaux créés par irradiation soustrait du nombre de noyaux se
-désintégrant soit \(\frac{dn}{dt}=n_i-\lambda n\). La résolution de cette
-équation différentielle donne une variation temporelle du nombre de noyaux
-\(n(t)\) égale à
+<b>&nbsp;<sup>58</sup><sub>27</sub>Co</b>
 </p>
-\begin{align*}
-  n(t)&=\frac{n_i}{\lambda}\left(1-e^{-\lambda t}\right)\\
-  &\text{où }n_i=\phi_p\times\rho_e\times\frac{\mathcal{N}}{A_\text{cible}}\times\sigma_\text{tot.}
-\end{align*}
+<ul class="org-ul">
+<li>noyau impair-impair : 27 protons, 31 neutrons &rarr; couplage des
+nucléons célibataires</li>
+</ul>
 
-<p>
-Ainsi, le nombre de noyaux radioactifs de carbone 11 obtenus au bout de 3
-heures d'irradiation est
+<div class="org-center">
+
+<div class="figure">
+<p><img src="./figures/cobalt58.png" alt="cobalt58.png" />
 </p>
-\begin{align*}
-  n(t=\unit[3]{h})=&\frac{4\,10^{12}\times10\,10^{-3}\times6.02\,10^{23}\times200\,10^{-27}}{14}=\unit[3.44\,10^8]{noyaux/s}\\
-  &\times\frac{20.36\times60}{\ln 2}\times\left(1-e^{-\frac{\ln 2\times3\times60}{20.36}}\right)\\
-  =&\,\unit[6.05\,10^{11}]{noyaux}
-\end{align*}</li>
+</div>
+</div>
+
+<ul class="org-ul">
+<li>1 proton célibataire en \(1f\tfrac{7}{2}\) et 1 neutron célibataire en \(2p\tfrac{3}{2}\)</li>
+<li>\(|j_1-j_2|\leq j\leq j_1+j_2\) &rarr; \(I=2,3,4,5\)</li>
+<li>\(\pi=(-1)^{\ell_1+\ell_2}=(-1)^{3+1}=+1\)</li>
+<li>le modèle ne donne pas l'ordre des états : le niveau fondamental est parmi ces 4 états de
+même que le 1<sup>er</sup> niveau excité.</li>
+</ul>
+
+<div class="org-center">
+
+<div class="figure">
+<p><img src="./figures/cobalt58_energy.png" alt="cobalt58_energy.png" />
+</p>
+<p><span class="figure-number">Figure 5: </span><b>Mesure expérimentale des niveaux en énergie du&nbsp;<sup>58</sup><sub>27</sub>Co</b>. Les états sont dans le désordre mais très proches en énergie (effet de l'interaction résiduelle proton-neutron)</p>
+</div>
+</div></li>
+</ul></li>
 </ol>
+
+
+<ul class="org-ul">
+<li><p>
+<b>&nbsp;<sup>50</sup><sub>22</sub>Ti</b>
+</p>
+<ul class="org-ul">
+<li>noyau pair-pair : 22 protons, 28 neutrons</li>
+<li>noyau fermé en neutrons (28 : nombre magique)</li>
+<li>2 protons sur la couche \(1f\tfrac{7}{2}\) &rarr; couplage des protons</li>
+</ul>
+
+<div class="org-center">
+
+<div class="figure">
+<p><img src="./figures/titane50.png" alt="titane50.png" />
+</p>
+</div>
+</div>
+<ul class="org-ul">
+<li>\(|j_1-j_2|\leq j\leq j_1+j_2\) &rarr; \(I=0,1,2,3,4,5,6,7\) <b>mais
+seules les valeurs paires sont autorisées (principe de Pauli)</b></li>
+<li>\(\pi=(-1)^{\ell_1+\ell_2}=(-1)^{3+3}=+1\)</li>
+<li>Niveau fondamental : \(I^\pi=0^+\)</li>
+<li>1<sup>er</sup> niveau excité = \(I^\pi=2^+\)</li>
+</ul>
+
+<div class="org-center">
+
+<div class="figure">
+<p><img src="./figures/titane50_energy.png" alt="titane50_energy.png" />
+</p>
+<p><span class="figure-number">Figure 7: </span><b>Mesure expérimentale des niveaux en énergie du&nbsp;<sup>50</sup><sub>22</sub>Ti</b>. Les états d'énergie sont dans l'ordre (noyau pair-pair) mais très espacés en raison de l'interaction proton-proton &rarr; noyau pair-pair très stable</p>
+</div>
+</div></li>
+</ul>
+
 
 <div class="QUESTION">
 <ol class="org-ol">
-<li value="2">On stoppe alors l'irradiation. Calculer l'activité qu'aura alors
-l'échantillon au bout de 30 min, temps nécessaire pour introduire
-le&nbsp;<sup>11</sup>C dans des molécules complexes qui sont alors injectées au
-patient.</li>
+<li value="2"><p>
+On donne les premiers niveaux des noyaux&nbsp;<sup>39</sup><sub>19</sub>K et&nbsp;<sup>39</sup><sub>20</sub>Ca, avec pour
+chacun d'eux \(I^\pi\) et l'énergie d'excitation \(E\) (en MeV). Interpréter ces moments cinétiques
+et parités dans le cadre du modèle en couche. Que reflète la grande similitude entre les deux
+spectres ?
+</p>
+<div class="org-center">
+
+<div class="figure">
+<p><img src="./figures/mod1_2.png" alt="mod1_2.png" />
+</p>
+</div>
+</div></li>
 </ol>
 
 </div>
 <ol class="org-ol">
 <li value="2"><p>
-À \(t=t_0=\unit[3]{h}\), l'irradiation est stoppée, les noyaux de carbone
-ne faisant que se déintégrer. L'activité en radioéléments devient
+&nbsp;<sup>39</sup><sub>19</sub>K<sub>20</sub> et&nbsp;<sup>39</sup><sub>20</sub>Ca<sub>19</sub> &rarr; noyaux miroirs. Dans le cadre du
+modèle en couche, ces deux noyaux sont identiques (\(p\) et \(n\) sont "interchangeables" en raison
+de l'indépendance de charge de l'interaction forte).
 </p>
-\begin{align*}
-  \mathcal{A}(t'=t-t_0=\unit[30]{min})&=\lambda\times n(t'=\unit[30]{min})\\
-  &=\frac{\ln 2}{T}\times n(t_0)\,e^{-\lambda t'}\\
-  &=\frac{\ln 2}{20.36\times60}\times6.05\,10^{11}\,e^{-\ln 2\times30/20.36}\\
-  &=\unit[1.24\,10^8]{Bq}=\unit[124]{MBq}\\
-  &=\unit[3.3]{mCi}\text{ où }\unit[1]{Ci}=\unit[3.7\,10^{10}]{Bq}
-\end{align*}</li>
-</ol>
-
-<div class="QUESTION">
-<ol class="org-ol">
-<li value="3">Quelle sera l'activité résiduelle 24h après la fin de l'irradiation ?
-Commenter les deux résultats.</li>
-</ol>
-
-</div>
-<ol class="org-ol">
-<li value="3"><p>
-Après 24 heures, l'activité de la "source" sera
-</p>
-\begin{align*}
-  \mathcal{A}(\unit[24]{h})&=\frac{\ln 2}{20.36\times60}\times6.05\,10^{11}\,e^{-\ln2\times24\times60/20.36}\\
-  &=\unit[1.75\,10^{-13}]{Bq}
-\end{align*}
 
 <ul class="org-ul">
-<li>30 minutes après irradiation, l'activité de la source injectée, de l'ordre
-de quelques centaines de MBq, est suffisante pour réaliser une TEP
-autrement dit pour observer les photons &gamma; à 511 keV. Cette activité
-qui varie entre 150 et 400 MBq pour un adulte correspond à une dose
-équivalente à 10 mSv<sup><a id="fnr.1" class="footref" href="#fn.1">1</a></sup></li>
-<li>la période très courte du carbone 11 fait que l'activité de la source
-décroît rapidement, le radioélement étant à l'état de trace au bout de 24
-h. En réalité, la radioactivité disparaît encore plus rapidement car les
-radioéléments non fixés sont naturellement éliminés avec les urines. La
-principale contrainte d'utilisation de la TEP est en fait lié à la courte
-demi-vie des isotopes radioactifs qui nécessitent donc la présence d’un
-cyclotron à proximité du centre d’examen.</li>
-</ul></li>
+<li><p>
+<b>&nbsp;<sup>39</sup><sub>19</sub>K</b>
+</p>
+<ul class="org-ul">
+<li>noyau impair-pair : 19 protons, 20 neutrons</li>
+<li>noyau fermé en neutrons (20 : nombre magique)</li>
+<li>1 proton célibataire en \(1d\tfrac{3}{2}\)</li>
+<li>Niveau fondamental : \(I=\tfrac{3}{2}^{(-1)^2}=\tfrac{3}{2}^+\) en accord
+avec l'expérience</li>
+</ul>
+
+<div class="org-center">
+
+<div class="figure">
+<p><img src="./figures/potassium39.png" alt="potassium39.png" />
+</p>
+<p><span class="figure-number">Figure 9: </span><b>Niveaux excités du &nbsp;<sup>39</sup><sub>19</sub>K</b>. Le 1<sup>er</sup> niveau excité résulte de la brisure de paire en \(2s\tfrac{1}{2}\) pour fermer la couche "magique" \(N=20\). Les niveaux excités suivants sont issus du "déplacement" du proton célibataire \(2s\tfrac{1}{2}\rightarrow1f\tfrac{7}{2}\rightarrow2p\tfrac{3}{2}\).</p>
+</div>
+</div></li>
+
+<li><b>&nbsp;<sup>39</sup><sub>20</sub>Ca</b> : même raisonnement que pour&nbsp;<sup>39</sup><sub>19</sub>K mais en utilisant les neutrons
+(couche fermée en proton) &rarr; même séquence d'état et mêmes valeurs de \(I^\pi\).</li>
+</ul>
+
+<p>
+Étant donné l'indépendance de charge de l'interaction forte, les noyaux miroirs, dont les états
+appartiennent aux mêmes multiplets d'isospin, ont les mêmes séquences de niveaux et les mêmes
+écarts en énergie \(\Delta E\) entre ces niveaux aux effets coulombiens près.
+</p></li>
 </ol>
+
+<div class="QUESTION">
+<ol class="org-ol">
+<li value="3">L'état fondamental du noyau&nbsp;<sup>75</sup><sub>33</sub>As est un état \(I^{\pi} =
+   \frac{3}{2}^-\). Expliquer ce résultat, non conforme au modèle en couches.</li>
+</ol>
+
+</div>
+
+<ol class="org-ol">
+<li value="3"><p>
+Noyau&nbsp;<sup>75</sup><sub>33</sub>As : 33 protons, 42 neutrons
+</p>
+
+<div class="org-center">
+
+<div class="figure">
+<p><img src="./figures/arsenic75.png" alt="arsenic75.png" />
+</p>
 </div>
 </div>
 
-<div id="outline-container-orgheadline5" class="outline-2">
-<h2 id="orgheadline5"><span class="section-number-2">4</span> Formule de Bethe et Weizsäcker</h2>
-<div class="outline-text-2" id="text-4">
+<p>
+1 proton célibataire en \(1f\tfrac{5}{2}\) &rarr; niveau fondamental
+\(I^\pi=\tfrac{5}{2}^-\). Expérimentalement, le niveau fondamental est \(I^\pi=\tfrac{3}{2}^-\)
+&rarr;&nbsp;<sup>75</sup>As est un noyau impair pour lequel l'ordre de remplissage des couches
+diffère de celui attendu
+</p></li>
+</ol>
+
+
+<div class="org-center">
+
+<div class="figure">
+<p><img src="./figures/arsenic75_1.png" alt="arsenic75_1.png" />
+</p>
+</div>
+</div>
+
+<p>
+Cette configuration, 1 proton célibataire en \(2p\tfrac{3}{2}\), est "préférée" par le noyau car
+l'énergie d'appariement croît avec le \(j\) de la couche (ici \(\tfrac{5}{2}\) contre
+\(\tfrac{3}{2}\)) ce qui rend le noyau plus stable. De plus, les couches sont proches en énergie
+et un noyau déformé peut "mélanger" les différentes couches.
+</p>
+
 <div class="QUESTION">
+<ol class="org-ol">
+<li value="4"><ol class="org-ol">
+<li value="1"><p>
+On donne ci-dessous le spectre des 8 premiers niveaux du noyau&nbsp;<sup>90</sup><sub>40</sub>Zr.
+</p>
+<div class="org-center">
+
+<div class="figure">
+<p><img src="./figures/Zr.png" alt="Zr.png" />
+</p>
+</div>
+</div>
+<p>
+Chercher à expliquer ce spectre en supposant que le noyau de&nbsp;<sup>90</sup><sub>40</sub>Zr est composé d'un
+coeur inerte de&nbsp;<sup>88</sup><sub>38</sub>Sr et de deux protons.
+</p></li>
+</ol></li>
+</ol>
+
+</div>
+
+<ol class="org-ol">
+<li value="4"><ol class="org-ol">
+<li><p>
+&nbsp;<sup>90</sup><sub>40</sub>Zr =&nbsp;<sup>88</sup><sub>38</sub>Sr + 2\(p\) : noyau pair-pair fermé en neutrons (50 : nombre
+magique)
+</p>
+
+<div class="org-center">
+
+<div class="figure">
+<p><img src="./figures/zirconium90.png" alt="zirconium90.png" />
+</p>
+</div>
+</div>
+
+<ul class="org-ul">
+<li>2 protons appariés en \(2p\tfrac{1}{2}\) d'où \(I^\pi=0^+\).</li>
+<li>2 protons en \(1g\tfrac{9}{2}\) &rarr; couplage
+\(I^\pi=0^+,1^+,2^+,3^+,4^+,5^+,6^+,7^+,8^+,9^+\) mais seules les valeurs paires sont
+conservées (principe de Pauli) d'où \(I^\pi=0^+,2^+,4^+,6^+,8^+\) avec un ordre parmi les
+niveaux en énergie respecté.</li>
+<li>brisure de paire : 1 proton en \(2p\tfrac{1}{2}\) et 1 proton en \(1g\tfrac{9}{2}\) :
+\(I^\pi=4^-,5^-\), ordre non donné par le modèle en couche</li>
+</ul>
+
+<p>
+Le modèle explique correctement le spectre en énergie. On remarque par ailleurs, l'écart en
+énergie important entre le niveau fondamental et le premier niveau excité
+(\(E=\unit[1.75]{MeV}\)) : c'est une caractéristique des noyaux pair-pair qui sont très
+stables et donc difficilement "excitable".
+</p></li>
+</ol></li>
+</ol>
+
+<div class="QUESTION">
+<ol class="org-ol">
+<li value="4"><ol class="org-ol">
+<li value="2"><p>
+On considère les 12 premiers niveaux du noyau&nbsp;<sup>90</sup><sub>41</sub>Nb.
+</p>
+<div class="org-center">
+
+<div class="figure">
+<p><img src="./figures/NbZr.png" alt="NbZr.png" />
+</p>
+</div>
+</div>
+<ol class="org-ol">
+<li>Expliquer ce spectre.</li>
+<li>Que peut-on dire de la grande différence entre les densités de niveau des deux
+noyaux&nbsp;<sup>90</sup><sub>40</sub>Zr et&nbsp;<sup>90</sup><sub>41</sub>Nb et entre les intéractions résiduelles
+proton-proton et proton-neutron ?</li>
+</ol></li>
+</ol></li>
+</ol>
+
+</div>
+
+<ol class="org-ol">
+<li value="4"><ol class="org-ol">
+<li value="2"><ol class="org-ol">
+<li><p>
+&nbsp;<sup>90</sup><sub>41</sub>Nb : le noyau de Niobium est un noyau impair-impair : 41 protons, 49
+neutrons
+</p>
+
+<div class="org-center">
+
+<div class="figure">
+<p><img src="./figures/niobium90.png" alt="niobium90.png" />
+</p>
+</div>
+</div>
+
+<ul class="org-ul">
+<li>1 proton célibataire en \(1g\tfrac{9}{2}\) et 1 neutron célibataire en \(1g\tfrac{9}{2}\)
+&rarr; couplage \(I^\pi=0^+,1^+,2^+,3^+,4^+,5^+,6^+,7^+,8^+,9^+\) où les 10 valeurs
+sont toutes possibles</li>
+<li>pour un noyau impair-impair, l'ordre n'est pas donné par le modèle</li>
+<li>Brisure de la paire \(2p\tfrac{1}{2}\) dont l'un des constituants (proton ou neutron)
+"monte" en \(1g\tfrac{9}{2}\). Cette brisure est d'autant plus favorisée que la montée d'un
+neutron ferme la couche de nombre magique 50. Dans ce cas, on obtient un proton ou un
+neutron célibataire en \(2p\tfrac{1}{2}\) et un neutron ou un proton célibataire en
+\(1g\tfrac{9}{2}\) : \(I^\pi=4^-,5^-\)</li>
+</ul></li>
+<li><ul class="org-ul">
+<li>le nombre de niveaux observé est moins élevé pour le noyau pair-pair&nbsp;<sup>90</sup><sub>40</sub>Zr que
+pour le noyaux impair-impair&nbsp;<sup>90</sup><sub>41</sub>Nb du fait du principe de Pauli qui interdit
+certaines valeurs de \(I\) pour les noyaux pair-pair.</li>
+<li>la levée de dégénérescence due à l'interaction résiduelle c'est-à-dire au traitement des
+interactions entre nucléons \(\hat{H}=\hat{H}_{\text{CM}}+\hat{V}_{\text{res.}}\) :
+l'interaction résiduelle entre \(p-p\) est plus importante qu'entre \(p-n\) expliquant
+l'écart d'énergie \(\Delta E\) entre les niveaux excités : 3.6 MeV pour&nbsp;<sup>90</sup><sub>40</sub>Zr et
+0.85 MeV pour&nbsp;<sup>90</sup><sub>41</sub>Nb</li>
+</ul></li>
+</ol></li>
+</ol></li>
+</ol>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org6051424" class="outline-2">
+<h2 id="org6051424"><span class="section-number-2">4</span> Réactions nucléaires et états analogues isobariques</h2>
+<div class="outline-text-2" id="text-4">
+<p>
+<b>Étude des isobares&nbsp;<sup>21</sup><sub>9</sub>F,&nbsp;<sup>21</sup><sub>10</sub>Ne et&nbsp;<sup>21</sup><sub>11</sub>Na</b>
+</p>
+<div class="QUESTION">
+<p>
+On considère les trois isobares&nbsp;<sup>21</sup><sub>9</sub>F,&nbsp;<sup>21</sup><sub>10</sub>Ne et&nbsp;<sup>21</sup><sub>11</sub>Na.
+</p>
+
+<ol class="org-ol">
+<li><ol class="org-ol">
+<li>Donner les moment cinétique et parité I\(^{\pi}\), ainsi que les configurations de l'état
+fondamental et du premier état excité prévus par le modèle en couche, pour le
+noyau&nbsp;<sup>21</sup><sub>9</sub>F.</li>
+
+<li>On donne \(I^{\pi} = \frac{3}{2}^+\) pour l'état fondamental des noyaux&nbsp;<sup>21</sup><sub>10</sub>Ne
+et&nbsp;<sup>21</sup><sub>11</sub>Na. Commenter ce résultat non conforme au modèle en couche.</li>
+</ol></li>
+</ol>
+
+</div>
+
 <ol class="org-ol">
 <li><ol class="org-ol">
 <li><p>
-Expliquer les différents termes intervenant dans la formule semi-empirique
-donnant la masse atomique :
- <div class="footdef"><sup><a id="fn.1" class="footnum" href="#fnr.1">1</a></sup> <div class="footpara"><p class="footpara"> cette dose est équivalente à celle d'un scanner thoraco-abdominal. En France, la limite d'exposition pour le public est fixée à 1 mSv par an <b>hors</b> exposition médicale. À titre de comparaison, une radiographie des poumons correspond à 0.1 mSv tout comme un voyage long courrier Paris-New York aller-retour. Les effets d'une cigarette sont eux évalués à 0.01 mSv par cigarette : la plupart des fumeurs dépassent très vite le seuil légal d'exposition de la population générale. </p></div><br/></div>
+Moment cinétique \(I^\pi\) du&nbsp;<sup>21</sup><sub>9</sub>F
 </p>
-\begin{align*}
-  M_\text{at}(Z,A)c^2 &= Z(m_pc^2 + m_ec^2)+(A-Z)m_nc^2-a_v A\\
-  &+a_s A^{2/3}+a_c\frac{Z^2}{A^{1/3}}+a_A\frac{(A - 2Z)^2}{A}-\delta(Z,A)
-\end{align*}
+<div class="org-center">
 
-<p>
-avec \(\delta(Z,A) = +\frac{12\text{ MeV}}{\sqrt{A}}\) pour \(Z\) et \(N\)
-pairs, \(-\frac{12\text{ MeV}}{\sqrt{A}}\) pour \(Z\) et \(N\) impairs, et 0
-pour \(A\) impair.
-</p></li>
-
-<li>En déduire que l'excès de masse atomique \(\Delta M_\text{at}c^2\) pour
-des noyaux isobariques s'écrit comme un polynome du second degré en
-\(Z\). Combien y a-t-il de paraboles possibles ?</li>
-</ol></li>
-</ol>
-
+<div class="figure">
+<p><img src="./figures/fluor21.png" alt="fluor21.png" />
+</p>
+<p><span class="figure-number">Figure 16: </span><b>États excités du&nbsp;<sup>21</sup><sub>9</sub>F</b></p>
 </div>
-<ol class="org-ol">
-<li value="1"><ol class="org-ol">
-<li><p>
-À partir de la question <a href="#orgheadline1">1</a>, la masse atomique est égale à
-</p>
-\begin{align*}
-  M_\text{at.}(A,Z)c^2=&Z(m_pc^2+m_ec^2)+(A-Z)m_nc^2-B_N\\
-  =&Z(m_pc^2+m_ec^2)+(A-Z)m_nc^2\\
-  &-a_VA+a_SA^{2/3}+a_C\frac{Z^2}{A^{1/3}}+a_A\frac{(A-2Z)^2}{A}-\delta(Z,A)
-\end{align*}
+</div>
 
 <p>
-L'origine des différents termes de l'énergie de liaison \(B_N\) est expliquée à
-la question <a href="#orgheadline1">1</a>.
+État fondamental \((1d\tfrac{5}{2})^1\) soit \(I^\pi=\tfrac{5}{2}^+\), 1<sup>er</sup> niveau excité
+\((2s\tfrac{1}{2})^1\) soit \(I^\pi=\tfrac{1}{2}^+\).
 </p></li>
-<li><i>cf.</i> Exercice <a href="#orgheadline4">5</a></li>
+
+<li><p>
+Noyaux miroirs&nbsp;<sup>21</sup><sub>10</sub>Ne et&nbsp;<sup>21</sup><sub>11</sub>Na : même séquence de
+\(I^\pi\)
+</p>
+<div class="org-center">
+
+<div class="figure">
+<p><img src="./figures/neon21.png" alt="neon21.png" />
+</p>
+<p><span class="figure-number">Figure 17: </span><b>Structure en couche du&nbsp;<sup>21</sup><sub>10</sub>Ne</b></p>
+</div>
+</div>
+<p>
+Selon le modèle en couche, le niveau fondamental devrait être \(I^\pi=\tfrac{5}{2}^+\). Le fait
+que le niveau fondamental soit finalement \(I^\pi=\tfrac{3}{2}^+\) semble indiquer que le
+neutron seul dans le cas du&nbsp;<sup>21</sup><sub>10</sub>Ne (respectivement le proton seul dans le cas
+du&nbsp;<sup>21</sup><sub>11</sub>Na) est monté sur la couche \(1d\tfrac{3}{2}\). Une telle situation est
+envisageable dès lors que le noyau est déformé et dans la mesure où les niveaux en énergie des
+couches \(1d\tfrac{5}{2},2s\tfrac{1}{2}\) et \(1d\tfrac{3}{2}\) sont relativement proches.
+</p></li>
 </ol></li>
 </ol>
 
 <div class="QUESTION">
 <ol class="org-ol">
-<li value="2"><p>
-En utilisant la formule de Bethe et Weizsäcker (BW), prévoir quel est
-l'élément le plus stable des familles des isobares de nombre de masse \(A\) =
-21 et 95. On donne les valeurs suivantes des coefficients de la formule de
-BW : \(a_v\) = 15.56 MeV, \(a_c\) = 0.697 MeV, \(a_s\) = 17.23 MeV et \(a_A\) =
-23.285 MeV.
-</p>
+<li value="2"><ol class="org-ol">
+<li>Quelle est la valeur de la troisième composante de l'isospin \(T_3\) pour ces trois noyaux ? En
+déduire la valeur de l'isospin \(T\) de leur état fondamental.</li>
 
-<p>
-Expérimentalement, les noyaux suivants sont &beta;-stables :&nbsp;<sup>21</sup><sub>10</sub>Ne
-et&nbsp;<sup>95</sup><sub>42</sub>Mo. Discuter ce résultat.
-</p></li>
+<li>Dans le cadre de l'indépendance de charge de l'interaction forte, discuter ce résultat en
+termes de multiplets d'isospin. Quel(s) autre(s) noyau(x) isobarique(s) appartienne(nt) à
+ce(s) multiplet(s) ? Peut-on prévoir le spin et la parité de l'état fondamental et du premier
+état excité de ce(s) noyau(x)&nbsp;?</li>
+</ol></li>
 </ol>
 
 </div>
 <ol class="org-ol">
 <li value="2"><p>
-Le nombre de nucléons ou nombre de masse \(A\) est impair pour les
-isobares \(A=21\) et \(A=95\). Aussi, le terme d'appariement \(\delta(Z,A)\) est
-donc nul. L'élément le plus stable dans une famille d'isobares est celui avec
-l'énergie de liaison \(B_N\) maximale. Or, \(B_N\) est maximum pour \(Z=Z_0\) tel
-que \(\left.\frac{\partial B_N}{\partial Z}\right|_{Z_0}=0\) d'où
+L'isospin \(\vv{T}\) rend compte de l'indépendance de charge de l'intéraction forte. Ainsi, le
+neutron et le proton qui appartiennent au doublet d'isospin \(\vv{T}=\vv{1}/2\) sont, du point de
+vue de l'intéraction forte, des particules identiques (\(T_3(p)=1/2\) et \(T_3(n)=-1/2\)).
+</p>
+
+<p>
+L'espace d'isospin est analogue à l'espace des spins notamment vis-à-vis des opérations et des
+calculs qui s'y attachent.
+</p>
+
+<p>
+Pour une valeur d'isospin \(\vv{T}\), la troisième composante \(T_3\) prend pour valeur
 </p>
 \begin{align*}
-  \left.\frac{\partial B_N}{\partial Z}\right|_{Z=Z_0}=-\frac{2a_CZ_0}{A^{1/3}}+4a_A\frac{A-2Z_0}{A}&=0\\
-  -a_CZ_0A^{2/3}+2a_AA-4a_AZ_0&=0\\
-  Z_0&=\frac{2a_AA}{a_CA^{2/3}+4a_A}
+  -T\leq T_3\leq T
 \end{align*}
 
 <p>
-<b>Application numérique :</b>
+soit \(2T+1\) valeurs.
 </p>
 
 <p>
-\(A=21\) \(Z_0=9.93\sim10\) correspond au noyau &beta;-stable de néon 22
+Pour un noyau c'est-à-dire pour une système à plusieurs nucléons, l'isospin est
+égal à
 </p>
+\begin{align*}
+  \vv{T}=\Sigma\,\vv{t}_i
+\end{align*}
 
 <p>
-\(A=95\) \(Z_0=41.1\sim41\) ne correspond pas au noyau &beta;-stable de molybdène
-95
+où \(t_i\) est lui-même égal à \(\vv{1}/2\). La 3<sup>ème</sup> composante \(T_3\) est égale à
+</p>
+\begin{align*}
+  T_3=\Sigma\,t_{3i}=Z\times t_3(p) + N\times t_3(n)
+\end{align*}
+
+<p>
+soit
+</p>
+\begin{align*}
+  T_3=\frac{Z}{2} - \frac{N}{2}=\frac{Z-N}{2}
+\end{align*}
+
+<p>
+L'isospin varie ainsi suivant les états d'énergie selon
+</p>
+\begin{align*}
+  \frac{|Z-N|}{2}\leq T\leq\frac{Z+N}{2}
+\end{align*}
+
+<p>
+soit
+</p>
+\begin{align*}
+  |T_3|\leq T\leq\frac{A}{2}
+\end{align*}
+
+<p>
+où, de façon empirique, il est établi que l'état fondamental correspond à \(T=|T_3|\), \(T\)
+augmentant pour les états excités.
 </p>
 
-<ul class="org-ul">
-<li>la formule de Bethe et Weizsäcker est globalement correcte pour les noyaux
-légers,</li>
-<li>pour les noyaux plus lourds, l'écart est généralement de &plusmn;1 protons,</li>
-<li>de manière générale, la formule de Bethe et Weizsäcker est un bon
-indicateur afin de déterminer si un noyau est loin, en terme de protons, de
-l'élément stable pour une masse donnée <i>i.e.</i> pour \(A\) fixé.</li>
+<ol class="org-ol">
+<li><p>
+Pour un système constitué de \(Z\) protons et \(N\) neutrons, la troisième composante de l'isospin
+\(T_3\) est égale à
+</p>
+\begin{align*}
+  T_3=\Upsigma t_{3i}
+\end{align*}
+
+<p>
+Or \(t_3(p)=+\tfrac{1}{2}\) et \(t_3(n)=-\tfrac{1}{2}\) soit
+</p>
+\begin{align*}
+  T_3=Z\times\frac{1}{2}-N\times\frac{1}{2}=\frac{Z-N}{2}
+\end{align*}
+
+<p>
+La troisième composante de l'isospin d'un noyau est donc fixée. En revanche l'isospin
+\(\vv{T}=\Upsigma\vv{t}_i\) varie entre la valeur du niveau fondamental
+\(T_{\text{fonda.}}=|T_3|=\left|\frac{Z-N}{2}\right|\) et la valeur
+\(\frac{Z+N}{2}=\frac{A}{2}\). On déduit les valeurs suivantes d'isospin pour les 3 isobares
+</p>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="void">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<tbody>
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&nbsp;<sup>21</sup><sub>9</sub>F<sup>12</sup></td>
+<td class="org-left">&nbsp;<sup>21</sup><sub>10</sub>Ne<sup>11</sup></td>
+<td class="org-left">&nbsp;<sup>21</sup><sub>11</sub>Na<sup>10</sup></td>
+</tr>
+
+<tr>
+<td class="org-left">\(T_3\)</td>
+<td class="org-left">-3/2</td>
+<td class="org-left">-1/2</td>
+<td class="org-left">+1/2</td>
+</tr>
+
+<tr>
+<td class="org-left">\(\vv{T}\)</td>
+<td class="org-left">\(\vv{3}/2\rightarrow\vv{21}/2\)</td>
+<td class="org-left">\(\vv{1}/2\rightarrow\vv{21}/2\)</td>
+<td class="org-left">\(\vv{1}/2\rightarrow\vv{21}/2\)</td>
+</tr>
+
+<tr>
+<td class="org-left">\(\vv{T}_{\text{fonda.}}\)</td>
+<td class="org-left">\(\vv{3}/2\)</td>
+<td class="org-left">\(\vv{1}/2\)</td>
+<td class="org-left">\(\vv{1}/2\)</td>
+</tr>
+</tbody>
+</table></li>
+
+<li><ul class="org-ul">
+<li>1 doublet d'isospin \(\vv{T}=\vv{1}/2\) correspondant au niveau fondamental des 2 noyaux
+de&nbsp;<sup>21</sup>Ne et&nbsp;<sup>21</sup>Na</li>
+<li>1 quadruplet d'isospin \(\vv{T}=\vv{3}/2\) comprenant les états fondamentaux des
+noyaux&nbsp;<sup>21</sup>F et&nbsp;<sup>21</sup>Mg (noyau miroir de&nbsp;<sup>21</sup>F) ainsi que les premiers états
+excités des noyaux de &nbsp;<sup>21</sup>Ne et&nbsp;<sup>21</sup>Na. Le noyau&nbsp;<sup>21</sup>Mg a la même séquence
+d'états que&nbsp;<sup>21</sup>F soit \(I^\pi(\text{fonda.})=\tfrac{5}{2}^+\) et 1<sup>er</sup> état excité
+\(I^\pi=\tfrac{1}{2}^+\)</li>
 </ul></li>
-</ol>
-
-<div class="QUESTION">
-<ol class="org-ol">
-<li value="3">On peut montrer que l'énergie potentielle d'attraction gravitationnelle
-d'une masse sphérique \(M\) de densité uniforme et de rayon \(R\) est donnée par
-\(E_G=-\frac{3 GM^2}{5R}\).
-
-<ol class="org-ol">
-<li>Déterminer la formule donnant l'énergie de liaison d'une étoile à neutrons
-(\(Z = 0\)) à partir de l'énergie de liaison des nucléons dans le noyau
-donnée par la formule de BW (on négligera l'énergie d'appariement &delta;),
-en lui ajoutant un terme d'énergie potentielle de type \(E_G\) (attention,
-ce terme correspond à une contribution positive à l'énergie de liaison).</li>
-
-<li>En déduire l'ordre de grandeur du rayon minimal d'une étoile à neutrons
-ayant la densité nucléaire et n'ayant aucun autre constituant que des
-neutrons (on supposera que ce nombre \(N\) de neutrons est grand, et on
-utilisera \(G/c^4\) = 1.3239 10<sup>-39</sup> GeV<sup>-1</sup>.fm). Calculer sa
-masse. Comparer au rayon et à la masse du Soleil.</li>
 </ol></li>
 </ol>
 
-</div>
-<ol class="org-ol">
-<li value="3"><ol class="org-ol">
-<li><p>
-Pour une étoile à neutrons, l'énergie de liaison devient (\(Z=0\))
-</p>
-\begin{align*}
-  B_N&=a_VA-a_SA^{2/3}-\cancel{a_C\frac{Z^2}{A^{1/3}}}-a_A\frac{(Z-N)^2}{A}+\underbrace{\delta(Z,A)}_{\ll1}\\
-  &\text{ avec }A=Z+N=N\quad B_N=a_VN-a_SN^{2/3}-a_A\frac{N^{\cancel{2}}}{\cancel{N}}\\
-  B_N&=\left(a_V-a_A\right)N-a_SN^{2/3}<0
-\end{align*}
-
-<p>
-En tenant compte de l'énergie potentielle gravitationnelle, l'énergie de
-liaison d'une étoile à neutrons devient
-</p>
-\begin{align*}
-  B_*&=B_N-E_G=\left(a_V-a_A\right)N-a_SN^{2/3}+\frac{3GM^2}{5R}
-\end{align*}</li>
-
-<li><p>
-En considérant l'étoile uniquement constituée de neutrons, sa masse
-s'écrit \(M=N\times m_n\). Par ailleurs, le rayon de cette étoile est égal
-à \(r_0\times N^{1/3}\) d'où
-</p>
-\begin{align*}
-  B_*&=\left(a_V-a_A\right)N-a_SN^{2/3}+\frac{3Gm_n^2\,N^2}{5r_0\,N^{1/3}}
-\end{align*}
-
-<p>
-Dans la mesure où le nombre de nucléons est grand, on pourra négliger le
-terme relatif aux effets de surface \(a_SN^{2/3}\) devant ceux proportionnel
-à \(N\) et l'énergie gravitationnelle. Ainsi, l'énergie de liaison se réduit
-à
-</p>
-\begin{align*}
-  B_*&=\underbrace{\left(a_V-a_A\right)N}_{<0}+\underbrace{\frac{3Gm_n^2\,N^{5/3}}{5r_0}}_{>0}
-\end{align*}
-
-<p>
-Le premier terme négatif traduit le fait qu'un "noyau/étoile" uniquement
-constitué de neutrons n'est pas un système physiquement stable. Toutefois,
-le caractère instable de ce système est contrebalancé par l'effondrement
-gravitationnel qui est d'autant plus fort que le nombre de neutrons <i>i.e.</i>
-la masse est grande. Ainsi, au-delà d'une valeur critique \(N=N_0\) telle
-que \(B_*=0\), l'énergie gravitationnelle devient supérieure à l'instabilité
-inhérente à la composition en neutrons du "noyau/étoile". La valeur
-critique \(N_0\) se traduit également en terme de rayon minimal pour qu'une
-étoile à neutrons subsiste \(R_\text{min}=r_0\times N_0^{1/3}\). La valeur
-critique du nombre de neutrons est
-</p>
-\begin{align*}
-  B_*&=\left(a_V-a_A\right)N_0+\frac{3Gm_n^2\,N_0^{5/3}}{5r_0}=0\\
-  N_0^{-2/3}&=-\frac{3Gm_n^2}{5r_0\left(a_V-a_A\right)}\\
-  N_0^{2/3}&=\frac{5r_0\left(a_A-a_V\right)}{3Gm_n^2}\\
-  &\text{où }m_n=\unit[0.939]{GeV/c}^2\to Gm_n^2=1.3239\,10^{-39}\times(0.939)^2\\
-  N_0^{2/3}&=\frac{5\times1.25\times\left(23.285-15.56\right)\,10^{-3}}{3\times1.3239\,10^{-39}\times(0.939)^2}\\
-  &=1.377\,10^{37}\to N_0=5.11\,10^{55}
-\end{align*}
-
-<p>
-Le rayon minimal d'une étoile à neutron est donc<sup><a id="fnr.2" class="footref" href="#fn.2">2</a></sup>
- <div class="footdef"><sup><a id="fn.2" class="footnum" href="#fnr.2">2</a></sup> <div class="footpara"><p class="footpara"> si l'on calcule la masse minimale de cet objet à partir de \(M_*=N_0\times m_n\), on trouve une masse \(M_*=0.04M_\odot\) où \(M_\odot\) est égal à 2 10<sup>30</sup> kg soit sensiblement plus faible que la masse typique d'une étoile à neutron \(M_*=1.4M_\odot\) (masse de Chandrasekhar). En réalite, le rayon d'une étoile à neutron varie de 10 à 20 km (\(R_\odot=695\,800\) km) ce qui se traduit en terme de masse par une gamme entre 0.4 et 5 masses solaires. </p></div><br/></div>
-</p>
-\begin{align*}
-  R_\text{min}&=r_0\times N_0^{1/3}=1.25\,10^{-15}\times\left(5.11\,10^{55}\right)^{1/3}\\
-  &=\unit[4.64]{km}
-\end{align*}</li>
-</ol></li>
-</ol>
-</div>
-</div>
-
-<div id="outline-container-orgheadline4" class="outline-2">
-<h2 id="orgheadline4"><span class="section-number-2">5</span> Parabole de masse et désintégrations radioactives</h2>
-<div class="outline-text-2" id="text-5">
-<div class="QUESTION">
-<p>
-On s'intéresse aux isobares de nombre de masse \(A\) = 58 dont on donne ci-dessous
-les excès de masse atomique \(\Delta M_\text{at}c^2\), en MeV :
-</p>
-\begin{align*}
-  \begin{array}{rrrrrrr}
-    ^{58}_{24}\text{Cr}&^{58}_{25}\text{Mn}&^{58}_{26}\text{Fe}&^{58}_{27}\text{Co}&^{58}_{28}\text{Ni}&^{58}_{29}\text{Cu}&^{58}_{30}\text{Zn}\\
-    -52.050&-55.830&-62.152&-59.844&-60.225&-51.662&-42.210
-  \end{array}
-\end{align*}
-
-<ol class="org-ol">
-<li>Rappeler les différents types de désintégrations isobariques et les
-conditions énergétiques associées.</li>
-</ol>
-
-</div>
-<ol class="org-ol">
-<li>Désintégrations isobariques (&beta;<sup>-</sup>, &beta;<sup>+</sup>, CE)
-
-<dl class="org-dl">
-<dt>désintégration &beta;<sup>-</sup></dt><dd><p>
-     \(^A_Z\text{X}\to\,^A_{Z+1}\text{Y}+e^-+\bar{\nu}_e\)
-</p>
-\begin{align*}
-  Q>0 \Longleftrightarrow\,& m(A,Z)c^2>m(A,Z+1)c^2+m_ec^2\\
-  &M_\text{at.}(A,Z)c^2-Zm_ec^2>M_\text{at.}(A,Z+1)c^2-(Z+1)m_ec^2+m_ec^2\\
-  &M_\text{at.}(A,Z)c^2>M_\text{at.}(A,Z+1)c^2\\
-  &\Delta M_\text{at.}(A,Z)c^2>\Delta M_\text{at.}(A,Z+1)c^2
-\end{align*}
-
-<p>
-La désintégration &beta;<sup>-</sup> faisant intervenir 3 corps dont 2 particules
-légères, le spectre en énergie cinétique de l'électron est continu entre
-0 et \(Q_{\beta^-}=\Delta M_\text{at.}(A,Z)c^2-\Delta
-        M_\text{at.}(A,Z+1)c^2\).
-</p></dd>
-
-<dt>désintégration &beta;<sup>+</sup></dt><dd><p>
-        \(^A_Z\text{X}\to\,^A_{Z-1}\text{Y}+e^++\nu_e\)
-</p>
-\begin{align*}
-  Q>0 \Longleftrightarrow\,& m(A,Z)c^2>m(A,Z-1)c^2+m_ec^2\\
-  &M_\text{at.}(A,Z)c^2-Zm_ec^2>M_\text{at.}(A,Z-1)c^2-(Z-1)m_ec^2+m_ec^2\\
-  &M_\text{at.}(A,Z)c^2>M_\text{at.}(A,Z-1)c^2+2m_ec^2\\
-  &\Delta M_\text{at.}(A,Z)c^2>\Delta M_\text{at.}(A,Z-1)c^2+2m_ec^2
-\end{align*}
-
-<p>
-De même que pour la désintégration &beta;<sup>-</sup>, le spectre en énergie du
-positron est continu depuis 0 jusqu'à \(Q_{\beta^+}=\Delta
-        M_\text{at.}(A,Z)c^2-\Delta M_\text{at.}(A,Z-1)c^2-2m_ec^2\)
-</p></dd>
-
-<dt>capture électronique</dt><dd><p>
-        \(^A_Z\text{X}+e^-\to\,^A_{Z-1}\text{Y}+\nu_e\)
-</p>
-\begin{align*}
-  Q>0 \Longleftrightarrow\,& m(A,Z)c^2+m_ec^2>m(A,Z-1)c^2\\
-  &M_\text{at.}(A,Z)c^2-Zm_ec^2+m_ec^2>M_\text{at.}(A,Z-1)c^2-(Z-1)m_ec^2\\
-  &M_\text{at.}(A,Z)c^2>M_\text{at.}(A,Z-1)c^2\\
-  &\Delta M_\text{at.}(A,Z)c^2>\Delta M_\text{at.}(A,Z+1)c^2\\
-  &Q_\text{CE} = Q_{\beta^+}+2m_ec^2
-\end{align*}
-
-<p>
-La capture électronique est privilégiée d'un point de vue énergétique
-par rapport à la désintégration &beta;<sup>+</sup>. Dès lors que la
-désintégration &beta;<sup>+</sup> est autorisée, cette désintégration entre en
-concurrence avec la capture électronique. Pour les noyaux lourds, seule
-la capture électronique est généralement autorisée.
-</p>
-
-<p>
-La capture électronique correspond à la capture d'un électron du cortège
-électronique de l'atome : cet électron appartient aux couches les plus
-internes et donc les plus proches du noyau. En fonction de la couche
-\(K,L,M\) de laquelle est capturé l'électron, une réorganisation du
-cortège électronique intervient ayant pour conséquence l'émission de
-rayons X de désexcitation.
-</p></dd>
-</dl></li>
-</ol>
-
 <div class="QUESTION">
 <ol class="org-ol">
-<li value="2">Estimer graphiquement l'énergie d'appariement \(\delta(A)\) en MeV.</li>
-</ol>
-
-</div>
-<ol class="org-ol">
-<li value="2"><p>
-Le diagramme \(M_\text{at.}c^2=f(Z)\) ou \(\Delta M_\text{at.}c^2=f(Z)\)
-   pour une famille d'isobares donnée est le suivant
-</p>
-
-<div class="center">
-
-<div id="orgparagraph1" class="figure">
-<p><img src="./figures/parabole_mass.png" alt="parabole_mass.png" />
-</p>
-<p><span class="figure-number">Figure 4:</span> <b>Paraboles de masse pour les noyaux de la famille \(A=58\)</b></p>
-</div>
-</div>
-
-<p>
-L'expression de \(M_\text{at.}c^2\) ou \(\Delta M_\text{at.}c^2\) en fonction de
-\(Z\) prend la forme d'une parabole car
+<li value="3"><p>
+On peut comparer les masses des états nucléaires (fondamental ou état excité) ayant les
+mêmes caractéristiques (\(A\), \(I\), \(\pi\) et \(T\)), en utilisant la formule suivante&nbsp;:
 </p>
 \begin{align*}
-  \Delta M_\text{at.}(Z,A)c^2=&M_\text{at.}(Z,A)c^2 - 931.5A\\
-  =&Z\left(m_pc^2+m_ec^2\right)+\left(A-Z\right)m_nc^2-B_N-931.5A\\
-  =&Z\left(m_pc^2+m_ec^2\right)+\left(A-Z\right)m_nc^2\\
-  &-a_VA+a_SA^{2/3}+a_C\frac{Z^2}{A^{1/3}}+a_A\frac{\left(A-2Z\right)^2}{A}-\delta(Z,A)-931.5A\\
-  =&A\left(m_nc^2-a_V+a_A-931.5\right)+a_SA^{2/3}-\delta(Z,A)\\
-  &+Z\left(m_pc^2+m_ec^2-m_nc^2-4a_A\right)+Z^2\left(\frac{a_C}{A^{1/3}}+\frac{4a_A}{A}\right)\\
-  =&\alpha+\beta Z+\gamma Z^2
+  M_\text{at}c^2(A, I, \pi, T, T_3) = a(A,I,\pi,T) + b(A,I,\pi,T)\, T_3 + c(A,I,\pi,T)\, T_3^2
 \end{align*}
 
 <p>
-Ainsi, pour un nombre de masse donné \(A\), la variation de la masse atomique
-ou de l'excès de masse atomique en fonction de la charge \(Z\) est décrit par
-une seule parabole dans le cas où \(A\) est impair et donc \(\delta(Z,A) = 0\) et
-translatée de &plusmn; \(\delta(Z,A)\) lorsque \(A\) est pair. En établissant les
-paraboles pour les isobares \(A=58\), on peut déduire de l'écart entre ces deux
-paraboles la valeur de \(2\delta\). On obtient une valeur voisine de 2.8 MeV
-soit \(\delta=\unit[1.4]{MeV}\), relativement proche de la valeur issue de B&amp;W
-\(\frac{\unit[12]{MeV}}{\surd A}=\unit[1.58]{MeV}\).
-</p></li>
-</ol>
+On a identifié dans les noyaux de&nbsp;<sup>21</sup>Ne et&nbsp;<sup>21</sup>Na un état excité \(I^{\pi} =
+   \frac{5}{2}^+\), d'isospin \(\vv{T} = \vv{3/2}\), aux énergies d'excitation respectives 8.86 MeV et
+8.97 MeV.
+</p>
 
-<div class="QUESTION">
-<ol class="org-ol">
-<li value="3">Quelles sont les désintégrations isobariques possibles pour les noyaux
-\(A\)&nbsp;=&nbsp;58 donnés et l'énergie maximale des électrons (ou des
-positrons) émis dans ces désintégrations ? Préciser le (ou les) noyau(x)
-stable(s) vis à vis de ces désintégrations.</li>
+<p>
+Quel est l'excès de masse du noyau manquant dans le multiplet d'isospin discuté à la question 2)
+?
+</p>
+
+<p>
+On donne les excès de masse suivants, en MeV :
+</p>
+
+<div class="org-center">
+<p>
+\(\Delta Mc^2\)(<sup>21</sup>F) = -0.05 ; \(\Delta Mc^2\)(<sup>21</sup>Ne) = -5.73 ;
+\(\Delta Mc^2\)(<sup>21</sup>Na) = -2.186
+</p>
+</div></li>
 </ol>
 
 </div>
 <ol class="org-ol">
 <li value="3"><p>
-D'après la figure <a href="#orgparagraph1">4</a>, les désintégrations &beta;<sup>-</sup> sont
-Cr&rarr; Mn, Mn&rarr; Fe et Co&rarr; Ni. Les désintégrations &beta;<sup>+</sup> ou CE sont
-Zn&rarr; Cu, Cu&rarr; Ni et Co&rarr; Fe. Les deux noyaux stables de cette famille sont
-donc le fer 58 et le nickel 58.
+Calcul des excès de masse
 </p>
+<div class="org-center">
+
+<div class="figure">
+<p><img src="./figures/fluor_neon_sodium_magnesium_energy.png" alt="fluor_neon_sodium_magnesium_energy.png" />
+</p>
+</div>
+</div>
 
 <p>
-L'énergie cinétique maximum des électrons/positrons émis respectivement par
-désintégration &beta;<sup>-</sup> et &beta;<sup>+</sup> sont les suivantes
+L'excès de masse d'un noyau \(\Delta M_{\text{at.}}c^2\) est égal à
+\(M_{\text{at.}}c^2 - 931.5A\) où \(\Delta M_{\text{at.}}c^2\) et
+\(M_{\text{at.}}c^2\) sont exprimés en MeV. Pour les états analogues
+isobariques \(I^\pi=\tfrac{5}{2}^+\)
+de&nbsp;<sup>21</sup><sub>9</sub>F(fonda.),&nbsp;<sup>21</sup><sub>10</sub>Ne<sup>*</sup>(8.86
+MeV),&nbsp;<sup>21</sup><sub>11</sub>Na<sup>*</sup>(8.97 MeV) et&nbsp;<sup>21</sup><sub>12</sub>Mg(fonda.) ayant
+\(\vv{T}=\vv{3}/2\) et respectivement \(T_3\) = -3/2, -1/2, +1/2, +3/2, on
+calcule \(\Delta M_{\text{at.}}c^2=a^\prime+bT_3+cT_3\) où \(a^\prime=a-931.5A\)
 </p>
 
-<ul class="org-ul">
-<li><p>
-\(^{58}_{24}\text{Cr}\to ^{58}_{25}\text{Mn}+e^-+\bar{\nu}_e\)
-</p>
-\begin{align*}
-  Q_{\beta^-}& = \Delta M(^{58}_{24}\text{Cr})c^2-\Delta M(^{58}_{25}\text{Mn})c^2\\
-  &=\unit[3.78]{MeV}=T_\text{max}(e^-)
-\end{align*}</li>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="void">
 
-<li><p>
-\(^{58}_{25}\text{Mn}\to ^{58}_{26}\text{Fe}+e^-+\bar{\nu}_e\)
-</p>
-\begin{align*}
-  Q_{\beta^-}& = \Delta M(^{58}_{25}\text{Mn})c^2-\Delta M(^{58}_{26}\text{Fe})c^2\\
-  &=\unit[6.32]{MeV}=T_\text{max}(e^-)
-\end{align*}</li>
 
-<li><p>
-\(^{58}_{27}\text{Co}\to ^{58}_{28}\text{Ni}+e^-+\bar{\nu}_e\)
-</p>
-\begin{align*}
-  Q_{\beta^-}& = \Delta M(^{58}_{27}\text{Co})c^2-\Delta M(^{58}_{28}\text{Ni})c^2\\
-  &=\unit[0.38]{MeV}=T_\text{max}(e^-)
-\end{align*}</li>
+<colgroup>
+<col  class="org-left" />
 
-<li><p>
-\(^{58}_{30}\text{Zn}+e^-\to ^{58}_{29}\text{Cu}+\nu_e\)
-</p>
-\begin{align*}
-  Q_\text{CE}& = \Delta M(^{58}_{30}\text{Zn})c^2-\Delta M(^{58}_{29}\text{Cu})c^2\\
-  &=\unit[9.45]{MeV}\\
-  Q_{\beta^+}&=Q_\text{CE} - 2m_ec^2=\unit[8.48]{MeV}=T_\text{max}(e^+)
-\end{align*}</li>
+<col  class="org-left" />
 
-<li><p>
-\(^{58}_{29}\text{Cu}+e^-\to ^{58}_{28}\text{Ni}+\nu_e\)
-</p>
-\begin{align*}
-  Q_\text{CE}& = \Delta M(^{58}_{29}\text{Cu})c^2-\Delta M(^{58}_{28}\text{Ni})c^2\\
-  &=\unit[8.56]{MeV}\\
-  Q_{\beta^+}&=Q_\text{CE} - 2m_ec^2=\unit[7.54]{MeV}=T_\text{max}(e^+)
-\end{align*}</li>
+<col  class="org-left" />
 
-<li><p>
-\(^{58}_{27}\text{Co}+e^-\to ^{58}_{26}\text{Fe}+\nu_e\)
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<tbody>
+<tr>
+<td class="org-left">\(\unicode{x2460}\)</td>
+<td class="org-left">\(\Delta M_{\text{at.}}c^2(21,5/2^+,3/2,-3/2)\)</td>
+<td class="org-left">=</td>
+<td class="org-left">\(a^\prime-\tfrac{3}{2}b+\tfrac{9}{4}c\)</td>
+<td class="org-left">=</td>
+<td class="org-left">\(\unit[-0.05]{MeV}\)</td>
+</tr>
+
+<tr>
+<td class="org-left">\(\unicode{x2461}\)</td>
+<td class="org-left">\(\Delta M_{\text{at.}}c^2(21,5/2^+,3/2,-1/2)\)</td>
+<td class="org-left">=</td>
+<td class="org-left">\(a^\prime-\tfrac{1}{2}b+\tfrac{c}{4}\)</td>
+<td class="org-left">=</td>
+<td class="org-left">\(\unit[(-5.733+8.86)]{MeV}\)</td>
+</tr>
+
+<tr>
+<td class="org-left">\(\unicode{x2462}\)</td>
+<td class="org-left">\(\Delta M_{\text{at.}}c^2(21,5/2^+,3/2,+1/2)\)</td>
+<td class="org-left">=</td>
+<td class="org-left">\(a^\prime+\tfrac{1}{2}b+\tfrac{c}{4}\)</td>
+<td class="org-left">=</td>
+<td class="org-left">\(\unit[(-2.186+8.97)]{MeV}\)</td>
+</tr>
+
+<tr>
+<td class="org-left">\(\unicode{x2463}\)</td>
+<td class="org-left">\(\Delta M_{\text{at.}}c^2(21,5/2^+,3/2,+3/2)\)</td>
+<td class="org-left">=</td>
+<td class="org-left">\(a^\prime+\tfrac{3}{2}b+\tfrac{9}{4}c\)</td>
+<td class="org-left">=</td>
+<td class="org-left">\(\Delta M_\text{at.}c^2(^{21}_{12}\text{Mg})\)</td>
+</tr>
+</tbody>
+</table>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="void">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<tbody>
+<tr>
+<td class="org-left">\(\unicode{x2463}\) \(-\) \(\unicode{x2460}\)</td>
+<td class="org-left">\(3b=\Delta M_{\text{at.}}c^2(^{21}_{12}\text{Mg})+0.05\)</td>
+</tr>
+
+<tr>
+<td class="org-left">\(\unicode{x2462}\) \(-\) \(\unicode{x2461}\)</td>
+<td class="org-left">\(b=-2.186+8.97+5.733-8.86=\unit[3.657]{MeV}\)</td>
+</tr>
+</tbody>
+</table>
+
+<p>
+soit un excès de masse \(\Delta M_{\text{at.}}c^2(^{21}_{12}\text{Mg})\)
 </p>
 \begin{align*}
-  Q_\text{CE}& = \Delta M(^{58}_{27}\text{Co})c^2-\Delta M(^{58}_{26}\text{Fe})c^2\\
-  &=\unit[2.31]{MeV}\\
-  Q_{\beta^+}&=Q_\text{CE} - 2m_ec^2=\unit[1.29]{MeV}=T_\text{max}(e^+)
+  \Delta M_\text{at.}c^2(^{21}_{12}\text{Mg}) &= 3\times3.657-0.05\\
+  &=\unit[10.924]{MeV}
 \end{align*}</li>
-</ul></li>
 </ol>
 </div>
 </div>
@@ -1074,7 +1132,7 @@ désintégration &beta;<sup>-</sup> et &beta;<sup>+</sup> sont les suivantes
 </div>
 </div></div>
 <div id="postamble" class="status">
-File under <i class="fa fa-github-alt"></i> version control - commit <a href="https://github.com/xgarrido/master_npp_teaching/commit/15edcc3f2b8dcf1e42ba4cd5ec2942d8a7d0a234">15edcc3</a> - 2016-06-28
+File under <i class="fa fa-github-alt"></i> version control - commit <a href="https://github.com/xgarrido/master_npp_teaching/commit/f535f50b5fcd671574e3f14e69aaa10cb02d480d">f535f50</a> - 2020-12-21
 </div>
 </body>
 </html>
