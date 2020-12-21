@@ -5,7 +5,177 @@
 #+OPTIONS: ^:{} toc:2 author:nil email:nil split:html
 #+LATEX_CLASS: teaching-class
 
-* TD1 : Cinématiquegma m_\text{finale}c^2\\
+* TD1 : Cinématique
+#+BEGIN_QUESTION
+On veut étudier la désintégration en deux photons d'une particule $a$, d'énergie de masse au repos
+$mc^2$, animée d'une vitesse $\beta=v/c$ par rapport au référentiel du laboratoire $\mathcal{R}$,
+comme indiqué sur la figure ci-dessous.
+#+BEGIN_CENTER
+#+ATTR_LATEX: :width 0.7\linewidth
+[[file:figures/2gamma.pdf]]
+#+END_CENTER
+1) Exprimer les énergies totales $E_1$ et $E_2$ des deux photons dans le référentiel $\mathcal{R}$,
+   en fonction de l'angle d'émission commun $\theta^*$ des photons dans le référentiel du centre de
+   masse $\mathcal{R}'$. En déduire les bornes $E_\text{min}$ et $E_\text{max}$ de ces énergies.
+#+END_QUESTION
+
+1) dans $\mathcal{R}'$ /i.e./ le référentiel du centre de masse où $a$ est au repos et
+   $\Upsigma\vv{p}^{*} = \vv{0}$ :
+
+   *\rightarrow Conservation de l'énergie totale :*
+   #+BEGIN_SRC latex
+     \begin{align*}
+       E_{a}^* &= E_1^* + E_2^*\\
+       mc^2 &= E_1^* + E_2^*
+     \end{align*}
+   #+END_SRC
+
+   *\rightarrow Conservation de l'impulsion :*
+   #+BEGIN_SRC latex
+     \begin{align*}
+       \vv{p_a}^* &= \vv{p_1}^* + \vv{p_2}^* \\
+       \vv{0} &= \vv{p_1}^* + \vv{p_2}^* \\
+       \|\vv{p_1}^*\| &= \|\vv{p_2}^*\|
+     \end{align*}
+   #+END_SRC
+
+   or $E_{1}^{*} = p_{1}^{*}c$ et $E_{2}^{*} = p_{2}^{*}c$ d'où $E_{1}^{*} =
+   E_{2}^{*} = \frac{mc^{2}}{2}$.
+
+   Pour déterminer les valeurs d'énergie et d'impulsion dans le référentiel du laboratoire
+   $\mathcal{R}$, on applique la transformation de Lorentz le long de l'axe $z$ au quadrivecteur
+   énergie-impulsion
+   #+BEGIN_SRC latex
+     \begin{equation*}
+       \begin{bmatrix}
+         E\\p_xc\\p_yc\\p_zc
+       \end{bmatrix}
+       =
+       \begin{bmatrix}
+         \gamma&0&0&\beta\gamma\\
+         0&1&0&0\\
+         0&0&1&0\\
+         \beta\gamma&0&0&\gamma
+       \end{bmatrix}
+       \cdot
+       \begin{bmatrix}
+         E^*\\p_x^*c\\p_y^*c\\p_z^*c
+       \end{bmatrix}
+     \end{equation*}
+   #+END_SRC
+
+   #+BEGIN_SRC latex
+     \begin{align*}
+       E_1 &= \gamma\,E_1^* + \beta\gamma\,p_{1z}^*c = \gamma\,(mc^2/2 + \beta c\,p_{1z}^*)\\
+       E_2 &= \gamma\,E_2^* + \beta\gamma\,p_{2z}^*c = \gamma\,(mc^2/2 + \beta c\,p_{2z}^*)
+     \end{align*}
+   #+END_SRC
+   et
+   #+BEGIN_SRC latex
+     \begin{align*}
+       p_{1z}^* &= p_{1}^*\,\cos\theta^* = +\frac{mc}{2}\,\cos\theta^*\\
+       p_{2z}^* &= -p_{2}^*\,\cos\theta^* = -\frac{mc}{2}\,\cos\theta^*
+     \end{align*}
+   #+END_SRC
+   soit
+   #+BEGIN_SRC latex
+     \begin{align*}
+       E_1 &= \frac{\gamma\,mc^2}{2}(1 + \beta\cos\theta^*) \\
+       E_2 &= \frac{\gamma\,mc^2}{2}(1 - \beta\cos\theta^*)
+     \end{align*}
+   #+END_SRC
+
+   L'énergie minimum $E_\text{min}$ et maximum $E_\text{max}$ sont les mêmes pour $E_{1}$ et $E_{2}$
+   avec $\cos\theta^{*}\in[-1;1]$ /i.e./
+   #+BEGIN_SRC latex
+     \begin{align*}
+       E_\text{min} &= \frac{\gamma mc^2}{2}(1 - \beta) = \frac{mc^2}{2}\sqrt{\frac{1-\beta}{1+\beta}}\\
+       E_\text{max} &= \frac{\gamma mc^2}{2}(1 + \beta) = \frac{mc^2}{2}\sqrt{\frac{1+\beta}{1-\beta}}
+     \end{align*}
+   #+END_SRC
+   où $\gamma=1/\sqrt{1-\beta^{2}}$.
+
+
+   #+BEGIN_CENTER
+   #+ATTR_LATEX: :width 0.7\linewidth
+   [[file:figures/minimal_energy_kinematics.pdf]]
+   #+END_CENTER
+
+#+BEGIN_QUESTION
+2) [@2] On s'intéresse à l'angle d'ouverture de la paire de photons, \omega, dans le référentiel du
+   laboratoire $\mathcal{R}$ (voir figure). Déterminer l'expression de $\cos\omega$ en fonction de
+   $\cos\theta^*$.
+#+END_QUESTION
+
+
+2) [@2] Angle d'ouverture \omega en fonction de \theta^{*}
+
+  Invariant relativiste $I = (\Upsigma_{i}E_{i})^{2} - (\Upsigma_{i}\vv{p_{i}}^{*})^{2}\,c^{2}$
+   constant quelque soit le référentiel \rightarrow $I_\text{cdm} = I_\text{lab.}$
+
+  #+BEGIN_SRC latex
+    \begin{align*}
+      (E_1^* + E_2^*)^2 - \vv{0} &= (E_1 + E_2)^2 - (\vv{p_1}c + \vv{p_2}c)^2 \\
+      (mc^2)^2 &= E_1^2 + E_2^2 + 2E_1E_2 - (p_1c)^2 - (p_2c)^2 - 2p_1p_2c^2\,\cos\omega
+    \end{align*}
+  #+END_SRC
+  or $E_{1} = p_{1}c$ et $E_{2} = p_{2}c$ d'où
+  #+BEGIN_SRC latex
+    \begin{align*}
+      \frac{(mc^2)^2}{2} &= E_1E_2 - p_1p_2c^2\,\cos\omega\\
+      \frac{(mc^2)^2}{2} &= E_1E_2\cdot(1 - \cos\omega)
+    \end{align*}
+  #+END_SRC
+
+
+  En remplaçant $E_{1,2}$ par leurs expressions déduites de la question 1), on a $E_{1}E_{2} =
+   \left(\frac{\gamma mc^2}{2}\right)^2\cdot\left(1 - \beta^2\cos^2\theta^*\right)$, soit finalement
+  #+BEGIN_SRC latex
+    \begin{align*}
+      1 - \cos\omega = \frac{2}{\gamma^2\,(1 - \beta^2\cos^2\theta^*)}
+    \end{align*}
+  #+END_SRC
+
+  #+BEGIN_CENTER
+  #+NAME: fig::omega_angle
+  #+CAPTION: *Variation de l'angle d'émission \omega entre les deux photons émis*
+  #+CAPTION: *en fonction de la vitesse \beta de la particule désintégrée.*
+  #+ATTR_LATEX: :width 0.7\linewidth
+  [[file:figures/two_photons_kinematics.pdf]]
+  #+END_CENTER
+
+  La figure [[fig::omega_angle]] indique que plus la particule aura une vitesse grande et voisine de
+   $c$, plus l'émission des deux photons se fera vers l'avant $\omega\to0$.
+
+** Énergie seuil
+
+#+BEGIN_QUESTION
+Soit une réaction entre deux particules $a$ et $b$, de masses respectives $m_ac^2$ et $m_bc^2$ :
+#+BEGIN_SRC latex
+\begin{align*}
+a + b \rightarrow c + d + e + f
+\end{align*}
+#+END_SRC
+Les particules produites lors de cette réaction $c$, $d$, $e$ et $f$ ont pour masses respectives
+$m_cc^2$, $m_dc^2$, $m_ec^2$ et $m_fc^2$.
+
+1) [@1] On suppose que la réaction a lieu dans le référentiel du centre de masse des particules $a$
+   et $b$ et on se place dans le cas particulier où $m_ac^2=m_bc^2$. Donner l'expression de
+   l'énergie cinétique minimum, encore appelée énergie seuil dans le référentiel du centre de masse,
+   que doit posséder chacune des deux particules $a$ et $b$ pour que la réaction puisse avoir lieu ?
+#+END_QUESTION
+
+Par définition, l'énergie seuil est l'énergie *juste nécessaire* à la création des particules en voie
+de sortie sans que ces dernières n'aient d'impulsion /i.e./ d'énergie cinétique.
+
+1) Dans le référentiel du centre de masse, on applique la conservation de l'énergie totale sachant
+   que les particules produites sont au repos /i.e./ $\vv{p_c}^* = \vv{p_d}^* = \vv{p_e}^* =
+   \vv{p_f}^* = \vv{0}$. Par ailleurs, $\vv{p_a}^* = -\vv{p_b}^*$ donc $T_{a} = T_{b} = T_{S}$ et
+   étant donné que $m_{a} = m_{b}$, l'énergie totale de la particule $a$ est égale à celle de la
+   particule $b$. En appliquant le principe de conservation de l'énergie totale, on obtient
+   #+BEGIN_SRC latex
+     \begin{align*}
+       E_a^* + E_b^* &= m_cc^2 + m_dc^2 + m_ec^2 + m_fc^2 = \Upsigma m_\text{finale}c^2\\
        2T_S + 2mc^2 &= \Upsigma m_\text{finale}c^2
      \end{align*}
    #+END_SRC
