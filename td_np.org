@@ -5,7 +5,7 @@
 #+OPTIONS: ^:{} toc:2 author:nil email:nil split:html
 #+LATEX_CLASS: teaching-class
 
-* COMMENT TD1 : Cinématiquegma m_\text{finale}c^2\\
+* TD1 : Cinématiquegma m_\text{finale}c^2\\
        2T_S + 2mc^2 &= \Upsigma m_\text{finale}c^2
      \end{align*}
    #+END_SRC
@@ -74,7 +74,7 @@ L'énergie cinétique minimum du faisceau incident est ainsi
   \end{align*}
 #+END_SRC
 
-* COMMENT TD2 : Accélérateurs & section efficace
+* TD2 : Accélérateurs & section efficace
 ** Accélérateurs
 *** Introduction
 - cyclotron :: Le cyclotron est un type d’accélérateur de particules circulaire inventé par Ernest
@@ -701,7 +701,7 @@ physiciens américains utilisaient ce terme argot de barns dans le but de masque
 recherches. Cependant après la Seconde Guerre mondiale, le barn est devenu une unité standard de la
 physique des particules.
 
-* COMMENT TD3 : Nombres quantiques & Symétries
+* TD3 : Nombres quantiques & Symétries
 ** Énergie maximum des rayons cosmiques
 
 #+CAPTION: *Spectre en énergie des rayons cosmiques*
@@ -789,7 +789,7 @@ mettre en exergue une éventuelle surabondance locale.
 
 #+LATEX: \cleardoublepage
 
-** COMMENT Étrangeté dans les rayons cosmiques
+** Étrangeté dans les rayons cosmiques
 #+BEGIN_QUESTION
 À l'arrivée dans l'atmosphère, les protons réagissent avec les neutrons des
 noyaux, pour engendrer la cascade de réactions :
@@ -986,7 +986,7 @@ synchrotron a accéléré des protons au delà du GeV (1952 -- 1966) contribuant
 la découverte de l'ensemble des mésons chargés de même qu'à la mise en évidence
 de particules lourdes instables telles que les particules $V$.
 
-* COMMENT TD4 : Réactions de production et de désintégration de particules
+* TD4 : Réactions de production et de désintégration de particules
 
 #+CAPTION: *Modèle standard de la physique des particules*
 [[file:./figures/standard_model.pdf]]
@@ -1427,7 +1427,7 @@ fermions. En ajoutant le nombre quantique de couleur, la chromodynamique quantiq
 
 [fn:4] le moment cinétique total est également différent 5/2^{+} ou 7/2^{+} contre
 3/2^{+}
-* COMMENT TD5 : Modèle Standard et au-delà : l'interaction faible
+* TD5 : Modèle Standard et au-delà : l'interaction faible
 ** Masse et largeur du $Z^0$ -- Nombre de familles de neutrinos
 #+BEGIN_QUESTION
 La figure ci-dessous représente la distribution de masse invariante du boson d'interaction faible
@@ -1896,7 +1896,7 @@ deux bases orthonormées.
 [fn:11] W. David Arnett & Jonathan L. Roser [[http://journals.aps.org/prl/abstract/10.1103/PhysRevLett.58.1906][Physical Review Letter 58]], David
 N. Spergel & John N. Bahcall [[http://www.sciencedirect.com/science/article/pii/0370269388907903][Physical Letters B]]
 
-* COMMENT TD6 : Modèle des quarks -- Les hadrons
+* TD6 : Modèle des quarks -- Les hadrons
 ** Les mésons constitués des quarks $u,d,s$ et de leurs antiquarks
 #+BEGIN_QUESTION
 1) [@1] D'après le tableau caractéristique des quarks, établir le même tableau
@@ -2385,7 +2385,7 @@ impaire pour que la fonction d'onde soit antisymétrique. $\vv{L}=\vv{0}$,
 $\vv{T}=\vv{0}$ et $\vv{S}=\vv{3}/2$, la somme n'est donc pas impaire. C'est
 l'introduction de la couleur qui permet de rendre cette fonction d'onde globale
 antisymétrique.
-* COMMENT TD7 : Isospin -- des quarks aux noyaux
+* TD7 : Isospin -- des quarks aux noyaux
 ** Couplages nucléon-nucléon et nucléon-pion
 #+BEGIN_QUESTION
 1) Quelles sont les valeurs possibles $\vv{T}$ et $T_3$ pour l'isospin d'un
@@ -3899,7 +3899,7 @@ désintègre presqu'à 100% vers le premier état excité du néon\nbsp{}22, sit
 
 #+END_COMMENT
 
-** COMMENT Tomographie par émission de positrons
+** Tomographie par émission de positrons
 #+ATTR_HTML: :width 300
 #+ATTR_LATEX: :width 0.35\textwidth
 #+CAPTION: *Vue axiale du cerveau par tomographie à émission de positrons*
@@ -3995,7 +3995,7 @@ l'irradiation ($t=0$), il n'y a aucun noyau radioactif dans l'échantillon.
      demi-vie des isotopes radioactifs qui nécessitent donc la présence d’un
      cyclotron à proximité du centre d’examen.
 
-** COMMENT Formule de Bethe et Weizsäcker
+** Formule de Bethe et Weizsäcker
 #+BEGIN_QUESTION
 1)
    1) Expliquer les différents termes intervenant dans la formule semi-empirique donnant la masse
@@ -4060,7 +4060,7 @@ l'irradiation ($t=0$), il n'y a aucun noyau radioactif dans l'échantillon.
      indicateur afin de déterminer si un noyau est loin, en terme de protons, de
      l'élément stable pour une masse donnée /i.e./ pour $A$ fixé.
 
-** COMMENT Parabole de masse et désintégrations radioactives
+** Parabole de masse et désintégrations radioactives
 #+BEGIN_QUESTION
 On s'intéresse aux isobares de nombre de masse $A$ = 58 dont on donne ci-dessous les excès de masse
 atomique $\Delta M_\text{at}c^2$, en MeV :
@@ -4226,7 +4226,7 @@ atomique $\Delta M_\text{at}c^2$, en MeV :
        \end{align*}
      #+END_SRC
 
-** COMMENT Étoiles à neutrons
+** Étoiles à neutrons
 #+BEGIN_QUESTION
 On peut montrer que l'énergie potentielle d'attraction gravitationnelle d'une masse sphérique $M$ de
 densité uniforme et de rayon $R$ est donnée par $E_G=-\frac{3 GM^2}{5R}$.
